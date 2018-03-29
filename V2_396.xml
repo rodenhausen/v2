@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">juniperus</taxon_name>
+    <taxon_name authority="Spach" date="1841" rank="section">Sabina</taxon_name>
+    <place_of_publication>
+      <place_in_publication>16: 291. 1841</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cupressaceae;genus juniperus;section Sabina</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Trees or shrubs, if shrubs, prostrate to decumbent or upright.</text>
+      <biological_entity id="o9217" name="tree" name_original="trees" src="d0_s0" type="structure">
+        <character is_modifier="false" name="growth_form_or_orientation" notes="" src="d0_s0" value="prostrate" />
+        <character is_modifier="false" name="orientation" src="d0_s0" value="decumbent" />
+        <character is_modifier="false" name="orientation" src="d0_s0" value="upright" />
+      </biological_entity>
+      <biological_entity id="o9218" name="shrub" name_original="shrubs" src="d0_s0" type="structure">
+        <character is_modifier="false" name="growth_form_or_orientation" notes="" src="d0_s0" value="prostrate" />
+        <character is_modifier="false" name="orientation" src="d0_s0" value="decumbent" />
+        <character is_modifier="false" name="orientation" src="d0_s0" value="upright" />
+      </biological_entity>
+      <biological_entity id="o9219" name="shrub" name_original="shrubs" src="d0_s0" type="structure" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Adult leaves opposite in 4 ranks or in whorls of 3, of 2 kinds on same branchlet, whip leaves (subulate, spreading) and scalelike (appressed or with spreading apex), both without basal abscission zone.</text>
+      <biological_entity id="o9220" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s1" value="adult" />
+        <character constraint="in 4 ranks or in whorls" constraintid="o9221" is_modifier="false" name="arrangement" src="d0_s1" value="opposite" />
+        <character is_modifier="false" name="shape" src="d0_s1" value="scale-like" value_original="scalelike" />
+      </biological_entity>
+      <biological_entity id="o9221" name="whorl" name_original="whorls" src="d0_s1" type="structure">
+        <character name="quantity" src="d0_s1" value="3" />
+      </biological_entity>
+      <biological_entity id="o9222" name="branchlet" name_original="branchlet" src="d0_s1" type="structure" />
+      <biological_entity id="o9223" name="leaf" name_original="leaves" src="d0_s1" type="structure" />
+      <biological_entity constraint="basal" id="o9224" name="zone" name_original="zone" src="d0_s1" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s1" value="abscission" />
+      </biological_entity>
+      <relation from="o9221" id="r2117" modifier="of 2 kinds" name="on" negation="false" src="d0_s1" to="o9222" />
+      <relation from="o9220" id="r2118" name="whip" negation="false" src="d0_s1" to="o9223" />
+      <relation from="o9220" id="r2119" name="without" negation="false" src="d0_s1" to="o9224" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Cones terminal.</text>
+      <biological_entity id="o9225" name="cone" name_original="cones" src="d0_s2" type="structure">
+        <character is_modifier="false" name="position_or_structure_subtype" src="d0_s2" value="terminal" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>8b</number>
+</bio:treatment>

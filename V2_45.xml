@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Michaux ex DeCandolle" date="unknown" rank="family">equisetaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">equisetum</taxon_name>
+    <taxon_name authority="(A. A. Eaton) J. H. Schaffner" date="1926" rank="species">×nelsonii</taxon_name>
+    <place_of_publication>
+      <publication_title>Amer. Fern J.</publication_title>
+      <place_in_publication>16: 46. 1926</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family equisetaceae;genus equisetum;species ×nelsonii</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Equisetum</taxon_name>
+    <taxon_name authority="Schleicher ex F. Weber &amp; D.Mohr" date="unknown" rank="species">variegatum</taxon_name>
+    <taxon_name authority="A.A. Eaton" date="unknown" rank="variety">nelsonii</taxon_name>
+    <place_of_publication>
+      <publication_title>Fern Bull.</publication_title>
+      <place_in_publication>12: 41. 1904</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Equisetum;species variegatum;variety nelsonii;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Aerial stems persisting less than a year or only the proximal part overwintering, unbranched, 20-60 cm;</text>
+      <biological_entity id="o10936" name="stem" name_original="stems" src="d0_s0" type="structure">
+        <character is_modifier="true" name="location" src="d0_s0" value="aerial" />
+        <character is_modifier="false" modifier="less" name="duration" src="d0_s0" value="persisting" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o10937" name="part" name_original="part" src="d0_s0" type="structure">
+        <character is_modifier="false" name="duration" src="d0_s0" value="overwintering" />
+        <character is_modifier="false" name="architecture" src="d0_s0" value="unbranched" />
+        <character char_type="range_value" from="20" from_unit="cm" name="some_measurement" src="d0_s0" to="60" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>lines of stomates single;</text>
+      <biological_entity id="o10938" name="line" name_original="lines" src="d0_s1" type="structure" />
+      <biological_entity id="o10939" name="stomate" name_original="stomates" src="d0_s1" type="structure">
+        <character is_modifier="false" name="quantity" src="d0_s1" value="single" />
+      </biological_entity>
+      <relation from="o10938" id="r2491" name="consist_of" negation="false" src="d0_s1" to="o10939" />
+    </statement>
+    <statement id="d0_s2">
+      <text>ridges 6-14.</text>
+      <biological_entity id="o10940" name="ridge" name_original="ridges" src="d0_s2" type="structure">
+        <character char_type="range_value" from="6" name="quantity" src="d0_s2" to="14" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Sheaths green, elongate, 3.5-7.5 × 2-4 mm;</text>
+      <biological_entity id="o10941" name="sheath" name_original="sheaths" src="d0_s3" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s3" value="green" />
+        <character is_modifier="false" name="shape" src="d0_s3" value="elongate" />
+        <character char_type="range_value" from="3.5" from_unit="mm" name="length" src="d0_s3" to="7.5" to_unit="mm" />
+        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s3" to="4" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>teeth 6-14, centers brown and margins white, prominent, tip usually brown, long, filiform.</text>
+      <biological_entity id="o10942" name="tooth" name_original="teeth" src="d0_s4" type="structure">
+        <character char_type="range_value" from="6" name="quantity" src="d0_s4" to="14" />
+      </biological_entity>
+      <biological_entity id="o10943" name="center" name_original="centers" src="d0_s4" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s4" value="white" />
+        <character is_modifier="false" name="prominence" src="d0_s4" value="prominent" />
+      </biological_entity>
+      <biological_entity id="o10944" name="margin" name_original="margins" src="d0_s4" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s4" value="brown" />
+        <character is_modifier="false" name="coloration" src="d0_s4" value="white" />
+        <character is_modifier="false" name="prominence" src="d0_s4" value="prominent" />
+      </biological_entity>
+      <biological_entity id="o10945" name="tip" name_original="tip" src="d0_s4" type="structure">
+        <character is_modifier="false" modifier="usually" name="coloration" src="d0_s4" value="brown" />
+        <character is_modifier="false" name="length_or_size" src="d0_s4" value="long" />
+        <character is_modifier="false" name="shape" src="d0_s4" value="filiform" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Cone apex pointed;</text>
+      <biological_entity constraint="cone" id="o10946" name="apex" name_original="apex" src="d0_s5" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s5" value="pointed" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>spores white, misshapen.</text>
+      <biological_entity id="o10947" name="spore" name_original="spores" src="d0_s6" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s6" value="white" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>14</number>
+  <discussion>Equisetum × nelsonii , the hybrid between E . laevigatum and E . variegatum , is often mistaken for small forms of E . × ferrissii .</discussion>
+</bio:treatment>

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>Ronald J. Taylor</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
+    <taxon_name authority="(Endlicher) Carrière" date="unknown" rank="genus">Tsuga</taxon_name>
+    <place_of_publication>
+      <place_in_publication>185. 1855- Hemlock, pruche [Japanese  tsuga , nampan]</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family pinaceae;genus Tsuga</taxon_hierarchy>
+    <other_info_on_name type="etymology">[Japanese tsuga, name for native hemlocks of Japan]</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">Pinus</taxon_name>
+    <taxon_name authority="Endlicher" date="unknown" rank="section">Tsuga</taxon_name>
+    <place_of_publication>
+      <publication_title>Syn. Conif.,</publication_title>
+      <place_in_publication>83. 1847</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Pinus;section Tsuga;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Trees evergreen;</text>
+      <biological_entity id="o17826" name="tree" name_original="trees" src="d0_s0" type="structure">
+        <character is_modifier="false" name="duration" src="d0_s0" value="evergreen" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>crown conic;</text>
+    </statement>
+    <statement id="d0_s2">
+      <text>leading shoot usually drooping.</text>
+      <biological_entity id="o17827" name="crown" name_original="crown" src="d0_s1" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s1" value="conic" />
+        <character is_modifier="false" modifier="usually" name="orientation" src="d0_s2" value="drooping" />
+      </biological_entity>
+      <biological_entity id="o17828" name="shoot" name_original="shoot" src="d0_s2" type="structure" />
+      <relation from="o17827" id="r4138" name="leading" negation="false" src="d0_s2" to="o17828" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Bark gray to brown, scaly, often deeply furrowed.</text>
+      <biological_entity id="o17829" name="bark" name_original="bark" src="d0_s3" type="structure">
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="gray" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="brown" />
+        <character char_type="range_value" from="gray" name="coloration" src="d0_s3" to="brown" />
+        <character is_modifier="false" name="architecture_or_pubescence" src="d0_s3" value="scaly" />
+        <character is_modifier="false" modifier="often deeply" name="architecture" src="d0_s3" value="furrowed" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Branches horizontal, often tending to arranged in flattened sprays and arched downward;</text>
+      <biological_entity id="o17830" name="branch" name_original="branches" src="d0_s4" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s4" value="horizontal" />
+        <character constraint="in sprays" constraintid="o17831" is_modifier="false" modifier="often" name="arrangement" src="d0_s4" value="arranged" />
+        <character is_modifier="false" name="orientation_or_shape" notes="" src="d0_s4" value="arched" />
+        <character is_modifier="false" name="orientation" src="d0_s4" value="downward" />
+      </biological_entity>
+      <biological_entity id="o17831" name="spray" name_original="sprays" src="d0_s4" type="structure">
+        <character is_modifier="true" name="shape" src="d0_s4" value="flattened" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>short (spur) shoots absent;</text>
+      <biological_entity id="o17832" name="shoot" name_original="shoots" src="d0_s5" type="structure">
+        <character is_modifier="true" name="height_or_length_or_size" src="d0_s5" value="short" />
+        <character is_modifier="false" name="presence" src="d0_s5" value="absent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>young twigs and distal portions of stem flexuous and pendent, roughened by peglike projections persisting after leaves fall.</text>
+      <biological_entity id="o17833" name="twig" name_original="twigs" src="d0_s6" type="structure" constraint="stem">
+        <character is_modifier="true" name="life_cycle" src="d0_s6" value="young" />
+        <character is_modifier="false" name="course" src="d0_s6" value="flexuous" />
+        <character is_modifier="false" name="orientation" src="d0_s6" value="pendent" />
+        <character constraint="by projections" constraintid="o17836" is_modifier="false" name="relief_or_texture" src="d0_s6" value="roughened" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="o17834" name="portion" name_original="portions" src="d0_s6" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s6" value="young" />
+        <character is_modifier="false" name="course" src="d0_s6" value="flexuous" />
+        <character is_modifier="false" name="orientation" src="d0_s6" value="pendent" />
+        <character constraint="by projections" constraintid="o17836" is_modifier="false" name="relief_or_texture" src="d0_s6" value="roughened" />
+      </biological_entity>
+      <biological_entity id="o17835" name="stem" name_original="stem" src="d0_s6" type="structure" />
+      <biological_entity id="o17836" name="projection" name_original="projections" src="d0_s6" type="structure">
+        <character is_modifier="true" name="architecture_or_shape" src="d0_s6" value="peglike" />
+        <character constraint="after leaves" constraintid="o17837" is_modifier="false" name="duration" src="d0_s6" value="persisting" />
+      </biological_entity>
+      <biological_entity id="o17837" name="leaf" name_original="leaves" src="d0_s6" type="structure" />
+      <relation from="o17833" id="r4139" name="part_of" negation="false" src="d0_s6" to="o17835" />
+      <relation from="o17834" id="r4140" name="part_of" negation="false" src="d0_s6" to="o17835" />
+    </statement>
+    <statement id="d0_s7">
+      <text>Buds mostly rounded at apex, not resinous.</text>
+      <biological_entity id="o17838" name="bud" name_original="buds" src="d0_s7" type="structure">
+        <character constraint="at apex" constraintid="o17839" is_modifier="false" modifier="mostly" name="shape" src="d0_s7" value="rounded" />
+        <character is_modifier="false" modifier="not" name="coating" notes="" src="d0_s7" value="resinous" />
+      </biological_entity>
+      <biological_entity id="o17839" name="apex" name_original="apex" src="d0_s7" type="structure" />
+    </statement>
+    <statement id="d0_s8">
+      <text>Leaves borne singly, persisting several years, ± 2-ranked or radiating in all directions, flattened to somewhat angular;</text>
+      <biological_entity id="o17841" name="direction" name_original="directions" src="d0_s8" type="structure" />
+    </statement>
+    <statement id="d0_s9">
+      <text>abruptly narrowed to a petiolelike base, set on peglike projections, these angled, projected forward, sheath absent;</text>
+      <biological_entity id="o17840" name="leaf" name_original="leaves" src="d0_s8" type="structure">
+        <character is_modifier="false" name="arrangement" src="d0_s8" value="singly" />
+        <character is_modifier="false" name="duration" src="d0_s8" value="persisting" />
+        <character is_modifier="false" name="quantity" src="d0_s8" value="several" />
+        <character is_modifier="false" modifier="more or less" name="arrangement" src="d0_s8" value="2-ranked" />
+        <character constraint="in directions" constraintid="o17841" is_modifier="false" name="arrangement" src="d0_s8" value="radiating" />
+        <character is_modifier="false" name="shape" notes="" src="d0_s8" value="flattened to somewhat" />
+        <character is_modifier="false" modifier="somewhat" name="arrangement_or_shape" src="d0_s8" value="angular" />
+        <character constraint="to base" constraintid="o17842" is_modifier="false" modifier="abruptly" name="shape" src="d0_s9" value="narrowed" />
+      </biological_entity>
+      <biological_entity id="o17842" name="base" name_original="base" src="d0_s9" type="structure">
+        <character is_modifier="true" name="architecture_or_shape" src="d0_s9" value="petiolelike" />
+      </biological_entity>
+      <biological_entity id="o17843" name="set" name_original="set" src="d0_s9" type="structure">
+        <character is_modifier="false" name="shape" notes="" src="d0_s9" value="angled" />
+        <character is_modifier="false" name="presence" src="d0_s9" value="absent" />
+      </biological_entity>
+      <biological_entity id="o17844" name="projection" name_original="projections" src="d0_s9" type="structure">
+        <character is_modifier="true" name="architecture_or_shape" src="d0_s9" value="peglike" />
+      </biological_entity>
+      <biological_entity id="o17845" name="sheath" name_original="sheath" src="d0_s9" type="structure" />
+      <relation from="o17843" id="r4141" name="on" negation="false" src="d0_s9" to="o17844" />
+      <relation from="o17843" id="r4142" name="projected" negation="false" src="d0_s9" to="o17845" />
+    </statement>
+    <statement id="d0_s10">
+      <text>apex rounded or notched;</text>
+      <biological_entity id="o17846" name="apex" name_original="apex" src="d0_s10" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s10" value="rounded" />
+        <character is_modifier="false" name="shape" src="d0_s10" value="notched" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>resin canals 1.</text>
+      <biological_entity constraint="resin" id="o17847" name="canal" name_original="canals" src="d0_s11" type="structure">
+        <character name="quantity" src="d0_s11" value="1" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s12">
+      <text>Cones borne on year-old twigs.</text>
+      <biological_entity id="o17848" name="cone" name_original="cones" src="d0_s12" type="structure" />
+      <biological_entity id="o17849" name="twig" name_original="twigs" src="d0_s12" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s12" value="year-old" />
+      </biological_entity>
+      <relation from="o17848" id="r4143" name="borne on" negation="false" src="d0_s12" to="o17849" />
+    </statement>
+    <statement id="d0_s13">
+      <text>Pollen cones solitary, globose, brown.</text>
+      <biological_entity constraint="pollen" id="o17850" name="cone" name_original="cones" src="d0_s13" type="structure">
+        <character is_modifier="false" name="architecture_or_arrangement_or_growth_form" src="d0_s13" value="solitary" />
+        <character is_modifier="false" name="shape" src="d0_s13" value="globose" />
+        <character is_modifier="false" name="coloration" src="d0_s13" value="brown" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s14">
+      <text>Seed-cones maturing in 1 year, shedding seeds and falling soon thereafter or persisting for several years, pendent, ovoid, oblong, or oblong-cylindric, sessile or nearly so;</text>
+      <biological_entity id="o17851" name="seed-cone" name_original="seed-cones" src="d0_s14" type="structure">
+        <character constraint="in year" constraintid="o17852" is_modifier="false" name="life_cycle" src="d0_s14" value="maturing" />
+        <character is_modifier="false" modifier="soon thereafter; thereafter" name="life_cycle" src="d0_s14" value="falling" />
+        <character constraint="for several years" is_modifier="false" name="duration" src="d0_s14" value="persisting" />
+        <character is_modifier="false" name="orientation" src="d0_s14" value="pendent" />
+        <character is_modifier="false" name="shape" src="d0_s14" value="ovoid" />
+        <character is_modifier="false" name="shape" src="d0_s14" value="oblong" />
+        <character is_modifier="false" name="shape" src="d0_s14" value="oblong-cylindric" />
+        <character is_modifier="false" name="shape" src="d0_s14" value="oblong" />
+        <character is_modifier="false" name="shape" src="d0_s14" value="oblong-cylindric" />
+        <character is_modifier="false" name="architecture" src="d0_s14" value="sessile" />
+        <character name="architecture" src="d0_s14" value="nearly" />
+      </biological_entity>
+      <biological_entity id="o17852" name="year" name_original="year" src="d0_s14" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s14" value="1" />
+      </biological_entity>
+      <biological_entity id="o17853" name="seed" name_original="seeds" src="d0_s14" type="structure" />
+      <relation from="o17851" id="r4144" name="shedding" negation="false" src="d0_s14" to="o17853" />
+    </statement>
+    <statement id="d0_s15">
+      <text>scales persistent, shape various, thin, leathery, lacking apophysis and umbo;</text>
+      <biological_entity id="o17854" name="scale" name_original="scales" src="d0_s15" type="structure">
+        <character is_modifier="false" name="duration" src="d0_s15" value="persistent" />
+        <character is_modifier="false" name="shape" src="d0_s15" value="various" />
+        <character is_modifier="false" name="width" src="d0_s15" value="thin" />
+        <character is_modifier="false" name="texture" src="d0_s15" value="leathery" />
+      </biological_entity>
+      <biological_entity id="o17855" name="apophysis" name_original="apophysis" src="d0_s15" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s15" value="lacking" />
+      </biological_entity>
+      <biological_entity id="o17856" name="umbo" name_original="umbo" src="d0_s15" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s15" value="lacking" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s16">
+      <text>bracts small, included.</text>
+      <biological_entity id="o17857" name="bract" name_original="bracts" src="d0_s16" type="structure">
+        <character is_modifier="false" name="size" src="d0_s16" value="small" />
+        <character is_modifier="false" name="position" src="d0_s16" value="included" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s17">
+      <text>Seeds winged;</text>
+      <biological_entity id="o17858" name="seed" name_original="seeds" src="d0_s17" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s17" value="winged" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s18">
+      <text>cotyledons 4-6.</text>
+    </statement>
+    <statement id="d0_s19">
+      <text>x =12.</text>
+      <biological_entity id="o17859" name="cotyledon" name_original="cotyledons" src="d0_s18" type="structure">
+        <character char_type="range_value" from="4" name="quantity" src="d0_s18" to="6" />
+      </biological_entity>
+      <biological_entity constraint="x" id="o17860" name="chromosome" name_original="" src="d0_s19" type="structure">
+        <character name="quantity" src="d0_s19" value="12" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Northern Hemisphere.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="Northern Hemisphere" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>2</number>
+  <other_name type="common_name">Hemlock</other_name>
+  <other_name type="common_name">pruche</other_name>
+  <discussion>Species of Tsuga are found naturally in areas of relatively moist climates where water stresses are minimal. Most are conspicuous, if not dominant, members of the communities in which they occur.</discussion>
+  <discussion>Hemlock wood is moderately strong and pliable and lacks resin ducts. With the decline of associated species considered superior in commercial value, hemlocks have become important in the timber industry, especially for pulp. Hemlocks are also widely used for horticultural purposes; numerous cultivars have been developed.</discussion>
+  <discussion>Species ca. 10 (4 in the flora):</discussion>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d1_s0">
+          <text>Leaves mostly spreading in all directions from twigs, bearing stomates on both surfaces or on abaxial surface only;</text>
+          <biological_entity id="o17861" name="leaf" name_original="leaves" src="d1_s0" type="structure">
+            <character constraint="in directions" constraintid="o17862" is_modifier="false" modifier="mostly" name="orientation" src="d1_s0" value="spreading" />
+          </biological_entity>
+          <biological_entity id="o17862" name="direction" name_original="directions" src="d1_s0" type="structure" />
+          <biological_entity id="o17863" name="twig" name_original="twigs" src="d1_s0" type="structure" />
+          <biological_entity id="o17864" name="stomate" name_original="stomates" src="d1_s0" type="structure" />
+          <biological_entity id="o17865" name="surface" name_original="surfaces" src="d1_s0" type="structure" />
+          <biological_entity constraint="abaxial" id="o17866" name="surface" name_original="surface" src="d1_s0" type="structure" />
+          <relation from="o17862" id="r4145" name="from" negation="false" src="d1_s0" to="o17863" />
+          <relation from="o17861" id="r4146" name="bearing" negation="false" src="d1_s0" to="o17864" />
+          <relation from="o17861" id="r4147" name="on" negation="false" src="d1_s0" to="o17865" />
+          <relation from="o17861" id="r4148" name="on" negation="false" src="d1_s0" to="o17866" />
+        </statement>
+        <statement id="d1_s1">
+          <text>seed-cones ovoid, oblong, or oblong-cylindric, 2.5-6 cm;</text>
+          <biological_entity id="o17867" name="cone-seed" name_original="seed-cones" src="d1_s1" type="structure">
+            <character is_modifier="false" name="shape" src="d1_s1" value="ovoid" />
+            <character is_modifier="false" name="shape" src="d1_s1" value="oblong" />
+            <character is_modifier="false" name="shape" src="d1_s1" value="oblong-cylindric" />
+            <character is_modifier="false" name="shape" src="d1_s1" value="oblong" />
+            <character is_modifier="false" name="shape" src="d1_s1" value="oblong-cylindric" />
+            <character char_type="range_value" from="2.5" from_unit="cm" name="distance" src="d1_s1" to="6" to_unit="cm" />
+          </biological_entity>
+        </statement>
+        <statement id="d1_s2">
+          <text>scales oblong, 8-18 mm.</text>
+          <biological_entity id="o17868" name="scale" name_original="scales" src="d1_s2" type="structure">
+            <character is_modifier="false" name="shape" src="d1_s2" value="oblong" />
+            <character char_type="range_value" from="8" from_unit="mm" name="some_measurement" src="d1_s2" to="18" to_unit="mm" />
+          </biological_entity>
+        </statement>
+      </description>
+      <next_statement_id>2</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d2_s0">
+          <text>Leaves mostly appearing 2-ranked, bearing stomates on abaxial surface only;</text>
+          <biological_entity id="o17869" name="leaf" name_original="leaves" src="d2_s0" type="structure" />
+          <biological_entity id="o17870" name="bearing" name_original="bearing" src="d2_s0" type="structure">
+            <character is_modifier="true" name="arrangement" src="d2_s0" value="2-ranked" />
+          </biological_entity>
+          <biological_entity id="o17871" name="stomate" name_original="stomates" src="d2_s0" type="structure">
+            <character is_modifier="true" name="arrangement" src="d2_s0" value="2-ranked" />
+          </biological_entity>
+          <biological_entity constraint="abaxial" id="o17872" name="surface" name_original="surface" src="d2_s0" type="structure" />
+          <relation from="o17869" id="r4149" name="appearing" negation="false" src="d2_s0" to="o17870" />
+          <relation from="o17869" id="r4150" name="appearing" negation="false" src="d2_s0" to="o17871" />
+          <relation from="o17869" id="r4151" name="on" negation="false" src="d2_s0" to="o17872" />
+        </statement>
+        <statement id="d2_s1">
+          <text>seed-cones ovoid, (1-) 1.5-2.5 (-3) cm;</text>
+          <biological_entity id="o17873" name="cone-seed" name_original="seed-cones" src="d2_s1" type="structure">
+            <character is_modifier="false" name="shape" src="d2_s1" value="ovoid" />
+            <character char_type="range_value" from="1" from_unit="cm" name="atypical_distance" src="d2_s1" to="1.5" to_inclusive="false" to_unit="cm" />
+            <character char_type="range_value" from="2.5" from_inclusive="false" from_unit="cm" name="atypical_distance" src="d2_s1" to="3" to_unit="cm" />
+            <character char_type="range_value" from="1.5" from_unit="cm" name="distance" src="d2_s1" to="2.5" to_unit="cm" />
+          </biological_entity>
+        </statement>
+        <statement id="d2_s2">
+          <text>scales ovate to cuneate, 8-15 mm.</text>
+          <biological_entity id="o17874" name="scale" name_original="scales" src="d2_s2" type="structure">
+            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s2" value="ovate" />
+            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s2" value="cuneate" />
+            <character char_type="range_value" from="ovate" name="shape" src="d2_s2" to="cuneate" />
+            <character char_type="range_value" from="8" from_unit="mm" name="some_measurement" src="d2_s2" to="15" to_unit="mm" />
+          </biological_entity>
+        </statement>
+      </description>
+      <next_statement_id>3</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d3_s0">
+          <text>Leaves bearing stomates on both surfaces, thicker along midline;</text>
+          <biological_entity id="o17875" name="leaf" name_original="leaves" src="d3_s0" type="structure">
+            <character constraint="along midline" constraintid="o17878" is_modifier="false" name="width" notes="" src="d3_s0" value="thicker" />
+          </biological_entity>
+          <biological_entity id="o17876" name="stomate" name_original="stomates" src="d3_s0" type="structure" />
+          <biological_entity id="o17877" name="surface" name_original="surfaces" src="d3_s0" type="structure" />
+          <biological_entity id="o17878" name="midline" name_original="midline" src="d3_s0" type="structure" />
+          <relation from="o17875" id="r4152" name="bearing" negation="false" src="d3_s0" to="o17876" />
+          <relation from="o17875" id="r4153" name="on" negation="false" src="d3_s0" to="o17877" />
+        </statement>
+        <statement id="d3_s1">
+          <text>seed-cones 3-6 cm, half as wide;</text>
+        </statement>
+        <statement id="d3_s2">
+          <text>montane tree of w North America.</text>
+          <biological_entity id="o17879" name="cone-seed" name_original="seed-cones" src="d3_s1" type="structure">
+            <character char_type="range_value" from="3" from_unit="cm" name="distance" src="d3_s1" to="6" to_unit="cm" />
+            <character constraint="of w" constraintid="o17880" is_modifier="false" name="growth_form" src="d3_s2" value="tree" />
+          </biological_entity>
+          <biological_entity id="o17880" name="w" name_original="w" src="d3_s2" type="structure">
+            <character is_modifier="false" name="geographical_terms" src="d3_s2" value="north" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>2 Tsuga mertensiana</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d4_s0">
+          <text>Leaves bearing stomates on abaxial surface only, flat, not notably thicker along midline, but slightly revolute;</text>
+          <biological_entity id="o17881" name="leaf" name_original="leaves" src="d4_s0" type="structure">
+            <character is_modifier="false" name="prominence_or_shape" notes="" src="d4_s0" value="flat" />
+            <character constraint="along midline" constraintid="o17884" is_modifier="false" modifier="not notably" name="width" src="d4_s0" value="thicker" />
+            <character is_modifier="false" modifier="slightly" name="shape_or_vernation" notes="" src="d4_s0" value="revolute" />
+          </biological_entity>
+          <biological_entity id="o17882" name="stomate" name_original="stomates" src="d4_s0" type="structure" />
+          <biological_entity constraint="abaxial" id="o17883" name="surface" name_original="surface" src="d4_s0" type="structure" />
+          <biological_entity id="o17884" name="midline" name_original="midline" src="d4_s0" type="structure" />
+          <relation from="o17881" id="r4154" name="bearing" negation="false" src="d4_s0" to="o17882" />
+          <relation from="o17881" id="r4155" name="on" negation="false" src="d4_s0" to="o17883" />
+        </statement>
+        <statement id="d4_s1">
+          <text>seed-cones 2.5-4 cm, more than half as wide;</text>
+        </statement>
+        <statement id="d4_s2">
+          <text>montane tree of se United States.</text>
+          <biological_entity id="o17885" name="cone-seed" name_original="seed-cones" src="d4_s1" type="structure">
+            <character char_type="range_value" from="2.5" from_unit="cm" name="distance" src="d4_s1" to="4" to_unit="cm" />
+            <character constraint="of states" constraintid="o17886" is_modifier="false" name="growth_form" src="d4_s2" value="tree" />
+          </biological_entity>
+          <biological_entity id="o17886" name="state" name_original="states" src="d4_s2" type="structure">
+            <character is_modifier="true" name="fusion" src="d4_s2" value="united" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>1 Tsuga caroliniana</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>3</statement_id>
+      <description type="morphology">
+        <statement id="d5_s0">
+          <text>Buds 2.5-3.5 mm;</text>
+          <biological_entity id="o17887" name="bud" name_original="buds" src="d5_s0" type="structure">
+            <character char_type="range_value" from="2.5" from_unit="mm" name="some_measurement" src="d5_s0" to="3.5" to_unit="mm" />
+          </biological_entity>
+        </statement>
+        <statement id="d5_s1">
+          <text>crown narrowly conic;</text>
+        </statement>
+        <statement id="d5_s2">
+          <text>tree of w North America.</text>
+          <biological_entity id="o17888" name="crown" name_original="crown" src="d5_s1" type="structure">
+            <character is_modifier="false" modifier="narrowly" name="shape" src="d5_s1" value="conic" />
+            <character constraint="of w" constraintid="o17889" is_modifier="false" name="growth_form" src="d5_s2" value="tree" />
+          </biological_entity>
+          <biological_entity id="o17889" name="w" name_original="w" src="d5_s2" type="structure">
+            <character is_modifier="false" name="geographical_terms" src="d5_s2" value="north" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>4 Tsuga heterophylla</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>3</statement_id>
+      <description type="morphology">
+        <statement id="d6_s0">
+          <text>Buds 1.5-2.5 mm;</text>
+          <biological_entity id="o17890" name="bud" name_original="buds" src="d6_s0" type="structure">
+            <character char_type="range_value" from="1.5" from_unit="mm" name="some_measurement" src="d6_s0" to="2.5" to_unit="mm" />
+          </biological_entity>
+        </statement>
+        <statement id="d6_s1">
+          <text>crown broadly conic;</text>
+        </statement>
+        <statement id="d6_s2">
+          <text>tree of e North America.</text>
+          <biological_entity id="o17891" name="crown" name_original="crown" src="d6_s1" type="structure">
+            <character is_modifier="false" modifier="broadly" name="shape" src="d6_s1" value="conic" />
+            <character constraint="of e north america" is_modifier="false" name="growth_form" src="d6_s2" value="tree" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>3 Tsuga canadensis</determination>
+    </key_statement>
+  </key>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_157_d10_s0">
+      <text>Leaves rounded or notched, flattened, abruptly narrowed to petiolelike base;</text>
+      <biological_entity id="from_key_V2_157_o2042" name="base" name_original="base" src="d10_s0" type="structure" />
+    </statement>
+    <statement id="from_key_V2_157_d10_s1">
+      <text>leading shoot typically drooping.</text>
+      <biological_entity id="from_key_V2_157_o2041" name="leaf" name_original="leaves" src="d10_s0" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="rounded" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="notched" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="flattened" />
+        <character is_modifier="false" modifier="abruptly" name="shape" notes="[duplicate value]" src="d10_s0" value="narrowed" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="petiolelike" />
+        <character char_type="range_value" from="notched flattened abruptly narrowed" name="shape" src="d10_s0" to="petiolelike" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="rounded" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="notched" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="flattened" />
+        <character is_modifier="false" modifier="abruptly" name="shape" notes="[duplicate value]" src="d10_s0" value="narrowed" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="petiolelike" />
+        <character char_type="range_value" from="notched flattened abruptly narrowed" name="shape" src="d10_s0" to="petiolelike" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="rounded" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="notched" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="flattened" />
+        <character is_modifier="false" modifier="abruptly" name="shape" notes="[duplicate value]" src="d10_s0" value="narrowed" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="petiolelike" />
+        <character char_type="range_value" from="notched flattened abruptly narrowed" name="shape" src="d10_s0" to="petiolelike" />
+        <character is_modifier="false" modifier="typically" name="orientation" src="d10_s1" value="drooping" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_157_o2043" name="shoot" name_original="shoot" src="d10_s1" type="structure" />
+      <relation from="from_key_V2_157_o2041" id="from_key_V2_157_r464" name="leading" negation="false" src="d10_s1" to="from_key_V2_157_o2043" />
+    </statement>
+    <statement id="from_key_V2_157_d7_s0">
+      <text>Twigs conspicuously roughened by decurrent, spreading or appressed, peglike projections that persist after leaves fall.</text>
+      <biological_entity id="from_key_V2_157_o2030" name="twig" name_original="twigs" src="d7_s0" type="structure">
+        <character constraint="by projections" constraintid="o2031" is_modifier="false" modifier="conspicuously" name="relief_or_texture" src="d7_s0" value="roughened" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_157_o2031" name="projection" name_original="projections" src="d7_s0" type="structure">
+        <character is_modifier="true" name="shape" src="d7_s0" value="decurrent" />
+        <character is_modifier="true" name="orientation" src="d7_s0" value="spreading" />
+        <character is_modifier="true" name="orientation" src="d7_s0" value="appressed" />
+        <character is_modifier="true" name="architecture_or_shape" src="d7_s0" value="peglike" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_157_o2032" name="leaf" name_original="leaves" src="d7_s0" type="structure" />
+      <relation from="from_key_V2_157_o2031" id="from_key_V2_157_r460" name="persist after" negation="false" src="d7_s0" to="from_key_V2_157_o2032" />
+    </statement>
+    <statement id="from_key_V2_157_d6_s0">
+      <text>Leaves neither terete nor scaly-sheathed;</text>
+      <biological_entity id="from_key_V2_157_o2022" name="leaf" name_original="leaves" src="d6_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d6_s0" value="terete" />
+        <character is_modifier="false" name="architecture" src="d6_s0" value="scaly-sheathed" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_157_d6_s1">
+      <text>scales of seed-cones lacking apophyses and umbos;</text>
+      <biological_entity id="from_key_V2_157_o2023" name="scale" name_original="scales" src="d6_s1" type="structure" />
+      <biological_entity id="from_key_V2_157_o2024" name="seed-cone" name_original="seed-cones" src="d6_s1" type="structure">
+        <character is_modifier="false" name="count" src="d6_s1" value="lacking" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_157_o2025" name="apophysis" name_original="apophyses" src="d6_s1" type="structure">
+        <character is_modifier="false" name="count" src="d6_s1" value="lacking" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_157_o2026" name="umbo" name_original="umbos" src="d6_s1" type="structure" />
+      <relation from="from_key_V2_157_o2023" id="from_key_V2_157_r456" name="part_of" negation="false" src="d6_s1" to="from_key_V2_157_o2024" />
+      <relation from="from_key_V2_157_o2023" id="from_key_V2_157_r457" name="part_of" negation="false" src="d6_s1" to="from_key_V2_157_o2025" />
+      <relation from="from_key_V2_157_o2023" id="from_key_V2_157_r458" name="part_of" negation="false" src="d6_s1" to="from_key_V2_157_o2026" />
+    </statement>
+    <statement id="from_key_V2_157_d6_s2">
+      <text>mature trees of various habit, often conic, often more than 15 m;</text>
+      <biological_entity id="from_key_V2_157_o2028" name="habit" name_original="habit" src="d6_s2" type="structure">
+        <character is_modifier="true" name="variability" src="d6_s2" value="various" />
+      </biological_entity>
+      <relation from="from_key_V2_157_o2027" id="from_key_V2_157_r459" name="part_of" negation="false" src="d6_s2" to="from_key_V2_157_o2028" />
+    </statement>
+    <statement id="from_key_V2_157_d6_s3">
+      <text>habitat various, but mostly not of arid areas in w North America.</text>
+      <biological_entity id="from_key_V2_157_o2027" name="tree" name_original="trees" src="d6_s2" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d6_s2" value="mature" />
+        <character is_modifier="false" modifier="often" name="shape" src="d6_s2" value="conic" />
+        <character char_type="range_value" from="15" from_unit="m" modifier="often" name="some_measurement" src="d6_s2" upper_restricted="false" />
+        <character is_modifier="false" name="variability" src="d6_s3" value="various" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_157_o2029" name="area" name_original="areas" src="d6_s3" type="structure" />
+    </statement>
+    <statement id="from_key_V2_157_d2_s0">
+      <text>Leaves borne singly along branches, not scaly-sheathed at base or, if so when young, then terete.</text>
+      <biological_entity id="from_key_V2_157_o1996" name="leaf" name_original="leaves" src="d2_s0" type="structure">
+        <character constraint="at base" constraintid="o1998" is_modifier="false" modifier="not" name="architecture" src="d2_s0" value="scaly-sheathed" />
+        <character is_modifier="false" modifier="when young" name="shape" src="d2_s0" value="terete" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_157_o1997" name="branch" name_original="branches" src="d2_s0" type="structure">
+        <character is_modifier="true" name="arrangement" src="d2_s0" value="singly" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_157_o1998" name="base" name_original="base" src="d2_s0" type="structure" />
+      <relation from="from_key_V2_157_o1996" id="from_key_V2_157_r444" name="borne" negation="false" src="d2_s0" to="from_key_V2_157_o1997" />
+    </statement>
+  </description>
+</bio:treatment>

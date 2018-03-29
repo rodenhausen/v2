@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Agardh" date="unknown" rank="family">ophioglossaceae</taxon_name>
+    <taxon_name authority="Swartz" date="1801" rank="genus">botrychium</taxon_name>
+    <taxon_name authority="W. H. Wagner" date="1992" rank="section">Hiemobotrychium</taxon_name>
+    <place_of_publication>
+      <publication_title>Novon</publication_title>
+      <place_in_publication>2: 267. 1992</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family ophioglossaceae;genus botrychium;section Hiemobotrychium</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Roots 20-30, yellow to brown, 0.6-1 mm diam. 1cm from base.</text>
+      <biological_entity id="o22613" name="root" name_original="roots" src="d0_s0" type="structure">
+        <character char_type="range_value" from="20" name="quantity" src="d0_s0" to="30" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s0" value="yellow" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s0" value="brown" />
+        <character char_type="range_value" from="yellow" name="coloration" src="d0_s0" to="brown" />
+        <character char_type="range_value" from="0.6" from_unit="mm" name="diameter" src="d0_s0" to="1" to_unit="mm" />
+        <character constraint="from base" constraintid="o22614" name="location" src="d0_s0" unit="cm" value="1" />
+      </biological_entity>
+      <biological_entity id="o22614" name="base" name_original="base" src="d0_s0" type="structure" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Plants over 6 cm.</text>
+      <biological_entity id="o22615" name="plant" name_original="plants" src="d0_s1" type="structure" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Common stalk with tracheidal idioblasts.</text>
+      <biological_entity id="o22616" name="stalk" name_original="stalk" src="d0_s2" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s2" value="common" />
+      </biological_entity>
+      <biological_entity id="o22617" name="tracheidal" name_original="tracheidal" src="d0_s2" type="structure" />
+      <biological_entity id="o22618" name="idioblast" name_original="idioblasts" src="d0_s2" type="structure" />
+      <relation from="o22616" id="r5289" name="with" negation="false" src="d0_s2" to="o22617" />
+      <relation from="o22616" id="r5290" name="with" negation="false" src="d0_s2" to="o22618" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Trophophore short-stalked and prostrate, arising from basal portion of common stalk near ground level;</text>
+      <biological_entity id="o22619" name="trophophore" name_original="trophophore" src="d0_s3" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s3" value="short-stalked" />
+        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s3" value="prostrate" />
+        <character constraint="from basal portion" constraintid="o22620" is_modifier="false" name="orientation" src="d0_s3" value="arising" />
+      </biological_entity>
+      <biological_entity constraint="basal" id="o22620" name="portion" name_original="portion" src="d0_s3" type="structure" />
+      <biological_entity id="o22621" name="stalk" name_original="stalk" src="d0_s3" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s3" value="common" />
+      </biological_entity>
+      <biological_entity id="o22622" name="level" name_original="level" src="d0_s3" type="structure" />
+      <relation from="o22620" id="r5291" name="part_of" negation="false" src="d0_s3" to="o22621" />
+      <relation from="o22620" id="r5292" name="near" negation="false" src="d0_s3" to="o22622" />
+    </statement>
+    <statement id="d0_s4">
+      <text>blades usually 2 per plant, appearing in late fall and dying in early spring, deltate, 2-3-pinnate, mostly 5-8 cm wide when mature, herbaceous.</text>
+      <biological_entity id="o22623" name="blade" name_original="blades" src="d0_s4" type="structure">
+        <character constraint="per plant" constraintid="o22624" name="quantity" src="d0_s4" value="2" />
+        <character constraint="in early spring" is_modifier="false" name="condition" notes="" src="d0_s4" value="dying" />
+        <character is_modifier="false" name="shape" src="d0_s4" value="deltate" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s4" value="2-3-pinnate" />
+        <character char_type="range_value" from="5" from_unit="cm" modifier="when mature" name="width" src="d0_s4" to="8" to_unit="cm" />
+        <character is_modifier="false" name="growth_form_or_texture" src="d0_s4" value="herbaceous" />
+      </biological_entity>
+      <biological_entity id="o22624" name="plant" name_original="plant" src="d0_s4" type="structure" />
+    </statement>
+    <statement id="d0_s5">
+      <text>Leaf primordia with scattered hairs, hairs 0.6-1 mm.</text>
+      <biological_entity constraint="leaf" id="o22625" name="primordium" name_original="primordia" src="d0_s5" type="structure" />
+      <biological_entity id="o22626" name="hair" name_original="hairs" src="d0_s5" type="structure">
+        <character is_modifier="true" name="arrangement" src="d0_s5" value="scattered" />
+      </biological_entity>
+      <biological_entity id="o22627" name="hair" name_original="hairs" src="d0_s5" type="structure">
+        <character char_type="range_value" from="0.6" from_unit="mm" name="some_measurement" src="d0_s5" to="1" to_unit="mm" />
+      </biological_entity>
+      <relation from="o22625" id="r5293" name="with" negation="false" src="d0_s5" to="o22626" />
+    </statement>
+    <statement id="d0_s6">
+      <text>Leaf-sheath closed.</text>
+      <biological_entity id="o22628" name="leaf-sheath" name_original="leaf-sheath" src="d0_s6" type="structure">
+        <character is_modifier="false" name="condition" src="d0_s6" value="closed" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Pinna divisions reduced to tip.</text>
+      <biological_entity id="o22630" name="tip" name_original="tip" src="d0_s7" type="structure" />
+    </statement>
+    <statement id="d0_s8">
+      <text>First pinnule on basal pinnae usually borne basiscopically.</text>
+      <biological_entity constraint="pinna" id="o22629" name="division" name_original="divisions" src="d0_s7" type="structure">
+        <character constraint="to tip" constraintid="o22630" is_modifier="false" name="size" src="d0_s7" value="reduced" />
+      </biological_entity>
+      <biological_entity id="o22631" name="pinnule" name_original="pinnule" src="d0_s8" type="structure" />
+      <biological_entity constraint="basal" id="o22632" name="pinna" name_original="pinnae" src="d0_s8" type="structure" />
+      <relation from="o22631" id="r5294" modifier="basiscopically" name="on" negation="false" src="d0_s8" to="o22632" />
+    </statement>
+    <statement id="d0_s9">
+      <text>Sporophores long-stalked, arising from basal portion of common stalk near ground level, commonly absent without primordia;</text>
+      <biological_entity id="o22633" name="sporophore" name_original="sporophores" src="d0_s9" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s9" value="long-stalked" />
+        <character constraint="from basal portion" constraintid="o22634" is_modifier="false" name="orientation" src="d0_s9" value="arising" />
+        <character constraint="without primordia" constraintid="o22637" is_modifier="false" modifier="commonly" name="presence" notes="" src="d0_s9" value="absent" />
+      </biological_entity>
+      <biological_entity constraint="basal" id="o22634" name="portion" name_original="portion" src="d0_s9" type="structure" />
+      <biological_entity id="o22635" name="stalk" name_original="stalk" src="d0_s9" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s9" value="common" />
+      </biological_entity>
+      <biological_entity id="o22636" name="ground" name_original="ground" src="d0_s9" type="structure">
+        <character is_modifier="false" name="position_relational" src="d0_s9" value="level" />
+      </biological_entity>
+      <biological_entity id="o22637" name="primordium" name_original="primordia" src="d0_s9" type="structure" />
+      <relation from="o22634" id="r5295" name="part_of" negation="false" src="d0_s9" to="o22635" />
+      <relation from="o22634" id="r5296" name="near" negation="false" src="d0_s9" to="o22636" />
+    </statement>
+    <statement id="d0_s10">
+      <text>stalks and rachis broadly flattened, fleshy, to 1.4 mm wide.</text>
+    </statement>
+    <statement id="d0_s11">
+      <text>x =45.</text>
+      <biological_entity id="o22638" name="stalk" name_original="stalks" src="d0_s10" type="structure">
+        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s10" value="flattened" />
+        <character is_modifier="false" name="texture" src="d0_s10" value="fleshy" />
+        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d0_s10" to="1.4" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o22639" name="rachis" name_original="rachis" src="d0_s10" type="structure">
+        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s10" value="flattened" />
+        <character is_modifier="false" name="texture" src="d0_s10" value="fleshy" />
+        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d0_s10" to="1.4" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="x" id="o22640" name="chromosome" name_original="" src="d0_s11" type="structure">
+        <character name="quantity" src="d0_s11" value="45" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>endemic to se United States.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="endemic to se United States" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1b</number>
+  <discussion>Tracheidal idioblasts in Botrychium sect. Hiemobotrychium are enormous, elongate, spindle-shaped cells with helical or annular thickenings and are scattered along the vascular strand. They are unique among ferns.</discussion>
+  <discussion>Species 1:</discussion>
+</bio:treatment>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Ching ex Pichi Sermolli" date="unknown" rank="family">thelypteridaceae</taxon_name>
+    <taxon_name authority="Schmidel" date="1763" rank="genus">thelypteris</taxon_name>
+    <taxon_name authority="(Blume) C. F. Reed" date="1968" rank="subgenus">Stegnogramma</taxon_name>
+    <place_of_publication>
+      <publication_title>Phytologia</publication_title>
+      <place_in_publication>17: 254. 1968</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family thelypteridaceae;genus thelypteris;subgenus Stegnogramma</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="Blume" date="unknown" rank="subgenus">Stegnogramma</taxon_name>
+    <place_of_publication>
+      <publication_title>Enum. Pl. Javae,</publication_title>
+      <place_in_publication>172. 1828</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>subgenus Stegnogramma;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Distinguished from other subgenera by the combination of evergreen leaves, broadly adnate, shallowly lobed distal pinnae, elongate exindusiate sori, and sporangial capsules bearing hairs.</text>
+      <biological_entity id="o8461" name="whole_organism" name_original="" src="d0_s0" type="structure">
+        <character constraint="from subgenera" constraintid="o8462" is_modifier="false" name="prominence" src="d0_s0" value="distinguished" />
+        <character is_modifier="false" modifier="broadly" name="fusion" notes="" src="d0_s0" value="adnate" />
+      </biological_entity>
+      <biological_entity id="o8462" name="subgenus" name_original="subgenera" src="d0_s0" type="structure" />
+      <biological_entity id="o8463" name="combination" name_original="combination" src="d0_s0" type="structure" />
+      <biological_entity id="o8464" name="leaf" name_original="leaves" src="d0_s0" type="structure">
+        <character is_modifier="true" name="duration" src="d0_s0" value="evergreen" />
+      </biological_entity>
+      <biological_entity id="o8468" name="hair" name_original="hairs" src="d0_s0" type="structure" />
+      <relation from="o8462" id="r1952" name="by" negation="false" src="d0_s0" to="o8463" />
+      <relation from="o8463" id="r1953" name="part_of" negation="false" src="d0_s0" to="o8464" />
+      <relation from="o8465" id="r1954" name="bearing" negation="false" src="d0_s0" to="o8468" />
+      <relation from="o8466" id="r1955" name="bearing" negation="false" src="d0_s0" to="o8468" />
+      <relation from="o8467" id="r1956" name="bearing" negation="false" src="d0_s0" to="o8468" />
+    </statement>
+    <statement id="d0_s1">
+      <text>x = 36.</text>
+      <biological_entity constraint="distal" id="o8465" name="pinna" name_original="pinnae" src="d0_s0" type="structure">
+        <character is_modifier="true" modifier="shallowly" name="shape" src="d0_s0" value="lobed" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="o8466" name="sorus" name_original="sori" src="d0_s0" type="structure">
+        <character is_modifier="true" modifier="shallowly" name="shape" src="d0_s0" value="lobed" />
+        <character is_modifier="true" name="shape" src="d0_s0" value="elongate" />
+        <character is_modifier="true" name="architecture" src="d0_s0" value="exindusiate" />
+      </biological_entity>
+      <biological_entity constraint="distal sporangial" id="o8467" name="capsule" name_original="capsules" src="d0_s0" type="structure">
+        <character is_modifier="true" modifier="shallowly" name="shape" src="d0_s0" value="lobed" />
+        <character is_modifier="true" name="shape" src="d0_s0" value="elongate" />
+        <character is_modifier="true" name="architecture" src="d0_s0" value="exindusiate" />
+      </biological_entity>
+      <biological_entity constraint="x" id="o8469" name="chromosome" name_original="" src="d0_s1" type="structure">
+        <character name="quantity" src="d0_s1" value="36" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1f</number>
+</bio:treatment>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>Garrie P. Landry</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Horianow" date="unknown" rank="family">zamiaceae</taxon_name>
+    <taxon_hierarchy>family zamiaceae;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants superficially palmlike or fernlike, perennial, evergreen, dioecious.</text>
+      <biological_entity id="o18264" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="false" modifier="superficially" name="growth_form" src="d0_s0" value="palmlike" />
+        <character is_modifier="false" name="shape" src="d0_s0" value="fernlike" />
+        <character is_modifier="false" name="duration" src="d0_s0" value="perennial" />
+        <character is_modifier="false" name="duration" src="d0_s0" value="evergreen" />
+        <character is_modifier="false" name="reproduction" src="d0_s0" value="dioecious" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Stems subterranean with exposed apex or aboveground, fleshy, stout, cylindric, simple or irregularly branched.</text>
+      <biological_entity id="o18265" name="stem" name_original="stems" src="d0_s1" type="structure">
+        <character constraint="with apex" constraintid="o18266" is_modifier="false" name="location" src="d0_s1" value="subterranean" />
+        <character is_modifier="false" name="location" src="d0_s1" value="aboveground" />
+        <character is_modifier="false" name="texture" src="d0_s1" value="fleshy" />
+        <character is_modifier="false" name="fragility_or_size" src="d0_s1" value="stout" />
+        <character is_modifier="false" name="shape" src="d0_s1" value="cylindric" />
+        <character is_modifier="false" name="architecture" src="d0_s1" value="simple" />
+        <character is_modifier="false" modifier="irregularly" name="architecture" src="d0_s1" value="branched" />
+      </biological_entity>
+      <biological_entity id="o18266" name="apex" name_original="apex" src="d0_s1" type="structure">
+        <character is_modifier="true" name="prominence" src="d0_s1" value="exposed" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Roots with small secondary-roots;</text>
+      <biological_entity id="o18267" name="root" name_original="roots" src="d0_s2" type="structure" />
+      <biological_entity id="o18268" name="secondary-root" name_original="secondary-roots" src="d0_s2" type="structure">
+        <character is_modifier="true" name="size" src="d0_s2" value="small" />
+      </biological_entity>
+      <relation from="o18267" id="r4252" name="with" negation="false" src="d0_s2" to="o18268" />
+    </statement>
+    <statement id="d0_s3">
+      <text>corallike roots developing at base of stem at or below soil surface.</text>
+      <biological_entity id="o18269" name="root" name_original="roots" src="d0_s3" type="structure">
+        <character is_modifier="true" name="shape" src="d0_s3" value="coral-like" value_original="corallike" />
+        <character constraint="at base" constraintid="o18270" is_modifier="false" name="development" src="d0_s3" value="developing" />
+      </biological_entity>
+      <biological_entity id="o18270" name="base" name_original="base" src="d0_s3" type="structure" />
+      <biological_entity id="o18271" name="stem" name_original="stem" src="d0_s3" type="structure" />
+      <biological_entity id="o18272" name="surface" name_original="surface" src="d0_s3" type="structure" />
+      <relation from="o18270" id="r4253" name="part_of" negation="false" src="d0_s3" to="o18271" />
+      <relation from="o18270" id="r4254" name="at or below" negation="false" src="d0_s3" to="o18272" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Leaves pinnately compound, spirally clustered at stem apex, leathery, petiole and rachis unarmed [with stout spines];</text>
+      <biological_entity id="o18273" name="leaf" name_original="leaves" src="d0_s4" type="structure">
+        <character is_modifier="false" modifier="pinnately" name="architecture" src="d0_s4" value="compound" />
+        <character constraint="at rachis" constraintid="o18276" is_modifier="false" modifier="spirally" name="arrangement_or_growth_form" src="d0_s4" value="clustered" />
+      </biological_entity>
+      <biological_entity constraint="stem" id="o18274" name="apex" name_original="apex" src="d0_s4" type="structure">
+        <character is_modifier="false" name="texture" src="d0_s4" value="leathery" />
+      </biological_entity>
+      <biological_entity constraint="stem" id="o18275" name="petiole" name_original="petiole" src="d0_s4" type="structure">
+        <character is_modifier="false" name="texture" src="d0_s4" value="leathery" />
+      </biological_entity>
+      <biological_entity id="o18276" name="rachis" name_original="rachis" src="d0_s4" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s4" value="unarmed" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>leaflets entire or dentate [spinose], venation dichotomous [netted];</text>
+      <biological_entity id="o18277" name="leaflet" name_original="leaflets" src="d0_s5" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s5" value="entire" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s5" value="dentate" />
+        <character is_modifier="false" name="architecture" src="d0_s5" value="dichotomous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>resin canals absent.</text>
+      <biological_entity constraint="resin" id="o18278" name="canal" name_original="canals" src="d0_s6" type="structure">
+        <character is_modifier="false" name="presence" src="d0_s6" value="absent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Cones axillary, appearing terminal, short-peduncled [sessile], disintegrating at maturity;</text>
+      <biological_entity id="o18279" name="cone" name_original="cones" src="d0_s7" type="structure">
+        <character is_modifier="false" name="position" src="d0_s7" value="axillary" />
+        <character is_modifier="false" name="position_or_structure_subtype" src="d0_s7" value="terminal" />
+        <character is_modifier="false" name="architecture" src="d0_s7" value="short-peduncled" />
+        <character constraint="at maturity" is_modifier="false" name="dehiscence" src="d0_s7" value="disintegrating" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>sporophylls densely crowded, spirally arranged, often covered with indument.</text>
+      <biological_entity id="o18280" name="sporophyll" name_original="sporophylls" src="d0_s8" type="structure">
+        <character is_modifier="false" modifier="densely" name="arrangement" src="d0_s8" value="crowded" />
+        <character is_modifier="false" modifier="spirally" name="arrangement" src="d0_s8" value="arranged" />
+      </biological_entity>
+      <biological_entity id="o18281" name="indument" name_original="indument" src="d0_s8" type="structure" />
+      <relation from="o18280" id="r4255" modifier="often" name="covered with" negation="false" src="d0_s8" to="o18281" />
+    </statement>
+    <statement id="d0_s9">
+      <text>Pollen cones soon shed, generally smaller and more numerous than seed-cones;</text>
+      <biological_entity constraint="pollen" id="o18282" name="cone" name_original="cones" src="d0_s9" type="structure">
+        <character is_modifier="false" modifier="generally" name="size" src="d0_s9" value="smaller" />
+        <character is_modifier="false" name="quantity" src="d0_s9" value="numerous" />
+      </biological_entity>
+      <biological_entity id="o18283" name="seed-cone" name_original="seed-cones" src="d0_s9" type="structure" />
+    </statement>
+    <statement id="d0_s10">
+      <text>sporophylls bearing many crowded, small microsporangia (pollen-sacs) adaxially;</text>
+      <biological_entity id="o18284" name="sporophyll" name_original="sporophylls" src="d0_s10" type="structure" />
+      <biological_entity id="o18285" name="microsporangium" name_original="microsporangia" src="d0_s10" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s10" value="many" />
+        <character is_modifier="true" name="arrangement" src="d0_s10" value="crowded" />
+        <character is_modifier="true" name="size" src="d0_s10" value="small" />
+      </biological_entity>
+      <relation from="o18284" id="r4256" modifier="adaxially" name="bearing" negation="false" src="d0_s10" to="o18285" />
+    </statement>
+    <statement id="d0_s11">
+      <text>pollen spheric, not winged.</text>
+      <biological_entity id="o18286" name="pollen" name_original="pollen" src="d0_s11" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s11" value="spheric" />
+        <character is_modifier="false" modifier="not" name="architecture" src="d0_s11" value="winged" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s12">
+      <text>Seed-cones persistent for a year or more, 1 (-2) per plant, nearly globose to ovoid, tapering sharply or blunt at apex;</text>
+      <biological_entity id="o18287" name="seed-cone" name_original="seed-cones" src="d0_s12" type="structure">
+        <character constraint="for " constraintid="o18289" is_modifier="false" name="duration" src="d0_s12" value="persistent" />
+        <character is_modifier="false" modifier="nearly" name="shape" notes="[duplicate value]" src="d0_s12" value="globose" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s12" value="ovoid" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s12" value="tapering" />
+        <character is_modifier="false" modifier="sharply" name="shape" notes="[duplicate value]" src="d0_s12" value="or" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s12" value="blunt" />
+        <character char_type="range_value" from="nearly globose" name="shape" notes="" src="d0_s12" to="ovoid tapering sharply or blunt" />
+        <character is_modifier="false" modifier="nearly" name="shape" notes="[duplicate value]" src="d0_s12" value="globose" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s12" value="ovoid" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s12" value="tapering" />
+        <character is_modifier="false" modifier="sharply" name="shape" notes="[duplicate value]" src="d0_s12" value="or" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s12" value="blunt" />
+        <character char_type="range_value" constraint="at apex" constraintid="o18292" from="nearly globose" name="shape" src="d0_s12" to="ovoid tapering sharply or blunt" />
+      </biological_entity>
+      <biological_entity id="o18288" name="year" name_original="year" src="d0_s12" type="structure" />
+      <biological_entity id="o18289" name="plant" name_original="plant" src="d0_s12" type="structure">
+        <character char_type="range_value" from="1" from_inclusive="false" name="atypical_quantity" src="d0_s12" to="2" />
+        <character constraint="for " constraintid="o18291" name="quantity" src="d0_s12" value="1" />
+      </biological_entity>
+      <biological_entity id="o18290" name="year" name_original="year" src="d0_s12" type="structure" />
+      <biological_entity id="o18291" name="plant" name_original="plant" src="d0_s12" type="structure" />
+      <biological_entity id="o18292" name="apex" name_original="apex" src="d0_s12" type="structure" />
+    </statement>
+    <statement id="d0_s13">
+      <text>sporophylls peltate, thickened and laterally expanded distally, bearing 2 (-3) ovules.</text>
+      <biological_entity id="o18293" name="sporophyll" name_original="sporophylls" src="d0_s13" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s13" value="peltate" />
+        <character is_modifier="false" name="size_or_width" src="d0_s13" value="thickened" />
+        <character is_modifier="false" modifier="laterally; distally" name="size" src="d0_s13" value="expanded" />
+      </biological_entity>
+      <biological_entity id="o18294" name="ovule" name_original="ovules" src="d0_s13" type="structure">
+        <character char_type="range_value" from="2" from_inclusive="false" is_modifier="true" name="atypical_quantity" src="d0_s13" to="3" />
+        <character is_modifier="true" name="quantity" src="d0_s13" value="2" />
+      </biological_entity>
+      <relation from="o18293" id="r4257" name="bearing" negation="false" src="d0_s13" to="o18294" />
+    </statement>
+    <statement id="d0_s14">
+      <text>Seeds angular, inner coat hardened, outer coat fleshy, often brightly colored;</text>
+      <biological_entity id="o18295" name="seed" name_original="seeds" src="d0_s14" type="structure">
+        <character is_modifier="false" name="arrangement_or_shape" src="d0_s14" value="angular" />
+      </biological_entity>
+      <biological_entity constraint="inner" id="o18296" name="coat" name_original="coat" src="d0_s14" type="structure">
+        <character is_modifier="false" name="texture" src="d0_s14" value="hardened" />
+      </biological_entity>
+      <biological_entity constraint="outer" id="o18297" name="coat" name_original="coat" src="d0_s14" type="structure">
+        <character is_modifier="false" name="texture" src="d0_s14" value="fleshy" />
+        <character is_modifier="false" modifier="often brightly" name="coloration" src="d0_s14" value="colored" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s15">
+      <text>cotyledons 2.</text>
+      <biological_entity id="o18298" name="cotyledon" name_original="cotyledons" src="d0_s15" type="structure">
+        <character name="quantity" src="d0_s15" value="2" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>primarily tropical to warm temperate regions, North Americ, Central America, South America, Africa, Australia.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="primarily tropical to warm temperate regions" establishment_means="native" />
+        <character name="distribution" value="North Americ" establishment_means="native" />
+        <character name="distribution" value="Central America" establishment_means="native" />
+        <character name="distribution" value="South America" establishment_means="native" />
+        <character name="distribution" value="Africa" establishment_means="native" />
+        <character name="distribution" value="Australia" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <other_name type="common_name">Sago-palm Family</other_name>
+  <discussion>Genera 9, species ca. 100 (1 genus, 1 species in the flora):</discussion>
+  <references>
+    <reference>Candolle, A. L. P. de. 1868. Cycadaceae. In: A. P. de Candolle and A. L. P. de Candolle, eds. 1823--1873. Prodromus Systematis Naturalis Regni Vegetabilis.... Paris etc. Vol. 16, part 2, pp. 522--547.</reference>
+    <reference>Johnson, L. A. S. 1959. The families of cycads and the Zamiaceae of Australia. Proc. Linn. Soc. New South Wales 84: 64--117.</reference>
+    <reference>Schuster, J. 1932. Cycadaceae. In: H. G. A. Engler, ed. 1900--1953. Das Pflanzenreich.... Berlin. Vol. 99[IV,1], pp. l--168.</reference>
+  </references>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_232_d0_s0">
+      <text>Leaves pinnately compound, leaflets linear;</text>
+      <biological_entity id="from_key_V2_232_o4116" name="leaf" name_original="leaves" src="d0_s0" type="structure">
+        <character is_modifier="false" modifier="pinnately" name="architecture" src="d0_s0" value="compound" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_232_d0_s1">
+      <text>dioecious;</text>
+      <biological_entity id="from_key_V2_232_o4117" name="leaflet" name_original="leaflets" src="d0_s0" type="structure">
+        <character is_modifier="false" name="arrangement_or_course_or_shape" src="d0_s0" value="linear" />
+        <character is_modifier="false" name="reproduction" src="d0_s1" value="dioecious" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_232_d0_s2">
+      <text>stem below-ground, or its leaf-bearing apex exposed;</text>
+      <biological_entity id="from_key_V2_232_o4118" name="stem" name_original="stem" src="d0_s2" type="structure">
+        <character is_modifier="false" name="location" src="d0_s2" value="below-ground" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_232_d0_s3">
+      <text>Florida and Georgia.</text>
+      <biological_entity id="from_key_V2_232_o4119" name="apex" name_original="apex" src="d0_s2" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s2" value="leaf-bearing" />
+        <character is_modifier="false" name="prominence" src="d0_s2" value="exposed" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

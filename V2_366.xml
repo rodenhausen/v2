@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">pinus</taxon_name>
+    <taxon_name authority="Parry ex Carrière" date="1855" rank="species">torreyana</taxon_name>
+    <taxon_name authority="J. R. Haller" date="1986" rank="subspecies">insularis</taxon_name>
+    <place_of_publication>
+      <publication_title>Syst. Bot.</publication_title>
+      <place_in_publication>11: 45. 1986</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family pinaceae;genus pinus;species torreyana;subspecies insularis</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Trees 10 (-15) m in native stands;</text>
+      <biological_entity id="o8452" name="tree" name_original="trees" src="d0_s0" type="structure">
+        <character char_type="range_value" from="10" from_inclusive="false" from_unit="m" name="atypical_some_measurement" src="d0_s0" to="15" to_unit="m" />
+        <character constraint="in stands" constraintid="o8453" name="some_measurement" src="d0_s0" unit="m" value="10" />
+      </biological_entity>
+      <biological_entity id="o8453" name="stand" name_original="stands" src="d0_s0" type="structure">
+        <character is_modifier="true" name="condition" src="d0_s0" value="native" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>mature crown of sheltered trees broader than tree height, compact in natural sites.</text>
+      <biological_entity id="o8454" name="crown" name_original="crown" src="d0_s1" type="structure" constraint="tree">
+        <character is_modifier="true" name="life_cycle" src="d0_s1" value="mature" />
+        <character is_modifier="false" name="width" src="d0_s1" value="broader than tree height" />
+        <character constraint="in sites" constraintid="o8456" is_modifier="false" name="architecture_or_arrangement" src="d0_s1" value="compact" />
+      </biological_entity>
+      <biological_entity id="o8455" name="tree" name_original="trees" src="d0_s1" type="structure">
+        <character is_modifier="true" name="position_relational" src="d0_s1" value="sheltered" />
+      </biological_entity>
+      <biological_entity id="o8456" name="site" name_original="sites" src="d0_s1" type="structure">
+        <character is_modifier="true" name="location" src="d0_s1" value="natural" />
+      </biological_entity>
+      <relation from="o8454" id="r1951" name="part_of" negation="false" src="d0_s1" to="o8455" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Seed-cones broader than long, mostly over 13.5cm;</text>
+      <biological_entity id="o8457" name="cone-seed" name_original="seed-cones" src="d0_s2" type="structure">
+        <character is_modifier="false" name="width" src="d0_s2" value="broader than long" />
+        <character modifier="mostly" name="distance" src="d0_s2" unit="cm" value="13.5" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>umbos mostly more than 6mm, whole umbo curved outward.</text>
+      <biological_entity id="o8458" name="umbo" name_original="umbos" src="d0_s3" type="structure">
+        <character char_type="range_value" from="6" from_unit="mm" name="some_measurement" src="d0_s3" upper_restricted="false" />
+      </biological_entity>
+      <biological_entity id="o8459" name="umbo" name_original="umbo" src="d0_s3" type="structure">
+        <character is_modifier="false" name="course" src="d0_s3" value="curved" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Seeds to 14mm wide, averaging over 11mm, brown to dark-brown with darker mottling.</text>
+      <biological_entity id="o8460" name="seed" name_original="seeds" src="d0_s4" type="structure">
+        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d0_s4" to="14" to_unit="mm" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s4" value="brown" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s4" value="dark-brown with darker mottling" />
+        <character char_type="range_value" from="brown" name="coloration" src="d0_s4" to="dark-brown with darker mottling" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Dry fogbelt zone, ravines and low ridges;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="dry fogbelt zone" />
+        <character name="habitat" value="ravines and low ridges ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>130--180m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="180" to_unit="m" from="130" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Calif.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>31b</number>
+  <other_name type="common_name">Island Torrey pine</other_name>
+  <discussion>Pinus torreyana subsp. insularis occurs naturally only on Santa Rosa Island, California.</discussion>
+  <discussion type="conservation">of conservation concern</discussion>
+</bio:treatment>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Agardh" date="unknown" rank="family">ophioglossaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">ophioglossum</taxon_name>
+    <taxon_name authority="Walter" date="1788" rank="species">crotalophoroides</taxon_name>
+    <place_of_publication>
+      <publication_title>Fl. Carol.</publication_title>
+      <place_in_publication>256. 1788</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family ophioglossaceae;genus ophioglossum;species crotalophoroides</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Roots to 20 per plant, blackish, usually extremely narrow, often almost hairlike, less than 0.1 mm diam., proliferations not reported.</text>
+      <biological_entity id="o7514" name="root" name_original="roots" src="d0_s0" type="structure">
+        <character char_type="range_value" constraint="per plant" constraintid="o7515" from="0" name="quantity" src="d0_s0" to="20" />
+        <character is_modifier="false" name="coloration" notes="" src="d0_s0" value="blackish" />
+        <character is_modifier="false" modifier="usually extremely" name="size_or_width" src="d0_s0" value="narrow" />
+        <character is_modifier="false" modifier="often almost" name="shape" src="d0_s0" value="hairlike" />
+        <character char_type="range_value" from="0" from_unit="mm" name="diameter" src="d0_s0" to="0.1" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o7515" name="plant" name_original="plant" src="d0_s0" type="structure" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Stems spheric, 3-12 mm diam., succulent, cormlike with perforation at apex, apical meristem located at bottom of cavity through which leaves emerge at top, leaves 2 per stem.</text>
+      <biological_entity id="o7516" name="stem" name_original="stems" src="d0_s1" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s1" value="spheric" />
+        <character char_type="range_value" from="3" from_unit="mm" name="diameter" src="d0_s1" to="12" to_unit="mm" />
+        <character is_modifier="false" name="texture" src="d0_s1" value="succulent" />
+        <character constraint="with perforation" constraintid="o7517" is_modifier="false" name="architecture_or_shape" src="d0_s1" value="cormlike" />
+      </biological_entity>
+      <biological_entity id="o7517" name="perforation" name_original="perforation" src="d0_s1" type="structure" />
+      <biological_entity id="o7518" name="apex" name_original="apex" src="d0_s1" type="structure" />
+      <biological_entity constraint="apical" id="o7519" name="meristem" name_original="meristem" src="d0_s1" type="structure" />
+      <biological_entity id="o7520" name="bottom" name_original="bottom" src="d0_s1" type="structure" />
+      <biological_entity id="o7521" name="cavity" name_original="cavity" src="d0_s1" type="structure" />
+      <biological_entity id="o7522" name="leaf" name_original="leaves" src="d0_s1" type="structure" />
+      <biological_entity id="o7523" name="top" name_original="top" src="d0_s1" type="structure" />
+      <biological_entity id="o7524" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character constraint="per stem" constraintid="o7525" name="quantity" src="d0_s1" value="2" />
+      </biological_entity>
+      <biological_entity id="o7525" name="stem" name_original="stem" src="d0_s1" type="structure" />
+      <relation from="o7517" id="r1761" name="at" negation="false" src="d0_s1" to="o7518" />
+      <relation from="o7519" id="r1762" name="located at" negation="false" src="d0_s1" to="o7520" />
+      <relation from="o7519" id="r1763" name="bottom of" negation="false" src="d0_s1" to="o7521" />
+      <relation from="o7522" id="r1764" name="emerge at" negation="false" src="d0_s1" to="o7523" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Trophophore stalk to 0.6cm, 0.1-0.2 times as long as trophophore blade.</text>
+      <biological_entity constraint="trophophore" id="o7526" name="stalk" name_original="stalk" src="d0_s2" type="structure">
+        <character constraint="blade" constraintid="o7527" is_modifier="false" name="length" src="d0_s2" value="0.1-0.2 times as long as trophophore blade" />
+      </biological_entity>
+      <biological_entity constraint="trophophore" id="o7527" name="blade" name_original="blade" src="d0_s2" type="structure" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Trophophore blade lying nearly flat on ground, not folded longitudinally, pale green throughout, deltate to cordate, to 3 × 2 cm, contracted abruptly at truncate to cordate base, apex with apiculum.</text>
+      <biological_entity constraint="trophophore" id="o7528" name="blade" name_original="blade" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="not; longitudinally" name="architecture_or_shape" src="d0_s3" value="folded" />
+        <character is_modifier="false" modifier="throughout" name="coloration" src="d0_s3" value="pale green" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="deltate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="cordate" />
+        <character char_type="range_value" from="deltate" name="shape" src="d0_s3" to="cordate" />
+        <character char_type="range_value" from="0" from_unit="cm" name="length" src="d0_s3" to="3" to_unit="cm" />
+        <character char_type="range_value" from="0" from_unit="cm" name="width" src="d0_s3" to="2" to_unit="cm" />
+        <character constraint="at base" constraintid="o7530" is_modifier="false" name="condition_or_size" src="d0_s3" value="contracted" />
+      </biological_entity>
+      <biological_entity id="o7529" name="ground" name_original="ground" src="d0_s3" type="structure">
+        <character is_modifier="true" modifier="nearly" name="prominence_or_shape" src="d0_s3" value="flat" />
+      </biological_entity>
+      <biological_entity id="o7530" name="base" name_original="base" src="d0_s3" type="structure">
+        <character is_modifier="true" name="shape" notes="[duplicate value]" src="d0_s3" value="truncate" />
+        <character is_modifier="true" name="shape" notes="[duplicate value]" src="d0_s3" value="cordate" />
+        <character char_type="range_value" from="truncate" is_modifier="true" name="shape" src="d0_s3" to="cordate" />
+      </biological_entity>
+      <biological_entity id="o7532" name="apiculum" name_original="apiculum" src="d0_s3" type="structure" />
+      <relation from="o7528" id="r1765" name="lying" negation="false" src="d0_s3" to="o7529" />
+      <relation from="o7531" id="r1766" name="with" negation="false" src="d0_s3" to="o7532" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Venation coarsely reticulate with included veinlets.</text>
+      <biological_entity id="o7531" name="apex" name_original="apex" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="coarsely" name="architecture_or_coloration_or_relief" src="d0_s4" value="reticulate" />
+      </biological_entity>
+      <biological_entity id="o7533" name="veinlet" name_original="veinlets" src="d0_s4" type="structure" />
+    </statement>
+    <statement id="d0_s5">
+      <text>Sporophores arising at ground level, 1-5 times as long as trophophore;</text>
+      <biological_entity id="o7535" name="ground" name_original="ground" src="d0_s5" type="structure">
+        <character is_modifier="false" name="position_relational" src="d0_s5" value="level" />
+      </biological_entity>
+      <biological_entity id="o7536" name="trophophore" name_original="trophophore" src="d0_s5" type="structure" />
+    </statement>
+    <statement id="d0_s6">
+      <text>sporangial clusters usually short, less than 1 cm, 2-3 mm wide, with 3-8 pairs of sporangia, apiculum to 1.5 mm.</text>
+      <biological_entity id="o7534" name="sporophore" name_original="sporophores" src="d0_s5" type="structure">
+        <character constraint="at ground" constraintid="o7535" is_modifier="false" name="orientation" src="d0_s5" value="arising" />
+        <character constraint="trophophore" constraintid="o7536" is_modifier="false" name="length" notes="" src="d0_s5" value="1-5 times as long as trophophore" />
+        <character is_modifier="false" name="structure_in_adjective_form" src="d0_s6" value="sporangial" />
+      </biological_entity>
+      <biological_entity id="o7537" name="pair" name_original="pairs" src="d0_s6" type="structure">
+        <character is_modifier="false" name="arrangement" src="d0_s6" value="cluster" value_original="clusters" />
+        <character is_modifier="false" modifier="usually" name="height_or_length_or_size" src="d0_s6" value="short" />
+        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s6" to="1" to_unit="cm" />
+        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s6" to="3" to_unit="mm" />
+        <character char_type="range_value" from="3" is_modifier="true" name="quantity" src="d0_s6" to="8" />
+      </biological_entity>
+      <biological_entity id="o7538" name="sporangium" name_original="sporangia" src="d0_s6" type="structure" />
+      <biological_entity id="o7539" name="apiculum" name_original="apiculum" src="d0_s6" type="structure">
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s6" to="1.5" to_unit="mm" />
+      </biological_entity>
+      <relation from="o7537" id="r1767" name="part_of" negation="false" src="d0_s6" to="o7538" />
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Leaves appearing mainly in late winter and early spring, sometimes also appearing later in season after heavy rains.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="leaves appearing time" value="late winter-early spring" modifier="mainly; , sometimes also appearing later in season after heavy rains" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Second-growth fields, vacant lots, roadside ditches, and lawns;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="second-growth fields" />
+        <character name="habitat" value="vacant lots" />
+        <character name="habitat" value="roadside ditches" />
+        <character name="habitat" value="and lawns ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0-100 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="100" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ala., Ark., Fla., Ga., La., Miss., Mo., N.C., S.C., Tex.; widespread in tropical highlands; Mexico; West Indies; Central America; South America.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
+        <character name="distribution" value="widespread in tropical highlands" establishment_means="native" />
+        <character name="distribution" value="Mexico" establishment_means="native" />
+        <character name="distribution" value="West Indies" establishment_means="native" />
+        <character name="distribution" value="Central America" establishment_means="native" />
+        <character name="distribution" value="South America" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>2</number>
+  <other_name type="common_name">Bulbous adder's-tongue</other_name>
+  <discussion>Ophioglossum crotalophoroides is very remarkable morphologically for its highly modified stem and threadlike nonproliferous roots. The gametophyte is disclike (M.R. Mesler 1973). It is especially common in lawns and cemeteries in the southeastern United States.</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_519_d1_s0">
+      <text>Stems spheric, cormlike, fleshy, 3-12 mm diam.;</text>
+      <biological_entity id="from_key_V2_519_o13979" name="stem" name_original="stems" src="d1_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d1_s0" value="spheric" />
+        <character is_modifier="false" name="architecture_or_shape" src="d1_s0" value="cormlike" />
+        <character is_modifier="false" name="texture" src="d1_s0" value="fleshy" />
+        <character char_type="range_value" from="3" from_unit="mm" name="diameter" src="d1_s0" to="12" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_519_d1_s1">
+      <text>leaves arising from deep cavity in top of stem;</text>
+      <biological_entity id="from_key_V2_519_o13980" name="leaf" name_original="leaves" src="d1_s1" type="structure">
+        <character constraint="from cavity" constraintid="o13981" is_modifier="false" name="orientation" src="d1_s1" value="arising" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_519_o13981" name="cavity" name_original="cavity" src="d1_s1" type="structure">
+        <character is_modifier="true" name="depth" src="d1_s1" value="deep" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_519_o13982" name="top" name_original="top" src="d1_s1" type="structure" />
+      <biological_entity id="from_key_V2_519_o13983" name="stem" name_original="stem" src="d1_s1" type="structure" />
+      <relation from="from_key_V2_519_o13981" id="from_key_V2_519_r3339" name="in" negation="false" src="d1_s1" to="from_key_V2_519_o13982" />
+      <relation from="from_key_V2_519_o13982" id="from_key_V2_519_r3340" name="top of" negation="false" src="d1_s1" to="from_key_V2_519_o13983" />
+    </statement>
+    <statement id="from_key_V2_519_d1_s2">
+      <text>trophophore blades usually lying flat on ground, deltate to cordate.</text>
+      <biological_entity constraint="trophophore" id="from_key_V2_519_o13984" name="blade" name_original="blades" src="d1_s2" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s2" value="deltate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s2" value="cordate" />
+        <character char_type="range_value" from="deltate" name="shape" src="d1_s2" to="cordate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_519_o13985" name="ground" name_original="ground" src="d1_s2" type="structure">
+        <character is_modifier="true" name="prominence_or_shape" src="d1_s2" value="flat" />
+      </biological_entity>
+      <relation from="from_key_V2_519_o13984" id="from_key_V2_519_r3341" name="lying" negation="false" src="d1_s2" to="from_key_V2_519_o13985" />
+    </statement>
+  </description>
+</bio:treatment>

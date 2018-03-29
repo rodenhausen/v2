@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>Cathy A. Paris</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name rank="family" authority="unknown" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">adiantum</taxon_name>
+    <taxon_name rank="unranked" authority="unknown" date="unknown">adiantum</taxon_name>
+    <taxon_name rank="unranked" authority="unknown" date="unknown">capillus</taxon_name>
+  </taxon_identification>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_455_d3_s0">
+      <text>Dark color of stalks extending into base of ultimate segments.</text>
+      <biological_entity id="from_key_V2_455_o11377" name="whole_organism" name_original="" src="d3_s0" type="structure">
+        <character constraint="of stalks" constraintid="o11378" is_modifier="false" name="coloration" src="d3_s0" value="dark color" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_455_o11378" name="stalk" name_original="stalks" src="d3_s0" type="structure" />
+      <biological_entity id="from_key_V2_455_o11379" name="base" name_original="base" src="d3_s0" type="structure" />
+      <biological_entity constraint="ultimate" id="from_key_V2_455_o11380" name="segment" name_original="segments" src="d3_s0" type="structure" />
+      <relation from="from_key_V2_455_o11378" id="from_key_V2_455_r2625" name="extending into" negation="false" src="d3_s0" to="from_key_V2_455_o11379" />
+      <relation from="from_key_V2_455_o11378" id="from_key_V2_455_r2626" name="extending into" negation="false" src="d3_s0" to="from_key_V2_455_o11380" />
+    </statement>
+    <statement id="from_key_V2_455_d1_s0">
+      <text>Segments at middle of penultimate divisions of blades ± fan-shaped, rhombic, transversely oblong, or nearly round, about as long as broad.</text>
+      <biological_entity id="from_key_V2_455_o11369" name="segment" name_original="segments" src="d1_s0" type="structure">
+        <character is_modifier="false" name="shape" notes="alterIDs:o11370" src="d1_s0" value="rhombic" />
+        <character is_modifier="false" modifier="transversely" name="shape" src="d1_s0" value="oblong" />
+        <character is_modifier="false" modifier="nearly" name="shape" src="d1_s0" value="round" />
+        <character is_modifier="false" modifier="transversely" name="shape" src="d1_s0" value="oblong" />
+        <character is_modifier="false" modifier="nearly" name="shape" src="d1_s0" value="round" />
+        <character is_modifier="false" name="width" src="d1_s0" value="broad" />
+      </biological_entity>
+      <biological_entity constraint="middle" id="from_key_V2_455_o11370" name="segment" name_original="segments" src="d1_s0" type="structure">
+        <character is_modifier="false" modifier="more or less" name="shape" src="d1_s0" value="fan-shaped" />
+      </biological_entity>
+      <biological_entity constraint="penultimate" id="from_key_V2_455_o11371" name="division" name_original="divisions" src="d1_s0" type="structure" />
+      <biological_entity id="from_key_V2_455_o11372" name="blade" name_original="blades" src="d1_s0" type="structure" />
+      <relation from="from_key_V2_455_o11369" id="from_key_V2_455_r2619" name="at" negation="false" src="d1_s0" to="from_key_V2_455_o11370" />
+      <relation from="from_key_V2_455_o11370" id="from_key_V2_455_r2620" name="part_of" negation="false" src="d1_s0" to="from_key_V2_455_o11371" />
+      <relation from="from_key_V2_455_o11370" id="from_key_V2_455_r2621" name="part_of" negation="false" src="d1_s0" to="from_key_V2_455_o11372" />
+    </statement>
+  </description>
+</bio:treatment>

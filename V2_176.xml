@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Gray" date="unknown" rank="family">taxaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">Taxus</taxon_name>
+    <place_of_publication>
+      <publication_title>Sp. Pl.</publication_title>
+      <place_in_publication>2: 1040. 1753; Gen. Pl. ed. 5, 462, 1754</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family taxaceae;genus Taxus</taxon_hierarchy>
+    <other_info_on_name type="etymology">[Latin name for yew]</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Trees or shrubs dioecious or monoecious.</text>
+      <biological_entity id="o2634" name="tree" name_original="trees" src="d0_s0" type="structure">
+        <character is_modifier="false" name="reproduction" src="d0_s0" value="dioecious" />
+        <character is_modifier="false" name="reproduction" src="d0_s0" value="monoecious" />
+      </biological_entity>
+      <biological_entity id="o2635" name="shrub" name_original="shrubs" src="d0_s0" type="structure">
+        <character is_modifier="false" name="reproduction" src="d0_s0" value="dioecious" />
+        <character is_modifier="false" name="reproduction" src="d0_s0" value="monoecious" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Bark reddish-brown, scaly.</text>
+      <biological_entity id="o2636" name="bark" name_original="bark" src="d0_s1" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s1" value="reddish-brown" />
+        <character is_modifier="false" name="architecture_or_pubescence" src="d0_s1" value="scaly" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Branches ascending to drooping;</text>
+      <biological_entity id="o2637" name="branch" name_original="branches" src="d0_s2" type="structure">
+        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s2" value="ascending" />
+        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s2" value="drooping" />
+        <character char_type="range_value" from="ascending" name="orientation" src="d0_s2" to="drooping" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>twigs irregularly alternate, green or yellow-green when young, reddish-brown in age.</text>
+      <biological_entity id="o2638" name="twig" name_original="twigs" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="irregularly" name="arrangement" src="d0_s3" value="alternate" />
+        <character is_modifier="false" modifier="when young" name="coloration" src="d0_s3" value="green" />
+        <character is_modifier="false" modifier="when young" name="coloration" src="d0_s3" value="yellow-green" />
+        <character constraint="in age" constraintid="o2639" is_modifier="false" name="coloration" src="d0_s3" value="reddish-brown" />
+      </biological_entity>
+      <biological_entity id="o2639" name="age" name_original="age" src="d0_s3" type="structure" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Leaves often appearing 2-ranked, flexible;</text>
+      <biological_entity id="o2640" name="leaf" name_original="leaves" src="d0_s4" type="structure">
+        <character is_modifier="false" name="arrangement" src="d0_s4" value="2-ranked" />
+        <character is_modifier="false" name="fragility" src="d0_s4" value="pliable" value_original="flexible" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>stomates abaxial, in 2 broad, pale bands;</text>
+      <biological_entity id="o2641" name="stomate" name_original="stomates" src="d0_s5" type="structure">
+        <character is_modifier="false" name="position" src="d0_s5" value="abaxial" />
+      </biological_entity>
+      <biological_entity id="o2642" name="band" name_original="bands" src="d0_s5" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s5" value="2" />
+        <character is_modifier="true" name="width" src="d0_s5" value="broad" />
+        <character is_modifier="true" name="coloration" src="d0_s5" value="pale" />
+      </biological_entity>
+      <relation from="o2641" id="r622" name="in" negation="false" src="d0_s5" to="o2642" />
+    </statement>
+    <statement id="d0_s6">
+      <text>apex soft-pointed, mucronate, not sharp to touch;</text>
+      <biological_entity id="o2643" name="apex" name_original="apex" src="d0_s6" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s6" value="soft-pointed" />
+        <character is_modifier="false" name="shape" src="d0_s6" value="mucronate" />
+        <character constraint="to touch" constraintid="o2644" is_modifier="false" modifier="not" name="shape" src="d0_s6" value="sharp" />
+      </biological_entity>
+      <biological_entity id="o2644" name="touch" name_original="touch" src="d0_s6" type="structure" />
+    </statement>
+    <statement id="d0_s7">
+      <text>resin canal absent.</text>
+      <biological_entity constraint="resin" id="o2645" name="canal" name_original="canal" src="d0_s7" type="structure">
+        <character is_modifier="false" name="presence" src="d0_s7" value="absent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Pollen cones globose, yellowish, with 4-16 peltate sporophylls, each bearing 2-9 sporangia.</text>
+      <biological_entity constraint="pollen" id="o2646" name="cone" name_original="cones" src="d0_s8" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s8" value="globose" />
+        <character is_modifier="false" name="coloration" src="d0_s8" value="yellowish" />
+      </biological_entity>
+      <biological_entity id="o2647" name="sporophyll" name_original="sporophylls" src="d0_s8" type="structure">
+        <character char_type="range_value" from="4" is_modifier="true" name="quantity" src="d0_s8" to="16" />
+        <character is_modifier="true" name="architecture" src="d0_s8" value="peltate" />
+      </biological_entity>
+      <biological_entity id="o2648" name="sporangium" name_original="sporangia" src="d0_s8" type="structure">
+        <character char_type="range_value" from="2" is_modifier="true" name="quantity" src="d0_s8" to="9" />
+      </biological_entity>
+      <relation from="o2646" id="r623" name="with" negation="false" src="d0_s8" to="o2647" />
+      <relation from="o2646" id="r624" name="bearing" negation="false" src="d0_s8" to="o2648" />
+    </statement>
+    <statement id="d0_s9">
+      <text>Ovule 1.</text>
+      <biological_entity id="o2649" name="ovule" name_original="ovule" src="d0_s9" type="structure">
+        <character name="quantity" src="d0_s9" value="1" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>Seed maturing in 1 season, brown;</text>
+      <biological_entity id="o2650" name="seed" name_original="seed" src="d0_s10" type="structure">
+        <character constraint="in season" constraintid="o2651" is_modifier="false" name="life_cycle" src="d0_s10" value="maturing" />
+        <character is_modifier="false" name="coloration" notes="" src="d0_s10" value="brown" />
+      </biological_entity>
+      <biological_entity id="o2651" name="season" name_original="season" src="d0_s10" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s10" value="1" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>aril scarlet to orange-scarlet, soft, mucilaginous, thick, cupshaped, open at apex, exposing hard seed-coat;</text>
+      <biological_entity id="o2652" name="aril" name_original="aril" src="d0_s11" type="structure">
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s11" value="scarlet" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s11" value="orange-scarlet" />
+        <character char_type="range_value" from="scarlet" name="coloration" src="d0_s11" to="orange-scarlet" />
+        <character is_modifier="false" name="pubescence_or_texture" src="d0_s11" value="soft" />
+        <character is_modifier="false" name="coating" src="d0_s11" value="mucilaginous" />
+        <character is_modifier="false" name="width" src="d0_s11" value="thick" />
+        <character is_modifier="false" name="shape" src="d0_s11" value="cup-shaped" value_original="cupshaped" />
+        <character constraint="at apex" constraintid="o2653" is_modifier="false" name="architecture" src="d0_s11" value="open" />
+      </biological_entity>
+      <biological_entity id="o2653" name="apex" name_original="apex" src="d0_s11" type="structure" />
+      <biological_entity id="o2654" name="seed-coat" name_original="seed-coat" src="d0_s11" type="structure">
+        <character is_modifier="true" name="texture" src="d0_s11" value="hard" />
+      </biological_entity>
+      <relation from="o2652" id="r625" name="exposing" negation="false" src="d0_s11" to="o2654" />
+    </statement>
+    <statement id="d0_s12">
+      <text>albumen uniform.</text>
+    </statement>
+    <statement id="d0_s13">
+      <text>x = 12.</text>
+      <biological_entity id="o2655" name="albumen" name_original="albumen" src="d0_s12" type="structure">
+        <character is_modifier="false" name="variability" src="d0_s12" value="uniform" />
+      </biological_entity>
+      <biological_entity constraint="x" id="o2656" name="chromosome" name_original="" src="d0_s13" type="structure">
+        <character name="quantity" src="d0_s13" value="12" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>mainly north temperate regions.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="mainly north temperate regions" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <other_name type="common_name">Yew</other_name>
+  <discussion>The species of Taxus , discouragingly similar, are more geographically than morphologically separable; they were all treated by R. K. F. Pilger (1903) as subspecies of T . baccata Linnaeus. Detailed study of the genus (not neglecting the cultivated representatives), including extensive fieldwork, is much needed and long overdue.</discussion>
+  <discussion>The foliage, bark, and seeds---but not the fleshy red aril---of most Taxus species are toxic due to the presence of taxine (M. R. Cooper and A. W. Johnson 1984; J. M. Kingsbury 1964); this alkaloid, however, was not found in T . brevifolia (I. Jones and E. V. Lynn 1933). Two Eurasian species, T . baccata Linnaeus (English yew) and T . cuspidata Siebold &amp; Zuccarini (Japanese yew), are best known and documented for toxicity. Cattle have been poisoned by T . canadensis planted in British Columbia, but toxicity of T . brevifolia has not been conclusively recorded (J. M. Kingsbury 1964). Although horses, cattle, and humans have been poisoned by ingesting yew leaves and seeds, the fresh foliage of T . canadensis is browsed by deer, and that of T . brevifolia by moose.</discussion>
+  <discussion>The only other yew native to the New World is Taxus globosa Schlechtendahl of Mexico and Honduras. The Old World T . baccata Linnaeus and T . cuspidata Siebold &amp; Zuccarini---and T . × media Rehder, the alleged hybrid between these two---are common in cultivation in the flora area.</discussion>
+  <discussion>Although no extralimital species of Taxus is naturalized in North America, spontaneous, immature (sapling) exotic yews have been noted in a very few localities in the northeastern United States within the range of Taxus canadensis . Apparently originating from seeds dispersed (probably by birds) from cultivated yews, these plants differ from T . canadensis in having typically erect (rather than sprawling) stems. Immature volunteer yews are, with the use of macromorphological characters and with our present knowledge, probably unidentifiable to species.</discussion>
+  <discussion>Although species of Taxus are much cultivated in the Pacific Northwest, spontaneous yews have not been recorded there away from cultivated individuals, in the vicinity of which (or under which) they may reseed. Should such volunteers be found, the shape of their leaf epidermal cells as viewed in cross section---wider than tall (rather than taller than wide) or ± isodiametric---may be used to distinguish them from T . brevifolia .</discussion>
+  <discussion>Anatomical features of the leaves of yews, helpful in identification of the species, have been contributed by R. W. Spjut (unpublished data).</discussion>
+  <discussion>Species 6--10 (3 in the flora):</discussion>
+  <references>
+    <reference>Chadwick, L. C. and R. A. Keen. 1976. A study of the genus Taxus . Ohio Agric. Exp. Sta. Bull. 1086.</reference>
+    <reference>Keen, R. A. 1956. A Study of the Genus Taxus . Ph.D. thesis. Ohio State University.</reference>
+    <reference>Kingsbury, J. M. 1964. Poisonous Plants of the United States and Canada. Englewood Cliffs.</reference>
+    <reference>Cooper, M. R. and A. W. Johnson. 1984. Poisonous Plants in Britain and Their Effects on Animals and Man. London. [Minist. Agric., Fisheries &amp; Food Ref. Book 161.]</reference>
+    <reference>Jones, I. and E. V. Lynn. 1933. Differences in species of Taxus . J. Amer. Pharm. Assoc. 22: 528--531.</reference>
+    <reference>Keen, R. A. and L. C. Chadwick. 1955. Sex reversal in Taxus . Amer. Nurseryman 100(6): 13--14.</reference>
+  </references>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d1_s0">
+          <text>Shrubs to 2 m, usually monoecious, low, sprawling, typically without a central stem;</text>
+          <biological_entity id="o2657" name="shrub" name_original="shrubs" src="d1_s0" type="structure">
+            <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d1_s0" to="2" to_unit="m" />
+            <character is_modifier="false" modifier="usually" name="reproduction" src="d1_s0" value="monoecious" />
+            <character is_modifier="false" name="position" src="d1_s0" value="low" />
+            <character is_modifier="false" name="growth_form_or_orientation" src="d1_s0" value="sprawling" />
+          </biological_entity>
+          <biological_entity constraint="central" id="o2658" name="stem" name_original="stem" src="d1_s0" type="structure" />
+          <relation from="o2657" id="r626" modifier="typically" name="without" negation="false" src="d1_s0" to="o2658" />
+        </statement>
+        <statement id="d1_s1">
+          <text>abaxial leaf surface mostly without cuticular papillae along stomatal bands;</text>
+          <biological_entity id="o2660" name="cuticular" name_original="cuticular" src="d1_s1" type="structure" />
+          <biological_entity id="o2661" name="papilla" name_original="papillae" src="d1_s1" type="structure" />
+          <biological_entity id="o2662" name="stomatal" name_original="stomatal" src="d1_s1" type="structure" />
+          <biological_entity id="o2663" name="band" name_original="bands" src="d1_s1" type="structure" />
+          <relation from="o2659" id="r627" name="without" negation="false" src="d1_s1" to="o2660" />
+          <relation from="o2659" id="r628" name="without" negation="false" src="d1_s1" to="o2661" />
+          <relation from="o2660" id="r629" name="along" negation="false" src="d1_s1" to="o2662" />
+          <relation from="o2660" id="r630" name="along" negation="false" src="d1_s1" to="o2663" />
+          <relation from="o2661" id="r631" name="along" negation="false" src="d1_s1" to="o2662" />
+          <relation from="o2661" id="r632" name="along" negation="false" src="d1_s1" to="o2663" />
+        </statement>
+        <statement id="d1_s2">
+          <text>e North America (Manitoba to Newfoundland, south to Missouri, Kentucky, and Virginia).</text>
+          <biological_entity constraint="leaf" id="o2659" name="surface" name_original="surface" src="d1_s1" type="structure" constraint_original="abaxial leaf">
+            <character is_modifier="false" name="geographical_terms" src="d1_s2" value="north" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>2 Taxus canadensis</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d2_s0">
+          <text>Shrubs or trees to 15 (-25) m, dioecious, usually upright, typically with a central stem;</text>
+          <biological_entity id="o2664" name="shrub" name_original="shrubs" src="d2_s0" type="structure">
+            <character char_type="range_value" from="15" from_inclusive="false" from_unit="m" name="atypical_some_measurement" src="d2_s0" to="25" to_unit="m" />
+            <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d2_s0" to="15" to_unit="m" />
+            <character is_modifier="false" name="reproduction" src="d2_s0" value="dioecious" />
+            <character is_modifier="false" modifier="usually" name="orientation" src="d2_s0" value="upright" />
+          </biological_entity>
+          <biological_entity id="o2665" name="tree" name_original="trees" src="d2_s0" type="structure">
+            <character char_type="range_value" from="15" from_inclusive="false" from_unit="m" name="atypical_some_measurement" src="d2_s0" to="25" to_unit="m" />
+            <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d2_s0" to="15" to_unit="m" />
+            <character is_modifier="false" name="reproduction" src="d2_s0" value="dioecious" />
+            <character is_modifier="false" modifier="usually" name="orientation" src="d2_s0" value="upright" />
+          </biological_entity>
+          <biological_entity constraint="central" id="o2666" name="stem" name_original="stem" src="d2_s0" type="structure" />
+          <relation from="o2664" id="r633" modifier="typically" name="with" negation="false" src="d2_s0" to="o2666" />
+          <relation from="o2665" id="r634" modifier="typically" name="with" negation="false" src="d2_s0" to="o2666" />
+        </statement>
+        <statement id="d2_s1">
+          <text>abaxial leaf surface with cuticular papillae along stomatal bands;</text>
+          <biological_entity id="o2668" name="cuticular" name_original="cuticular" src="d2_s1" type="structure" />
+          <biological_entity id="o2669" name="papilla" name_original="papillae" src="d2_s1" type="structure" />
+          <biological_entity id="o2670" name="stomatal" name_original="stomatal" src="d2_s1" type="structure" />
+          <biological_entity id="o2671" name="band" name_original="bands" src="d2_s1" type="structure" />
+          <relation from="o2667" id="r635" name="with" negation="false" src="d2_s1" to="o2668" />
+          <relation from="o2667" id="r636" name="with" negation="false" src="d2_s1" to="o2669" />
+          <relation from="o2668" id="r637" name="along" negation="false" src="d2_s1" to="o2670" />
+          <relation from="o2668" id="r638" name="along" negation="false" src="d2_s1" to="o2671" />
+          <relation from="o2669" id="r639" name="along" negation="false" src="d2_s1" to="o2670" />
+          <relation from="o2669" id="r640" name="along" negation="false" src="d2_s1" to="o2671" />
+        </statement>
+        <statement id="d2_s2">
+          <text>w North America or Florida.</text>
+          <biological_entity constraint="leaf" id="o2667" name="surface" name_original="surface" src="d2_s1" type="structure" constraint_original="abaxial leaf" />
+        </statement>
+      </description>
+      <next_statement_id>2</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d3_s0">
+          <text>Shrubs or small trees to 15 (-25) m, trunk diam. to 6 (-12) dm;</text>
+          <biological_entity id="o2672" name="shrub" name_original="shrubs" src="d3_s0" type="structure">
+            <character char_type="range_value" from="15" from_inclusive="false" from_unit="m" name="atypical_some_measurement" src="d3_s0" to="25" to_unit="m" />
+            <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d3_s0" to="15" to_unit="m" />
+          </biological_entity>
+          <biological_entity id="o2673" name="tree" name_original="trees" src="d3_s0" type="structure">
+            <character is_modifier="true" name="size" src="d3_s0" value="small" />
+            <character char_type="range_value" from="15" from_inclusive="false" from_unit="m" name="atypical_some_measurement" src="d3_s0" to="25" to_unit="m" />
+            <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d3_s0" to="15" to_unit="m" />
+          </biological_entity>
+          <biological_entity id="o2674" name="trunk" name_original="trunk" src="d3_s0" type="structure">
+            <character char_type="range_value" from="6" from_inclusive="false" from_unit="dm" name="atypical_diam" src="d3_s0" to="12" to_unit="dm" />
+            <character char_type="range_value" from="0" from_unit="dm" name="diam" src="d3_s0" to="6" to_unit="dm" />
+          </biological_entity>
+        </statement>
+        <statement id="d3_s1">
+          <text>leaves yellow-green adaxially, epidermal-cells as viewed in cross-section of leaf mostly taller than wide;</text>
+          <biological_entity id="o2675" name="leaf" name_original="leaves" src="d3_s1" type="structure">
+            <character is_modifier="false" modifier="adaxially" name="coloration" src="d3_s1" value="yellow-green" />
+          </biological_entity>
+          <biological_entity id="o2677" name="cross-section" name_original="cross-section" src="d3_s1" type="structure" />
+          <biological_entity id="o2678" name="leaf" name_original="leaf" src="d3_s1" type="structure" />
+          <relation from="o2676" id="r641" modifier="as" name="viewed in" negation="false" src="d3_s1" to="o2677" />
+          <relation from="o2676" id="r642" modifier="as" name="part_of" negation="false" src="d3_s1" to="o2678" />
+        </statement>
+        <statement id="d3_s2">
+          <text>western North America (Alaska south to Montana and California).</text>
+          <biological_entity id="o2676" name="epidermal-cell" name_original="epidermal-cells" src="d3_s1" type="structure" constraint="leaf">
+            <character is_modifier="false" name="height" src="d3_s1" value="mostly taller than wide" />
+            <character is_modifier="false" name="geographical_terms" src="d3_s2" value="western" />
+            <character is_modifier="false" name="geographical_terms" src="d3_s2" value="north" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>1 Taxus brevifolia</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d4_s0">
+          <text>Shrubs or small trees to 6 (-10) m, trunk diam. to 3.8 dm;</text>
+          <biological_entity id="o2679" name="shrub" name_original="shrubs" src="d4_s0" type="structure">
+            <character char_type="range_value" from="6" from_inclusive="false" from_unit="m" name="atypical_some_measurement" src="d4_s0" to="10" to_unit="m" />
+            <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d4_s0" to="6" to_unit="m" />
+          </biological_entity>
+          <biological_entity id="o2680" name="tree" name_original="trees" src="d4_s0" type="structure">
+            <character is_modifier="true" name="size" src="d4_s0" value="small" />
+            <character char_type="range_value" from="6" from_inclusive="false" from_unit="m" name="atypical_some_measurement" src="d4_s0" to="10" to_unit="m" />
+            <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d4_s0" to="6" to_unit="m" />
+          </biological_entity>
+          <biological_entity id="o2681" name="trunk" name_original="trunk" src="d4_s0" type="structure">
+            <character char_type="range_value" from="0" from_unit="dm" name="diam" src="d4_s0" to="3.8" to_unit="dm" />
+          </biological_entity>
+        </statement>
+        <statement id="d4_s1">
+          <text>leaves dark green adaxially, epidermal-cells as viewed in cross-section of leaf wider than tall or ± isodiametric;</text>
+          <biological_entity id="o2682" name="leaf" name_original="leaves" src="d4_s1" type="structure">
+            <character is_modifier="false" modifier="adaxially" name="coloration" src="d4_s1" value="dark green" />
+          </biological_entity>
+          <biological_entity id="o2684" name="cross-section" name_original="cross-section" src="d4_s1" type="structure" />
+          <biological_entity id="o2685" name="leaf" name_original="leaf" src="d4_s1" type="structure" />
+          <relation from="o2683" id="r643" modifier="as" name="viewed in" negation="false" src="d4_s1" to="o2684" />
+          <relation from="o2683" id="r644" modifier="as" name="part_of" negation="false" src="d4_s1" to="o2685" />
+        </statement>
+        <statement id="d4_s2">
+          <text>northwestern Florida.</text>
+          <biological_entity id="o2683" name="epidermal-cell" name_original="epidermal-cells" src="d4_s1" type="structure" constraint="leaf">
+            <character is_modifier="false" name="width" src="d4_s1" value="wider than tall" />
+            <character is_modifier="false" modifier="more or less" name="architecture_or_shape" src="d4_s1" value="isodiametric" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>3 Taxus floridana</determination>
+    </key_statement>
+  </key>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_504_d1_s0">
+      <text>Leaves flexible, without resin canal, apex mucronate, soft-pointed, not sharp to touch;</text>
+      <biological_entity id="from_key_V2_504_o12984" name="leaf" name_original="leaves" src="d1_s0" type="structure">
+        <character is_modifier="false" name="fragility" src="d1_s0" value="flexible" />
+      </biological_entity>
+      <biological_entity constraint="resin" id="from_key_V2_504_o12985" name="canal" name_original="canal" src="d1_s0" type="structure" />
+      <biological_entity id="from_key_V2_504_o12986" name="apex" name_original="apex" src="d1_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d1_s0" value="mucronate" />
+        <character is_modifier="false" name="shape" src="d1_s0" value="soft-pointed" />
+        <character constraint="to touch" constraintid="o12987" is_modifier="false" modifier="not" name="shape" src="d1_s0" value="sharp" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_504_o12987" name="touch" name_original="touch" src="d1_s0" type="structure" />
+      <relation from="from_key_V2_504_o12984" id="from_key_V2_504_r2997" name="without" negation="false" src="d1_s0" to="from_key_V2_504_o12985" />
+    </statement>
+    <statement id="from_key_V2_504_d1_s1">
+      <text>aril scarlet to orange-scarlet, soft, mucilaginous, thick, cupshaped, open at apex, exposing hard seed-coat.</text>
+      <biological_entity id="from_key_V2_504_o12988" name="aril" name_original="aril" src="d1_s1" type="structure">
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d1_s1" value="scarlet" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d1_s1" value="orange-scarlet" />
+        <character char_type="range_value" from="scarlet" name="coloration" src="d1_s1" to="orange-scarlet" />
+        <character is_modifier="false" name="pubescence_or_texture" src="d1_s1" value="soft" />
+        <character is_modifier="false" name="coating" src="d1_s1" value="mucilaginous" />
+        <character is_modifier="false" name="width" src="d1_s1" value="thick" />
+        <character is_modifier="false" name="shape" src="d1_s1" value="cupshaped" />
+        <character constraint="at apex" constraintid="o12989" is_modifier="false" name="architecture" src="d1_s1" value="open" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_504_o12989" name="apex" name_original="apex" src="d1_s1" type="structure" />
+      <biological_entity id="from_key_V2_504_o12990" name="seed-coat" name_original="seed-coat" src="d1_s1" type="structure">
+        <character is_modifier="true" name="texture" src="d1_s1" value="hard" />
+      </biological_entity>
+      <relation from="from_key_V2_504_o12988" id="from_key_V2_504_r2998" name="exposing" negation="false" src="d1_s1" to="from_key_V2_504_o12990" />
+    </statement>
+  </description>
+</bio:treatment>

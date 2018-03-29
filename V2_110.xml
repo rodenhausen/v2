@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Willkomm in Willkomm &amp; Lange" date="unknown" rank="family">selaginellaceae</taxon_name>
+    <taxon_name authority="Palisot de Beauvois" date="1805" rank="genus">selaginella</taxon_name>
+    <taxon_name authority="Jermy" date="1986" rank="subgenus">tetragonostachys</taxon_name>
+    <taxon_name authority="D. C. Eaton ex L. Underwood" date="1898" rank="species">mutica</taxon_name>
+    <place_of_publication>
+      <publication_title>Bull. Torrey Bot. Club</publication_title>
+      <place_in_publication>25: 128. 1898</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family selaginellaceae;genus selaginella;subgenus tetragonostachys;species mutica</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants on rock or terrestrial, forming loose mats.</text>
+      <biological_entity id="o306" name="plant" name_original="plants" src="d0_s0" type="structure" />
+      <biological_entity id="o307" name="mat" name_original="mats" src="d0_s0" type="structure">
+        <character is_modifier="true" name="architecture_or_fragility" src="d0_s0" value="loose" />
+      </biological_entity>
+      <relation from="o306" id="r72" name="forming" negation="false" src="d0_s0" to="o307" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Stems radially symmetric, long to short-creeping, not readily fragmenting, ± regularly forked, without budlike arrested branches, tips straight;</text>
+      <biological_entity id="o308" name="stem" name_original="stems" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="radially" name="architecture_or_shape" src="d0_s1" value="symmetric" />
+        <character is_modifier="false" name="length_or_size" src="d0_s1" value="long" />
+        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="short-creeping" />
+        <character is_modifier="false" modifier="not readily; readily; more or less regularly" name="shape" src="d0_s1" value="forked" />
+      </biological_entity>
+      <biological_entity id="o309" name="branch" name_original="branches" src="d0_s1" type="structure">
+        <character is_modifier="true" name="architecture_or_shape" src="d0_s1" value="budlike" />
+      </biological_entity>
+      <biological_entity id="o310" name="tip" name_original="tips" src="d0_s1" type="structure">
+        <character is_modifier="false" name="course" src="d0_s1" value="straight" />
+      </biological_entity>
+      <relation from="o308" id="r73" name="without" negation="false" src="d0_s1" to="o309" />
+    </statement>
+    <statement id="d0_s2">
+      <text>main-stem indeterminate, lateral branches determinate, 1-2-forked.</text>
+      <biological_entity id="o311" name="main-stem" name_original="main-stem" src="d0_s2" type="structure">
+        <character is_modifier="false" name="development" src="d0_s2" value="indeterminate" />
+      </biological_entity>
+      <biological_entity constraint="lateral" id="o312" name="branch" name_original="branches" src="d0_s2" type="structure">
+        <character is_modifier="false" name="development" src="d0_s2" value="determinate" />
+        <character is_modifier="false" name="shape" src="d0_s2" value="1-2-forked" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Rhizophores borne on upperside of stems, throughout stem length, 0.13-0.23 mm diam.</text>
+      <biological_entity id="o313" name="rhizophore" name_original="rhizophores" src="d0_s3" type="structure">
+        <character char_type="range_value" from="0.13" from_unit="mm" name="diameter" notes="" src="d0_s3" to="0.23" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o314" name="upperside" name_original="upperside" src="d0_s3" type="structure" />
+      <biological_entity id="o315" name="stem" name_original="stems" src="d0_s3" type="structure" />
+      <biological_entity id="o316" name="stem" name_original="stem" src="d0_s3" type="structure" />
+      <relation from="o313" id="r74" name="borne on" negation="false" src="d0_s3" to="o314" />
+      <relation from="o313" id="r75" name="borne on" negation="false" src="d0_s3" to="o315" />
+      <relation from="o313" id="r76" name="throughout" negation="false" src="d0_s3" to="o316" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Leaves monomorphic, in ± alternate pseudowhorls of 3, tightly appressed, ascending, green, lanceolate to linear-lanceolate or lanceolate-elliptic, 1-2 X 0.45-0.6 mm;</text>
+      <biological_entity id="o317" name="leaf" name_original="leaves" src="d0_s4" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s4" value="monomorphic" />
+        <character is_modifier="false" modifier="tightly" name="fixation_or_orientation" notes="" src="d0_s4" value="appressed" />
+        <character is_modifier="false" name="orientation" src="d0_s4" value="ascending" />
+        <character is_modifier="false" name="coloration" src="d0_s4" value="green" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="lanceolate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="linear-lanceolate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="lanceolate-elliptic" />
+        <character char_type="range_value" from="lanceolate" name="shape" src="d0_s4" to="linear-lanceolate or lanceolate-elliptic" />
+        <character char_type="range_value" from="1" from_unit="mm" name="length" src="d0_s4" to="2" to_unit="mm" />
+        <character char_type="range_value" from="0.45" from_unit="mm" name="width" src="d0_s4" to="0.6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o318" name="pseudowhorl" name_original="pseudowhorls" src="d0_s4" type="structure">
+        <character is_modifier="true" modifier="more or less" name="arrangement" src="d0_s4" value="alternate" />
+        <character name="quantity" src="d0_s4" value="3" />
+      </biological_entity>
+      <relation from="o317" id="r77" name="in" negation="false" src="d0_s4" to="o318" />
+    </statement>
+    <statement id="d0_s5">
+      <text>abaxial ridges well defined;</text>
+      <biological_entity constraint="abaxial" id="o319" name="ridge" name_original="ridges" src="d0_s5" type="structure">
+        <character is_modifier="false" modifier="well" name="prominence" src="d0_s5" value="defined" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>base rounded and adnate, sometimes slightly decurrent, pubescent or glabrous;</text>
+      <biological_entity id="o320" name="base" name_original="base" src="d0_s6" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s6" value="rounded" />
+        <character is_modifier="false" name="fusion" src="d0_s6" value="adnate" />
+        <character is_modifier="false" modifier="sometimes slightly" name="shape" src="d0_s6" value="decurrent" />
+        <character is_modifier="false" name="pubescence" src="d0_s6" value="pubescent" />
+        <character is_modifier="false" name="pubescence" src="d0_s6" value="glabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>margins ciliate to denticulate, cilia transparent, spreading or ascending, 0.03-0.17 mm;</text>
+      <biological_entity id="o321" name="margin" name_original="margins" src="d0_s7" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s7" value="ciliate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s7" value="denticulate" />
+        <character char_type="range_value" from="ciliate" name="shape" src="d0_s7" to="denticulate" />
+      </biological_entity>
+      <biological_entity id="o322" name="cilium" name_original="cilia" src="d0_s7" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s7" value="transparent" />
+        <character is_modifier="false" name="orientation" src="d0_s7" value="spreading" />
+        <character is_modifier="false" name="orientation" src="d0_s7" value="ascending" />
+        <character char_type="range_value" from="0.03" from_unit="mm" name="some_measurement" src="d0_s7" to="0.17" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>apex keeled, obtuse or slightly attenuate, nearly truncate in profile, blunt to short-bristled;</text>
+      <biological_entity id="o323" name="apex" name_original="apex" src="d0_s8" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s8" value="keeled" />
+        <character is_modifier="false" name="shape" src="d0_s8" value="obtuse" />
+        <character is_modifier="false" modifier="slightly" name="shape" src="d0_s8" value="attenuate" />
+        <character is_modifier="false" modifier="nearly; in profile" name="architecture_or_shape" src="d0_s8" value="truncate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="blunt" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="short-bristled" />
+        <character char_type="range_value" from="blunt" name="shape" src="d0_s8" to="short-bristled" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>bristle transparent to greenish transparent or whitish, smooth, 0.06-0.45 mm.</text>
+      <biological_entity id="o324" name="bristle" name_original="bristle" src="d0_s9" type="structure">
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s9" value="transparent" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s9" value="greenish transparent" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s9" value="whitish" />
+        <character char_type="range_value" from="transparent" name="coloration" src="d0_s9" to="greenish transparent or whitish" />
+        <character is_modifier="false" name="architecture_or_pubescence_or_relief" src="d0_s9" value="smooth" />
+        <character char_type="range_value" from="0.06" from_unit="mm" name="some_measurement" src="d0_s9" to="0.45" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>Strobili solitary, (0.6-) 1-3 cm;</text>
+      <biological_entity id="o325" name="strobilus" name_original="strobili" src="d0_s10" type="structure">
+        <character is_modifier="false" name="architecture_or_arrangement_or_growth_form" src="d0_s10" value="solitary" />
+        <character char_type="range_value" from="0.6" from_unit="cm" name="atypical_some_measurement" src="d0_s10" to="1" to_inclusive="false" to_unit="cm" />
+        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s10" to="3" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>sporophylls ovatelanceolate, ovate-elliptic, or deltate-ovate, abaxial ridges well defined, base glabrous, margins ciliate to denticulate, apex strongly to slightly keeled, short-bristled to blunt.</text>
+      <biological_entity id="o326" name="sporophyll" name_original="sporophylls" src="d0_s11" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s11" value="ovatelanceolate" />
+        <character is_modifier="false" name="shape" src="d0_s11" value="ovate-elliptic" />
+        <character is_modifier="false" name="shape" src="d0_s11" value="deltate-ovate" />
+        <character is_modifier="false" name="shape" src="d0_s11" value="ovate-elliptic" />
+        <character is_modifier="false" name="shape" src="d0_s11" value="deltate-ovate" />
+      </biological_entity>
+      <biological_entity constraint="abaxial" id="o327" name="ridge" name_original="ridges" src="d0_s11" type="structure">
+        <character is_modifier="false" modifier="well" name="prominence" src="d0_s11" value="defined" />
+      </biological_entity>
+      <biological_entity id="o328" name="base" name_original="base" src="d0_s11" type="structure">
+        <character is_modifier="false" name="pubescence" src="d0_s11" value="glabrous" />
+      </biological_entity>
+      <biological_entity id="o329" name="margin" name_original="margins" src="d0_s11" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s11" value="ciliate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s11" value="denticulate" />
+        <character char_type="range_value" from="ciliate" name="shape" src="d0_s11" to="denticulate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s12">
+      <text>2 n = 18.</text>
+      <biological_entity id="o330" name="apex" name_original="apex" src="d0_s11" type="structure">
+        <character is_modifier="false" modifier="slightly" name="shape" src="d0_s11" value="keeled" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s11" value="short-bristled" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s11" value="blunt" />
+        <character char_type="range_value" from="short-bristled" name="shape" src="d0_s11" to="blunt" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o331" name="chromosome" name_original="" src="d0_s12" type="structure">
+        <character name="quantity" src="d0_s12" value="18" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>only in the flora.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="only in the flora" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>17</number>
+  <discussion>Selaginella mutica , S . underwoodii (R. M. Tryon 1955; C. A. Weatherby 1943), and S . wallacei all have similar patterns of variation. Study is needed to assess to what degree such variability is caused by environmental or genetic factors. Within S . mutica , two rather distinct, morphologic extremes are recognized here as varieties. Many specimens having leaves with spreading, long, marginal cilia and a short, broken, apical bristle have been considered intermediate between the two varieties, but they belong in S . mutica var. mutica .</discussion>
+  <discussion>Selaginella mutica may be one of the parent species of the putative hybrid species S . × neomexicana (see discussion). Selaginella mutica is often found growing in the same habitat with S . underwoodii , S . × neomexicana , and S . weatherbiana . According to R. M. Tryon (1955), where the two grow together, S . mutica mats gradually entirely replace mats of S . underwoodii over time. Selaginella mutica is sometimes confused with S . viridissima .</discussion>
+  <discussion>Varieties 2:</discussion>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d1_s0">
+          <text>Margins of sporophylls usually long-ciliate, seldom denticulate, cilia spreading;</text>
+          <biological_entity id="o332" name="margin" name_original="margins" src="d1_s0" type="structure">
+            <character is_modifier="false" modifier="usually" name="architecture_or_pubescence_or_shape" src="d1_s0" value="long-ciliate" />
+            <character is_modifier="false" modifier="seldom" name="shape" src="d1_s0" value="denticulate" />
+          </biological_entity>
+          <biological_entity id="o333" name="sporophyll" name_original="sporophylls" src="d1_s0" type="structure" />
+          <biological_entity id="o334" name="cilium" name_original="cilia" src="d1_s0" type="structure">
+            <character is_modifier="false" name="orientation" src="d1_s0" value="spreading" />
+          </biological_entity>
+          <relation from="o332" id="r78" name="part_of" negation="false" src="d1_s0" to="o333" />
+        </statement>
+        <statement id="d1_s1">
+          <text>apex of leaves with or without bristle, 0.03-0.06 mm;</text>
+          <biological_entity id="o335" name="apex" name_original="apex" src="d1_s1" type="structure" constraint="leaf" />
+          <biological_entity id="o336" name="leaf" name_original="leaves" src="d1_s1" type="structure" />
+          <biological_entity id="o337" name="bristle" name_original="bristle" src="d1_s1" type="structure">
+            <character char_type="range_value" from="0.03" from_unit="mm" name="some_measurement" src="d1_s1" to="0.06" to_unit="mm" />
+          </biological_entity>
+          <relation from="o335" id="r79" name="part_of" negation="false" src="d1_s1" to="o336" />
+          <relation from="o335" id="r80" name="with or without" negation="false" src="d1_s1" to="o337" />
+        </statement>
+        <statement id="d1_s2">
+          <text>leaf margins long ciliate, rarely denticulate, cilia spreading.</text>
+          <biological_entity constraint="leaf" id="o338" name="margin" name_original="margins" src="d1_s2" type="structure">
+            <character is_modifier="false" name="length_or_size" src="d1_s2" value="long" />
+            <character is_modifier="false" name="architecture_or_pubescence_or_shape" src="d1_s2" value="ciliate" />
+            <character is_modifier="false" modifier="rarely" name="shape" src="d1_s2" value="denticulate" />
+          </biological_entity>
+          <biological_entity id="o339" name="cilium" name_original="cilia" src="d1_s2" type="structure">
+            <character is_modifier="false" name="orientation" src="d1_s2" value="spreading" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>17a var. mutica</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d2_s0">
+          <text>Margins of sporophylls mostly very short-ciliate to denticulate, cilia and teeth ascending;</text>
+          <biological_entity id="o340" name="margin" name_original="margins" src="d2_s0" type="structure">
+            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s0" value="short-ciliate" />
+            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s0" value="denticulate" />
+            <character char_type="range_value" from="short-ciliate" name="shape" src="d2_s0" to="denticulate" />
+          </biological_entity>
+          <biological_entity id="o341" name="sporophyll" name_original="sporophylls" src="d2_s0" type="structure" />
+          <biological_entity id="o342" name="cilium" name_original="cilia" src="d2_s0" type="structure">
+            <character is_modifier="false" name="orientation" src="d2_s0" value="ascending" />
+          </biological_entity>
+          <biological_entity id="o343" name="tooth" name_original="teeth" src="d2_s0" type="structure">
+            <character is_modifier="false" name="orientation" src="d2_s0" value="ascending" />
+          </biological_entity>
+          <relation from="o340" id="r81" name="part_of" negation="false" src="d2_s0" to="o341" />
+        </statement>
+        <statement id="d2_s1">
+          <text>apex of leaves with bristle 0.2-0.45 mm;</text>
+          <biological_entity id="o344" name="apex" name_original="apex" src="d2_s1" type="structure" constraint="leaf" />
+          <biological_entity id="o345" name="leaf" name_original="leaves" src="d2_s1" type="structure" />
+          <biological_entity id="o346" name="bristle" name_original="bristle" src="d2_s1" type="structure">
+            <character char_type="range_value" from="0.2" from_unit="mm" name="some_measurement" src="d2_s1" to="0.45" to_unit="mm" />
+          </biological_entity>
+          <relation from="o344" id="r82" name="part_of" negation="false" src="d2_s1" to="o345" />
+          <relation from="o344" id="r83" name="with" negation="false" src="d2_s1" to="o346" />
+        </statement>
+        <statement id="d2_s2">
+          <text>leaf margins short-ciliate to denticulate, cilia and teeth ascending.</text>
+          <biological_entity constraint="leaf" id="o347" name="margin" name_original="margins" src="d2_s2" type="structure">
+            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s2" value="short-ciliate" />
+            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s2" value="denticulate" />
+            <character char_type="range_value" from="short-ciliate" name="shape" src="d2_s2" to="denticulate" />
+          </biological_entity>
+          <biological_entity id="o348" name="cilium" name_original="cilia" src="d2_s2" type="structure">
+            <character is_modifier="false" name="orientation" src="d2_s2" value="ascending" />
+          </biological_entity>
+          <biological_entity id="o349" name="tooth" name_original="teeth" src="d2_s2" type="structure">
+            <character is_modifier="false" name="orientation" src="d2_s2" value="ascending" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>17b var. limitanea</determination>
+    </key_statement>
+  </key>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_110_d1_s0">
+      <text>Margins of sporophylls usually long-ciliate, seldom denticulate, cilia spreading;</text>
+      <biological_entity id="from_key_V2_110_o332" name="margin" name_original="margins" src="d1_s0" type="structure">
+        <character is_modifier="false" modifier="usually" name="architecture_or_pubescence_or_shape" src="d1_s0" value="long-ciliate" />
+        <character is_modifier="false" modifier="seldom" name="shape" src="d1_s0" value="denticulate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_110_o333" name="sporophyll" name_original="sporophylls" src="d1_s0" type="structure" />
+      <biological_entity id="from_key_V2_110_o334" name="cilium" name_original="cilia" src="d1_s0" type="structure">
+        <character is_modifier="false" name="orientation" src="d1_s0" value="spreading" />
+      </biological_entity>
+      <relation from="from_key_V2_110_o332" id="from_key_V2_110_r78" name="part_of" negation="false" src="d1_s0" to="from_key_V2_110_o333" />
+    </statement>
+    <statement id="from_key_V2_110_d1_s1">
+      <text>apex of leaves with or without bristle, 0.03-0.06 mm;</text>
+      <biological_entity id="from_key_V2_110_o335" name="apex" name_original="apex" src="d1_s1" type="structure" />
+      <biological_entity id="from_key_V2_110_o336" name="leaf" name_original="leaves" src="d1_s1" type="structure" />
+      <biological_entity id="from_key_V2_110_o337" name="bristle" name_original="bristle" src="d1_s1" type="structure">
+        <character char_type="range_value" from="0.03" from_unit="mm" name="some_measurement" src="d1_s1" to="0.06" to_unit="mm" />
+      </biological_entity>
+      <relation from="from_key_V2_110_o335" id="from_key_V2_110_r79" name="part_of" negation="false" src="d1_s1" to="from_key_V2_110_o336" />
+      <relation from="from_key_V2_110_o335" id="from_key_V2_110_r80" name="with or without" negation="false" src="d1_s1" to="from_key_V2_110_o337" />
+    </statement>
+    <statement id="from_key_V2_110_d1_s2">
+      <text>leaf margins long ciliate, rarely denticulate, cilia spreading.</text>
+      <biological_entity constraint="leaf" id="from_key_V2_110_o338" name="margin" name_original="margins" src="d1_s2" type="structure">
+        <character is_modifier="false" name="length_or_size" src="d1_s2" value="long" />
+        <character is_modifier="false" name="architecture_or_pubescence_or_shape" src="d1_s2" value="ciliate" />
+        <character is_modifier="false" modifier="rarely" name="shape" src="d1_s2" value="denticulate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_110_o339" name="cilium" name_original="cilia" src="d1_s2" type="structure">
+        <character is_modifier="false" name="orientation" src="d1_s2" value="spreading" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_110_d2_s0">
+      <text>Margins of sporophylls mostly very short-ciliate to denticulate, cilia and teeth ascending;</text>
+      <biological_entity id="from_key_V2_110_o340" name="margin" name_original="margins" src="d2_s0" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s0" value="short-ciliate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s0" value="denticulate" />
+        <character char_type="range_value" from="short-ciliate" name="shape" src="d2_s0" to="denticulate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_110_o341" name="sporophyll" name_original="sporophylls" src="d2_s0" type="structure" />
+      <biological_entity id="from_key_V2_110_o342" name="cilium" name_original="cilia" src="d2_s0" type="structure">
+        <character is_modifier="false" name="orientation" src="d2_s0" value="ascending" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_110_o343" name="tooth" name_original="teeth" src="d2_s0" type="structure">
+        <character is_modifier="false" name="orientation" src="d2_s0" value="ascending" />
+      </biological_entity>
+      <relation from="from_key_V2_110_o340" id="from_key_V2_110_r81" name="part_of" negation="false" src="d2_s0" to="from_key_V2_110_o341" />
+    </statement>
+    <statement id="from_key_V2_110_d2_s1">
+      <text>apex of leaves with bristle 0.2-0.45 mm;</text>
+      <biological_entity id="from_key_V2_110_o344" name="apex" name_original="apex" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_110_o345" name="leaf" name_original="leaves" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_110_o346" name="bristle" name_original="bristle" src="d2_s1" type="structure">
+        <character char_type="range_value" from="0.2" from_unit="mm" name="some_measurement" src="d2_s1" to="0.45" to_unit="mm" />
+      </biological_entity>
+      <relation from="from_key_V2_110_o344" id="from_key_V2_110_r82" name="part_of" negation="false" src="d2_s1" to="from_key_V2_110_o345" />
+      <relation from="from_key_V2_110_o344" id="from_key_V2_110_r83" name="with" negation="false" src="d2_s1" to="from_key_V2_110_o346" />
+    </statement>
+    <statement id="from_key_V2_110_d2_s2">
+      <text>leaf margins short-ciliate to denticulate, cilia and teeth ascending.</text>
+      <biological_entity constraint="leaf" id="from_key_V2_110_o347" name="margin" name_original="margins" src="d2_s2" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s2" value="short-ciliate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s2" value="denticulate" />
+        <character char_type="range_value" from="short-ciliate" name="shape" src="d2_s2" to="denticulate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_110_o348" name="cilium" name_original="cilia" src="d2_s2" type="structure">
+        <character is_modifier="false" name="orientation" src="d2_s2" value="ascending" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_110_o349" name="tooth" name_original="teeth" src="d2_s2" type="structure">
+        <character is_modifier="false" name="orientation" src="d2_s2" value="ascending" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

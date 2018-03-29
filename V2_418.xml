@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>R. David Whetstone , T. A. Atkinson</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Berchtold &amp; J. S. Presl" date="unknown" rank="family">osmundaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">Osmunda</taxon_name>
+    <place_of_publication>
+      <publication_title>Sp. Pl.</publication_title>
+      <place_in_publication>2: 1063. 1753; Gen. Pl. ed. 5, 484, 1754</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family osmundaceae;genus Osmunda</taxon_hierarchy>
+    <other_info_on_name type="etymology">[Saxon, Osmunder, name for Thor, god of war]</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants terrestrial.</text>
+      <biological_entity id="o9891" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="terrestrial" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Stems creeping;</text>
+      <biological_entity id="o9892" name="stem" name_original="stems" src="d0_s1" type="structure">
+        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="creeping" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>tips often somewhat erect.</text>
+      <biological_entity id="o9893" name="tip" name_original="tips" src="d0_s2" type="structure">
+        <character is_modifier="false" modifier="often somewhat" name="orientation" src="d0_s2" value="erect" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Leaves dimorphic;</text>
+      <biological_entity id="o9894" name="leaf" name_original="leaves" src="d0_s3" type="structure">
+        <character is_modifier="false" name="growth_form" src="d0_s3" value="dimorphic" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>fertile leaves erect, often notably smaller than sterile leaves in length and width.</text>
+      <biological_entity id="o9895" name="leaf" name_original="leaves" src="d0_s4" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s4" value="fertile" />
+        <character is_modifier="false" name="orientation" src="d0_s4" value="erect" />
+        <character constraint="than sterile leaves" constraintid="o9896" is_modifier="false" name="length" src="d0_s4" value="in" />
+      </biological_entity>
+      <biological_entity id="o9896" name="leaf" name_original="leaves" src="d0_s4" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s4" value="sterile" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Blades 1-2-pinnate;</text>
+      <biological_entity id="o9897" name="blade" name_original="blades" src="d0_s5" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s5" value="1-2-pinnate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>pinnae monomorphic to dimorphic, pinnatifid or pinnate.</text>
+      <biological_entity id="o9898" name="pinna" name_original="pinnae" src="d0_s6" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s6" value="monomorphic" />
+        <character is_modifier="false" name="growth_form" src="d0_s6" value="dimorphic" />
+        <character is_modifier="false" name="shape" src="d0_s6" value="pinnatifid" />
+        <character is_modifier="false" name="shape" src="d0_s6" value="pinnate" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>nearly worldwide, tropical and temperate regions.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="nearly worldwide" establishment_means="native" />
+        <character name="distribution" value="tropical and temperate regions" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <discussion>Species 10 (3 in the flora):</discussion>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d1_s0">
+          <text>Fertile leaves with pinnae monomorphic, all spore-bearing;</text>
+          <biological_entity id="o9899" name="leaf" name_original="leaves" src="d1_s0" type="structure">
+            <character is_modifier="true" name="reproduction" src="d1_s0" value="fertile" />
+            <character is_modifier="false" name="architecture" notes="" src="d1_s0" value="spore-bearing" />
+          </biological_entity>
+          <biological_entity id="o9900" name="pinna" name_original="pinnae" src="d1_s0" type="structure">
+            <character is_modifier="false" name="architecture" src="d1_s0" value="monomorphic" />
+          </biological_entity>
+          <relation from="o9899" id="r2282" name="with" negation="false" src="d1_s0" to="o9900" />
+        </statement>
+        <statement id="d1_s1">
+          <text>tuft of hairs persistent on abaxial surface of pinnae near base.</text>
+          <biological_entity id="o9901" name="tuft" name_original="tuft" src="d1_s1" type="structure" constraint="hair">
+            <character constraint="on abaxial surface" constraintid="o9903" is_modifier="false" name="duration" src="d1_s1" value="persistent" />
+          </biological_entity>
+          <biological_entity id="o9902" name="hair" name_original="hairs" src="d1_s1" type="structure" />
+          <biological_entity constraint="abaxial" id="o9903" name="surface" name_original="surface" src="d1_s1" type="structure" />
+          <biological_entity id="o9904" name="pinna" name_original="pinnae" src="d1_s1" type="structure" />
+          <biological_entity id="o9905" name="base" name_original="base" src="d1_s1" type="structure" />
+          <relation from="o9901" id="r2283" name="part_of" negation="false" src="d1_s1" to="o9902" />
+          <relation from="o9903" id="r2284" name="part_of" negation="false" src="d1_s1" to="o9904" />
+          <relation from="o9903" id="r2285" name="near" negation="false" src="d1_s1" to="o9905" />
+        </statement>
+      </description>
+      <determination>1 Osmunda cinnamomea</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d2_s0">
+          <text>Fertile leaves with pinnae dimorphic, some spore-bearing, some not;</text>
+          <biological_entity id="o9906" name="leaf" name_original="leaves" src="d2_s0" type="structure">
+            <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
+            <character is_modifier="false" name="architecture" notes="" src="d2_s0" value="spore-bearing" />
+          </biological_entity>
+          <biological_entity id="o9907" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
+            <character is_modifier="false" name="growth_form" src="d2_s0" value="dimorphic" />
+          </biological_entity>
+          <relation from="o9906" id="r2286" name="with" negation="false" src="d2_s0" to="o9907" />
+        </statement>
+        <statement id="d2_s1">
+          <text>tuft of hairs absent on abaxial surface of pinnae near base.</text>
+          <biological_entity id="o9908" name="tuft" name_original="tuft" src="d2_s1" type="structure" />
+          <biological_entity id="o9909" name="hair" name_original="hairs" src="d2_s1" type="structure">
+            <character constraint="on abaxial surface" constraintid="o9910" is_modifier="false" name="presence" src="d2_s1" value="absent" />
+          </biological_entity>
+          <biological_entity constraint="abaxial" id="o9910" name="surface" name_original="surface" src="d2_s1" type="structure" />
+          <biological_entity id="o9911" name="pinna" name_original="pinnae" src="d2_s1" type="structure" />
+          <biological_entity id="o9912" name="base" name_original="base" src="d2_s1" type="structure" />
+          <relation from="o9908" id="r2287" name="consist_of" negation="false" src="d2_s1" to="o9909" />
+          <relation from="o9910" id="r2288" name="part_of" negation="false" src="d2_s1" to="o9911" />
+          <relation from="o9910" id="r2289" name="near" negation="false" src="d2_s1" to="o9912" />
+        </statement>
+      </description>
+      <next_statement_id>2</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d3_s0">
+          <text>Sterile leaves 2-pinnate with pinnules sessile.</text>
+          <biological_entity id="o9913" name="leaf" name_original="leaves" src="d3_s0" type="structure">
+            <character is_modifier="true" name="reproduction" src="d3_s0" value="sterile" />
+            <character constraint="with pinnules" constraintid="o9914" is_modifier="false" name="architecture_or_shape" src="d3_s0" value="2-pinnate" />
+          </biological_entity>
+          <biological_entity id="o9914" name="pinnule" name_original="pinnules" src="d3_s0" type="structure">
+            <character is_modifier="false" name="architecture" src="d3_s0" value="sessile" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>4 Osmunda ruggii</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d4_s0">
+          <text>Sterile leaves pinnate-pinnatifid or 2-pinnate with pinnules stalked.</text>
+          <biological_entity id="o9915" name="leaf" name_original="leaves" src="d4_s0" type="structure">
+            <character is_modifier="true" name="reproduction" src="d4_s0" value="sterile" />
+            <character is_modifier="false" name="shape" src="d4_s0" value="pinnate-pinnatifid" />
+            <character constraint="with pinnules" constraintid="o9916" is_modifier="false" name="architecture_or_shape" src="d4_s0" value="2-pinnate" />
+          </biological_entity>
+          <biological_entity id="o9916" name="pinnule" name_original="pinnules" src="d4_s0" type="structure">
+            <character is_modifier="false" name="architecture" src="d4_s0" value="stalked" />
+          </biological_entity>
+        </statement>
+      </description>
+      <next_statement_id>3</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>3</statement_id>
+      <description type="morphology">
+        <statement id="d5_s0">
+          <text>Fertile pinnae apical, sterile leaves 2-pinnate.</text>
+          <biological_entity id="o9917" name="pinna" name_original="pinnae" src="d5_s0" type="structure">
+            <character is_modifier="true" name="reproduction" src="d5_s0" value="fertile" />
+            <character is_modifier="false" name="position" src="d5_s0" value="apical" />
+          </biological_entity>
+          <biological_entity id="o9918" name="leaf" name_original="leaves" src="d5_s0" type="structure">
+            <character is_modifier="true" name="reproduction" src="d5_s0" value="sterile" />
+            <character is_modifier="false" name="architecture_or_shape" src="d5_s0" value="2-pinnate" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>3a var. spectabilis</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>3</statement_id>
+      <description type="morphology">
+        <statement id="d6_s0">
+          <text>Fertile pinnae medial, sterile leaves pinnate-pinnatifid.</text>
+          <biological_entity id="o9919" name="pinna" name_original="pinnae" src="d6_s0" type="structure">
+            <character is_modifier="true" name="reproduction" src="d6_s0" value="fertile" />
+            <character is_modifier="false" name="position" src="d6_s0" value="medial" />
+          </biological_entity>
+          <biological_entity id="o9920" name="leaf" name_original="leaves" src="d6_s0" type="structure">
+            <character is_modifier="true" name="reproduction" src="d6_s0" value="sterile" />
+            <character is_modifier="false" name="shape" src="d6_s0" value="pinnate-pinnatifid" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>2 Osmunda claytoniana</determination>
+    </key_statement>
+  </key>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_418_d5_s0">
+      <text>Fertile pinnae apical, sterile leaves 2-pinnate.</text>
+      <biological_entity id="from_key_V2_418_o9917" name="pinna" name_original="pinnae" src="d5_s0" type="structure">
+        <character is_modifier="true" name="reproduction" src="d5_s0" value="fertile" />
+        <character is_modifier="false" name="position" src="d5_s0" value="apical" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_418_o9918" name="leaf" name_original="leaves" src="d5_s0" type="structure">
+        <character is_modifier="true" name="reproduction" src="d5_s0" value="sterile" />
+        <character is_modifier="false" name="architecture_or_shape" src="d5_s0" value="2-pinnate" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_418_d4_s0">
+      <text>Sterile leaves pinnate-pinnatifid or 2-pinnate with pinnules stalked.</text>
+      <biological_entity id="from_key_V2_418_o9915" name="leaf" name_original="leaves" src="d4_s0" type="structure">
+        <character is_modifier="true" name="reproduction" src="d4_s0" value="sterile" />
+        <character is_modifier="false" name="shape" src="d4_s0" value="pinnate-pinnatifid" />
+        <character constraint="with pinnules" constraintid="o9916" is_modifier="false" name="architecture_or_shape" src="d4_s0" value="2-pinnate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_418_o9916" name="pinnule" name_original="pinnules" src="d4_s0" type="structure">
+        <character is_modifier="false" name="architecture" src="d4_s0" value="stalked" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_418_d2_s0">
+      <text>Fertile leaves with pinnae dimorphic, some spore-bearing, some not;</text>
+      <biological_entity id="from_key_V2_418_o9906" name="leaf" name_original="leaves" src="d2_s0" type="structure">
+        <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
+        <character is_modifier="false" name="architecture" notes="alterIDs:o9907" src="d2_s0" value="spore-bearing" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_418_o9907" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
+        <character is_modifier="false" name="growth_form" src="d2_s0" value="dimorphic" />
+      </biological_entity>
+      <relation from="from_key_V2_418_o9906" id="from_key_V2_418_r2286" name="with" negation="false" src="d2_s0" to="from_key_V2_418_o9907" />
+    </statement>
+    <statement id="from_key_V2_418_d2_s1">
+      <text>tuft of hairs absent on abaxial surface of pinnae near base.</text>
+      <biological_entity id="from_key_V2_418_o9908" name="tuft" name_original="tuft" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_418_o9909" name="hair" name_original="hairs" src="d2_s1" type="structure">
+        <character constraint="on abaxial surface" constraintid="o9910" is_modifier="false" name="count" src="d2_s1" value="absent" />
+      </biological_entity>
+      <biological_entity constraint="abaxial" id="from_key_V2_418_o9910" name="surface" name_original="surface" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_418_o9911" name="pinna" name_original="pinnae" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_418_o9912" name="base" name_original="base" src="d2_s1" type="structure" />
+      <relation from="from_key_V2_418_o9908" id="from_key_V2_418_r2287" name="consist_of" negation="false" src="d2_s1" to="from_key_V2_418_o9909" />
+      <relation from="from_key_V2_418_o9910" id="from_key_V2_418_r2288" name="part_of" negation="false" src="d2_s1" to="from_key_V2_418_o9911" />
+      <relation from="from_key_V2_418_o9910" id="from_key_V2_418_r2289" name="near" negation="false" src="d2_s1" to="from_key_V2_418_o9912" />
+    </statement>
+  </description>
+</bio:treatment>

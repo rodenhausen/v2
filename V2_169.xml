@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Agardh" date="unknown" rank="family">ophioglossaceae</taxon_name>
+    <taxon_name authority="Swartz" date="1801" rank="genus">botrychium</taxon_name>
+    <taxon_name authority="(J. Milde) R. T. Clausen" date="1938" rank="subgenus">Osmundopteris</taxon_name>
+    <place_of_publication>
+      <publication_title>Mem. Torrey Bot. Club</publication_title>
+      <place_in_publication>19(2): 93. 1938</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family ophioglossaceae;genus botrychium;subgenus Osmundopteris</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Botrychium</taxon_name>
+    <taxon_name authority="J.Milde" date="unknown" rank="section">Osmundopteris</taxon_name>
+    <place_of_publication>
+      <publication_title>Verh. Zool.- Bot. Ges. Wien</publication_title>
+      <place_in_publication>19(2): 96. 1869</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Botrychium;section Osmundopteris;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Roots 15 or fewer, yellow to brown, 0.5-2 mm diam. 1cm from base.</text>
+      <biological_entity id="o2350" name="root" name_original="roots" src="d0_s0" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s0" value="count" />
+        <character is_modifier="false" name="coloration" src="d0_s0" value="list" />
+        <character name="quantity" src="d0_s0" unit="or fewerpunct yellow to brown" value="15" />
+        <character char_type="range_value" from="0.5" from_unit="mm" name="diameter" src="d0_s0" to="2" to_unit="mm" />
+        <character constraint="from base" constraintid="o2351" name="location" src="d0_s0" unit="cm" value="1" />
+      </biological_entity>
+      <biological_entity id="o2351" name="base" name_original="base" src="d0_s0" type="structure" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Plants over 12 cm.</text>
+      <biological_entity id="o2352" name="plant" name_original="plants" src="d0_s1" type="structure" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Common stalk lacking idioblasts (elongate, spindle-shaped cells in vascular strand).</text>
+      <biological_entity id="o2353" name="stalk" name_original="stalk" src="d0_s2" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s2" value="common" />
+      </biological_entity>
+      <biological_entity id="o2354" name="idioblast" name_original="idioblasts" src="d0_s2" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s2" value="lacking" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Trophophore sessile and erect, arising from middle to distal portion of common stalk well above ground level;</text>
+      <biological_entity id="o2355" name="trophophore" name_original="trophophore" src="d0_s3" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s3" value="sessile" />
+        <character is_modifier="false" name="orientation" src="d0_s3" value="erect" />
+        <character constraint="from portion" constraintid="o2356" is_modifier="false" name="orientation" src="d0_s3" value="arising" />
+      </biological_entity>
+      <biological_entity id="o2356" name="portion" name_original="portion" src="d0_s3" type="structure" />
+      <biological_entity id="o2357" name="stalk" name_original="stalk" src="d0_s3" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s3" value="common" />
+      </biological_entity>
+      <biological_entity id="o2358" name="level" name_original="level" src="d0_s3" type="structure" />
+      <relation from="o2356" id="r541" name="part_of" negation="false" src="d0_s3" to="o2357" />
+      <relation from="o2356" id="r542" name="above" negation="false" src="d0_s3" to="o2358" />
+    </statement>
+    <statement id="d0_s4">
+      <text>blade usually 1 per plant, seasonal, absent during winter, deltate, 3-4-pinnate, 5-25 cm wide when mature, thin, herbaceous.</text>
+      <biological_entity id="o2359" name="blade" name_original="blade" src="d0_s4" type="structure">
+        <character constraint="per plant" constraintid="o2360" name="quantity" src="d0_s4" value="1" />
+        <character is_modifier="false" name="duration" notes="" src="d0_s4" value="seasonal" />
+        <character constraint="during winter" is_modifier="false" name="presence" src="d0_s4" value="absent" />
+        <character is_modifier="false" name="shape" src="d0_s4" value="deltate" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s4" value="3-4-pinnate" />
+        <character char_type="range_value" from="5" from_unit="cm" modifier="when mature" name="width" src="d0_s4" to="25" to_unit="cm" />
+        <character is_modifier="false" name="width" src="d0_s4" value="thin" />
+        <character is_modifier="false" name="growth_form_or_texture" src="d0_s4" value="herbaceous" />
+      </biological_entity>
+      <biological_entity id="o2360" name="plant" name_original="plant" src="d0_s4" type="structure" />
+    </statement>
+    <statement id="d0_s5">
+      <text>Leaf primordia densely hairy, hairs 1.5-2mm.</text>
+      <biological_entity constraint="leaf" id="o2361" name="primordium" name_original="primordia" src="d0_s5" type="structure">
+        <character is_modifier="false" modifier="densely" name="pubescence" src="d0_s5" value="hairy" />
+      </biological_entity>
+      <biological_entity id="o2362" name="hair" name_original="hairs" src="d0_s5" type="structure">
+        <character char_type="range_value" from="1.5" from_unit="mm" name="some_measurement" src="d0_s5" to="2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>Leaf-sheath open.</text>
+      <biological_entity id="o2363" name="leaf-sheath" name_original="leaf-sheath" src="d0_s6" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s6" value="open" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Pinna divisions reduced in size to tip.</text>
+      <biological_entity id="o2365" name="tip" name_original="tip" src="d0_s7" type="structure" />
+    </statement>
+    <statement id="d0_s8">
+      <text>First pinnule on basal pinnae usually borne acroscopically.</text>
+      <biological_entity constraint="pinna" id="o2364" name="division" name_original="divisions" src="d0_s7" type="structure">
+        <character constraint="to tip" constraintid="o2365" is_modifier="false" name="size" src="d0_s7" value="reduced" />
+      </biological_entity>
+      <biological_entity id="o2366" name="pinnule" name_original="pinnule" src="d0_s8" type="structure" />
+      <biological_entity constraint="basal" id="o2367" name="pinna" name_original="pinnae" src="d0_s8" type="structure" />
+      <relation from="o2366" id="r543" modifier="acroscopically" name="on" negation="false" src="d0_s8" to="o2367" />
+    </statement>
+    <statement id="d0_s9">
+      <text>Sporophores long-stalked, arising from middle to distal portion of common stalk well above ground level, commonly absent due to abortion in early development or seasonal, stalks only slightly flattened, not fleshy, 0.5-0.8mm wide.</text>
+      <biological_entity id="o2369" name="portion" name_original="portion" src="d0_s9" type="structure" />
+      <biological_entity id="o2370" name="stalk" name_original="stalk" src="d0_s9" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s9" value="common" />
+      </biological_entity>
+      <biological_entity id="o2371" name="ground" name_original="ground" src="d0_s9" type="structure">
+        <character is_modifier="false" name="position_relational" src="d0_s9" value="level" />
+      </biological_entity>
+      <biological_entity id="o2372" name="stalk" name_original="stalks" src="d0_s9" type="structure">
+        <character is_modifier="true" name="character" src="d0_s9" value="development" />
+        <character is_modifier="true" name="duration" src="d0_s9" value="seasonal" />
+        <character is_modifier="false" modifier="only slightly" name="shape" src="d0_s9" value="flattened" />
+      </biological_entity>
+      <relation from="o2369" id="r544" name="part_of" negation="false" src="d0_s9" to="o2370" />
+      <relation from="o2369" id="r545" name="above" negation="false" src="d0_s9" to="o2371" />
+    </statement>
+    <statement id="d0_s10">
+      <text>x =92.</text>
+      <biological_entity id="o2368" name="sporophore" name_original="sporophores" src="d0_s9" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s9" value="long-stalked" />
+        <character constraint="from portion" constraintid="o2369" is_modifier="false" name="orientation" src="d0_s9" value="arising" />
+        <character constraint="in " constraintid="o2372" is_modifier="false" modifier="commonly" name="presence" notes="" src="d0_s9" value="absent" />
+        <character is_modifier="false" modifier="not" name="texture" notes="" src="d0_s9" value="fleshy" />
+        <character char_type="range_value" from="0.5" from_unit="mm" name="width" src="d0_s9" to="0.8" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="x" id="o2373" name="chromosome" name_original="" src="d0_s10" type="structure">
+        <character name="quantity" src="d0_s10" value="92" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>worldwide.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="worldwide" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1a</number>
+  <discussion>Species 2--3 (1 in the flora):</discussion>
+</bio:treatment>

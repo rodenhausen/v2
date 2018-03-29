@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Mirbel" date="unknown" rank="family">marsileaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">pilularia</taxon_name>
+    <taxon_name authority="A. Braun" date="1864" rank="species">americana</taxon_name>
+    <place_of_publication>
+      <publication_title>Monatsber. Königl. Preuss. Akad. Wiss. Berlin</publication_title>
+      <place_in_publication>1863: 435. 1864</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family marsileaceae;genus pilularia;species americana</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants forming dense clones.</text>
+      <biological_entity id="o21501" name="plant" name_original="plants" src="d0_s0" type="structure" />
+      <biological_entity id="o21502" name="clone" name_original="clones" src="d0_s0" type="structure">
+        <character is_modifier="true" name="density" src="d0_s0" value="dense" />
+      </biological_entity>
+      <relation from="o21501" id="r5043" name="forming" negation="false" src="d0_s0" to="o21502" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves 1.6-10.2 cm, sparsely pubescent.</text>
+      <biological_entity id="o21503" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character char_type="range_value" from="1.6" from_unit="cm" name="some_measurement" src="d0_s1" to="10.2" to_unit="cm" />
+        <character is_modifier="false" modifier="sparsely" name="pubescence" src="d0_s1" value="pubescent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Sporocarp stalks attached at base of leaf, 1-3 mm.</text>
+      <biological_entity constraint="sporocarp" id="o21504" name="stalk" name_original="stalks" src="d0_s2" type="structure">
+        <character constraint="at base" constraintid="o21505" is_modifier="false" name="fixation" src="d0_s2" value="attached" />
+        <character char_type="range_value" from="1" from_unit="mm" name="some_measurement" notes="" src="d0_s2" to="3" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o21505" name="base" name_original="base" src="d0_s2" type="structure" />
+      <biological_entity id="o21506" name="leaf" name_original="leaf" src="d0_s2" type="structure" />
+      <relation from="o21505" id="r5044" name="part_of" negation="false" src="d0_s2" to="o21506" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Sporocarps globose, 1.6-2.7 mm diam., covered with matted hairs until mature;</text>
+      <biological_entity id="o21507" name="sporocarp" name_original="sporocarps" src="d0_s3" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s3" value="globose" />
+        <character char_type="range_value" from="1.6" from_unit="mm" name="diameter" src="d0_s3" to="2.7" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o21508" name="hair" name_original="hairs" src="d0_s3" type="structure">
+        <character is_modifier="true" name="growth_form" src="d0_s3" value="matted" />
+      </biological_entity>
+      <relation from="o21507" id="r5045" name="covered with" negation="false" src="d0_s3" to="o21508" />
+    </statement>
+    <statement id="d0_s4">
+      <text>raphe minute, teeth lacking.</text>
+      <biological_entity id="o21509" name="raphe" name_original="raphe" src="d0_s4" type="structure">
+        <character is_modifier="false" name="size" src="d0_s4" value="minute" />
+      </biological_entity>
+      <biological_entity id="o21510" name="tooth" name_original="teeth" src="d0_s4" type="structure">
+        <character is_modifier="false" name="quantity" src="d0_s4" value="lacking" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Sori 4.</text>
+      <biological_entity id="o21511" name="sorus" name_original="sori" src="d0_s5" type="structure">
+        <character name="quantity" src="d0_s5" value="4" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Sporocarps produced spring--fall (Apr--Oct).</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="sporulating time" value="spring-fall (Apr-Oct)" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>In shallow water of ponds and temporary pools and on reservoir margins;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="in shallow water of ponds and temporary pools and on reservoir margins ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>50--600 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="600" to_unit="m" from="50" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ala., Ark., Calif., Ga., Kans., Mo., Nebr., N.C., Okla., Oreg., S.C., Tenn., Tex.; Mexico in Baja California.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Nebr." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
+        <character name="distribution" value="Mexico in Baja California" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <other_name type="common_name">American pillwort</other_name>
+  <discussion>Pilularia americana also has been reported from Alaska. I have seen no vouchers from Alaska, nor have I seen the Oregon vouchers. Because of its grasslike appearance and subterranean sporocarps, P . americana is probably overlooked and more common than records indicate. The telltale circinate vernation of the leaves is the best characteristic for distinguishing it from similar plants.</discussion>
+  <discussion>Pilularia caroliniana A. Braun, an invalid name, has been used for this species and may appear on specimens.</discussion>
+</bio:treatment>

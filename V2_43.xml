@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Ching" date="unknown" rank="family">vittariaceae</taxon_name>
+    <taxon_name authority="Smith" date="1793" rank="genus">vittaria</taxon_name>
+    <taxon_name authority="Kaulfuss" date="1824" rank="species">graminifolia</taxon_name>
+    <place_of_publication>
+      <publication_title>Enum. Filic.</publication_title>
+      <place_in_publication>192. 1824</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family vittariaceae;genus vittaria;species graminifolia</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Vittaria</taxon_name>
+    <taxon_name authority="Fée" date="unknown" rank="species">filifolia</taxon_name>
+    <place_of_publication>
+      <publication_title>Mém. Foug.</publication_title>
+      <place_in_publication>3: 20. 1852</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Vittaria;species filifolia;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants epiphytic.</text>
+      <biological_entity id="o10207" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="false" name="habitat" src="d0_s0" value="epiphytic" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Sporophytes absent in flora.</text>
+      <biological_entity id="o10208" name="sporophyte" name_original="sporophytes" src="d0_s1" type="structure">
+        <character constraint="in flora" constraintid="o10209" is_modifier="false" name="presence" src="d0_s1" value="absent" />
+      </biological_entity>
+      <biological_entity id="o10209" name="flora" name_original="flora" src="d0_s1" type="structure" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Gametophytes much branched.</text>
+      <biological_entity id="o10210" name="gametophyte" name_original="gametophytes" src="d0_s2" type="structure">
+        <character is_modifier="false" modifier="much" name="architecture" src="d0_s2" value="branched" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Gemmae tapering at ends, end cells not swollen;</text>
+      <biological_entity id="o10211" name="gemma" name_original="gemmae" src="d0_s3" type="structure">
+        <character constraint="at ends" constraintid="o10212" is_modifier="false" name="shape" src="d0_s3" value="tapering" />
+      </biological_entity>
+      <biological_entity id="o10212" name="end" name_original="ends" src="d0_s3" type="structure" />
+      <biological_entity constraint="end" id="o10213" name="cell" name_original="cells" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="not" name="shape" src="d0_s3" value="swollen" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>body cells 4, rhizoid primordia on each end cell.</text>
+      <biological_entity constraint="body" id="o10214" name="cell" name_original="cells" src="d0_s4" type="structure">
+        <character name="quantity" src="d0_s4" value="4" />
+      </biological_entity>
+      <biological_entity constraint="rhizoid" id="o10215" name="primordium" name_original="primordia" src="d0_s4" type="structure" />
+      <biological_entity constraint="end" id="o10216" name="cell" name_original="cell" src="d0_s4" type="structure" />
+      <relation from="o10215" id="r2333" name="on" negation="false" src="d0_s4" to="o10216" />
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Epiphytic in dark, moist hollows formed by flaring root buttresses of beech ( Fagus grandifolia Ehrhart);</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="epiphytic in dark , moist hollows formed by flaring root buttresses of beech ( fagus grandifolia ehrhart ) ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0--50 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="50" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>La.; Mexico; West Indies; Central America; South America.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
+        <character name="distribution" value="Mexico" establishment_means="native" />
+        <character name="distribution" value="West Indies" establishment_means="native" />
+        <character name="distribution" value="Central America" establishment_means="native" />
+        <character name="distribution" value="South America" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>2</number>
+  <other_name type="common_name">Grass fern</other_name>
+  <discussion>Louisiana plants, known only from St. Helena Parish, are identical to gametophytes grown from sporophyte plants from Central America both morphologically and in starch gel enzyme electrophoresis patterns. Gametophyte colonies and possibly sporophytes of Vittaria graminifolia should be expected in similar habitats at additional sites along the Gulf Coast and in peninsular Florida. Sporophytes of V . graminifolia differ from those of V . lineata in having trilete spores, dilated terminal cells of the soral paraphyses, stem scales with acute (not long filiform) apices, and a chromosome number of 2 n = 60. Earlier reports of sporophytes of V . graminifolia in Florida (as V . filifolia ) have been shown to refer to aberrant forms of V . lineata (G. J. Gastony 1980).</discussion>
+</bio:treatment>

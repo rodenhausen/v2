@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Willkomm in Willkomm &amp; Lange" date="unknown" rank="family">selaginellaceae</taxon_name>
+    <taxon_name authority="Palisot de Beauvois" date="1805" rank="genus">selaginella</taxon_name>
+    <taxon_name authority="(Linnaeus) Palisot de Beauvois ex Martius &amp; Schrank" date="1829" rank="species">selaginoides</taxon_name>
+    <place_of_publication>
+      <publication_title>Hort. Reg. Monac.</publication_title>
+      <place_in_publication>1: 182. 1829</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family selaginellaceae;genus selaginella;species selaginoides</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Lycopodium</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="species">selaginoides</taxon_name>
+    <place_of_publication>
+      <publication_title>Sp. Pl.</publication_title>
+      <place_in_publication>2: 1101. 1753</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Lycopodium;species selaginoides;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants on rock or terrestrial, forming loose to dense mats.</text>
+      <biological_entity id="o7848" name="plant" name_original="plants" src="d0_s0" type="structure" />
+      <biological_entity id="o7849" name="mat" name_original="mats" src="d0_s0" type="structure">
+        <character is_modifier="true" name="architecture_or_fragility" src="d0_s0" value="loose" />
+        <character is_modifier="true" name="density" src="d0_s0" value="dense" />
+      </biological_entity>
+      <relation from="o7848" id="r1832" name="forming" negation="false" src="d0_s0" to="o7849" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Stems not readily fragmenting, tips not upturned;</text>
+      <biological_entity id="o7850" name="stem" name_original="stems" src="d0_s1" type="structure" />
+      <biological_entity id="o7851" name="tip" name_original="tips" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="not" name="orientation" src="d0_s1" value="upturned" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>creeping stems filiform, indeterminate, branching dichotomously;</text>
+      <biological_entity id="o7852" name="stem" name_original="stems" src="d0_s2" type="structure">
+        <character is_modifier="true" name="growth_form_or_orientation" src="d0_s2" value="creeping" />
+        <character is_modifier="false" name="shape" src="d0_s2" value="filiform" />
+        <character is_modifier="false" name="development" src="d0_s2" value="indeterminate" />
+        <character is_modifier="false" modifier="dichotomously" name="architecture" src="d0_s2" value="branching" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>upright stems stout, unbranched (3-10 cm aboveground), terminating in simple strobili.</text>
+      <biological_entity id="o7853" name="stem" name_original="stems" src="d0_s3" type="structure">
+        <character is_modifier="true" name="orientation" src="d0_s3" value="upright" />
+        <character is_modifier="false" name="fragility_or_size" src="d0_s3" value="stout" />
+        <character is_modifier="false" name="architecture" src="d0_s3" value="unbranched" />
+      </biological_entity>
+      <biological_entity id="o7854" name="strobilus" name_original="strobili" src="d0_s3" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s3" value="simple" />
+      </biological_entity>
+      <relation from="o7853" id="r1833" name="terminating in" negation="false" src="d0_s3" to="o7854" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Leaves green, lanceolate, 3-4.5 X 0.75-1.2 mm (smaller on horizontal stems, 1/3 less than those on upright stems);</text>
+      <biological_entity id="o7855" name="leaf" name_original="leaves" src="d0_s4" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s4" value="green" />
+        <character is_modifier="false" name="shape" src="d0_s4" value="lanceolate" />
+        <character char_type="range_value" from="3" from_unit="mm" name="length" src="d0_s4" to="4.5" to_unit="mm" />
+        <character char_type="range_value" from="0.75" from_unit="mm" name="width" src="d0_s4" to="1.2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>abaxial groove absent;</text>
+      <biological_entity constraint="abaxial" id="o7856" name="groove" name_original="groove" src="d0_s5" type="structure">
+        <character is_modifier="false" name="presence" src="d0_s5" value="absent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>base decurrent, forming saclike structure with stem;</text>
+      <biological_entity id="o7857" name="base" name_original="base" src="d0_s6" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s6" value="decurrent" />
+      </biological_entity>
+      <biological_entity id="o7858" name="structure" name_original="structure" src="d0_s6" type="structure">
+        <character is_modifier="true" name="architecture_or_shape" src="d0_s6" value="saclike" />
+      </biological_entity>
+      <biological_entity id="o7859" name="stem" name_original="stem" src="d0_s6" type="structure" />
+      <relation from="o7857" id="r1834" name="forming" negation="false" src="d0_s6" to="o7858" />
+      <relation from="o7857" id="r1835" name="with" negation="false" src="d0_s6" to="o7859" />
+    </statement>
+    <statement id="d0_s7">
+      <text>margins with soft spiny projections, 0.1-0.2 mm;</text>
+      <biological_entity id="o7860" name="margin" name_original="margins" src="d0_s7" type="structure">
+        <character char_type="range_value" from="0.1" from_unit="mm" name="some_measurement" notes="" src="d0_s7" to="0.2" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o7861" name="projection" name_original="projections" src="d0_s7" type="structure">
+        <character is_modifier="true" name="pubescence_or_texture" src="d0_s7" value="soft" />
+        <character is_modifier="true" name="architecture_or_shape" src="d0_s7" value="spiny" />
+      </biological_entity>
+      <relation from="o7860" id="r1836" name="with" negation="false" src="d0_s7" to="o7861" />
+    </statement>
+    <statement id="d0_s8">
+      <text>apex acuminate to subulate.</text>
+      <biological_entity id="o7862" name="apex" name_original="apex" src="d0_s8" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="acuminate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="subulate" />
+        <character char_type="range_value" from="acuminate" name="shape" src="d0_s8" to="subulate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>Strobili (1-) 2-3 (-5) cm;</text>
+      <biological_entity id="o7863" name="strobilus" name_original="strobili" src="d0_s9" type="structure">
+        <character char_type="range_value" from="1" from_unit="cm" name="atypical_some_measurement" src="d0_s9" to="2" to_inclusive="false" to_unit="cm" />
+        <character char_type="range_value" from="3" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d0_s9" to="5" to_unit="cm" />
+        <character char_type="range_value" from="2" from_unit="cm" name="some_measurement" src="d0_s9" to="3" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>sporophylls lanceolate-triangular, 4.5-6 X 1.15-1.5 mm, lacking abaxial ridges.</text>
+      <biological_entity id="o7864" name="sporophyll" name_original="sporophylls" src="d0_s10" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s10" value="lanceolate-triangular" />
+        <character char_type="range_value" from="4.5" from_unit="mm" name="length" src="d0_s10" to="6" to_unit="mm" />
+        <character char_type="range_value" from="1.15" from_unit="mm" name="width" src="d0_s10" to="1.5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>2 n = 18.</text>
+      <biological_entity constraint="abaxial" id="o7865" name="ridge" name_original="ridges" src="d0_s10" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s10" value="lacking" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o7866" name="chromosome" name_original="" src="d0_s11" type="structure">
+        <character name="quantity" src="d0_s11" value="18" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Wet places, among mossy stream banks, lakeshores, bogs, and wet talus slopes, in neutral to alkaline soil;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="wet" />
+        <character name="habitat" value="places , among mossy stream banks , lakeshores , bogs , and wet talus slopes , in neutral to alkaline soil" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>600--2900(--3800) m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="2900" to_unit="m" from="600" from_unit="m" />
+        <character name="elevation" char_type="atypical_range" to="3800" to_unit="m" from="600" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Greenland; St. Pierre and Miquelon; Alta., B.C., Man., N.B., Nfld., N.W.T., N.S., Ont., P.E.I., Que., Sask., Yukon; Alaska, Colo., Idaho, Maine, Mich., Minn., Mont., Nev., N.Y., Wis., Wyo.; Eurasia; nw Africa in the Canary Islands.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="Greenland" establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="St. Pierre and Miquelon" establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Alta." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Man." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Nfld." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.W.T." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="P.E.I." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Sask." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Yukon" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Colo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Idaho" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Nev." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wyo." establishment_means="native" />
+        <character name="distribution" value="Eurasia" establishment_means="native" />
+        <character name="distribution" value="nw Africa in the Canary Islands" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <other_name type="common_name">Northern spike-moss</other_name>
+  <other_name type="common_name">prickly mountain-moss</other_name>
+  <other_name type="common_name">sélaginelle fausse-sélagine</other_name>
+  <discussion>Selaginella selaginoides is reported to have strobili with basal megasporangia and apical microsporangia (H. T. Horner Jr. and H. J. Arnott 1963). Some individuals, however, have megasporangia at the tip of the strobili. Selaginella selaginoides is generally thought to be a primitive member of the genus (F. O. Bower 1908; T. L. Phillips and G. A. Leisman 1966; R. M. Tryon 1955), but certain of its characteristics may be derived. It is unique in having an active megaspore dispersal mechanism, termed "compression and slingshot megaspore ejection" (C. N. Page 1989), and it has a peculiar root position and development (E. E. Karrfalt 1981) probably found elsewhere only in the closely related species S . deflexa Brackenridge of Hawaii. Both features may be derived rather than primitive.</discussion>
+</bio:treatment>

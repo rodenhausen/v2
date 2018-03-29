@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">pinus</taxon_name>
+    <taxon_name authority="Parry ex Carrière" date="1855" rank="species">torreyana</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="subspecies">torreyana</taxon_name>
+    <taxon_hierarchy>family pinaceae;genus pinus;species torreyana;subspecies torreyana</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Trees to 15m in native stands (to 23m in sheltered sites);</text>
+      <biological_entity id="o17361" name="tree" name_original="trees" src="d0_s0" type="structure">
+        <character char_type="range_value" constraint="in stands" constraintid="o17362" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="15" to_unit="m" />
+      </biological_entity>
+      <biological_entity id="o17362" name="stand" name_original="stands" src="d0_s0" type="structure">
+        <character is_modifier="true" name="condition" src="d0_s0" value="native" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>mature crown of sheltered trees narrower than tree height, fairly open in natural sites.</text>
+      <biological_entity id="o17363" name="crown" name_original="crown" src="d0_s1" type="structure" constraint="tree">
+        <character is_modifier="true" name="life_cycle" src="d0_s1" value="mature" />
+        <character is_modifier="false" name="width" src="d0_s1" value="narrower than tree height" />
+        <character constraint="in sites" constraintid="o17365" is_modifier="false" modifier="fairly" name="architecture" src="d0_s1" value="open" />
+      </biological_entity>
+      <biological_entity id="o17364" name="tree" name_original="trees" src="d0_s1" type="structure">
+        <character is_modifier="true" name="position_relational" src="d0_s1" value="sheltered" />
+      </biological_entity>
+      <biological_entity id="o17365" name="site" name_original="sites" src="d0_s1" type="structure">
+        <character is_modifier="true" name="location" src="d0_s1" value="natural" />
+      </biological_entity>
+      <relation from="o17363" id="r4040" name="part_of" negation="false" src="d0_s1" to="o17364" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Seed-cones mostly broadly ovoid, as broad as long or longer, mostly less than 13.5cm;</text>
+      <biological_entity id="o17366" name="cone-seed" name_original="seed-cones" src="d0_s2" type="structure">
+        <character is_modifier="false" modifier="mostly broadly" name="shape" src="d0_s2" value="ovoid" />
+        <character is_modifier="false" name="length_or_size" src="d0_s2" value="long" />
+        <character is_modifier="false" name="length_or_size" src="d0_s2" value="longer" />
+        <character char_type="range_value" from="0" from_unit="cm" modifier="mostly" name="distance" src="d0_s2" to="13.5" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>umbos mostly shorter than 6mm, terminal portion curved outward.</text>
+      <biological_entity id="o17367" name="umbo" name_original="umbos" src="d0_s3" type="structure">
+        <character modifier="mostly shorter than" name="some_measurement" src="d0_s3" unit="mm" value="6" />
+      </biological_entity>
+      <biological_entity constraint="terminal" id="o17368" name="portion" name_original="portion" src="d0_s3" type="structure">
+        <character is_modifier="false" name="course" src="d0_s3" value="curved" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Seeds to 12mm wide, averaging less than 11mm, light to medium brown with dark mottling.</text>
+    </statement>
+    <statement id="d0_s5">
+      <text>2 n =24.</text>
+      <biological_entity id="o17369" name="seed" name_original="seeds" src="d0_s4" type="structure">
+        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d0_s4" to="12" to_unit="mm" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s4" value="light" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s4" value="medium" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s4" value="brown with dark mottling" />
+        <character char_type="range_value" from="light" name="coloration" src="d0_s4" to="medium brown with dark mottling" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o17370" name="chromosome" name_original="" src="d0_s5" type="structure">
+        <character name="quantity" src="d0_s5" value="24" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Dry fogbelt zone on eroding, mostly dry slopes;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="dry fogbelt zone on eroding , dry slopes" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0--125m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="125" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Calif.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>31a</number>
+  <other_name type="common_name">Mainland Torrey pine</other_name>
+  <discussion>Pinus torreyana subsp. torreyana occurs naturally only in a relict stand near Del Mar, California.</discussion>
+  <discussion type="conservation">of conservation concern</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_300_d69_s0">
+      <text>Leaves mostly 5 per fascicle;</text>
+      <biological_entity id="from_key_V2_300_o6600" name="leaf" name_original="leaves" src="d69_s0" type="structure">
+        <character constraint="per fascicle" constraintid="o6601" name="count" src="d69_s0" value="5" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6601" name="fascicle" name_original="fascicle" src="d69_s0" type="structure" />
+    </statement>
+    <statement id="from_key_V2_300_d69_s1">
+      <text>larger apophyses and umbos forming short, curved-tipped pyramids;</text>
+      <biological_entity constraint="larger" id="from_key_V2_300_o6602" name="apophysis" name_original="apophyses" src="d69_s1" type="structure" />
+      <biological_entity constraint="larger" id="from_key_V2_300_o6603" name="umbo" name_original="umbos" src="d69_s1" type="structure" />
+      <biological_entity id="from_key_V2_300_o6604" name="pyramid" name_original="pyramids" src="d69_s1" type="structure">
+        <character is_modifier="true" name="height_or_length_or_size" src="d69_s1" value="short" />
+        <character is_modifier="true" name="architecture" src="d69_s1" value="curved-tipped" />
+      </biological_entity>
+      <relation from="from_key_V2_300_o6602" id="from_key_V2_300_r1532" name="forming" negation="false" src="d69_s1" to="from_key_V2_300_o6604" />
+      <relation from="from_key_V2_300_o6603" id="from_key_V2_300_r1533" name="forming" negation="false" src="d69_s1" to="from_key_V2_300_o6604" />
+    </statement>
+    <statement id="from_key_V2_300_d69_s2">
+      <text>seed-cones 10-15 cm.</text>
+      <biological_entity id="from_key_V2_300_o6605" name="seed-cone" name_original="seed-cones" src="d69_s2" type="structure">
+        <character char_type="range_value" from="10" from_unit="cm" name="distance" src="d69_s2" to="15" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d67_s0">
+      <text>Seed-cones massive, heavy;</text>
+      <biological_entity id="from_key_V2_300_o6585" name="seed-cone" name_original="seed-cones" src="d67_s0" type="structure">
+        <character is_modifier="false" name="size" src="d67_s0" value="massive" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d67_s1">
+      <text>apophyses much extended, particularly toward base of cone, continuous with umbo to produce a curved-tipped pyramid or long claw;</text>
+      <biological_entity id="from_key_V2_300_o6586" name="apophysis" name_original="apophyses" src="d67_s1" type="structure">
+        <character is_modifier="false" modifier="much" name="size" src="d67_s1" value="extended" />
+        <character constraint="with umbo" constraintid="o6589" is_modifier="false" name="architecture" notes="alterIDs:o6587" src="d67_s1" value="continuous" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6587" name="base" name_original="base" src="d67_s1" type="structure" />
+      <biological_entity id="from_key_V2_300_o6588" name="cone" name_original="cone" src="d67_s1" type="structure" />
+      <biological_entity id="from_key_V2_300_o6589" name="umbo" name_original="umbo" src="d67_s1" type="structure" />
+      <biological_entity id="from_key_V2_300_o6590" name="claw" name_original="claw" src="d67_s1" type="structure">
+        <character is_modifier="true" name="architecture" src="d67_s1" value="curved-tipped" />
+        <character is_modifier="true" name="length_or_size" src="d67_s1" value="long" />
+      </biological_entity>
+      <relation from="from_key_V2_300_o6586" id="from_key_V2_300_r1526" modifier="particularly" name="toward" negation="false" src="d67_s1" to="from_key_V2_300_o6587" />
+      <relation from="from_key_V2_300_o6587" id="from_key_V2_300_r1527" name="part_of" negation="false" src="d67_s1" to="from_key_V2_300_o6588" />
+      <relation from="from_key_V2_300_o6589" id="from_key_V2_300_r1528" name="produce" negation="false" src="d67_s1" to="from_key_V2_300_o6590" />
+    </statement>
+    <statement id="from_key_V2_300_d67_s2">
+      <text>seed body 1.5-2.5 cm;</text>
+      <biological_entity constraint="seed" id="from_key_V2_300_o6591" name="body" name_original="body" src="d67_s2" type="structure">
+        <character char_type="range_value" from="1.5" from_unit="cm" name="some_measurement" src="d67_s2" to="2.5" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d67_s3">
+      <text>leaves 15-32 cm;</text>
+    </statement>
+    <statement id="from_key_V2_300_d67_s4">
+      <text>California and Baja California.</text>
+      <biological_entity id="from_key_V2_300_o6592" name="leaf" name_original="leaves" src="d67_s3" type="structure">
+        <character char_type="range_value" from="15" from_unit="cm" name="some_measurement" src="d67_s3" to="32" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d56_s0">
+      <text>Pines of w North America (e to North Dakota, Nebraska, Colorado, and w Texas).</text>
+      <biological_entity id="from_key_V2_300_o6533" name="whole_organism" name_original="" src="d56_s0" type="structure" />
+      <biological_entity id="from_key_V2_300_o6534" name="w" name_original="w" src="d56_s0" type="structure">
+        <character is_modifier="false" name="geographical_terms" src="d56_s0" value="north" />
+      </biological_entity>
+      <relation from="from_key_V2_300_o6533" id="from_key_V2_300_r1510" name="part_of" negation="false" src="d56_s0" to="from_key_V2_300_o6534" />
+    </statement>
+    <statement id="from_key_V2_300_d28_s0">
+      <text>Leaves 3 (-5) per fascicle.</text>
+      <biological_entity id="from_key_V2_300_o6435" name="leaf" name_original="leaves" src="d28_s0" type="structure">
+        <character char_type="range_value" from="3" from_inclusive="false" name="atypical_count" src="d28_s0" to="5" />
+        <character constraint="per fascicle" constraintid="o6436" name="count" src="d28_s0" value="3" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6436" name="fascicle" name_original="fascicle" src="d28_s0" type="structure" />
+    </statement>
+    <statement id="from_key_V2_300_d2_s0">
+      <text>Leaves in cross-section with 2 fibrovascular bundles;</text>
+      <biological_entity id="from_key_V2_300_o6305" name="leaf" name_original="leaves" src="d2_s0" type="structure" />
+      <biological_entity id="from_key_V2_300_o6306" name="cross-section" name_original="cross-section" src="d2_s0" type="structure" />
+      <biological_entity id="from_key_V2_300_o6307" name="fibrovascular" name_original="fibrovascular" src="d2_s0" type="structure">
+        <character is_modifier="true" name="count" src="d2_s0" value="2" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6308" name="bundle" name_original="bundles" src="d2_s0" type="structure">
+        <character is_modifier="true" name="count" src="d2_s0" value="2" />
+      </biological_entity>
+      <relation from="from_key_V2_300_o6305" id="from_key_V2_300_r1450" name="in" negation="false" src="d2_s0" to="from_key_V2_300_o6306" />
+      <relation from="from_key_V2_300_o6306" id="from_key_V2_300_r1451" name="with" negation="false" src="d2_s0" to="from_key_V2_300_o6307" />
+      <relation from="from_key_V2_300_o6306" id="from_key_V2_300_r1452" name="with" negation="false" src="d2_s0" to="from_key_V2_300_o6308" />
+    </statement>
+    <statement id="from_key_V2_300_d2_s1">
+      <text>scales of fascicle sheaths, at least lower ones, persistent and falling with fascicle (except in P. leiophylla and P. torreyana), these and bud-scales mostly with margins long-fringed;</text>
+      <biological_entity id="from_key_V2_300_o6309" name="scale" name_original="scales" src="d2_s1" type="structure" />
+      <biological_entity constraint="fascicle" id="from_key_V2_300_o6310" name="sheath" name_original="sheaths" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_300_o6311" name="scale" name_original="scales" src="d2_s1" type="structure">
+        <character is_modifier="true" modifier="at-least" name="position" src="d2_s1" value="lower" />
+        <character is_modifier="false" name="duration" src="d2_s1" value="persistent" />
+        <character constraint="with fascicle" constraintid="o6312" is_modifier="false" name="life_cycle" src="d2_s1" value="falling" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6312" name="fascicle" name_original="fascicle" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_300_o6313" name="bud-scale" name_original="bud-scales" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_300_o6314" name="margin" name_original="margins" src="d2_s1" type="structure">
+        <character is_modifier="false" name="shape" src="d2_s1" value="long-fringed" />
+      </biological_entity>
+      <relation from="from_key_V2_300_o6309" id="from_key_V2_300_r1453" name="part_of" negation="false" src="d2_s1" to="from_key_V2_300_o6310" />
+      <relation from="from_key_V2_300_o6313" id="from_key_V2_300_r1454" name="with" negation="false" src="d2_s1" to="from_key_V2_300_o6314" />
+    </statement>
+    <statement id="from_key_V2_300_d2_s2">
+      <text>seed-cones mostly armed (subg. Pinus).</text>
+      <biological_entity id="from_key_V2_300_o6315" name="seed-cone" name_original="seed-cones" src="d2_s2" type="structure">
+        <character is_modifier="false" modifier="mostly" name="architecture" src="d2_s2" value="armed" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

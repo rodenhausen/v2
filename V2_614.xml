@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">juniperus</taxon_name>
+    <taxon_name authority="Linnaeus" date="1753" rank="species">communis</taxon_name>
+    <taxon_name authority="Fernald &amp; H. St. John" date="1921" rank="variety">megistocarpa</taxon_name>
+    <place_of_publication>
+      <publication_title>Proc. Boston Soc. Nat. Hist.</publication_title>
+      <place_in_publication>36: 58. 1921</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cupressaceae;genus juniperus;species communis;variety megistocarpa</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Shrubs prostrate.</text>
+      <biological_entity id="o17033" name="shrub" name_original="shrubs" src="d0_s0" type="structure">
+        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="prostrate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves upturned, lanceolate, apex acute and mucronate, to 12 × 1.6 mm, glaucous stomatal band about 1.5 times width of each green marginal band.</text>
+      <biological_entity id="o17034" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s1" value="upturned" />
+        <character is_modifier="false" name="shape" src="d0_s1" value="lanceolate" />
+      </biological_entity>
+      <biological_entity id="o17035" name="apex" name_original="apex" src="d0_s1" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s1" value="acute" />
+        <character is_modifier="false" name="shape" src="d0_s1" value="mucronate" />
+        <character char_type="range_value" from="0" from_unit="mm" name="length" src="d0_s1" to="12" to_unit="mm" />
+        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d0_s1" to="1.6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="stomatal" id="o17036" name="band" name_original="band" src="d0_s1" type="structure">
+        <character is_modifier="true" name="pubescence" src="d0_s1" value="glaucous" />
+        <character is_modifier="false" name="width" src="d0_s1" value="1.5 times width of" />
+      </biological_entity>
+      <biological_entity constraint="marginal" id="o17037" name="band" name_original="band" src="d0_s1" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s1" value="green" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Seed-cones 9-13 mm, longer than leaves.</text>
+      <biological_entity id="o17038" name="cone-seed" name_original="seed-cones" src="d0_s2" type="structure">
+        <character char_type="range_value" from="9" from_unit="mm" name="distance" src="d0_s2" to="13" to_unit="mm" />
+        <character constraint="than leaves" constraintid="o17039" is_modifier="false" name="length_or_size" src="d0_s2" value="longer" />
+      </biological_entity>
+      <biological_entity id="o17039" name="leaf" name_original="leaves" src="d0_s2" type="structure" />
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Sand dunes, serpentine, and limestone barrens;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="sand dunes" />
+        <character name="habitat" value="serpentine , and limestone barrens ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0--500 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="500" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Nfld., N.S., Que.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="Nfld." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1a</number>
+  <discussion>In Nova Scotia this variety is known from Sable Island. Magdalen Island, Quebec, is the type locality.</discussion>
+  <discussion>Although this taxon appears to be distinct, it might be more appropriately treated at the rank of forma .</discussion>
+</bio:treatment>

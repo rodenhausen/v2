@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Ching ex Pichi Sermolli" date="unknown" rank="family">thelypteridaceae</taxon_name>
+    <taxon_name authority="Schmidel" date="1763" rank="genus">thelypteris</taxon_name>
+    <taxon_name authority="(Schreber) C. F. Reed" date="1968" rank="subgenus">Meniscium</taxon_name>
+    <place_of_publication>
+      <publication_title>Phytologia</publication_title>
+      <place_in_publication>17: 254. 1968</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family thelypteridaceae;genus thelypteris;subgenus Meniscium</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="Schreber" date="unknown" rank="subgenus">Meniscium</taxon_name>
+    <place_of_publication>
+      <publication_title>Gen. Pl.</publication_title>
+      <place_in_publication>2: 757. 1791</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>subgenus Meniscium;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Distinguished from other subgenera by the combination of evergreen leaves, pinnae entire or merely serrate, crossveins regularly uniting in pairs to form parallel rows of usually more than 10 areoles between costa and pinna margin, areoles each with a single excurrent, usually free, vein produced at the point of union of the crossveins, and elongate, exindusiate sori.</text>
+      <biological_entity id="o20413" name="whole_organism" name_original="" src="d0_s0" type="structure">
+        <character constraint="from subgenera" constraintid="o20414" is_modifier="false" name="prominence" src="d0_s0" value="distinguished" />
+      </biological_entity>
+      <biological_entity id="o20414" name="subgenus" name_original="subgenera" src="d0_s0" type="structure" />
+      <biological_entity id="o20415" name="combination" name_original="combination" src="d0_s0" type="structure" />
+      <biological_entity id="o20416" name="leaf" name_original="leaves" src="d0_s0" type="structure">
+        <character is_modifier="true" name="duration" src="d0_s0" value="evergreen" />
+      </biological_entity>
+      <biological_entity id="o20417" name="pinna" name_original="pinnae" src="d0_s0" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s0" value="entire" />
+        <character is_modifier="false" modifier="merely" name="architecture_or_shape" src="d0_s0" value="serrate" />
+      </biological_entity>
+      <biological_entity id="o20418" name="crossvein" name_original="crossveins" src="d0_s0" type="structure" />
+      <biological_entity id="o20419" name="pair" name_original="pairs" src="d0_s0" type="structure" />
+      <biological_entity id="o20420" name="row" name_original="rows" src="d0_s0" type="structure">
+        <character is_modifier="true" name="arrangement" src="d0_s0" value="parallel" />
+      </biological_entity>
+      <biological_entity constraint="between costa and margin" constraintid="o20422-o20423" id="o20421" name="areole" name_original="areoles" src="d0_s0" type="structure">
+        <character char_type="range_value" from="10" is_modifier="true" modifier="usually" name="quantity" src="d0_s0" upper_restricted="false" />
+      </biological_entity>
+      <biological_entity id="o20422" name="costa" name_original="costa" src="d0_s0" type="structure" />
+      <biological_entity id="o20423" name="margin" name_original="margin" src="d0_s0" type="structure" />
+      <biological_entity constraint="pinna" id="o20424" name="areole" name_original="areoles" src="d0_s0" type="structure" />
+      <biological_entity id="o20426" name="vein" name_original="vein" src="d0_s0" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s0" value="single" />
+        <character is_modifier="true" name="architecture" src="d0_s0" value="excurrent" />
+        <character is_modifier="true" modifier="usually" name="fusion" src="d0_s0" value="free" />
+      </biological_entity>
+      <biological_entity id="o20427" name="point" name_original="point" src="d0_s0" type="structure" />
+      <biological_entity id="o20428" name="crossvein" name_original="crossveins" src="d0_s0" type="structure" />
+      <biological_entity id="o20429" name="sorus" name_original="sori" src="d0_s0" type="structure">
+        <character is_modifier="true" name="shape" src="d0_s0" value="elongate" />
+        <character is_modifier="true" name="architecture" src="d0_s0" value="exindusiate" />
+      </biological_entity>
+      <relation from="o20414" id="r4760" name="by" negation="false" src="d0_s0" to="o20415" />
+      <relation from="o20415" id="r4761" name="part_of" negation="false" src="d0_s0" to="o20416" />
+      <relation from="o20418" id="r4762" name="uniting in" negation="false" src="d0_s0" to="o20419" />
+      <relation from="o20420" id="r4763" name="consist_of" negation="false" src="d0_s0" to="o20421" />
+      <relation from="o20425" id="r4764" name="with" negation="false" src="d0_s0" to="o20426" />
+      <relation from="o20426" id="r4765" name="produced at the" negation="false" src="d0_s0" to="o20427" />
+      <relation from="o20426" id="r4766" name="produced at the" negation="false" src="d0_s0" to="o20428" />
+      <relation from="o20426" id="r4767" name="produced at the" negation="false" src="d0_s0" to="o20429" />
+    </statement>
+    <statement id="d0_s1">
+      <text>x = 36.</text>
+      <biological_entity id="o20425" name="areole" name_original="areoles" src="d0_s0" type="structure" />
+      <biological_entity constraint="x" id="o20430" name="chromosome" name_original="" src="d0_s1" type="structure">
+        <character name="quantity" src="d0_s1" value="36" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1h</number>
+  <discussion>Species 20 and 21 are included in the genus  Meniscium  by some workers.:</discussion>
+</bio:treatment>

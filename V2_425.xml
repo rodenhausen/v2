@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
+    <taxon_name authority="Miller" date="1754" rank="genus">larix</taxon_name>
+    <taxon_name authority="Parlatore" date="1863" rank="species">lyallii</taxon_name>
+    <place_of_publication>
+      <publication_title>Conif. Nov.</publication_title>
+      <place_in_publication>3. 1863</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family pinaceae;genus larix;species lyallii</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Trees to 25m;</text>
+      <biological_entity id="o10071" name="tree" name_original="trees" src="d0_s0" type="structure">
+        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="25" to_unit="m" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>trunk to 1.2m diam.;</text>
+      <biological_entity id="o10072" name="trunk" name_original="trunk" src="d0_s1" type="structure">
+        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="1.2" to_unit="m" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>crown sparse, conic.</text>
+      <biological_entity id="o10073" name="crown" name_original="crown" src="d0_s2" type="structure">
+        <character is_modifier="false" name="count_or_density" src="d0_s2" value="sparse" />
+        <character is_modifier="false" name="shape" src="d0_s2" value="conic" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Bark furrowed and flaking into red to purple-brown scales.</text>
+      <biological_entity id="o10074" name="bark" name_original="bark" src="d0_s3" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s3" value="furrowed" />
+      </biological_entity>
+      <biological_entity id="o10075" name="scale" name_original="scales" src="d0_s3" type="structure">
+        <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d0_s3" value="red" />
+        <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d0_s3" value="purple-brown" />
+        <character char_type="range_value" from="red" is_modifier="true" name="coloration" src="d0_s3" to="purple-brown" />
+      </biological_entity>
+      <relation from="o10075" id="r2307" name="flaking into" negation="false" src="d0_s3" to="o10075" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Branches horizontal, occasionally pendulous, persistent on trunk when dead;</text>
+      <biological_entity id="o10076" name="branch" name_original="branches" src="d0_s4" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s4" value="horizontal" />
+        <character is_modifier="false" modifier="occasionally" name="orientation" src="d0_s4" value="pendulous" />
+        <character constraint="on trunk" constraintid="o10077" is_modifier="false" name="duration" src="d0_s4" value="persistent" />
+      </biological_entity>
+      <biological_entity id="o10077" name="trunk" name_original="trunk" src="d0_s4" type="structure" />
+    </statement>
+    <statement id="d0_s5">
+      <text>twigs strongly white to yellow-tomentose for 2-3 years.</text>
+      <biological_entity id="o10078" name="twig" name_original="twigs" src="d0_s5" type="structure">
+        <character is_modifier="false" modifier="strongly" name="coloration" src="d0_s5" value="white" />
+        <character constraint="for years" constraintid="o10079" is_modifier="false" name="pubescence" src="d0_s5" value="yellow-tomentose" />
+      </biological_entity>
+      <biological_entity id="o10079" name="year" name_original="years" src="d0_s5" type="structure">
+        <character char_type="range_value" from="2" is_modifier="true" name="quantity" src="d0_s5" to="3" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>Buds tomentose, scale margins ciliate.</text>
+      <biological_entity id="o10080" name="bud" name_original="buds" src="d0_s6" type="structure">
+        <character is_modifier="false" name="pubescence" src="d0_s6" value="tomentose" />
+      </biological_entity>
+      <biological_entity constraint="scale" id="o10081" name="margin" name_original="margins" src="d0_s6" type="structure">
+        <character is_modifier="false" name="architecture_or_pubescence_or_shape" src="d0_s6" value="ciliate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Leaves of short-shoots 2-3.5cm × 0.6-0.8mm, 0.4-0.6mm thick, keeled abaxially, 2-angled adaxially;</text>
+      <biological_entity id="o10082" name="leaf" name_original="leaves" src="d0_s7" type="structure">
+        <character char_type="range_value" from="2" from_unit="cm" name="thickness" src="d0_s7" to="3.5" to_unit="cm" />
+        <character name="thickness" src="d0_s7" unit="mm" value="×0.6-0.8" />
+        <character char_type="range_value" from="0.4" from_unit="mm" name="thickness" src="d0_s7" to="0.6" to_unit="mm" />
+        <character is_modifier="false" modifier="abaxially" name="shape" src="d0_s7" value="keeled" />
+        <character is_modifier="false" modifier="adaxially" name="shape" src="d0_s7" value="2-angled" />
+      </biological_entity>
+      <biological_entity id="o10083" name="short-shoot" name_original="short-shoots" src="d0_s7" type="structure" />
+      <relation from="o10082" id="r2308" name="part_of" negation="false" src="d0_s7" to="o10083" />
+    </statement>
+    <statement id="d0_s8">
+      <text>resin canals 40-80µm from margins, each surrounded by 6-10 epithelial cells.</text>
+      <biological_entity constraint="resin" id="o10084" name="canal" name_original="canals" src="d0_s8" type="structure">
+        <character char_type="range_value" constraint="from margins" constraintid="o10085" from="40" from_unit="µm" name="location" src="d0_s8" to="80" to_unit="µm" />
+      </biological_entity>
+      <biological_entity id="o10085" name="margin" name_original="margins" src="d0_s8" type="structure" />
+      <biological_entity id="o10086" name="epithelial" name_original="epithelial" src="d0_s8" type="structure">
+        <character char_type="range_value" from="6" is_modifier="true" name="quantity" src="d0_s8" to="10" />
+      </biological_entity>
+      <biological_entity id="o10087" name="cell" name_original="cells" src="d0_s8" type="structure">
+        <character char_type="range_value" from="6" is_modifier="true" name="quantity" src="d0_s8" to="10" />
+      </biological_entity>
+      <relation from="o10084" id="r2309" name="surrounded by" negation="false" src="d0_s8" to="o10086" />
+      <relation from="o10084" id="r2310" name="surrounded by" negation="false" src="d0_s8" to="o10087" />
+    </statement>
+    <statement id="d0_s9">
+      <text>Seed-cones 2.5-4 (-5) × 1.1-1.9cm, on curved stalks 3-7 × 2.5-4mm;</text>
+      <biological_entity id="o10088" name="seed-cone" name_original="seed-cones" src="d0_s9" type="structure">
+        <character char_type="range_value" from="4" from_inclusive="false" from_unit="cm" name="atypical_length" src="d0_s9" to="5" to_unit="cm" />
+        <character char_type="range_value" from="2.5" from_unit="cm" name="length" src="d0_s9" to="4" to_unit="cm" />
+        <character char_type="range_value" from="1.1" from_unit="cm" name="width" src="d0_s9" to="1.9" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o10089" name="stalk" name_original="stalks" src="d0_s9" type="structure">
+        <character is_modifier="true" name="course" src="d0_s9" value="curved" />
+        <character char_type="range_value" from="3" from_unit="mm" name="length" src="d0_s9" to="7" to_unit="mm" />
+        <character char_type="range_value" from="2.5" from_unit="mm" name="width" src="d0_s9" to="4" to_unit="mm" />
+      </biological_entity>
+      <relation from="o10088" id="r2311" name="on" negation="false" src="d0_s9" to="o10089" />
+    </statement>
+    <statement id="d0_s10">
+      <text>scales 45-55, margins erose, abaxial surface tomentose;</text>
+      <biological_entity id="o10090" name="scale" name_original="scales" src="d0_s10" type="structure">
+        <character char_type="range_value" from="45" name="quantity" src="d0_s10" to="55" />
+      </biological_entity>
+      <biological_entity id="o10091" name="margin" name_original="margins" src="d0_s10" type="structure">
+        <character is_modifier="false" name="architecture_or_relief" src="d0_s10" value="erose" />
+      </biological_entity>
+      <biological_entity constraint="abaxial" id="o10092" name="surface" name_original="surface" src="d0_s10" type="structure">
+        <character is_modifier="false" name="pubescence" src="d0_s10" value="tomentose" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>bracts tipped by awn 4-5mm, exceeding mature scales by ca. 6mm.</text>
+      <biological_entity id="o10093" name="bract" name_original="bracts" src="d0_s11" type="structure">
+        <character constraint="by awn" constraintid="o10094" is_modifier="false" name="architecture" src="d0_s11" value="tipped" />
+      </biological_entity>
+      <biological_entity id="o10094" name="awn" name_original="awn" src="d0_s11" type="structure">
+        <character char_type="range_value" from="4" from_unit="mm" name="some_measurement" src="d0_s11" to="5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o10095" name="scale" name_original="scales" src="d0_s11" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s11" value="mature" />
+      </biological_entity>
+      <relation from="o10093" id="r2312" name="exceeding" negation="false" src="d0_s11" to="o10095" />
+    </statement>
+    <statement id="d0_s12">
+      <text>Pollen 78-93µm diam.</text>
+      <biological_entity id="o10096" name="pollen" name_original="pollen" src="d0_s12" type="structure">
+        <character char_type="range_value" from="78" from_unit="µm" name="diameter" src="d0_s12" to="93" to_unit="µm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s13">
+      <text>Seeds yellow to purple, body 3mm, wing 6mm.</text>
+      <biological_entity id="o10097" name="seed" name_original="seeds" src="d0_s13" type="structure">
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s13" value="yellow" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s13" value="purple" />
+        <character char_type="range_value" from="yellow" name="coloration" src="d0_s13" to="purple" />
+      </biological_entity>
+      <biological_entity id="o10098" name="body" name_original="body" src="d0_s13" type="structure">
+        <character name="some_measurement" src="d0_s13" unit="mm" value="3" />
+      </biological_entity>
+      <biological_entity id="o10099" name="wing" name_original="wing" src="d0_s13" type="structure">
+        <character name="some_measurement" src="d0_s13" unit="mm" value="6" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Subalpine talus slopes;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="subalpine" />
+        <character name="habitat" value="talus slopes" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>1800--2400m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="2400" to_unit="m" from="1800" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Alta., B.C.; Idaho, Mont., Wash.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="Alta." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Idaho" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>3</number>
+  <other_name type="common_name">Subalpine larch</other_name>
+  <other_name type="common_name">alpine larch</other_name>
+  <other_name type="common_name">mélèze de Lyall</other_name>
+  <discussion>Larix lyallii and L . occidentalis ( Larix sect. Multiseriales ) are similar morphologically and have similar geographic ranges. Just how closely the two species are related has not been determined, but they probably originated from a common ancestor resembling L . potaninii Batalin. Although the geographic ranges of the two species overlap considerably, elevational differences of 150 to 300m usually separate them. Some morphologically intermediate specimens have been collected from Washington and Montana.</discussion>
+  <discussion>Because of its restricted distribution and growth at timberline, alpine larch has no commercial importance; it is often dwarfed and misshapen.</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_443_d4_s0">
+      <text>Twigs strongly tomentose;</text>
+      <biological_entity id="from_key_V2_443_o10776" name="twig" name_original="twigs" src="d4_s0" type="structure">
+        <character is_modifier="false" modifier="strongly" name="pubescence" src="d4_s0" value="tomentose" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_443_d4_s1">
+      <text>seed-cones 2.5-4 (-5) cm, scale margins erose, cone stalk 2.5-4 mm diam.;</text>
+      <biological_entity id="from_key_V2_443_o10777" name="seed-cone" name_original="seed-cones" src="d4_s1" type="structure">
+        <character char_type="range_value" from="4" from_inclusive="false" from_unit="cm" name="atypical_distance" src="d4_s1" to="5" to_unit="cm" />
+        <character char_type="range_value" from="2.5" from_unit="cm" name="distance" src="d4_s1" to="4" to_unit="cm" />
+      </biological_entity>
+      <biological_entity constraint="scale" id="from_key_V2_443_o10778" name="margin" name_original="margins" src="d4_s1" type="structure">
+        <character is_modifier="false" name="architecture_or_relief" src="d4_s1" value="erose" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_443_d4_s2">
+      <text>width-to-thickness ratio of short-shoot leaves 1.2-1.4, adaxial surface 2-angled;</text>
+      <biological_entity constraint="cone" id="from_key_V2_443_o10779" name="stalk" name_original="stalk" src="d4_s1" type="structure">
+        <character char_type="range_value" from="2.5" from_unit="mm" name="diameter" src="d4_s1" to="4" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="short-shoot" id="from_key_V2_443_o10780" name="leaf" name_original="leaves" src="d4_s2" type="structure">
+        <character char_type="range_value" from="1.2" name="count" src="d4_s2" to="1.4" />
+      </biological_entity>
+      <biological_entity constraint="adaxial" id="from_key_V2_443_o10781" name="surface" name_original="surface" src="d4_s2" type="structure">
+        <character is_modifier="false" name="ratio" src="d4_s2" value="2-angled" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_443_d4_s3">
+      <text>resin canals 40-80 um from margins, each surrounded by 6-10 epithelial cells.</text>
+      <biological_entity constraint="resin" id="from_key_V2_443_o10782" name="canal" name_original="canals" src="d4_s3" type="structure">
+        <character char_type="range_value" constraint="from margins" constraintid="o10783" from="40" from_unit="um" name="location" src="d4_s3" to="80" to_unit="um" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_443_o10783" name="margin" name_original="margins" src="d4_s3" type="structure" />
+      <biological_entity id="from_key_V2_443_o10784" name="epithelial" name_original="epithelial" src="d4_s3" type="structure">
+        <character char_type="range_value" from="6" is_modifier="true" name="count" src="d4_s3" to="10" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_443_o10785" name="cell" name_original="cells" src="d4_s3" type="structure">
+        <character char_type="range_value" from="6" is_modifier="true" name="count" src="d4_s3" to="10" />
+      </biological_entity>
+      <relation from="from_key_V2_443_o10782" id="from_key_V2_443_r2447" name="surrounded by" negation="false" src="d4_s3" to="from_key_V2_443_o10784" />
+      <relation from="from_key_V2_443_o10782" id="from_key_V2_443_r2448" name="surrounded by" negation="false" src="d4_s3" to="from_key_V2_443_o10785" />
+    </statement>
+    <statement id="from_key_V2_443_d2_s0">
+      <text>Twigs initially pubescent, becoming glabrous, or strongly tomentose for 2-3 years;</text>
+      <biological_entity id="from_key_V2_443_o10757" name="twig" name_original="twigs" src="d2_s0" type="structure">
+        <character is_modifier="false" modifier="initially" name="pubescence" src="d2_s0" value="pubescent" />
+        <character is_modifier="false" modifier="becoming" name="pubescence" src="d2_s0" value="glabrous" />
+        <character is_modifier="false" modifier="strongly" name="pubescence" src="d2_s0" value="tomentose" />
+        <character is_modifier="false" name="pubescence" src="d2_s0" value="glabrous" />
+        <character constraint="for years" constraintid="o10758" is_modifier="false" modifier="strongly" name="pubescence" src="d2_s0" value="tomentose" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_443_o10758" name="year" name_original="years" src="d2_s0" type="structure">
+        <character char_type="range_value" from="2" is_modifier="true" name="count" src="d2_s0" to="3" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_443_d2_s1">
+      <text>seed-cones 2-5 cm, scales 45-55, shorter than awn-tipped bracts at maturity;</text>
+      <biological_entity id="from_key_V2_443_o10759" name="seed-cone" name_original="seed-cones" src="d2_s1" type="structure">
+        <character char_type="range_value" from="2" from_unit="cm" name="distance" src="d2_s1" to="5" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_443_o10760" name="scale" name_original="scales" src="d2_s1" type="structure">
+        <character char_type="range_value" from="45" name="count" src="d2_s1" to="55" />
+        <character constraint="than awn-tipped bracts" constraintid="o10761" is_modifier="false" name="height_or_length_or_size" src="d2_s1" value="shorter" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_443_o10761" name="bract" name_original="bracts" src="d2_s1" type="structure">
+        <character is_modifier="true" name="architecture" src="d2_s1" value="awn-tipped" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_443_d2_s2">
+      <text>short-shoot leaves 2-5 cm, thickness 0.4-0.6 mm;</text>
+      <biological_entity constraint="short-shoot" id="from_key_V2_443_o10762" name="leaf" name_original="leaves" src="d2_s2" type="structure">
+        <character char_type="range_value" from="2" from_unit="cm" name="some_measurement" src="d2_s2" to="5" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_443_d2_s3">
+      <text>pollen 71-93 um diam.</text>
+      <biological_entity id="from_key_V2_443_o10763" name="pollen" name_original="pollen" src="d2_s3" type="structure">
+        <character char_type="range_value" from="71" from_unit="um" name="diameter" src="d2_s3" to="93" to_unit="um" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

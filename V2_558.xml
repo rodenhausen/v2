@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>John T. Mickel</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Link" date="unknown" rank="family">anemiaceae</taxon_name>
+    <taxon_name authority="Swartz" date="1806" rank="genus">Anemia</taxon_name>
+    <place_of_publication>
+      <publication_title>Syn. Fil.</publication_title>
+      <place_in_publication>6, 155. 1806</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family anemiaceae;genus Anemia</taxon_hierarchy>
+    <other_info_on_name type="etymology">[Greek aneimon, without clothing, referring to the absence of blade protection for the sporangia]</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Stems short-creeping, horizontal, clothed with dark hairs.</text>
+      <biological_entity id="o15074" name="stem" name_original="stems" src="d0_s0" type="structure">
+        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="short-creeping" />
+        <character is_modifier="false" name="orientation" src="d0_s0" value="horizontal" />
+      </biological_entity>
+      <biological_entity id="o15075" name="hair" name_original="hairs" src="d0_s0" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s0" value="dark" />
+      </biological_entity>
+      <relation from="o15074" id="r3552" name="clothed with" negation="false" src="d0_s0" to="o15075" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves partially dimorphic with sporangia restricted to erect, dissected, most proximal pair of pinnae arising from petiole just below sterile part of blade or leaves fully dimorphic and blade tissue lacking on fertile leaves.</text>
+      <biological_entity id="o15076" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character constraint="with sporangia" constraintid="o15077" is_modifier="false" modifier="partially" name="growth_form" src="d0_s1" value="dimorphic" />
+      </biological_entity>
+      <biological_entity id="o15077" name="sporangium" name_original="sporangia" src="d0_s1" type="structure" />
+      <biological_entity constraint="proximal" id="o15078" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character is_modifier="true" name="orientation" src="d0_s1" value="erect" />
+        <character is_modifier="true" name="shape" src="d0_s1" value="dissected" />
+        <character constraint="from petiole" constraintid="o15080" is_modifier="false" name="orientation" src="d0_s1" value="arising" />
+      </biological_entity>
+      <biological_entity id="o15079" name="pinna" name_original="pinnae" src="d0_s1" type="structure" />
+      <biological_entity id="o15080" name="petiole" name_original="petiole" src="d0_s1" type="structure" />
+      <biological_entity constraint="sterile" id="o15081" name="part" name_original="part" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="fully" name="growth_form" src="d0_s1" value="dimorphic" />
+      </biological_entity>
+      <biological_entity id="o15082" name="blade" name_original="blade" src="d0_s1" type="structure" />
+      <biological_entity id="o15083" name="leaf" name_original="leaves" src="d0_s1" type="structure" />
+      <biological_entity constraint="blade" id="o15084" name="tissue" name_original="tissue" src="d0_s1" type="structure">
+        <character constraint="on leaves" constraintid="o15085" is_modifier="false" name="quantity" src="d0_s1" value="lacking" />
+      </biological_entity>
+      <biological_entity id="o15085" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s1" value="fertile" />
+      </biological_entity>
+      <relation from="o15077" id="r3553" name="restricted to" negation="false" src="d0_s1" to="o15078" />
+      <relation from="o15078" id="r3554" name="part_of" negation="false" src="d0_s1" to="o15079" />
+      <relation from="o15080" id="r3555" name="below" negation="false" src="d0_s1" to="o15081" />
+      <relation from="o15081" id="r3556" name="part_of" negation="false" src="d0_s1" to="o15082" />
+      <relation from="o15081" id="r3557" name="part_of" negation="false" src="d0_s1" to="o15083" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Blade 1-3-pinnate, papery to leathery.</text>
+      <biological_entity id="o15086" name="blade" name_original="blade" src="d0_s2" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s2" value="1-3-pinnate" />
+        <character is_modifier="false" name="texture" notes="[duplicate value]" src="d0_s2" value="papery" />
+        <character is_modifier="false" name="texture" notes="[duplicate value]" src="d0_s2" value="leathery" />
+        <character char_type="range_value" from="papery" name="texture" src="d0_s2" to="leathery" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Veins free [anastomosing].</text>
+    </statement>
+    <statement id="d0_s4">
+      <text>x = 38.</text>
+      <biological_entity id="o15087" name="vein" name_original="veins" src="d0_s3" type="structure">
+        <character is_modifier="false" name="fusion" src="d0_s3" value="free" />
+      </biological_entity>
+      <biological_entity constraint="x" id="o15088" name="chromosome" name_original="" src="d0_s4" type="structure">
+        <character name="quantity" src="d0_s4" value="38" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>tropical and subtropical regions, North America, Mexico, West Indies, Central America, South America, 1 in Asia in s India, 10 in Africa.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="tropical and subtropical regions" establishment_means="native" />
+        <character name="distribution" value="North America" establishment_means="native" />
+        <character name="distribution" value="Mexico" establishment_means="native" />
+        <character name="distribution" value="West Indies" establishment_means="native" />
+        <character name="distribution" value="Central America" establishment_means="native" />
+        <character name="distribution" value="South America" establishment_means="native" />
+        <character name="distribution" value="1 in Asia in s India" establishment_means="native" />
+        <character name="distribution" value="10 in Africa" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <discussion>Anemias are most abundant in Brazil (ca. 70 spp.) and have a secondary center of diversity in Mexico (20 spp.). They are limited in the flora to peninsular Florida and the Edwards Plateau, Texas. All 3 species belong to the calciphilic subgenus Anemiorrhiza .</discussion>
+  <discussion>Species 117 (3 in the flora):</discussion>
+  <references>
+    <reference>Mickel, J. T. 1962. Monographic study of the fern genus  Anemia  subgenus  Coptophyllum . Iowa State Coll. J. Sci. 36: 349--482.</reference>
+    <reference>Mickel, J. T. 1981. The fern genus  Anemia  (Schizaeaceae) subgenus  Anemiorrhiza . Brittonia 33: 413--429.</reference>
+    <reference>Mickel, J. T. 1982. The genus  Anemia  (Schizaeaceae) in Mexico. Brittonia 34: 388--413.</reference>
+    <reference>Walker, T. G. 1962. The  Anemia adiantifolia  complex in Jamaica. New Phytol. 61: 291--298.</reference>
+  </references>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d1_s0">
+          <text>Blades 1-pinnate;</text>
+        </statement>
+        <statement id="d1_s1">
+          <text>Texas.</text>
+          <biological_entity id="o15089" name="blade" name_original="blades" src="d1_s0" type="structure">
+            <character is_modifier="false" name="architecture_or_shape" src="d1_s0" value="1-pinnate" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>2 Anemia mexicana</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d2_s0">
+          <text>Blades 2-3-pinnate;</text>
+        </statement>
+        <statement id="d2_s1">
+          <text>Florida.</text>
+          <biological_entity id="o15090" name="blade" name_original="blades" src="d2_s0" type="structure">
+            <character is_modifier="false" name="architecture_or_shape" src="d2_s0" value="2-3-pinnate" />
+          </biological_entity>
+        </statement>
+      </description>
+      <next_statement_id>2</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d3_s0">
+          <text>Leaves 2-pinnate, pinnae of leaf all fertile or all sterile;</text>
+          <biological_entity id="o15091" name="leaf" name_original="leaves" src="d3_s0" type="structure">
+            <character is_modifier="false" name="architecture_or_shape" src="d3_s0" value="2-pinnate" />
+          </biological_entity>
+          <biological_entity id="o15092" name="pinna" name_original="pinnae" src="d3_s0" type="structure">
+            <character is_modifier="false" name="reproduction" src="d3_s0" value="fertile" />
+            <character name="reproduction" src="d3_s0" value="all" />
+            <character is_modifier="false" name="reproduction" src="d3_s0" value="sterile" />
+          </biological_entity>
+          <biological_entity id="o15093" name="leaf" name_original="leaf" src="d3_s0" type="structure" />
+          <relation from="o15092" id="r3558" name="part_of" negation="false" src="d3_s0" to="o15093" />
+        </statement>
+        <statement id="d3_s1">
+          <text>sporangia on all pinnae of fertile leaves, blade tissue lacking;</text>
+          <biological_entity id="o15094" name="sporangium" name_original="sporangia" src="d3_s1" type="structure" />
+          <biological_entity id="o15095" name="pinna" name_original="pinnae" src="d3_s1" type="structure" />
+          <biological_entity id="o15096" name="leaf" name_original="leaves" src="d3_s1" type="structure">
+            <character is_modifier="true" name="reproduction" src="d3_s1" value="fertile" />
+          </biological_entity>
+          <biological_entity constraint="blade" id="o15097" name="tissue" name_original="tissue" src="d3_s1" type="structure">
+            <character is_modifier="false" name="quantity" src="d3_s1" value="lacking" />
+          </biological_entity>
+          <relation from="o15094" id="r3559" name="on" negation="false" src="d3_s1" to="o15095" />
+          <relation from="o15095" id="r3560" name="part_of" negation="false" src="d3_s1" to="o15096" />
+        </statement>
+        <statement id="d3_s2">
+          <text>sterile leaves 4-10 cm.</text>
+          <biological_entity id="o15098" name="leaf" name_original="leaves" src="d3_s2" type="structure">
+            <character is_modifier="true" name="reproduction" src="d3_s2" value="sterile" />
+            <character char_type="range_value" from="4" from_unit="cm" name="some_measurement" src="d3_s2" to="10" to_unit="cm" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>3 Anemia wrightii</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d4_s0">
+          <text>Leaves 3-pinnate, often with dimorphic pinnae;</text>
+          <biological_entity id="o15099" name="leaf" name_original="leaves" src="d4_s0" type="structure">
+            <character is_modifier="false" name="architecture_or_shape" src="d4_s0" value="3-pinnate" />
+          </biological_entity>
+          <biological_entity id="o15100" name="pinna" name_original="pinnae" src="d4_s0" type="structure">
+            <character is_modifier="true" name="growth_form" src="d4_s0" value="dimorphic" />
+          </biological_entity>
+          <relation from="o15099" id="r3561" modifier="often" name="with" negation="false" src="d4_s0" to="o15100" />
+        </statement>
+        <statement id="d4_s1">
+          <text>sporangia limited to proximal pair of pinnae;</text>
+          <biological_entity id="o15101" name="sporangium" name_original="sporangia" src="d4_s1" type="structure" />
+          <biological_entity constraint="proximal" id="o15102" name="pair" name_original="pair" src="d4_s1" type="structure" />
+          <biological_entity id="o15103" name="pinna" name_original="pinnae" src="d4_s1" type="structure" />
+          <relation from="o15101" id="r3562" name="to" negation="false" src="d4_s1" to="o15102" />
+          <relation from="o15102" id="r3563" name="part_of" negation="false" src="d4_s1" to="o15103" />
+        </statement>
+        <statement id="d4_s2">
+          <text>sterile leaves (excluding erect fertile pinnae) 17-60 cm.</text>
+          <biological_entity id="o15104" name="leaf" name_original="leaves" src="d4_s2" type="structure">
+            <character is_modifier="true" name="reproduction" src="d4_s2" value="sterile" />
+            <character char_type="range_value" from="17" from_unit="cm" name="some_measurement" src="d4_s2" to="60" to_unit="cm" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>1 Anemia adiantifolia</determination>
+    </key_statement>
+  </key>
+</bio:treatment>

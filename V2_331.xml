@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">juniperus</taxon_name>
+    <taxon_name authority="Hooker" date="1838" rank="species">occidentalis</taxon_name>
+    <taxon_name authority="Hooker" date="unknown" rank="variety">occidentalis</taxon_name>
+    <taxon_hierarchy>family cupressaceae;genus juniperus;species occidentalis;variety occidentalis</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Sabina</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="species">occidentalis</taxon_name>
+    <taxon_hierarchy>genus Sabina;species occidentalis;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants often (50%) monoecious.</text>
+      <biological_entity id="o7565" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character name="quantity" src="d0_s0" value="[50%]" />
+        <character is_modifier="false" name="reproduction" src="d0_s0" value="monoecious" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Bark redbrown.</text>
+      <biological_entity id="o7566" name="bark" name_original="bark" src="d0_s1" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s1" value="redbrown" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Seed-cones (5-) 7.5 (-9) mm.</text>
+      <biological_entity id="o7567" name="cone-seed" name_original="seed-cones" src="d0_s2" type="structure">
+        <character char_type="range_value" from="5" from_unit="mm" name="atypical_distance" src="d0_s2" to="7.5" to_inclusive="false" to_unit="mm" />
+        <character char_type="range_value" from="7.5" from_inclusive="false" from_unit="mm" name="atypical_distance" src="d0_s2" to="9" to_unit="mm" />
+        <character name="distance" src="d0_s2" unit="mm" value="7.5" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Dry rocky foothill and mountain slopes;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="dry rocky foothill and mountain slopes ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>(0--)1500--3000 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="3000" to_unit="m" from="1500" from_unit="m" />
+        <character name="elevation" char_type="atypical_range" to="3000" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Calif., Idaho, Oreg., Nev., Wash.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Idaho" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Nev." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>8a</number>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_301_d15_s0">
+      <text>Seed-cones blue to blue-black, with 2 (-3) seeds, maturing in 2 years;</text>
+      <biological_entity id="from_key_V2_301_o6791" name="seed-cone" name_original="seed-cones" src="d15_s0" type="structure">
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d15_s0" value="blue" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d15_s0" value="blue-black" />
+        <character char_type="range_value" from="blue" name="coloration" src="d15_s0" to="blue-black" />
+        <character constraint="in years" constraintid="o6793" is_modifier="false" name="life_cycle" notes="alterIDs:o6792" src="d15_s0" value="maturing" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_301_o6792" name="seed" name_original="seeds" src="d15_s0" type="structure">
+        <character char_type="range_value" from="2" from_inclusive="false" is_modifier="true" name="atypical_count" src="d15_s0" to="3" />
+        <character is_modifier="true" name="count" src="d15_s0" value="2" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_301_o6793" name="year" name_original="years" src="d15_s0" type="structure">
+        <character is_modifier="true" name="count" src="d15_s0" value="2" />
+      </biological_entity>
+      <relation from="from_key_V2_301_o6791" id="from_key_V2_301_r1582" name="with" negation="false" src="d15_s0" to="from_key_V2_301_o6792" />
+    </statement>
+    <statement id="from_key_V2_301_d15_s1">
+      <text>bark of branchlets greater than 10 mm diam. exfoliating in scales or flakes;</text>
+      <biological_entity id="from_key_V2_301_o6794" name="bark" name_original="bark" src="d15_s1" type="structure">
+        <character char_type="range_value" from="10" from_unit="mm" name="diameter" src="d15_s1" upper_restricted="false" />
+        <character constraint="in flakes" constraintid="o6797" is_modifier="false" name="relief" src="d15_s1" value="exfoliating" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_301_o6795" name="branchlet" name_original="branchlets" src="d15_s1" type="structure" />
+      <biological_entity id="from_key_V2_301_o6796" name="scale" name_original="scales" src="d15_s1" type="structure" />
+      <biological_entity id="from_key_V2_301_o6797" name="flake" name_original="flakes" src="d15_s1" type="structure" />
+      <relation from="from_key_V2_301_o6794" id="from_key_V2_301_r1583" name="part_of" negation="false" src="d15_s1" to="from_key_V2_301_o6795" />
+    </statement>
+    <statement id="from_key_V2_301_d15_s2">
+      <text>single-stemmed trees to 20 (-30) m.</text>
+      <biological_entity id="from_key_V2_301_o6798" name="tree" name_original="trees" src="d15_s2" type="structure">
+        <character is_modifier="true" name="architecture" src="d15_s2" value="single-stemmed" />
+        <character char_type="range_value" from="20" from_inclusive="false" from_unit="m" name="atypical_some_measurement" src="d15_s2" to="30" to_unit="m" />
+        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d15_s2" to="20" to_unit="m" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_301_d14_s0">
+      <text>Leaves with ovate, elliptic, elongate, or inconspicuous glands (or glands round on scalelike leaves only).</text>
+      <biological_entity id="from_key_V2_301_o6789" name="leaf" name_original="leaves" src="d14_s0" type="structure" />
+      <biological_entity id="from_key_V2_301_o6790" name="gland" name_original="glands" src="d14_s0" type="structure">
+        <character is_modifier="true" name="shape" src="d14_s0" value="ovate" />
+        <character is_modifier="true" name="arrangement_or_shape" src="d14_s0" value="elliptic" />
+        <character is_modifier="true" name="shape" src="d14_s0" value="elongate" />
+        <character is_modifier="true" name="prominence" src="d14_s0" value="inconspicuous" />
+      </biological_entity>
+      <relation from="from_key_V2_301_o6789" id="from_key_V2_301_r1581" name="with" negation="false" src="d14_s0" to="from_key_V2_301_o6790" />
+    </statement>
+    <statement id="from_key_V2_301_d12_s0">
+      <text>Seed-cones with 1-3 seeds, fleshy or resinous to fibrous;</text>
+      <biological_entity id="from_key_V2_301_o6782" name="seed-cone" name_original="seed-cones" src="d12_s0" type="structure">
+        <character is_modifier="false" name="texture" notes="alterIDs:o6783" src="d12_s0" value="fleshy" />
+        <character is_modifier="false" name="coating" src="d12_s0" value="resinous" />
+        <character is_modifier="false" name="texture" src="d12_s0" value="fibrous" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_301_o6783" name="seed" name_original="seeds" src="d12_s0" type="structure">
+        <character char_type="range_value" from="1" is_modifier="true" name="count" src="d12_s0" to="3" />
+      </biological_entity>
+      <relation from="from_key_V2_301_o6782" id="from_key_V2_301_r1579" name="with" negation="false" src="d12_s0" to="from_key_V2_301_o6783" />
+    </statement>
+    <statement id="from_key_V2_301_d12_s1">
+      <text>bark exfoliating in thin strips, branchlets erect.</text>
+      <biological_entity id="from_key_V2_301_o6784" name="bark" name_original="bark" src="d12_s1" type="structure">
+        <character constraint="in strips" constraintid="o6785" is_modifier="false" name="relief" src="d12_s1" value="exfoliating" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_301_o6785" name="strip" name_original="strips" src="d12_s1" type="structure">
+        <character is_modifier="true" name="width" src="d12_s1" value="thin" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_301_o6786" name="branchlet" name_original="branchlets" src="d12_s1" type="structure">
+        <character is_modifier="false" name="orientation" src="d12_s1" value="erect" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_301_d4_s0">
+      <text>Margins of leaves denticulate (at 20×), scalelike leaves usually obtuse to acute at apex (sometimes mucronate in Juniperus deppeana or acuminate in J. monosperma).</text>
+      <biological_entity id="from_key_V2_301_o6733" name="margin" name_original="margins" src="d4_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d4_s0" value="denticulate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_301_o6734" name="leaf" name_original="leaves" src="d4_s0" type="structure" />
+      <biological_entity id="from_key_V2_301_o6735" name="leaf" name_original="leaves" src="d4_s0" type="structure">
+        <character is_modifier="true" name="shape" src="d4_s0" value="scalelike" />
+        <character is_modifier="false" modifier="usually" name="shape" notes="[duplicate value]" src="d4_s0" value="obtuse" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s0" value="acute" />
+        <character char_type="range_value" constraint="at apex" constraintid="o6736" from="usually obtuse" name="shape" src="d4_s0" to="acute" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_301_o6736" name="apex" name_original="apex" src="d4_s0" type="structure" />
+      <relation from="from_key_V2_301_o6733" id="from_key_V2_301_r1569" name="part_of" negation="false" src="d4_s0" to="from_key_V2_301_o6734" />
+    </statement>
+    <statement id="from_key_V2_301_d2_s0">
+      <text>Leaves of 2 kinds, whip (subulate, without basal abscission zone) and scalelike;</text>
+      <biological_entity id="from_key_V2_301_o6725" name="leaf" name_original="leaves" src="d2_s0" type="structure">
+        <character is_modifier="false" name="shape" notes="alterIDs:o6726" src="d2_s0" value="scalelike" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_301_o6726" name="kind" name_original="kinds" src="d2_s0" type="structure">
+        <character is_modifier="true" name="count" src="d2_s0" value="2" />
+      </biological_entity>
+      <relation from="from_key_V2_301_o6725" id="from_key_V2_301_r1566" name="consist_of" negation="false" src="d2_s0" to="from_key_V2_301_o6726" />
+    </statement>
+    <statement id="from_key_V2_301_d2_s1">
+      <text>cones terminal (Juniperus sect. Sabina Spach).</text>
+      <biological_entity id="from_key_V2_301_o6727" name="cone" name_original="cones" src="d2_s1" type="structure">
+        <character is_modifier="false" name="position_or_structure_subtype" src="d2_s1" value="terminal" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>Donald R. Farrar</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Martius" date="unknown" rank="family">Hymenophyllaceae</taxon_name>
+    <taxon_hierarchy>family Hymenophyllaceae</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants epiphytic, terrestrial, or on rock.</text>
+      <biological_entity id="o16549" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="false" name="habitat" src="d0_s0" value="epiphytic" />
+        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="terrestrial" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Stems long-creeping, often threadlike and intertwining, or short-erect, protostelic, bearing brown hairs of 1-2 types.</text>
+      <biological_entity id="o16550" name="stem" name_original="stems" src="d0_s1" type="structure">
+        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="long-creeping" />
+        <character is_modifier="false" modifier="often" name="shape" src="d0_s1" value="thread-like" value_original="threadlike" />
+        <character is_modifier="false" name="orientation" src="d0_s1" value="short-erect" />
+        <character is_modifier="false" name="architecture" src="d0_s1" value="protostelic" />
+      </biological_entity>
+      <biological_entity id="o16551" name="hair" name_original="hairs" src="d0_s1" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s1" value="brown" />
+      </biological_entity>
+      <biological_entity id="o16552" name="type" name_original="types" src="d0_s1" type="structure">
+        <character char_type="range_value" from="1" is_modifier="true" name="quantity" src="d0_s1" to="2" />
+      </biological_entity>
+      <relation from="o16550" id="r3881" name="bearing" negation="false" src="d0_s1" to="o16551" />
+      <relation from="o16550" id="r3882" name="consist_of" negation="false" src="d0_s1" to="o16552" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Roots sparse or absent.</text>
+      <biological_entity id="o16553" name="root" name_original="roots" src="d0_s2" type="structure">
+        <character is_modifier="false" name="quantity" src="d0_s2" value="sparse" />
+        <character is_modifier="false" name="presence" src="d0_s2" value="absent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Leaves small, 0.5-20 × 0.2-5 cm, often forming dense mats.</text>
+      <biological_entity id="o16554" name="leaf" name_original="leaves" src="d0_s3" type="structure">
+        <character is_modifier="false" name="size" src="d0_s3" value="small" />
+        <character char_type="range_value" from="0.5" from_unit="cm" name="length" src="d0_s3" to="20" to_unit="cm" />
+        <character char_type="range_value" from="0.2" from_unit="cm" name="width" src="d0_s3" to="5" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o16555" name="mat" name_original="mats" src="d0_s3" type="structure">
+        <character is_modifier="true" name="density" src="d0_s3" value="dense" />
+      </biological_entity>
+      <relation from="o16554" id="r3883" modifier="often" name="forming" negation="false" src="d0_s3" to="o16555" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Petiole short, threadlike to wiry, often winged part or entire length.</text>
+      <biological_entity id="o16556" name="petiole" name_original="petiole" src="d0_s4" type="structure">
+        <character is_modifier="false" name="height_or_length_or_size" src="d0_s4" value="short" />
+        <character is_modifier="false" name="shape" src="d0_s4" value="thread-like" value_original="threadlike" />
+        <character is_modifier="false" name="architecture" src="d0_s4" value="wiry" />
+      </biological_entity>
+      <biological_entity id="o16557" name="part" name_original="part" src="d0_s4" type="structure">
+        <character is_modifier="true" modifier="often" name="architecture" src="d0_s4" value="winged" />
+        <character is_modifier="false" name="length" src="d0_s4" value="entire" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Blade ovate or oblong to lanceolate, simple to decompound, usually 1 cell thick between veins (except Trichomanes membranaceum Linnaeus), entire or dentate;</text>
+      <biological_entity id="o16558" name="blade" name_original="blade" src="d0_s5" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="ovate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="oblong" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="lanceolate" />
+        <character char_type="range_value" from="oblong" name="shape" src="d0_s5" to="lanceolate" />
+        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s5" value="simple" />
+        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s5" value="decompound" />
+        <character char_type="range_value" from="simple" name="architecture" src="d0_s5" to="decompound" />
+        <character modifier="usually" name="quantity" src="d0_s5" value="1" />
+      </biological_entity>
+      <biological_entity id="o16559" name="cell" name_original="cell" src="d0_s5" type="structure">
+        <character constraint="between veins" constraintid="o16560" is_modifier="false" name="width" src="d0_s5" value="thick" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s5" value="entire" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s5" value="dentate" />
+      </biological_entity>
+      <biological_entity id="o16560" name="vein" name_original="veins" src="d0_s5" type="structure" />
+    </statement>
+    <statement id="d0_s6">
+      <text>scales or simple and/or stellate hairs often borne on veins or leaf margins.</text>
+      <biological_entity id="o16561" name="scale" name_original="scales" src="d0_s6" type="structure" />
+      <biological_entity id="o16562" name="hair" name_original="hairs" src="d0_s6" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s6" value="simple" />
+        <character is_modifier="true" name="arrangement_or_shape" src="d0_s6" value="stellate" />
+      </biological_entity>
+      <biological_entity id="o16563" name="vein" name_original="veins" src="d0_s6" type="structure" />
+      <biological_entity constraint="leaf" id="o16564" name="margin" name_original="margins" src="d0_s6" type="structure" />
+      <relation from="o16561" id="r3884" name="borne on" negation="false" src="d0_s6" to="o16563" />
+      <relation from="o16561" id="r3885" name="borne on" negation="false" src="d0_s6" to="o16564" />
+      <relation from="o16562" id="r3886" name="borne on" negation="false" src="d0_s6" to="o16563" />
+      <relation from="o16562" id="r3887" name="borne on" negation="false" src="d0_s6" to="o16564" />
+    </statement>
+    <statement id="d0_s7">
+      <text>Veins free and divergent, occasionally present as unattached false veins.</text>
+      <biological_entity id="o16565" name="vein" name_original="veins" src="d0_s7" type="structure">
+        <character is_modifier="false" name="fusion" src="d0_s7" value="free" />
+        <character is_modifier="false" name="arrangement" src="d0_s7" value="divergent" />
+      </biological_entity>
+      <biological_entity constraint="false" id="o16566" name="vein" name_original="veins" src="d0_s7" type="structure">
+        <character is_modifier="true" name="fusion" src="d0_s7" value="unattached" />
+      </biological_entity>
+      <relation from="o16565" id="r3888" modifier="occasionally" name="present as" negation="false" src="d0_s7" to="o16566" />
+    </statement>
+    <statement id="d0_s8">
+      <text>Sori marginal on vein ends, enclosed by 2-valved or conic involucres.</text>
+      <biological_entity id="o16567" name="sorus" name_original="sori" src="d0_s8" type="structure">
+        <character constraint="on vein ends" constraintid="o16568" is_modifier="false" name="position" src="d0_s8" value="marginal" />
+      </biological_entity>
+      <biological_entity constraint="vein" id="o16568" name="end" name_original="ends" src="d0_s8" type="structure" />
+      <biological_entity id="o16569" name="involucre" name_original="involucres" src="d0_s8" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s8" value="2-valved" />
+        <character is_modifier="true" name="shape" src="d0_s8" value="conic" />
+      </biological_entity>
+      <relation from="o16567" id="r3889" name="enclosed by" negation="false" src="d0_s8" to="o16569" />
+    </statement>
+    <statement id="d0_s9">
+      <text>Sporangia borne on moundlike receptacle or on elongate bristle, sessile or short-stalked;</text>
+      <biological_entity id="o16570" name="sporangium" name_original="sporangia" src="d0_s9" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s9" value="sessile" />
+        <character is_modifier="false" name="architecture" src="d0_s9" value="short-stalked" />
+      </biological_entity>
+      <biological_entity id="o16571" name="receptacle" name_original="receptacle" src="d0_s9" type="structure">
+        <character is_modifier="true" name="shape" src="d0_s9" value="moundlike" />
+      </biological_entity>
+      <biological_entity id="o16572" name="bristle" name_original="bristle" src="d0_s9" type="structure">
+        <character is_modifier="true" name="shape" src="d0_s9" value="moundlike" />
+        <character is_modifier="true" name="shape" src="d0_s9" value="elongate" />
+      </biological_entity>
+      <relation from="o16570" id="r3890" name="borne" negation="false" src="d0_s9" to="o16571" />
+      <relation from="o16570" id="r3891" name="borne" negation="false" src="d0_s9" to="o16572" />
+    </statement>
+    <statement id="d0_s10">
+      <text>annulus oblique.</text>
+      <biological_entity id="o16573" name="annulus" name_original="annulus" src="d0_s10" type="structure">
+        <character is_modifier="false" name="orientation_or_shape" src="d0_s10" value="oblique" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>Spores green, globose, trilete.</text>
+      <biological_entity id="o16574" name="spore" name_original="spores" src="d0_s11" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s11" value="green" />
+        <character is_modifier="false" name="shape" src="d0_s11" value="globose" />
+        <character is_modifier="false" name="architecture" src="d0_s11" value="trilete" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s12">
+      <text>Gametophytes filamentous or ribbonlike or a combination of both, much branched, 0.2-1 cm, often bearing gemmae, persistent, clone-forming by vegetative reproduction.</text>
+      <biological_entity id="o16575" name="gametophyte" name_original="gametophytes" src="d0_s12" type="structure">
+        <character is_modifier="false" name="texture" src="d0_s12" value="filamentous" />
+        <character constraint="of both , much branched , 0.2-1 cm" is_modifier="false" name="architecture_or_shape" src="d0_s12" value="ribbonlike" />
+        <character is_modifier="false" modifier="often" name="duration" src="d0_s12" value="persistent" />
+      </biological_entity>
+      <biological_entity id="o16576" name="gemma" name_original="gemmae" src="d0_s12" type="structure" />
+      <relation from="o16575" id="r3892" modifier="often" name="bearing" negation="false" src="d0_s12" to="o16576" />
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>worldwide in wet tropics and subtropics, a few in temperate latitudes.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="worldwide in wet tropics and subtropics" establishment_means="native" />
+        <character name="distribution" value="a few in temperate latitudes" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>15</number>
+  <other_name type="common_name">Filmy Fern Family</other_name>
+  <discussion>Species outside the flora display a wide range of morphologies and habits, and many are somewhat larger than North American species.</discussion>
+  <discussion>Some authors divide the Hymenophyllaceae into 30 or more genera. The subdivisions of these genera are treated here as subgenera and sections, following C. V. Morton (1968).</discussion>
+  <discussion>Although plants of the Hymenophyllaceae clearly have the capacity to withstand periodic desiccation and freezing, they have a delicate nature that requires they grow in deeply sheltered habitats of nearly continuous high moisture and humidity. This undoubtedly accounts for the relative rarity of all species in the flora. Possibly they are currently restricted from more widespread pre-Pleistocene occurrences. All owe their continuing existence largely or entirely to vegetative propagation by either the sporophyte or gametophyte generation. The capacity for vegetative reproduction and dispersal by gametophytes of the Hymenophyllaceae allows gametophyte colonies to persist indefinitely without completing a life cycle. In the flora, several species are maintained exclusively as gametophytes with sporophytes rarely or never produced.</discussion>
+  <discussion>Genera 6, species ca. 650 (2 genera, 11 species in the flora):</discussion>
+  <references>
+    <reference>Farrar, D. R. 1967. Gametophytes of four tropical fern genera reproducing independently of their sporophytes in the southern Appalachians. Science 155: 1266--1267.</reference>
+    <reference>Farrar, D. R. 1985. Independent fern gametophytes in the wild. Proc. Roy. Soc. Edinburgh, B 86: 361--369.</reference>
+    <reference>Morton, C. V. 1968. The genera, subgenera, and sections of the Hymenophyllaceae. Contr. U.S. Natl. Herb. 38: 153--214.</reference>
+    <reference>Stokey, A. G. 1940. Spore germination and vegetative stages of the gametophytes of  Hymenophyllum  and  Trichomanes . Bot. Gaz. 101: 759--790.</reference>
+  </references>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d1_s0">
+          <text>Soral involucres 2-valved, the halves roundish to ovate, sporangial receptacle enclosed within involucre;</text>
+          <biological_entity constraint="soral" id="o16577" name="involucre" name_original="involucres" src="d1_s0" type="structure">
+            <character is_modifier="false" name="architecture" src="d1_s0" value="2-valved" />
+          </biological_entity>
+          <biological_entity id="o16578" name="half" name_original="halves" src="d1_s0" type="structure">
+            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s0" value="roundish" />
+            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s0" value="ovate" />
+            <character char_type="range_value" from="roundish" name="shape" src="d1_s0" to="ovate" />
+          </biological_entity>
+          <biological_entity constraint="sporangial" id="o16579" name="receptacle" name_original="receptacle" src="d1_s0" type="structure" />
+          <biological_entity id="o16580" name="involucre" name_original="involucre" src="d1_s0" type="structure" />
+          <relation from="o16579" id="r3893" name="enclosed within" negation="false" src="d1_s0" to="o16580" />
+        </statement>
+        <statement id="d1_s1">
+          <text>gametophytes entirely ribbonlike, branched;</text>
+          <biological_entity id="o16581" name="gametophyte" name_original="gametophytes" src="d1_s1" type="structure">
+            <character is_modifier="false" modifier="entirely" name="architecture_or_shape" src="d1_s1" value="ribbonlike" />
+            <character is_modifier="false" name="architecture" src="d1_s1" value="branched" />
+          </biological_entity>
+        </statement>
+        <statement id="d1_s2">
+          <text>gemmae platelike or absent.</text>
+          <biological_entity id="o16582" name="gemma" name_original="gemmae" src="d1_s2" type="structure">
+            <character is_modifier="false" name="shape" src="d1_s2" value="plate-like" value_original="platelike" />
+            <character is_modifier="false" name="presence" src="d1_s2" value="absent" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>1 Hymenophyllum</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d2_s0">
+          <text>Soral involucres conic, sporangial receptacle (bristle) becoming exserted beyond involucre;</text>
+          <biological_entity constraint="soral" id="o16583" name="involucre" name_original="involucres" src="d2_s0" type="structure">
+            <character is_modifier="false" name="shape" src="d2_s0" value="conic" />
+          </biological_entity>
+          <biological_entity constraint="sporangial" id="o16584" name="receptacle" name_original="receptacle" src="d2_s0" type="structure" />
+          <biological_entity id="o16585" name="involucre" name_original="involucre" src="d2_s0" type="structure" />
+          <relation from="o16584" id="r3894" modifier="becoming" name="exserted beyond" negation="false" src="d2_s0" to="o16585" />
+        </statement>
+        <statement id="d2_s1">
+          <text>gametophytes entirely filamentous or proximally filamentous with aerial blades;</text>
+          <biological_entity id="o16586" name="gametophyte" name_original="gametophytes" src="d2_s1" type="structure">
+            <character is_modifier="false" modifier="entirely" name="texture" src="d2_s1" value="filamentous" />
+            <character constraint="with blades" constraintid="o16587" is_modifier="false" modifier="proximally" name="texture" src="d2_s1" value="filamentous" />
+          </biological_entity>
+          <biological_entity id="o16587" name="blade" name_original="blades" src="d2_s1" type="structure">
+            <character is_modifier="true" name="location" src="d2_s1" value="aerial" />
+          </biological_entity>
+        </statement>
+        <statement id="d2_s2">
+          <text>gemmae uniseriate.</text>
+          <biological_entity id="o16588" name="gemma" name_original="gemmae" src="d2_s2" type="structure">
+            <character is_modifier="false" name="architecture_or_arrangement" src="d2_s2" value="uniseriate" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>2 Trichomanes</determination>
+    </key_statement>
+  </key>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_512_d36_s0">
+      <text>Blades 1-cell thick between veins, translucent, lacking stomates;</text>
+      <biological_entity constraint="blades" id="from_key_V2_512_o13608" name="1-cell" name_original="1-cell" src="d36_s0" type="structure">
+        <character constraint="between veins" constraintid="o13609" is_modifier="false" name="width" src="d36_s0" value="thick" />
+        <character is_modifier="false" name="coloration_or_reflectance" notes="alterIDs:o13609" src="d36_s0" value="translucent" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13609" name="vein" name_original="veins" src="d36_s0" type="structure" />
+      <biological_entity id="from_key_V2_512_o13610" name="stomate" name_original="stomates" src="d36_s0" type="structure">
+        <character is_modifier="true" name="count" src="d36_s0" value="lacking" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_512_d36_s1">
+      <text>sporangia borne within tubular, conic, or 2-valved marginal involucres (indusia);</text>
+      <biological_entity id="from_key_V2_512_o13611" name="sporangium" name_original="sporangia" src="d36_s1" type="structure" />
+      <biological_entity constraint="marginal" id="from_key_V2_512_o13612" name="involucre" name_original="involucres" src="d36_s1" type="structure">
+        <character is_modifier="true" name="shape" src="d36_s1" value="tubular" />
+        <character is_modifier="true" name="shape" src="d36_s1" value="conic" />
+        <character is_modifier="true" name="architecture" src="d36_s1" value="2-valved" />
+      </biological_entity>
+      <relation from="from_key_V2_512_o13611" id="from_key_V2_512_r3232" name="borne within" negation="false" src="d36_s1" to="from_key_V2_512_o13612" />
+    </statement>
+    <statement id="from_key_V2_512_d36_s2">
+      <text>leaves minute to small, 0.5-20 (-40) cm;</text>
+      <biological_entity id="from_key_V2_512_o13613" name="leaf" name_original="leaves" src="d36_s2" type="structure">
+        <character is_modifier="false" name="size" notes="[duplicate value]" src="d36_s2" value="minute" />
+        <character is_modifier="false" name="size" notes="[duplicate value]" src="d36_s2" value="small" />
+        <character char_type="range_value" from="minute" name="size" src="d36_s2" to="small" />
+        <character char_type="range_value" from="20" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d36_s2" to="40" to_unit="cm" />
+        <character char_type="range_value" from="0.5" from_unit="cm" name="some_measurement" src="d36_s2" to="20" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_512_d36_s3">
+      <text>scales absent at stem apex, hairs sometimes present.</text>
+      <biological_entity id="from_key_V2_512_o13614" name="scale" name_original="scales" src="d36_s3" type="structure">
+        <character constraint="at stem apex" constraintid="o13615" is_modifier="false" name="count" src="d36_s3" value="absent" />
+      </biological_entity>
+      <biological_entity constraint="stem" id="from_key_V2_512_o13615" name="apex" name_original="apex" src="d36_s3" type="structure" />
+      <biological_entity id="from_key_V2_512_o13616" name="hair" name_original="hairs" src="d36_s3" type="structure">
+        <character is_modifier="false" modifier="sometimes" name="count" src="d36_s3" value="present" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_512_d29_s0">
+      <text>Sporangial capsules (excluding stalks) less than 0.4 mm, opening by action of vertical or slightly oblique thick-walled annulus, usually containing 16-64 spores;</text>
+      <biological_entity constraint="sporangial" id="from_key_V2_512_o13549" name="capsule" name_original="capsules" src="d29_s0" type="structure">
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d29_s0" to="0.4" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13550" name="action" name_original="action" src="d29_s0" type="structure" />
+      <biological_entity id="from_key_V2_512_o13551" name="annulus" name_original="annulus" src="d29_s0" type="structure">
+        <character is_modifier="true" name="orientation" src="d29_s0" value="vertical" />
+        <character is_modifier="true" modifier="slightly" name="orientation_or_shape" src="d29_s0" value="oblique" />
+        <character is_modifier="true" name="architecture" src="d29_s0" value="thick-walled" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13552" name="spore" name_original="spores" src="d29_s0" type="structure">
+        <character char_type="range_value" from="16" is_modifier="true" name="count" src="d29_s0" to="64" />
+      </biological_entity>
+      <relation from="from_key_V2_512_o13549" id="from_key_V2_512_r3200" name="opening by" negation="false" src="d29_s0" to="from_key_V2_512_o13550" />
+      <relation from="from_key_V2_512_o13549" id="from_key_V2_512_r3201" name="opening by" negation="false" src="d29_s0" to="from_key_V2_512_o13551" />
+      <relation from="from_key_V2_512_o13549" id="from_key_V2_512_r3202" modifier="usually" name="containing" negation="false" src="d29_s0" to="from_key_V2_512_o13552" />
+    </statement>
+    <statement id="from_key_V2_512_d29_s1">
+      <text>sporangia short to long-stalked with 1-3 rows of stalk cells in cross-section, rarely sessile;</text>
+      <biological_entity id="from_key_V2_512_o13553" name="sporangium" name_original="sporangia" src="d29_s1" type="structure">
+        <character is_modifier="false" name="height_or_length_or_size" src="d29_s1" value="short" />
+        <character constraint="with rows" constraintid="o13554" is_modifier="false" name="architecture" src="d29_s1" value="long-stalked" />
+        <character is_modifier="false" modifier="rarely" name="architecture" notes="alterIDs:o13556" src="d29_s1" value="sessile" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13554" name="row" name_original="rows" src="d29_s1" type="structure">
+        <character char_type="range_value" from="1" is_modifier="true" name="count" src="d29_s1" to="3" />
+      </biological_entity>
+      <biological_entity constraint="stalk" id="from_key_V2_512_o13555" name="cell" name_original="cells" src="d29_s1" type="structure" />
+      <biological_entity id="from_key_V2_512_o13556" name="cross-section" name_original="cross-section" src="d29_s1" type="structure" />
+      <relation from="from_key_V2_512_o13554" id="from_key_V2_512_r3203" name="part_of" negation="false" src="d29_s1" to="from_key_V2_512_o13555" />
+      <relation from="from_key_V2_512_o13554" id="from_key_V2_512_r3204" name="in" negation="false" src="d29_s1" to="from_key_V2_512_o13556" />
+    </statement>
+    <statement id="from_key_V2_512_d29_s2">
+      <text>sporangia usually borne on blade tissue, rarely on nonlaminate tissue.</text>
+      <biological_entity id="from_key_V2_512_o13557" name="sporangium" name_original="sporangia" src="d29_s2" type="structure" />
+      <biological_entity constraint="blade" id="from_key_V2_512_o13559" name="tissue" name_original="tissue" src="d29_s2" type="structure" />
+      <relation from="from_key_V2_512_o13557" id="from_key_V2_512_r3205" name="borne" negation="false" src="d29_s2" to="from_key_V2_512_o13559" />
+    </statement>
+    <statement id="from_key_V2_512_d27_s0">
+      <text>Blades not pseudodichotomously branched (usually pinnate, palmate, or undivided), lacking dormant, hairy buds, rarely creeping (Hypolepis, Pteridium);</text>
+      <biological_entity id="from_key_V2_512_o13530" name="blade" name_original="blades" src="d27_s0" type="structure">
+        <character is_modifier="false" modifier="not pseudodichotomously" name="architecture" src="d27_s0" value="branched" />
+        <character is_modifier="false" name="count" src="d27_s0" value="lacking" />
+        <character is_modifier="false" name="life_cycle" src="d27_s0" value="dormant" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13531" name="bud" name_original="buds" src="d27_s0" type="structure">
+        <character is_modifier="true" name="pubescence" src="d27_s0" value="hairy" />
+        <character is_modifier="false" modifier="rarely" name="growth_form_or_orientation" src="d27_s0" value="creeping" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_512_d27_s1">
+      <text>sori exindusiate or indusiate, sporangia usually more than 15 per sorus;</text>
+      <biological_entity id="from_key_V2_512_o13532" name="sorus" name_original="sori" src="d27_s1" type="structure">
+        <character is_modifier="false" name="architecture" src="d27_s1" value="exindusiate" />
+        <character is_modifier="false" name="architecture" src="d27_s1" value="indusiate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13533" name="sporangium" name_original="sporangia" src="d27_s1" type="structure">
+        <character char_type="range_value" constraint="per sorus" constraintid="o13534" from="15" name="count" src="d27_s1" upper_restricted="false" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13534" name="sorus" name_original="sorus" src="d27_s1" type="structure" />
+    </statement>
+    <statement id="from_key_V2_512_d27_s2">
+      <text>spore number various.</text>
+      <biological_entity id="from_key_V2_512_o13535" name="spore" name_original="spore" src="d27_s2" type="structure">
+        <character is_modifier="false" name="variability" src="d27_s2" value="various" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_512_d25_s0">
+      <text>Leaves not twining, occasionally scandent, leaf branching various (stems hemiepiphytic and climbing in Maxonia);</text>
+      <biological_entity id="from_key_V2_512_o13520" name="leaf" name_original="leaves" src="d25_s0" type="structure">
+        <character is_modifier="false" modifier="not" name="growth_form" src="d25_s0" value="twining" />
+        <character is_modifier="false" modifier="occasionally" name="growth_form" src="d25_s0" value="scandent" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13521" name="leaf" name_original="leaf" src="d25_s0" type="structure">
+        <character is_modifier="false" name="architecture" src="d25_s0" value="branching" />
+        <character is_modifier="false" name="variability" src="d25_s0" value="various" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_512_d25_s1">
+      <text>sporangia never both borne singly and subtended by indusiumlike flap.</text>
+      <biological_entity id="from_key_V2_512_o13522" name="sporangium" name_original="sporangia" src="d25_s1" type="structure" />
+      <biological_entity id="from_key_V2_512_o13523" name="flap" name_original="flap" src="d25_s1" type="structure">
+        <character is_modifier="true" name="shape" src="d25_s1" value="indusiumlike" />
+        <character is_modifier="true" name="arrangement" src="d25_s1" value="singly" />
+      </biological_entity>
+      <relation from="from_key_V2_512_o13522" id="from_key_V2_512_r3190" name="borne" negation="false" src="d25_s1" to="from_key_V2_512_o13523" />
+    </statement>
+    <statement id="from_key_V2_512_d23_s0">
+      <text>Sporangia discrete, not fused into synangia;</text>
+      <biological_entity id="from_key_V2_512_o13508" name="sporangium" name_original="sporangia" src="d23_s0" type="structure">
+        <character is_modifier="false" name="fusion" src="d23_s0" value="discrete" />
+        <character constraint="into synangia" constraintid="o13509" is_modifier="false" modifier="not" name="fusion" src="d23_s0" value="fused" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13509" name="synangium" name_original="synangia" src="d23_s0" type="structure" />
+    </statement>
+    <statement id="from_key_V2_512_d23_s1">
+      <text>sterile portions of blades often divided.</text>
+      <biological_entity id="from_key_V2_512_o13510" name="portion" name_original="portions" src="d23_s1" type="structure">
+        <character is_modifier="true" name="reproduction" src="d23_s1" value="sterile" />
+        <character is_modifier="false" modifier="often" name="shape" src="d23_s1" value="divided" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13511" name="blade" name_original="blades" src="d23_s1" type="structure" />
+      <relation from="from_key_V2_512_o13510" id="from_key_V2_512_r3185" name="part_of" negation="false" src="d23_s1" to="from_key_V2_512_o13511" />
+    </statement>
+    <statement id="from_key_V2_512_d13_s0">
+      <text>Plants terrestrial, on rock, or epiphytic, if rooted in mud then leaves erect and more than 30 cm.</text>
+      <biological_entity id="from_key_V2_512_o13460" name="plant" name_original="plants" src="d13_s0" type="structure">
+        <character is_modifier="false" name="growth_form_or_habitat" src="d13_s0" value="terrestrial" />
+        <character is_modifier="false" name="habitat" notes="alterIDs:o13461" src="d13_s0" value="epiphytic" />
+        <character constraint="in mud" constraintid="o13462" is_modifier="false" name="architecture" src="d13_s0" value="rooted" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13461" name="rock" name_original="rock" src="d13_s0" type="structure" />
+      <biological_entity id="from_key_V2_512_o13462" name="mud" name_original="mud" src="d13_s0" type="structure" />
+      <biological_entity id="from_key_V2_512_o13463" name="leaf" name_original="leaves" src="d13_s0" type="structure">
+        <character is_modifier="false" name="orientation" src="d13_s0" value="erect" />
+        <character char_type="range_value" from="30" from_unit="cm" name="some_measurement" src="d13_s0" upper_restricted="false" />
+      </biological_entity>
+      <relation from="from_key_V2_512_o13460" id="from_key_V2_512_r3166" name="on" negation="false" src="d13_s0" to="from_key_V2_512_o13461" />
+    </statement>
+    <statement id="from_key_V2_512_d5_s0">
+      <text>Plants commonly bearing expanded leaves (megaphylls) with branched vasculature in blades, or leaves reduced to nonlaminate vascular tissue with terminal sporangium-bearing lobes in some Schizaeaceae, or leaves rounded to ovate, crowded, and floating in Azolla and Salvinia;</text>
+      <biological_entity id="from_key_V2_512_o13403" name="plant" name_original="plants" src="d5_s0" type="structure" />
+      <biological_entity id="from_key_V2_512_o13404" name="leaf" name_original="leaves" src="d5_s0" type="structure">
+        <character is_modifier="true" name="size" src="d5_s0" value="expanded" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13405" name="vasculature" name_original="vasculature" src="d5_s0" type="structure">
+        <character is_modifier="true" name="architecture" src="d5_s0" value="branched" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13406" name="blade" name_original="blades" src="d5_s0" type="structure" />
+      <biological_entity id="from_key_V2_512_o13407" name="leaf" name_original="leaves" src="d5_s0" type="structure">
+        <character is_modifier="false" name="size" src="d5_s0" value="reduced" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13408" name="tissue" name_original="tissue" src="d5_s0" type="structure">
+        <character is_modifier="true" name="architecture" src="d5_s0" value="vascular" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13409" name="lobe" name_original="lobes" src="d5_s0" type="structure">
+        <character is_modifier="true" name="position_or_structure_subtype" src="d5_s0" value="terminal" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13410" name="schizaeaceae" name_original="schizaeaceae" src="d5_s0" type="structure" />
+      <biological_entity id="from_key_V2_512_o13411" name="leaf" name_original="leaves" src="d5_s0" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d5_s0" value="rounded" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d5_s0" value="ovate" />
+        <character char_type="range_value" from="rounded" name="shape" src="d5_s0" to="ovate" />
+        <character is_modifier="false" name="arrangement" src="d5_s0" value="crowded" />
+        <character constraint="in azolla and salvinia" is_modifier="false" name="growth_form_or_location" src="d5_s0" value="floating" />
+      </biological_entity>
+      <relation from="from_key_V2_512_o13403" id="from_key_V2_512_r3142" name="bearing" negation="false" src="d5_s0" to="from_key_V2_512_o13404" />
+      <relation from="from_key_V2_512_o13403" id="from_key_V2_512_r3143" name="with" negation="false" src="d5_s0" to="from_key_V2_512_o13405" />
+      <relation from="from_key_V2_512_o13405" id="from_key_V2_512_r3144" name="in" negation="false" src="d5_s0" to="from_key_V2_512_o13406" />
+      <relation from="from_key_V2_512_o13408" id="from_key_V2_512_r3145" name="with" negation="false" src="d5_s0" to="from_key_V2_512_o13409" />
+      <relation from="from_key_V2_512_o13409" id="from_key_V2_512_r3146" name="in" negation="false" src="d5_s0" to="from_key_V2_512_o13410" />
+    </statement>
+    <statement id="from_key_V2_512_d5_s1">
+      <text>sporangia borne in clusters (sori) of various shapes, hardened sporocarps, or covering blade surface.</text>
+      <biological_entity id="from_key_V2_512_o13412" name="sporangium" name_original="sporangia" src="d5_s1" type="structure" />
+      <biological_entity id="from_key_V2_512_o13413" name="sporocarp" name_original="sporocarps" src="d5_s1" type="structure">
+        <character is_modifier="true" name="variability" src="d5_s1" value="various" />
+        <character is_modifier="true" name="texture" src="d5_s1" value="hardened" />
+        <character is_modifier="true" name="shape" src="d5_s1" value="clusters" />
+      </biological_entity>
+      <biological_entity constraint="blade" id="from_key_V2_512_o13414" name="surface" name_original="surface" src="d5_s1" type="structure" />
+      <relation from="from_key_V2_512_o13412" id="from_key_V2_512_r3147" name="borne in" negation="false" src="d5_s1" to="from_key_V2_512_o13413" />
+      <relation from="from_key_V2_512_o13412" id="from_key_V2_512_r3148" name="covering" negation="false" src="d5_s1" to="from_key_V2_512_o13414" />
+    </statement>
+    <statement id="from_key_V2_512_d1_s0">
+      <text>Leaves scalelike, needlelike, or with expanded blades, if grasslike then sporangia at tips of leaves;</text>
+      <biological_entity id="from_key_V2_512_o13370" name="leaf" name_original="leaves" src="d1_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d1_s0" value="scalelike" />
+        <character is_modifier="false" name="architecture_or_shape" src="d1_s0" value="needlelike" />
+        <character is_modifier="false" name="growth_form" notes="alterIDs:o13371" src="d1_s0" value="grasslike" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13371" name="blade" name_original="blades" src="d1_s0" type="structure">
+        <character is_modifier="true" name="size" src="d1_s0" value="expanded" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13372" name="sporangium" name_original="sporangia" src="d1_s0" type="structure" />
+      <biological_entity id="from_key_V2_512_o13373" name="tip" name_original="tips" src="d1_s0" type="structure" />
+      <biological_entity id="from_key_V2_512_o13374" name="leaf" name_original="leaves" src="d1_s0" type="structure" />
+      <relation from="from_key_V2_512_o13370" id="from_key_V2_512_r3128" name="with" negation="false" src="d1_s0" to="from_key_V2_512_o13371" />
+      <relation from="from_key_V2_512_o13372" id="from_key_V2_512_r3129" name="at" negation="false" src="d1_s0" to="from_key_V2_512_o13373" />
+      <relation from="from_key_V2_512_o13373" id="from_key_V2_512_r3130" name="part_of" negation="false" src="d1_s0" to="from_key_V2_512_o13374" />
+    </statement>
+    <statement id="from_key_V2_512_d1_s1">
+      <text>spore-bearing structures usually borne aboveground (except Marsilea), at or near leaf-bases, or on blade margins or surfaces, occasionally on modified erect stalks or in hardened sporocarps;</text>
+      <biological_entity id="from_key_V2_512_o13375" name="structure" name_original="structures" src="d1_s1" type="structure">
+        <character is_modifier="true" name="architecture" src="d1_s1" value="spore-bearing" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_512_o13376" name="leaf-base" name_original="leaf-bases" src="d1_s1" type="structure">
+        <character is_modifier="true" name="location" src="d1_s1" value="aboveground" />
+      </biological_entity>
+      <biological_entity constraint="blade" id="from_key_V2_512_o13377" name="margin" name_original="margins" src="d1_s1" type="structure" />
+      <biological_entity id="from_key_V2_512_o13378" name="surface" name_original="surfaces" src="d1_s1" type="structure" />
+      <biological_entity id="from_key_V2_512_o13379" name="sporocarp" name_original="sporocarps" src="d1_s1" type="structure">
+        <character is_modifier="true" name="texture" src="d1_s1" value="hardened" />
+      </biological_entity>
+      <relation from="from_key_V2_512_o13375" id="from_key_V2_512_r3131" name="borne" negation="false" src="d1_s1" to="from_key_V2_512_o13376" />
+      <relation from="from_key_V2_512_o13375" id="from_key_V2_512_r3132" name="on" negation="false" src="d1_s1" to="from_key_V2_512_o13377" />
+      <relation from="from_key_V2_512_o13375" id="from_key_V2_512_r3133" name="on" negation="false" src="d1_s1" to="from_key_V2_512_o13378" />
+      <relation from="from_key_V2_512_o13375" id="from_key_V2_512_r3134" modifier="occasionally" name="on modified erect stalks or in" negation="false" src="d1_s1" to="from_key_V2_512_o13379" />
+    </statement>
+    <statement id="from_key_V2_512_d1_s2">
+      <text>plants variously aquatic, terrestrial, or epiphytic.</text>
+      <biological_entity id="from_key_V2_512_o13380" name="plant" name_original="plants" src="d1_s2" type="structure">
+        <character is_modifier="false" modifier="variously" name="growth_form_or_habitat" src="d1_s2" value="aquatic" />
+        <character is_modifier="false" name="habitat" src="d1_s2" value="terrestrial" />
+        <character is_modifier="false" name="habitat" src="d1_s2" value="epiphytic" />
+        <character is_modifier="false" name="habitat" src="d1_s2" value="terrestrial" />
+        <character is_modifier="false" name="habitat" src="d1_s2" value="epiphytic" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
+    <taxon_name authority="C. Presl" date="1836" rank="genus">phanerophlebia</taxon_name>
+    <taxon_name authority="L. Underwood" date="1899" rank="species">umbonata</taxon_name>
+    <place_of_publication>
+      <publication_title>Bull. Torrey Bot. Club</publication_title>
+      <place_in_publication>26: 211. 1899</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family dryopteridaceae;genus phanerophlebia;species umbonata</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Cyrtomium</taxon_name>
+    <taxon_name authority="(L. Underwood) C. V. Morton" date="unknown" rank="species">umbonatum</taxon_name>
+    <taxon_hierarchy>genus Cyrtomium;species umbonatum;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Leaves 30-90 cm.</text>
+      <biological_entity id="o1925" name="leaf" name_original="leaves" src="d0_s0" type="structure">
+        <character char_type="range_value" from="30" from_unit="cm" name="some_measurement" src="d0_s0" to="90" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Pinnae 10-18 pairs, lanceolate, usually falcate, 5-15 cm, base cuneate to ± truncate, apex attenuate;</text>
+      <biological_entity id="o1926" name="pinna" name_original="pinnae" src="d0_s1" type="structure">
+        <character char_type="range_value" from="10" name="quantity" src="d0_s1" to="18" />
+        <character is_modifier="false" name="shape" src="d0_s1" value="lanceolate" />
+        <character is_modifier="false" modifier="usually" name="shape" src="d0_s1" value="falcate" />
+        <character char_type="range_value" from="5" from_unit="cm" name="some_measurement" src="d0_s1" to="15" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o1927" name="base" name_original="base" src="d0_s1" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="cuneate" />
+        <character is_modifier="false" modifier="more or less" name="shape" notes="[duplicate value]" src="d0_s1" value="truncate" />
+        <character char_type="range_value" from="cuneate" name="shape" src="d0_s1" to="more or less truncate" />
+      </biological_entity>
+      <biological_entity id="o1928" name="apex" name_original="apex" src="d0_s1" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s1" value="attenuate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>acroscopic lobe absent.</text>
+      <biological_entity id="o1929" name="lobe" name_original="lobe" src="d0_s2" type="structure">
+        <character is_modifier="true" name="orientation" src="d0_s2" value="acroscopic" />
+        <character is_modifier="false" name="presence" src="d0_s2" value="absent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Indusia scarious, convex with darker, raised umbo centrally, persistent and not shriveled at maturity.</text>
+      <biological_entity id="o1931" name="umbo" name_original="umbo" src="d0_s3" type="structure" />
+      <relation from="o1930" id="r430" modifier="centrally" name="raised" negation="false" src="d0_s3" to="o1931" />
+    </statement>
+    <statement id="d0_s4">
+      <text>2n = 82.</text>
+      <biological_entity id="o1930" name="indusium" name_original="indusia" src="d0_s3" type="structure">
+        <character is_modifier="false" name="texture" src="d0_s3" value="scarious" />
+        <character constraint="with darker" is_modifier="false" name="shape" src="d0_s3" value="convex" />
+        <character is_modifier="false" name="duration" src="d0_s3" value="persistent" />
+        <character constraint="at maturity" is_modifier="false" modifier="not" name="shape" src="d0_s3" value="shriveled" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o1932" name="chromosome" name_original="" src="d0_s4" type="structure">
+        <character name="quantity" src="d0_s4" value="82" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Moist, sheltered canyons and ravines;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="moist" />
+        <character name="habitat" value="sheltered canyons and ravines ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>1800--1900 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="1900" to_unit="m" from="1800" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Tex.; n Mexico.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
+        <character name="distribution" value="n Mexico" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>2</number>
+  <discussion>In the flora Phanerophlebia umbonata is known only from the Chisos Mountains, in Brewster County, Texas.</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_46_d2_s0">
+      <text>Pinnae lacking basal, acroscopic lobe;</text>
+      <biological_entity id="from_key_V2_46_o11587" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
+        <character is_modifier="false" name="count" src="d2_s0" value="lacking" />
+        <character is_modifier="false" name="position" src="d2_s0" value="basal" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_46_o11588" name="lobe" name_original="lobe" src="d2_s0" type="structure">
+        <character is_modifier="true" name="orientation" src="d2_s0" value="acroscopic" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_46_d2_s1">
+      <text>indusia with raised, central umbo, not shriveled at maturity.</text>
+      <biological_entity id="from_key_V2_46_o11589" name="indusium" name_original="indusia" src="d2_s1" type="structure">
+        <character constraint="at maturity" is_modifier="false" modifier="not" name="shape" notes="alterIDs:o11590" src="d2_s1" value="shriveled" />
+      </biological_entity>
+      <biological_entity constraint="central" id="from_key_V2_46_o11590" name="umbo" name_original="umbo" src="d2_s1" type="structure">
+        <character is_modifier="true" name="prominence" src="d2_s1" value="raised" />
+      </biological_entity>
+      <relation from="from_key_V2_46_o11589" id="from_key_V2_46_r2688" name="with" negation="false" src="d2_s1" to="from_key_V2_46_o11590" />
+    </statement>
+  </description>
+</bio:treatment>

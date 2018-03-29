@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
+    <taxon_name authority="R. Brown" date="1810" rank="genus">notholaena</taxon_name>
+    <taxon_name authority="D. C. Eaton" date="1883" rank="species">californica</taxon_name>
+    <place_of_publication>
+      <publication_title>Bull. Torrey Bot. Club</publication_title>
+      <place_in_publication>10: 27. 1883</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family pteridaceae;genus notholaena;species californica</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Aleuritopteris</taxon_name>
+    <taxon_name authority="(Liebmann) E. Fournier" date="unknown" rank="species">cretacea</taxon_name>
+    <taxon_hierarchy>genus Aleuritopteris;species cretacea;</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Cheilanthes</taxon_name>
+    <taxon_name authority="Mickel" date="unknown" rank="species">deserti</taxon_name>
+    <taxon_hierarchy>genus Cheilanthes;species deserti;</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Chrysochosma</taxon_name>
+    <taxon_name authority="(D. C. Eaton) Pichi-Sermolli" date="unknown" rank="species">californica</taxon_name>
+    <taxon_hierarchy>genus Chrysochosma;species californica;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Stem scales weakly bicolored, margins brown, very narrow and poorly defined, thin, ciliate-denticulate.</text>
+      <biological_entity constraint="stem" id="o1237" name="scale" name_original="scales" src="d0_s0" type="structure">
+        <character is_modifier="false" modifier="weakly" name="coloration" src="d0_s0" value="bicolored" />
+      </biological_entity>
+      <biological_entity id="o1238" name="margin" name_original="margins" src="d0_s0" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s0" value="brown" />
+        <character is_modifier="false" modifier="very" name="size_or_width" src="d0_s0" value="narrow" />
+        <character is_modifier="false" modifier="poorly" name="prominence" src="d0_s0" value="defined" />
+        <character is_modifier="false" name="width" src="d0_s0" value="thin" />
+        <character is_modifier="false" name="shape" src="d0_s0" value="ciliate-denticulate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves 4-20 cm.</text>
+      <biological_entity id="o1239" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character char_type="range_value" from="4" from_unit="cm" name="some_measurement" src="d0_s1" to="20" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Petiole brown, equal to or somewhat longer than blade, rounded adaxially, bearing scattered glands and a few scales near base.</text>
+      <biological_entity id="o1240" name="petiole" name_original="petiole" src="d0_s2" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s2" value="brown" />
+        <character is_modifier="false" name="variability" src="d0_s2" value="equal" />
+        <character constraint="than blade" constraintid="o1241" is_modifier="false" name="length_or_size" src="d0_s2" value="somewhat longer" />
+        <character is_modifier="false" modifier="adaxially" name="shape" src="d0_s2" value="rounded" />
+      </biological_entity>
+      <biological_entity id="o1241" name="blade" name_original="blade" src="d0_s2" type="structure" />
+      <biological_entity id="o1242" name="gland" name_original="glands" src="d0_s2" type="structure">
+        <character is_modifier="true" name="arrangement" src="d0_s2" value="scattered" />
+      </biological_entity>
+      <biological_entity id="o1243" name="scale" name_original="scales" src="d0_s2" type="structure">
+        <character is_modifier="true" name="arrangement" src="d0_s2" value="scattered" />
+        <character is_modifier="true" name="quantity" src="d0_s2" value="few" />
+      </biological_entity>
+      <biological_entity id="o1244" name="base" name_original="base" src="d0_s2" type="structure" />
+      <relation from="o1240" id="r267" name="bearing" negation="false" src="d0_s2" to="o1242" />
+      <relation from="o1240" id="r268" name="bearing" negation="false" src="d0_s2" to="o1243" />
+      <relation from="o1240" id="r269" name="near" negation="false" src="d0_s2" to="o1244" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Blade broadly pentagonal, 3-pinnate, 1-2 times longer than wide, abaxially with conspicuous white or yellow farina, scales absent, adaxially glandular;</text>
+      <biological_entity id="o1245" name="blade" name_original="blade" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s3" value="pentagonal" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s3" value="3-pinnate" />
+        <character is_modifier="false" name="l_w_ratio" src="d0_s3" value="1-2" />
+      </biological_entity>
+      <biological_entity id="o1246" name="farina" name_original="farina" src="d0_s3" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s3" value="conspicuous" />
+        <character is_modifier="true" name="coloration" src="d0_s3" value="white" />
+        <character is_modifier="true" name="coloration" src="d0_s3" value="yellow" />
+      </biological_entity>
+      <biological_entity id="o1247" name="scale" name_original="scales" src="d0_s3" type="structure">
+        <character is_modifier="false" name="presence" src="d0_s3" value="absent" />
+        <character is_modifier="false" modifier="adaxially" name="architecture_or_function_or_pubescence" src="d0_s3" value="glandular" />
+      </biological_entity>
+      <relation from="o1245" id="r270" modifier="abaxially" name="with" negation="false" src="d0_s3" to="o1246" />
+    </statement>
+    <statement id="d0_s4">
+      <text>basal pinnae much larger than adjacent pair, strongly inequilateral, proximal basiscopic pinnules greatly enlarged.</text>
+      <biological_entity constraint="basal" id="o1248" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
+        <character constraint="than adjacent pair , strongly inequilateral , proximal pinnae" constraintid="o1249" is_modifier="false" name="size" src="d0_s4" value="much larger" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o1249" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
+        <character is_modifier="true" name="arrangement" src="d0_s4" value="adjacent" />
+        <character is_modifier="true" modifier="strongly" name="shape" src="d0_s4" value="inequilateral" />
+      </biological_entity>
+      <biological_entity id="o1250" name="pinnule" name_original="pinnules" src="d0_s4" type="structure">
+        <character is_modifier="true" name="orientation" src="d0_s4" value="basiscopic" />
+        <character is_modifier="false" modifier="greatly" name="size" src="d0_s4" value="enlarged" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Ultimate segments sessile to subsessile, narrowly adnate to costae or free;</text>
+      <biological_entity constraint="ultimate" id="o1251" name="segment" name_original="segments" src="d0_s5" type="structure">
+        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s5" value="sessile" />
+        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s5" value="subsessile" />
+        <character char_type="range_value" from="sessile" name="architecture" src="d0_s5" to="subsessile" />
+        <character constraint="to costae" constraintid="o1252" is_modifier="false" modifier="narrowly" name="fusion" src="d0_s5" value="adnate" />
+        <character is_modifier="false" name="fusion" src="d0_s5" value="free" />
+      </biological_entity>
+      <biological_entity id="o1252" name="costa" name_original="costae" src="d0_s5" type="structure" />
+    </statement>
+    <statement id="d0_s6">
+      <text>segment margins recurved but rarely concealing sporangia.</text>
+      <biological_entity constraint="segment" id="o1253" name="margin" name_original="margins" src="d0_s6" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s6" value="recurved" />
+      </biological_entity>
+      <biological_entity id="o1254" name="sporangium" name_original="sporangia" src="d0_s6" type="structure" />
+      <relation from="o1253" id="r271" name="rarely concealing" negation="false" src="d0_s6" to="o1254" />
+    </statement>
+    <statement id="d0_s7">
+      <text>Sporangia containing 32 spores.</text>
+      <biological_entity id="o1255" name="sporangium" name_original="sporangia" src="d0_s7" type="structure" />
+      <biological_entity id="o1256" name="spore" name_original="spores" src="d0_s7" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s7" value="32" />
+      </biological_entity>
+      <relation from="o1255" id="r272" name="containing" negation="false" src="d0_s7" to="o1256" />
+    </statement>
+  </description>
+  <number>7</number>
+  <discussion>Notholaena californica comprises two distinct chemotypes, recognizable by farina color, that are treated here as subspecies. These white and yellow forms are strikingly different in chemical composition of the farina (E. Wollenweber 1984), and they are rarely, if ever, found growing at the same locality. Gene flow between the chemotypes in the region of sympatry (southern California) is prevented because both are apogamous in this area. The recent discovery that plants of N . californica subsp. californica from Arizona are pentaploids (M. D. Windham, unpublished data) suggests that this species has a complex evolutionary history that cannot be resolved until sexually reproducing (64-spored) progenitors are found.</discussion>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d1_s0">
+          <text>Farina on abaxial blade surface pale to bright-yellow.</text>
+          <biological_entity id="o1257" name="farina" name_original="farina" src="d1_s0" type="structure" />
+          <biological_entity constraint="blade" id="o1258" name="surface" name_original="surface" src="d1_s0" type="structure" constraint_original="abaxial blade">
+            <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d1_s0" value="pale" />
+            <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d1_s0" value="bright-yellow" />
+            <character char_type="range_value" from="pale" name="coloration" src="d1_s0" to="bright-yellow" />
+          </biological_entity>
+          <relation from="o1257" id="r273" name="on" negation="false" src="d1_s0" to="o1258" />
+        </statement>
+      </description>
+      <determination>7a subsp. californica</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d2_s0">
+          <text>Farina on abaxial blade surface white.</text>
+          <biological_entity id="o1259" name="farina" name_original="farina" src="d2_s0" type="structure" />
+          <biological_entity constraint="blade" id="o1260" name="surface" name_original="surface" src="d2_s0" type="structure" constraint_original="abaxial blade">
+            <character is_modifier="false" name="coloration" src="d2_s0" value="white" />
+          </biological_entity>
+          <relation from="o1259" id="r274" name="on" negation="false" src="d2_s0" to="o1260" />
+        </statement>
+      </description>
+      <determination>7b subsp. leucophylla</determination>
+    </key_statement>
+  </key>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_132_d1_s0">
+      <text>Farina on abaxial blade surface pale to bright-yellow.</text>
+      <biological_entity id="from_key_V2_132_o1257" name="farina" name_original="farina" src="d1_s0" type="structure" />
+      <biological_entity constraint="abaxial blade" id="from_key_V2_132_o1258" name="surface" name_original="surface" src="d1_s0" type="structure">
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d1_s0" value="pale" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d1_s0" value="bright-yellow" />
+        <character char_type="range_value" from="pale" name="coloration" src="d1_s0" to="bright-yellow" />
+      </biological_entity>
+      <relation from="from_key_V2_132_o1257" id="from_key_V2_132_r273" name="on" negation="false" src="d1_s0" to="from_key_V2_132_o1258" />
+    </statement>
+  </description>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_132_d2_s0">
+      <text>Farina on abaxial blade surface white.</text>
+      <biological_entity id="from_key_V2_132_o1259" name="farina" name_original="farina" src="d2_s0" type="structure" />
+      <biological_entity constraint="abaxial blade" id="from_key_V2_132_o1260" name="surface" name_original="surface" src="d2_s0" type="structure">
+        <character is_modifier="false" name="coloration" src="d2_s0" value="white" />
+      </biological_entity>
+      <relation from="from_key_V2_132_o1259" id="from_key_V2_132_r274" name="on" negation="false" src="d2_s0" to="from_key_V2_132_o1260" />
+    </statement>
+  </description>
+</bio:treatment>

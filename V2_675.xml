@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Wettstein" date="unknown" rank="family">azollaceae</taxon_name>
+    <taxon_name authority="Lamarck in Lamarck et al." date="1783" rank="genus">azolla</taxon_name>
+    <taxon_name authority="Willdenow" date="1810" rank="species">caroliniana</taxon_name>
+    <place_of_publication>
+      <publication_title>Sp. Pl.</publication_title>
+      <place_in_publication>5(1): 541. 1810</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family azollaceae;genus azolla;species caroliniana</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants dark green or with margins of bright crimson or whole plants dark red, free-floating or forming multilayer mat to 4 cm thick under good conditions;</text>
+      <biological_entity id="o18649" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s0" value="dark green" />
+        <character is_modifier="false" name="coloration" src="d0_s0" value="with margins" />
+        <character is_modifier="false" name="growth_form_or_location" notes="" src="d0_s0" value="free-floating" />
+        <character name="growth_form_or_location" src="d0_s0" value="forming multilayer mat" />
+        <character char_type="range_value" constraint="under conditions" constraintid="o18652" from="0" from_unit="cm" name="thickness" src="d0_s0" to="4" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o18650" name="margin" name_original="margins" src="d0_s0" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s0" value="dark red" />
+      </biological_entity>
+      <biological_entity id="o18651" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s0" value="bright crimson" />
+      </biological_entity>
+      <biological_entity id="o18652" name="condition" name_original="conditions" src="d0_s0" type="structure">
+        <character is_modifier="true" name="condition" src="d0_s0" value="good" />
+      </biological_entity>
+      <relation from="o18649" id="r4316" name="with" negation="false" src="d0_s0" to="o18650" />
+      <relation from="o18650" id="r4317" name="part_of" negation="false" src="d0_s0" to="o18651" />
+    </statement>
+    <statement id="d0_s1">
+      <text>plants infrequently fertile.</text>
+      <biological_entity id="o18653" name="plant" name_original="plants" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="infrequently" name="reproduction" src="d0_s1" value="fertile" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Stems prostrate, 0.5-1 cm.</text>
+      <biological_entity id="o18654" name="stem" name_original="stems" src="d0_s2" type="structure">
+        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s2" value="prostrate" />
+        <character char_type="range_value" from="0.5" from_unit="cm" name="some_measurement" src="d0_s2" to="1" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Largest hairs on upper leaf lobe near stem with 2 or more cells;</text>
+      <biological_entity constraint="largest" id="o18655" name="hair" name_original="hairs" src="d0_s3" type="structure" />
+      <biological_entity constraint="leaf" id="o18656" name="lobe" name_original="lobe" src="d0_s3" type="structure" constraint_original="upper leaf" />
+      <biological_entity id="o18657" name="stem" name_original="stem" src="d0_s3" type="structure" />
+      <relation from="o18655" id="r4318" name="on" negation="false" src="d0_s3" to="o18656" />
+      <relation from="o18656" id="r4319" modifier="with 2 or morecells" name="near" negation="false" src="d0_s3" to="o18657" />
+    </statement>
+    <statement id="d0_s4">
+      <text>broad pedicel cell often 1/2 or more height of hair, apical cell curved, with tip nearly parallel to leaf surface.</text>
+      <biological_entity constraint="pedicel" id="o18658" name="cell" name_original="cell" src="d0_s4" type="structure">
+        <character is_modifier="true" name="width" src="d0_s4" value="broad" />
+        <character name="quantity" src="d0_s4" value="1/2" />
+      </biological_entity>
+      <biological_entity id="o18659" name="hair" name_original="hair" src="d0_s4" type="structure" />
+      <biological_entity constraint="apical" id="o18660" name="cell" name_original="cell" src="d0_s4" type="structure">
+        <character is_modifier="false" name="height" src="d0_s4" value="curved" />
+      </biological_entity>
+      <biological_entity id="o18661" name="tip" name_original="tip" src="d0_s4" type="structure">
+        <character constraint="to leaf surface" constraintid="o18662" is_modifier="false" modifier="nearly" name="arrangement" src="d0_s4" value="parallel" />
+      </biological_entity>
+      <biological_entity constraint="leaf" id="o18662" name="surface" name_original="surface" src="d0_s4" type="structure" />
+      <relation from="o18660" id="r4320" name="with" negation="false" src="d0_s4" to="o18661" />
+    </statement>
+    <statement id="d0_s5">
+      <text>Megaspores without raised angular bumps or pits, densely and uniformly covered with tangled filaments.</text>
+      <biological_entity id="o18663" name="megaspore" name_original="megaspores" src="d0_s5" type="structure" />
+      <biological_entity id="o18664" name="bump" name_original="bumps" src="d0_s5" type="structure">
+        <character is_modifier="true" name="arrangement_or_shape" src="d0_s5" value="angular" />
+      </biological_entity>
+      <biological_entity id="o18665" name="pit" name_original="pits" src="d0_s5" type="structure">
+        <character is_modifier="true" name="arrangement_or_shape" src="d0_s5" value="angular" />
+      </biological_entity>
+      <biological_entity id="o18666" name="filament" name_original="filaments" src="d0_s5" type="structure">
+        <character is_modifier="true" name="arrangement" src="d0_s5" value="tangled" />
+      </biological_entity>
+      <relation from="o18663" id="r4321" name="raised" negation="false" src="d0_s5" to="o18664" />
+      <relation from="o18663" id="r4322" name="raised" negation="false" src="d0_s5" to="o18665" />
+      <relation from="o18663" id="r4323" modifier="uniformly; densely" name="covered with" negation="false" src="d0_s5" to="o18666" />
+    </statement>
+  </description>
+  <number>1</number>
+  <discussion>The sporophyte of Azolla caroliniana commonly survives throughout the year in temperate areas (with hard frosts and prolonged ice cover). It is the best adapted of all species for subsistence on mud. Azolla caroliniana is rarely collected with sporocarps.</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_390_d3_s0">
+      <text>Megaspores not pitted, densely covered with tangled filaments (filosum).</text>
+      <biological_entity id="from_key_V2_390_o9110" name="megaspore" name_original="megaspores" src="d3_s0" type="structure">
+        <character is_modifier="false" modifier="not" name="relief" src="d3_s0" value="pitted" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_390_o9111" name="filament" name_original="filaments" src="d3_s0" type="structure">
+        <character is_modifier="true" name="arrangement" src="d3_s0" value="tangled" />
+      </biological_entity>
+      <relation from="from_key_V2_390_o9110" id="from_key_V2_390_r2088" modifier="densely" name="covered with" negation="false" src="d3_s0" to="from_key_V2_390_o9111" />
+    </statement>
+    <statement id="from_key_V2_390_d2_s0">
+      <text>Largest hairs on upper leaf lobe with 2 or more cells;</text>
+      <biological_entity constraint="largest" id="from_key_V2_390_o9106" name="hair" name_original="hairs" src="d2_s0" type="structure" />
+      <biological_entity constraint="upper leaf" id="from_key_V2_390_o9107" name="lobe" name_original="lobe" src="d2_s0" type="structure" />
+      <relation from="from_key_V2_390_o9106" id="from_key_V2_390_r2086" modifier="with 2 or morecells" name="on" negation="false" src="d2_s0" to="from_key_V2_390_o9107" />
+    </statement>
+    <statement id="from_key_V2_390_d2_s1">
+      <text>megaspores not covered with raised angular bumps.</text>
+      <biological_entity id="from_key_V2_390_o9108" name="megaspore" name_original="megaspores" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_390_o9109" name="bump" name_original="bumps" src="d2_s1" type="structure">
+        <character is_modifier="true" name="prominence" src="d2_s1" value="raised" />
+        <character is_modifier="true" name="arrangement_or_shape" src="d2_s1" value="angular" />
+      </biological_entity>
+      <relation from="from_key_V2_390_o9108" id="from_key_V2_390_r2087" name="covered with" negation="true" src="d2_s1" to="from_key_V2_390_o9109" />
+    </statement>
+  </description>
+</bio:treatment>

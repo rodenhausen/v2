@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Ching" date="unknown" rank="family">dennstaedtiaceae</taxon_name>
+    <taxon_name authority="Gleditsch ex Scopoli" date="1760" rank="genus">pteridium</taxon_name>
+    <taxon_name authority="(Linnaeus) Kuhn in Decken" date="1879" rank="species">aquilinum</taxon_name>
+    <place_of_publication>
+      <publication_title>in Decken,Reisen Ost-Afrika</publication_title>
+      <place_in_publication>3(3): 11. 1879</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family dennstaedtiaceae;genus pteridium;species aquilinum</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Pteris</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="species">aquilina</taxon_name>
+    <place_of_publication>
+      <publication_title>Sp. Pl.</publication_title>
+      <place_in_publication>2: 1075. 1753</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Pteris;species aquilina;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Petioles scattered along creeping stems, 0.3-3.5 m, shallowly to deeply grooved adaxially, base not strongly distinct from stem.</text>
+      <biological_entity id="o6836" name="petiole" name_original="petioles" src="d0_s0" type="structure">
+        <character constraint="along stems" constraintid="o6837" is_modifier="false" name="arrangement" src="d0_s0" value="scattered" />
+        <character char_type="range_value" from="0.3" from_unit="m" name="some_measurement" notes="" src="d0_s0" to="3.5" to_unit="m" />
+        <character is_modifier="false" modifier="shallowly to deeply; adaxially" name="architecture" src="d0_s0" value="grooved" />
+      </biological_entity>
+      <biological_entity id="o6837" name="stem" name_original="stems" src="d0_s0" type="structure">
+        <character is_modifier="true" name="growth_form_or_orientation" src="d0_s0" value="creeping" />
+      </biological_entity>
+      <biological_entity id="o6838" name="base" name_original="base" src="d0_s0" type="structure">
+        <character constraint="from stem" constraintid="o6839" is_modifier="false" modifier="not strongly" name="fusion" src="d0_s0" value="distinct" />
+      </biological_entity>
+      <biological_entity id="o6839" name="stem" name_original="stem" src="d0_s0" type="structure" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Blades broadly deltate, papery to leathery, sparsely to densely hairy abaxially, rarely glabrous.</text>
+      <biological_entity id="o6840" name="blade" name_original="blades" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s1" value="deltate" />
+        <character is_modifier="false" name="texture" notes="[duplicate value]" src="d0_s1" value="papery" />
+        <character is_modifier="false" name="texture" notes="[duplicate value]" src="d0_s1" value="leathery" />
+        <character char_type="range_value" from="papery" name="texture" src="d0_s1" to="leathery" />
+        <character is_modifier="false" modifier="sparsely to densely; abaxially" name="pubescence" src="d0_s1" value="hairy" />
+        <character is_modifier="false" modifier="rarely" name="pubescence" src="d0_s1" value="glabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Pinnae often opposite to subopposite [alternate];</text>
+      <biological_entity id="o6841" name="pinna" name_original="pinnae" src="d0_s2" type="structure">
+        <character char_type="range_value" from="opposite" modifier="often" name="arrangement" src="d0_s2" to="subopposite" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>proximal pinnae often prolonged basiscopically, each proximal pinna nearly equal to distal part of leaf in size and dissection (except in var. caudata).</text>
+      <biological_entity constraint="proximal" id="o6842" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="often; basiscopically" name="length" src="d0_s3" value="prolonged" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o6843" name="pinna" name_original="pinna" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="nearly" name="variability" src="d0_s3" value="equal" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="o6844" name="part" name_original="part" src="d0_s3" type="structure" />
+      <biological_entity id="o6845" name="leaf" name_original="leaf" src="d0_s3" type="structure" />
+      <biological_entity id="o6846" name="dissection" name_original="dissection" src="d0_s3" type="structure">
+        <character is_modifier="true" name="character" src="d0_s3" value="size" />
+      </biological_entity>
+      <relation from="o6844" id="r1592" name="part_of" negation="false" src="d0_s3" to="o6845" />
+      <relation from="o6844" id="r1593" name="in" negation="false" src="d0_s3" to="o6846" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Segments alternate, numerous.</text>
+      <biological_entity id="o6847" name="segment" name_original="segments" src="d0_s4" type="structure">
+        <character is_modifier="false" name="arrangement" src="d0_s4" value="alternate" />
+        <character is_modifier="false" name="quantity" src="d0_s4" value="numerous" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>almost worldwide.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="almost worldwide" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <other_name type="common_name">Bracken</other_name>
+  <other_name type="common_name">fougère-aigle commune</other_name>
+  <discussion>In accord with the most recent revision (R. M. Tryon 1941) of the genus, Pteridium is treated here as a single widespread species composed of two subspecies with 12 varieties. So treated, it is probably the most widespread species of all vascular plants, with the exception of a few annual weeds (F. H. Perring and B. G. Gardner 1976). The plants are generally aggressive, invading disturbed areas as weeds in pastures, cultivated fields, and roadsides. In Europe, it was harvested and burned to produce potash. Although croziers are eaten in many temperate cultures, bracken has been shown to contain thiaminase (and other compounds with mutagenic and carcinogenic properties).</discussion>
+  <discussion>Disagreement exists among taxonomists regarding the rank that should be accorded to the taxa treated herein as varieties. In a survey of the genus, C. N. Page (1976) noted uniform chromosome numbers and flavonoid compositions of the varieties. D. B. Lellinger (1985) separated the genus into at least two species based on morphology, recognizing as species the subspecies of R. M. Tryon (1941). J. T. Mickel and J. M. Beitel (1988) reported sympatric occurrence in Mexico of three taxa that maintained consistent characteristics and only rarely produced plants with combined characteristics. They suggested that these three taxa should be considered as species that occasionally hybridize. P. J. Brownsey (1989) reported that two different brackens in Australia formed sterile hybrids and should be treated as species. Modern systematic studies are needed to evaluate the status and rank of the four North American varieties. As treated below, Pteridium aquilinum var. pubescens , var. latiusculum , and var. pseudocaudatum are in subsp. aquilinum , and var. caudatum is in subsp. caudatum (Linnaeus) Bonaparte.</discussion>
+  <discussion>Varieties 12 (4 in the flora):</discussion>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d1_s0">
+          <text>Fertile ultimate segments only decurrent or more decurrent than surcurrent, mostly 1-2 mm wide;</text>
+          <biological_entity constraint="ultimate" id="o6848" name="segment" name_original="segments" src="d1_s0" type="structure">
+            <character is_modifier="true" name="reproduction" src="d1_s0" value="fertile" />
+            <character is_modifier="false" modifier="only" name="shape" src="d1_s0" value="decurrent" />
+            <character is_modifier="false" name="shape" src="d1_s0" value="more decurrent than surcurrent" />
+            <character char_type="range_value" from="1" from_unit="mm" modifier="mostly" name="width" src="d1_s0" to="2" to_unit="mm" />
+          </biological_entity>
+        </statement>
+        <statement id="d1_s1">
+          <text>hairs on abaxial surface of blades abundant, straight, stiff, subappressed to spreading.</text>
+          <biological_entity id="o6849" name="hair" name_original="hairs" src="d1_s1" type="structure">
+            <character is_modifier="false" name="course" notes="" src="d1_s1" value="straight" />
+            <character is_modifier="false" name="fragility" src="d1_s1" value="stiff" />
+            <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d1_s1" value="subappressed" />
+            <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d1_s1" value="spreading" />
+            <character char_type="range_value" from="subappressed" name="orientation" src="d1_s1" to="spreading" />
+          </biological_entity>
+          <biological_entity constraint="abaxial" id="o6850" name="surface" name_original="surface" src="d1_s1" type="structure">
+            <character is_modifier="false" name="quantity" src="d1_s1" value="abundant" />
+          </biological_entity>
+          <biological_entity id="o6851" name="blade" name_original="blades" src="d1_s1" type="structure" />
+          <relation from="o6849" id="r1594" name="on" negation="false" src="d1_s1" to="o6850" />
+          <relation from="o6850" id="r1595" name="part_of" negation="false" src="d1_s1" to="o6851" />
+        </statement>
+      </description>
+      <determination>1a var. caudatum</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d2_s0">
+          <text>Fertile ultimate segments adnate or equally decurrent and surcurrent, mostly 3-6 mm wide;</text>
+          <biological_entity constraint="ultimate" id="o6852" name="segment" name_original="segments" src="d2_s0" type="structure">
+            <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
+            <character is_modifier="false" name="fusion" src="d2_s0" value="adnate" />
+            <character is_modifier="false" modifier="equally" name="shape" src="d2_s0" value="decurrent" />
+            <character is_modifier="false" name="orientation" src="d2_s0" value="surcurrent" />
+            <character char_type="range_value" from="3" from_unit="mm" modifier="mostly" name="width" src="d2_s0" to="6" to_unit="mm" />
+          </biological_entity>
+        </statement>
+        <statement id="d2_s1">
+          <text>hairs on abaxial surface of blades abundant to sparse, twisted and flexible, if abundant then lax, spreading.</text>
+          <biological_entity id="o6853" name="hair" name_original="hairs" src="d2_s1" type="structure">
+            <character is_modifier="false" name="architecture" notes="" src="d2_s1" value="twisted" />
+            <character is_modifier="false" name="fragility" src="d2_s1" value="pliable" value_original="flexible" />
+            <character is_modifier="false" name="quantity" src="d2_s1" value="abundant" />
+            <character is_modifier="false" name="architecture_or_arrangement" src="d2_s1" value="lax" />
+            <character is_modifier="false" name="orientation" src="d2_s1" value="spreading" />
+          </biological_entity>
+          <biological_entity constraint="abaxial" id="o6854" name="surface" name_original="surface" src="d2_s1" type="structure">
+            <character is_modifier="false" name="quantity" notes="[duplicate value]" src="d2_s1" value="abundant" />
+            <character is_modifier="false" name="quantity" notes="[duplicate value]" src="d2_s1" value="sparse" />
+            <character char_type="range_value" from="abundant" name="quantity" src="d2_s1" to="sparse" />
+          </biological_entity>
+          <biological_entity id="o6855" name="blade" name_original="blades" src="d2_s1" type="structure" />
+          <relation from="o6853" id="r1596" name="on" negation="false" src="d2_s1" to="o6854" />
+          <relation from="o6854" id="r1597" name="part_of" negation="false" src="d2_s1" to="o6855" />
+        </statement>
+      </description>
+      <next_statement_id>2</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d3_s0">
+          <text>Pinnules at nearly 90º angle to costa;</text>
+          <biological_entity id="o6856" name="pinnule" name_original="pinnules" src="d3_s0" type="structure" />
+          <biological_entity id="o6857" name="angle" name_original="angle" src="d3_s0" type="structure">
+            <character is_modifier="true" modifier="nearly" name="quantity" src="d3_s0" value="90" />
+          </biological_entity>
+          <biological_entity id="o6858" name="costa" name_original="costa" src="d3_s0" type="structure" />
+          <relation from="o6856" id="r1598" name="at" negation="false" src="d3_s0" to="o6857" />
+          <relation from="o6857" id="r1599" name="to" negation="false" src="d3_s0" to="o6858" />
+        </statement>
+        <statement id="d3_s1">
+          <text>outer indusium pilose on margin and often on surface;</text>
+          <biological_entity constraint="outer" id="o6859" name="indusium" name_original="indusium" src="d3_s1" type="structure">
+            <character constraint="on margin" constraintid="o6860" is_modifier="false" name="pubescence" src="d3_s1" value="pilose" />
+          </biological_entity>
+          <biological_entity id="o6860" name="margin" name_original="margin" src="d3_s1" type="structure" />
+          <biological_entity id="o6861" name="surface" name_original="surface" src="d3_s1" type="structure" />
+          <relation from="o6859" id="r1600" modifier="often" name="on" negation="false" src="d3_s1" to="o6861" />
+        </statement>
+        <statement id="d3_s2">
+          <text>hairs on abaxial surface of blades abundant, lax, and spreading.</text>
+          <biological_entity id="o6862" name="hair" name_original="hairs" src="d3_s2" type="structure">
+            <character is_modifier="false" name="architecture_or_arrangement" notes="" src="d3_s2" value="lax" />
+            <character is_modifier="false" name="orientation" src="d3_s2" value="spreading" />
+          </biological_entity>
+          <biological_entity constraint="abaxial" id="o6863" name="surface" name_original="surface" src="d3_s2" type="structure">
+            <character is_modifier="false" name="quantity" src="d3_s2" value="abundant" />
+          </biological_entity>
+          <biological_entity id="o6864" name="blade" name_original="blades" src="d3_s2" type="structure" />
+          <relation from="o6862" id="r1601" name="on" negation="false" src="d3_s2" to="o6863" />
+          <relation from="o6863" id="r1602" name="part_of" negation="false" src="d3_s2" to="o6864" />
+        </statement>
+      </description>
+      <determination>1b var. pubescens</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d4_s0">
+          <text>Pinnules at 45º -60º angle to costa;</text>
+          <biological_entity id="o6865" name="pinnule" name_original="pinnules" src="d4_s0" type="structure" />
+          <biological_entity id="o6866" name="angle" name_original="angle" src="d4_s0" type="structure">
+            <character is_modifier="true" name="quantity" src="d4_s0" value="45" />
+            <character is_modifier="true" name="quantity" src="d4_s0" value="60" />
+          </biological_entity>
+          <biological_entity id="o6867" name="costa" name_original="costa" src="d4_s0" type="structure" />
+          <relation from="o6865" id="r1603" name="at" negation="false" src="d4_s0" to="o6866" />
+          <relation from="o6866" id="r1604" name="to" negation="false" src="d4_s0" to="o6867" />
+        </statement>
+        <statement id="d4_s1">
+          <text>outer indusium glabrous;</text>
+          <biological_entity constraint="outer" id="o6868" name="indusium" name_original="indusium" src="d4_s1" type="structure">
+            <character is_modifier="false" name="pubescence" src="d4_s1" value="glabrous" />
+          </biological_entity>
+        </statement>
+        <statement id="d4_s2">
+          <text>hairs on abaxial surface of blades sparse or blades nearly glabrous.</text>
+          <biological_entity id="o6869" name="hair" name_original="hairs" src="d4_s2" type="structure" />
+          <biological_entity constraint="abaxial" id="o6870" name="surface" name_original="surface" src="d4_s2" type="structure">
+            <character is_modifier="false" name="count_or_density" src="d4_s2" value="sparse" />
+          </biological_entity>
+          <biological_entity id="o6871" name="blade" name_original="blades" src="d4_s2" type="structure" />
+          <biological_entity id="o6872" name="blade" name_original="blades" src="d4_s2" type="structure">
+            <character is_modifier="false" modifier="nearly" name="pubescence" src="d4_s2" value="glabrous" />
+          </biological_entity>
+          <relation from="o6869" id="r1605" name="on" negation="false" src="d4_s2" to="o6870" />
+          <relation from="o6870" id="r1606" name="part_of" negation="false" src="d4_s2" to="o6871" />
+        </statement>
+      </description>
+      <next_statement_id>3</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>3</statement_id>
+      <description type="morphology">
+        <statement id="d5_s0">
+          <text>Terminal segments of pinnules 2-4 times longer than wide;</text>
+          <biological_entity constraint="terminal" id="o6873" name="segment" name_original="segments" src="d5_s0" type="structure">
+            <character is_modifier="false" name="l_w_ratio" src="d5_s0" value="2-4" />
+          </biological_entity>
+          <biological_entity id="o6874" name="pinnule" name_original="pinnules" src="d5_s0" type="structure" />
+          <relation from="o6873" id="r1607" name="part_of" negation="false" src="d5_s0" to="o6874" />
+        </statement>
+        <statement id="d5_s1">
+          <text>segment margins and abaxial surface of blade midrib and costae shaggy.</text>
+          <biological_entity constraint="segment; midrib" id="o6875" name="margin" name_original="margins" src="d5_s1" type="structure">
+            <character is_modifier="false" name="pubescence" src="d5_s1" value="shaggy" />
+          </biological_entity>
+          <biological_entity constraint="segment abaxial" id="o6876" name="surface" name_original="surface" src="d5_s1" type="structure">
+            <character is_modifier="false" name="pubescence" src="d5_s1" value="shaggy" />
+          </biological_entity>
+          <biological_entity id="o6877" name="midrib" name_original="midrib" src="d5_s1" type="structure" />
+          <biological_entity id="o6878" name="costa" name_original="costae" src="d5_s1" type="structure" />
+          <relation from="o6875" id="r1608" name="part_of" negation="false" src="d5_s1" to="o6877" />
+          <relation from="o6876" id="r1609" name="part_of" negation="false" src="d5_s1" to="o6877" />
+          <relation from="o6875" id="r1610" name="part_of" negation="false" src="d5_s1" to="o6878" />
+          <relation from="o6876" id="r1611" name="part_of" negation="false" src="d5_s1" to="o6878" />
+        </statement>
+      </description>
+      <determination>1c var. latiusculum</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>3</statement_id>
+      <description type="morphology">
+        <statement id="d6_s0">
+          <text>Terminal segments of pinnules ca. 6-15 times longer than wide;</text>
+          <biological_entity constraint="terminal" id="o6879" name="segment" name_original="segments" src="d6_s0" type="structure">
+            <character is_modifier="false" name="l_w_ratio" src="d6_s0" value="6-15" />
+          </biological_entity>
+          <biological_entity id="o6880" name="pinnule" name_original="pinnules" src="d6_s0" type="structure" />
+          <relation from="o6879" id="r1612" name="part_of" negation="false" src="d6_s0" to="o6880" />
+        </statement>
+        <statement id="d6_s1">
+          <text>segment margins and abaxial surface of blade midrib and costae sparsely pilose to glabrous.</text>
+          <biological_entity constraint="segment; midrib" id="o6881" name="margin" name_original="margins" src="d6_s1" type="structure">
+            <character is_modifier="false" modifier="sparsely" name="pubescence" notes="[duplicate value]" src="d6_s1" value="pilose" />
+            <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d6_s1" value="glabrous" />
+            <character char_type="range_value" from="sparsely pilose" name="pubescence" src="d6_s1" to="glabrous" />
+          </biological_entity>
+          <biological_entity constraint="segment abaxial" id="o6882" name="surface" name_original="surface" src="d6_s1" type="structure">
+            <character is_modifier="false" modifier="sparsely" name="pubescence" notes="[duplicate value]" src="d6_s1" value="pilose" />
+            <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d6_s1" value="glabrous" />
+            <character char_type="range_value" from="sparsely pilose" name="pubescence" src="d6_s1" to="glabrous" />
+          </biological_entity>
+          <biological_entity constraint="blade" id="o6883" name="midrib" name_original="midrib" src="d6_s1" type="structure" />
+          <biological_entity id="o6884" name="costa" name_original="costae" src="d6_s1" type="structure" />
+          <relation from="o6881" id="r1613" name="part_of" negation="false" src="d6_s1" to="o6883" />
+          <relation from="o6882" id="r1614" name="part_of" negation="false" src="d6_s1" to="o6883" />
+          <relation from="o6881" id="r1615" name="part_of" negation="false" src="d6_s1" to="o6884" />
+          <relation from="o6882" id="r1616" name="part_of" negation="false" src="d6_s1" to="o6884" />
+        </statement>
+      </description>
+      <determination>1d var. pseudocaudatum</determination>
+    </key_statement>
+  </key>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_302_d1_s0">
+      <text>Fertile ultimate segments only decurrent or more decurrent than surcurrent, mostly 1-2 mm wide;</text>
+      <biological_entity constraint="ultimate" id="from_key_V2_302_o6848" name="segment" name_original="segments" src="d1_s0" type="structure">
+        <character is_modifier="true" name="reproduction" src="d1_s0" value="fertile" />
+        <character is_modifier="false" modifier="only" name="shape" src="d1_s0" value="decurrent" />
+        <character is_modifier="false" name="shape" src="d1_s0" value="more decurrent than surcurrent" />
+        <character char_type="range_value" from="1" from_unit="mm" modifier="mostly" name="width" src="d1_s0" to="2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_302_d1_s1">
+      <text>hairs on abaxial surface of blades abundant, straight, stiff, subappressed to spreading.</text>
+      <biological_entity id="from_key_V2_302_o6849" name="hair" name_original="hairs" src="d1_s1" type="structure">
+        <character is_modifier="false" name="course" notes="alterIDs:o6850" src="d1_s1" value="straight" />
+        <character is_modifier="false" name="fragility" src="d1_s1" value="stiff" />
+        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d1_s1" value="subappressed" />
+        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d1_s1" value="spreading" />
+        <character char_type="range_value" from="subappressed" name="orientation" src="d1_s1" to="spreading" />
+      </biological_entity>
+      <biological_entity constraint="abaxial" id="from_key_V2_302_o6850" name="surface" name_original="surface" src="d1_s1" type="structure">
+        <character is_modifier="false" name="count" src="d1_s1" value="abundant" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_302_o6851" name="blade" name_original="blades" src="d1_s1" type="structure" />
+      <relation from="from_key_V2_302_o6849" id="from_key_V2_302_r1594" name="on" negation="false" src="d1_s1" to="from_key_V2_302_o6850" />
+      <relation from="from_key_V2_302_o6850" id="from_key_V2_302_r1595" name="part_of" negation="false" src="d1_s1" to="from_key_V2_302_o6851" />
+    </statement>
+  </description>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_302_d3_s0">
+      <text>Pinnules at nearly 90º angle to costa;</text>
+      <biological_entity id="from_key_V2_302_o6856" name="pinnule" name_original="pinnules" src="d3_s0" type="structure" />
+      <biological_entity id="from_key_V2_302_o6857" name="angle" name_original="angle" src="d3_s0" type="structure">
+        <character is_modifier="true" modifier="nearly" name="count" src="d3_s0" value="90" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_302_o6858" name="costa" name_original="costa" src="d3_s0" type="structure" />
+      <relation from="from_key_V2_302_o6856" id="from_key_V2_302_r1598" name="at" negation="false" src="d3_s0" to="from_key_V2_302_o6857" />
+      <relation from="from_key_V2_302_o6857" id="from_key_V2_302_r1599" name="to" negation="false" src="d3_s0" to="from_key_V2_302_o6858" />
+    </statement>
+    <statement id="from_key_V2_302_d3_s1">
+      <text>outer indusium pilose on margin and often on surface;</text>
+      <biological_entity constraint="outer" id="from_key_V2_302_o6859" name="indusium" name_original="indusium" src="d3_s1" type="structure">
+        <character constraint="on margin" constraintid="o6860" is_modifier="false" name="pubescence" src="d3_s1" value="pilose" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_302_o6860" name="margin" name_original="margin" src="d3_s1" type="structure" />
+      <biological_entity id="from_key_V2_302_o6861" name="surface" name_original="surface" src="d3_s1" type="structure" />
+      <relation from="from_key_V2_302_o6859" id="from_key_V2_302_r1600" modifier="often" name="on" negation="false" src="d3_s1" to="from_key_V2_302_o6861" />
+    </statement>
+    <statement id="from_key_V2_302_d3_s2">
+      <text>hairs on abaxial surface of blades abundant, lax, and spreading.</text>
+      <biological_entity id="from_key_V2_302_o6862" name="hair" name_original="hairs" src="d3_s2" type="structure">
+        <character is_modifier="false" name="architecture_or_arrangement" notes="alterIDs:o6863" src="d3_s2" value="lax" />
+        <character is_modifier="false" name="orientation" src="d3_s2" value="spreading" />
+      </biological_entity>
+      <biological_entity constraint="abaxial" id="from_key_V2_302_o6863" name="surface" name_original="surface" src="d3_s2" type="structure">
+        <character is_modifier="false" name="count" src="d3_s2" value="abundant" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_302_o6864" name="blade" name_original="blades" src="d3_s2" type="structure" />
+      <relation from="from_key_V2_302_o6862" id="from_key_V2_302_r1601" name="on" negation="false" src="d3_s2" to="from_key_V2_302_o6863" />
+      <relation from="from_key_V2_302_o6863" id="from_key_V2_302_r1602" name="part_of" negation="false" src="d3_s2" to="from_key_V2_302_o6864" />
+    </statement>
+    <statement id="from_key_V2_302_d2_s0">
+      <text>Fertile ultimate segments adnate or equally decurrent and surcurrent, mostly 3-6 mm wide;</text>
+      <biological_entity constraint="ultimate" id="from_key_V2_302_o6852" name="segment" name_original="segments" src="d2_s0" type="structure">
+        <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
+        <character is_modifier="false" name="fusion" src="d2_s0" value="adnate" />
+        <character is_modifier="false" modifier="equally" name="shape" src="d2_s0" value="decurrent" />
+        <character is_modifier="false" name="orientation" src="d2_s0" value="surcurrent" />
+        <character char_type="range_value" from="3" from_unit="mm" modifier="mostly" name="width" src="d2_s0" to="6" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_302_d2_s1">
+      <text>hairs on abaxial surface of blades abundant to sparse, twisted and flexible, if abundant then lax, spreading.</text>
+      <biological_entity id="from_key_V2_302_o6853" name="hair" name_original="hairs" src="d2_s1" type="structure">
+        <character is_modifier="false" name="architecture" notes="alterIDs:o6854" src="d2_s1" value="twisted" />
+        <character is_modifier="false" name="fragility" src="d2_s1" value="flexible" />
+        <character is_modifier="false" name="count" src="d2_s1" value="abundant" />
+        <character is_modifier="false" name="architecture_or_arrangement" src="d2_s1" value="lax" />
+        <character is_modifier="false" name="orientation" src="d2_s1" value="spreading" />
+      </biological_entity>
+      <biological_entity constraint="abaxial" id="from_key_V2_302_o6854" name="surface" name_original="surface" src="d2_s1" type="structure">
+        <character is_modifier="false" name="count" notes="[duplicate value]" src="d2_s1" value="abundant" />
+        <character is_modifier="false" name="count" notes="[duplicate value]" src="d2_s1" value="sparse" />
+        <character char_type="range_value" from="abundant" name="count" src="d2_s1" to="sparse" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_302_o6855" name="blade" name_original="blades" src="d2_s1" type="structure" />
+      <relation from="from_key_V2_302_o6853" id="from_key_V2_302_r1596" name="on" negation="false" src="d2_s1" to="from_key_V2_302_o6854" />
+      <relation from="from_key_V2_302_o6854" id="from_key_V2_302_r1597" name="part_of" negation="false" src="d2_s1" to="from_key_V2_302_o6855" />
+    </statement>
+  </description>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_302_d5_s0">
+      <text>Terminal segments of pinnules 2-4 times longer than wide;</text>
+      <biological_entity constraint="terminal" id="from_key_V2_302_o6873" name="segment" name_original="segments" src="d5_s0" type="structure">
+        <character is_modifier="false" name="l_w_ratio" src="d5_s0" value="2-4" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_302_o6874" name="pinnule" name_original="pinnules" src="d5_s0" type="structure" />
+      <relation from="from_key_V2_302_o6873" id="from_key_V2_302_r1607" name="part_of" negation="false" src="d5_s0" to="from_key_V2_302_o6874" />
+    </statement>
+    <statement id="from_key_V2_302_d5_s1">
+      <text>segment margins and abaxial surface of blade midrib and costae shaggy.</text>
+      <biological_entity constraint="segment" id="from_key_V2_302_o6875" name="margin" name_original="margins" src="d5_s1" type="structure">
+        <character is_modifier="false" name="pubescence" src="d5_s1" value="shaggy" />
+      </biological_entity>
+      <biological_entity constraint="segment abaxial" id="from_key_V2_302_o6876" name="surface" name_original="surface" src="d5_s1" type="structure">
+        <character is_modifier="false" name="pubescence" src="d5_s1" value="shaggy" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_302_o6877" name="midrib" name_original="midrib" src="d5_s1" type="structure" />
+      <biological_entity id="from_key_V2_302_o6878" name="costa" name_original="costae" src="d5_s1" type="structure" />
+      <relation from="from_key_V2_302_o6875" id="from_key_V2_302_r1608" name="part_of" negation="false" src="d5_s1" to="from_key_V2_302_o6877" />
+      <relation from="from_key_V2_302_o6876" id="from_key_V2_302_r1609" name="part_of" negation="false" src="d5_s1" to="from_key_V2_302_o6877" />
+      <relation from="from_key_V2_302_o6875" id="from_key_V2_302_r1610" name="part_of" negation="false" src="d5_s1" to="from_key_V2_302_o6878" />
+      <relation from="from_key_V2_302_o6876" id="from_key_V2_302_r1611" name="part_of" negation="false" src="d5_s1" to="from_key_V2_302_o6878" />
+    </statement>
+    <statement id="from_key_V2_302_d4_s0">
+      <text>Pinnules at 45º -60º angle to costa;</text>
+      <biological_entity id="from_key_V2_302_o6865" name="pinnule" name_original="pinnules" src="d4_s0" type="structure" />
+      <biological_entity id="from_key_V2_302_o6866" name="angle" name_original="angle" src="d4_s0" type="structure">
+        <character is_modifier="true" name="count" src="d4_s0" value="45" />
+        <character is_modifier="true" name="count" src="d4_s0" value="60" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_302_o6867" name="costa" name_original="costa" src="d4_s0" type="structure" />
+      <relation from="from_key_V2_302_o6865" id="from_key_V2_302_r1603" name="at" negation="false" src="d4_s0" to="from_key_V2_302_o6866" />
+      <relation from="from_key_V2_302_o6866" id="from_key_V2_302_r1604" name="to" negation="false" src="d4_s0" to="from_key_V2_302_o6867" />
+    </statement>
+    <statement id="from_key_V2_302_d4_s1">
+      <text>outer indusium glabrous;</text>
+      <biological_entity constraint="outer" id="from_key_V2_302_o6868" name="indusium" name_original="indusium" src="d4_s1" type="structure">
+        <character is_modifier="false" name="pubescence" src="d4_s1" value="glabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_302_d4_s2">
+      <text>hairs on abaxial surface of blades sparse or blades nearly glabrous.</text>
+      <biological_entity id="from_key_V2_302_o6869" name="hair" name_original="hairs" src="d4_s2" type="structure" />
+      <biological_entity constraint="abaxial" id="from_key_V2_302_o6870" name="surface" name_original="surface" src="d4_s2" type="structure">
+        <character is_modifier="false" name="count_or_density" src="d4_s2" value="sparse" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_302_o6871" name="blade" name_original="blades" src="d4_s2" type="structure" />
+      <biological_entity id="from_key_V2_302_o6872" name="blade" name_original="blades" src="d4_s2" type="structure">
+        <character is_modifier="false" modifier="nearly" name="pubescence" src="d4_s2" value="glabrous" />
+      </biological_entity>
+      <relation from="from_key_V2_302_o6869" id="from_key_V2_302_r1605" name="on" negation="false" src="d4_s2" to="from_key_V2_302_o6870" />
+      <relation from="from_key_V2_302_o6870" id="from_key_V2_302_r1606" name="part_of" negation="false" src="d4_s2" to="from_key_V2_302_o6871" />
+    </statement>
+  </description>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_302_d6_s0">
+      <text>Terminal segments of pinnules ca. 6-15 times longer than wide;</text>
+      <biological_entity constraint="terminal" id="from_key_V2_302_o6879" name="segment" name_original="segments" src="d6_s0" type="structure">
+        <character is_modifier="false" name="l_w_ratio" src="d6_s0" value="6-15" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_302_o6880" name="pinnule" name_original="pinnules" src="d6_s0" type="structure" />
+      <relation from="from_key_V2_302_o6879" id="from_key_V2_302_r1612" name="part_of" negation="false" src="d6_s0" to="from_key_V2_302_o6880" />
+    </statement>
+    <statement id="from_key_V2_302_d6_s1">
+      <text>segment margins and abaxial surface of blade midrib and costae sparsely pilose to glabrous.</text>
+      <biological_entity constraint="segment" id="from_key_V2_302_o6881" name="margin" name_original="margins" src="d6_s1" type="structure">
+        <character is_modifier="false" modifier="sparsely" name="pubescence" notes="[duplicate value]" src="d6_s1" value="pilose" />
+        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d6_s1" value="glabrous" />
+        <character char_type="range_value" from="sparsely pilose" name="pubescence" src="d6_s1" to="glabrous" />
+      </biological_entity>
+      <biological_entity constraint="segment abaxial" id="from_key_V2_302_o6882" name="surface" name_original="surface" src="d6_s1" type="structure">
+        <character is_modifier="false" modifier="sparsely" name="pubescence" notes="[duplicate value]" src="d6_s1" value="pilose" />
+        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d6_s1" value="glabrous" />
+        <character char_type="range_value" from="sparsely pilose" name="pubescence" src="d6_s1" to="glabrous" />
+      </biological_entity>
+      <biological_entity constraint="blade" id="from_key_V2_302_o6883" name="midrib" name_original="midrib" src="d6_s1" type="structure" />
+      <biological_entity id="from_key_V2_302_o6884" name="costa" name_original="costae" src="d6_s1" type="structure" />
+      <relation from="from_key_V2_302_o6881" id="from_key_V2_302_r1613" name="part_of" negation="false" src="d6_s1" to="from_key_V2_302_o6883" />
+      <relation from="from_key_V2_302_o6882" id="from_key_V2_302_r1614" name="part_of" negation="false" src="d6_s1" to="from_key_V2_302_o6883" />
+      <relation from="from_key_V2_302_o6881" id="from_key_V2_302_r1615" name="part_of" negation="false" src="d6_s1" to="from_key_V2_302_o6884" />
+      <relation from="from_key_V2_302_o6882" id="from_key_V2_302_r1616" name="part_of" negation="false" src="d6_s1" to="from_key_V2_302_o6884" />
+    </statement>
+  </description>
+</bio:treatment>

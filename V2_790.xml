@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>Alan R. Smith</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Newman" date="unknown" rank="family">grammitidaceae</taxon_name>
+    <taxon_name authority="Swartz" date="1802" rank="genus">Grammitis</taxon_name>
+    <place_of_publication>
+      <publication_title>J. Bot. (Schrader)</publication_title>
+      <place_in_publication>1800(2): 3, 17. 1802</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family grammitidaceae;genus Grammitis</taxon_hierarchy>
+    <other_info_on_name type="etymology">[Greek gramme, line, alluding to the elongate sori in a few species]</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants often less than 15 cm [rarely more than 50 cm].</text>
+      <biological_entity id="o23009" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s0" to="15" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Blade pinnatifid [simple to 1-pinnate or rarely more divided], bristly [or glabrous], glandless [or glandular];</text>
+      <biological_entity id="o23010" name="blade" name_original="blade" src="d0_s1" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s1" value="pinnatifid" />
+        <character is_modifier="false" name="pubescence" src="d0_s1" value="bristly" />
+        <character is_modifier="false" name="architecture" src="d0_s1" value="glandless" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>setae dark reddish-brown [to transparent].</text>
+      <biological_entity id="o23011" name="seta" name_original="setae" src="d0_s2" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s2" value="dark reddish-brown" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Veins simple or 1-forked [to pinnately veined] in each segment, free, ending in hydathodes adaxially.</text>
+      <biological_entity id="o23012" name="vein" name_original="veins" src="d0_s3" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s3" value="simple" />
+        <character constraint="in segment" constraintid="o23013" is_modifier="false" name="shape" src="d0_s3" value="1-forked" />
+        <character is_modifier="false" name="fusion" notes="" src="d0_s3" value="free" />
+      </biological_entity>
+      <biological_entity id="o23013" name="segment" name_original="segment" src="d0_s3" type="structure" />
+      <biological_entity id="o23014" name="hydathode" name_original="hydathodes" src="d0_s3" type="structure" />
+      <relation from="o23012" id="r5381" modifier="adaxially" name="ending in" negation="false" src="d0_s3" to="o23014" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Sori round [to oval or elongate], not forming a coenosorus, not sunken;</text>
+      <biological_entity id="o23015" name="sorus" name_original="sori" src="d0_s4" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s4" value="round" />
+        <character is_modifier="false" modifier="not; not" name="prominence" src="d0_s4" value="sunken" />
+      </biological_entity>
+      <biological_entity id="o23016" name="coenosoru" name_original="coenosorus" src="d0_s4" type="structure" />
+      <relation from="o23015" id="r5382" name="forming a" negation="true" src="d0_s4" to="o23016" />
+    </statement>
+    <statement id="d0_s5">
+      <text>paraphyses absent [or present].</text>
+    </statement>
+    <statement id="d0_s6">
+      <text>x = 32, 33, 36, 37.</text>
+      <biological_entity id="o23017" name="paraphyse" name_original="paraphyses" src="d0_s5" type="structure">
+        <character is_modifier="false" name="presence" src="d0_s5" value="absent" />
+      </biological_entity>
+      <biological_entity constraint="x" id="o23018" name="chromosome" name_original="" src="d0_s6" type="structure">
+        <character name="quantity" src="d0_s6" value="32" />
+        <character name="quantity" src="d0_s6" value="33" />
+        <character name="quantity" src="d0_s6" value="36" />
+        <character name="quantity" src="d0_s6" value="37" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>tropical and subtropical, North America, South America, Asia, Africa, Pacific Islands, Australia.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="tropical and subtropical" establishment_means="native" />
+        <character name="distribution" value="North America" establishment_means="native" />
+        <character name="distribution" value="South America" establishment_means="native" />
+        <character name="distribution" value="Asia" establishment_means="native" />
+        <character name="distribution" value="Africa" establishment_means="native" />
+        <character name="distribution" value="Pacific Islands" establishment_means="native" />
+        <character name="distribution" value="Australia" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <discussion>The total number of species is based on acceptance of a relatively broad circumscription. Our sole species belongs to the group (genus or subgenus) formerly called Xiphopteris , a name that is now treated as a synonym of Cochlidium (L. E. Bishop 1978). This group comprises perhaps 30 species and is defined by the following characteristics: stem scales not clathrate, often marginally bristly; veins simple or with a single acroscopic branch in each segment; blades linear, usually pinnatifid or pinnatisect; lack of a marginal black border around blade; one sorus per segment; and hydathodes present. It probably warrants generic status under the name Micropolypodium Hayata, a primarily neotropical genus with representatives in eastern Asia (Malaysia, China, Sikkim, Taiwan, and Japan).</discussion>
+  <discussion>Species ca. 300 or more (1 in the flora):</discussion>
+  <references>
+    <reference>Bishop, L. E. 1978. Revision of the genus  Cochlidium  (Grammitidaceae). Amer. Fern J. 68: 76--94.</reference>
+    <reference>Farrar, D. R. 1967. Gametophytes of four tropical fern genera reproducing independently of their sporophytes in the southern Appalachians. Science 155: 1266--1267.</reference>
+  </references>
+</bio:treatment>

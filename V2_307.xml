@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
+    <taxon_name authority="R. Brown" date="1810" rank="genus">woodsia</taxon_name>
+    <taxon_name authority="(Sprengel) Torrey" date="1840" rank="species">obtusa</taxon_name>
+    <taxon_name authority="Windham" date="1993" rank="subspecies">occidentalis</taxon_name>
+    <place_of_publication>
+      <publication_title>Contr. Univ. Michigan Herb.</publication_title>
+      <place_in_publication>19: 56. 1993</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family dryopteridaceae;genus woodsia;species obtusa;subspecies occidentalis</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Stems short to long-creeping, individual branches usually 3-5 mm diam.</text>
+      <biological_entity id="o6976" name="stem" name_original="stems" src="d0_s0" type="structure">
+        <character is_modifier="false" name="height_or_length_or_size" src="d0_s0" value="short" />
+        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="long-creeping" />
+      </biological_entity>
+      <biological_entity constraint="individual" id="o6977" name="branch" name_original="branches" src="d0_s0" type="structure">
+        <character char_type="range_value" from="3" from_unit="mm" name="diameter" src="d0_s0" to="5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Blade finely cut, 2-pinnate-pinnatifid.</text>
+      <biological_entity id="o6978" name="blade" name_original="blade" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="finely" name="shape" src="d0_s1" value="cut" />
+        <character is_modifier="false" name="shape" src="d0_s1" value="2-pinnate-pinnatifid" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Proximal pinnules of lower pinnae usually deeply lobed or pinnatifid.</text>
+      <biological_entity constraint="proximal" id="o6979" name="pinnule" name_original="pinnules" src="d0_s2" type="structure">
+        <character is_modifier="false" modifier="usually deeply" name="shape" src="d0_s2" value="lobed" />
+        <character is_modifier="false" name="shape" src="d0_s2" value="pinnatifid" />
+      </biological_entity>
+      <biological_entity constraint="lower" id="o6980" name="pinna" name_original="pinnae" src="d0_s2" type="structure" />
+      <relation from="o6979" id="r1637" name="part_of" negation="false" src="d0_s2" to="o6980" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Spores averaging 35-42 µm.</text>
+    </statement>
+    <statement id="d0_s4">
+      <text>2 n = 76.</text>
+      <biological_entity id="o6981" name="spore" name_original="spores" src="d0_s3" type="structure" />
+      <biological_entity constraint="2n" id="o6982" name="chromosome" name_original="" src="d0_s4" type="structure">
+        <character name="quantity" src="d0_s4" value="76" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Sporulating summer--fall.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="sporulating time" value="summer-fall" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Cliffs and rocky slopes (rarely terrestrial), found on a variety of substrates but mostly sandstone and granite;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="cliffs and rocky slopes ( terrestrial ) , found on a variety of substrates but sandstone and granite ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>200--500 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="500" to_unit="m" from="200" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ark., Kans., Mo., Okla., Tex.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>7b</number>
+  <discussion>Woodsia obtusa subsp. occidentalis hybridizes with subsp. obtusa sporadically throughout the region of sympatry; the hybrids are sterile triploids with malformed spores.</discussion>
+</bio:treatment>

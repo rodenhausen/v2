@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Newman" date="unknown" rank="family">aspleniaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">asplenium</taxon_name>
+    <taxon_name authority="W." date="1966" rank="species">×heteroresiliens</taxon_name>
+    <place_of_publication>
+      <publication_title>Amer. Fern J.</publication_title>
+      <place_in_publication>56: 12, plate 3. 1966</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family aspleniaceae;genus asplenium;species ×heteroresiliens</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Roots not proliferous.</text>
+      <biological_entity id="o277" name="root" name_original="roots" src="d0_s0" type="structure">
+        <character is_modifier="false" modifier="not" name="reproduction" src="d0_s0" value="proliferous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Stems erect, rarely branched;</text>
+      <biological_entity id="o278" name="stem" name_original="stems" src="d0_s1" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s1" value="erect" />
+        <character is_modifier="false" modifier="rarely" name="architecture" src="d0_s1" value="branched" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>scales black throughout, linear-lanceolate, 1-3.5 × 0.1-0.4 mm, margins entire.</text>
+      <biological_entity id="o279" name="scale" name_original="scales" src="d0_s2" type="structure">
+        <character is_modifier="false" modifier="throughout" name="coloration" src="d0_s2" value="black" />
+        <character is_modifier="false" name="shape" src="d0_s2" value="linear-lanceolate" />
+        <character char_type="range_value" from="1" from_unit="mm" name="length" src="d0_s2" to="3.5" to_unit="mm" />
+        <character char_type="range_value" from="0.1" from_unit="mm" name="width" src="d0_s2" to="0.4" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o280" name="margin" name_original="margins" src="d0_s2" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s2" value="entire" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Leaves monomorphic.</text>
+      <biological_entity id="o281" name="leaf" name_original="leaves" src="d0_s3" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s3" value="monomorphic" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Petiole black or purplish black throughout, lustrous, 1-2 cm, 1/5-1/10 length of blade;</text>
+      <biological_entity id="o282" name="petiole" name_original="petiole" src="d0_s4" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s4" value="black" />
+        <character is_modifier="false" modifier="throughout" name="coloration" src="d0_s4" value="purplish black" />
+        <character is_modifier="false" name="reflectance" src="d0_s4" value="lustrous" />
+        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s4" to="2" to_unit="cm" />
+        <character char_type="range_value" from="1/5 length of blade" name="length" src="d0_s4" to="1/10 length of blade" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>indument of black filiform scales at base.</text>
+      <biological_entity id="o283" name="indument" name_original="indument" src="d0_s5" type="structure" constraint="scale" />
+      <biological_entity id="o284" name="scale" name_original="scales" src="d0_s5" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s5" value="black" />
+        <character is_modifier="true" name="shape" src="d0_s5" value="filiform" />
+      </biological_entity>
+      <biological_entity id="o285" name="base" name_original="base" src="d0_s5" type="structure" />
+      <relation from="o283" id="r65" name="part_of" negation="false" src="d0_s5" to="o284" />
+      <relation from="o283" id="r66" name="at" negation="false" src="d0_s5" to="o285" />
+    </statement>
+    <statement id="d0_s6">
+      <text>Blade linear to narrowly oblanceolate, 1-pinnate throughout, 5-15 × 1-2 cm, thick, glabrous;</text>
+      <biological_entity id="o286" name="blade" name_original="blade" src="d0_s6" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="linear" />
+        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s6" value="oblanceolate" />
+        <character char_type="range_value" from="linear" name="shape" src="d0_s6" to="narrowly oblanceolate" />
+        <character is_modifier="false" modifier="throughout" name="architecture_or_shape" src="d0_s6" value="1-pinnate" />
+        <character char_type="range_value" from="5" from_unit="cm" name="length" src="d0_s6" to="15" to_unit="cm" />
+        <character char_type="range_value" from="1" from_unit="cm" name="width" src="d0_s6" to="2" to_unit="cm" />
+        <character is_modifier="false" name="width" src="d0_s6" value="thick" />
+        <character is_modifier="false" name="pubescence" src="d0_s6" value="glabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>base gradually tapered, apex acute, not rooting.</text>
+      <biological_entity id="o287" name="base" name_original="base" src="d0_s7" type="structure">
+        <character is_modifier="false" modifier="gradually" name="shape" src="d0_s7" value="tapered" />
+      </biological_entity>
+      <biological_entity id="o288" name="apex" name_original="apex" src="d0_s7" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s7" value="acute" />
+        <character is_modifier="false" modifier="not" name="architecture" src="d0_s7" value="rooting" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Rachis black or purplish black throughout, lustrous, glabrous or with a few scattered scales.</text>
+      <biological_entity id="o289" name="rachis" name_original="rachis" src="d0_s8" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s8" value="black" />
+        <character is_modifier="false" modifier="throughout" name="coloration" src="d0_s8" value="purplish black" />
+        <character is_modifier="false" name="reflectance" src="d0_s8" value="lustrous" />
+        <character is_modifier="false" name="pubescence" src="d0_s8" value="glabrous" />
+        <character is_modifier="false" name="pubescence" src="d0_s8" value="with a few scattered scales" />
+      </biological_entity>
+      <biological_entity id="o290" name="scale" name_original="scales" src="d0_s8" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s8" value="few" />
+        <character is_modifier="true" name="arrangement" src="d0_s8" value="scattered" />
+      </biological_entity>
+      <relation from="o289" id="r67" name="with" negation="false" src="d0_s8" to="o290" />
+    </statement>
+    <statement id="d0_s9">
+      <text>Pinnae in 12-30 pairs, oblong to quadrangular;</text>
+      <biological_entity id="o291" name="pinna" name_original="pinnae" src="d0_s9" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="oblong" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="quadrangular" />
+        <character char_type="range_value" from="oblong" name="shape" notes="" src="d0_s9" to="quadrangular" />
+      </biological_entity>
+      <biological_entity id="o292" name="pair" name_original="pairs" src="d0_s9" type="structure">
+        <character char_type="range_value" from="12" is_modifier="true" name="quantity" src="d0_s9" to="30" />
+      </biological_entity>
+      <relation from="o291" id="r68" name="in" negation="false" src="d0_s9" to="o292" />
+    </statement>
+    <statement id="d0_s10">
+      <text>medial pinnae 5-10 × 2-3 mm;</text>
+      <biological_entity constraint="medial" id="o293" name="pinna" name_original="pinnae" src="d0_s10" type="structure">
+        <character char_type="range_value" from="5" from_unit="mm" name="length" src="d0_s10" to="10" to_unit="mm" />
+        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s10" to="3" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>base with slight or prominent acroscopic auricle and often with basiscopic auricle;</text>
+      <biological_entity id="o294" name="base" name_original="base" src="d0_s11" type="structure" />
+      <biological_entity id="o295" name="auricle" name_original="auricle" src="d0_s11" type="structure">
+        <character is_modifier="true" name="prominence" src="d0_s11" value="slight" />
+        <character is_modifier="true" name="prominence" src="d0_s11" value="prominent" />
+        <character is_modifier="true" name="orientation" src="d0_s11" value="acroscopic" />
+      </biological_entity>
+      <biological_entity id="o296" name="auricle" name_original="auricle" src="d0_s11" type="structure">
+        <character is_modifier="true" name="orientation" src="d0_s11" value="basiscopic" />
+      </biological_entity>
+      <relation from="o294" id="r69" name="with" negation="false" src="d0_s11" to="o295" />
+      <relation from="o294" id="r70" modifier="often" name="with" negation="false" src="d0_s11" to="o296" />
+    </statement>
+    <statement id="d0_s12">
+      <text>margins usually shallowly crenulate, rarely ± entire;</text>
+      <biological_entity id="o297" name="margin" name_original="margins" src="d0_s12" type="structure">
+        <character is_modifier="false" modifier="usually shallowly" name="shape" src="d0_s12" value="crenulate" />
+        <character is_modifier="false" modifier="rarely more or less" name="architecture_or_shape" src="d0_s12" value="entire" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s13">
+      <text>apex acute to obtuse.</text>
+      <biological_entity id="o298" name="apex" name_original="apex" src="d0_s13" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s13" value="acute" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s13" value="obtuse" />
+        <character char_type="range_value" from="acute" name="shape" src="d0_s13" to="obtuse" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s14">
+      <text>Veins free, obscure.</text>
+      <biological_entity id="o299" name="vein" name_original="veins" src="d0_s14" type="structure">
+        <character is_modifier="false" name="fusion" src="d0_s14" value="free" />
+        <character is_modifier="false" name="prominence" src="d0_s14" value="obscure" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s15">
+      <text>Sori 1-5 pairs per pinna, on both basiscopic and acroscopic sides.</text>
+      <biological_entity id="o300" name="sorus" name_original="sori" src="d0_s15" type="structure">
+        <character char_type="range_value" constraint="per pinna" constraintid="o301" from="1" name="quantity" src="d0_s15" to="5" />
+      </biological_entity>
+      <biological_entity id="o301" name="pinna" name_original="pinna" src="d0_s15" type="structure" />
+      <biological_entity id="o302" name="side" name_original="sides" src="d0_s15" type="structure">
+        <character is_modifier="true" name="orientation" src="d0_s15" value="basiscopic" />
+        <character is_modifier="true" name="orientation" src="d0_s15" value="acroscopic" />
+      </biological_entity>
+      <relation from="o300" id="r71" name="on" negation="false" src="d0_s15" to="o302" />
+    </statement>
+    <statement id="d0_s16">
+      <text>Spores 32 per sporangium.</text>
+      <biological_entity id="o304" name="sporangium" name_original="sporangium" src="d0_s16" type="structure" />
+    </statement>
+    <statement id="d0_s17">
+      <text>n = 2 n = 180 (apogamous).</text>
+      <biological_entity id="o303" name="spore" name_original="spores" src="d0_s16" type="structure">
+        <character constraint="per sporangium" constraintid="o304" name="quantity" src="d0_s16" value="32" />
+      </biological_entity>
+      <biological_entity constraint="n=2n" id="o305" name="chromosome" name_original="" src="d0_s17" type="structure">
+        <character name="quantity" src="d0_s17" value="180" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Limestone rocks;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="limestone rocks ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0--100 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="100" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Fla., N.C., S.C.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>13</number>
+  <other_name type="common_name">Morzenti's spleenwort</other_name>
+  <discussion>V. M. Morzenti (1966) studied the cytology and morphology of Asplenium × heteroresiliens and found it to be a pentaploid (5 x ) of hybrid origin between A . resiliens (3 x ) and A . heterochroum (4 x ). The hybrid is intermediate in morphology between the parents, and it is difficult to separate from them. Misshapen spores mixed with large globose spores can usually be found on the same specimen.</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_270_d59_s0">
+      <text>Pinna margins shallowly crenulate;</text>
+      <biological_entity constraint="pinna" id="from_key_V2_270_o5394" name="margin" name_original="margins" src="d59_s0" type="structure">
+        <character is_modifier="false" modifier="shallowly" name="shape" src="d59_s0" value="crenulate" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_270_d59_s1">
+      <text>auricle present at pinna base;</text>
+      <biological_entity id="from_key_V2_270_o5395" name="auricle" name_original="auricle" src="d59_s1" type="structure">
+        <character constraint="at pinna base" constraintid="o5396" is_modifier="false" name="count" src="d59_s1" value="present" />
+      </biological_entity>
+      <biological_entity constraint="pinna" id="from_key_V2_270_o5396" name="base" name_original="base" src="d59_s1" type="structure" />
+    </statement>
+    <statement id="from_key_V2_270_d59_s2">
+      <text>veins obscure;</text>
+      <biological_entity id="from_key_V2_270_o5397" name="vein" name_original="veins" src="d59_s2" type="structure">
+        <character is_modifier="false" name="prominence" src="d59_s2" value="obscure" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_270_d59_s3">
+      <text>spores 32 per sporangium.</text>
+      <biological_entity id="from_key_V2_270_o5398" name="spore" name_original="spores" src="d59_s3" type="structure">
+        <character constraint="per sporangium" constraintid="o5399" name="count" src="d59_s3" value="32" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_270_o5399" name="sporangium" name_original="sporangium" src="d59_s3" type="structure" />
+    </statement>
+    <statement id="from_key_V2_270_d58_s0">
+      <text>Pinna margins ± shallowly crenate dentate;</text>
+      <biological_entity constraint="pinna" id="from_key_V2_270_o5391" name="margin" name_original="margins" src="d58_s0" type="structure">
+        <character is_modifier="false" modifier="more or less shallowly" name="shape" src="d58_s0" value="crenate" />
+        <character is_modifier="false" name="architecture_or_shape" src="d58_s0" value="dentate" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_270_d58_s1">
+      <text>sori medial to inframedial;</text>
+      <biological_entity id="from_key_V2_270_o5392" name="sorus" name_original="sori" src="d58_s1" type="structure">
+        <character is_modifier="false" name="position" notes="[duplicate value]" src="d58_s1" value="medial" />
+        <character is_modifier="false" name="position" notes="[duplicate value]" src="d58_s1" value="inframedial" />
+        <character char_type="range_value" from="medial" name="position" src="d58_s1" to="inframedial" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_270_d58_s2">
+      <text>spores 32 or 64;</text>
+    </statement>
+    <statement id="from_key_V2_270_d58_s3">
+      <text>local in se United States.</text>
+      <biological_entity id="from_key_V2_270_o5393" name="spore" name_original="spores" src="d58_s2" type="structure">
+        <character name="count" src="d58_s2" unit="or" value="32" />
+        <character name="count" src="d58_s2" unit="or" value="64" />
+        <character constraint="in se united states" is_modifier="false" name="position" src="d58_s3" value="local" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_270_d56_s0">
+      <text>Pinna margins nearly entire or shallowly crenate dentate;</text>
+    </statement>
+    <statement id="from_key_V2_270_d56_s1">
+      <text>se United States to e Arizona.</text>
+      <biological_entity constraint="pinna" id="from_key_V2_270_o5385" name="margin" name_original="margins" src="d56_s0" type="structure">
+        <character is_modifier="false" modifier="nearly" name="architecture_or_shape" src="d56_s0" value="entire" />
+        <character is_modifier="false" modifier="shallowly" name="architecture_or_shape" src="d56_s0" value="crenate" />
+        <character is_modifier="false" name="architecture_or_shape" src="d56_s0" value="dentate" />
+        <character constraint="to arizona" constraintid="o5386" is_modifier="false" name="fusion" src="d56_s1" value="united" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_270_o5386" name="arizona" name_original="arizona" src="d56_s1" type="structure" />
+    </statement>
+    <statement id="from_key_V2_270_d48_s0">
+      <text>Pinnae oblong-lanceolate to oblong, mainly 6–10 mm, length 3–5 times width.</text>
+      <biological_entity id="from_key_V2_270_o5363" name="pinna" name_original="pinnae" src="d48_s0" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d48_s0" value="oblong-lanceolate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d48_s0" value="oblong" />
+        <character char_type="range_value" from="oblong-lanceolate" name="shape" src="d48_s0" to="oblong" />
+        <character char_type="range_value" from="6" from_unit="mm" modifier="mainly" name="some_measurement" src="d48_s0" to="10" to_unit="mm" />
+        <character is_modifier="false" name="l_w_ratio" src="d48_s0" value="3-5" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_270_d46_s0">
+      <text>Blade apex not prolonged, terminal bud absent.</text>
+      <biological_entity constraint="blade" id="from_key_V2_270_o5360" name="apex" name_original="apex" src="d46_s0" type="structure">
+        <character is_modifier="false" modifier="not" name="length" src="d46_s0" value="prolonged" />
+      </biological_entity>
+      <biological_entity constraint="terminal" id="from_key_V2_270_o5361" name="bud" name_original="bud" src="d46_s0" type="structure">
+        <character is_modifier="false" name="count" src="d46_s0" value="absent" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_270_d44_s0">
+      <text>Sori 4–10, on both sides of costa of nearly symmetric pinnae.</text>
+      <biological_entity id="from_key_V2_270_o5352" name="sorus" name_original="sori" src="d44_s0" type="structure">
+        <character char_type="range_value" from="4" name="count" src="d44_s0" to="10" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_270_o5353" name="side" name_original="sides" src="d44_s0" type="structure" />
+      <biological_entity id="from_key_V2_270_o5354" name="costa" name_original="costa" src="d44_s0" type="structure" />
+      <biological_entity id="from_key_V2_270_o5355" name="pinna" name_original="pinnae" src="d44_s0" type="structure">
+        <character is_modifier="true" modifier="nearly" name="architecture_or_shape" src="d44_s0" value="symmetric" />
+      </biological_entity>
+      <relation from="from_key_V2_270_o5352" id="from_key_V2_270_r1231" name="on" negation="false" src="d44_s0" to="from_key_V2_270_o5353" />
+      <relation from="from_key_V2_270_o5353" id="from_key_V2_270_r1232" name="part_of" negation="false" src="d44_s0" to="from_key_V2_270_o5354" />
+      <relation from="from_key_V2_270_o5353" id="from_key_V2_270_r1233" name="part_of" negation="false" src="d44_s0" to="from_key_V2_270_o5355" />
+    </statement>
+    <statement id="from_key_V2_270_d40_s0">
+      <text>Blades mostly less than 3 cm wide, mainly linear.</text>
+      <biological_entity id="from_key_V2_270_o5339" name="blade" name_original="blades" src="d40_s0" type="structure">
+        <character char_type="range_value" from="0" from_unit="cm" name="width" src="d40_s0" to="3" to_unit="cm" />
+        <character is_modifier="false" modifier="mainly" name="arrangement_or_course_or_shape" src="d40_s0" value="linear" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_270_d38_s0">
+      <text>Pinnae bases not overlapping rachis;</text>
+      <biological_entity constraint="pinnae" id="from_key_V2_270_o5332" name="base" name_original="bases" src="d38_s0" type="structure" />
+      <biological_entity id="from_key_V2_270_o5333" name="rachis" name_original="rachis" src="d38_s0" type="structure">
+        <character is_modifier="true" modifier="not" name="arrangement" src="d38_s0" value="overlapping" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_270_d38_s1">
+      <text>sori medial to supramedial;</text>
+      <biological_entity id="from_key_V2_270_o5334" name="sorus" name_original="sori" src="d38_s1" type="structure">
+        <character is_modifier="false" name="position" notes="[duplicate value]" src="d38_s1" value="medial" />
+        <character is_modifier="false" name="position" notes="[duplicate value]" src="d38_s1" value="supramedial" />
+        <character char_type="range_value" from="medial" name="position" src="d38_s1" to="supramedial" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_270_d38_s2">
+      <text>leaves monomorphic;</text>
+      <biological_entity id="from_key_V2_270_o5335" name="leaf" name_original="leaves" src="d38_s2" type="structure">
+        <character is_modifier="false" name="architecture" src="d38_s2" value="monomorphic" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_270_d38_s3">
+      <text>plants mainly on rock (epiphytic in A. auritum).</text>
+      <biological_entity id="from_key_V2_270_o5336" name="plant" name_original="plants" src="d38_s3" type="structure" />
+      <biological_entity id="from_key_V2_270_o5337" name="rock" name_original="rock" src="d38_s3" type="structure" />
+      <relation from="from_key_V2_270_o5336" id="from_key_V2_270_r1226" name="on" negation="false" src="d38_s3" to="from_key_V2_270_o5337" />
+    </statement>
+    <statement id="from_key_V2_270_d36_s0">
+      <text>Pinna pairs 5–35;</text>
+      <biological_entity id="from_key_V2_270_o5320" name="pinna" name_original="pinna" src="d36_s0" type="structure">
+        <character char_type="range_value" from="5" name="count" src="d36_s0" to="35" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_270_d36_s1">
+      <text>blades mainly oblong to lanceolate, usually with glandular-hairs or narrow hairlike scales on veins or blades glabrous.</text>
+      <biological_entity id="from_key_V2_270_o5321" name="blade" name_original="blades" src="d36_s1" type="structure">
+        <character is_modifier="false" modifier="mainly" name="shape" notes="[duplicate value]" src="d36_s1" value="oblong" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d36_s1" value="lanceolate" />
+        <character char_type="range_value" from="mainly oblong" name="shape" src="d36_s1" to="lanceolate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_270_o5322" name="glandular-hair" name_original="glandular-hairs" src="d36_s1" type="structure" />
+      <biological_entity id="from_key_V2_270_o5323" name="scale" name_original="scales" src="d36_s1" type="structure">
+        <character is_modifier="true" name="size_or_width" src="d36_s1" value="narrow" />
+        <character is_modifier="true" name="shape" src="d36_s1" value="hairlike" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_270_o5324" name="vein" name_original="veins" src="d36_s1" type="structure" />
+      <biological_entity id="from_key_V2_270_o5325" name="blade" name_original="blades" src="d36_s1" type="structure">
+        <character is_modifier="false" name="pubescence" src="d36_s1" value="glabrous" />
+      </biological_entity>
+      <relation from="from_key_V2_270_o5321" id="from_key_V2_270_r1221" modifier="usually" name="with" negation="false" src="d36_s1" to="from_key_V2_270_o5322" />
+      <relation from="from_key_V2_270_o5321" id="from_key_V2_270_r1222" modifier="usually" name="with" negation="false" src="d36_s1" to="from_key_V2_270_o5323" />
+      <relation from="from_key_V2_270_o5323" id="from_key_V2_270_r1223" name="on" negation="false" src="d36_s1" to="from_key_V2_270_o5324" />
+      <relation from="from_key_V2_270_o5323" id="from_key_V2_270_r1224" name="on" negation="false" src="d36_s1" to="from_key_V2_270_o5325" />
+    </statement>
+    <statement id="from_key_V2_270_d16_s0">
+      <text>Blades 1-pinnate, pinnae undivided (except in some individuals of A. pumilum).</text>
+      <biological_entity id="from_key_V2_270_o5274" name="blade" name_original="blades" src="d16_s0" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d16_s0" value="1-pinnate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_270_o5275" name="pinna" name_original="pinnae" src="d16_s0" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d16_s0" value="undivided" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_270_d2_s0">
+      <text>Blades pinnate throughout or pinnatifid only in distal 1/3, pinnae undivided to 1–3-divided.</text>
+      <biological_entity id="from_key_V2_270_o5234" name="blade" name_original="blades" src="d2_s0" type="structure">
+        <character is_modifier="false" modifier="throughout" name="architecture_or_shape" src="d2_s0" value="pinnate" />
+        <character constraint="in distal 1/3" constraintid="o5235" is_modifier="false" name="shape" src="d2_s0" value="pinnatifid" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="from_key_V2_270_o5235" name="1/3" name_original="1/3" src="d2_s0" type="structure" />
+      <biological_entity id="from_key_V2_270_o5236" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d2_s0" value="undivided" />
+        <character is_modifier="false" name="shape" src="d2_s0" value="1-3-divided" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

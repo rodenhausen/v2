@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Ching" date="unknown" rank="family">vittariaceae</taxon_name>
+    <taxon_name authority="Smith" date="1793" rank="genus">vittaria</taxon_name>
+    <taxon_name authority="Farrar &amp; Mickel" date="1991" rank="species">appalachiana</taxon_name>
+    <place_of_publication>
+      <publication_title>Amer. Fern J.</publication_title>
+      <place_in_publication>81: 72. 1991</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family vittariaceae;genus vittaria;species appalachiana</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants on rock.</text>
+      <biological_entity id="o1181" name="plant" name_original="plants" src="d0_s0" type="structure" />
+      <biological_entity id="o1182" name="rock" name_original="rock" src="d0_s0" type="structure" />
+      <relation from="o1181" id="r257" name="on" negation="false" src="d0_s0" to="o1182" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Sporophytes absent or abortive, rarely formed (see discussion).</text>
+      <biological_entity id="o1183" name="sporophyte" name_original="sporophytes" src="d0_s1" type="structure">
+        <character is_modifier="false" name="presence" src="d0_s1" value="absent" />
+        <character is_modifier="false" name="development" src="d0_s1" value="abortive" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Gametophytes sparsely to much branched.</text>
+      <biological_entity id="o1184" name="gametophyte" name_original="gametophytes" src="d0_s2" type="structure">
+        <character is_modifier="false" modifier="sparsely to much" name="architecture" src="d0_s2" value="branched" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Gemmae highly variable, often with end cells swollen;</text>
+      <biological_entity id="o1185" name="gemma" name_original="gemmae" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="highly" name="variability" src="d0_s3" value="variable" />
+      </biological_entity>
+      <biological_entity constraint="end" id="o1186" name="cell" name_original="cells" src="d0_s3" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s3" value="swollen" />
+      </biological_entity>
+      <relation from="o1185" id="r258" modifier="often" name="with" negation="false" src="d0_s3" to="o1186" />
+    </statement>
+    <statement id="d0_s4">
+      <text>body cells 2-12, rhizoid primordia absent from medial cells, often lacking on 1 or both end cells.</text>
+      <biological_entity constraint="body" id="o1187" name="cell" name_original="cells" src="d0_s4" type="structure">
+        <character char_type="range_value" from="2" name="quantity" src="d0_s4" to="12" />
+      </biological_entity>
+      <biological_entity constraint="rhizoid" id="o1188" name="primordium" name_original="primordia" src="d0_s4" type="structure">
+        <character constraint="from medial cells" constraintid="o1189" is_modifier="false" name="presence" src="d0_s4" value="absent" />
+      </biological_entity>
+      <biological_entity constraint="medial" id="o1189" name="cell" name_original="cells" src="d0_s4" type="structure">
+        <character constraint="on end cells" constraintid="o1190" is_modifier="false" modifier="often" name="quantity" notes="" src="d0_s4" value="lacking" />
+      </biological_entity>
+      <biological_entity constraint="end" id="o1190" name="cell" name_original="cells" src="d0_s4" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s4" value="1" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>In dark moist cavities and rock shelters in noncalcareous rocks. Occasionally epiphytic on tree bases in narrow ravines;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="in dark moist cavities and rock shelters in noncalcareous rocks ." />
+        <character name="habitat" value="" />
+        <character name="habitat" value="epiphytic on tree bases in narrow ravines" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>150--1800 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="1800" to_unit="m" from="150" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ala., Ga., Ind., Ky., Md., N.Y., N.C., Ohio, Pa., S.C., Tenn., Va., W.Va.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>3</number>
+  <other_name type="common_name">Appalachian shoestring fern</other_name>
+  <other_name type="common_name">Appalachian vittaria</other_name>
+  <discussion>Dense colonies of Vittaria appalachiana coat rock surfaces in deeply sheltered habitats throughout the Appalachian Mountains and plateau. Abortive, apogamously produced embryos and small sporophytes with leaves less than 5 mm have been collected from one site in Ohio and have been produced from gametophytes in culture on two occasions. The largest of these produced simple, linear leaves and clathrate rhizome scales typical of Vittariaceae. Starch gel enzyme electrophoresis patterns, as well as morphology, distinguish these plants from other American species. Enzyme electrophoresis patterns and a somatic chromosome number of 120 (G. J. Gastony 1977) suggest that the plants are diploid and possibly of hybrid origin. Fixation of different genotypes in different sections of the range indicates an ancient origin of the independent gametophytes, possibly through Pleistocene elimination of the sporophyte generation (D. R. Farrar 1990).</discussion>
+  <discussion>A distinctive morphologic characteristic of Vittaria appalachiana is the variability displayed in gemma production, often including forms intermediate between gemmae and their supporting gemmifer cells and abortive "gemmae" arrested in early stages of development. This is in contrast to the remarkably regular pattern of gemma production in other species (D. R. Farrar 1978; E. S. Sheffield and D. R. Farrar 1988).</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_19_d4_s0">
+      <text>Gemmae with 2-12 body cells but at least some 2-3-celled gemmae present, end cells often swollen and larger than medial cells;</text>
+      <biological_entity id="from_key_V2_19_o3140" name="gemma" name_original="gemmae" src="d4_s0" type="structure" />
+      <biological_entity constraint="body" id="from_key_V2_19_o3141" name="cell" name_original="cells" src="d4_s0" type="structure">
+        <character char_type="range_value" from="2" is_modifier="true" name="count" src="d4_s0" to="12" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_19_o3142" name="gemma" name_original="gemmae" src="d4_s0" type="structure">
+        <character is_modifier="true" name="architecture" src="d4_s0" value="2-3-celled" />
+        <character is_modifier="false" modifier="at-least" name="count" src="d4_s0" value="present" />
+      </biological_entity>
+      <biological_entity constraint="end" id="from_key_V2_19_o3143" name="cell" name_original="cells" src="d4_s0" type="structure">
+        <character is_modifier="false" modifier="often" name="shape" src="d4_s0" value="swollen" />
+        <character constraint="than medial cells" constraintid="o3144" is_modifier="false" name="size" src="d4_s0" value="larger" />
+      </biological_entity>
+      <biological_entity constraint="medial" id="from_key_V2_19_o3144" name="cell" name_original="cells" src="d4_s0" type="structure" />
+      <relation from="from_key_V2_19_o3140" id="from_key_V2_19_r762" name="with" negation="false" src="d4_s0" to="from_key_V2_19_o3141" />
+    </statement>
+    <statement id="from_key_V2_19_d4_s1">
+      <text>rhizoid primordia often absent on 1 or both end cells, seldom present on medial cells;</text>
+      <biological_entity constraint="rhizoid" id="from_key_V2_19_o3145" name="primordium" name_original="primordia" src="d4_s1" type="structure">
+        <character constraint="on end cells" constraintid="o3146" is_modifier="false" modifier="often" name="count" src="d4_s1" value="absent" />
+        <character constraint="on medial cells" constraintid="o3147" is_modifier="false" modifier="seldom" name="count" notes="alterIDs:o3146" src="d4_s1" value="present" />
+      </biological_entity>
+      <biological_entity constraint="end" id="from_key_V2_19_o3146" name="cell" name_original="cells" src="d4_s1" type="structure">
+        <character is_modifier="true" name="count" src="d4_s1" value="1" />
+      </biological_entity>
+      <biological_entity constraint="medial" id="from_key_V2_19_o3147" name="cell" name_original="cells" src="d4_s1" type="structure" />
+    </statement>
+    <statement id="from_key_V2_19_d4_s2">
+      <text>sporophytes not produced.</text>
+      <biological_entity id="from_key_V2_19_o3148" name="sporophyte" name_original="sporophytes" src="d4_s2" type="structure" />
+    </statement>
+    <statement id="from_key_V2_19_d2_s0">
+      <text>Gemmae variable in length;</text>
+      <biological_entity id="from_key_V2_19_o3129" name="gemma" name_original="gemmae" src="d2_s0" type="structure">
+        <character is_modifier="false" name="length" src="d2_s0" value="variable" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_19_d2_s1">
+      <text>body cells 2-16, rhizoid primordia present or absent.</text>
+      <biological_entity constraint="body" id="from_key_V2_19_o3130" name="cell" name_original="cells" src="d2_s1" type="structure">
+        <character char_type="range_value" from="2" name="count" src="d2_s1" to="16" />
+      </biological_entity>
+      <biological_entity constraint="rhizoid" id="from_key_V2_19_o3131" name="primordium" name_original="primordia" src="d2_s1" type="structure">
+        <character is_modifier="false" name="count" src="d2_s1" value="present" />
+        <character is_modifier="false" name="count" src="d2_s1" value="absent" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

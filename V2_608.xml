@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
+    <taxon_name authority="D. M. Benham &amp; Windham" date="1992" rank="genus">astrolepis</taxon_name>
+    <taxon_name authority="(Goodding) D. M. Benham &amp; Windham" date="1992" rank="species">cochisensis</taxon_name>
+    <taxon_name authority="D. M. Benham" date="1992" rank="subspecies">arizonica</taxon_name>
+    <place_of_publication>
+      <publication_title>Amer. Fern J.</publication_title>
+      <place_in_publication>82: 60. 1992</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family pteridaceae;genus astrolepis;species cochisensis;subspecies arizonica</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Sporangia containing 32 spores;</text>
+      <biological_entity id="o16601" name="sporangium" name_original="sporangia" src="d0_s0" type="structure" />
+      <biological_entity id="o16602" name="spore" name_original="spores" src="d0_s0" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s0" value="32" />
+      </biological_entity>
+      <relation from="o16601" id="r3895" name="containing" negation="false" src="d0_s0" to="o16602" />
+    </statement>
+    <statement id="d0_s1">
+      <text>spores averaging 72-86 µm diam. n = 2 n = 116, apogamous.</text>
+      <biological_entity id="o16603" name="spore" name_original="spores" src="d0_s1" type="structure">
+        <character char_type="range_value" from="72" from_unit="um" name="diameter" src="d0_s1" to="86" to_unit="um" />
+      </biological_entity>
+      <biological_entity constraint="n=2n" id="o16604" name="chromosome" name_original="" src="d0_s1" type="structure">
+        <character name="quantity" src="d0_s1" unit=",apogamous" value="116" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Sporulating summer--fall.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="sporulating time" value="summer-fall" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Rocky slopes and cliffs, favoring granite, quartzite, and other noncalcareous substrates, occasionally found on limestone;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="rocky slopes and cliffs , favoring granite , quartzite , and other noncalcareous substrates , found on limestone" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>600--1200 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="1200" to_unit="m" from="600" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ariz.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1c</number>
+</bio:treatment>

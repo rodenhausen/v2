@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
+    <taxon_name authority="(J. Smith) Windham" date="1987" rank="genus">argyrochosma</taxon_name>
+    <taxon_name authority="(C. Presl) Windham" date="1987" rank="species">incana</taxon_name>
+    <place_of_publication>
+      <publication_title>Amer. Fern J.</publication_title>
+      <place_in_publication>77: 40. 1987</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family pteridaceae;genus argyrochosma;species incana</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Notholaena</taxon_name>
+    <taxon_name authority="C. Presl" date="unknown" rank="species">incana</taxon_name>
+    <place_of_publication>
+      <publication_title>Reliq. Haenk.</publication_title>
+      <place_in_publication>1: 19, plate 1, fig. 2. 1825</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Notholaena;species incana;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Stem scales brown.</text>
+      <biological_entity constraint="stem" id="o22751" name="scale" name_original="scales" src="d0_s0" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s0" value="brown" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves 5-20 cm.</text>
+      <biological_entity id="o22752" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character char_type="range_value" from="5" from_unit="cm" name="some_measurement" src="d0_s1" to="20" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Petiole black, 0.75-2 mm diam.</text>
+      <biological_entity id="o22753" name="petiole" name_original="petiole" src="d0_s2" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s2" value="black" />
+        <character char_type="range_value" from="0.75" from_unit="mm" name="diameter" src="d0_s2" to="2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Blade ovate, 3-4-pinnate proximally, leathery, abaxially covered by dense, white farina, adaxially glabrous;</text>
+      <biological_entity id="o22754" name="blade" name_original="blade" src="d0_s3" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s3" value="ovate" />
+        <character is_modifier="false" modifier="proximally" name="architecture_or_shape" src="d0_s3" value="3-4-pinnate" />
+        <character is_modifier="false" name="texture" src="d0_s3" value="leathery" />
+        <character is_modifier="false" modifier="adaxially" name="pubescence" src="d0_s3" value="glabrous" />
+      </biological_entity>
+      <biological_entity id="o22755" name="farina" name_original="farina" src="d0_s3" type="structure">
+        <character is_modifier="true" name="density" src="d0_s3" value="dense" />
+        <character is_modifier="true" name="coloration" src="d0_s3" value="white" />
+      </biological_entity>
+      <relation from="o22754" id="r5328" modifier="abaxially" name="covered by" negation="false" src="d0_s3" to="o22755" />
+    </statement>
+    <statement id="d0_s4">
+      <text>rachis rounded to slightly flattened adaxially.</text>
+      <biological_entity id="o22756" name="rachis" name_original="rachis" src="d0_s4" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="rounded" />
+        <character is_modifier="false" modifier="slightly" name="shape" notes="[duplicate value]" src="d0_s4" value="flattened" />
+        <character char_type="range_value" from="rounded" modifier="adaxially" name="shape" src="d0_s4" to="slightly flattened" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Pinna costae straight or nearly so, branches not arising from prominent angles.</text>
+      <biological_entity constraint="pinna" id="o22757" name="costa" name_original="costae" src="d0_s5" type="structure">
+        <character is_modifier="false" name="course" src="d0_s5" value="straight" />
+        <character name="course" src="d0_s5" value="nearly" />
+      </biological_entity>
+      <biological_entity id="o22758" name="branch" name_original="branches" src="d0_s5" type="structure">
+        <character constraint="from angles" constraintid="o22759" is_modifier="false" modifier="not" name="orientation" src="d0_s5" value="arising" />
+      </biological_entity>
+      <biological_entity id="o22759" name="angle" name_original="angles" src="d0_s5" type="structure">
+        <character is_modifier="true" name="prominence" src="d0_s5" value="prominent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>Ultimate segments articulate, dark color of stalks stopping abruptly at bases;</text>
+      <biological_entity constraint="ultimate" id="o22760" name="segment" name_original="segments" src="d0_s6" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s6" value="articulate" />
+        <character constraint="of stalks" constraintid="o22761" is_modifier="false" name="coloration" src="d0_s6" value="dark color" />
+      </biological_entity>
+      <biological_entity id="o22761" name="stalk" name_original="stalks" src="d0_s6" type="structure" />
+      <biological_entity id="o22762" name="base" name_original="bases" src="d0_s6" type="structure" />
+      <relation from="o22761" id="r5329" name="stopping" negation="false" src="d0_s6" to="o22762" />
+    </statement>
+    <statement id="d0_s7">
+      <text>segment margins plane, never concealing sporangia;</text>
+      <biological_entity constraint="segment" id="o22763" name="margin" name_original="margins" src="d0_s7" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s7" value="plane" />
+      </biological_entity>
+      <biological_entity id="o22764" name="sporangium" name_original="sporangia" src="d0_s7" type="structure" />
+      <relation from="o22763" id="r5330" name="never concealing" negation="false" src="d0_s7" to="o22764" />
+    </statement>
+    <statement id="d0_s8">
+      <text>veins obscure adaxially.</text>
+      <biological_entity id="o22765" name="vein" name_original="veins" src="d0_s8" type="structure">
+        <character is_modifier="false" modifier="adaxially" name="prominence" src="d0_s8" value="obscure" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>Sporangia following secondary-veins for most of length, containing 64 spores.</text>
+      <biological_entity id="o22767" name="secondary-vein" name_original="secondary-veins" src="d0_s9" type="structure" />
+      <biological_entity id="o22768" name="spore" name_original="spores" src="d0_s9" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s9" value="64" />
+      </biological_entity>
+      <relation from="o22766" id="r5331" name="following" negation="false" src="d0_s9" to="o22767" />
+      <relation from="o22766" id="r5332" name="containing" negation="false" src="d0_s9" to="o22768" />
+    </statement>
+    <statement id="d0_s10">
+      <text>2 n = 54.</text>
+      <biological_entity id="o22766" name="sporangium" name_original="sporangia" src="d0_s9" type="structure" />
+      <biological_entity constraint="2n" id="o22769" name="chromosome" name_original="" src="d0_s10" type="structure">
+        <character name="quantity" src="d0_s10" value="54" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Sporulating summer--fall.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="sporulating time" value="summer-fall" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Sheltered cracks and ledges on canyon walls, restricted to rocks of volcanic origin in the flora;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="sheltered cracks and ledges on canyon walls , restricted to rocks of volcanic origin in the flora ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>1200--1700 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="1700" to_unit="m" from="1200" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ariz., N.Mex.; Mexico; West Indies in Hispaniola; Central America in Guatemala.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
+        <character name="distribution" value="Mexico" establishment_means="native" />
+        <character name="distribution" value="West Indies in Hispaniola" establishment_means="native" />
+        <character name="distribution" value="Central America in Guatemala" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <discussion>Argyrochosma incana has been collected at about 10 localities in the flora area, all within 50 km of the Mexican border. Most herbarium specimens were previously identified as A . limitanea , which is easily distinguished from A . incana by the characteristics given in the key. In addition, all known plants of A . limitanea have 32 spores per sporangium; those of A . incana have 64. Although A . incana shows considerable morphologic and biochemical diversity in Mexico, populations in the United States are relatively uniform.</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_89_d5_s0">
+      <text>Ultimate leaf segments articulate, dark color of stalks stopping abruptly at segment bases;</text>
+      <biological_entity constraint="ultimate leaf" id="from_key_V2_89_o24417" name="segment" name_original="segments" src="d5_s0" type="structure">
+        <character is_modifier="false" name="architecture" src="d5_s0" value="articulate" />
+        <character constraint="of stalks" constraintid="o24418" is_modifier="false" name="coloration" src="d5_s0" value="dark color" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_89_o24418" name="stalk" name_original="stalks" src="d5_s0" type="structure" />
+      <biological_entity constraint="segment" id="from_key_V2_89_o24419" name="base" name_original="bases" src="d5_s0" type="structure" />
+      <relation from="from_key_V2_89_o24418" id="from_key_V2_89_r5710" modifier="abruptly" name="at" negation="false" src="d5_s0" to="from_key_V2_89_o24419" />
+    </statement>
+    <statement id="from_key_V2_89_d5_s1">
+      <text>margins of ultimate segments plane, not recurved or revolute;</text>
+      <biological_entity id="from_key_V2_89_o24420" name="margin" name_original="margins" src="d5_s1" type="structure">
+        <character is_modifier="false" modifier="not" name="orientation" src="d5_s1" value="recurved" />
+        <character is_modifier="false" name="shape_or_vernation" src="d5_s1" value="revolute" />
+      </biological_entity>
+      <biological_entity constraint="ultimate" id="from_key_V2_89_o24421" name="segment" name_original="segments" src="d5_s1" type="structure">
+        <character is_modifier="false" name="shape" src="d5_s1" value="plane" />
+      </biological_entity>
+      <relation from="from_key_V2_89_o24420" id="from_key_V2_89_r5711" name="part_of" negation="false" src="d5_s1" to="from_key_V2_89_o24421" />
+    </statement>
+    <statement id="from_key_V2_89_d5_s2">
+      <text>sporangia following secondary-veins for most of length.</text>
+      <biological_entity id="from_key_V2_89_o24422" name="sporangium" name_original="sporangia" src="d5_s2" type="structure" />
+      <biological_entity id="from_key_V2_89_o24423" name="secondary-vein" name_original="secondary-veins" src="d5_s2" type="structure" />
+      <relation from="from_key_V2_89_o24422" id="from_key_V2_89_r5712" name="following" negation="false" src="d5_s2" to="from_key_V2_89_o24423" />
+    </statement>
+    <statement id="from_key_V2_89_d2_s0">
+      <text>Abaxial surfaces of blades obscured by whitish farina.</text>
+      <biological_entity constraint="abaxial" id="from_key_V2_89_o24400" name="surface" name_original="surfaces" src="d2_s0" type="structure">
+        <character constraint="by farina" constraintid="o24402" is_modifier="false" name="prominence" src="d2_s0" value="obscured" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_89_o24401" name="blade" name_original="blades" src="d2_s0" type="structure" />
+      <biological_entity id="from_key_V2_89_o24402" name="farina" name_original="farina" src="d2_s0" type="structure">
+        <character is_modifier="true" name="coloration" src="d2_s0" value="whitish" />
+      </biological_entity>
+      <relation from="from_key_V2_89_o24400" id="from_key_V2_89_r5705" name="part_of" negation="false" src="d2_s0" to="from_key_V2_89_o24401" />
+    </statement>
+  </description>
+</bio:treatment>

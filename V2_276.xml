@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
+    <taxon_name authority="(J. Smith) Windham" date="1987" rank="genus">argyrochosma</taxon_name>
+    <taxon_name authority="(Kunze) Windham" date="1987" rank="species">fendleri</taxon_name>
+    <place_of_publication>
+      <publication_title>Amer. Fern J.</publication_title>
+      <place_in_publication>77: 40. 1987</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family pteridaceae;genus argyrochosma;species fendleri</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Notholaena</taxon_name>
+    <taxon_name authority="Kunze" date="unknown" rank="species">fendleri</taxon_name>
+    <place_of_publication>
+      <publication_title>Farrnkräuter</publication_title>
+      <place_in_publication>2: 87, plate 136. 1851</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Notholaena;species fendleri;</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Cheilanthes</taxon_name>
+    <taxon_name authority="Mickel" date="unknown" rank="species">cancellata</taxon_name>
+    <taxon_hierarchy>genus Cheilanthes;species cancellata;</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Pellaea</taxon_name>
+    <taxon_name authority="(Kunze) Prantl" date="unknown" rank="species">fendleri</taxon_name>
+    <taxon_hierarchy>genus Pellaea;species fendleri;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Stem scales brown.</text>
+      <biological_entity constraint="stem" id="o5580" name="scale" name_original="scales" src="d0_s0" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s0" value="brown" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves 5-25 cm.</text>
+      <biological_entity id="o5581" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character char_type="range_value" from="5" from_unit="cm" name="some_measurement" src="d0_s1" to="25" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Petiole dark-brown, 0.75-1.5 mm diam.</text>
+      <biological_entity id="o5582" name="petiole" name_original="petiole" src="d0_s2" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s2" value="dark-brown" />
+        <character char_type="range_value" from="0.75" from_unit="mm" name="diameter" src="d0_s2" to="1.5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Blade deltate, 4-6-pinnate proximally, leathery to somewhat herbaceous, abaxially covered by whitish farina, adaxially glabrous or glandular;</text>
+      <biological_entity id="o5583" name="blade" name_original="blade" src="d0_s3" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s3" value="deltate" />
+        <character is_modifier="false" modifier="proximally" name="architecture_or_shape" src="d0_s3" value="4-6-pinnate" />
+        <character is_modifier="false" name="texture" src="d0_s3" value="leathery to somewhat" />
+        <character is_modifier="false" modifier="somewhat" name="growth_form_or_texture" src="d0_s3" value="herbaceous" />
+        <character is_modifier="false" modifier="adaxially" name="pubescence" src="d0_s3" value="glabrous" />
+        <character is_modifier="false" name="pubescence" src="d0_s3" value="glandular" />
+      </biological_entity>
+      <biological_entity id="o5584" name="farina" name_original="farina" src="d0_s3" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s3" value="whitish" />
+      </biological_entity>
+      <relation from="o5583" id="r1278" modifier="abaxially" name="covered by" negation="false" src="d0_s3" to="o5584" />
+    </statement>
+    <statement id="d0_s4">
+      <text>rachis rounded adaxially.</text>
+      <biological_entity id="o5585" name="rachis" name_original="rachis" src="d0_s4" type="structure">
+        <character is_modifier="false" modifier="adaxially" name="shape" src="d0_s4" value="rounded" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Pinna costae distinctly flexuous, branches arising from prominent angles.</text>
+      <biological_entity constraint="pinna" id="o5586" name="costa" name_original="costae" src="d0_s5" type="structure">
+        <character is_modifier="false" modifier="distinctly" name="course" src="d0_s5" value="flexuous" />
+      </biological_entity>
+      <biological_entity id="o5587" name="branch" name_original="branches" src="d0_s5" type="structure">
+        <character constraint="from angles" constraintid="o5588" is_modifier="false" name="orientation" src="d0_s5" value="arising" />
+      </biological_entity>
+      <biological_entity id="o5588" name="angle" name_original="angles" src="d0_s5" type="structure">
+        <character is_modifier="true" name="prominence" src="d0_s5" value="prominent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>Ultimate segments not articulate, dark color of stalks continuing into segment bases abaxially;</text>
+      <biological_entity constraint="ultimate" id="o5589" name="segment" name_original="segments" src="d0_s6" type="structure">
+        <character is_modifier="false" modifier="not" name="architecture" src="d0_s6" value="articulate" />
+        <character constraint="of stalks" constraintid="o5590" is_modifier="false" name="coloration" src="d0_s6" value="dark color" />
+      </biological_entity>
+      <biological_entity id="o5590" name="stalk" name_original="stalks" src="d0_s6" type="structure" />
+      <biological_entity constraint="segment" id="o5591" name="base" name_original="bases" src="d0_s6" type="structure" />
+      <relation from="o5590" id="r1279" modifier="abaxially" name="continuing into" negation="false" src="d0_s6" to="o5591" />
+    </statement>
+    <statement id="d0_s7">
+      <text>segment margins plane to recurved, often partially concealing sporangia;</text>
+      <biological_entity constraint="segment" id="o5592" name="margin" name_original="margins" src="d0_s7" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s7" value="plane" />
+        <character is_modifier="false" name="orientation" src="d0_s7" value="recurved" />
+      </biological_entity>
+      <biological_entity id="o5593" name="sporangium" name_original="sporangia" src="d0_s7" type="structure" />
+      <relation from="o5592" id="r1280" name="often partially concealing" negation="false" src="d0_s7" to="o5593" />
+    </statement>
+    <statement id="d0_s8">
+      <text>veins usually obscure adaxially.</text>
+      <biological_entity id="o5594" name="vein" name_original="veins" src="d0_s8" type="structure">
+        <character is_modifier="false" modifier="usually; adaxially" name="prominence" src="d0_s8" value="obscure" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>Sporangia submarginal, borne on distal 1/4 of secondary-veins, containing 64 spores.</text>
+      <biological_entity constraint="distal" id="o5596" name="1/4" name_original="1/4" src="d0_s9" type="structure" />
+      <biological_entity id="o5597" name="secondary-vein" name_original="secondary-veins" src="d0_s9" type="structure" />
+      <biological_entity id="o5598" name="spore" name_original="spores" src="d0_s9" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s9" value="64" />
+      </biological_entity>
+      <relation from="o5595" id="r1281" name="borne on" negation="false" src="d0_s9" to="o5596" />
+      <relation from="o5596" id="r1282" name="part_of" negation="false" src="d0_s9" to="o5597" />
+      <relation from="o5595" id="r1283" name="containing" negation="false" src="d0_s9" to="o5598" />
+    </statement>
+    <statement id="d0_s10">
+      <text>2 n = 54.</text>
+      <biological_entity id="o5595" name="sporangium" name_original="sporangia" src="d0_s9" type="structure">
+        <character is_modifier="false" name="position" src="d0_s9" value="submarginal" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o5599" name="chromosome" name_original="" src="d0_s10" type="structure">
+        <character name="quantity" src="d0_s10" value="54" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Sporulating summer--fall.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="sporulating time" value="summer-fall" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Rocky slopes and cliffs, usually on granitic or volcanic substrates;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="rocky slopes and cliffs" />
+        <character name="habitat" value="on granitic or volcanic substrates" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>1700--3000 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="3000" to_unit="m" from="1700" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Colo., N.Mex., Wyo.; Mexico in Sonora.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Colo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wyo." establishment_means="native" />
+        <character name="distribution" value="Mexico in Sonora" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>2</number>
+  <discussion>Argyrochosma fendleri is occasionally confused with A . limitanea , which can have slightly flexuous rachises and pinna costae. All A . limitanea specimens with slightly flexuous rachises and costae have 32 spores per sporangium, whereas specimens of A . fendleri consistently have 64. This southern Rocky Mountain species is the only member of the genus that is found on acidic substrates such as granite.</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_89_d7_s0">
+      <text>Pinna costae distinctly flexuous;</text>
+      <biological_entity constraint="pinna" id="from_key_V2_89_o24433" name="costa" name_original="costae" src="d7_s0" type="structure">
+        <character is_modifier="false" modifier="distinctly" name="course" src="d7_s0" value="flexuous" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_89_d7_s1">
+      <text>branches arising from prominent angles.</text>
+      <biological_entity id="from_key_V2_89_o24434" name="branch" name_original="branches" src="d7_s1" type="structure">
+        <character constraint="from angles" constraintid="o24435" is_modifier="false" name="orientation" src="d7_s1" value="arising" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_89_o24435" name="angle" name_original="angles" src="d7_s1" type="structure">
+        <character is_modifier="true" name="prominence" src="d7_s1" value="prominent" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_89_d6_s0">
+      <text>Ultimate leaf segments not articulate, dark color of stalks continuing into segment bases abaxially;</text>
+      <biological_entity constraint="ultimate leaf" id="from_key_V2_89_o24424" name="segment" name_original="segments" src="d6_s0" type="structure">
+        <character is_modifier="false" modifier="not" name="architecture" src="d6_s0" value="articulate" />
+        <character constraint="of stalks" constraintid="o24425" is_modifier="false" name="coloration" src="d6_s0" value="dark color" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_89_o24425" name="stalk" name_original="stalks" src="d6_s0" type="structure" />
+      <biological_entity constraint="segment" id="from_key_V2_89_o24426" name="base" name_original="bases" src="d6_s0" type="structure" />
+      <relation from="from_key_V2_89_o24425" id="from_key_V2_89_r5713" modifier="abaxially" name="continuing into" negation="false" src="d6_s0" to="from_key_V2_89_o24426" />
+    </statement>
+    <statement id="from_key_V2_89_d6_s1">
+      <text>margins of ultimate segments usually recurved or revolute;</text>
+      <biological_entity id="from_key_V2_89_o24427" name="margin" name_original="margins" src="d6_s1" type="structure">
+        <character is_modifier="false" modifier="usually" name="orientation" src="d6_s1" value="recurved" />
+        <character is_modifier="false" name="shape_or_vernation" src="d6_s1" value="revolute" />
+      </biological_entity>
+      <biological_entity constraint="ultimate" id="from_key_V2_89_o24428" name="segment" name_original="segments" src="d6_s1" type="structure" />
+      <relation from="from_key_V2_89_o24427" id="from_key_V2_89_r5714" name="part_of" negation="false" src="d6_s1" to="from_key_V2_89_o24428" />
+    </statement>
+    <statement id="from_key_V2_89_d6_s2">
+      <text>sporangia following secondary-veins for short distance near segment margin.</text>
+      <biological_entity id="from_key_V2_89_o24429" name="sporangium" name_original="sporangia" src="d6_s2" type="structure" />
+      <biological_entity id="from_key_V2_89_o24430" name="secondary-vein" name_original="secondary-veins" src="d6_s2" type="structure" />
+      <biological_entity id="from_key_V2_89_o24431" name="distance" name_original="distance" src="d6_s2" type="structure">
+        <character is_modifier="true" name="height_or_length_or_size" src="d6_s2" value="short" />
+      </biological_entity>
+      <biological_entity constraint="segment" id="from_key_V2_89_o24432" name="margin" name_original="margin" src="d6_s2" type="structure" />
+      <relation from="from_key_V2_89_o24429" id="from_key_V2_89_r5715" name="following" negation="false" src="d6_s2" to="from_key_V2_89_o24430" />
+      <relation from="from_key_V2_89_o24429" id="from_key_V2_89_r5716" name="for" negation="false" src="d6_s2" to="from_key_V2_89_o24431" />
+      <relation from="from_key_V2_89_o24431" id="from_key_V2_89_r5717" name="near" negation="false" src="d6_s2" to="from_key_V2_89_o24432" />
+    </statement>
+    <statement id="from_key_V2_89_d2_s0">
+      <text>Abaxial surfaces of blades obscured by whitish farina.</text>
+      <biological_entity constraint="abaxial" id="from_key_V2_89_o24400" name="surface" name_original="surfaces" src="d2_s0" type="structure">
+        <character constraint="by farina" constraintid="o24402" is_modifier="false" name="prominence" src="d2_s0" value="obscured" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_89_o24401" name="blade" name_original="blades" src="d2_s0" type="structure" />
+      <biological_entity id="from_key_V2_89_o24402" name="farina" name_original="farina" src="d2_s0" type="structure">
+        <character is_modifier="true" name="coloration" src="d2_s0" value="whitish" />
+      </biological_entity>
+      <relation from="from_key_V2_89_o24400" id="from_key_V2_89_r5705" name="part_of" negation="false" src="d2_s0" to="from_key_V2_89_o24401" />
+    </statement>
+  </description>
+</bio:treatment>

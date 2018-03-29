@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">pinus</taxon_name>
+    <taxon_name authority="Engelmann" date="1880" rank="species">elliottii</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="variety">elliottii</taxon_name>
+    <taxon_hierarchy>family pinaceae;genus pinus;species elliottii;variety elliottii</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Seedlings essentially without grass stage, height growth uniform after seed germination, buds scattered upstem.</text>
+      <biological_entity id="o23657" name="seedling" name_original="seedlings" src="d0_s0" type="structure" />
+      <biological_entity id="o23658" name="stage" name_original="stage" src="d0_s0" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s0" value="grass" />
+      </biological_entity>
+      <biological_entity id="o23659" name="growth" name_original="growth" src="d0_s0" type="structure">
+        <character constraint="after seed" constraintid="o23660" is_modifier="false" name="height" src="d0_s0" value="uniform" />
+      </biological_entity>
+      <biological_entity id="o23660" name="seed" name_original="seed" src="d0_s0" type="structure" />
+      <biological_entity id="o23661" name="bud" name_original="buds" src="d0_s0" type="structure">
+        <character is_modifier="false" name="germination" src="d0_s0" value="scattered" />
+        <character is_modifier="false" name="position" src="d0_s0" value="upstem" />
+      </biological_entity>
+      <relation from="o23657" id="r5525" name="without" negation="false" src="d0_s0" to="o23658" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves mostly in 3s, sometimes in 2s on same shoot, resin canals per leaf 3-5, hypodermis 2-3 cell-layers thick.</text>
+      <biological_entity id="o23662" name="leaf" name_original="leaves" src="d0_s1" type="structure" />
+      <biological_entity id="o23663" name="shoot" name_original="shoot" src="d0_s1" type="structure" />
+      <biological_entity constraint="resin" id="o23664" name="canal" name_original="canals" src="d0_s1" type="structure" />
+      <biological_entity id="o23665" name="leaf" name_original="leaf" src="d0_s1" type="structure">
+        <character char_type="range_value" from="3" name="quantity" src="d0_s1" to="5" />
+      </biological_entity>
+      <biological_entity id="o23666" name="hypodermis" name_original="hypodermis" src="d0_s1" type="structure">
+        <character char_type="range_value" from="2" name="quantity" src="d0_s1" to="3" />
+      </biological_entity>
+      <biological_entity id="o23667" name="cell-layer" name_original="cell-layers" src="d0_s1" type="structure">
+        <character is_modifier="false" name="width" src="d0_s1" value="thick" />
+      </biological_entity>
+      <relation from="o23662" id="r5526" modifier="in 2s" name="on" negation="false" src="d0_s1" to="o23663" />
+      <relation from="o23664" id="r5527" name="per" negation="false" src="d0_s1" to="o23665" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Seed-cone base ± truncate when open.</text>
+    </statement>
+    <statement id="d0_s3">
+      <text>2 n =24.</text>
+      <biological_entity constraint="seed-cone" id="o23668" name="base" name_original="base" src="d0_s2" type="structure">
+        <character is_modifier="false" modifier="when open" name="architecture_or_shape" src="d0_s2" value="truncate" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o23669" name="chromosome" name_original="" src="d0_s3" type="structure">
+        <character name="quantity" src="d0_s3" value="24" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Lowland to upland forests, old fields, and fine white sands, mostly long-hydroperiod soils;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="lowland to upland forests" />
+        <character name="habitat" value="old fields" />
+        <character name="habitat" value="and fine white sands" />
+        <character name="habitat" value="long-hydroperiod soils ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0--150m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="150" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ala., Fla., Ga., La., Miss., S.C.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>24a</number>
+  <other_name type="common_name">Slash pine</other_name>
+  <discussion>Pinus elliotti var. elliottii is the fastest growing of the southern yellow pines, much planted in the United States outside its range. It is very susceptible, however, to ice damage and fusiform gall inland. This is a naval stores pine, but it is considered increasingly important in plantations as a lumber and pulpwood pine. It is much planted in subtropical and warm temperate climates worldwide, particularly in Brazil.</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_300_d35_s0">
+      <text>Seed-cones stalked, chocolate brown, apophyses lustrous;</text>
+      <biological_entity id="from_key_V2_300_o6459" name="seed-cone" name_original="seed-cones" src="d35_s0" type="structure">
+        <character is_modifier="false" name="architecture" src="d35_s0" value="stalked" />
+        <character is_modifier="false" name="coloration" src="d35_s0" value="chocolate brown" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d35_s1">
+      <text>se North America.</text>
+      <biological_entity id="from_key_V2_300_o6460" name="apophysis" name_original="apophyses" src="d35_s0" type="structure">
+        <character is_modifier="false" name="reflectance" src="d35_s0" value="lustrous" />
+        <character is_modifier="false" name="geographical_terms" src="d35_s1" value="north" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d34_s0">
+      <text>Seed-cones armed, mostly 6 cm or more;</text>
+      <biological_entity id="from_key_V2_300_o6456" name="seed-cone" name_original="seed-cones" src="d34_s0" type="structure">
+        <character is_modifier="false" name="architecture" src="d34_s0" value="armed" />
+        <character modifier="mostly" name="distance" src="d34_s0" unit="cm" value="6" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d34_s1">
+      <text>fresh leaves pliant, not breaking cleanly when bent, mostly over 1 mm wide;</text>
+      <biological_entity id="from_key_V2_300_o6457" name="leaf" name_original="leaves" src="d34_s1" type="structure">
+        <character is_modifier="true" name="condition" src="d34_s1" value="fresh" />
+        <character is_modifier="false" name="texture" src="d34_s1" value="pliant" />
+        <character modifier="not; cleanly; when bent; mostly" name="width" src="d34_s1" unit="mm" value="1" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d34_s2">
+      <text>se or w montane North America.</text>
+      <biological_entity id="from_key_V2_300_o6458" name="whole_organism" name_original="" src="d34_s2" type="structure">
+        <character is_modifier="false" name="geographical_terms" src="d34_s2" value="north" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d32_s0">
+      <text>Seed-cones symmetric or nearly so, not curved when open, mostly not in whorls, umbos not forming claws;</text>
+      <biological_entity id="from_key_V2_300_o6447" name="seed-cone" name_original="seed-cones" src="d32_s0" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d32_s0" value="symmetric" />
+        <character name="architecture_or_shape" src="d32_s0" value="nearly" />
+        <character is_modifier="false" modifier="when open" name="course" src="d32_s0" value="curved" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6448" name="whorl" name_original="whorls" src="d32_s0" type="structure" />
+      <biological_entity id="from_key_V2_300_o6449" name="umbo" name_original="umbos" src="d32_s0" type="structure" />
+      <biological_entity id="from_key_V2_300_o6450" name="claw" name_original="claws" src="d32_s0" type="structure" />
+      <relation from="from_key_V2_300_o6447" id="from_key_V2_300_r1485" modifier="mostly not" name="in" negation="true" src="d32_s0" to="from_key_V2_300_o6448" />
+      <relation from="from_key_V2_300_o6449" id="from_key_V2_300_r1486" name="forming" negation="false" src="d32_s0" to="from_key_V2_300_o6450" />
+    </statement>
+    <statement id="from_key_V2_300_d32_s1">
+      <text>fascicle sheath mostly 1.5 cm or more;</text>
+      <biological_entity constraint="fascicle" id="from_key_V2_300_o6451" name="sheath" name_original="sheath" src="d32_s1" type="structure">
+        <character name="some_measurement" src="d32_s1" unit="cm" value="1.5" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d32_s2">
+      <text>cones not serotinous;</text>
+    </statement>
+    <statement id="from_key_V2_300_d32_s3">
+      <text>e North America or widespread in w North America.</text>
+      <biological_entity id="from_key_V2_300_o6452" name="cone" name_original="cones" src="d32_s2" type="structure">
+        <character is_modifier="false" modifier="not" name="maturation" src="d32_s2" value="serotinous" />
+        <character constraint="in w" constraintid="o6453" is_modifier="false" name="geographical_terms" src="d32_s3" value="north" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6453" name="w" name_original="w" src="d32_s3" type="structure">
+        <character is_modifier="false" name="geographical_terms" src="d32_s3" value="north" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d29_s0">
+      <text>Longer leaves of healthy branches 10-15 cm or more.</text>
+      <biological_entity constraint="longer" id="from_key_V2_300_o6437" name="leaf" name_original="leaves" src="d29_s0" type="structure">
+        <character char_type="range_value" from="10" from_unit="cm" name="some_measurement" src="d29_s0" to="15" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6438" name="branch" name_original="branches" src="d29_s0" type="structure">
+        <character is_modifier="true" name="condition" src="d29_s0" value="healthy" />
+      </biological_entity>
+      <relation from="from_key_V2_300_o6437" id="from_key_V2_300_r1481" name="part_of" negation="false" src="d29_s0" to="from_key_V2_300_o6438" />
+    </statement>
+    <statement id="from_key_V2_300_d27_s0">
+      <text>Leaves 2 (-3) per fascicle.</text>
+      <biological_entity id="from_key_V2_300_o6433" name="leaf" name_original="leaves" src="d27_s0" type="structure">
+        <character char_type="range_value" from="2" from_inclusive="false" name="atypical_count" src="d27_s0" to="3" />
+        <character constraint="per fascicle" constraintid="o6434" name="count" src="d27_s0" value="2" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6434" name="fascicle" name_original="fascicle" src="d27_s0" type="structure" />
+    </statement>
+    <statement id="from_key_V2_300_d2_s0">
+      <text>Leaves in cross-section with 2 fibrovascular bundles;</text>
+      <biological_entity id="from_key_V2_300_o6305" name="leaf" name_original="leaves" src="d2_s0" type="structure" />
+      <biological_entity id="from_key_V2_300_o6306" name="cross-section" name_original="cross-section" src="d2_s0" type="structure" />
+      <biological_entity id="from_key_V2_300_o6307" name="fibrovascular" name_original="fibrovascular" src="d2_s0" type="structure">
+        <character is_modifier="true" name="count" src="d2_s0" value="2" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6308" name="bundle" name_original="bundles" src="d2_s0" type="structure">
+        <character is_modifier="true" name="count" src="d2_s0" value="2" />
+      </biological_entity>
+      <relation from="from_key_V2_300_o6305" id="from_key_V2_300_r1450" name="in" negation="false" src="d2_s0" to="from_key_V2_300_o6306" />
+      <relation from="from_key_V2_300_o6306" id="from_key_V2_300_r1451" name="with" negation="false" src="d2_s0" to="from_key_V2_300_o6307" />
+      <relation from="from_key_V2_300_o6306" id="from_key_V2_300_r1452" name="with" negation="false" src="d2_s0" to="from_key_V2_300_o6308" />
+    </statement>
+    <statement id="from_key_V2_300_d2_s1">
+      <text>scales of fascicle sheaths, at least lower ones, persistent and falling with fascicle (except in P. leiophylla and P. torreyana), these and bud-scales mostly with margins long-fringed;</text>
+      <biological_entity id="from_key_V2_300_o6309" name="scale" name_original="scales" src="d2_s1" type="structure" />
+      <biological_entity constraint="fascicle" id="from_key_V2_300_o6310" name="sheath" name_original="sheaths" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_300_o6311" name="scale" name_original="scales" src="d2_s1" type="structure">
+        <character is_modifier="true" modifier="at-least" name="position" src="d2_s1" value="lower" />
+        <character is_modifier="false" name="duration" src="d2_s1" value="persistent" />
+        <character constraint="with fascicle" constraintid="o6312" is_modifier="false" name="life_cycle" src="d2_s1" value="falling" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6312" name="fascicle" name_original="fascicle" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_300_o6313" name="bud-scale" name_original="bud-scales" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_300_o6314" name="margin" name_original="margins" src="d2_s1" type="structure">
+        <character is_modifier="false" name="shape" src="d2_s1" value="long-fringed" />
+      </biological_entity>
+      <relation from="from_key_V2_300_o6309" id="from_key_V2_300_r1453" name="part_of" negation="false" src="d2_s1" to="from_key_V2_300_o6310" />
+      <relation from="from_key_V2_300_o6313" id="from_key_V2_300_r1454" name="with" negation="false" src="d2_s1" to="from_key_V2_300_o6314" />
+    </statement>
+    <statement id="from_key_V2_300_d2_s2">
+      <text>seed-cones mostly armed (subg. Pinus).</text>
+      <biological_entity id="from_key_V2_300_o6315" name="seed-cone" name_original="seed-cones" src="d2_s2" type="structure">
+        <character is_modifier="false" modifier="mostly" name="architecture" src="d2_s2" value="armed" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_300_d64_s0">
+      <text>Terminal buds cylindric, silvery brown, 1.5-2 cm;</text>
+      <biological_entity constraint="terminal" id="from_key_V2_300_o6565" name="bud" name_original="buds" src="d64_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d64_s0" value="cylindric" />
+        <character is_modifier="false" name="coloration" src="d64_s0" value="silvery brown" />
+        <character char_type="range_value" from="1.5" from_unit="cm" name="some_measurement" src="d64_s0" to="2" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d64_s1">
+      <text>seed-cones stalked, (7-) 9-18 (-20) cm, apophyses lustrous (as if varnished);</text>
+      <biological_entity id="from_key_V2_300_o6566" name="seed-cone" name_original="seed-cones" src="d64_s1" type="structure">
+        <character is_modifier="false" name="architecture" src="d64_s1" value="stalked" />
+        <character char_type="range_value" from="7" from_unit="cm" name="atypical_distance" src="d64_s1" to="9" to_inclusive="false" to_unit="cm" />
+        <character char_type="range_value" from="18" from_inclusive="false" from_unit="cm" name="atypical_distance" src="d64_s1" to="20" to_unit="cm" />
+        <character char_type="range_value" from="9" from_unit="cm" name="distance" src="d64_s1" to="18" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6567" name="apophysis" name_original="apophyses" src="d64_s1" type="structure">
+        <character is_modifier="false" name="reflectance" src="d64_s1" value="lustrous" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d64_s2">
+      <text>leaves 15-20 (-23) cm.</text>
+      <biological_entity id="from_key_V2_300_o6568" name="leaf" name_original="leaves" src="d64_s2" type="structure">
+        <character char_type="range_value" from="20" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d64_s2" to="23" to_unit="cm" />
+        <character char_type="range_value" from="15" from_unit="cm" name="some_measurement" src="d64_s2" to="20" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d61_s0">
+      <text>Leaves 15-45 cm;</text>
+      <biological_entity id="from_key_V2_300_o6557" name="leaf" name_original="leaves" src="d61_s0" type="structure">
+        <character char_type="range_value" from="15" from_unit="cm" name="some_measurement" src="d61_s0" to="45" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d61_s1">
+      <text>pollen cones purplish.</text>
+      <biological_entity constraint="pollen" id="from_key_V2_300_o6558" name="cone" name_original="cones" src="d61_s1" type="structure">
+        <character is_modifier="false" name="coloration" src="d61_s1" value="purplish" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d58_s0">
+      <text>Longer leaves of healthy growth rarely less than 12 cm, mostly 15 cm or more;</text>
+      <biological_entity constraint="longer" id="from_key_V2_300_o6538" name="leaf" name_original="leaves" src="d58_s0" type="structure">
+        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d58_s0" to="12" to_unit="cm" />
+        <character modifier="mostly" name="some_measurement" src="d58_s0" unit="cm" value="15" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6539" name="growth" name_original="growth" src="d58_s0" type="structure">
+        <character is_modifier="true" name="condition" src="d58_s0" value="healthy" />
+      </biological_entity>
+      <relation from="from_key_V2_300_o6538" id="from_key_V2_300_r1512" name="part_of" negation="false" src="d58_s0" to="from_key_V2_300_o6539" />
+    </statement>
+    <statement id="from_key_V2_300_d58_s1">
+      <text>seed-cones variable in length.</text>
+      <biological_entity id="from_key_V2_300_o6540" name="seed-cone" name_original="seed-cones" src="d58_s1" type="structure">
+        <character is_modifier="false" name="length" src="d58_s1" value="variable" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_300_d55_s0">
+      <text>Pines of e North America (w to Missouri, e Oklahoma, and e Texas).</text>
+      <biological_entity id="from_key_V2_300_o6532" name="whole_organism" name_original="" src="d55_s0" type="structure" />
+    </statement>
+    <statement id="from_key_V2_300_d28_s0">
+      <text>Leaves 3 (-5) per fascicle.</text>
+      <biological_entity id="from_key_V2_300_o6435" name="leaf" name_original="leaves" src="d28_s0" type="structure">
+        <character char_type="range_value" from="3" from_inclusive="false" name="atypical_count" src="d28_s0" to="5" />
+        <character constraint="per fascicle" constraintid="o6436" name="count" src="d28_s0" value="3" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_300_o6436" name="fascicle" name_original="fascicle" src="d28_s0" type="structure" />
+    </statement>
+  </description>
+</bio:treatment>

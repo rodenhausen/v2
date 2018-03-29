@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">juniperus</taxon_name>
+    <taxon_name authority="Linnaeus" date="1753" rank="species">communis</taxon_name>
+    <place_of_publication>
+      <publication_title>Sp. Pl.</publication_title>
+      <place_in_publication>2: 1040. 1753</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cupressaceae;genus juniperus;species communis</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Shrubs or small trees dioecious, to 4 m (if trees, to 10 m), multistemmed, decumbent or rarely upright;</text>
+      <biological_entity id="o3886" name="shrub" name_original="shrubs" src="d0_s0" type="structure">
+        <character is_modifier="false" name="reproduction" src="d0_s0" value="dioecious" />
+        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="4" to_unit="m" />
+        <character is_modifier="false" name="architecture_or_growth_form" src="d0_s0" value="multistemmed" />
+        <character is_modifier="false" name="orientation" src="d0_s0" value="decumbent" />
+        <character is_modifier="false" modifier="rarely" name="orientation" src="d0_s0" value="upright" />
+      </biological_entity>
+      <biological_entity id="o3887" name="tree" name_original="trees" src="d0_s0" type="structure">
+        <character is_modifier="true" name="size" src="d0_s0" value="small" />
+        <character is_modifier="false" name="reproduction" src="d0_s0" value="dioecious" />
+        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="4" to_unit="m" />
+        <character is_modifier="false" name="architecture_or_growth_form" src="d0_s0" value="multistemmed" />
+        <character is_modifier="false" name="orientation" src="d0_s0" value="decumbent" />
+        <character is_modifier="false" modifier="rarely" name="orientation" src="d0_s0" value="upright" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>crown generally depressed.</text>
+      <biological_entity id="o3888" name="crown" name_original="crown" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="generally" name="shape" src="d0_s1" value="depressed" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Bark brown, fibrous, exfoliating in thin strips, that of small branchlets (5-10 mm diam.) smooth, that of larger branchlets exfoliating in strips and plates.</text>
+      <biological_entity id="o3889" name="bark" name_original="bark" src="d0_s2" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s2" value="brown" />
+        <character is_modifier="false" name="texture" src="d0_s2" value="fibrous" />
+        <character constraint="in strips" constraintid="o3890" is_modifier="false" name="relief" src="d0_s2" value="exfoliating" />
+        <character is_modifier="false" name="architecture_or_pubescence_or_relief" src="d0_s2" value="smooth" />
+        <character constraint="in plates" constraintid="o3894" is_modifier="false" name="relief" src="d0_s2" value="exfoliating" />
+      </biological_entity>
+      <biological_entity id="o3890" name="strip" name_original="strips" src="d0_s2" type="structure">
+        <character is_modifier="true" name="width" src="d0_s2" value="thin" />
+      </biological_entity>
+      <biological_entity id="o3891" name="branchlet" name_original="branchlets" src="d0_s2" type="structure">
+        <character is_modifier="true" name="size" src="d0_s2" value="small" />
+      </biological_entity>
+      <biological_entity constraint="larger" id="o3892" name="branchlet" name_original="branchlets" src="d0_s2" type="structure" />
+      <biological_entity id="o3893" name="strip" name_original="strips" src="d0_s2" type="structure" />
+      <biological_entity id="o3894" name="plate" name_original="plates" src="d0_s2" type="structure" />
+      <relation from="o3889" id="r923" name="part_of" negation="false" src="d0_s2" to="o3891" />
+      <relation from="o3889" id="r924" name="part_of" negation="false" src="d0_s2" to="o3892" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Branches spreading or ascending;</text>
+      <biological_entity id="o3895" name="branch" name_original="branches" src="d0_s3" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s3" value="spreading" />
+        <character is_modifier="false" name="orientation" src="d0_s3" value="ascending" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>branchlets erect, terete.</text>
+      <biological_entity id="o3896" name="branchlet" name_original="branchlets" src="d0_s4" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s4" value="erect" />
+        <character is_modifier="false" name="shape" src="d0_s4" value="terete" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Leaves green but sometimes appearing silver when glaucous, spreading, abaxial glands very elongate;</text>
+      <biological_entity id="o3897" name="leaf" name_original="leaves" src="d0_s5" type="structure">
+        <character is_modifier="false" modifier="when glaucous" name="coloration" src="d0_s5" value="green but sometimes appearing silver" />
+        <character is_modifier="false" name="orientation" src="d0_s5" value="spreading" />
+      </biological_entity>
+      <biological_entity constraint="abaxial" id="o3898" name="gland" name_original="glands" src="d0_s5" type="structure">
+        <character is_modifier="false" modifier="very" name="shape" src="d0_s5" value="elongate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>adaxial surface with glaucous stomatal band;</text>
+      <biological_entity constraint="adaxial" id="o3899" name="surface" name_original="surface" src="d0_s6" type="structure" />
+      <biological_entity id="o3900" name="stomatal" name_original="stomatal" src="d0_s6" type="structure">
+        <character is_modifier="true" name="pubescence" src="d0_s6" value="glaucous" />
+      </biological_entity>
+      <biological_entity id="o3901" name="band" name_original="band" src="d0_s6" type="structure">
+        <character is_modifier="true" name="pubescence" src="d0_s6" value="glaucous" />
+      </biological_entity>
+      <relation from="o3899" id="r925" name="with" negation="false" src="d0_s6" to="o3900" />
+      <relation from="o3899" id="r926" name="with" negation="false" src="d0_s6" to="o3901" />
+    </statement>
+    <statement id="d0_s7">
+      <text>apex acute to obtuse, mucronate.</text>
+      <biological_entity id="o3902" name="apex" name_original="apex" src="d0_s7" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s7" value="acute" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s7" value="obtuse" />
+        <character char_type="range_value" from="acute" name="shape" src="d0_s7" to="obtuse" />
+        <character is_modifier="false" name="shape" src="d0_s7" value="mucronate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Seed-cones maturing in 2 years, of 2 distinct sizes, with straight peduncles, globose to ovoid, 6-13 mm, bluish black, glaucous, resinous to obscurely woody, with 2-3 seeds.</text>
+      <biological_entity id="o3903" name="cone-seed" name_original="seed-cones" src="d0_s8" type="structure">
+        <character constraint="in 2 years" is_modifier="false" name="life_cycle" src="d0_s8" value="maturing" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="globose" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="ovoid" />
+        <character char_type="range_value" from="globose" name="shape" notes="" src="d0_s8" to="ovoid" />
+        <character char_type="range_value" from="6" from_unit="mm" name="distance" src="d0_s8" to="13" to_unit="mm" />
+        <character is_modifier="false" name="coloration" src="d0_s8" value="bluish black" />
+        <character is_modifier="false" name="pubescence" src="d0_s8" value="glaucous" />
+        <character is_modifier="false" name="coating" src="d0_s8" value="resinous" />
+        <character is_modifier="false" modifier="obscurely" name="texture" src="d0_s8" value="woody" />
+      </biological_entity>
+      <biological_entity id="o3904" name="peduncle" name_original="peduncles" src="d0_s8" type="structure">
+        <character is_modifier="true" name="course" src="d0_s8" value="straight" />
+      </biological_entity>
+      <biological_entity id="o3905" name="seed" name_original="seeds" src="d0_s8" type="structure">
+        <character char_type="range_value" from="2" is_modifier="true" name="quantity" src="d0_s8" to="3" />
+      </biological_entity>
+      <relation from="o3903" id="r927" modifier="of 2 distinct sizes" name="with" negation="false" src="d0_s8" to="o3904" />
+      <relation from="o3903" id="r928" name="with" negation="false" src="d0_s8" to="o3905" />
+    </statement>
+    <statement id="d0_s9">
+      <text>Seeds 4-5 mm. 2 n = 22.</text>
+      <biological_entity id="o3906" name="seed" name_original="seeds" src="d0_s9" type="structure">
+        <character char_type="range_value" from="4" from_unit="mm" name="some_measurement" src="d0_s9" to="5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o3907" name="chromosome" name_original="" src="d0_s9" type="structure">
+        <character name="quantity" src="d0_s9" value="22" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>North America, Eurasia.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="North America" establishment_means="native" />
+        <character name="distribution" value="Eurasia" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <other_name type="common_name">Common juniper</other_name>
+  <other_name type="common_name">genévrier commun</other_name>
+  <discussion>Juniperus communis is the most widespread juniper species, and many subspecies and varieties have been described. A major study, including chemical characters, is needed to clarify the taxonomy. J. D. A. Franco (1962) recognized four subspecies (here considered varieties); two of these---var. communis and var. hemisphaerica (J. Presl &amp; C. Presl) Parlatore---do not occur in the flora and a fifth, recognized here, was not treated by Franco.</discussion>
+  <discussion>The seed cones of Juniperus communis are used to flavor gin.</discussion>
+  <discussion>Varieties 5 (3 in the flora):</discussion>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d1_s0">
+          <text>Seed-cones 9-13 mm, longer than leaves.</text>
+          <biological_entity id="o3908" name="cone-seed" name_original="seed-cones" src="d1_s0" type="structure">
+            <character char_type="range_value" from="9" from_unit="mm" name="distance" src="d1_s0" to="13" to_unit="mm" />
+            <character constraint="than leaves" constraintid="o3909" is_modifier="false" name="length_or_size" src="d1_s0" value="longer" />
+          </biological_entity>
+          <biological_entity id="o3909" name="leaf" name_original="leaves" src="d1_s0" type="structure" />
+        </statement>
+      </description>
+      <determination>1a var. megistocarpa</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d2_s0">
+          <text>Seed-cones 6-9 mm, shorter than leaves.</text>
+          <biological_entity id="o3910" name="cone-seed" name_original="seed-cones" src="d2_s0" type="structure">
+            <character char_type="range_value" from="6" from_unit="mm" name="distance" src="d2_s0" to="9" to_unit="mm" />
+            <character constraint="than leaves" constraintid="o3911" is_modifier="false" name="height_or_length_or_size" src="d2_s0" value="shorter" />
+          </biological_entity>
+          <biological_entity id="o3911" name="leaf" name_original="leaves" src="d2_s0" type="structure" />
+        </statement>
+      </description>
+      <next_statement_id>2</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d3_s0">
+          <text>Glaucous stomatal band on adaxial leaf surface 2 or more times as wide as each green marginal band;</text>
+          <biological_entity constraint="leaf" id="o3913" name="surface" name_original="surface" src="d3_s0" type="structure" constraint_original="adaxial leaf">
+            <character constraint="as-wide-as marginal band" constraintid="o3914" name="quantity" src="d3_s0" unit="or moretimes" value="2" />
+          </biological_entity>
+          <biological_entity constraint="marginal" id="o3914" name="band" name_original="band" src="d3_s0" type="structure">
+            <character is_modifier="true" name="coloration" src="d3_s0" value="green" />
+          </biological_entity>
+          <relation from="o3912" id="r929" name="on" negation="false" src="d3_s0" to="o3913" />
+        </statement>
+        <statement id="d3_s1">
+          <text>spreading to matlike shrubs;</text>
+          <biological_entity constraint="stomatal" id="o3912" name="band" name_original="band" src="d3_s0" type="structure">
+            <character is_modifier="true" name="pubescence" src="d3_s0" value="glaucous" />
+            <character is_modifier="false" name="orientation" src="d3_s1" value="spreading" />
+          </biological_entity>
+          <biological_entity id="o3915" name="shrub" name_original="shrubs" src="d3_s1" type="structure">
+            <character is_modifier="true" name="growth_form" src="d3_s1" value="matlike" />
+          </biological_entity>
+        </statement>
+        <statement id="d3_s2">
+          <text>leaves linear-lanceolate, to 2 mm wide, apex acute to obtuse and mucronate.</text>
+          <biological_entity id="o3916" name="leaf" name_original="leaves" src="d3_s2" type="structure">
+            <character is_modifier="false" name="shape" src="d3_s2" value="linear-lanceolate" />
+            <character char_type="range_value" from="0" from_unit="mm" name="width" src="d3_s2" to="2" to_unit="mm" />
+          </biological_entity>
+          <biological_entity id="o3917" name="apex" name_original="apex" src="d3_s2" type="structure">
+            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d3_s2" value="acute" />
+            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d3_s2" value="obtuse" />
+            <character char_type="range_value" from="acute" name="shape" src="d3_s2" to="obtuse" />
+            <character is_modifier="false" name="shape" src="d3_s2" value="mucronate" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>1b var. montana</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d4_s0">
+          <text>Glaucous stomatal band on adaxial leaf surface about as wide as each green marginal band;</text>
+          <biological_entity constraint="leaf" id="o3919" name="surface" name_original="surface" src="d4_s0" type="structure" constraint_original="adaxial leaf" />
+          <biological_entity constraint="marginal" id="o3920" name="band" name_original="band" src="d4_s0" type="structure">
+            <character is_modifier="true" name="coloration" src="d4_s0" value="green" />
+          </biological_entity>
+          <relation from="o3918" id="r930" name="on" negation="false" src="d4_s0" to="o3919" />
+          <relation from="o3919" id="r931" name="as wide as" negation="false" src="d4_s0" to="o3920" />
+        </statement>
+        <statement id="d4_s1">
+          <text>prostrate, low shrubs with ascending branchlet tips (occasionally spreading shrubs, rarely small trees);</text>
+          <biological_entity constraint="stomatal" id="o3918" name="band" name_original="band" src="d4_s0" type="structure">
+            <character is_modifier="true" name="pubescence" src="d4_s0" value="glaucous" />
+            <character is_modifier="false" name="growth_form_or_orientation" src="d4_s1" value="prostrate" />
+          </biological_entity>
+          <biological_entity id="o3921" name="shrub" name_original="shrubs" src="d4_s1" type="structure">
+            <character is_modifier="true" name="position" src="d4_s1" value="low" />
+          </biological_entity>
+          <biological_entity constraint="branchlet" id="o3922" name="tip" name_original="tips" src="d4_s1" type="structure">
+            <character is_modifier="true" name="orientation" src="d4_s1" value="ascending" />
+          </biological_entity>
+          <relation from="o3921" id="r932" name="with" negation="false" src="d4_s1" to="o3922" />
+        </statement>
+        <statement id="d4_s2">
+          <text>leaves linear, to 1.6 mm wide, apex acute and mucronate to acuminate.</text>
+          <biological_entity id="o3923" name="leaf" name_original="leaves" src="d4_s2" type="structure">
+            <character is_modifier="false" name="arrangement_or_course_or_shape" src="d4_s2" value="linear" />
+            <character char_type="range_value" from="0" from_unit="mm" name="width" src="d4_s2" to="1.6" to_unit="mm" />
+          </biological_entity>
+          <biological_entity id="o3924" name="apex" name_original="apex" src="d4_s2" type="structure">
+            <character is_modifier="false" name="shape" src="d4_s2" value="acute" />
+            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s2" value="mucronate" />
+            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s2" value="acuminate" />
+            <character char_type="range_value" from="mucronate" name="shape" src="d4_s2" to="acuminate" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>1c var. depressa</determination>
+    </key_statement>
+  </key>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_224_d1_s0">
+      <text>Seed-cones 9-13 mm, longer than leaves.</text>
+      <biological_entity id="from_key_V2_224_o3908" name="seed-cone" name_original="seed-cones" src="d1_s0" type="structure">
+        <character char_type="range_value" from="9" from_unit="mm" name="distance" src="d1_s0" to="13" to_unit="mm" />
+        <character constraint="than leaves" constraintid="o3909" is_modifier="false" name="length_or_size" src="d1_s0" value="longer" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_224_o3909" name="leaf" name_original="leaves" src="d1_s0" type="structure" />
+    </statement>
+  </description>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_224_d3_s0">
+      <text>Glaucous stomatal band on adaxial leaf surface 2 or more times as wide as each green marginal band;</text>
+      <biological_entity constraint="adaxial leaf" id="from_key_V2_224_o3913" name="surface" name_original="surface" src="d3_s0" type="structure">
+        <character constraint="as-wide-as marginal band" constraintid="o3914" name="count" src="d3_s0" unit="or moretimes" value="2" />
+      </biological_entity>
+      <biological_entity constraint="marginal" id="from_key_V2_224_o3914" name="band" name_original="band" src="d3_s0" type="structure">
+        <character is_modifier="true" name="coloration" src="d3_s0" value="green" />
+      </biological_entity>
+      <relation from="from_key_V2_224_o3912" id="from_key_V2_224_r929" name="on" negation="false" src="d3_s0" to="from_key_V2_224_o3913" />
+    </statement>
+    <statement id="from_key_V2_224_d3_s1">
+      <text>spreading to matlike shrubs;</text>
+      <biological_entity constraint="stomatal" id="from_key_V2_224_o3912" name="band" name_original="band" src="d3_s0" type="structure">
+        <character is_modifier="true" name="pubescence" src="d3_s0" value="glaucous" />
+        <character is_modifier="false" name="orientation" src="d3_s1" value="spreading" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_224_o3915" name="shrub" name_original="shrubs" src="d3_s1" type="structure">
+        <character is_modifier="true" name="growth_form" src="d3_s1" value="matlike" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_224_d3_s2">
+      <text>leaves linear-lanceolate, to 2 mm wide, apex acute to obtuse and mucronate.</text>
+      <biological_entity id="from_key_V2_224_o3916" name="leaf" name_original="leaves" src="d3_s2" type="structure">
+        <character is_modifier="false" name="shape" src="d3_s2" value="linear-lanceolate" />
+        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d3_s2" to="2" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_224_o3917" name="apex" name_original="apex" src="d3_s2" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d3_s2" value="acute" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d3_s2" value="obtuse" />
+        <character char_type="range_value" from="acute" name="shape" src="d3_s2" to="obtuse" />
+        <character is_modifier="false" name="shape" src="d3_s2" value="mucronate" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_224_d2_s0">
+      <text>Seed-cones 6-9 mm, shorter than leaves.</text>
+      <biological_entity id="from_key_V2_224_o3910" name="seed-cone" name_original="seed-cones" src="d2_s0" type="structure">
+        <character char_type="range_value" from="6" from_unit="mm" name="distance" src="d2_s0" to="9" to_unit="mm" />
+        <character constraint="than leaves" constraintid="o3911" is_modifier="false" name="height_or_length_or_size" src="d2_s0" value="shorter" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_224_o3911" name="leaf" name_original="leaves" src="d2_s0" type="structure" />
+    </statement>
+  </description>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_224_d4_s0">
+      <text>Glaucous stomatal band on adaxial leaf surface about as wide as each green marginal band;</text>
+      <biological_entity constraint="adaxial leaf" id="from_key_V2_224_o3919" name="surface" name_original="surface" src="d4_s0" type="structure" />
+      <biological_entity constraint="marginal" id="from_key_V2_224_o3920" name="band" name_original="band" src="d4_s0" type="structure">
+        <character is_modifier="true" name="coloration" src="d4_s0" value="green" />
+      </biological_entity>
+      <relation from="from_key_V2_224_o3918" id="from_key_V2_224_r930" name="on" negation="false" src="d4_s0" to="from_key_V2_224_o3919" />
+      <relation from="from_key_V2_224_o3919" id="from_key_V2_224_r931" name="as wide as" negation="false" src="d4_s0" to="from_key_V2_224_o3920" />
+    </statement>
+    <statement id="from_key_V2_224_d4_s1">
+      <text>prostrate, low shrubs with ascending branchlet tips (occasionally spreading shrubs, rarely small trees);</text>
+      <biological_entity constraint="stomatal" id="from_key_V2_224_o3918" name="band" name_original="band" src="d4_s0" type="structure">
+        <character is_modifier="true" name="pubescence" src="d4_s0" value="glaucous" />
+        <character is_modifier="false" name="growth_form_or_orientation" src="d4_s1" value="prostrate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_224_o3921" name="shrub" name_original="shrubs" src="d4_s1" type="structure">
+        <character is_modifier="true" name="position" src="d4_s1" value="low" />
+      </biological_entity>
+      <biological_entity constraint="branchlet" id="from_key_V2_224_o3922" name="tip" name_original="tips" src="d4_s1" type="structure">
+        <character is_modifier="true" name="orientation" src="d4_s1" value="ascending" />
+      </biological_entity>
+      <relation from="from_key_V2_224_o3921" id="from_key_V2_224_r932" name="with" negation="false" src="d4_s1" to="from_key_V2_224_o3922" />
+    </statement>
+    <statement id="from_key_V2_224_d4_s2">
+      <text>leaves linear, to 1.6 mm wide, apex acute and mucronate to acuminate.</text>
+      <biological_entity id="from_key_V2_224_o3923" name="leaf" name_original="leaves" src="d4_s2" type="structure">
+        <character is_modifier="false" name="arrangement_or_course_or_shape" src="d4_s2" value="linear" />
+        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d4_s2" to="1.6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_224_o3924" name="apex" name_original="apex" src="d4_s2" type="structure">
+        <character is_modifier="false" name="shape" src="d4_s2" value="acute" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s2" value="mucronate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s2" value="acuminate" />
+        <character char_type="range_value" from="mucronate" name="shape" src="d4_s2" to="acuminate" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_301_d1_s0">
+      <text>Leaves of 1 kind, subulate, with basal abscission zone, spreading;</text>
+      <biological_entity id="from_key_V2_301_o6721" name="leaf" name_original="leaves" src="d1_s0" type="structure">
+        <character is_modifier="false" name="shape" notes="alterIDs:o6722" src="d1_s0" value="subulate" />
+        <character is_modifier="false" name="orientation" notes="alterIDs:o6723" src="d1_s0" value="spreading" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_301_o6722" name="kind" name_original="kind" src="d1_s0" type="structure">
+        <character is_modifier="true" name="count" src="d1_s0" value="1" />
+      </biological_entity>
+      <biological_entity constraint="basal" id="from_key_V2_301_o6723" name="zone" name_original="zone" src="d1_s0" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d1_s0" value="abscission" />
+      </biological_entity>
+      <relation from="from_key_V2_301_o6721" id="from_key_V2_301_r1564" name="consist_of" negation="false" src="d1_s0" to="from_key_V2_301_o6722" />
+      <relation from="from_key_V2_301_o6721" id="from_key_V2_301_r1565" name="with" negation="false" src="d1_s0" to="from_key_V2_301_o6723" />
+    </statement>
+    <statement id="from_key_V2_301_d1_s1">
+      <text>cones axillary (Juniperus sect. Juniperus)...</text>
+      <biological_entity id="from_key_V2_301_o6724" name="cone" name_original="cones" src="d1_s1" type="structure">
+        <character is_modifier="false" name="position" src="d1_s1" value="axillary" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

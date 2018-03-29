@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
+    <taxon_name authority="Yatskievych" date="1990" rank="genus">pentagramma</taxon_name>
+    <taxon_name authority="(Kaulfuss) Yatskievych" date="1990" rank="species">triangularis</taxon_name>
+    <taxon_name authority="(J. T. Howell) Yatskievych" date="1990" rank="subspecies">semipallida</taxon_name>
+    <place_of_publication>
+      <publication_title>Amer. Fern J.</publication_title>
+      <place_in_publication>80: 16. 1990</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family pteridaceae;genus pentagramma;species triangularis;subspecies semipallida</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Pityrogramma</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="species">triangularis</taxon_name>
+    <taxon_name authority="J. T. Howell" date="unknown" rank="variety">semipallida</taxon_name>
+    <place_of_publication>
+      <publication_title>Leafl. W. Bot.</publication_title>
+      <place_in_publication>9: 223. 1962</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Pityrogramma;species triangularis;variety semipallida;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Petiole glabrous, not viscid-glandular.</text>
+      <biological_entity id="o5981" name="petiole" name_original="petiole" src="d0_s0" type="structure">
+        <character is_modifier="false" name="pubescence" src="d0_s0" value="glabrous" />
+        <character is_modifier="false" modifier="not" name="architecture_or_function_or_pubescence" src="d0_s0" value="viscid-glandular" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Blade thin and herbaceous, sometimes thick (but not leathery), not viscid-glandular, abaxially densely white-farinose, adaxially glabrous.</text>
+      <biological_entity id="o5982" name="blade" name_original="blade" src="d0_s1" type="structure">
+        <character is_modifier="false" name="width" src="d0_s1" value="thin" />
+        <character is_modifier="false" name="growth_form_or_texture" src="d0_s1" value="herbaceous" />
+        <character is_modifier="false" modifier="sometimes" name="width" src="d0_s1" value="thick" />
+        <character is_modifier="false" modifier="not" name="architecture_or_function_or_pubescence" src="d0_s1" value="viscid-glandular" />
+        <character is_modifier="false" modifier="abaxially densely" name="pubescence" src="d0_s1" value="white-farinose" />
+        <character is_modifier="false" modifier="adaxially" name="pubescence" src="d0_s1" value="glabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Distal pinnae mostly regularly lobed.</text>
+      <biological_entity constraint="distal" id="o5983" name="pinna" name_original="pinnae" src="d0_s2" type="structure">
+        <character is_modifier="false" modifier="mostly regularly" name="shape" src="d0_s2" value="lobed" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Proximal basiscopic lobes of basal pinnae pinnatifid, often deeply so.</text>
+      <biological_entity constraint="proximal" id="o5984" name="lobe" name_original="lobes" src="d0_s3" type="structure">
+        <character is_modifier="true" name="orientation" src="d0_s3" value="basiscopic" />
+        <character is_modifier="false" name="shape" src="d0_s3" value="pinnatifid" />
+      </biological_entity>
+      <biological_entity constraint="basal" id="o5985" name="pinna" name_original="pinnae" src="d0_s3" type="structure" />
+      <relation from="o5984" id="r1366" name="part_of" negation="false" src="d0_s3" to="o5985" />
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Chaparral, pine and oak woodlands;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="chaparral" />
+        <character name="habitat" value="pine and oak woodlands ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>100--900 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="900" to_unit="m" from="100" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Calif.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>2b</number>
+  <discussion>Pentagramma triangularis subsp. semipallida , as here treated, remains heterogeneous. Diploid (based on spore size) populations occur in the foothills of the Sierra Nevada in Butte County, California. Tetraploids (based on spore size) of similar morphology are apparently restricted to Santa Barbara County, California, including the adjacent Channel Islands. The relationship between these two variants has not been studied in detail.</discussion>
+</bio:treatment>

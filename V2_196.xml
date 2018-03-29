@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
+    <taxon_name authority="C. Presl" date="1836" rank="genus">cyrtomium</taxon_name>
+    <taxon_name authority="J. Smith" date="1866" rank="species">fortunei</taxon_name>
+    <taxon_name authority="J. Smith" date="unknown" rank="variety">fortunei</taxon_name>
+    <taxon_hierarchy>family dryopteridaceae;genus cyrtomium;species fortunei;variety fortunei</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Stem scales brown, ovate to lanceolate with attenuate apices.</text>
+      <biological_entity constraint="stem" id="o3253" name="scale" name_original="scales" src="d0_s0" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s0" value="brown" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s0" value="ovate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s0" value="lanceolate" />
+        <character char_type="range_value" constraint="with apices" constraintid="o3254" from="ovate" name="shape" src="d0_s0" to="lanceolate" />
+      </biological_entity>
+      <biological_entity id="o3254" name="apex" name_original="apices" src="d0_s0" type="structure">
+        <character is_modifier="true" name="shape" src="d0_s0" value="attenuate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves to 90 cm.</text>
+      <biological_entity id="o3255" name="leaf" name_original="leaves" src="d0_s1" type="structure" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Pinnae dark green and not shiny adaxially, (8-) 10-25 pairs, lanceolate-attenuate, usually falcate, 5-9 cm, papery, sometimes with short, basal, acroscopic lobe, margins minutely crenulate-denticulate.</text>
+      <biological_entity id="o3256" name="pinna" name_original="pinnae" src="d0_s2" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s2" value="dark green" />
+        <character is_modifier="false" modifier="not; adaxially" name="reflectance" src="d0_s2" value="shiny" />
+        <character char_type="range_value" from="8" name="atypical_quantity" src="d0_s2" to="10" to_inclusive="false" />
+        <character char_type="range_value" from="10" name="quantity" src="d0_s2" to="25" />
+        <character is_modifier="false" name="shape" src="d0_s2" value="lanceolate-attenuate" />
+        <character is_modifier="false" modifier="usually" name="shape" src="d0_s2" value="falcate" />
+        <character char_type="range_value" from="5" from_unit="cm" name="some_measurement" src="d0_s2" to="9" to_unit="cm" />
+        <character is_modifier="false" name="texture" src="d0_s2" value="papery" />
+      </biological_entity>
+      <biological_entity id="o3257" name="lobe" name_original="lobe" src="d0_s2" type="structure">
+        <character is_modifier="true" name="height_or_length_or_size" src="d0_s2" value="short" />
+        <character is_modifier="true" name="position" src="d0_s2" value="basal" />
+        <character is_modifier="true" name="orientation" src="d0_s2" value="acroscopic" />
+      </biological_entity>
+      <biological_entity id="o3258" name="margin" name_original="margins" src="d0_s2" type="structure">
+        <character is_modifier="false" modifier="minutely" name="shape" src="d0_s2" value="crenulate-denticulate" />
+      </biological_entity>
+      <relation from="o3256" id="r786" modifier="sometimes" name="with" negation="false" src="d0_s2" to="o3257" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Indusia pale-brown to tan, thin, shriveled at maturity.</text>
+    </statement>
+    <statement id="d0_s4">
+      <text>n = 2n = 123, apogamous.</text>
+      <biological_entity id="o3259" name="indusium" name_original="indusia" src="d0_s3" type="structure">
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="pale-brown" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="tan" />
+        <character char_type="range_value" from="pale-brown" name="coloration" src="d0_s3" to="tan" />
+        <character is_modifier="false" name="width" src="d0_s3" value="thin" />
+        <character constraint="at maturity" is_modifier="false" name="shape" src="d0_s3" value="shriveled" />
+      </biological_entity>
+      <biological_entity constraint="n=2n" id="o3260" name="chromosome" name_original="" src="d0_s4" type="structure">
+        <character name="quantity" src="d0_s4" unit=",apogamous" value="123" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Brick or stone walls, clay banks, mesic ravines;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="brick or stone walls" />
+        <character name="habitat" value="clay banks" />
+        <character name="habitat" value="mesic ravines ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0--100 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="100" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>introduced; Ga., La., Miss., Oreg., S.C.; Europe; Asia.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="introduced" />
+        <character name="distribution" value="Europe" establishment_means="native" />
+        <character name="distribution" value="Asia" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>2a</number>
+  <discussion>Cyrtomium fortunei is native to east Asia and widely escaped from cultivation. Two other varieties, var. intermedium Tagawa and var. clivicola (Makino) Tagawa, occur in Asia. Cyrtomium caryotideum (Wallich ex Hooker &amp; Greville) C. Presl is another commonly cultivated species of Asiatic holly fern. It is native in Hawaii, but it is not yet known to have become established outside of cultivation in the flora area. It is characterized by having only 3--5 pairs of pinnae, with finely and sharply serrulate margins.</discussion>
+</bio:treatment>

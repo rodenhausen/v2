@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">cupressus</taxon_name>
+    <taxon_name authority="Hartweg" date="1847" rank="species">macrocarpa</taxon_name>
+    <place_of_publication>
+      <publication_title>J. Hort. Soc. London</publication_title>
+      <place_in_publication>2: 187. 1847</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cupressaceae;genus cupressus;species macrocarpa</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Trees to 25 m;</text>
+      <biological_entity id="o4516" name="tree" name_original="trees" src="d0_s0" type="structure">
+        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="25" to_unit="m" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>crown generally broadly spreading, especially on exposed headlands, fairly sparse, often composed of few major limbs from near ground, more upright in sheltered locations.</text>
+      <biological_entity id="o4517" name="crown" name_original="crown" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="generally broadly" name="orientation" src="d0_s1" value="spreading" />
+        <character is_modifier="false" modifier="fairly" name="count_or_density" notes="" src="d0_s1" value="sparse" />
+        <character constraint="in locations" constraintid="o4520" is_modifier="false" modifier="often" name="orientation" src="d0_s1" value="upright" />
+      </biological_entity>
+      <biological_entity id="o4518" name="headland" name_original="headlands" src="d0_s1" type="structure">
+        <character is_modifier="true" name="prominence" src="d0_s1" value="exposed" />
+      </biological_entity>
+      <biological_entity id="o4519" name="limb" name_original="limbs" src="d0_s1" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s1" value="few" />
+        <character is_modifier="true" name="size" src="d0_s1" value="major" />
+      </biological_entity>
+      <biological_entity id="o4520" name="location" name_original="locations" src="d0_s1" type="structure">
+        <character is_modifier="true" name="position_relational" src="d0_s1" value="sheltered" />
+      </biological_entity>
+      <relation from="o4517" id="r1060" modifier="especially" name="on" negation="false" src="d0_s1" to="o4518" />
+      <relation from="o4517" id="r1061" modifier="often" name="composed of" negation="false" src="d0_s1" to="o4519" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Bark rough, fibrous.</text>
+      <biological_entity id="o4521" name="bark" name_original="bark" src="d0_s2" type="structure">
+        <character is_modifier="false" name="pubescence_or_relief" src="d0_s2" value="rough" />
+        <character is_modifier="false" name="texture" src="d0_s2" value="fibrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Branchlets decussate, 1.5-2 mm diam.</text>
+      <biological_entity id="o4522" name="branchlet" name_original="branchlets" src="d0_s3" type="structure">
+        <character is_modifier="false" name="arrangement" src="d0_s3" value="decussate" />
+        <character char_type="range_value" from="1.5" from_unit="mm" name="diameter" src="d0_s3" to="2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Leaves without gland or sometimes with inconspicuous, shallow, pitlike, abaxial gland that does not produce drop of resin, not glaucous.</text>
+      <biological_entity id="o4523" name="leaf" name_original="leaves" src="d0_s4" type="structure" />
+      <biological_entity id="o4524" name="gland" name_original="gland" src="d0_s4" type="structure" />
+      <biological_entity constraint="abaxial" id="o4525" name="gland" name_original="gland" src="d0_s4" type="structure">
+        <character is_modifier="true" name="prominence" src="d0_s4" value="inconspicuous" />
+        <character is_modifier="true" name="depth" src="d0_s4" value="shallow" />
+        <character is_modifier="true" name="shape" src="d0_s4" value="pitlike" />
+      </biological_entity>
+      <biological_entity id="o4526" name="gland" name_original="gland" src="d0_s4" type="structure" />
+      <biological_entity constraint="abaxial" id="o4527" name="gland" name_original="gland" src="d0_s4" type="structure">
+        <character is_modifier="true" name="prominence" src="d0_s4" value="inconspicuous" />
+        <character is_modifier="true" name="depth" src="d0_s4" value="shallow" />
+        <character is_modifier="true" name="shape" src="d0_s4" value="pitlike" />
+        <character is_modifier="false" modifier="not" name="pubescence" src="d0_s4" value="glaucous" />
+      </biological_entity>
+      <biological_entity id="o4528" name="drop" name_original="drop" src="d0_s4" type="structure" />
+      <biological_entity id="o4529" name="resin" name_original="resin" src="d0_s4" type="structure" />
+      <relation from="o4523" id="r1062" name="without" negation="false" src="d0_s4" to="o4524" />
+      <relation from="o4523" id="r1063" name="without" negation="false" src="d0_s4" to="o4525" />
+      <relation from="o4525" id="r1064" name="without" negation="false" src="d0_s4" to="o4526" />
+      <relation from="o4525" id="r1065" name="without" negation="false" src="d0_s4" to="o4527" />
+      <relation from="o4527" id="r1066" name="produce" negation="false" src="d0_s4" to="o4528" />
+      <relation from="o4527" id="r1067" name="part_of" negation="false" src="d0_s4" to="o4529" />
+    </statement>
+    <statement id="d0_s5">
+      <text>Pollen cones 4-6 × 2.5-3 mm;</text>
+      <biological_entity constraint="pollen" id="o4530" name="cone" name_original="cones" src="d0_s5" type="structure">
+        <character char_type="range_value" from="4" from_unit="mm" name="length" src="d0_s5" to="6" to_unit="mm" />
+        <character char_type="range_value" from="2.5" from_unit="mm" name="width" src="d0_s5" to="3" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>pollen-sacs 6-10.</text>
+      <biological_entity id="o4531" name="pollen-sac" name_original="pollen-sacs" src="d0_s6" type="structure">
+        <character char_type="range_value" from="6" name="quantity" src="d0_s6" to="10" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Seed-cones oblong, 2.5-4 cm, grayish brown, not glaucous;</text>
+      <biological_entity id="o4532" name="cone-seed" name_original="seed-cones" src="d0_s7" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s7" value="oblong" />
+        <character char_type="range_value" from="2.5" from_unit="cm" name="distance" src="d0_s7" to="4" to_unit="cm" />
+        <character is_modifier="false" name="coloration" src="d0_s7" value="grayish brown" />
+        <character is_modifier="false" modifier="not" name="pubescence" src="d0_s7" value="glaucous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>scales 4-6 pairs, smooth, umbo nearly flat at maturity.</text>
+      <biological_entity id="o4533" name="scale" name_original="scales" src="d0_s8" type="structure">
+        <character char_type="range_value" from="4" name="quantity" src="d0_s8" to="6" />
+        <character is_modifier="false" name="architecture_or_pubescence_or_relief" src="d0_s8" value="smooth" />
+      </biological_entity>
+      <biological_entity id="o4534" name="umbo" name_original="umbo" src="d0_s8" type="structure">
+        <character constraint="at maturity" is_modifier="false" modifier="nearly" name="prominence_or_shape" src="d0_s8" value="flat" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>Seeds mostly 5-6 mm, dark-brown, not glaucous.</text>
+    </statement>
+    <statement id="d0_s10">
+      <text>2 n = 22.</text>
+      <biological_entity id="o4535" name="seed" name_original="seeds" src="d0_s9" type="structure">
+        <character char_type="range_value" from="5" from_unit="mm" name="some_measurement" src="d0_s9" to="6" to_unit="mm" />
+        <character is_modifier="false" name="coloration" src="d0_s9" value="dark-brown" />
+        <character is_modifier="false" modifier="not" name="pubescence" src="d0_s9" value="glaucous" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o4536" name="chromosome" name_original="" src="d0_s10" type="structure">
+        <character name="quantity" src="d0_s10" value="22" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Coastal bluffs;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="coastal" />
+        <character name="habitat" value="bluffs" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>5--35 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="35" to_unit="m" from="5" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Calif.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>6</number>
+  <other_name type="common_name">Monterey cypress</other_name>
+  <other_name type="common_name">ciprés Monterrey</other_name>
+  <discussion>The geographically most restricted taxon recognized here, Cupressus macrocarpa is confined today to two picturesque groves near Monterey, but it is also known from fossils to have been in other regions. It is much planted and commonly naturalized near the coast from central California north to Washington and in warm temperate and subtropical regions worldwide.</discussion>
+  <discussion type="conservation">of conservation concern</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_428_d13_s0">
+      <text>Seed-cones oblong;</text>
+      <biological_entity id="from_key_V2_428_o10179" name="seed-cone" name_original="seed-cones" src="d13_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d13_s0" value="oblong" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_428_d13_s1">
+      <text>bark fibrous, branchlets 1.5-2 mm diam.</text>
+      <biological_entity id="from_key_V2_428_o10180" name="bark" name_original="bark" src="d13_s1" type="structure">
+        <character is_modifier="false" name="texture" src="d13_s1" value="fibrous" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_428_o10181" name="branchlet" name_original="branchlets" src="d13_s1" type="structure">
+        <character char_type="range_value" from="1.5" from_unit="mm" name="diameter" src="d13_s1" to="2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_428_d10_s0">
+      <text>Seed-cones (2-) 2.5-4 cm.</text>
+      <biological_entity id="from_key_V2_428_o10172" name="seed-cone" name_original="seed-cones" src="d10_s0" type="structure">
+        <character char_type="range_value" from="2" from_unit="cm" name="atypical_distance" src="d10_s0" to="2.5" to_inclusive="false" to_unit="cm" />
+        <character char_type="range_value" from="2.5" from_unit="cm" name="distance" src="d10_s0" to="4" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_428_d2_s0">
+      <text>Most leaves without conspicuous, pitlike, abaxial gland, some with inconspicuous shallow or embedded gland.</text>
+      <biological_entity id="from_key_V2_428_o10152" name="whole_organism" name_original="" src="d2_s0" type="structure" />
+      <biological_entity id="from_key_V2_428_o10153" name="leaf" name_original="leaves" src="d2_s0" type="structure" />
+      <biological_entity constraint="abaxial" id="from_key_V2_428_o10154" name="gland" name_original="gland" src="d2_s0" type="structure">
+        <character is_modifier="true" name="prominence" src="d2_s0" value="conspicuous" />
+        <character is_modifier="true" name="shape" src="d2_s0" value="pitlike" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_428_o10155" name="gland" name_original="gland" src="d2_s0" type="structure">
+        <character is_modifier="true" name="prominence" src="d2_s0" value="inconspicuous" />
+        <character is_modifier="true" name="depth" src="d2_s0" value="shallow" />
+        <character is_modifier="true" name="position_relational" src="d2_s0" value="embedded" />
+      </biological_entity>
+      <relation from="from_key_V2_428_o10153" id="from_key_V2_428_r2322" name="without" negation="false" src="d2_s0" to="from_key_V2_428_o10154" />
+      <relation from="from_key_V2_428_o10153" id="from_key_V2_428_r2323" name="with" negation="false" src="d2_s0" to="from_key_V2_428_o10155" />
+    </statement>
+  </description>
+</bio:treatment>

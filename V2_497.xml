@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Kanitz" date="unknown" rank="family">psilotaceae</taxon_name>
+    <taxon_name authority="Swartz" date="1801" rank="genus">psilotum</taxon_name>
+    <taxon_name authority="(Linnaeus) Palisot de Beauvois" date="1805" rank="species">nudum</taxon_name>
+    <place_of_publication>
+      <publication_title>Prodr. Aethéogam.</publication_title>
+      <place_in_publication>106, 112. 1805</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family psilotaceae;genus psilotum;species nudum</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Lycopodium</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="species">nudum</taxon_name>
+    <place_of_publication>
+      <publication_title>Sp. Pl.</publication_title>
+      <place_in_publication>2: 1100. 1753</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Lycopodium;species nudum;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Aerial shoots to 50 cm, 4 mm diam. at base.</text>
+      <biological_entity id="o12702" name="shoot" name_original="shoots" src="d0_s0" type="structure">
+        <character is_modifier="true" name="location" src="d0_s0" value="aerial" />
+        <character constraint="at base" constraintid="o12703" modifier="to 50 cm" name="diameter" src="d0_s0" unit="mm" value="4" />
+      </biological_entity>
+      <biological_entity id="o12703" name="base" name_original="base" src="d0_s0" type="structure" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Appendages 0.7-2.5 mm (sterile), 1-1.5 mm (fertile).</text>
+      <biological_entity id="o12704" name="appendage" name_original="appendages" src="d0_s1" type="structure">
+        <character char_type="range_value" from="0.7" from_unit="mm" name="some_measurement" src="d0_s1" to="2.5" to_unit="mm" />
+        <character char_type="range_value" from="1" from_unit="mm" name="some_measurement" src="d0_s1" to="1.5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Synangia yellowish to greenish yellow, 2-3 mm wide.</text>
+      <biological_entity id="o12705" name="synangium" name_original="synangia" src="d0_s2" type="structure">
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s2" value="yellowish" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s2" value="greenish yellow" />
+        <character char_type="range_value" from="yellowish" name="coloration" src="d0_s2" to="greenish yellow" />
+        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s2" to="3" to_unit="mm" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Low to mesic woods, thickets, swamps, hammocks, rocky slopes;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="low to mesic woods" />
+        <character name="habitat" value="thickets" />
+        <character name="habitat" value="swamps" />
+        <character name="habitat" value="hammocks" />
+        <character name="habitat" value="rocky slopes ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0--50 m (1100 m in Ariz.);</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="50" to_unit="m" from="0" from_unit="m" />
+        <character name="elevation" char_type="atypical_range" to="1100" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ala., Ariz., Fla., Ga., La., Miss., S.C., Tex.; Mexico; West Indies in the Antilles; Central America; South America; tropical Asia; tropical Africa.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
+        <character name="distribution" value="Mexico" establishment_means="native" />
+        <character name="distribution" value="West Indies in the Antilles" establishment_means="native" />
+        <character name="distribution" value="Central America" establishment_means="native" />
+        <character name="distribution" value="South America" establishment_means="native" />
+        <character name="distribution" value="tropical Asia" establishment_means="native" />
+        <character name="distribution" value="tropical Africa" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <discussion>Reports of Psilotum nudum in New Mexico and in west Texas remain unverified. A wide range of chromosome numbers on material outside the flora has been reported for this species: n =ca.46--56, 104, 210. Most counts, however, are based on n =52 (reviewed in P.J. Brownsey and J.D. Lovis 1987). No count is available from North American material.</discussion>
+  <discussion>Psilotum nudum occurs as a minor weed in greenhouses. Many horticultural forms---including one without appendages and with terminal synangia (A.S. Rouffa 1971)---are grown, especially in Japan.</discussion>
+</bio:treatment>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>Warren H. Wagner Jr.</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Kaulfuss" date="unknown" rank="family">schizaeaceae</taxon_name>
+    <taxon_name authority="Smith" date="1793" rank="genus">Schizaea</taxon_name>
+    <place_of_publication>
+      <place_in_publication>5: 419, plate 9, fig. 9. 1793</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family schizaeaceae;genus Schizaea</taxon_hierarchy>
+    <other_info_on_name type="etymology">[Greek schizein, split, i.e., split into narrow lobes]</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants terrestrial.</text>
+      <biological_entity id="o18191" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="terrestrial" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Roots blackish, very narrow, tangled, practically glabrous.</text>
+      <biological_entity id="o18192" name="root" name_original="roots" src="d0_s1" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s1" value="blackish" />
+        <character is_modifier="false" modifier="very" name="size_or_width" src="d0_s1" value="narrow" />
+        <character is_modifier="false" name="arrangement" src="d0_s1" value="tangled" />
+        <character is_modifier="false" modifier="practically" name="pubescence" src="d0_s1" value="glabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Stems upright to reclining;</text>
+      <biological_entity id="o18193" name="stem" name_original="stems" src="d0_s2" type="structure">
+        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s2" value="upright" />
+        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s2" value="reclining" />
+        <character char_type="range_value" from="upright" name="orientation" src="d0_s2" to="reclining" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>hairs few celled, uniseriate.</text>
+      <biological_entity id="o18194" name="hair" name_original="hairs" src="d0_s3" type="structure">
+        <character is_modifier="false" name="quantity" src="d0_s3" value="few" />
+        <character is_modifier="false" name="architecture" src="d0_s3" value="celled" />
+        <character is_modifier="false" name="architecture_or_arrangement" src="d0_s3" value="uniseriate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Leaves all fertile or dimorphic with some sterile, lacking blades, mainly unbranched, long-petioled.</text>
+      <biological_entity id="o18195" name="leaf" name_original="leaves" src="d0_s4" type="structure">
+        <character is_modifier="false" name="reproduction" src="d0_s4" value="fertile" />
+        <character constraint="with blades" constraintid="o18196" is_modifier="false" name="growth_form" src="d0_s4" value="dimorphic" />
+        <character is_modifier="false" modifier="mainly" name="architecture" notes="" src="d0_s4" value="unbranched" />
+        <character is_modifier="false" name="architecture" src="d0_s4" value="long-petioled" />
+      </biological_entity>
+      <biological_entity id="o18196" name="blade" name_original="blades" src="d0_s4" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s4" value="sterile" />
+        <character is_modifier="true" name="quantity" src="d0_s4" value="lacking" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Fertile blades folded and fistlike or pectinate, pinnate, segments (digits) arising along rachis on distal 3-10 mm;</text>
+      <biological_entity id="o18197" name="blade" name_original="blades" src="d0_s5" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s5" value="fertile" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s5" value="folded" />
+        <character is_modifier="false" name="shape" src="d0_s5" value="fist-like" value_original="fistlike" />
+        <character is_modifier="false" name="shape" src="d0_s5" value="pectinate" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s5" value="pinnate" />
+      </biological_entity>
+      <biological_entity id="o18198" name="segment" name_original="segments" src="d0_s5" type="structure">
+        <character constraint="along rachis" constraintid="o18199" is_modifier="false" name="orientation" src="d0_s5" value="arising" />
+      </biological_entity>
+      <biological_entity id="o18199" name="rachis" name_original="rachis" src="d0_s5" type="structure" />
+      <biological_entity constraint="distal" id="o18200" name="segment" name_original="segments" src="d0_s5" type="structure">
+        <character char_type="range_value" from="3" from_unit="mm" name="some_measurement" src="d0_s5" to="10" to_unit="mm" />
+      </biological_entity>
+      <relation from="o18199" id="r4231" name="on" negation="false" src="d0_s5" to="o18200" />
+    </statement>
+    <statement id="d0_s6">
+      <text>sterile leaves straight or often curling.</text>
+      <biological_entity id="o18201" name="leaf" name_original="leaves" src="d0_s6" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s6" value="sterile" />
+        <character is_modifier="false" name="course" src="d0_s6" value="straight" />
+        <character is_modifier="false" modifier="often" name="course" src="d0_s6" value="curling" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Sporangia in 2 rows.</text>
+      <biological_entity id="o18202" name="sporangium" name_original="sporangia" src="d0_s7" type="structure" />
+      <biological_entity id="o18203" name="row" name_original="rows" src="d0_s7" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s7" value="2" />
+      </biological_entity>
+      <relation from="o18202" id="r4232" name="in" negation="false" src="d0_s7" to="o18203" />
+    </statement>
+    <statement id="d0_s8">
+      <text>Gametophytes growing mixed with mosses, green (photosynthetic), delicately filamentous, lacking hairs.</text>
+      <biological_entity id="o18205" name="hair" name_original="hairs" src="d0_s8" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s8" value="green" />
+        <character is_modifier="true" modifier="delicately" name="texture" src="d0_s8" value="filamentous" />
+        <character is_modifier="true" name="quantity" src="d0_s8" value="lacking" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>x = 77, 94, 103.</text>
+      <biological_entity id="o18204" name="gametophyte" name_original="gametophytes" src="d0_s8" type="structure">
+        <character constraint="with hairs" constraintid="o18205" is_modifier="false" name="arrangement" src="d0_s8" value="mixed" />
+      </biological_entity>
+      <biological_entity constraint="x" id="o18206" name="chromosome" name_original="" src="d0_s9" type="structure">
+        <character name="quantity" src="d0_s9" value="77" />
+        <character name="quantity" src="d0_s9" value="94" />
+        <character name="quantity" src="d0_s9" value="103" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>mainly tropical.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="mainly tropical" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <other_name type="common_name">Curly-grass fern</other_name>
+  <discussion>Species 10 (1 in the flora):</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_679_d1_s0">
+      <text>Fertile blades pinnate, segments arising along rachis on distal 3-10 mm;</text>
+      <biological_entity id="from_key_V2_679_o18919" name="blade" name_original="blades" src="d1_s0" type="structure">
+        <character is_modifier="true" name="reproduction" src="d1_s0" value="fertile" />
+        <character is_modifier="false" name="architecture_or_shape" src="d1_s0" value="pinnate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_679_o18920" name="segment" name_original="segments" src="d1_s0" type="structure">
+        <character constraint="along rachis" constraintid="o18921" is_modifier="false" name="orientation" src="d1_s0" value="arising" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_679_o18921" name="rachis" name_original="rachis" src="d1_s0" type="structure" />
+      <biological_entity constraint="distal" id="from_key_V2_679_o18922" name="segment" name_original="segments" src="d1_s0" type="structure">
+        <character char_type="range_value" from="3" from_unit="mm" name="some_measurement" src="d1_s0" to="10" to_unit="mm" />
+      </biological_entity>
+      <relation from="from_key_V2_679_o18921" id="from_key_V2_679_r4393" name="on" negation="false" src="d1_s0" to="from_key_V2_679_o18922" />
+    </statement>
+    <statement id="from_key_V2_679_d1_s1">
+      <text>sterile leaves curling.</text>
+      <biological_entity id="from_key_V2_679_o18923" name="leaf" name_original="leaves" src="d1_s1" type="structure">
+        <character is_modifier="true" name="reproduction" src="d1_s1" value="sterile" />
+        <character is_modifier="false" name="course" src="d1_s1" value="curling" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

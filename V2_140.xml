@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">pinus</taxon_name>
+    <taxon_name authority="Parry ex Carrière" date="1855" rank="species">torreyana</taxon_name>
+    <place_of_publication>
+      <place_in_publication>326. 1855</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family pinaceae;genus pinus;species torreyana</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Trees to 15 (-23) m;</text>
+      <biological_entity id="o1463" name="tree" name_original="trees" src="d0_s0" type="structure">
+        <character char_type="range_value" from="15" from_inclusive="false" from_unit="m" name="atypical_some_measurement" src="d0_s0" to="23" to_unit="m" />
+        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="15" to_unit="m" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>trunk to 1m diam., in nature mostly crooked and leaning;</text>
+      <biological_entity id="o1464" name="trunk" name_original="trunk" src="d0_s1" type="structure">
+        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="1" to_unit="m" />
+        <character is_modifier="false" name="orientation" src="d0_s1" value="leaning" />
+      </biological_entity>
+      <biological_entity id="o1465" name="nature" name_original="nature" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="mostly" name="course_or_orientation" src="d0_s1" value="crooked" />
+      </biological_entity>
+      <relation from="o1464" id="r326" name="in" negation="false" src="d0_s1" to="o1465" />
+    </statement>
+    <statement id="d0_s2">
+      <text>crown rounded to flattened or irregular.</text>
+      <biological_entity id="o1466" name="crown" name_original="crown" src="d0_s2" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s2" value="rounded" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s2" value="flattened" />
+        <character char_type="range_value" from="rounded" name="shape" src="d0_s2" to="flattened" />
+        <character is_modifier="false" name="architecture_or_course" src="d0_s2" value="irregular" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Bark redbrown to purple-red, deeply furrowed with irregular, elongate, flat, scaly ridges.</text>
+      <biological_entity id="o1467" name="bark" name_original="bark" src="d0_s3" type="structure">
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="redbrown" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="purple-red" />
+        <character char_type="range_value" from="redbrown" name="coloration" src="d0_s3" to="purple-red" />
+        <character constraint="with ridges" constraintid="o1468" is_modifier="false" modifier="deeply" name="architecture" src="d0_s3" value="furrowed" />
+      </biological_entity>
+      <biological_entity id="o1468" name="ridge" name_original="ridges" src="d0_s3" type="structure">
+        <character is_modifier="true" name="architecture_or_course" src="d0_s3" value="irregular" />
+        <character is_modifier="true" name="shape" src="d0_s3" value="elongate" />
+        <character is_modifier="true" name="prominence_or_shape" src="d0_s3" value="flat" />
+        <character is_modifier="true" name="architecture_or_pubescence" src="d0_s3" value="scaly" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Branches irregular, spreading-ascending, candelabralike;</text>
+      <biological_entity id="o1469" name="branch" name_original="branches" src="d0_s4" type="structure">
+        <character is_modifier="false" name="architecture_or_course" src="d0_s4" value="irregular" />
+        <character is_modifier="false" name="orientation" src="d0_s4" value="spreading-ascending" />
+        <character is_modifier="false" name="shape" src="d0_s4" value="candelabra-like" value_original="candelabralike" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>twigs stout (1-2cm thick), greenish, aging deep gray-brown to near black, rough.</text>
+      <biological_entity id="o1470" name="twig" name_original="twigs" src="d0_s5" type="structure">
+        <character is_modifier="false" name="fragility_or_size" src="d0_s5" value="stout" />
+        <character is_modifier="false" name="coloration" src="d0_s5" value="greenish" />
+        <character is_modifier="false" name="life_cycle" src="d0_s5" value="aging" />
+        <character is_modifier="false" name="depth" src="d0_s5" value="deep" />
+        <character constraint="near black" is_modifier="false" name="coloration" src="d0_s5" value="gray-brown" />
+        <character is_modifier="false" name="pubescence_or_relief" src="d0_s5" value="rough" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>Buds conic-ovoid, pale-brown, to 2.5cm;</text>
+      <biological_entity id="o1471" name="bud" name_original="buds" src="d0_s6" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s6" value="conic-ovoid" />
+        <character is_modifier="false" name="coloration" src="d0_s6" value="pale-brown" />
+        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s6" to="2.5" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>scale margins white-fringed.</text>
+      <biological_entity constraint="scale" id="o1472" name="margin" name_original="margins" src="d0_s7" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s7" value="white-fringed" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Leaves mostly 5 per fascicle, ascending or spreading, persisting 3-4 years, 15-30cm × ca. 2mm, straight or curved, slightly twisted, dull gray-green, all surfaces with fine stomatal lines, margins serrulate, apex abruptly acute;</text>
+      <biological_entity id="o1473" name="leaf" name_original="leaves" src="d0_s8" type="structure">
+        <character constraint="per fascicle" constraintid="o1474" name="quantity" src="d0_s8" value="5" />
+        <character is_modifier="false" name="orientation" src="d0_s8" value="ascending" />
+        <character is_modifier="false" name="orientation" src="d0_s8" value="spreading" />
+        <character is_modifier="false" name="duration" src="d0_s8" value="persisting" />
+        <character char_type="range_value" from="3" name="quantity" src="d0_s8" to="4" />
+        <character char_type="range_value" from="15" from_unit="cm" name="length" src="d0_s8" to="30" to_unit="cm" />
+        <character name="width" src="d0_s8" unit="mm" value="2" />
+        <character is_modifier="false" name="course" src="d0_s8" value="straight" />
+        <character is_modifier="false" name="course" src="d0_s8" value="curved" />
+        <character is_modifier="false" modifier="slightly" name="architecture" src="d0_s8" value="twisted" />
+        <character is_modifier="false" name="reflectance" src="d0_s8" value="dull" />
+        <character is_modifier="false" name="coloration" src="d0_s8" value="gray-green" />
+      </biological_entity>
+      <biological_entity id="o1474" name="fascicle" name_original="fascicle" src="d0_s8" type="structure" />
+      <biological_entity id="o1475" name="surface" name_original="surfaces" src="d0_s8" type="structure" />
+      <biological_entity id="o1476" name="stomatal" name_original="stomatal" src="d0_s8" type="structure">
+        <character is_modifier="true" name="width" src="d0_s8" value="fine" />
+      </biological_entity>
+      <biological_entity id="o1477" name="line" name_original="lines" src="d0_s8" type="structure">
+        <character is_modifier="true" name="width" src="d0_s8" value="fine" />
+      </biological_entity>
+      <biological_entity id="o1478" name="margin" name_original="margins" src="d0_s8" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s8" value="serrulate" />
+      </biological_entity>
+      <biological_entity id="o1479" name="apex" name_original="apex" src="d0_s8" type="structure">
+        <character is_modifier="false" modifier="abruptly" name="shape" src="d0_s8" value="acute" />
+      </biological_entity>
+      <relation from="o1475" id="r327" name="with" negation="false" src="d0_s8" to="o1476" />
+      <relation from="o1475" id="r328" name="with" negation="false" src="d0_s8" to="o1477" />
+    </statement>
+    <statement id="d0_s9">
+      <text>sheath to 2cm, shed early, base persistent.</text>
+      <biological_entity id="o1480" name="sheath" name_original="sheath" src="d0_s9" type="structure">
+        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s9" to="2" to_unit="cm" />
+        <character is_modifier="false" name="duration" src="d0_s9" value="persistent" />
+      </biological_entity>
+      <biological_entity id="o1481" name="base" name_original="base" src="d0_s9" type="structure" />
+      <relation from="o1480" id="r329" name="shed early" negation="false" src="d0_s9" to="o1481" />
+    </statement>
+    <statement id="d0_s10">
+      <text>Pollen cones ovoid, 20-30mm, yellow.</text>
+      <biological_entity constraint="pollen" id="o1482" name="cone" name_original="cones" src="d0_s10" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s10" value="ovoid" />
+        <character char_type="range_value" from="20" from_unit="mm" name="some_measurement" src="d0_s10" to="30" to_unit="mm" />
+        <character is_modifier="false" name="coloration" src="d0_s10" value="yellow" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>Seed-cones maturing in 3 years, shedding seeds soon thereafter, persisting to 5 years, lateral, massive, heavy, symmetric, ovoid before opening, broadly ovoid when open, 10-15cm, yellow to redbrown, lustrous, stalks to 4cm;</text>
+      <biological_entity id="o1483" name="cone-seed" name_original="seed-cones" src="d0_s11" type="structure">
+        <character constraint="in years" constraintid="o1484" is_modifier="false" name="life_cycle" src="d0_s11" value="maturing" />
+        <character constraint="to years" constraintid="o1486" is_modifier="false" name="duration" src="d0_s11" value="persisting" />
+        <character is_modifier="false" name="position" notes="" src="d0_s11" value="lateral" />
+        <character is_modifier="false" name="size" src="d0_s11" value="massive" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s11" value="symmetric" />
+        <character constraint="before opening" constraintid="o1487" is_modifier="false" name="shape" src="d0_s11" value="ovoid" />
+        <character is_modifier="false" modifier="when open" name="shape" notes="" src="d0_s11" value="ovoid" />
+        <character char_type="range_value" from="10" from_unit="cm" name="distance" src="d0_s11" to="15" to_unit="cm" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s11" value="yellow" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s11" value="redbrown" />
+        <character char_type="range_value" from="yellow" name="coloration" src="d0_s11" to="redbrown" />
+        <character is_modifier="false" name="reflectance" src="d0_s11" value="lustrous" />
+      </biological_entity>
+      <biological_entity id="o1484" name="year" name_original="years" src="d0_s11" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s11" value="3" />
+      </biological_entity>
+      <biological_entity id="o1485" name="seed" name_original="seeds" src="d0_s11" type="structure" />
+      <biological_entity id="o1486" name="year" name_original="years" src="d0_s11" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s11" value="5" />
+      </biological_entity>
+      <biological_entity id="o1487" name="opening" name_original="opening" src="d0_s11" type="structure" />
+      <biological_entity id="o1488" name="stalk" name_original="stalks" src="d0_s11" type="structure">
+        <character name="some_measurement" src="d0_s11" unit="cm" value="4" />
+      </biological_entity>
+      <relation from="o1483" id="r330" modifier="soon thereafter; thereafter" name="shedding" negation="false" src="d0_s11" to="o1485" />
+    </statement>
+    <statement id="d0_s12">
+      <text>apophyses thick, angulately dome-shaped, with 5 low convergent keels;</text>
+      <biological_entity id="o1489" name="apophysis" name_original="apophyses" src="d0_s12" type="structure">
+        <character is_modifier="false" name="width" src="d0_s12" value="thick" />
+        <character is_modifier="false" modifier="angulately" name="shape" src="d0_s12" value="dome--shaped" value_original="dome-shaped" />
+      </biological_entity>
+      <biological_entity id="o1490" name="keel" name_original="keels" src="d0_s12" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s12" value="5" />
+        <character is_modifier="true" name="position" src="d0_s12" value="low" />
+        <character is_modifier="true" name="arrangement" src="d0_s12" value="convergent" />
+      </biological_entity>
+      <relation from="o1489" id="r331" name="with" negation="false" src="d0_s12" to="o1490" />
+    </statement>
+    <statement id="d0_s13">
+      <text>umbo central, forming short, curved-tipped pyramid.</text>
+      <biological_entity id="o1491" name="umbo" name_original="umbo" src="d0_s13" type="structure">
+        <character is_modifier="false" name="position" src="d0_s13" value="central" />
+      </biological_entity>
+      <biological_entity id="o1492" name="pyramid" name_original="pyramid" src="d0_s13" type="structure">
+        <character is_modifier="true" name="height_or_length_or_size" src="d0_s13" value="short" />
+        <character is_modifier="true" name="architecture" src="d0_s13" value="curved-tipped" />
+      </biological_entity>
+      <relation from="o1491" id="r332" name="forming" negation="false" src="d0_s13" to="o1492" />
+    </statement>
+    <statement id="d0_s14">
+      <text>Seeds narrowly obovoid;</text>
+      <biological_entity id="o1493" name="seed" name_original="seeds" src="d0_s14" type="structure">
+        <character is_modifier="false" modifier="narrowly" name="shape" src="d0_s14" value="obovoid" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s15">
+      <text>body 16-24mm, brown, apically dark-brown;</text>
+      <biological_entity id="o1494" name="body" name_original="body" src="d0_s15" type="structure">
+        <character char_type="range_value" from="16" from_unit="mm" name="some_measurement" src="d0_s15" to="24" to_unit="mm" />
+        <character is_modifier="false" name="coloration" src="d0_s15" value="brown" />
+        <character is_modifier="false" modifier="apically" name="coloration" src="d0_s15" value="dark-brown" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s16">
+      <text>wing broad, oblique-tipped, to 15mm.</text>
+      <biological_entity id="o1495" name="wing" name_original="wing" src="d0_s16" type="structure">
+        <character is_modifier="false" name="width" src="d0_s16" value="broad" />
+        <character is_modifier="false" name="architecture" src="d0_s16" value="oblique-tipped" />
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s16" to="15" to_unit="mm" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>only in the flora.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="only in the flora" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>31</number>
+  <other_name type="common_name">Torrey pine</other_name>
+  <discussion>Pinus torreyana is a rare and local Tertiary relic species whose present range is reduced to two small areas of southern California: near Del Mar (San Diego County) and on the northeastern shore of Santa Rosa Island (Santa Barbara County). Its distribution in Oligocene and Miocene (or at least that of its near ancestor) extended north to Oregon. Its harsh natural habitat elicits an unusually contorted and often sparse form, quite unlike the cleaner and taller form the species takes in cultivation.</discussion>
+  <discussion>In terms of numbers of individuals in the wild, as well as the small area occupied by natural populations, Pinus torreyana is without a doubt the rarest North American pine. As such it is under protection. Artificial crosses between it and another, more widespread Tertiary relic, P . sabiniana , have been successful.</discussion>
+  <discussion>Subspecies 2:</discussion>
+  <references>
+    <reference>Haller, J.R. 1986. Taxonomy and relationships of the mainland and island populations of  Pinus torreyana  (Pinaceae). Syst. Bot. 11: 39--50.</reference>
+  </references>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d1_s0">
+          <text>Crown of sheltered tree narrower than height of mature tree, open with well-spaced branches in natural sites;</text>
+          <biological_entity id="o1496" name="crown" name_original="crown" src="d1_s0" type="structure">
+            <character constraint="than of height mature tree" constraintid="" is_modifier="false" name="width" src="d1_s0" value="narrower" />
+            <character constraint="with branches" constraintid="o1497" is_modifier="false" modifier="of sheltered tree" name="architecture" src="d1_s0" value="open" />
+          </biological_entity>
+          <biological_entity id="o1497" name="branch" name_original="branches" src="d1_s0" type="structure">
+            <character is_modifier="true" name="arrangement" src="d1_s0" value="well-spaced" />
+          </biological_entity>
+          <biological_entity id="o1498" name="site" name_original="sites" src="d1_s0" type="structure">
+            <character is_modifier="true" name="location" src="d1_s0" value="natural" />
+          </biological_entity>
+          <relation from="o1497" id="r333" name="in" negation="false" src="d1_s0" to="o1498" />
+        </statement>
+        <statement id="d1_s1">
+          <text>seed-cones less than 13.5 cm broad, as broad as long or longer;</text>
+          <biological_entity id="o1499" name="seed-cone" name_original="seed-cones" src="d1_s1" type="structure">
+            <character char_type="range_value" from="0" from_unit="cm" name="width" src="d1_s1" to="13.5" to_unit="cm" />
+            <character is_modifier="false" name="length_or_size" src="d1_s1" value="long" />
+            <character is_modifier="false" name="length_or_size" src="d1_s1" value="longer" />
+          </biological_entity>
+        </statement>
+        <statement id="d1_s2">
+          <text>only tip of umbo curved outward;</text>
+          <biological_entity id="o1501" name="umbo" name_original="umbo" src="d1_s2" type="structure" />
+          <relation from="o1500" id="r334" name="part_of" negation="false" src="d1_s2" to="o1501" />
+        </statement>
+        <statement id="d1_s3">
+          <text>maximum seed width ca. 12 mm.</text>
+          <biological_entity id="o1500" name="tip" name_original="tip" src="d1_s2" type="structure" constraint="umbo">
+            <character is_modifier="false" name="course" src="d1_s2" value="curved" />
+          </biological_entity>
+          <biological_entity id="o1502" name="seed" name_original="seed" src="d1_s3" type="structure">
+            <character name="width" src="d1_s3" unit="mm" value="12" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>31a subsp. torreyana</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d2_s0">
+          <text>Crown of sheltered tree broader than height of mature tree, compact in natural sites;</text>
+          <biological_entity id="o1503" name="crown" name_original="crown" src="d2_s0" type="structure">
+            <character constraint="than of height mature tree" constraintid="" is_modifier="false" name="width" src="d2_s0" value="broader" />
+            <character constraint="in sites" constraintid="o1504" is_modifier="false" modifier="of sheltered tree" name="architecture_or_arrangement" src="d2_s0" value="compact" />
+          </biological_entity>
+          <biological_entity id="o1504" name="site" name_original="sites" src="d2_s0" type="structure">
+            <character is_modifier="true" name="location" src="d2_s0" value="natural" />
+          </biological_entity>
+        </statement>
+        <statement id="d2_s1">
+          <text>seed-cones mostly more than 13.5 cm broad, broader than long;</text>
+          <biological_entity id="o1505" name="seed-cone" name_original="seed-cones" src="d2_s1" type="structure">
+            <character char_type="range_value" from="13.5" from_unit="cm" name="width" src="d2_s1" upper_restricted="false" />
+            <character is_modifier="false" name="width" src="d2_s1" value="broader than long" />
+          </biological_entity>
+        </statement>
+        <statement id="d2_s2">
+          <text>entire umbo curved outward;</text>
+        </statement>
+        <statement id="d2_s3">
+          <text>maximum seed width ca. 14 mm.</text>
+          <biological_entity id="o1506" name="umbo" name_original="umbo" src="d2_s2" type="structure">
+            <character is_modifier="true" name="architecture_or_shape" src="d2_s2" value="entire" />
+            <character is_modifier="false" name="course" src="d2_s2" value="curved" />
+          </biological_entity>
+          <biological_entity id="o1507" name="seed" name_original="seed" src="d2_s3" type="structure">
+            <character name="width" src="d2_s3" unit="mm" value="14" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>31b subsp. insularis</determination>
+    </key_statement>
+  </key>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_140_d1_s0">
+      <text>Crown of sheltered tree narrower than height of mature tree, open with well-spaced branches in natural sites;</text>
+      <biological_entity id="from_key_V2_140_o1496" name="crown" name_original="crown" src="d1_s0" type="structure">
+        <character constraint="than of height mature tree" constraintid="" is_modifier="false" name="width" src="d1_s0" value="narrower" />
+        <character constraint="with branches" constraintid="o1497" is_modifier="false" modifier="of sheltered tree" name="architecture" src="d1_s0" value="open" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_140_o1497" name="branch" name_original="branches" src="d1_s0" type="structure">
+        <character is_modifier="true" name="arrangement" src="d1_s0" value="well-spaced" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_140_o1498" name="site" name_original="sites" src="d1_s0" type="structure">
+        <character is_modifier="true" name="location" src="d1_s0" value="natural" />
+      </biological_entity>
+      <relation from="from_key_V2_140_o1497" id="from_key_V2_140_r333" name="in" negation="false" src="d1_s0" to="from_key_V2_140_o1498" />
+    </statement>
+    <statement id="from_key_V2_140_d1_s1">
+      <text>seed-cones less than 13.5 cm broad, as broad as long or longer;</text>
+      <biological_entity id="from_key_V2_140_o1499" name="seed-cone" name_original="seed-cones" src="d1_s1" type="structure">
+        <character char_type="range_value" from="0" from_unit="cm" name="width" src="d1_s1" to="13.5" to_unit="cm" />
+        <character is_modifier="false" name="length_or_size" src="d1_s1" value="long" />
+        <character is_modifier="false" name="length_or_size" src="d1_s1" value="longer" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_140_d1_s2">
+      <text>only tip of umbo curved outward;</text>
+      <biological_entity id="from_key_V2_140_o1501" name="umbo" name_original="umbo" src="d1_s2" type="structure" />
+      <relation from="from_key_V2_140_o1500" id="from_key_V2_140_r334" name="part_of" negation="false" src="d1_s2" to="from_key_V2_140_o1501" />
+    </statement>
+    <statement id="from_key_V2_140_d1_s3">
+      <text>maximum seed width ca. 12 mm.</text>
+      <biological_entity id="from_key_V2_140_o1500" name="tip" name_original="tip" src="d1_s2" type="structure">
+        <character is_modifier="false" name="course" src="d1_s2" value="curved" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_140_o1502" name="seed" name_original="seed" src="d1_s3" type="structure">
+        <character name="width" src="d1_s3" unit="mm" value="12" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_140_d2_s0">
+      <text>Crown of sheltered tree broader than height of mature tree, compact in natural sites;</text>
+      <biological_entity id="from_key_V2_140_o1503" name="crown" name_original="crown" src="d2_s0" type="structure">
+        <character constraint="than of height mature tree" constraintid="" is_modifier="false" name="width" src="d2_s0" value="broader" />
+        <character constraint="in sites" constraintid="o1504" is_modifier="false" modifier="of sheltered tree" name="architecture_or_arrangement" src="d2_s0" value="compact" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_140_o1504" name="site" name_original="sites" src="d2_s0" type="structure">
+        <character is_modifier="true" name="location" src="d2_s0" value="natural" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_140_d2_s1">
+      <text>seed-cones mostly more than 13.5 cm broad, broader than long;</text>
+      <biological_entity id="from_key_V2_140_o1505" name="seed-cone" name_original="seed-cones" src="d2_s1" type="structure">
+        <character char_type="range_value" from="13.5" from_unit="cm" name="width" src="d2_s1" upper_restricted="false" />
+        <character is_modifier="false" name="width" src="d2_s1" value="broader than long" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_140_d2_s2">
+      <text>entire umbo curved outward;</text>
+    </statement>
+    <statement id="from_key_V2_140_d2_s3">
+      <text>maximum seed width ca. 14 mm.</text>
+      <biological_entity id="from_key_V2_140_o1506" name="umbo" name_original="umbo" src="d2_s2" type="structure">
+        <character is_modifier="true" name="architecture_or_shape" src="d2_s2" value="entire" />
+        <character is_modifier="false" name="course" src="d2_s2" value="curved" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_140_o1507" name="seed" name_original="seed" src="d2_s3" type="structure">
+        <character name="width" src="d2_s3" unit="mm" value="14" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Michaux ex DeCandolle" date="unknown" rank="family">equisetaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">equisetum</taxon_name>
+    <taxon_name authority="Desfontaines" date="1799" rank="species">ramosissimum</taxon_name>
+    <taxon_name authority="Desfontaines" date="unknown" rank="subspecies">ramosissimum</taxon_name>
+    <taxon_hierarchy>family equisetaceae;genus equisetum;species ramosissimum;subspecies ramosissimum</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Aerial stems persisting more than a year, regularly branched, 32-250 cm;</text>
+      <biological_entity id="o7724" name="stem" name_original="stems" src="d0_s0" type="structure">
+        <character is_modifier="true" name="location" src="d0_s0" value="aerial" />
+        <character is_modifier="false" name="duration" src="d0_s0" value="persisting" />
+        <character is_modifier="false" modifier="regularly" name="architecture" src="d0_s0" value="branched" />
+        <character char_type="range_value" from="32" from_unit="cm" name="some_measurement" src="d0_s0" to="250" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>lines of stomates occasionally doubled;</text>
+      <biological_entity id="o7725" name="line" name_original="lines" src="d0_s1" type="structure" />
+      <biological_entity id="o7726" name="stomate" name_original="stomates" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="occasionally" name="quantity" src="d0_s1" value="doubled" />
+      </biological_entity>
+      <relation from="o7725" id="r1806" name="consist_of" negation="false" src="d0_s1" to="o7726" />
+    </statement>
+    <statement id="d0_s2">
+      <text>ridges 10-16.</text>
+      <biological_entity id="o7727" name="ridge" name_original="ridges" src="d0_s2" type="structure">
+        <character char_type="range_value" from="10" name="quantity" src="d0_s2" to="16" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Sheaths greatly elongate, 8-12 × 3-6 mm;</text>
+      <biological_entity id="o7728" name="sheath" name_original="sheaths" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="greatly" name="shape" src="d0_s3" value="elongate" />
+        <character char_type="range_value" from="8" from_unit="mm" name="length" src="d0_s3" to="12" to_unit="mm" />
+        <character char_type="range_value" from="3" from_unit="mm" name="width" src="d0_s3" to="6" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>proximal sheaths brown with darker girdle, distal sheaths green;</text>
+      <biological_entity constraint="proximal" id="o7729" name="sheath" name_original="sheaths" src="d0_s4" type="structure">
+        <character constraint="with girdle" constraintid="o7730" is_modifier="false" name="coloration" src="d0_s4" value="brown" />
+      </biological_entity>
+      <biological_entity id="o7730" name="girdle" name_original="girdle" src="d0_s4" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s4" value="darker" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="o7731" name="sheath" name_original="sheaths" src="d0_s4" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s4" value="green" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>teeth 10-16, not articulate but often thin and drying.</text>
+      <biological_entity id="o7732" name="tooth" name_original="teeth" src="d0_s5" type="structure">
+        <character char_type="range_value" from="10" name="quantity" src="d0_s5" to="16" />
+        <character is_modifier="false" modifier="not" name="architecture" src="d0_s5" value="articulate" />
+        <character is_modifier="false" modifier="often" name="width" src="d0_s5" value="thin" />
+        <character is_modifier="false" name="condition" src="d0_s5" value="drying" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>Cones pointed at their apex;</text>
+      <biological_entity id="o7733" name="cone" name_original="cones" src="d0_s6" type="structure">
+        <character constraint="at apex" constraintid="o7734" is_modifier="false" name="shape" src="d0_s6" value="pointed" />
+      </biological_entity>
+      <biological_entity id="o7734" name="apex" name_original="apex" src="d0_s6" type="structure" />
+    </statement>
+    <statement id="d0_s7">
+      <text>spores green, spheric.</text>
+      <biological_entity id="o7735" name="spore" name_original="spores" src="d0_s7" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s7" value="green" />
+        <character is_modifier="false" name="shape" src="d0_s7" value="spheric" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Cones maturing in summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="cones maturing time" value="summer" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Moist sandy or clay areas;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="moist sandy or clay areas" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0--100 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="100" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>introduced; Fla., La., N.C.; s,c Europe; Asia; Africa.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="introduced" />
+        <character name="distribution" value="s" establishment_means="native" />
+        <character name="distribution" value="c Europe" establishment_means="native" />
+        <character name="distribution" value="Asia" establishment_means="native" />
+        <character name="distribution" value="Africa" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>8a</number>
+  <discussion>Equisetum ramosissimum subsp. ramosissimum apparently was introduced from Europe with ballast (R.L. Hauke 1979). Equisetum ramosissimum subsp. debile (Roxburgh) Hauke occurs in southeast Asia and the southern Pacific Islands. Where the ranges of the two subspecies overlap, fertile, morphologically intermediate individuals are found (R. L. Hauke 1963).</discussion>
+</bio:treatment>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Willkomm in Willkomm &amp; Lange" date="unknown" rank="family">selaginellaceae</taxon_name>
+    <taxon_name authority="Palisot de Beauvois" date="1805" rank="genus">selaginella</taxon_name>
+    <taxon_name authority="(Palisot de Beauvois) Baker" date="1883" rank="subgenus">stachygynandrum</taxon_name>
+    <taxon_name authority="(Hooker &amp; Greville) Spring in Martius et al." date="1840" rank="species">lepidophylla</taxon_name>
+    <place_of_publication>
+      <publication_title>in Martius et al.,Fl. Bras.</publication_title>
+      <place_in_publication>1(2): 126. 1840</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family selaginellaceae;genus selaginella;subgenus stachygynandrum;species lepidophylla</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Lycopodium</taxon_name>
+    <taxon_name authority="Hooker &amp; Greville" date="unknown" rank="species">lepidophyllum</taxon_name>
+    <place_of_publication>
+      <publication_title>Icon. Filic.</publication_title>
+      <place_in_publication>2(9): 162. 1830</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Lycopodium;species lepidophyllum;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants terrestrial or on rock, forming rosettes.</text>
+      <biological_entity id="o4357" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="terrestrial" />
+        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="on rock" />
+      </biological_entity>
+      <biological_entity id="o4358" name="rock" name_original="rock" src="d0_s0" type="structure" />
+      <biological_entity id="o4359" name="rosette" name_original="rosettes" src="d0_s0" type="structure" />
+      <relation from="o4357" id="r1020" name="on" negation="false" src="d0_s0" to="o4358" />
+      <relation from="o4357" id="r1021" name="forming" negation="false" src="d0_s0" to="o4359" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Main (central) stem spirally compact, branched, branches 2-3-forked, prostrate, flat when moist, curling inward when dry (ball-like), not articulate, weakly puberulent.</text>
+      <biological_entity constraint="main" id="o4360" name="stem" name_original="stem" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="spirally" name="architecture_or_arrangement" src="d0_s1" value="compact" />
+        <character is_modifier="false" name="architecture" src="d0_s1" value="branched" />
+      </biological_entity>
+      <biological_entity id="o4361" name="branch" name_original="branches" src="d0_s1" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s1" value="2-3-forked" />
+        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="prostrate" />
+        <character is_modifier="false" modifier="when moist" name="prominence_or_shape" src="d0_s1" value="flat" />
+        <character is_modifier="false" modifier="when dry" name="course" src="d0_s1" value="curling" />
+        <character is_modifier="false" modifier="not" name="architecture" src="d0_s1" value="articulate" />
+        <character is_modifier="false" modifier="weakly" name="pubescence" src="d0_s1" value="puberulent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Rhizophores borne on upperside of stems, restricted to basal part of rosette, 0.3-0.5 mm diam.</text>
+      <biological_entity id="o4362" name="rhizophore" name_original="rhizophores" src="d0_s2" type="structure">
+        <character char_type="range_value" from="0.3" from_unit="mm" name="diameter" notes="" src="d0_s2" to="0.5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o4363" name="upperside" name_original="upperside" src="d0_s2" type="structure" />
+      <biological_entity id="o4364" name="stem" name_original="stems" src="d0_s2" type="structure" />
+      <biological_entity constraint="basal" id="o4365" name="part" name_original="part" src="d0_s2" type="structure" />
+      <biological_entity id="o4366" name="rosette" name_original="rosette" src="d0_s2" type="structure" />
+      <relation from="o4362" id="r1022" name="borne on" negation="false" src="d0_s2" to="o4363" />
+      <relation from="o4362" id="r1023" name="part_of" negation="false" src="d0_s2" to="o4364" />
+      <relation from="o4362" id="r1024" name="restricted to" negation="false" src="d0_s2" to="o4365" />
+      <relation from="o4365" id="r1025" name="part_of" negation="false" src="d0_s2" to="o4366" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Leaves thick and stiff.</text>
+      <biological_entity id="o4367" name="leaf" name_original="leaves" src="d0_s3" type="structure">
+        <character is_modifier="false" name="width" src="d0_s3" value="thick" />
+        <character is_modifier="false" name="fragility" src="d0_s3" value="stiff" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Lateral leaves yellow to reddish on abaxial surface, green on adaxial surface, overlapping, ascending, deltate to deltate-ovate, 2-2.2 X (1-) 1.7-1.8 mm;</text>
+      <biological_entity constraint="lateral" id="o4368" name="leaf" name_original="leaves" src="d0_s4" type="structure">
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s4" value="yellow" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s4" value="reddish" />
+        <character char_type="range_value" constraint="on abaxial surface" constraintid="o4369" from="yellow" name="coloration" src="d0_s4" to="reddish" />
+        <character constraint="on adaxial surface" constraintid="o4370" is_modifier="false" name="coloration" notes="" src="d0_s4" value="green" />
+        <character is_modifier="false" name="arrangement" notes="" src="d0_s4" value="overlapping" />
+        <character is_modifier="false" name="orientation" src="d0_s4" value="ascending" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="deltate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="deltate-ovate" />
+        <character char_type="range_value" from="deltate" name="shape" src="d0_s4" to="deltate-ovate" />
+      </biological_entity>
+      <biological_entity constraint="abaxial" id="o4369" name="surface" name_original="surface" src="d0_s4" type="structure" />
+      <biological_entity constraint="adaxial" id="o4370" name="surface" name_original="surface" src="d0_s4" type="structure" />
+    </statement>
+    <statement id="d0_s5">
+      <text>base nearly cordate, pubescent;</text>
+      <biological_entity id="o4371" name="base" name_original="base" src="d0_s5" type="structure">
+        <character is_modifier="false" modifier="nearly" name="shape" src="d0_s5" value="cordate" />
+        <character is_modifier="false" name="pubescence" src="d0_s5" value="pubescent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>margins transparent, ciliate toward base, dentate to ciliate toward apex;</text>
+      <biological_entity id="o4372" name="margin" name_original="margins" src="d0_s6" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s6" value="transparent" />
+        <character constraint="toward base" constraintid="o4373" is_modifier="false" name="architecture_or_pubescence_or_shape" src="d0_s6" value="ciliate" />
+        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s6" value="dentate" />
+        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s6" value="ciliate" />
+        <character char_type="range_value" constraint="toward apex" constraintid="o4374" from="dentate" name="architecture" notes="" src="d0_s6" to="ciliate" />
+      </biological_entity>
+      <biological_entity id="o4373" name="base" name_original="base" src="d0_s6" type="structure" />
+      <biological_entity id="o4374" name="apex" name_original="apex" src="d0_s6" type="structure" />
+    </statement>
+    <statement id="d0_s7">
+      <text>apex rounded.</text>
+      <biological_entity id="o4375" name="apex" name_original="apex" src="d0_s7" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s7" value="rounded" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Median leaves broadly ovate, 1.5-1.7 X 1.4-1.5 mm;</text>
+      <biological_entity constraint="median" id="o4376" name="leaf" name_original="leaves" src="d0_s8" type="structure">
+        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s8" value="ovate" />
+        <character char_type="range_value" from="1.5" from_unit="mm" name="length" src="d0_s8" to="1.7" to_unit="mm" />
+        <character char_type="range_value" from="1.4" from_unit="mm" name="width" src="d0_s8" to="1.5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>base nearly cordate to truncate, pubescent;</text>
+      <biological_entity id="o4377" name="base" name_original="base" src="d0_s9" type="structure">
+        <character is_modifier="false" modifier="nearly" name="shape" notes="[duplicate value]" src="d0_s9" value="cordate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="truncate" />
+        <character char_type="range_value" from="nearly cordate" name="shape" src="d0_s9" to="truncate" />
+        <character is_modifier="false" name="pubescence" src="d0_s9" value="pubescent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>margins transparent, ciliate toward base, dentate to ciliate toward apex;</text>
+      <biological_entity id="o4378" name="margin" name_original="margins" src="d0_s10" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s10" value="transparent" />
+        <character constraint="toward base" constraintid="o4379" is_modifier="false" name="architecture_or_pubescence_or_shape" src="d0_s10" value="ciliate" />
+        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s10" value="dentate" />
+        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s10" value="ciliate" />
+        <character char_type="range_value" constraint="toward apex" constraintid="o4380" from="dentate" name="architecture" notes="" src="d0_s10" to="ciliate" />
+      </biological_entity>
+      <biological_entity id="o4379" name="base" name_original="base" src="d0_s10" type="structure" />
+      <biological_entity id="o4380" name="apex" name_original="apex" src="d0_s10" type="structure" />
+    </statement>
+    <statement id="d0_s11">
+      <text>apex abruptly acuminate (short-cuspidate) to obtuse.</text>
+      <biological_entity id="o4381" name="apex" name_original="apex" src="d0_s11" type="structure">
+        <character is_modifier="false" modifier="abruptly" name="shape" notes="[duplicate value]" src="d0_s11" value="acuminate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s11" value="obtuse" />
+        <character char_type="range_value" from="abruptly acuminate" name="shape" src="d0_s11" to="obtuse" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s12">
+      <text>Strobili solitary, 3-12 mm;</text>
+      <biological_entity id="o4382" name="strobilus" name_original="strobili" src="d0_s12" type="structure">
+        <character is_modifier="false" name="architecture_or_arrangement_or_growth_form" src="d0_s12" value="solitary" />
+        <character char_type="range_value" from="3" from_unit="mm" name="some_measurement" src="d0_s12" to="12" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s13">
+      <text>sporophylls monomorphic, deltate-ovate, slightly keeled, keel not dentate, base pubescent, margins transparent, short-ciliate at base, denticulate toward apex, apex acuminate to acute.</text>
+      <biological_entity id="o4383" name="sporophyll" name_original="sporophylls" src="d0_s13" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s13" value="monomorphic" />
+        <character is_modifier="false" name="shape" src="d0_s13" value="deltate-ovate" />
+        <character is_modifier="false" modifier="slightly" name="shape" src="d0_s13" value="keeled" />
+      </biological_entity>
+      <biological_entity id="o4384" name="keel" name_original="keel" src="d0_s13" type="structure">
+        <character is_modifier="false" modifier="not" name="architecture_or_shape" src="d0_s13" value="dentate" />
+      </biological_entity>
+      <biological_entity id="o4385" name="base" name_original="base" src="d0_s13" type="structure">
+        <character is_modifier="false" name="pubescence" src="d0_s13" value="pubescent" />
+      </biological_entity>
+      <biological_entity id="o4386" name="margin" name_original="margins" src="d0_s13" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s13" value="transparent" />
+        <character constraint="at base" constraintid="o4387" is_modifier="false" name="architecture_or_pubescence_or_shape" src="d0_s13" value="short-ciliate" />
+        <character constraint="toward apex" constraintid="o4388" is_modifier="false" name="shape" notes="" src="d0_s13" value="denticulate" />
+      </biological_entity>
+      <biological_entity id="o4387" name="base" name_original="base" src="d0_s13" type="structure" />
+      <biological_entity id="o4388" name="apex" name_original="apex" src="d0_s13" type="structure" />
+      <biological_entity id="o4389" name="apex" name_original="apex" src="d0_s13" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s13" value="acuminate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s13" value="acute" />
+        <character char_type="range_value" from="acuminate" name="shape" src="d0_s13" to="acute" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Dry places on rocky soil or on limestone talus;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="dry places on rocky soil or on limestone talus" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>900--2000 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="2000" to_unit="m" from="900" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>N.Mex., Tex.; Mexico.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
+        <character name="distribution" value="Mexico" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>29</number>
+  <other_name type="common_name">Resurrection plant</other_name>
+  <discussion>Selaginella lepidophylla is sold as a commonly grown house plant and is cultivated in greenhouses. When dry, lateral branches of desiccated plants curl inward; upon rehydration, they uncurl and resume normal growth, even after years of being dry. Among the species in the flora, it is allied to S . pilifera .</discussion>
+  <discussion type="conservation">of conservation concern</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_812_d5_s0">
+      <text>Median leaves ovate-deltate to deltate, apex acuminate;</text>
+      <biological_entity constraint="median" id="from_key_V2_812_o23744" name="leaf" name_original="leaves" src="d5_s0" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d5_s0" value="ovate-deltate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d5_s0" value="deltate" />
+        <character char_type="range_value" from="ovate-deltate" name="shape" src="d5_s0" to="deltate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_812_o23745" name="apex" name_original="apex" src="d5_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d5_s0" value="acuminate" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_812_d5_s1">
+      <text>margins with wide transparent portion, ciliate at base and dentate or ciliate toward apex;</text>
+      <biological_entity id="from_key_V2_812_o23746" name="margin" name_original="margins" src="d5_s1" type="structure">
+        <character constraint="at base" constraintid="o23748" is_modifier="false" name="architecture_or_pubescence_or_shape" notes="alterIDs:o23747" src="d5_s1" value="ciliate" />
+        <character is_modifier="false" name="architecture" src="d5_s1" value="dentate" />
+        <character constraint="toward apex" constraintid="o23749" is_modifier="false" name="architecture" src="d5_s1" value="ciliate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_812_o23747" name="portion" name_original="portion" src="d5_s1" type="structure">
+        <character is_modifier="true" name="width" src="d5_s1" value="wide" />
+        <character is_modifier="true" name="coloration" src="d5_s1" value="transparent" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_812_o23748" name="base" name_original="base" src="d5_s1" type="structure" />
+      <biological_entity id="from_key_V2_812_o23749" name="apex" name_original="apex" src="d5_s1" type="structure" />
+      <relation from="from_key_V2_812_o23746" id="from_key_V2_812_r5547" name="with" negation="false" src="d5_s1" to="from_key_V2_812_o23747" />
+    </statement>
+    <statement id="from_key_V2_812_d5_s2">
+      <text>base nearly cordate.</text>
+      <biological_entity id="from_key_V2_812_o23750" name="base" name_original="base" src="d5_s2" type="structure">
+        <character is_modifier="false" modifier="nearly" name="shape" src="d5_s2" value="cordate" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_812_d3_s0">
+      <text>Stems tufted, curling inward when dry, rosette-forming;</text>
+      <biological_entity id="from_key_V2_812_o23737" name="stem" name_original="stems" src="d3_s0" type="structure">
+        <character is_modifier="false" name="arrangement_or_pubescence" src="d3_s0" value="tufted" />
+        <character is_modifier="false" modifier="when dry" name="course" src="d3_s0" value="curling" />
+        <character is_modifier="false" name="growth_form" src="d3_s0" value="rosette-forming" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_812_d3_s1">
+      <text>leaves thick and stiff;</text>
+    </statement>
+    <statement id="from_key_V2_812_d3_s2">
+      <text>growing in seasonally dry and exposed areas.</text>
+      <biological_entity id="from_key_V2_812_o23738" name="leaf" name_original="leaves" src="d3_s1" type="structure">
+        <character is_modifier="false" name="width" src="d3_s1" value="thick" />
+        <character is_modifier="false" name="fragility" src="d3_s1" value="stiff" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_812_o23739" name="area" name_original="areas" src="d3_s2" type="structure">
+        <character is_modifier="true" modifier="seasonally" name="condition_or_texture" src="d3_s2" value="dry" />
+        <character is_modifier="true" name="prominence" src="d3_s2" value="exposed" />
+      </biological_entity>
+      <relation from="from_key_V2_812_o23738" id="from_key_V2_812_r5545" name="growing in" negation="false" src="d3_s2" to="from_key_V2_812_o23739" />
+    </statement>
+    <statement id="from_key_V2_812_d2_s0">
+      <text>Stems not articulate;</text>
+      <biological_entity id="from_key_V2_812_o23728" name="stem" name_original="stems" src="d2_s0" type="structure">
+        <character is_modifier="false" modifier="not" name="architecture" src="d2_s0" value="articulate" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_812_d2_s1">
+      <text>rhizophores on underside of stems, axillary, or seldom on upperside (S. lepidophylla);</text>
+      <biological_entity id="from_key_V2_812_o23729" name="rhizophore" name_original="rhizophores" src="d2_s1" type="structure">
+        <character is_modifier="false" name="position" notes="alterIDs:o23730" src="d2_s1" value="axillary" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_812_o23730" name="underside" name_original="underside" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_812_o23731" name="stem" name_original="stems" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_812_o23732" name="upperside" name_original="upperside" src="d2_s1" type="structure" />
+      <relation from="from_key_V2_812_o23729" id="from_key_V2_812_r5541" name="on" negation="false" src="d2_s1" to="from_key_V2_812_o23730" />
+      <relation from="from_key_V2_812_o23730" id="from_key_V2_812_r5542" name="part_of" negation="false" src="d2_s1" to="from_key_V2_812_o23731" />
+      <relation from="from_key_V2_812_o23729" id="from_key_V2_812_r5543" modifier="seldom" name="on" negation="false" src="d2_s1" to="from_key_V2_812_o23732" />
+    </statement>
+    <statement id="from_key_V2_812_d2_s2">
+      <text>strobili with many megasporangia, megasporangia basal or throughout length of strobilus;</text>
+      <biological_entity id="from_key_V2_812_o23733" name="strobilus" name_original="strobili" src="d2_s2" type="structure" />
+      <biological_entity id="from_key_V2_812_o23734" name="strobilus" name_original="strobilus" src="d2_s2" type="structure">
+        <character is_modifier="true" name="character" src="d2_s2" value="length" />
+      </biological_entity>
+      <relation from="from_key_V2_812_o23733" id="from_key_V2_812_r5544" name="with many megasporangia , megasporangia basal or throughout" negation="false" src="d2_s2" to="from_key_V2_812_o23734" />
+    </statement>
+    <statement id="from_key_V2_812_d2_s3">
+      <text>megasporophylls and microsporophylls similar (except in S. apoda complex).</text>
+      <biological_entity id="from_key_V2_812_o23735" name="megasporophyll" name_original="megasporophylls" src="d2_s3" type="structure" />
+      <biological_entity id="from_key_V2_812_o23736" name="microsporophyll" name_original="microsporophylls" src="d2_s3" type="structure" />
+    </statement>
+  </description>
+</bio:treatment>

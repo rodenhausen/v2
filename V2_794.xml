@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Martius" date="unknown" rank="family">hymenophyllaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">trichomanes</taxon_name>
+    <taxon_name authority="Kunze" date="1845" rank="species">holopterum</taxon_name>
+    <place_of_publication>
+      <publication_title>Farrnkräuter</publication_title>
+      <place_in_publication>1: 185. 1845</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family hymenophyllaceae;genus trichomanes;species holopterum</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants epiphytic.</text>
+      <biological_entity id="o23106" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="false" name="habitat" src="d0_s0" value="epiphytic" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Stems erect, slender, bearing clustered leaves and numerous, slender, wiry roots, clothed at apices with dark, multicellular, gland-tipped hairs.</text>
+      <biological_entity id="o23107" name="stem" name_original="stems" src="d0_s1" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s1" value="erect" />
+        <character is_modifier="false" name="size" src="d0_s1" value="slender" />
+      </biological_entity>
+      <biological_entity id="o23108" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character is_modifier="true" name="arrangement_or_growth_form" src="d0_s1" value="clustered" />
+      </biological_entity>
+      <biological_entity id="o23109" name="root" name_original="roots" src="d0_s1" type="structure">
+        <character is_modifier="true" name="arrangement_or_growth_form" src="d0_s1" value="clustered" />
+        <character is_modifier="true" name="quantity" src="d0_s1" value="numerous" />
+        <character is_modifier="true" name="size" src="d0_s1" value="slender" />
+        <character is_modifier="true" name="architecture" src="d0_s1" value="wiry" />
+      </biological_entity>
+      <biological_entity id="o23110" name="apex" name_original="apices" src="d0_s1" type="structure" />
+      <biological_entity id="o23111" name="hair" name_original="hairs" src="d0_s1" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s1" value="dark" />
+        <character is_modifier="true" name="architecture" src="d0_s1" value="multicellular" />
+        <character is_modifier="true" name="architecture" src="d0_s1" value="gland-tipped" />
+      </biological_entity>
+      <relation from="o23107" id="r5405" name="bearing" negation="false" src="d0_s1" to="o23108" />
+      <relation from="o23107" id="r5406" name="bearing" negation="false" src="d0_s1" to="o23109" />
+      <relation from="o23107" id="r5407" name="clothed at" negation="false" src="d0_s1" to="o23110" />
+      <relation from="o23107" id="r5408" name="clothed at" negation="false" src="d0_s1" to="o23111" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Leaves lanceolate-oblong, pinnatifid, 2.5-10 × 0.5-2 cm, with sparse, 2-celled glandular-hairs on veins;</text>
+      <biological_entity id="o23112" name="leaf" name_original="leaves" src="d0_s2" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s2" value="lanceolate-oblong" />
+        <character is_modifier="false" name="shape" src="d0_s2" value="pinnatifid" />
+        <character char_type="range_value" from="2.5" from_unit="cm" name="length" src="d0_s2" to="10" to_unit="cm" />
+        <character char_type="range_value" from="0.5" from_unit="cm" name="width" src="d0_s2" to="2" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o23113" name="glandular-hair" name_original="glandular-hairs" src="d0_s2" type="structure">
+        <character is_modifier="true" name="count_or_density" src="d0_s2" value="sparse" />
+        <character is_modifier="true" name="architecture" src="d0_s2" value="2-celled" />
+      </biological_entity>
+      <biological_entity id="o23114" name="vein" name_original="veins" src="d0_s2" type="structure" />
+      <relation from="o23112" id="r5409" name="with" negation="false" src="d0_s2" to="o23113" />
+      <relation from="o23113" id="r5410" name="on" negation="false" src="d0_s2" to="o23114" />
+    </statement>
+    <statement id="d0_s3">
+      <text>petioles shorter than blades.</text>
+      <biological_entity id="o23116" name="blade" name_original="blades" src="d0_s3" type="structure" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Venation pinnate, without unconnected false veins.</text>
+      <biological_entity id="o23115" name="petiole" name_original="petioles" src="d0_s3" type="structure">
+        <character constraint="than blades" constraintid="o23116" is_modifier="false" name="height_or_length_or_size" src="d0_s3" value="shorter" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s4" value="pinnate" />
+      </biological_entity>
+      <biological_entity constraint="false" id="o23117" name="vein" name_original="veins" src="d0_s4" type="structure">
+        <character is_modifier="true" name="fusion" src="d0_s4" value="unconnected" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Soral involucres terminal on vein ends at pinna apices, broadly conic and flaring at mouth.</text>
+      <biological_entity constraint="soral" id="o23118" name="involucre" name_original="involucres" src="d0_s5" type="structure">
+        <character constraint="on vein ends" constraintid="o23119" is_modifier="false" name="position_or_structure_subtype" src="d0_s5" value="terminal" />
+        <character is_modifier="false" modifier="broadly" name="shape" notes="" src="d0_s5" value="conic" />
+        <character constraint="at mouth" constraintid="o23121" is_modifier="false" name="shape" src="d0_s5" value="flaring" />
+      </biological_entity>
+      <biological_entity constraint="vein" id="o23119" name="end" name_original="ends" src="d0_s5" type="structure" />
+      <biological_entity constraint="pinna" id="o23120" name="apex" name_original="apices" src="d0_s5" type="structure" />
+      <biological_entity id="o23121" name="mouth" name_original="mouth" src="d0_s5" type="structure" />
+      <relation from="o23119" id="r5411" name="at" negation="false" src="d0_s5" to="o23120" />
+    </statement>
+    <statement id="d0_s6">
+      <text>Gametophytes composed of proximal filamentous network supporting aerial blades tipped by gemmae.</text>
+      <biological_entity id="o23122" name="gametophyte" name_original="gametophytes" src="d0_s6" type="structure">
+        <character constraint="by gemmae" constraintid="o23125" is_modifier="false" name="architecture" src="d0_s6" value="tipped" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o23123" name="network" name_original="network" src="d0_s6" type="structure">
+        <character is_modifier="true" name="texture" src="d0_s6" value="filamentous" />
+      </biological_entity>
+      <biological_entity id="o23124" name="blade" name_original="blades" src="d0_s6" type="structure">
+        <character is_modifier="true" name="location" src="d0_s6" value="aerial" />
+      </biological_entity>
+      <biological_entity id="o23125" name="gemma" name_original="gemmae" src="d0_s6" type="structure" />
+      <relation from="o23122" id="r5412" name="composed of" negation="false" src="d0_s6" to="o23123" />
+      <relation from="o23123" id="r5413" name="supporting" negation="false" src="d0_s6" to="o23124" />
+    </statement>
+    <statement id="d0_s7">
+      <text>Gemmae regularly 4-celled with 2 green body cells and 2 nongreen rhizoid primordia.</text>
+      <biological_entity constraint="body" id="o23127" name="cell" name_original="cells" src="d0_s7" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s7" value="2" />
+        <character is_modifier="true" name="coloration" src="d0_s7" value="green" />
+        <character name="quantity" src="d0_s7" value="2" />
+      </biological_entity>
+      <biological_entity constraint="rhizoid" id="o23128" name="primordium" name_original="primordia" src="d0_s7" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s7" value="nongreen" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>2n = 128.</text>
+      <biological_entity id="o23126" name="gemma" name_original="gemmae" src="d0_s7" type="structure">
+        <character constraint="with body cells" constraintid="o23127" is_modifier="false" modifier="regularly" name="architecture" src="d0_s7" value="4-celled" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o23129" name="chromosome" name_original="" src="d0_s8" type="structure">
+        <character name="quantity" src="d0_s8" value="128" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Epiphytic on decaying stumps and logs of bald cypress in dense cypress swamps;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="epiphytic on decaying stumps and logs of bald cypress in dense cypress" />
+        <character name="habitat" value="swamps" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>below 10 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="10" to_unit="m" from="any" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Fla.; West Indies.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
+        <character name="distribution" value="West Indies" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>2</number>
+  <other_name type="common_name">Entire-winged bristle fern</other_name>
+  <discussion>Although mature sporophytes of Trichomanes holopterum are very rare, gametophyte colonies are relatively common and more extensive and usually bear numerous young sporophytes, most of which seem unable to grow beyond a height of 1--2 cm. Persistence and vegetative reproduction by the gametophyte generation appear primarily responsible for maintenance of the species in the flora (C. E. Delchamps 1966; D. R. Farrar and W. H. Wagner Jr. 1968). The species probably also occurs elsewhere in cypress swamps along the Gulf Coast.</discussion>
+</bio:treatment>

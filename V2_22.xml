@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>David M. Johnson</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Mirbel" date="unknown" rank="family">marsileaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">Pilularia</taxon_name>
+    <place_of_publication>
+      <publication_title>Sp. Pl.</publication_title>
+      <place_in_publication>2: 1100. 1753; Gen. Pl. ed. 5, 486, 1754</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family marsileaceae;genus Pilularia</taxon_hierarchy>
+    <other_info_on_name type="etymology">[Latin pilula, a little ball, in reference to the spheric sporocarps]</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants aquatic, commonly entirely under water and infrequently persisting on bare mud.</text>
+      <biological_entity id="o3811" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="aquatic" />
+        <character constraint="on mud" constraintid="o3812" is_modifier="false" modifier="under water; infrequently" name="duration" src="d0_s0" value="persisting" />
+      </biological_entity>
+      <biological_entity id="o3812" name="mud" name_original="mud" src="d0_s0" type="structure">
+        <character is_modifier="true" name="pubescence" src="d0_s0" value="bare" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Roots arising at nodes.</text>
+      <biological_entity id="o3813" name="root" name_original="roots" src="d0_s1" type="structure">
+        <character constraint="at nodes" constraintid="o3814" is_modifier="false" name="orientation" src="d0_s1" value="arising" />
+      </biological_entity>
+      <biological_entity id="o3814" name="node" name_original="nodes" src="d0_s1" type="structure" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Leaves filiform, terete, lacking expanded blades.</text>
+      <biological_entity id="o3815" name="leaf" name_original="leaves" src="d0_s2" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s2" value="filiform" />
+        <character is_modifier="false" name="shape" src="d0_s2" value="terete" />
+      </biological_entity>
+      <biological_entity id="o3816" name="blade" name_original="blades" src="d0_s2" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s2" value="lacking" />
+        <character is_modifier="true" name="size" src="d0_s2" value="expanded" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Sporocarps subterranean, borne on unbranched stalks arising at bases of petioles, attached laterally to stalk apex (attached portion called raphe), lacking teeth;</text>
+      <biological_entity id="o3817" name="sporocarp" name_original="sporocarps" src="d0_s3" type="structure">
+        <character is_modifier="false" name="location" src="d0_s3" value="subterranean" />
+        <character constraint="to stalk apex" constraintid="o3821" is_modifier="false" name="fixation" src="d0_s3" value="attached" />
+      </biological_entity>
+      <biological_entity id="o3818" name="stalk" name_original="stalks" src="d0_s3" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s3" value="unbranched" />
+      </biological_entity>
+      <biological_entity id="o3819" name="base" name_original="bases" src="d0_s3" type="structure">
+        <character is_modifier="true" name="orientation" src="d0_s3" value="arising" />
+        <character is_modifier="true" name="architecture" src="d0_s3" value="unbranched" />
+      </biological_entity>
+      <biological_entity id="o3820" name="petiole" name_original="petioles" src="d0_s3" type="structure">
+        <character is_modifier="true" name="orientation" src="d0_s3" value="arising" />
+        <character is_modifier="true" name="architecture" src="d0_s3" value="unbranched" />
+      </biological_entity>
+      <biological_entity constraint="stalk" id="o3821" name="apex" name_original="apex" src="d0_s3" type="structure" />
+      <biological_entity id="o3822" name="tooth" name_original="teeth" src="d0_s3" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s3" value="lacking" />
+      </biological_entity>
+      <relation from="o3817" id="r906" name="borne on" negation="false" src="d0_s3" to="o3818" />
+      <relation from="o3817" id="r907" name="borne on" negation="false" src="d0_s3" to="o3819" />
+      <relation from="o3817" id="r908" name="borne on" negation="false" src="d0_s3" to="o3820" />
+    </statement>
+    <statement id="d0_s4">
+      <text>sporocarps densely to sparsely hairy, less so with age, dehiscing into 4 valves.</text>
+      <biological_entity id="o3823" name="sporocarp" name_original="sporocarps" src="d0_s4" type="structure">
+        <character is_modifier="false" modifier="densely to sparsely" name="pubescence" src="d0_s4" value="hairy" />
+        <character constraint="into valves" constraintid="o3825" is_modifier="false" name="dehiscence" notes="" src="d0_s4" value="dehiscing" />
+      </biological_entity>
+      <biological_entity id="o3824" name="age" name_original="age" src="d0_s4" type="structure" />
+      <biological_entity id="o3825" name="valve" name_original="valves" src="d0_s4" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s4" value="4" />
+      </biological_entity>
+      <relation from="o3823" id="r909" modifier="less" name="with" negation="false" src="d0_s4" to="o3824" />
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>North America, South America, Europe, Pacific Islands in New Zealand, Australia.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="North America" establishment_means="native" />
+        <character name="distribution" value="South America" establishment_means="native" />
+        <character name="distribution" value="Europe" establishment_means="native" />
+        <character name="distribution" value="Pacific Islands in New Zealand" establishment_means="native" />
+        <character name="distribution" value="Australia" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>2</number>
+  <other_name type="common_name">Pillwort</other_name>
+  <discussion>Species 6 (1 in the flora):</discussion>
+  <references>
+    <reference>Dennis, W. M. and D. H. Webb. 1981. The distribution of Pilularia americana A. Br. (Marsileaceae) in North America, north of Mexico. Sida 9: 19--24. Petrik-</reference>
+    <reference>Ott, A. J. and F. D. Ott. 1980. Pilularia americana new to Tennessee. Amer. Fern J. 70: 29--30.</reference>
+  </references>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_101_d2_s0">
+      <text>Leaves filiform, lacking expanded blades.</text>
+      <biological_entity id="from_key_V2_101_o91" name="leaf" name_original="leaves" src="d2_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d2_s0" value="filiform" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_101_o92" name="blade" name_original="blades" src="d2_s0" type="structure">
+        <character is_modifier="true" name="count" src="d2_s0" value="lacking" />
+        <character is_modifier="true" name="size" src="d2_s0" value="expanded" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

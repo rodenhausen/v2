@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="genus">juniperus</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="section">Juniperus</taxon_name>
+    <taxon_hierarchy>family cupressaceae;genus juniperus;section Juniperus</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Juniperus</taxon_name>
+    <taxon_name authority="Spach" date="unknown" rank="section">Oxycedrus</taxon_name>
+    <taxon_hierarchy>genus Juniperus;section Oxycedrus;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Shrubs or small trees, if shrubs, decumbent or rarely upright.</text>
+      <biological_entity id="o12265" name="shrub" name_original="shrubs" src="d0_s0" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s0" value="decumbent" />
+        <character is_modifier="false" modifier="rarely" name="orientation" src="d0_s0" value="upright" />
+      </biological_entity>
+      <biological_entity id="o12266" name="tree" name_original="trees" src="d0_s0" type="structure">
+        <character is_modifier="true" name="size" src="d0_s0" value="small" />
+        <character is_modifier="false" name="orientation" src="d0_s0" value="decumbent" />
+        <character is_modifier="false" modifier="rarely" name="orientation" src="d0_s0" value="upright" />
+      </biological_entity>
+      <biological_entity id="o12267" name="shrub" name_original="shrubs" src="d0_s0" type="structure" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Adult leaves in whorls of 3, of 1 kind, subulate, spreading, with basal abscission zone.</text>
+      <biological_entity id="o12268" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s1" value="adult" />
+        <character is_modifier="false" name="shape" notes="" src="d0_s1" value="subulate" />
+        <character is_modifier="false" name="orientation" src="d0_s1" value="spreading" />
+      </biological_entity>
+      <biological_entity id="o12269" name="whorl" name_original="whorls" src="d0_s1" type="structure">
+        <character name="quantity" src="d0_s1" value="3" />
+      </biological_entity>
+      <biological_entity id="o12270" name="kind" name_original="kind" src="d0_s1" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s1" value="1" />
+      </biological_entity>
+      <biological_entity constraint="basal" id="o12271" name="zone" name_original="zone" src="d0_s1" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s1" value="abscission" />
+      </biological_entity>
+      <relation from="o12268" id="r2843" name="in" negation="false" src="d0_s1" to="o12269" />
+      <relation from="o12268" id="r2844" name="consist_of" negation="false" src="d0_s1" to="o12270" />
+      <relation from="o12268" id="r2845" name="with" negation="false" src="d0_s1" to="o12271" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Cones axillary.</text>
+      <biological_entity id="o12272" name="cone" name_original="cones" src="d0_s2" type="structure">
+        <character is_modifier="false" name="position" src="d0_s2" value="axillary" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>8a</number>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_593_d7_s0">
+      <text>Seed-cones berrylike, remaining closed, seeds retained;</text>
+      <biological_entity id="from_key_V2_593_o16160" name="seed-cone" name_original="seed-cones" src="d7_s0" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d7_s0" value="berrylike" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_593_o16161" name="seed" name_original="seeds" src="d7_s0" type="structure">
+        <character is_modifier="true" name="condition" src="d7_s0" value="closed" />
+      </biological_entity>
+      <relation from="from_key_V2_593_o16160" id="from_key_V2_593_r3802" name="remaining" negation="false" src="d7_s0" to="from_key_V2_593_o16161" />
+    </statement>
+    <statement id="from_key_V2_593_d7_s1">
+      <text>scales generally fleshy or fibrous;</text>
+    </statement>
+    <statement id="from_key_V2_593_d7_s2">
+      <text>monoecious or dioecious..</text>
+      <biological_entity id="from_key_V2_593_o16162" name="scale" name_original="scales" src="d7_s1" type="structure">
+        <character is_modifier="false" modifier="generally" name="texture" src="d7_s1" value="fleshy" />
+        <character is_modifier="false" name="texture" src="d7_s1" value="fibrous" />
+        <character is_modifier="false" name="reproduction" src="d7_s2" value="monoecious" />
+        <character is_modifier="false" name="reproduction" src="d7_s2" value="dioecious" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_593_d2_s0">
+      <text>Leaves opposite in 4 ranks or whorled;</text>
+      <biological_entity id="from_key_V2_593_o16130" name="leaf" name_original="leaves" src="d2_s0" type="structure">
+        <character constraint="in ranks" constraintid="o16131" is_modifier="false" name="arrangement" src="d2_s0" value="opposite" />
+        <character is_modifier="false" name="arrangement" src="d2_s0" value="whorled" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_593_o16131" name="rank" name_original="ranks" src="d2_s0" type="structure">
+        <character is_modifier="true" name="count" src="d2_s0" value="4" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_593_d2_s1">
+      <text>leaves of adults usually ± scalelike to subulate.</text>
+      <biological_entity id="from_key_V2_593_o16132" name="leaf" name_original="leaves" src="d2_s1" type="structure">
+        <character is_modifier="false" modifier="of adults; usually more or less" name="shape" notes="[duplicate value]" src="d2_s1" value="scalelike" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s1" value="subulate" />
+        <character char_type="range_value" from="less scalelike" modifier="of adults" name="shape" src="d2_s1" to="subulate" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

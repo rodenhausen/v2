@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Hooker" date="unknown" rank="family">parkeriaceae</taxon_name>
+    <taxon_name authority="Brongniart" date="1821" rank="genus">ceratopteris</taxon_name>
+    <taxon_name authority="Brongniart" date="1823" rank="species">richardii</taxon_name>
+    <place_of_publication>
+      <publication_title>Dict. Class. Hist. Nat.</publication_title>
+      <place_in_publication>3: 351. 1823</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family parkeriaceae;genus ceratopteris;species richardii</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Ceratopteris</taxon_name>
+    <taxon_name authority="Benedict" date="unknown" rank="species">deltoidea</taxon_name>
+    <taxon_hierarchy>genus Ceratopteris;species deltoidea;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants floating or rooted.</text>
+      <biological_entity id="o228" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="false" name="growth_form_or_location" src="d0_s0" value="floating" />
+        <character is_modifier="false" name="architecture" src="d0_s0" value="rooted" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Sterile leaves lanceolate to deltate to ovate.</text>
+      <biological_entity id="o229" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s1" value="sterile" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="lanceolate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="deltate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="ovate" />
+        <character char_type="range_value" from="lanceolate" name="shape" src="d0_s1" to="deltate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Petiole of sterile leaf 1-11 cm, not inflated;</text>
+      <biological_entity id="o230" name="petiole" name_original="petiole" src="d0_s2" type="structure">
+        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s2" to="11" to_unit="cm" />
+        <character is_modifier="false" modifier="not" name="shape" src="d0_s2" value="inflated" />
+      </biological_entity>
+      <biological_entity id="o231" name="leaf" name_original="leaf" src="d0_s2" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s2" value="sterile" />
+      </biological_entity>
+      <relation from="o230" id="r54" name="part_of" negation="false" src="d0_s2" to="o231" />
+    </statement>
+    <statement id="d0_s3">
+      <text>small leaves lobed to pinnate, segments or pinnae with entire to somewhat incised margins, larger leaves 2-pinnate-pinnatifid with deeply incised pinnae.</text>
+      <biological_entity id="o232" name="leaf" name_original="leaves" src="d0_s3" type="structure">
+        <character is_modifier="true" name="size" src="d0_s3" value="small" />
+      </biological_entity>
+      <biological_entity id="o233" name="segment" name_original="segments" src="d0_s3" type="structure">
+        <character is_modifier="true" name="size" src="d0_s3" value="small" />
+        <character is_modifier="true" name="shape" src="d0_s3" value="lobed to pinnate" />
+      </biological_entity>
+      <biological_entity id="o234" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
+        <character is_modifier="true" name="size" src="d0_s3" value="small" />
+        <character is_modifier="true" name="shape" src="d0_s3" value="lobed to pinnate" />
+      </biological_entity>
+      <biological_entity id="o235" name="margin" name_original="margins" src="d0_s3" type="structure">
+        <character is_modifier="true" name="shape" src="d0_s3" value="entire to somewhat" />
+        <character is_modifier="true" modifier="somewhat" name="shape" src="d0_s3" value="incised" />
+      </biological_entity>
+      <biological_entity constraint="larger" id="o236" name="leaf" name_original="leaves" src="d0_s3" type="structure" />
+      <biological_entity id="o237" name="margin" name_original="margins" src="d0_s3" type="structure">
+        <character is_modifier="true" name="shape" src="d0_s3" value="entire to somewhat" />
+        <character is_modifier="true" modifier="somewhat" name="shape" src="d0_s3" value="incised" />
+        <character constraint="with pinnae" constraintid="o238" is_modifier="false" modifier="with" name="shape" src="d0_s3" value="2-pinnate-pinnatifid" />
+      </biological_entity>
+      <biological_entity id="o238" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
+        <character is_modifier="true" modifier="deeply" name="shape" src="d0_s3" value="incised" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Blade of sterile leaf 3-16 × 2.5-17 cm, pinnae deltate to ovate;</text>
+      <biological_entity id="o239" name="blade" name_original="blade" src="d0_s4" type="structure">
+        <character char_type="range_value" from="3" from_unit="cm" name="length" src="d0_s4" to="16" to_unit="cm" />
+        <character char_type="range_value" from="2.5" from_unit="cm" name="width" src="d0_s4" to="17" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o240" name="leaf" name_original="leaf" src="d0_s4" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s4" value="sterile" />
+      </biological_entity>
+      <biological_entity id="o241" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="deltate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="ovate" />
+        <character char_type="range_value" from="deltate" name="shape" src="d0_s4" to="ovate" />
+      </biological_entity>
+      <relation from="o239" id="r55" name="part_of" negation="false" src="d0_s4" to="o240" />
+    </statement>
+    <statement id="d0_s5">
+      <text>proximal pinnae usually alternate.</text>
+      <biological_entity constraint="proximal" id="o242" name="pinna" name_original="pinnae" src="d0_s5" type="structure">
+        <character is_modifier="false" modifier="usually" name="arrangement" src="d0_s5" value="alternate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>Fertile leaves lanceolate to deltate to ovate to 19 × 12 cm.</text>
+      <biological_entity id="o243" name="leaf" name_original="leaves" src="d0_s6" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s6" value="fertile" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="lanceolate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="deltate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="ovate" />
+        <character char_type="range_value" from="lanceolate" name="shape" src="d0_s6" to="deltate" />
+        <character char_type="range_value" from="0" from_unit="cm" name="length" src="d0_s6" to="19" to_unit="cm" />
+        <character char_type="range_value" from="0" from_unit="cm" name="width" src="d0_s6" to="12" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Petiole of fertile leaf 6-9 cm.</text>
+      <biological_entity id="o244" name="petiole" name_original="petiole" src="d0_s7" type="structure">
+        <character char_type="range_value" from="6" from_unit="cm" name="some_measurement" src="d0_s7" to="9" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o245" name="leaf" name_original="leaf" src="d0_s7" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s7" value="fertile" />
+      </biological_entity>
+      <relation from="o244" id="r56" name="part_of" negation="false" src="d0_s7" to="o245" />
+    </statement>
+    <statement id="d0_s8">
+      <text>Blade of fertile leaf 2-3-pinnate;</text>
+      <biological_entity id="o246" name="blade" name_original="blade" src="d0_s8" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s8" value="2-3-pinnate" />
+      </biological_entity>
+      <biological_entity id="o247" name="leaf" name_original="leaf" src="d0_s8" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s8" value="fertile" />
+      </biological_entity>
+      <relation from="o246" id="r57" name="part_of" negation="false" src="d0_s8" to="o247" />
+    </statement>
+    <statement id="d0_s9">
+      <text>terminal segments narrow.</text>
+      <biological_entity constraint="terminal" id="o248" name="segment" name_original="segments" src="d0_s9" type="structure">
+        <character is_modifier="false" name="size_or_width" src="d0_s9" value="narrow" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>Sporangia scattered to densely crowded between midvein and revolute margin, with 20-40 or more indurate annulus cells.</text>
+      <biological_entity id="o249" name="sporangium" name_original="sporangia" src="d0_s10" type="structure">
+        <character is_modifier="false" name="arrangement" notes="[duplicate value]" src="d0_s10" value="scattered" />
+        <character is_modifier="false" modifier="densely" name="arrangement" notes="[duplicate value]" src="d0_s10" value="crowded" />
+        <character char_type="range_value" constraint="between midvein, margin" constraintid="o250, o251" from="scattered" name="arrangement" src="d0_s10" to="densely crowded" />
+      </biological_entity>
+      <biological_entity id="o250" name="midvein" name_original="midvein" src="d0_s10" type="structure">
+        <character is_modifier="false" name="shape_or_vernation" src="d0_s10" value="revolute" />
+      </biological_entity>
+      <biological_entity id="o251" name="margin" name_original="margin" src="d0_s10" type="structure">
+        <character is_modifier="false" name="shape_or_vernation" src="d0_s10" value="revolute" />
+      </biological_entity>
+      <biological_entity constraint="annulus" id="o252" name="cell" name_original="cells" src="d0_s10" type="structure">
+        <character char_type="range_value" from="20" is_modifier="true" name="quantity" src="d0_s10" to="40" />
+        <character is_modifier="true" name="texture" src="d0_s10" value="indurate" />
+      </biological_entity>
+      <relation from="o249" id="r58" name="with" negation="false" src="d0_s10" to="o252" />
+    </statement>
+    <statement id="d0_s11">
+      <text>Spores 16 per sporangium, 107-150 µm diam. 2 n = 78.</text>
+      <biological_entity id="o253" name="spore" name_original="spores" src="d0_s11" type="structure">
+        <character constraint="per sporangium" constraintid="o254" name="quantity" src="d0_s11" value="16" />
+        <character char_type="range_value" from="107" from_unit="um" name="diameter" notes="" src="d0_s11" to="150" to_unit="um" />
+      </biological_entity>
+      <biological_entity id="o254" name="sporangium" name_original="sporangium" src="d0_s11" type="structure" />
+      <biological_entity constraint="2n" id="o255" name="chromosome" name_original="" src="d0_s11" type="structure">
+        <character name="quantity" src="d0_s11" value="78" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Aquatic to semiaquatic, lakes and ponds;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="aquatic to semiaquatic lakes and ponds" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="0" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>La.; West Indies; Central America in Guatemala; South America; Africa.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
+        <character name="distribution" value="West Indies" establishment_means="native" />
+        <character name="distribution" value="Central America in Guatemala" establishment_means="native" />
+        <character name="distribution" value="South America" establishment_means="native" />
+        <character name="distribution" value="Africa" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>3</number>
+  <discussion>According to L. G. Hickok (1977), Ceratopteris richardii is diploid. Morphologically, specimens from the United States are difficult to distinguish from tetraploid C . thalictroides . The primary characteristic distinguishing C . richardii is its 16-spored sporangia. Herbarium specimens with 16-spored sporangia from the West Indies and Latin America have variable morphology ranging from that of C . pteridoides to that of C . thalictroides (R. M. Lloyd 1974, fig. 6). Some specimens have both 16- and 32-spored sporangia. This suggests multiple origins for C . richardii . Because reproductive isolation is incomplete among the diploid taxa, and highly fertile F 2 segregates of various morphologic types occur, further work is needed to determine the nature, origin, and distinctness of C . richardii .</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_554_d4_s0">
+      <text>Sporangia with 16 spores.</text>
+      <biological_entity id="from_key_V2_554_o15014" name="sporangium" name_original="sporangia" src="d4_s0" type="structure" />
+      <biological_entity id="from_key_V2_554_o15015" name="spore" name_original="spores" src="d4_s0" type="structure">
+        <character is_modifier="true" name="count" src="d4_s0" value="16" />
+      </biological_entity>
+      <relation from="from_key_V2_554_o15014" id="from_key_V2_554_r3544" name="with" negation="false" src="d4_s0" to="from_key_V2_554_o15015" />
+    </statement>
+    <statement id="from_key_V2_554_d2_s0">
+      <text>Sterile leaves (1-) 2-3-pinnate, lanceolate, lanceovate, ovate to deltate;</text>
+      <biological_entity id="from_key_V2_554_o15005" name="leaf" name_original="leaves" src="d2_s0" type="structure">
+        <character is_modifier="true" name="reproduction" src="d2_s0" value="sterile" />
+        <character is_modifier="false" name="shape" src="d2_s0" value="(1-)2-3-pinnate" />
+        <character is_modifier="false" name="shape" src="d2_s0" value="lanceolate" />
+        <character is_modifier="false" name="shape" src="d2_s0" value="lanceovate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s0" value="ovate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s0" value="deltate" />
+        <character char_type="range_value" from="ovate" name="shape" src="d2_s0" to="deltate" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_554_d2_s1">
+      <text>proximal pinnae usually alternate;</text>
+      <biological_entity constraint="proximal" id="from_key_V2_554_o15006" name="pinna" name_original="pinnae" src="d2_s1" type="structure">
+        <character is_modifier="false" modifier="usually" name="arrangement" src="d2_s1" value="alternate" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_554_d2_s2">
+      <text>petioles usually not inflated.</text>
+      <biological_entity id="from_key_V2_554_o15007" name="petiole" name_original="petioles" src="d2_s2" type="structure">
+        <character is_modifier="false" modifier="usually not" name="shape" src="d2_s2" value="inflated" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_554_d2_s3">
+      <text>Fertile leaves lanceolate, sometimes ovate, deltate, or cordate;</text>
+      <biological_entity id="from_key_V2_554_o15008" name="leaf" name_original="leaves" src="d2_s3" type="structure">
+        <character is_modifier="true" name="reproduction" src="d2_s3" value="fertile" />
+        <character is_modifier="false" name="shape" src="d2_s3" value="lanceolate" />
+        <character is_modifier="false" modifier="sometimes" name="shape" src="d2_s3" value="ovate" />
+        <character is_modifier="false" name="shape" src="d2_s3" value="deltate" />
+        <character is_modifier="false" name="shape" src="d2_s3" value="cordate" />
+        <character is_modifier="false" name="shape" src="d2_s3" value="deltate" />
+        <character is_modifier="false" name="shape" src="d2_s3" value="cordate" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_554_d2_s4">
+      <text>sporangia with well-developed annulus, indurate cells 13-71.</text>
+      <biological_entity id="from_key_V2_554_o15009" name="sporangium" name_original="sporangia" src="d2_s4" type="structure" />
+      <biological_entity id="from_key_V2_554_o15010" name="annulus" name_original="annulus" src="d2_s4" type="structure">
+        <character is_modifier="true" name="development" src="d2_s4" value="well-developed" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_554_o15011" name="cell" name_original="cells" src="d2_s4" type="structure">
+        <character is_modifier="true" name="texture" src="d2_s4" value="indurate" />
+        <character char_type="range_value" from="13" name="count" src="d2_s4" to="71" />
+      </biological_entity>
+      <relation from="from_key_V2_554_o15009" id="from_key_V2_554_r3542" name="with" negation="false" src="d2_s4" to="from_key_V2_554_o15010" />
+    </statement>
+  </description>
+</bio:treatment>

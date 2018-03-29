@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>Iván A. Valdespino</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Willkomm in Willkomm &amp; Lange" date="unknown" rank="family">selaginellaceae</taxon_name>
+    <taxon_name authority="Palisot de Beauvois" date="1805" rank="genus">Selaginella</taxon_name>
+    <place_of_publication>
+      <publication_title>Prodr. Aethéogam.</publication_title>
+      <place_in_publication>101. 1805</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family selaginellaceae;genus Selaginella</taxon_hierarchy>
+    <other_info_on_name type="etymology">[from Selago, an ancient name for Lycopodium, a genus resembling Selaginella, and Latin, -ella, diminutive suffix]</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants terrestrial, on rock, or rarely hemiepiphytic (initially terrestrial, becoming epiphytic) or epiphytic (in S. oregana).</text>
+      <biological_entity id="o17419" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="terrestrial" />
+        <character is_modifier="false" modifier="rarely" name="habitat" src="d0_s0" value="hemiepiphytic" />
+        <character is_modifier="false" name="habitat" src="d0_s0" value="epiphytic" />
+      </biological_entity>
+      <biological_entity id="o17420" name="rock" name_original="rock" src="d0_s0" type="structure" />
+      <relation from="o17419" id="r4046" name="on" negation="false" src="d0_s0" to="o17420" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Stems prostrate, creeping, decumbent, cespitose, climbing, or fully erect, articulate or not, slightly to greatly branched.</text>
+      <biological_entity id="o17421" name="stem" name_original="stems" src="d0_s1" type="structure">
+        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="prostrate" />
+        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="creeping" />
+        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="decumbent" />
+        <character is_modifier="false" name="growth_form" src="d0_s1" value="cespitose" />
+        <character is_modifier="false" name="growth_form" src="d0_s1" value="climbing" />
+        <character is_modifier="false" modifier="fully" name="orientation" src="d0_s1" value="erect" />
+        <character is_modifier="false" name="architecture" src="d0_s1" value="articulate" />
+        <character name="architecture" src="d0_s1" value="not" />
+        <character is_modifier="false" modifier="slightly to greatly" name="architecture" src="d0_s1" value="branched" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Rhizophores usually present, stout or filiform.</text>
+      <biological_entity id="o17422" name="rhizophore" name_original="rhizophores" src="d0_s2" type="structure">
+        <character is_modifier="false" modifier="usually" name="presence" src="d0_s2" value="absent" />
+        <character is_modifier="false" name="fragility_or_size" src="d0_s2" value="stout" />
+        <character is_modifier="false" name="shape" src="d0_s2" value="filiform" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Roots branching several times dichotomously from rhizophore tips.</text>
+      <biological_entity id="o17423" name="root" name_original="roots" src="d0_s3" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s3" value="branching" />
+        <character constraint="dichotomously from rhizophore tips" constraintid="o17424" is_modifier="false" name="quantity" src="d0_s3" value="several" />
+      </biological_entity>
+      <biological_entity constraint="rhizophore" id="o17424" name="tip" name_original="tips" src="d0_s3" type="structure" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Leaves on aerial stems dimorphic or monomorphic;</text>
+      <biological_entity id="o17426" name="stem" name_original="stems" src="d0_s4" type="structure">
+        <character is_modifier="true" name="location" src="d0_s4" value="aerial" />
+        <character is_modifier="false" name="growth_form" src="d0_s4" value="dimorphic" />
+      </biological_entity>
+      <relation from="o17425" id="r4047" name="on" negation="false" src="d0_s4" to="o17426" />
+    </statement>
+    <statement id="d0_s5">
+      <text>if monomorphic, then linear to narrowly lanceolate, highly overlapping, spirally arranged;</text>
+    </statement>
+    <statement id="d0_s6">
+      <text>if leaves on aerial stem dimorphic, then round or oblong to lanceolate, arranged in 4 ranks, 2 ranks of larger spreading lateral leaves and 2 ranks of smaller, appressed, and ascending median leaves, often with axillary leaf at base of each branching dichotomy.</text>
+      <biological_entity id="o17425" name="leaf" name_original="leaves" src="d0_s4" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s4" value="monomorphic" />
+        <character is_modifier="false" name="architecture" src="d0_s5" value="monomorphic" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="linear" />
+        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s5" value="lanceolate" />
+        <character char_type="range_value" from="linear" name="shape" src="d0_s5" to="narrowly lanceolate" />
+        <character is_modifier="false" modifier="highly" name="arrangement" src="d0_s5" value="overlapping" />
+        <character is_modifier="false" modifier="spirally" name="arrangement" src="d0_s5" value="arranged" />
+      </biological_entity>
+      <biological_entity id="o17427" name="leaf" name_original="leaves" src="d0_s6" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="round" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="oblong" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="lanceolate" />
+        <character char_type="range_value" from="oblong" name="shape" notes="" src="d0_s6" to="lanceolate" />
+        <character constraint="in ranks" constraintid="o17429" is_modifier="false" name="arrangement" src="d0_s6" value="arranged" />
+      </biological_entity>
+      <biological_entity id="o17428" name="stem" name_original="stem" src="d0_s6" type="structure">
+        <character is_modifier="true" name="location" src="d0_s6" value="aerial" />
+        <character is_modifier="false" name="growth_form" src="d0_s6" value="dimorphic" />
+      </biological_entity>
+      <biological_entity id="o17429" name="rank" name_original="ranks" src="d0_s6" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s6" value="4" />
+        <character name="quantity" src="d0_s6" value="2" />
+      </biological_entity>
+      <biological_entity id="o17430" name="rank" name_original="ranks" src="d0_s6" type="structure">
+        <character name="quantity" src="d0_s6" value="2" />
+      </biological_entity>
+      <biological_entity constraint="larger lateral" id="o17431" name="leaf" name_original="leaves" src="d0_s6" type="structure">
+        <character is_modifier="true" name="orientation" src="d0_s6" value="spreading" />
+      </biological_entity>
+      <biological_entity id="o17432" name="rank" name_original="ranks" src="d0_s6" type="structure" />
+      <biological_entity constraint="median" id="o17433" name="leaf" name_original="leaves" src="d0_s6" type="structure">
+        <character is_modifier="true" name="size" src="d0_s6" value="smaller" />
+        <character is_modifier="true" name="fixation_or_orientation" src="d0_s6" value="appressed" />
+        <character is_modifier="true" name="orientation" src="d0_s6" value="ascending" />
+      </biological_entity>
+      <biological_entity constraint="axillary" id="o17434" name="leaf" name_original="leaf" src="d0_s6" type="structure" />
+      <biological_entity id="o17435" name="base" name_original="base" src="d0_s6" type="structure" />
+      <biological_entity id="o17436" name="dichotomy" name_original="dichotomy" src="d0_s6" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s6" value="branching" />
+      </biological_entity>
+      <relation from="o17427" id="r4048" name="on" negation="false" src="d0_s6" to="o17428" />
+      <relation from="o17430" id="r4049" name="part_of" negation="false" src="d0_s6" to="o17431" />
+      <relation from="o17432" id="r4050" name="part_of" negation="false" src="d0_s6" to="o17433" />
+      <relation from="o17432" id="r4051" modifier="often" name="with" negation="false" src="d0_s6" to="o17434" />
+      <relation from="o17434" id="r4052" name="at" negation="false" src="d0_s6" to="o17435" />
+      <relation from="o17435" id="r4053" name="part_of" negation="false" src="d0_s6" to="o17436" />
+    </statement>
+    <statement id="d0_s7">
+      <text>Megasporangia lobed to ovoid;</text>
+      <biological_entity id="o17437" name="megasporangium" name_original="megasporangia" src="d0_s7" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s7" value="lobed" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s7" value="ovoid" />
+        <character char_type="range_value" from="lobed" name="shape" src="d0_s7" to="ovoid" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>microsporangia reniform to ovoid.</text>
+      <biological_entity id="o17438" name="microsporangium" name_original="microsporangia" src="d0_s8" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="reniform" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="ovoid" />
+        <character char_type="range_value" from="reniform" name="shape" src="d0_s8" to="ovoid" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>Megaspores tetrahedral, ovoid, or globose, variously sculptured, (127-) 200-1360 µm diam.;</text>
+      <biological_entity id="o17439" name="megaspore" name_original="megaspores" src="d0_s9" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s9" value="tetrahedral" />
+        <character is_modifier="false" name="shape" src="d0_s9" value="ovoid" />
+        <character is_modifier="false" name="shape" src="d0_s9" value="globose" />
+        <character is_modifier="false" name="shape" src="d0_s9" value="ovoid" />
+        <character is_modifier="false" name="shape" src="d0_s9" value="globose" />
+        <character is_modifier="false" modifier="variously" name="relief" src="d0_s9" value="sculptured" />
+        <character char_type="range_value" from="127" from_unit="um" name="diameter" src="d0_s9" to="200" to_inclusive="false" to_unit="um" />
+        <character char_type="range_value" from="200" from_unit="um" name="diameter" src="d0_s9" to="1360" to_unit="um" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>microspores tetrahedral, variously sculptured, 20-75 µm diam. x = 7, 8, 9, 10, 11, 12.</text>
+      <biological_entity id="o17440" name="microspore" name_original="microspores" src="d0_s10" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s10" value="tetrahedral" />
+        <character is_modifier="false" modifier="variously" name="relief" src="d0_s10" value="sculptured" />
+        <character char_type="range_value" from="20" from_unit="um" name="diameter" src="d0_s10" to="75" to_unit="um" />
+      </biological_entity>
+      <biological_entity constraint="x" id="o17441" name="chromosome" name_original="" src="d0_s10" type="structure">
+        <character name="quantity" src="d0_s10" value="7" />
+        <character name="quantity" src="d0_s10" value="8" />
+        <character name="quantity" src="d0_s10" value="9" />
+        <character name="quantity" src="d0_s10" value="10" />
+        <character name="quantity" src="d0_s10" value="11" />
+        <character name="quantity" src="d0_s10" value="12" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>worldwide, mainly tropical and subtropical regions.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="worldwide" establishment_means="native" />
+        <character name="distribution" value="mainly tropical and subtropical regions" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <other_name type="common_name">Spike-moss</other_name>
+  <other_name type="common_name">sélaginelle</other_name>
+  <discussion>The generic and infrageneric classification of Selaginella is controversial, and more than one genus may be recognized (see R. E. G. Pichi-Sermolli 1971 for information on generic synonyms). A. C. Jermy (1986, 1990b) proposed a subgeneric classification similar to that of J. G. Baker (1883, 1887). Despite some reservations, I consider Jermy's system useful for our purpose; therefore it is followed here. Three of the five subgenera proposed by Jermy occur in the flora area: subg. Selaginella , subg. Tetragonostachys , and subg. Stachygynandrum . One of the species in the flora, Selaginella eatonii (see discussion), may eventually prove to be best classified within a fourth, subg. Heterostachys Baker.</discussion>
+  <discussion>Some characteristics used in the keys and descriptions are best observed in fresh specimens or by soaking a sample of a dried specimen in water, using material at branch forks or buds. This is particularly true for members of subg. Tetragonostachys . Use a minimum of 20X (40--60X better) magnification and take measurements of both young and old leaves. Measurements of leaf length include the bristle and the most basal portion.</discussion>
+  <discussion>Selaginella subg. Tetragonostachys has a tendency for stem and leaves close to the substrate surface to be morphologically different from those on the side away from the substrate. In this case, the leaves on the side of the axis away from the surface are called upperside leaves , and those on the side toward the surface are called underside leaves . Otherwise, the leaves are designated only as leaves . In the subg. Stachygynandrum , however, which has complete structural differentiation between stem sides, the upper leaves are called median leaves , and the lower ones are called lateral leaves.</discussion>
+  <discussion>Species probably more than 700 (38 in the flora):</discussion>
+  <references>
+    <reference>Alston, A. H. G. 1955. The heterophyllous  Selaginella  of continental North America. Bull. Brit. Mus. (Nat. Hist.), Bot. 1(8): 219--274.</reference>
+    <reference>Baker, J. G. 1883. A synopsis of the genus  Selaginella , pt. 1. J. Bot. 21: 1--5.</reference>
+    <reference>Horner, H. T. Jr. and H. J. Arnott. 1963. Sporangial arrangement in North American species of  Selaginella . Bot. Gaz. 124: 371--383.</reference>
+    <reference>Jermy, A. C. 1986. Subgeneric names in  Selaginella . Fern Gaz. 13: 117--118.</reference>
+    <reference>Koller, A. L. and S. E. Scheckler. 1986. Variation in microsporangia and microspore dispersal in  Selaginella . Amer. J. Bot. 73: 1274--1288.</reference>
+    <reference>Tryon, A. F. 1949. Spores of the genus  Selaginella  in North America, north of Mexico. Ann. Missouri Bot. Gard. 36: 413--431.</reference>
+  </references>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d1_s0">
+          <text>Leaves on aerial stems dimorphic, arranged in 4 ranks (2 median, 2 lateral), axillary leaves present at branching points;</text>
+          <biological_entity id="o17442" name="leaf" name_original="leaves" src="d1_s0" type="structure">
+            <character constraint="in ranks" constraintid="o17444" is_modifier="false" name="arrangement" notes="" src="d1_s0" value="arranged" />
+          </biological_entity>
+          <biological_entity id="o17443" name="stem" name_original="stems" src="d1_s0" type="structure">
+            <character is_modifier="true" name="location" src="d1_s0" value="aerial" />
+            <character is_modifier="false" name="growth_form" src="d1_s0" value="dimorphic" />
+          </biological_entity>
+          <biological_entity id="o17444" name="rank" name_original="ranks" src="d1_s0" type="structure">
+            <character is_modifier="true" name="quantity" src="d1_s0" value="4" />
+          </biological_entity>
+          <biological_entity constraint="axillary" id="o17445" name="leaf" name_original="leaves" src="d1_s0" type="structure" />
+          <biological_entity id="o17446" name="point" name_original="points" src="d1_s0" type="structure">
+            <character is_modifier="true" name="architecture" src="d1_s0" value="branching" />
+          </biological_entity>
+          <relation from="o17442" id="r4054" name="on" negation="false" src="d1_s0" to="o17443" />
+          <relation from="o17445" id="r4055" name="present at" negation="false" src="d1_s0" to="o17446" />
+        </statement>
+        <statement id="d1_s1">
+          <text>rhizophores present.</text>
+          <biological_entity id="o17447" name="rhizophore" name_original="rhizophores" src="d1_s1" type="structure">
+            <character is_modifier="false" name="presence" src="d1_s1" value="absent" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>1c Subg. Stachygynandrum</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d2_s0">
+          <text>Leaves on aerial stems monomorphic, not in distinct ranks, axillary leaves absent at branching points;</text>
+          <biological_entity id="o17448" name="leaf" name_original="leaves" src="d2_s0" type="structure" />
+          <biological_entity id="o17449" name="stem" name_original="stems" src="d2_s0" type="structure">
+            <character is_modifier="true" name="location" src="d2_s0" value="aerial" />
+            <character is_modifier="false" name="architecture" src="d2_s0" value="monomorphic" />
+          </biological_entity>
+          <biological_entity id="o17450" name="rank" name_original="ranks" src="d2_s0" type="structure">
+            <character is_modifier="true" name="fusion" src="d2_s0" value="distinct" />
+          </biological_entity>
+          <biological_entity constraint="axillary" id="o17451" name="leaf" name_original="leaves" src="d2_s0" type="structure">
+            <character constraint="at points" constraintid="o17452" is_modifier="false" name="presence" src="d2_s0" value="absent" />
+          </biological_entity>
+          <biological_entity id="o17452" name="point" name_original="points" src="d2_s0" type="structure">
+            <character is_modifier="true" name="architecture" src="d2_s0" value="branching" />
+          </biological_entity>
+          <relation from="o17448" id="r4056" name="on" negation="false" src="d2_s0" to="o17449" />
+          <relation from="o17448" id="r4057" name="in" negation="true" src="d2_s0" to="o17450" />
+        </statement>
+        <statement id="d2_s1">
+          <text>rhizophores present or absent.</text>
+          <biological_entity id="o17453" name="rhizophore" name_original="rhizophores" src="d2_s1" type="structure">
+            <character is_modifier="false" name="presence" src="d2_s1" value="absent" />
+            <character is_modifier="false" name="presence" src="d2_s1" value="absent" />
+          </biological_entity>
+        </statement>
+      </description>
+      <next_statement_id>2</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d3_s0">
+          <text>Strobili cylindric;</text>
+          <biological_entity id="o17454" name="strobilus" name_original="strobili" src="d3_s0" type="structure">
+            <character is_modifier="false" name="shape" src="d3_s0" value="cylindric" />
+          </biological_entity>
+        </statement>
+        <statement id="d3_s1">
+          <text>sporophylls spreading;</text>
+          <biological_entity id="o17455" name="sporophyll" name_original="sporophylls" src="d3_s1" type="structure">
+            <character is_modifier="false" name="orientation" src="d3_s1" value="spreading" />
+          </biological_entity>
+        </statement>
+        <statement id="d3_s2">
+          <text>leaves thin, soft, margins short-spiny;</text>
+          <biological_entity id="o17456" name="leaf" name_original="leaves" src="d3_s2" type="structure">
+            <character is_modifier="false" name="width" src="d3_s2" value="thin" />
+            <character is_modifier="false" name="pubescence_or_texture" src="d3_s2" value="soft" />
+          </biological_entity>
+          <biological_entity id="o17457" name="margin" name_original="margins" src="d3_s2" type="structure">
+            <character is_modifier="false" name="architecture_or_shape" src="d3_s2" value="short-spiny" />
+          </biological_entity>
+        </statement>
+        <statement id="d3_s3">
+          <text>stomates throughout abaxial surface of leaf;</text>
+          <biological_entity id="o17458" name="stomate" name_original="stomates" src="d3_s3" type="structure" />
+          <biological_entity id="o17459" name="surface" name_original="surface" src="d3_s3" type="structure">
+            <character is_modifier="true" modifier="throughout" name="position" src="d3_s3" value="abaxial" />
+          </biological_entity>
+          <biological_entity id="o17460" name="leaf" name_original="leaf" src="d3_s3" type="structure" />
+          <relation from="o17458" id="r4058" name="throughout abaxial" negation="false" src="d3_s3" to="o17459" />
+          <relation from="o17459" id="r4059" name="part_of" negation="false" src="d3_s3" to="o17460" />
+        </statement>
+        <statement id="d3_s4">
+          <text>rhizophores absent.</text>
+          <biological_entity id="o17461" name="rhizophore" name_original="rhizophores" src="d3_s4" type="structure">
+            <character is_modifier="false" name="presence" src="d3_s4" value="absent" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>1a Subg. Selaginella</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d4_s0">
+          <text>Strobili quadrangular;</text>
+          <biological_entity id="o17462" name="strobilus" name_original="strobili" src="d4_s0" type="structure">
+            <character is_modifier="false" name="shape" src="d4_s0" value="quadrangular" />
+          </biological_entity>
+        </statement>
+        <statement id="d4_s1">
+          <text>sporophylls usually appressed;</text>
+          <biological_entity id="o17463" name="sporophyll" name_original="sporophylls" src="d4_s1" type="structure">
+            <character is_modifier="false" modifier="usually" name="fixation_or_orientation" src="d4_s1" value="appressed" />
+          </biological_entity>
+        </statement>
+        <statement id="d4_s2">
+          <text>leaves thick or fleshy (seldom thin), firm, margins dentate, serrate, or ciliate (never spiny);</text>
+          <biological_entity id="o17464" name="leaf" name_original="leaves" src="d4_s2" type="structure">
+            <character is_modifier="false" name="width" src="d4_s2" value="thick" />
+            <character is_modifier="false" name="texture" src="d4_s2" value="fleshy" />
+            <character is_modifier="false" name="texture" src="d4_s2" value="firm" />
+          </biological_entity>
+          <biological_entity id="o17465" name="margin" name_original="margins" src="d4_s2" type="structure">
+            <character is_modifier="false" name="architecture_or_shape" src="d4_s2" value="dentate" />
+            <character is_modifier="false" name="architecture" src="d4_s2" value="serrate" />
+            <character is_modifier="false" name="architecture" src="d4_s2" value="ciliate" />
+            <character is_modifier="false" name="architecture" src="d4_s2" value="serrate" />
+            <character is_modifier="false" name="architecture" src="d4_s2" value="ciliate" />
+          </biological_entity>
+        </statement>
+        <statement id="d4_s3">
+          <text>stomates in abaxial groove;</text>
+          <biological_entity id="o17466" name="stomate" name_original="stomates" src="d4_s3" type="structure" />
+          <biological_entity constraint="abaxial" id="o17467" name="groove" name_original="groove" src="d4_s3" type="structure" />
+          <relation from="o17466" id="r4060" name="in" negation="false" src="d4_s3" to="o17467" />
+        </statement>
+        <statement id="d4_s4">
+          <text>rhizophores present.</text>
+          <biological_entity id="o17468" name="rhizophore" name_original="rhizophores" src="d4_s4" type="structure">
+            <character is_modifier="false" name="presence" src="d4_s4" value="absent" />
+          </biological_entity>
+        </statement>
+      </description>
+      <determination>1b Subg. Tetragonostachys</determination>
+    </key_statement>
+  </key>
+</bio:treatment>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Kanitz" date="unknown" rank="family">psilotaceae</taxon_name>
+    <taxon_name authority="Swartz" date="1801" rank="genus">Psilotum</taxon_name>
+    <place_of_publication>
+      <publication_title>J. Bot. (Schrader)</publication_title>
+      <place_in_publication>1800(2): 8, 109. 1801</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family psilotaceae;genus Psilotum</taxon_hierarchy>
+    <other_info_on_name type="etymology">[Greek psilos, naked, referring to the plant's leafless aerial shoots]</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants terrestrial, sometimes epiphytic.</text>
+      <biological_entity id="o9921" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="terrestrial" />
+        <character is_modifier="false" modifier="sometimes" name="habitat" src="d0_s0" value="epiphytic" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Aerial shoots often clumped, simple proximally, dichotomously branched distally, 3 (-several) -ridged.</text>
+      <biological_entity id="o9922" name="shoot" name_original="shoots" src="d0_s1" type="structure">
+        <character is_modifier="true" name="location" src="d0_s1" value="aerial" />
+        <character is_modifier="false" modifier="often" name="arrangement" src="d0_s1" value="clumped" />
+        <character is_modifier="false" modifier="proximally" name="architecture" src="d0_s1" value="simple" />
+        <character is_modifier="false" modifier="dichotomously; distally" name="architecture" src="d0_s1" value="branched" />
+        <character is_modifier="false" name="shape" src="d0_s1" value="3-ridged" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Appendages minute, bractlike, borne distally on ridges of aerial shoots, sterile appendages subulate, those subtending synangia 2-lobed.</text>
+      <biological_entity id="o9923" name="appendage" name_original="appendages" src="d0_s2" type="structure">
+        <character is_modifier="false" name="size" src="d0_s2" value="minute" />
+        <character is_modifier="false" name="shape" src="d0_s2" value="bractlike" />
+      </biological_entity>
+      <biological_entity id="o9924" name="ridge" name_original="ridges" src="d0_s2" type="structure" />
+      <biological_entity id="o9925" name="shoot" name_original="shoots" src="d0_s2" type="structure">
+        <character is_modifier="true" name="location" src="d0_s2" value="aerial" />
+      </biological_entity>
+      <biological_entity id="o9926" name="appendage" name_original="appendages" src="d0_s2" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s2" value="sterile" />
+        <character is_modifier="false" name="shape" src="d0_s2" value="subulate" />
+      </biological_entity>
+      <biological_entity constraint="subtending" id="o9927" name="synangium" name_original="synangia" src="d0_s2" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s2" value="2-lobed" />
+      </biological_entity>
+      <relation from="o9923" id="r2290" name="borne" negation="false" src="d0_s2" to="o9924" />
+      <relation from="o9923" id="r2291" name="part_of" negation="false" src="d0_s2" to="o9925" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Synangia ± globose, obscurely 3-lobed.</text>
+      <biological_entity id="o9928" name="synangium" name_original="synangia" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="more or less" name="shape" src="d0_s3" value="globose" />
+        <character is_modifier="false" modifier="obscurely" name="shape" src="d0_s3" value="3-lobed" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>tropical and warm temperate regions.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="tropical and warm temperate regions" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <other_name type="common_name">Whisk-fern</other_name>
+  <discussion>Species 2 or 3 (1 in the flora):</discussion>
+  <references>
+    <reference>Cooper-Driver,G. 1977. Chemical evidence for separating the Psilotaceae from the Filicales. Science 198: 1260--1262.</reference>
+    <reference>White, R.A., D.W. Bierhorst, P.G. Gensel, D.R. Kaplan, and W.H. Wagner Jr. 1977. Taxonomic and morphological relationships of the Psilotaceae: A symposium. Brittonia 29: 1--68.</reference>
+  </references>
+</bio:treatment>

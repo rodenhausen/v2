@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
+    <taxon_name authority="Link" date="1841" rank="genus">pellaea</taxon_name>
+    <taxon_name authority="Mettenius ex Kuhn" date="1869" rank="species">glabella</taxon_name>
+    <taxon_name authority="(G. J. Gastony) Windham" date="1993" rank="subspecies">missouriensis</taxon_name>
+    <place_of_publication>
+      <publication_title>Contr. Univ. Michigan Herb.</publication_title>
+      <place_in_publication>19: 39. 1993</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family pteridaceae;genus pellaea;species glabella;subspecies missouriensis</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Pellaea</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="species">glabella</taxon_name>
+    <taxon_name authority="Gastony" date="unknown" rank="variety">missouriensis</taxon_name>
+    <place_of_publication>
+      <publication_title>Amer. Fern J.</publication_title>
+      <place_in_publication>78: 64. 1988</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Pellaea;species glabella;variety missouriensis;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Some ultimate segments (especially terminal segments) with hairlike scales abaxially near midrib;</text>
+      <biological_entity constraint="ultimate" id="o9082" name="segment" name_original="segments" src="d0_s0" type="structure" />
+      <biological_entity id="o9083" name="scale" name_original="scales" src="d0_s0" type="structure">
+        <character is_modifier="true" name="shape" src="d0_s0" value="hairlike" />
+      </biological_entity>
+      <biological_entity id="o9084" name="midrib" name_original="midrib" src="d0_s0" type="structure" />
+      <relation from="o9082" id="r2076" name="with" negation="false" src="d0_s0" to="o9083" />
+      <relation from="o9083" id="r2077" name="near" negation="false" src="d0_s0" to="o9084" />
+    </statement>
+    <statement id="d0_s1">
+      <text>sporangia containing 64 spores;</text>
+      <biological_entity id="o9085" name="sporangium" name_original="sporangia" src="d0_s1" type="structure" />
+      <biological_entity id="o9086" name="spore" name_original="spores" src="d0_s1" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s1" value="64" />
+      </biological_entity>
+      <relation from="o9085" id="r2078" name="containing" negation="false" src="d0_s1" to="o9086" />
+    </statement>
+    <statement id="d0_s2">
+      <text>spores averaging 38-52 µm diam. 2 n = 58.</text>
+      <biological_entity id="o9087" name="spore" name_original="spores" src="d0_s2" type="structure">
+        <character char_type="range_value" from="38" from_unit="um" name="diameter" src="d0_s2" to="52" to_unit="um" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o9088" name="chromosome" name_original="" src="d0_s2" type="structure">
+        <character name="quantity" src="d0_s2" value="58" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Sporulating summer--fall.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="sporulating time" value="summer-fall" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Cliffs and ledges, apparently confined to limestone;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="cliffs and ledges" />
+        <character name="habitat" value="confined to limestone ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>100--300 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="300" to_unit="m" from="100" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Mo.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>12c</number>
+  <discussion>This diploid taxon is currently known only from southeastern Missouri in the Ozark region, but a thorough survey of spore number per sporangium in Pellaea glabella from eastern North America may yield additional localities. Plants of P . glabella subsp. missouriensis occasionally hybridize with P . glabella subsp. glabella ; the hybrids are apogamous pentaploids resembling P . glabella subsp. glabella (G. J. Gastony 1988).</discussion>
+</bio:treatment>

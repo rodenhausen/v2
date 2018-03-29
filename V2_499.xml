@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
+    <taxon_name authority="Miller" date="1754" rank="genus">abies</taxon_name>
+    <taxon_name authority="(Gordon &amp; Glendinning) Hildebrand" date="1861" rank="species">concolor</taxon_name>
+    <place_of_publication>
+      <publication_title>Verh. Naturhist. Vereines Preuss. Rheinl. Westphalens</publication_title>
+      <place_in_publication>18: 261. 1861</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family pinaceae;genus abies;species concolor</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Picea</taxon_name>
+    <taxon_name authority="Gordon &amp; Glendinning" date="unknown" rank="species">concolor</taxon_name>
+    <place_of_publication>
+      <publication_title>Pinetum,</publication_title>
+      <place_in_publication>155. 1858</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Picea;species concolor;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Trees to 40m;</text>
+      <biological_entity id="o12725" name="tree" name_original="trees" src="d0_s0" type="structure">
+        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="40" to_unit="m" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>trunk to 0.9m diam.;</text>
+      <biological_entity id="o12726" name="trunk" name_original="trunk" src="d0_s1" type="structure">
+        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="0.9" to_unit="m" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>crown spirelike.</text>
+      <biological_entity id="o12727" name="crown" name_original="crown" src="d0_s2" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s2" value="spirelike" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Bark gray, thin, smooth, with age thickening (to 18cm) and breaking into deep longitudinal furrows, often revealing yellowish inner periderm, appearing corky.</text>
+      <biological_entity id="o12728" name="bark" name_original="bark" src="d0_s3" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s3" value="gray" />
+        <character is_modifier="false" name="width" src="d0_s3" value="thin" />
+        <character is_modifier="false" name="architecture_or_pubescence_or_relief" src="d0_s3" value="smooth" />
+        <character is_modifier="false" modifier="often" name="pubescence_or_texture" src="d0_s3" value="corky" />
+      </biological_entity>
+      <biological_entity id="o12729" name="age" name_original="age" src="d0_s3" type="structure">
+        <character is_modifier="false" name="width" src="d0_s3" value="thickening" />
+      </biological_entity>
+      <biological_entity id="o12730" name="furrow" name_original="furrows" src="d0_s3" type="structure">
+        <character is_modifier="true" name="depth" src="d0_s3" value="deep" />
+        <character is_modifier="true" name="dehiscence_or_orientation" src="d0_s3" value="longitudinal" />
+      </biological_entity>
+      <biological_entity constraint="inner" id="o12731" name="periderm" name_original="periderm" src="d0_s3" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s3" value="yellowish" />
+      </biological_entity>
+      <relation from="o12728" id="r2941" name="with" negation="false" src="d0_s3" to="o12729" />
+      <relation from="o12728" id="r2942" name="breaking into" negation="false" src="d0_s3" to="o12730" />
+      <relation from="o12728" id="r2943" modifier="often" name="revealing" negation="false" src="d0_s3" to="o12731" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Branches diverging from trunk at right angles, the lower often spreading and drooping in age;</text>
+      <biological_entity id="o12732" name="branch" name_original="branches" src="d0_s4" type="structure">
+        <character constraint="from trunk" constraintid="o12733" is_modifier="false" name="orientation" src="d0_s4" value="diverging" />
+        <character is_modifier="false" name="position" notes="" src="d0_s4" value="lower" />
+        <character is_modifier="false" modifier="often" name="orientation" src="d0_s4" value="spreading" />
+        <character constraint="in age" is_modifier="false" name="orientation" src="d0_s4" value="drooping" />
+      </biological_entity>
+      <biological_entity id="o12733" name="trunk" name_original="trunk" src="d0_s4" type="structure" />
+      <biological_entity id="o12734" name="angle" name_original="angles" src="d0_s4" type="structure" />
+      <relation from="o12733" id="r2944" name="at" negation="false" src="d0_s4" to="o12734" />
+    </statement>
+    <statement id="d0_s5">
+      <text>twigs mostly opposite, glabrous or with yellowish pubescence.</text>
+      <biological_entity id="o12735" name="twig" name_original="twigs" src="d0_s5" type="structure">
+        <character is_modifier="false" modifier="mostly" name="arrangement" src="d0_s5" value="opposite" />
+        <character is_modifier="false" name="pubescence" src="d0_s5" value="glabrous" />
+        <character is_modifier="false" name="pubescence" src="d0_s5" value="with yellowish pubescence" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>Buds exposed, either yellowish and nearly conic (when large) or brownish and nearly globose (when small), resinous, apex rounded to pointed;</text>
+      <biological_entity id="o12736" name="bud" name_original="buds" src="d0_s6" type="structure">
+        <character is_modifier="false" name="prominence" src="d0_s6" value="exposed" />
+        <character is_modifier="false" modifier="either" name="coloration" src="d0_s6" value="yellowish" />
+        <character is_modifier="false" modifier="nearly" name="shape" src="d0_s6" value="conic" />
+        <character is_modifier="false" name="coloration" src="d0_s6" value="brownish" />
+        <character is_modifier="false" modifier="nearly" name="shape" src="d0_s6" value="globose" />
+        <character is_modifier="false" name="coating" src="d0_s6" value="resinous" />
+      </biological_entity>
+      <biological_entity id="o12737" name="apex" name_original="apex" src="d0_s6" type="structure">
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="rounded" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="pointed" />
+        <character char_type="range_value" from="rounded" name="shape" src="d0_s6" to="pointed" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>basal scales equilaterally triangular, glabrous, not resinous, margins entire, apex sharp-pointed.</text>
+      <biological_entity constraint="basal" id="o12738" name="scale" name_original="scales" src="d0_s7" type="structure">
+        <character is_modifier="false" modifier="equilaterally" name="shape" src="d0_s7" value="triangular" />
+        <character is_modifier="false" name="pubescence" src="d0_s7" value="glabrous" />
+        <character is_modifier="false" modifier="not" name="coating" src="d0_s7" value="resinous" />
+      </biological_entity>
+      <biological_entity id="o12739" name="margin" name_original="margins" src="d0_s7" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s7" value="entire" />
+      </biological_entity>
+      <biological_entity id="o12740" name="apex" name_original="apex" src="d0_s7" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s7" value="sharp-pointed" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Leaves 1.5-6cm × 2-3mm, mostly 2-ranked, flexible, proximal portion ±straight;</text>
+      <biological_entity id="o12741" name="leaf" name_original="leaves" src="d0_s8" type="structure">
+        <character char_type="range_value" from="1.5" from_unit="cm" name="length" src="d0_s8" to="6" to_unit="cm" />
+        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s8" to="3" to_unit="mm" />
+        <character is_modifier="false" modifier="mostly" name="arrangement" src="d0_s8" value="2-ranked" />
+        <character is_modifier="false" name="fragility" src="d0_s8" value="pliable" value_original="flexible" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o12742" name="portion" name_original="portion" src="d0_s8" type="structure">
+        <character is_modifier="false" modifier="more or less" name="course" src="d0_s8" value="straight" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>cross-section flat, sometimes slightly grooved adaxially;</text>
+    </statement>
+    <statement id="d0_s10">
+      <text>odor pungent, frequently camphorlike;</text>
+      <biological_entity id="o12743" name="cross-section" name_original="cross-section" src="d0_s9" type="structure">
+        <character is_modifier="false" name="prominence_or_shape" src="d0_s9" value="flat" />
+        <character is_modifier="false" modifier="sometimes slightly; adaxially" name="architecture" src="d0_s9" value="grooved" />
+        <character is_modifier="false" name="odor" src="d0_s10" value="pungent" />
+        <character is_modifier="false" modifier="frequently" name="odor" src="d0_s10" value="camphorlike" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>abaxial surface glaucous, with 4-7 stomatal rows on each side of midrib;</text>
+      <biological_entity constraint="abaxial" id="o12744" name="surface" name_original="surface" src="d0_s11" type="structure">
+        <character is_modifier="false" name="pubescence" src="d0_s11" value="glaucous" />
+      </biological_entity>
+      <biological_entity id="o12745" name="stomatal" name_original="stomatal" src="d0_s11" type="structure">
+        <character char_type="range_value" from="4" is_modifier="true" name="quantity" src="d0_s11" to="7" />
+      </biological_entity>
+      <biological_entity id="o12746" name="row" name_original="rows" src="d0_s11" type="structure">
+        <character char_type="range_value" from="4" is_modifier="true" name="quantity" src="d0_s11" to="7" />
+      </biological_entity>
+      <biological_entity id="o12747" name="side" name_original="side" src="d0_s11" type="structure" />
+      <biological_entity id="o12748" name="midrib" name_original="midrib" src="d0_s11" type="structure" />
+      <relation from="o12744" id="r2945" name="with" negation="false" src="d0_s11" to="o12745" />
+      <relation from="o12744" id="r2946" name="with" negation="false" src="d0_s11" to="o12746" />
+      <relation from="o12745" id="r2947" name="on" negation="false" src="d0_s11" to="o12747" />
+      <relation from="o12746" id="r2948" name="on" negation="false" src="d0_s11" to="o12747" />
+      <relation from="o12747" id="r2949" name="part_of" negation="false" src="d0_s11" to="o12748" />
+    </statement>
+    <statement id="d0_s12">
+      <text>adaxial surface grayish green, glaucous, with (7-) 12 (-18) stomatal rows at midleaf, these usually fewer toward leaf apex;</text>
+      <biological_entity constraint="adaxial" id="o12749" name="surface" name_original="surface" src="d0_s12" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s12" value="grayish green" />
+        <character is_modifier="false" name="pubescence" src="d0_s12" value="glaucous" />
+        <character constraint="toward leaf apex" constraintid="o12753" is_modifier="false" modifier="usually" name="quantity" notes="" src="d0_s12" value="fewer" />
+      </biological_entity>
+      <biological_entity id="o12750" name="stomatal" name_original="stomatal" src="d0_s12" type="structure">
+        <character char_type="range_value" from="7" is_modifier="true" name="atypical_quantity" src="d0_s12" to="12" to_inclusive="false" />
+        <character char_type="range_value" from="12" from_inclusive="false" is_modifier="true" name="atypical_quantity" src="d0_s12" to="18" />
+        <character is_modifier="true" name="quantity" src="d0_s12" value="12" />
+      </biological_entity>
+      <biological_entity id="o12751" name="row" name_original="rows" src="d0_s12" type="structure">
+        <character char_type="range_value" from="7" is_modifier="true" name="atypical_quantity" src="d0_s12" to="12" to_inclusive="false" />
+        <character char_type="range_value" from="12" from_inclusive="false" is_modifier="true" name="atypical_quantity" src="d0_s12" to="18" />
+        <character is_modifier="true" name="quantity" src="d0_s12" value="12" />
+      </biological_entity>
+      <biological_entity id="o12752" name="midleaf" name_original="midleaf" src="d0_s12" type="structure" />
+      <biological_entity constraint="leaf" id="o12753" name="apex" name_original="apex" src="d0_s12" type="structure" />
+      <relation from="o12749" id="r2950" name="with" negation="false" src="d0_s12" to="o12750" />
+      <relation from="o12749" id="r2951" name="with" negation="false" src="d0_s12" to="o12751" />
+      <relation from="o12750" id="r2952" name="at" negation="false" src="d0_s12" to="o12752" />
+      <relation from="o12751" id="r2953" name="at" negation="false" src="d0_s12" to="o12752" />
+    </statement>
+    <statement id="d0_s13">
+      <text>apex usually rounded, sometimes acute or notched;</text>
+      <biological_entity id="o12754" name="apex" name_original="apex" src="d0_s13" type="structure">
+        <character is_modifier="false" modifier="usually" name="shape" src="d0_s13" value="rounded" />
+        <character is_modifier="false" modifier="sometimes" name="shape" src="d0_s13" value="acute" />
+        <character is_modifier="false" name="shape" src="d0_s13" value="notched" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s14">
+      <text>resin canals small, near margins and abaxial epidermal layer.</text>
+      <biological_entity constraint="resin" id="o12755" name="canal" name_original="canals" src="d0_s14" type="structure">
+        <character is_modifier="false" name="size" src="d0_s14" value="small" />
+      </biological_entity>
+      <biological_entity id="o12756" name="margin" name_original="margins" src="d0_s14" type="structure" />
+      <biological_entity constraint="abaxial epidermal" id="o12757" name="layer" name_original="layer" src="d0_s14" type="structure" />
+      <relation from="o12755" id="r2954" name="near" negation="false" src="d0_s14" to="o12756" />
+    </statement>
+    <statement id="d0_s15">
+      <text>Pollen cones at pollination ± red, purple, or ± green.</text>
+      <biological_entity constraint="pollen" id="o12758" name="cone" name_original="cones" src="d0_s15" type="structure">
+        <character constraint="at pollination" is_modifier="false" modifier="more or less" name="coloration" src="d0_s15" value="red" />
+        <character is_modifier="false" name="coloration" src="d0_s15" value="purple" />
+        <character is_modifier="false" modifier="more or less" name="coloration" src="d0_s15" value="green" />
+        <character is_modifier="false" name="coloration" src="d0_s15" value="purple" />
+        <character is_modifier="false" modifier="more or less" name="coloration" src="d0_s15" value="green" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s16">
+      <text>Seed-cones cylindric, 7-12 × 3-4.5cm, olive-green, sessile, apex round;</text>
+      <biological_entity id="o12759" name="seed-cone" name_original="seed-cones" src="d0_s16" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s16" value="cylindric" />
+        <character char_type="range_value" from="7" from_unit="cm" name="length" src="d0_s16" to="12" to_unit="cm" />
+        <character char_type="range_value" from="3" from_unit="cm" name="width" src="d0_s16" to="4.5" to_unit="cm" />
+        <character is_modifier="false" name="coloration" src="d0_s16" value="olive-green" />
+        <character is_modifier="false" name="architecture" src="d0_s16" value="sessile" />
+      </biological_entity>
+      <biological_entity id="o12760" name="apex" name_original="apex" src="d0_s16" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s16" value="round" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s17">
+      <text>scales ca. 2.5-3 × 3-3.5cm, pubescent;</text>
+      <biological_entity id="o12761" name="scale" name_original="scales" src="d0_s17" type="structure">
+        <character char_type="range_value" from="2.5" from_unit="cm" name="length" src="d0_s17" to="3" to_unit="cm" />
+        <character char_type="range_value" from="3" from_unit="cm" name="width" src="d0_s17" to="3.5" to_unit="cm" />
+        <character is_modifier="false" name="pubescence" src="d0_s17" value="pubescent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s18">
+      <text>bracts included.</text>
+      <biological_entity id="o12762" name="bract" name_original="bracts" src="d0_s18" type="structure">
+        <character is_modifier="false" name="position" src="d0_s18" value="included" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s19">
+      <text>Seeds 8-12 × 3mm, body tan;</text>
+      <biological_entity id="o12763" name="seed" name_original="seeds" src="d0_s19" type="structure">
+        <character char_type="range_value" from="8" from_unit="mm" name="length" src="d0_s19" to="12" to_unit="mm" />
+        <character name="width" src="d0_s19" unit="mm" value="3" />
+      </biological_entity>
+      <biological_entity id="o12764" name="body" name_original="body" src="d0_s19" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s19" value="tan" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s20">
+      <text>wing about twice as long as body, tan with rosy tinge;</text>
+      <biological_entity id="o12765" name="wing" name_original="wing" src="d0_s20" type="structure">
+        <character constraint="body" constraintid="o12766" is_modifier="false" name="length" src="d0_s20" value="2 times as long as body" />
+        <character is_modifier="false" name="coloration" src="d0_s20" value="tan with rosy tinge" />
+      </biological_entity>
+      <biological_entity id="o12766" name="body" name_original="body" src="d0_s20" type="structure" />
+    </statement>
+    <statement id="d0_s21">
+      <text>cotyledons 5-7.2 n =24.</text>
+      <biological_entity id="o12767" name="cotyledon" name_original="cotyledons" src="d0_s21" type="structure">
+        <character char_type="range_value" from="5" name="quantity" src="d0_s21" to="7" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o12768" name="chromosome" name_original="" src="d0_s21" type="structure">
+        <character name="quantity" src="d0_s21" value="24" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Coniferous forests;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="coniferous forests ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>1700--3400m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="3400" to_unit="m" from="1700" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ariz., Calif., Colo., Idaho, Nev., N.Mex., Oreg., Utah; Mexico in Baja California, Sonora.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Colo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Idaho" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Nev." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Utah" establishment_means="native" />
+        <character name="distribution" value="Mexico in Baja California" establishment_means="native" />
+        <character name="distribution" value="Sonora" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>8</number>
+  <other_name type="common_name">White fir</other_name>
+  <other_name type="common_name">Rocky Mountain white fir</other_name>
+  <other_name type="common_name">pino real blanco</other_name>
+  <discussion>Abies concolor is a western catchall species for firs with green seed cones and with glaucous adaxial leaf surfaces. Many of these populations have long been isolated geographically and genetically. A geographic cluster of populations in Utah has shorter leaves and slightly different terpene patterns than a similar cluster of populations in Colorado and northern New Mexico (J.W. Wright et al. 1971; E.Zavarin et al. 1975). Another large geographic cluster, in southern New Mexico and Arizona, seems to be strongly linked chemically to Colorado populations (E.Zavarin et al. 1975) and morphologically to southern California populations (J.L. Hamrick and W.J. Libby 1972). Northern California populations with pubescent twigs and notched leaves are unique, as are the Baja California populations with very short, thick leaves and about 18 adaxial stomatal rows. In Los Padres National Forest of coastal southern California and in the Cascades of northern California, apparent introgression with A . lowiana (E.Zavarin et al. 1975; J.L. Hamrick and W.J. Libby 1972) has occurred. Many consider A . lowiana (given specific rank in this treatment) as a synonym of A . concolor or place it in an infraspecific rank under that species.</discussion>
+  <references>
+    <reference>Hamrick, J.L. and W.J. Libby. 1972. Variation and selection in western U.S. montane species. I. White fir. Silvae Genet. 21: 29--35.</reference>
+    <reference>Wright, J.W., W.A. Lemmien, and J.N. Bright. 1971. Genetic variation in southern Rocky Mountain white fir. Silvae Genet. 20: 148--150.</reference>
+    <reference>Zavarin,E., K.Snajberk, and J.Fisher. 1975. Geographic variability of monoterpenes from the cortex of  Abies concolor . Biochem. Syst. &amp; Ecol. 3: 191--203.</reference>
+  </references>
+</bio:treatment>

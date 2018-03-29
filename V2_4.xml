@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>Frank D. Watson</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
+    <taxon_name authority="Richard" date="1810" rank="genus">Taxodium</taxon_name>
+    <place_of_publication>
+      <publication_title>Ann. Mus. Natl. Hist. Nat.</publication_title>
+      <place_in_publication>16: 298. 1810</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cupressaceae;genus Taxodium</taxon_hierarchy>
+    <other_info_on_name type="etymology">[Taxus, generic name of yew, and Greek -oides, like]</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Trees deciduous or evergreen.</text>
+      <biological_entity id="o9294" name="tree" name_original="trees" src="d0_s0" type="structure">
+        <character is_modifier="false" name="duration" src="d0_s0" value="deciduous" />
+        <character is_modifier="false" name="duration" src="d0_s0" value="evergreen" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Branchlets terete.</text>
+      <biological_entity id="o9295" name="branchlet" name_original="branchlets" src="d0_s1" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s1" value="terete" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Lateral roots commonly producing erect, irregularly conic to rounded knees in periodically flooded habitats.</text>
+      <biological_entity constraint="lateral" id="o9296" name="root" name_original="roots" src="d0_s2" type="structure" />
+      <biological_entity id="o9297" name="knee" name_original="knees" src="d0_s2" type="structure">
+        <character is_modifier="true" name="orientation" src="d0_s2" value="erect" />
+        <character is_modifier="true" modifier="irregularly" name="shape" notes="[duplicate value]" src="d0_s2" value="conic" />
+        <character is_modifier="true" name="shape" notes="[duplicate value]" src="d0_s2" value="rounded" />
+        <character char_type="range_value" from="irregularly conic" is_modifier="true" name="shape" src="d0_s2" to="rounded" />
+      </biological_entity>
+      <biological_entity id="o9298" name="habitat" name_original="habitats" src="d0_s2" type="structure" />
+      <relation from="o9296" id="r2133" name="producing" negation="false" src="d0_s2" to="o9297" />
+      <relation from="o9296" id="r2134" modifier="periodically" name="flooded" negation="false" src="d0_s2" to="o9298" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Leaves alternate, in 2 ranks or not.</text>
+      <biological_entity id="o9299" name="leaf" name_original="leaves" src="d0_s3" type="structure">
+        <character is_modifier="false" name="arrangement" src="d0_s3" value="alternate" />
+      </biological_entity>
+      <biological_entity id="o9300" name="rank" name_original="ranks" src="d0_s3" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s3" value="2" />
+      </biological_entity>
+      <relation from="o9299" id="r2135" name="in" negation="false" src="d0_s3" to="o9300" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Adult leaves divergent to strongly appressed, linear or linear-lanceolate to deltate, generally flattened, free portion to ca. 17 mm;</text>
+      <biological_entity id="o9301" name="leaf" name_original="leaves" src="d0_s4" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s4" value="adult" />
+        <character is_modifier="false" name="arrangement" src="d0_s4" value="divergent" />
+        <character is_modifier="false" modifier="strongly" name="fixation_or_orientation" src="d0_s4" value="appressed" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="linear" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="linear-lanceolate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="deltate" />
+        <character char_type="range_value" from="linear-lanceolate" name="shape" src="d0_s4" to="deltate" />
+        <character is_modifier="false" modifier="generally" name="shape" src="d0_s4" value="flattened" />
+      </biological_entity>
+      <biological_entity id="o9302" name="portion" name_original="portion" src="d0_s4" type="structure">
+        <character is_modifier="true" name="fusion" src="d0_s4" value="free" />
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s4" to="17" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>abaxial glands absent.</text>
+      <biological_entity constraint="abaxial" id="o9303" name="gland" name_original="glands" src="d0_s5" type="structure">
+        <character is_modifier="false" name="presence" src="d0_s5" value="absent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>Pollen cones with 10-20 sporophylls, each sporophyll with 2-10 pollen-sacs.</text>
+      <biological_entity constraint="pollen" id="o9304" name="cone" name_original="cones" src="d0_s6" type="structure" />
+      <biological_entity id="o9305" name="sporophyll" name_original="sporophylls" src="d0_s6" type="structure">
+        <character char_type="range_value" from="10" is_modifier="true" name="quantity" src="d0_s6" to="20" />
+      </biological_entity>
+      <biological_entity id="o9306" name="sporophyll" name_original="sporophyll" src="d0_s6" type="structure" />
+      <biological_entity id="o9307" name="pollen-sac" name_original="pollen-sacs" src="d0_s6" type="structure">
+        <character char_type="range_value" from="2" is_modifier="true" name="quantity" src="d0_s6" to="10" />
+      </biological_entity>
+      <relation from="o9304" id="r2136" name="with" negation="false" src="d0_s6" to="o9305" />
+      <relation from="o9306" id="r2137" name="with" negation="false" src="d0_s6" to="o9307" />
+    </statement>
+    <statement id="d0_s7">
+      <text>Seed-cones maturing and shattering in 1 season, nearly globose;</text>
+      <biological_entity id="o9308" name="seed-cone" name_original="seed-cones" src="d0_s7" type="structure">
+        <character is_modifier="false" name="life_cycle" src="d0_s7" value="maturing" />
+        <character is_modifier="false" modifier="nearly" name="shape" notes="" src="d0_s7" value="globose" />
+      </biological_entity>
+      <biological_entity id="o9309" name="season" name_original="season" src="d0_s7" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s7" value="1" />
+      </biological_entity>
+      <relation from="o9308" id="r2138" name="shattering in" negation="false" src="d0_s7" to="o9309" />
+    </statement>
+    <statement id="d0_s8">
+      <text>scales falling early, 5-10, valvate, ± peltate, thin and woody.</text>
+      <biological_entity id="o9310" name="scale" name_original="scales" src="d0_s8" type="structure">
+        <character is_modifier="false" name="life_cycle" src="d0_s8" value="falling" />
+        <character char_type="range_value" from="5" name="quantity" src="d0_s8" to="10" />
+        <character is_modifier="false" name="arrangement_or_dehiscence" src="d0_s8" value="valvate" />
+        <character is_modifier="false" modifier="more or less" name="architecture" src="d0_s8" value="peltate" />
+        <character is_modifier="false" name="width" src="d0_s8" value="thin" />
+        <character is_modifier="false" name="texture" src="d0_s8" value="woody" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>Seeds (1-) 2 per scale, irregularly 3-angled, wingless;</text>
+      <biological_entity id="o9311" name="seed" name_original="seeds" src="d0_s9" type="structure">
+        <character char_type="range_value" from="1" name="atypical_quantity" src="d0_s9" to="2" to_inclusive="false" />
+        <character constraint="per scale" constraintid="o9312" name="quantity" src="d0_s9" value="2" />
+        <character is_modifier="false" modifier="irregularly" name="shape" notes="" src="d0_s9" value="3-angled" />
+        <character is_modifier="false" name="architecture" src="d0_s9" value="wingless" />
+      </biological_entity>
+      <biological_entity id="o9312" name="scale" name_original="scale" src="d0_s9" type="structure" />
+    </statement>
+    <statement id="d0_s10">
+      <text>cotyledons 4-9.</text>
+    </statement>
+    <statement id="d0_s11">
+      <text>x = 11.</text>
+      <biological_entity id="o9313" name="cotyledon" name_original="cotyledons" src="d0_s10" type="structure">
+        <character char_type="range_value" from="4" name="quantity" src="d0_s10" to="9" />
+      </biological_entity>
+      <biological_entity constraint="x" id="o9314" name="chromosome" name_original="" src="d0_s11" type="structure">
+        <character name="quantity" src="d0_s11" value="11" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>North America, Mexico, Central America in Guatemala.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="North America" establishment_means="native" />
+        <character name="distribution" value="Mexico" establishment_means="native" />
+        <character name="distribution" value="Central America in Guatemala" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>3</number>
+  <discussion>The pollen cones are usually borne at the base of alternate leaves, forming pendent axillary panicles; they occur less commonly singly or in racemes.</discussion>
+  <discussion>Taxodium is variously treated as one to three species but treated here as one polymorphic species with two varieties in the flora. A third taxon tentatively accorded varietal rank--- Taxodium distichum (Linnaeus) Richard var. mexicanum Gordon (= Taxodium mucronatum Tenore)---and recognized by some authors as occurring within our range, appears to differ only in minor phenological characters. Whether or not populations from farther south in Mexico and Guatemala differ sufficiently for formal taxonomic recognition at any rank has yet to be determined.</discussion>
+  <discussion>Species 1(--3) (1 in the flora):</discussion>
+  <references>
+    <reference>Watson, F. D. 1985. The nomenclature of pondcypress and baldcypress. Taxon 34: 506--509.</reference>
+  </references>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_593_d3_s0">
+      <text>Leafy branchlets falling annually or seasonally;</text>
+      <biological_entity id="from_key_V2_593_o16133" name="branchlet" name_original="branchlets" src="d3_s0" type="structure">
+        <character is_modifier="true" name="architecture" src="d3_s0" value="leafy" />
+        <character is_modifier="false" modifier="annually; annually; seasonally" name="life_cycle" src="d3_s0" value="falling" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_593_d3_s1">
+      <text>pollen cones mostly in pendent axillary panicles;</text>
+      <biological_entity constraint="pollen" id="from_key_V2_593_o16134" name="cone" name_original="cones" src="d3_s1" type="structure" />
+      <biological_entity constraint="axillary" id="from_key_V2_593_o16135" name="panicle" name_original="panicles" src="d3_s1" type="structure">
+        <character is_modifier="true" name="orientation" src="d3_s1" value="pendent" />
+      </biological_entity>
+      <relation from="from_key_V2_593_o16134" id="from_key_V2_593_r3793" name="in" negation="false" src="d3_s1" to="from_key_V2_593_o16135" />
+    </statement>
+    <statement id="from_key_V2_593_d3_s2">
+      <text>seed-cones nearly globose, shattering at maturity, scales each bearing (1-) 2 irregularly 3-angled, wingless seeds;</text>
+      <biological_entity id="from_key_V2_593_o16136" name="seed-cone" name_original="seed-cones" src="d3_s2" type="structure">
+        <character is_modifier="false" modifier="nearly" name="shape" src="d3_s2" value="globose" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_593_o16138" name="seed" name_original="seeds" src="d3_s2" type="structure">
+        <character char_type="range_value" from="1" is_modifier="true" name="atypical_count" src="d3_s2" to="2" to_inclusive="false" />
+        <character is_modifier="true" name="count" src="d3_s2" value="2" />
+        <character is_modifier="true" modifier="irregularly" name="shape" src="d3_s2" value="3-angled" />
+        <character is_modifier="true" name="architecture" src="d3_s2" value="wingless" />
+      </biological_entity>
+      <relation from="from_key_V2_593_o16137" id="from_key_V2_593_r3794" name="bearing" negation="false" src="d3_s2" to="from_key_V2_593_o16138" />
+    </statement>
+    <statement id="from_key_V2_593_d3_s3">
+      <text>se United States..</text>
+      <biological_entity id="from_key_V2_593_o16137" name="scale" name_original="scales" src="d3_s2" type="structure">
+        <character is_modifier="false" name="fusion" src="d3_s3" value="united" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_593_d1_s0">
+      <text>Leaves alternate;</text>
+      <biological_entity id="from_key_V2_593_o16127" name="leaf" name_original="leaves" src="d1_s0" type="structure">
+        <character is_modifier="false" name="arrangement" src="d1_s0" value="alternate" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_593_d1_s1">
+      <text>leaves of adult usually with expanded needlelike or linear or linear-lanceolate blade.</text>
+      <biological_entity id="from_key_V2_593_o16128" name="leaf" name_original="leaves" src="d1_s1" type="structure" />
+      <biological_entity id="from_key_V2_593_o16129" name="blade" name_original="blade" src="d1_s1" type="structure">
+        <character is_modifier="true" name="shape" src="d1_s1" value="expanded" />
+        <character is_modifier="true" name="shape" src="d1_s1" value="needlelike" />
+        <character is_modifier="true" name="shape" src="d1_s1" value="linear" />
+        <character is_modifier="true" name="shape" src="d1_s1" value="linear-lanceolate" />
+      </biological_entity>
+      <relation from="from_key_V2_593_o16128" id="from_key_V2_593_r3792" modifier="of adult" name="with" negation="false" src="d1_s1" to="from_key_V2_593_o16129" />
+    </statement>
+  </description>
+</bio:treatment>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
+    <taxon_name authority="Adanson" date="1763" rank="genus">dryopteris</taxon_name>
+    <taxon_name authority="(Linnaeus) Schott" date="1834" rank="species">fragrans</taxon_name>
+    <place_of_publication>
+      <publication_title>Gen. Fil.</publication_title>
+      <place_in_publication>plate 9. 1834</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family dryopteridaceae;genus dryopteris;species fragrans</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Polypodium</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="species">fragrans</taxon_name>
+    <place_of_publication>
+      <publication_title>Sp. Pl.</publication_title>
+      <place_in_publication>2: 1089. 1753</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Polypodium;species fragrans;</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Dryopteris</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="species">fragrans</taxon_name>
+    <taxon_name authority="Komarov" date="unknown" rank="variety">remotiuscula</taxon_name>
+    <taxon_hierarchy>genus Dryopteris;species fragrans;variety remotiuscula;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Leaves monomorphic, green through winter, 6-40 × 1-6 cm, old leaves persistent as gray or brown conspicuous clump at plant base (only in this species).</text>
+      <biological_entity id="o15757" name="leaf" name_original="leaves" src="d0_s0" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s0" value="monomorphic" />
+        <character constraint="through winter" is_modifier="false" name="coloration" src="d0_s0" value="green" />
+        <character char_type="range_value" from="6" from_unit="cm" name="length" src="d0_s0" to="40" to_unit="cm" />
+        <character char_type="range_value" from="1" from_unit="cm" name="width" src="d0_s0" to="6" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o15758" name="leaf" name_original="leaves" src="d0_s0" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s0" value="old" />
+        <character constraint="as clump" constraintid="o15759" is_modifier="false" name="duration" src="d0_s0" value="persistent" />
+      </biological_entity>
+      <biological_entity id="o15759" name="clump" name_original="clump" src="d0_s0" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s0" value="gray" />
+        <character is_modifier="true" name="coloration" src="d0_s0" value="brown" />
+        <character is_modifier="true" name="prominence" src="d0_s0" value="conspicuous" />
+      </biological_entity>
+      <biological_entity constraint="plant" id="o15760" name="base" name_original="base" src="d0_s0" type="structure" />
+      <relation from="o15759" id="r3710" name="at" negation="false" src="d0_s0" to="o15760" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Petiole 1/3 length of leaf, scaly throughout;</text>
+      <biological_entity id="o15761" name="petiole" name_original="petiole" src="d0_s1" type="structure">
+        <character name="length" src="d0_s1" value="1/3 length of leaf" />
+        <character is_modifier="false" modifier="throughout" name="architecture_or_pubescence" src="d0_s1" value="scaly" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>scales dense, brown to redbrown.</text>
+      <biological_entity id="o15762" name="scale" name_original="scales" src="d0_s2" type="structure">
+        <character is_modifier="false" name="density" src="d0_s2" value="dense" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s2" value="brown" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s2" value="redbrown" />
+        <character char_type="range_value" from="brown" name="coloration" src="d0_s2" to="redbrown" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Blades green, linear-lanceolate, pinnate-pinnatifid to 2-pinnate, papery, densely scaly (only in this species) abaxially, glandular, aromatic when handled (only in this species).</text>
+      <biological_entity id="o15763" name="blade" name_original="blades" src="d0_s3" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s3" value="green" />
+        <character is_modifier="false" name="shape" src="d0_s3" value="linear-lanceolate" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="pinnate-pinnatifid" />
+        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="2-pinnate" />
+        <character char_type="range_value" from="pinnate-pinnatifid" name="shape" src="d0_s3" to="2-pinnate" />
+        <character is_modifier="false" name="texture" src="d0_s3" value="papery" />
+        <character is_modifier="false" modifier="densely; abaxially" name="architecture_or_pubescence" src="d0_s3" value="scaly" />
+        <character is_modifier="false" name="architecture_or_function_or_pubescence" src="d0_s3" value="glandular" />
+        <character is_modifier="false" modifier="when handled" name="odor" src="d0_s3" value="aromatic" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Pinnae ± in plane of blade, linear-oblong;</text>
+      <biological_entity id="o15764" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s4" value="linear-oblong" />
+      </biological_entity>
+      <biological_entity id="o15765" name="blade" name_original="blade" src="d0_s4" type="structure" />
+      <relation from="o15764" id="r3711" modifier="in plane" name="part_of" negation="false" src="d0_s4" to="o15765" />
+    </statement>
+    <statement id="d0_s5">
+      <text>basal pinnae linear-oblong, much reduced, basal pinnules longer than adjacent pinnules, basal basiscopic pinnule and basal acroscopic pinnule equal;</text>
+      <biological_entity constraint="basal" id="o15766" name="pinna" name_original="pinnae" src="d0_s5" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s5" value="linear-oblong" />
+        <character is_modifier="false" modifier="much" name="size" src="d0_s5" value="reduced" />
+      </biological_entity>
+      <biological_entity constraint="basal" id="o15767" name="pinnule" name_original="pinnules" src="d0_s5" type="structure">
+        <character constraint="than adjacent pinnules , basal basiscopic pinnule and basal acroscopic pinnule" constraintid="o15768, o15770" is_modifier="false" name="length_or_size" src="d0_s5" value="longer" />
+      </biological_entity>
+      <biological_entity id="o15768" name="pinnule" name_original="pinnules" src="d0_s5" type="structure">
+        <character is_modifier="true" name="arrangement" src="d0_s5" value="adjacent" />
+        <character is_modifier="false" name="variability" src="d0_s5" value="equal" />
+      </biological_entity>
+      <biological_entity id="o15770" name="pinnule" name_original="pinnule" src="d0_s5" type="structure">
+        <character is_modifier="true" name="arrangement" src="d0_s5" value="adjacent" />
+        <character is_modifier="false" name="variability" src="d0_s5" value="equal" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>pinnule margins crenately toothed.</text>
+      <biological_entity constraint="pinnule" id="o15771" name="margin" name_original="margins" src="d0_s6" type="structure">
+        <character is_modifier="false" modifier="crenately" name="shape" src="d0_s6" value="toothed" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Sori midway between midvein and margin of segments.</text>
+      <biological_entity id="o15772" name="sorus" name_original="sori" src="d0_s7" type="structure">
+        <character constraint="between midvein, margin" constraintid="o15773, o15774" is_modifier="false" name="position" src="d0_s7" value="midway" />
+      </biological_entity>
+      <biological_entity id="o15773" name="midvein" name_original="midvein" src="d0_s7" type="structure" />
+      <biological_entity id="o15774" name="margin" name_original="margin" src="d0_s7" type="structure" />
+      <biological_entity id="o15775" name="segment" name_original="segments" src="d0_s7" type="structure" />
+      <relation from="o15773" id="r3712" name="part_of" negation="false" src="d0_s7" to="o15775" />
+      <relation from="o15774" id="r3713" name="part_of" negation="false" src="d0_s7" to="o15775" />
+    </statement>
+    <statement id="d0_s8">
+      <text>Indusia glandular.</text>
+    </statement>
+    <statement id="d0_s9">
+      <text>2 n = 82.</text>
+      <biological_entity id="o15776" name="indusium" name_original="indusia" src="d0_s8" type="structure">
+        <character is_modifier="false" name="architecture_or_function_or_pubescence" src="d0_s8" value="glandular" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o15777" name="chromosome" name_original="" src="d0_s9" type="structure">
+        <character name="quantity" src="d0_s9" value="82" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Shaded cliffs and talus, often of limestone;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="shaded cliffs and talus , of limestone ;" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>50--1800 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="1800" to_unit="m" from="50" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Greenland; Alta., B.C., Man., N.B., Nfld., N.W.T., N.S., Ont., Que., Sask., Yukon; Alaska, Maine, Mich., Minn., N.H., N.Y., Vt., Wis.; Europe in n Finland; Asia in n, nw former Soviet republics.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="Greenland" establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Alta." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Man." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Nfld." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.W.T." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Sask." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Yukon" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
+        <character name="distribution" value="Europe in n Finland" establishment_means="native" />
+        <character name="distribution" value="Asia in n" establishment_means="native" />
+        <character name="distribution" value="nw former Soviet republics" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1</number>
+  <other_name type="common_name">Fragrant wood fern</other_name>
+  <other_name type="common_name">dryoptère fragrante</other_name>
+  <discussion>Dryopteris fragrans is a northern species and is not closely related to the other species in North America. The only hybrid known to involve D . fragrans is with D . marginalis , producing D . × algonquinensis D. Britton.</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_568_d1_s0">
+      <text>Blades densely scaly abaxially, aromatic-glandular;</text>
+      <biological_entity id="from_key_V2_568_o15349" name="blade" name_original="blades" src="d1_s0" type="structure">
+        <character is_modifier="false" modifier="densely; abaxially" name="architecture_or_pubescence" src="d1_s0" value="scaly" />
+        <character is_modifier="false" name="architecture_or_function_or_pubescence" src="d1_s0" value="aromatic-glandular" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_568_d1_s1">
+      <text>old leaves forming conspicuous gray or brown clumps;</text>
+      <biological_entity id="from_key_V2_568_o15350" name="leaf" name_original="leaves" src="d1_s1" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d1_s1" value="old" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_568_o15351" name="clump" name_original="clumps" src="d1_s1" type="structure">
+        <character is_modifier="true" name="coloration" src="d1_s1" value="conspicuous" />
+        <character is_modifier="true" name="coloration" src="d1_s1" value="gray" />
+        <character is_modifier="true" name="coloration" src="d1_s1" value="brown" />
+      </biological_entity>
+      <relation from="from_key_V2_568_o15350" id="from_key_V2_568_r3619" name="forming" negation="false" src="d1_s1" to="from_key_V2_568_o15351" />
+    </statement>
+    <statement id="from_key_V2_568_d1_s2">
+      <text>leaves 6-25 (-40) cm.</text>
+      <biological_entity id="from_key_V2_568_o15352" name="leaf" name_original="leaves" src="d1_s2" type="structure">
+        <character char_type="range_value" from="25" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d1_s2" to="40" to_unit="cm" />
+        <character char_type="range_value" from="6" from_unit="cm" name="some_measurement" src="d1_s2" to="25" to_unit="cm" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

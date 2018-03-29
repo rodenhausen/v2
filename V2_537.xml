@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Mirbel" date="unknown" rank="family">lycopodiaceae</taxon_name>
+    <taxon_name authority="Bernhardi" date="unknown" rank="genus">huperzia</taxon_name>
+    <taxon_name authority="(F. E. Lloyd &amp; L. Underwood) Holub" date="1985" rank="species">porophila</taxon_name>
+    <place_of_publication>
+      <publication_title>Folia Geobot. Phytotax.</publication_title>
+      <place_in_publication>20: 76. 1985</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family lycopodiaceae;genus huperzia;species porophila</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Lycopodium</taxon_name>
+    <taxon_name authority="F. E. Lloyd &amp; L. Underwood" date="unknown" rank="species">porophilum</taxon_name>
+    <place_of_publication>
+      <publication_title>Bull. Torrey Bot. Club</publication_title>
+      <place_in_publication>27(4): 150. 1900</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Lycopodium;species porophilum;</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Lycopodium</taxon_name>
+    <taxon_name authority="Michaux" date="unknown" rank="species">lucidulum</taxon_name>
+    <taxon_name authority="(F. E. Lloyd &amp; L. Underwood) Clute" date="unknown" rank="variety">porophilum</taxon_name>
+    <taxon_hierarchy>genus Lycopodium;species lucidulum;variety porophilum;</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Lycopodium</taxon_name>
+    <taxon_name authority="(Michaux) Nessel" date="unknown" rank="species">selago</taxon_name>
+    <taxon_name authority="(F. E. Lloyd &amp; L. Underwood) Clute" date="unknown" rank="variety">porophilum</taxon_name>
+    <taxon_hierarchy>genus Lycopodium;species selago;variety porophilum;</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Urostachys</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="species">lucidulus</taxon_name>
+    <taxon_name authority="(F. Lloyd &amp; L. Underwood) Nessel" date="unknown" rank="variety">porophilus</taxon_name>
+    <taxon_hierarchy>genus Urostachys;species lucidulus;variety porophilus;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Shoots erect, determinate, occasionally indeterminate, 12-15 cm, clustered to short-decumbent, leaves of mature portion slightly smaller than leaves of juvenile portion;</text>
+      <biological_entity id="o14458" name="shoot" name_original="shoots" src="d0_s0" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s0" value="erect" />
+        <character is_modifier="false" name="development" src="d0_s0" value="determinate" />
+        <character is_modifier="false" modifier="occasionally" name="development" src="d0_s0" value="indeterminate" />
+        <character char_type="range_value" from="12" from_unit="cm" name="some_measurement" src="d0_s0" to="15" to_unit="cm" />
+        <character is_modifier="false" name="growth_form" notes="[duplicate value]" src="d0_s0" value="clustered" />
+        <character is_modifier="false" name="growth_form" notes="[duplicate value]" src="d0_s0" value="short-decumbent" />
+        <character char_type="range_value" from="clustered" name="growth_form" src="d0_s0" to="short-decumbent" />
+      </biological_entity>
+      <biological_entity id="o14459" name="leaf" name_original="leaves" src="d0_s0" type="structure">
+        <character constraint="than leaves" constraintid="o14461" is_modifier="false" name="size" src="d0_s0" value="slightly smaller" />
+      </biological_entity>
+      <biological_entity id="o14460" name="portion" name_original="portion" src="d0_s0" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s0" value="mature" />
+      </biological_entity>
+      <biological_entity id="o14461" name="leaf" name_original="leaves" src="d0_s0" type="structure" />
+      <biological_entity id="o14462" name="portion" name_original="portion" src="d0_s0" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s0" value="juvenile" />
+      </biological_entity>
+      <relation from="o14459" id="r3429" name="part_of" negation="false" src="d0_s0" to="o14460" />
+      <relation from="o14461" id="r3430" name="part_of" negation="false" src="d0_s0" to="o14462" />
+    </statement>
+    <statement id="d0_s1">
+      <text>annual constrictions distinct to indistinct;</text>
+      <biological_entity id="o14463" name="constriction" name_original="constrictions" src="d0_s1" type="structure">
+        <character is_modifier="true" name="duration" src="d0_s1" value="annual" />
+        <character is_modifier="false" name="fusion" src="d0_s1" value="distinct" />
+        <character is_modifier="false" name="prominence" src="d0_s1" value="indistinct" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>juvenile growth erect.</text>
+      <biological_entity id="o14464" name="growth" name_original="growth" src="d0_s2" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s2" value="juvenile" />
+        <character is_modifier="false" name="orientation" src="d0_s2" value="erect" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Leaves reflexed at base, ascending at stem apex (forming cluster) and spreading for most of stem length, sparse, yellow-green (juvenile portion) to yellow-green to green (mature portion), lustrous;</text>
+      <biological_entity id="o14465" name="leaf" name_original="leaves" src="d0_s3" type="structure">
+        <character constraint="at base" constraintid="o14466" is_modifier="false" name="orientation" src="d0_s3" value="reflexed" />
+        <character constraint="at stem apex" constraintid="o14467" is_modifier="false" name="orientation" notes="" src="d0_s3" value="ascending" />
+        <character constraint="for" is_modifier="false" name="length" notes="" src="d0_s3" value="spreading" />
+        <character is_modifier="false" name="count_or_density" src="d0_s3" value="sparse" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="yellow-green" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="yellow-green" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="green" />
+        <character char_type="range_value" from="yellow-green" name="coloration" src="d0_s3" to="yellow-green" />
+        <character is_modifier="false" name="reflectance" src="d0_s3" value="lustrous" />
+      </biological_entity>
+      <biological_entity id="o14466" name="base" name_original="base" src="d0_s3" type="structure" />
+      <biological_entity constraint="stem" id="o14467" name="apex" name_original="apex" src="d0_s3" type="structure" />
+    </statement>
+    <statement id="d0_s4">
+      <text>largest leaves lanceolate with roughly parallel sides, 5-8 mm;</text>
+      <biological_entity constraint="largest" id="o14468" name="leaf" name_original="leaves" src="d0_s4" type="structure">
+        <character constraint="with sides" constraintid="o14469" is_modifier="false" name="shape" src="d0_s4" value="lanceolate" />
+        <character char_type="range_value" from="5" from_unit="mm" name="some_measurement" notes="" src="d0_s4" to="8" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o14469" name="side" name_original="sides" src="d0_s4" type="structure">
+        <character is_modifier="true" modifier="roughly" name="arrangement" src="d0_s4" value="parallel" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>smallest leaves triangular, widest at base, 3-6 mm;</text>
+      <biological_entity constraint="smallest" id="o14470" name="leaf" name_original="leaves" src="d0_s5" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s5" value="triangular" />
+        <character constraint="at base" constraintid="o14471" is_modifier="false" name="width" src="d0_s5" value="widest" />
+        <character char_type="range_value" from="3" from_unit="mm" name="some_measurement" notes="" src="d0_s5" to="6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o14471" name="base" name_original="base" src="d0_s5" type="structure" />
+    </statement>
+    <statement id="d0_s6">
+      <text>margins almost entire with low papillae or a few large teeth;</text>
+      <biological_entity id="o14472" name="margin" name_original="margins" src="d0_s6" type="structure">
+        <character constraint="with teeth" constraintid="o14474" is_modifier="false" modifier="almost" name="architecture_or_shape" src="d0_s6" value="entire" />
+      </biological_entity>
+      <biological_entity id="o14473" name="papilla" name_original="papillae" src="d0_s6" type="structure">
+        <character is_modifier="true" name="position" src="d0_s6" value="low" />
+      </biological_entity>
+      <biological_entity id="o14474" name="tooth" name_original="teeth" src="d0_s6" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s6" value="few" />
+        <character is_modifier="true" name="size" src="d0_s6" value="large" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>stomates on both surfaces, few (1-25 per 1/2 leaf) on adaxial surface.</text>
+      <biological_entity id="o14475" name="stomate" name_original="stomates" src="d0_s7" type="structure">
+        <character constraint="on adaxial surface" constraintid="o14477" is_modifier="false" name="quantity" notes="" src="d0_s7" value="few" />
+      </biological_entity>
+      <biological_entity id="o14476" name="surface" name_original="surfaces" src="d0_s7" type="structure" />
+      <biological_entity constraint="adaxial" id="o14477" name="surface" name_original="surface" src="d0_s7" type="structure" />
+      <relation from="o14475" id="r3431" name="on" negation="false" src="d0_s7" to="o14476" />
+    </statement>
+    <statement id="d0_s8">
+      <text>Gemmiferous branchlets produced in 1-3 pseudowhorls at end of annual growth;</text>
+      <biological_entity id="o14478" name="branchlet" name_original="branchlets" src="d0_s8" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s8" value="gemmiferous" />
+      </biological_entity>
+      <biological_entity id="o14479" name="pseudowhorl" name_original="pseudowhorls" src="d0_s8" type="structure">
+        <character char_type="range_value" from="1" is_modifier="true" name="quantity" src="d0_s8" to="3" />
+      </biological_entity>
+      <biological_entity id="o14480" name="end" name_original="end" src="d0_s8" type="structure" />
+      <biological_entity id="o14481" name="growth" name_original="growth" src="d0_s8" type="structure">
+        <character is_modifier="true" name="duration" src="d0_s8" value="annual" />
+      </biological_entity>
+      <relation from="o14478" id="r3432" name="produced in" negation="false" src="d0_s8" to="o14479" />
+      <relation from="o14479" id="r3433" name="at" negation="false" src="d0_s8" to="o14480" />
+      <relation from="o14480" id="r3434" name="part_of" negation="false" src="d0_s8" to="o14481" />
+    </statement>
+    <statement id="d0_s9">
+      <text>gemmae 4-5 X 3-4 mm;</text>
+      <biological_entity id="o14482" name="gemma" name_original="gemmae" src="d0_s9" type="structure">
+        <character char_type="range_value" from="4" from_unit="mm" name="length" src="d0_s9" to="5" to_unit="mm" />
+        <character char_type="range_value" from="3" from_unit="mm" name="width" src="d0_s9" to="4" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>lateral leaves 1-1.5 mm wide, acute, widest above middle.</text>
+      <biological_entity constraint="lateral" id="o14483" name="leaf" name_original="leaves" src="d0_s10" type="structure">
+        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s10" to="1.5" to_unit="mm" />
+        <character is_modifier="false" name="shape" src="d0_s10" value="acute" />
+        <character constraint="above middle" constraintid="o14484" is_modifier="false" name="width" src="d0_s10" value="widest" />
+      </biological_entity>
+      <biological_entity id="o14484" name="middle" name_original="middle" src="d0_s10" type="structure" />
+    </statement>
+    <statement id="d0_s11">
+      <text>Spores 29-38 µm.</text>
+      <biological_entity id="o14485" name="spore" name_original="spores" src="d0_s11" type="structure">
+        <character char_type="range_value" from="29" from_unit="um" name="some_measurement" src="d0_s11" to="38" to_unit="um" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>On damp, shaded, acidic sandstone, rarely on shale or exposed sandstone;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="on damp" />
+        <character name="habitat" value="acidic sandstone , on shale or exposed sandstone" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>50--1200 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="1200" to_unit="m" from="50" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ala., Ill., Ind., Iowa, Ky., Minn., Mo., Ohio, Pa., Tenn., Va., W.Va., Wis.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>6</number>
+  <discussion>Huperzia porophila occurs in several disjunct populations, most notably in the Driftless Area of Iowa, Minnesota, and Wisconsin. A sterile hybrid between H . porophila and H . lucidula , H . × bartleyi , occurs throughout the range of H . porophila . It reproduces vegetatively by gemmae and is common in habitats intermediate between those of the two parents. In Ohio the hybrid may occupy sites to which H . porophila would otherwise be restricted, thus reducing the sites available for colonization by H . porophila (A. W. Cusick 1987).</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_731_d5_s0">
+      <text>Largest leaves lanceolate with sides nearly parallel much of length;</text>
+      <biological_entity constraint="largest" id="from_key_V2_731_o21102" name="leaf" name_original="leaves" src="d5_s0" type="structure">
+        <character constraint="with sides" constraintid="o21103" is_modifier="false" name="shape" src="d5_s0" value="lanceolate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_731_o21103" name="side" name_original="sides" src="d5_s0" type="structure">
+        <character is_modifier="false" modifier="nearly" name="length" src="d5_s0" value="parallel" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_731_d5_s1">
+      <text>stomates 1–25 per 1/2 leaf on adaxial surface.</text>
+      <biological_entity id="from_key_V2_731_o21104" name="stomate" name_original="stomates" src="d5_s1" type="structure">
+        <character char_type="range_value" constraint="per leaf" constraintid="o21105" from="1" name="count" src="d5_s1" to="25" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_731_o21105" name="leaf" name_original="leaf" src="d5_s1" type="structure">
+        <character is_modifier="true" name="count" src="d5_s1" value="1/2" />
+      </biological_entity>
+      <biological_entity constraint="adaxial" id="from_key_V2_731_o21106" name="surface" name_original="surface" src="d5_s1" type="structure" />
+      <relation from="from_key_V2_731_o21105" id="from_key_V2_731_r4951" name="on" negation="false" src="d5_s1" to="from_key_V2_731_o21106" />
+    </statement>
+    <statement id="from_key_V2_731_d4_s0">
+      <text>Largest leaves lanceolate or widest at base, or sides nearly parallel;</text>
+      <biological_entity constraint="largest" id="from_key_V2_731_o21097" name="leaf" name_original="leaves" src="d4_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d4_s0" value="lanceolate" />
+        <character constraint="at base" constraintid="o21098" is_modifier="false" name="width" src="d4_s0" value="widest" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_731_o21098" name="base" name_original="base" src="d4_s0" type="structure" />
+      <biological_entity id="from_key_V2_731_o21099" name="side" name_original="sides" src="d4_s0" type="structure">
+        <character is_modifier="false" modifier="nearly" name="arrangement" src="d4_s0" value="parallel" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_731_d4_s1">
+      <text>shoots mainly 8–15 cm (except H. miyoshiana to 25 cm);</text>
+    </statement>
+    <statement id="from_key_V2_731_d4_s2">
+      <text>mainly of rocky cliffs and talus habitats, or acidic bogs, ditches, meadows, and marshes.</text>
+      <biological_entity id="from_key_V2_731_o21100" name="shoot" name_original="shoots" src="d4_s1" type="structure">
+        <character char_type="range_value" from="8" from_unit="cm" name="some_measurement" src="d4_s1" to="15" to_unit="cm" />
+        <character is_modifier="false" name="taste" src="d4_s2" value="acidic" />
+        <character is_modifier="false" name="habitat" src="d4_s2" value="marshes" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_731_o21101" name="habitat" name_original="habitats" src="d4_s2" type="structure">
+        <character is_modifier="true" name="habitat" src="d4_s2" value="rocky" />
+        <character is_modifier="true" name="habitat" src="d4_s2" value="cliffs" />
+      </biological_entity>
+      <relation from="from_key_V2_731_o21100" id="from_key_V2_731_r4950" name="part_of" negation="false" src="d4_s2" to="from_key_V2_731_o21101" />
+    </statement>
+    <statement id="from_key_V2_731_d2_s0">
+      <text>Leaves lanceolate or oblanceolate, entire or with 1– 3 low teeth;</text>
+      <biological_entity id="from_key_V2_731_o21089" name="leaf" name_original="leaves" src="d2_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d2_s0" value="lanceolate" />
+        <character is_modifier="false" name="shape" src="d2_s0" value="oblanceolate" />
+        <character is_modifier="false" name="architecture_or_shape" src="d2_s0" value="entire" />
+        <character is_modifier="false" name="architecture_or_shape" src="d2_s0" value="with 1-3 low teeth" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_731_o21090" name="tooth" name_original="teeth" src="d2_s0" type="structure">
+        <character char_type="range_value" from="1" is_modifier="true" name="count" src="d2_s0" to="3" />
+        <character is_modifier="true" name="position" src="d2_s0" value="low" />
+      </biological_entity>
+      <relation from="from_key_V2_731_o21089" id="from_key_V2_731_r4948" name="with" negation="false" src="d2_s0" to="from_key_V2_731_o21090" />
+    </statement>
+    <statement id="from_key_V2_731_d2_s1">
+      <text>stomates on both surfaces;</text>
+      <biological_entity id="from_key_V2_731_o21091" name="stomate" name_original="stomates" src="d2_s1" type="structure" />
+      <biological_entity id="from_key_V2_731_o21092" name="surface" name_original="surfaces" src="d2_s1" type="structure" />
+      <relation from="from_key_V2_731_o21091" id="from_key_V2_731_r4949" name="on" negation="false" src="d2_s1" to="from_key_V2_731_o21092" />
+    </statement>
+    <statement id="from_key_V2_731_d2_s2">
+      <text>spores 25– 41 µm.</text>
+      <biological_entity id="from_key_V2_731_o21093" name="spore" name_original="spores" src="d2_s2" type="structure">
+        <character char_type="range_value" from="25" from_unit="um" name="some_measurement" src="d2_s2" to="41" to_unit="um" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

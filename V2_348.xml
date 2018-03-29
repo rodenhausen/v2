@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Agardh" date="unknown" rank="family">ophioglossaceae</taxon_name>
+    <taxon_name authority="Swartz" date="1801" rank="genus">botrychium</taxon_name>
+    <taxon_name authority="(Michaux) Swartz" date="1806" rank="species">lunarioides</taxon_name>
+    <place_of_publication>
+      <publication_title>Syn. Fil.</publication_title>
+      <place_in_publication>172. 1806</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family ophioglossaceae;genus botrychium;species lunarioides</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Botrypus</taxon_name>
+    <taxon_name authority="Michaux" date="unknown" rank="species">lunarioides</taxon_name>
+    <place_of_publication>
+      <publication_title>Fl. Bor.-Amer.</publication_title>
+      <place_in_publication>2: 274. 1803</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Botrypus;species lunarioides;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Trophophore stalk 0.1-1 cm;</text>
+      <biological_entity constraint="trophophore" id="o7969" name="stalk" name_original="stalk" src="d0_s0" type="structure">
+        <character char_type="range_value" from="0.1" from_unit="cm" name="some_measurement" src="d0_s0" to="1" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>blades usually pale green, plane, 2-3-pinnate, to 8 × 12 cm, often much smaller, fleshy.</text>
+      <biological_entity id="o7970" name="blade" name_original="blades" src="d0_s1" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s1" value="pale green" />
+        <character is_modifier="false" name="shape" src="d0_s1" value="plane" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s1" value="2-3-pinnate" />
+        <character char_type="range_value" from="0" from_unit="cm" name="length" src="d0_s1" to="8" to_unit="cm" />
+        <character char_type="range_value" from="0" from_unit="cm" name="width" src="d0_s1" to="12" to_unit="cm" />
+        <character is_modifier="false" modifier="often much" name="size" src="d0_s1" value="smaller" />
+        <character is_modifier="false" name="texture" src="d0_s1" value="fleshy" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Pinnae to 5 pairs, usually well separated, horizontal, distance between 1st and 2d pinnae not or slightly more than between 2d and 3d pairs, divided to tip.</text>
+      <biological_entity constraint="between pinnae" constraintid="o7972" id="o7971" name="pinna" name_original="pinnae" src="d0_s2" type="structure">
+        <character char_type="range_value" from="0" name="quantity" src="d0_s2" to="5" />
+        <character is_modifier="false" modifier="usually well" name="arrangement" src="d0_s2" value="separated" />
+        <character is_modifier="false" name="orientation" src="d0_s2" value="horizontal" />
+        <character constraint="to tip" constraintid="o7973" is_modifier="false" modifier="slightly; slightly" name="shape" src="d0_s2" value="divided" />
+      </biological_entity>
+      <biological_entity id="o7972" name="pinna" name_original="pinnae" src="d0_s2" type="structure" />
+      <biological_entity id="o7973" name="tip" name_original="tip" src="d0_s2" type="structure" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Pinnules fan-shaped, margins denticulate, apex rounded, venation like ribs of fan, midrib absent.</text>
+      <biological_entity id="o7974" name="pinnule" name_original="pinnules" src="d0_s3" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s3" value="fan--shaped" value_original="fan-shaped" />
+      </biological_entity>
+      <biological_entity id="o7975" name="margin" name_original="margins" src="d0_s3" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s3" value="denticulate" />
+      </biological_entity>
+      <biological_entity id="o7976" name="apex" name_original="apex" src="d0_s3" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s3" value="rounded" />
+      </biological_entity>
+      <biological_entity id="o7977" name="rib" name_original="ribs" src="d0_s3" type="structure" />
+      <biological_entity id="o7978" name="midrib" name_original="midrib" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="of fan" name="presence" src="d0_s3" value="absent" />
+      </biological_entity>
+      <relation from="o7976" id="r1860" name="like" negation="false" src="d0_s3" to="o7977" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Sporophores 2-pinnate, 1-2 times length of trophophores.</text>
+      <biological_entity id="o7980" name="trophophore" name_original="trophophores" src="d0_s4" type="structure" />
+    </statement>
+    <statement id="d0_s5">
+      <text>2 n =90.</text>
+      <biological_entity id="o7979" name="sporophore" name_original="sporophores" src="d0_s4" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s4" value="2-pinnate" />
+        <character constraint="trophophore" constraintid="o7980" is_modifier="false" name="length" src="d0_s4" value="1-2 times length of trophophores" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o7981" name="chromosome" name_original="" src="d0_s5" type="structure">
+        <character name="quantity" src="d0_s5" value="90" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Leaves appearing in late fall and dying in early spring.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="leaves appearing time" value="late fall" modifier="and dying" />
+        <character name="leaves appearing time" value="early spring" />
+        <character name="leaves dying time" value="early spring" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>In open grassy places in prairies, cemeteries, and weedy roadsides;</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="in open grassy places in prairies , cemeteries" />
+        <character name="habitat" value="roadsides" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0--250 m;</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="250" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ala., Ark., Fla., Ga., La., Miss., N.C., S.C., Tex.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>2</number>
+  <other_name type="common_name">Winter grapefern</other_name>
+  <other_name type="common_name">prostrate grapefern</other_name>
+  <discussion>The stalk and proximal part of rachis of Botrychium lunarioides contains huge tracheidal idioblasts with annular thickenings, visible in cleared leaves (H.J. Arnott 1960). Another peculiarity of this species is the tendency for the sporophores to remain curled in late fall and early winter and to become erect in February. Botrychium lunarioides is often associated with Schizachyrium scoparius Michaux and Ophioglossum crotalophoroides Walter. The name B . biternatum was misapplied by L.Underwood to B . lunarioides .</discussion>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_611_d5_s0">
+      <text>Trophophores prostrate, blades commonly 2 per plant;</text>
+      <biological_entity id="from_key_V2_611_o16717" name="trophophore" name_original="trophophores" src="d5_s0" type="structure">
+        <character is_modifier="false" name="growth_form_or_orientation" src="d5_s0" value="prostrate" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_611_o16718" name="blade" name_original="blades" src="d5_s0" type="structure">
+        <character constraint="per plant" constraintid="o16719" name="count" src="d5_s0" value="2" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_611_o16719" name="plant" name_original="plant" src="d5_s0" type="structure" />
+    </statement>
+    <statement id="from_key_V2_611_d5_s1">
+      <text>roots yellowish, to 30 per plant;</text>
+      <biological_entity id="from_key_V2_611_o16720" name="root" name_original="roots" src="d5_s1" type="structure">
+        <character is_modifier="false" name="coloration" src="d5_s1" value="yellowish" />
+        <character char_type="range_value" constraint="per plant" constraintid="o16721" from="0" name="count" src="d5_s1" to="30" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_611_o16721" name="plant" name_original="plant" src="d5_s1" type="structure" />
+    </statement>
+    <statement id="from_key_V2_611_d5_s2">
+      <text>sporophore stalks and midrib broadly flattened, fleshy;</text>
+      <biological_entity id="from_key_V2_611_o16722" name="sporophore" name_original="sporophore" src="d5_s2" type="structure">
+        <character is_modifier="false" modifier="broadly" name="shape" src="d5_s2" value="flattened" />
+        <character is_modifier="false" name="texture" src="d5_s2" value="fleshy" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_611_o16723" name="stalk" name_original="stalks" src="d5_s2" type="structure">
+        <character is_modifier="false" modifier="broadly" name="shape" src="d5_s2" value="flattened" />
+        <character is_modifier="false" name="texture" src="d5_s2" value="fleshy" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_611_o16724" name="midrib" name_original="midrib" src="d5_s2" type="structure">
+        <character is_modifier="false" modifier="broadly" name="shape" src="d5_s2" value="flattened" />
+        <character is_modifier="false" name="texture" src="d5_s2" value="fleshy" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_611_d5_s3">
+      <text>leaves dying in early spring, new leaves appearing in late fall (sect. Hiemobotrychium).</text>
+      <biological_entity id="from_key_V2_611_o16725" name="leaf" name_original="leaves" src="d5_s3" type="structure">
+        <character constraint="in leaves" constraintid="o16726" is_modifier="false" name="condition" src="d5_s3" value="dying" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_611_o16726" name="leaf" name_original="leaves" src="d5_s3" type="structure">
+        <character is_modifier="true" name="season" src="d5_s3" value="spring" />
+        <character is_modifier="true" name="life_cycle" src="d5_s3" value="new" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_611_o16727" name="fall" name_original="fall" src="d5_s3" type="structure" />
+      <relation from="from_key_V2_611_o16726" id="from_key_V2_611_r3922" name="appearing in late" negation="false" src="d5_s3" to="from_key_V2_611_o16727" />
+    </statement>
+    <statement id="from_key_V2_611_d4_s0">
+      <text>Trophophore blades herbaceous or thick-papery to leathery;</text>
+      <biological_entity constraint="trophophore" id="from_key_V2_611_o16711" name="blade" name_original="blades" src="d4_s0" type="structure">
+        <character is_modifier="false" name="texture" notes="[duplicate value]" src="d4_s0" value="herbaceous" />
+        <character is_modifier="false" name="texture" notes="[duplicate value]" src="d4_s0" value="thick-papery" />
+        <character is_modifier="false" name="texture" notes="[duplicate value]" src="d4_s0" value="leathery" />
+        <character char_type="range_value" from="thick-papery" name="texture" src="d4_s0" to="leathery" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_611_d4_s1">
+      <text>leaf-sheaths closed;</text>
+      <biological_entity id="from_key_V2_611_o16712" name="leaf-sheath" name_original="leaf-sheaths" src="d4_s1" type="structure">
+        <character is_modifier="false" name="condition" src="d4_s1" value="closed" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_611_d4_s2">
+      <text>sporophores, when present, arising near ground from basal portion of common stalk;</text>
+      <biological_entity id="from_key_V2_611_o16713" name="sporophore" name_original="sporophores" src="d4_s2" type="structure">
+        <character constraint="from basal portion" constraintid="o16714" is_modifier="false" modifier="when present" name="orientation" src="d4_s2" value="arising" />
+      </biological_entity>
+      <biological_entity constraint="basal" id="from_key_V2_611_o16714" name="portion" name_original="portion" src="d4_s2" type="structure" />
+      <biological_entity id="from_key_V2_611_o16715" name="stalk" name_original="stalk" src="d4_s2" type="structure">
+        <character is_modifier="true" name="count" src="d4_s2" value="common" />
+      </biological_entity>
+      <relation from="from_key_V2_611_o16714" id="from_key_V2_611_r3921" name="part_of" negation="false" src="d4_s2" to="from_key_V2_611_o16715" />
+    </statement>
+    <statement id="from_key_V2_611_d4_s3">
+      <text>leaves present during winter (subg. Sceptridium).</text>
+      <biological_entity id="from_key_V2_611_o16716" name="leaf" name_original="leaves" src="d4_s3" type="structure" />
+    </statement>
+    <statement id="from_key_V2_611_d1_s0">
+      <text>Leaf-blades deltate, mostly 5-25 cm, commonly sterile, sporophores absent or misshapen;</text>
+      <biological_entity id="from_key_V2_611_o16696" name="leaf-blade" name_original="leaf-blades" src="d1_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d1_s0" value="deltate" />
+        <character char_type="range_value" from="5" from_unit="cm" modifier="mostly" name="distance" src="d1_s0" to="25" to_unit="cm" />
+        <character is_modifier="false" modifier="commonly" name="reproduction" src="d1_s0" value="sterile" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_611_o16697" name="sporophore" name_original="sporophores" src="d1_s0" type="structure">
+        <character is_modifier="false" name="count" src="d1_s0" value="absent" />
+        <character name="count" src="d1_s0" value="misshapen" />
+      </biological_entity>
+    </statement>
+    <statement id="from_key_V2_611_d1_s1">
+      <text>plants mostly over 12 cm;</text>
+      <biological_entity id="from_key_V2_611_o16698" name="plant" name_original="plants" src="d1_s1" type="structure" />
+    </statement>
+    <statement id="from_key_V2_611_d1_s2">
+      <text>leaf-sheaths open or closed.</text>
+      <biological_entity id="from_key_V2_611_o16699" name="leaf-sheath" name_original="leaf-sheaths" src="d1_s2" type="structure">
+        <character is_modifier="false" name="architecture" src="d1_s2" value="open" />
+        <character is_modifier="false" name="condition" src="d1_s2" value="closed" />
+      </biological_entity>
+    </statement>
+  </description>
+</bio:treatment>

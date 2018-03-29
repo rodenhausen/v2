@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2018/03/28 21:34:27</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">2</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Wettstein" date="unknown" rank="family">azollaceae</taxon_name>
+    <taxon_name authority="Lamarck in Lamarck et al." date="1783" rank="genus">azolla</taxon_name>
+    <taxon_name authority="Lamarck in Lamarck et al." date="1783" rank="species">filiculoides</taxon_name>
+    <place_of_publication>
+      <publication_title>in Lamarck et al.,Encycl.</publication_title>
+      <place_in_publication>1: 343. 1783</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family azollaceae;genus azolla;species filiculoides</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants green to yellowish green or dark red, with 2 growth stages;</text>
+      <biological_entity id="o2198" name="plant" name_original="plants" src="d0_s0" type="structure">
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s0" value="green" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s0" value="yellowish green" />
+        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s0" value="dark red" />
+        <character char_type="range_value" from="green" name="coloration" src="d0_s0" to="yellowish green or dark red" />
+      </biological_entity>
+      <biological_entity id="o2199" name="growth" name_original="growth" src="d0_s0" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s0" value="2" />
+      </biological_entity>
+      <relation from="o2198" id="r501" name="with" negation="false" src="d0_s0" to="o2199" />
+    </statement>
+    <statement id="d0_s1">
+      <text>plants fertile only in mature stage, generally in late spring.</text>
+      <biological_entity id="o2200" name="plant" name_original="plants" src="d0_s1" type="structure">
+        <character constraint="in mature stage" is_modifier="false" name="reproduction" src="d0_s1" value="fertile" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Stems prostrate when immature, 1-3 cm, internodes elongate to 5 mm, becoming nearly erect to 5 cm or more when mature and crowded.</text>
+      <biological_entity id="o2201" name="stem" name_original="stems" src="d0_s2" type="structure">
+        <character is_modifier="false" modifier="when immature" name="growth_form_or_orientation" src="d0_s2" value="prostrate" />
+        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s2" to="3" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o2202" name="internode" name_original="internodes" src="d0_s2" type="structure">
+        <character constraint="to 5 mm" is_modifier="false" name="shape" src="d0_s2" value="elongate" />
+        <character constraint="to 5 cm" is_modifier="false" modifier="when mature crowded" name="orientation" src="d0_s2" value="erect" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Hairs on upper leaf lobes strictly unicellular.</text>
+      <biological_entity id="o2203" name="hair" name_original="hairs" src="d0_s3" type="structure" />
+      <biological_entity constraint="leaf" id="o2204" name="lobe" name_original="lobes" src="d0_s3" type="structure" constraint_original="upper leaf">
+        <character is_modifier="false" modifier="strictly" name="architecture" src="d0_s3" value="unicellular" />
+      </biological_entity>
+      <relation from="o2203" id="r502" name="on" negation="false" src="d0_s3" to="o2204" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Megaspores warty with raised angular bumps, each with a tangle of filaments.</text>
+      <biological_entity id="o2205" name="megaspore" name_original="megaspores" src="d0_s4" type="structure">
+        <character is_modifier="false" name="pubescence_or_relief" src="d0_s4" value="warty" />
+      </biological_entity>
+      <biological_entity id="o2206" name="bump" name_original="bumps" src="d0_s4" type="structure">
+        <character is_modifier="true" name="arrangement_or_shape" src="d0_s4" value="angular" />
+      </biological_entity>
+      <biological_entity id="o2207" name="tangle" name_original="tangle" src="d0_s4" type="structure" />
+      <biological_entity id="o2208" name="filament" name_original="filaments" src="d0_s4" type="structure" />
+      <relation from="o2205" id="r503" name="raised" negation="false" src="d0_s4" to="o2206" />
+      <relation from="o2205" id="r504" name="with" negation="false" src="d0_s4" to="o2207" />
+      <relation from="o2207" id="r505" name="part_of" negation="false" src="d0_s4" to="o2208" />
+    </statement>
+  </description>
+  <number>3</number>
+  <discussion>Azolla filiculoides is cold tolerant, surviving even in fragmented parts under thin ice. It usually reaches a climax population in late spring, becomes fertile, collapses, and is replaced by other more heat-tolerant aquatics such as Lemna spp. Hybrids between this species (male) and A . microphylla Kaulfuss (female), a species of Central America, South America, and the West Indies, have been reported (Do V. C. et al. 1989). V. M. Bates and E. T. Browne (1981) reported A . filiculoides from Georgia, far removed from its main range in western North America. The most likely explanation is that the plants represent escapes from horticulture.</discussion>
+  <references>
+    <reference>Bates, V. M. and E. T. Browne. 1981.  Azolla filiculoides  new to the southeastern United States. Amer. Fern J. 71: 33--34.</reference>
+    <reference>Duncan, R. E. 1940. The cytology of sporangium development in  Azolla filiculoides . Bull. Torrey Bot. Club 67: 391--412.</reference>
+  </references>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d1_s0">
+          <text>Largest hairs on upper leaf lobe unicellular;</text>
+          <biological_entity constraint="largest" id="o2209" name="hair" name_original="hairs" src="d1_s0" type="structure" />
+          <biological_entity constraint="leaf" id="o2210" name="lobe" name_original="lobe" src="d1_s0" type="structure" constraint_original="upper leaf">
+            <character is_modifier="false" name="architecture" src="d1_s0" value="unicellular" />
+          </biological_entity>
+          <relation from="o2209" id="r506" name="on" negation="false" src="d1_s0" to="o2210" />
+        </statement>
+        <statement id="d1_s1">
+          <text>megaspores warty with raised angular bumps.</text>
+          <biological_entity id="o2212" name="bump" name_original="bumps" src="d1_s1" type="structure">
+            <character is_modifier="true" name="arrangement_or_shape" src="d1_s1" value="angular" />
+          </biological_entity>
+          <relation from="o2211" id="r507" name="raised" negation="false" src="d1_s1" to="o2212" />
+        </statement>
+        <statement id="d1_s2">
+          <text>3.</text>
+        </statement>
+        <statement id="d1_s3">
+          <text>Azolla filiculoides</text>
+          <biological_entity id="o2211" name="megaspore" name_original="megaspores" src="d1_s1" type="structure">
+            <character is_modifier="false" name="pubescence_or_relief" src="d1_s1" value="warty" />
+            <character name="quantity" src="d1_s2" value="3" />
+          </biological_entity>
+        </statement>
+      </description>
+      <next_statement_id>1</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">
+        <statement id="d2_s0">
+          <text>Largest hairs on upper leaf lobe with 2 or more cells;</text>
+          <biological_entity constraint="largest" id="o2213" name="hair" name_original="hairs" src="d2_s0" type="structure" />
+          <biological_entity constraint="leaf" id="o2214" name="lobe" name_original="lobe" src="d2_s0" type="structure" constraint_original="upper leaf" />
+          <relation from="o2213" id="r508" modifier="with 2 or morecells" name="on" negation="false" src="d2_s0" to="o2214" />
+        </statement>
+        <statement id="d2_s1">
+          <text>megaspores not covered with raised angular bumps.</text>
+          <biological_entity id="o2215" name="megaspore" name_original="megaspores" src="d2_s1" type="structure" />
+          <biological_entity id="o2216" name="bump" name_original="bumps" src="d2_s1" type="structure">
+            <character is_modifier="true" name="prominence" src="d2_s1" value="raised" />
+            <character is_modifier="true" name="arrangement_or_shape" src="d2_s1" value="angular" />
+          </biological_entity>
+          <relation from="o2215" id="r509" name="covered with" negation="true" src="d2_s1" to="o2216" />
+        </statement>
+      </description>
+      <next_statement_id>2</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d3_s0">
+          <text>Megaspores not pitted, densely covered with tangled filaments (filosum).</text>
+          <biological_entity id="o2218" name="filament" name_original="filaments" src="d3_s0" type="structure">
+            <character is_modifier="true" name="arrangement" src="d3_s0" value="tangled" />
+          </biological_entity>
+          <relation from="o2217" id="r510" modifier="densely" name="covered with" negation="false" src="d3_s0" to="o2218" />
+        </statement>
+        <statement id="d3_s1">
+          <text>1.</text>
+        </statement>
+        <statement id="d3_s2">
+          <text>Azolla caroliniana</text>
+          <biological_entity id="o2217" name="megaspore" name_original="megaspores" src="d3_s0" type="structure">
+            <character is_modifier="false" modifier="not" name="relief" src="d3_s0" value="pitted" />
+            <character name="quantity" src="d3_s1" value="1" />
+          </biological_entity>
+        </statement>
+      </description>
+      <next_statement_id>2</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">
+        <statement id="d4_s0">
+          <text>Megaspores pitted, sparsely covered with a few long filaments (filosum).</text>
+          <biological_entity id="o2220" name="filament" name_original="filaments" src="d4_s0" type="structure">
+            <character is_modifier="true" name="quantity" src="d4_s0" value="few" />
+            <character is_modifier="true" name="length_or_size" src="d4_s0" value="long" />
+          </biological_entity>
+          <relation from="o2219" id="r511" modifier="sparsely" name="covered with a" negation="false" src="d4_s0" to="o2220" />
+        </statement>
+        <statement id="d4_s1">
+          <text>2.</text>
+        </statement>
+        <statement id="d4_s2">
+          <text>Azolla mexicana</text>
+          <biological_entity id="o2219" name="megaspore" name_original="megaspores" src="d4_s0" type="structure">
+            <character is_modifier="false" name="relief" src="d4_s0" value="pitted" />
+            <character name="quantity" src="d4_s1" value="2" />
+          </biological_entity>
+          <biological_entity id="o2221" name="mexicana" name_original="mexicana" src="d4_s2" type="taxon_name" />
+        </statement>
+      </description>
+      <next_statement_id>1</next_statement_id>
+    </key_statement>
+  </key>
+  <description type="morphology_from_key">
+    <statement id="from_key_V2_390_d1_s0">
+      <text>Largest hairs on upper leaf lobe unicellular;</text>
+      <biological_entity constraint="largest" id="from_key_V2_390_o9102" name="hair" name_original="hairs" src="d1_s0" type="structure" />
+      <biological_entity constraint="upper leaf" id="from_key_V2_390_o9103" name="lobe" name_original="lobe" src="d1_s0" type="structure">
+        <character is_modifier="false" name="architecture" src="d1_s0" value="unicellular" />
+      </biological_entity>
+      <relation from="from_key_V2_390_o9102" id="from_key_V2_390_r2084" name="on" negation="false" src="d1_s0" to="from_key_V2_390_o9103" />
+    </statement>
+    <statement id="from_key_V2_390_d1_s1">
+      <text>megaspores warty with raised angular bumps.</text>
+      <biological_entity id="from_key_V2_390_o9104" name="megaspore" name_original="megaspores" src="d1_s1" type="structure">
+        <character is_modifier="false" name="pubescence_or_relief" src="d1_s1" value="warty" />
+      </biological_entity>
+      <biological_entity id="from_key_V2_390_o9105" name="bump" name_original="bumps" src="d1_s1" type="structure">
+        <character is_modifier="true" name="arrangement_or_shape" src="d1_s1" value="angular" />
+      </biological_entity>
+      <relation from="from_key_V2_390_o9104" id="from_key_V2_390_r2085" name="raised" negation="false" src="d1_s1" to="from_key_V2_390_o9105" />
+    </statement>
+  </description>
+</bio:treatment>
