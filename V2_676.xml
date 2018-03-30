@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>Alan R. Smith</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Ching ex Pichi Sermolli" date="unknown" rank="family">thelypteridaceae</taxon_name>
-    <taxon_name authority="(H. Itô) Ching" date="1963" rank="genus">Macrothelypteris</taxon_name>
+    <taxon_name rank="family" authority="Ching ex Pichi Sermolli" date="unknown">thelypteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="(H. Itô) Ching" date="1963">Macrothelypteris</taxon_name>
     <place_of_publication>
       <publication_title>Acta Phytotax. Sin.</publication_title>
       <place_in_publication>8: 308. 1963</place_in_publication>
@@ -26,8 +18,8 @@
     <other_info_on_name type="etymology">[Greek makros, large, thelys, female, and pteris, fern]</other_info_on_name>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="Schmidel" date="unknown" rank="genus">Thelypteris</taxon_name>
-    <taxon_name authority="H. Itô" date="unknown" rank="section">Macrothelypteris</taxon_name>
+    <taxon_name rank="genus" authority="Schmidel" date="unknown">Thelypteris</taxon_name>
+    <taxon_name rank="section" authority="H. Itô" date="unknown">Macrothelypteris</taxon_name>
     <place_of_publication>
       <publication_title>in Nakai &amp; Honda, Nov. Fl. Jap.</publication_title>
       <place_in_publication>4: 141. 1938</place_in_publication>
@@ -35,199 +27,16 @@
     <taxon_hierarchy>genus Thelypteris;section Macrothelypteris;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="Schmidel" date="unknown" rank="genus">Thelypteris</taxon_name>
-    <taxon_name authority="(H. Itô)." date="unknown" rank="subgenus">Macrothelypteris</taxon_name>
+    <taxon_name rank="genus" authority="Schmidel" date="unknown">Thelypteris</taxon_name>
+    <taxon_name rank="subgenus" authority="(H. Itô)." date="unknown">Macrothelypteris</taxon_name>
     <taxon_hierarchy>genus Thelypteris;subgenus Macrothelypteris;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems short-creeping, thick, 1 cm diam.</text>
-      <biological_entity id="o18667" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="short-creeping" />
-        <character is_modifier="false" name="width" src="d0_s0" value="thick" />
-        <character name="diameter" src="d0_s0" unit="cm" value="1" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Blades 2-pinnate-pinnatifid nearly throughout, broadest at base, apex gradually reduced;</text>
-      <biological_entity id="o18668" name="blade" name_original="blades" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="nearly throughout; throughout" name="shape" src="d0_s1" value="2-pinnate-pinnatifid" />
-        <character constraint="at base" constraintid="o18669" is_modifier="false" name="width" src="d0_s1" value="broadest" />
-      </biological_entity>
-      <biological_entity id="o18669" name="base" name_original="base" src="d0_s1" type="structure" />
-      <biological_entity id="o18670" name="apex" name_original="apex" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="gradually" name="size" src="d0_s1" value="reduced" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>pinnae pinnate-pinnatifid, sessile or stalked, not connected by wing along rachis;</text>
-      <biological_entity id="o18671" name="pinna" name_original="pinnae" src="d0_s2" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s2" value="pinnate-pinnatifid" />
-        <character is_modifier="false" name="architecture" src="d0_s2" value="sessile" />
-        <character is_modifier="false" name="architecture" src="d0_s2" value="stalked" />
-        <character constraint="by wing" constraintid="o18672" is_modifier="false" modifier="not" name="fusion" src="d0_s2" value="connected" />
-      </biological_entity>
-      <biological_entity id="o18672" name="wing" name_original="wing" src="d0_s2" type="structure" />
-      <biological_entity id="o18673" name="rachis" name_original="rachis" src="d0_s2" type="structure" />
-      <relation from="o18672" id="r4324" name="along" negation="false" src="d0_s2" to="o18673" />
-    </statement>
-    <statement id="d0_s3">
-      <text>costae not grooved adaxially;</text>
-      <biological_entity id="o18674" name="costa" name_original="costae" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="not; adaxially" name="architecture" src="d0_s3" value="grooved" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>buds absent;</text>
-      <biological_entity id="o18675" name="bud" name_original="buds" src="d0_s4" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s4" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>veins free, often forked, tips not reaching margin;</text>
-      <biological_entity id="o18676" name="vein" name_original="veins" src="d0_s5" type="structure">
-        <character is_modifier="false" name="fusion" src="d0_s5" value="free" />
-        <character is_modifier="false" modifier="often" name="shape" src="d0_s5" value="forked" />
-      </biological_entity>
-      <biological_entity id="o18677" name="tip" name_original="tips" src="d0_s5" type="structure" />
-      <biological_entity id="o18678" name="margin" name_original="margin" src="d0_s5" type="structure" />
-      <relation from="o18677" id="r4325" name="reaching" negation="true" src="d0_s5" to="o18678" />
-    </statement>
-    <statement id="d0_s6">
-      <text>rachises and costae lacking scales;</text>
-      <biological_entity id="o18679" name="rachis" name_original="rachises" src="d0_s6" type="structure" />
-      <biological_entity id="o18680" name="costa" name_original="costae" src="d0_s6" type="structure" />
-      <biological_entity id="o18681" name="scale" name_original="scales" src="d0_s6" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s6" value="lacking" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>indument abaxially of unbranched, septate hairs mostly over 1 mm.</text>
-      <biological_entity id="o18682" name="indument" name_original="indument" src="d0_s7" type="structure" constraint="hair" />
-      <biological_entity id="o18683" name="hair" name_original="hairs" src="d0_s7" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s7" value="unbranched" />
-        <character is_modifier="true" name="architecture" src="d0_s7" value="septate" />
-      </biological_entity>
-      <relation from="o18682" id="r4326" name="part_of" negation="false" src="d0_s7" to="o18683" />
-    </statement>
-    <statement id="d0_s8">
-      <text>Sori round, medial to supramedial;</text>
-      <biological_entity id="o18684" name="sorus" name_original="sori" src="d0_s8" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s8" value="round" />
-        <character is_modifier="false" name="position" notes="[duplicate value]" src="d0_s8" value="medial" />
-        <character is_modifier="false" name="position" notes="[duplicate value]" src="d0_s8" value="supramedial" />
-        <character char_type="range_value" from="medial" name="position" src="d0_s8" to="supramedial" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>indusia small, less than 0.3 mm diam., often obscured in mature sori;</text>
-      <biological_entity id="o18685" name="indusium" name_original="indusia" src="d0_s9" type="structure">
-        <character is_modifier="false" name="size" src="d0_s9" value="small" />
-        <character char_type="range_value" from="0" from_unit="mm" name="diameter" src="d0_s9" to="0.3" to_unit="mm" />
-        <character constraint="in sori" constraintid="o18686" is_modifier="false" modifier="often" name="prominence" src="d0_s9" value="obscured" />
-      </biological_entity>
-      <biological_entity id="o18686" name="sorus" name_original="sori" src="d0_s9" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d0_s9" value="mature" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>sporangial capsules bearing short-stalked glands.</text>
-      <biological_entity id="o18688" name="gland" name_original="glands" src="d0_s10" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s10" value="short-stalked" />
-      </biological_entity>
-      <relation from="o18687" id="r4327" name="bearing" negation="false" src="d0_s10" to="o18688" />
-    </statement>
-    <statement id="d0_s11">
-      <text>x = 31.</text>
-      <biological_entity constraint="sporangial" id="o18687" name="capsule" name_original="capsules" src="d0_s10" type="structure" />
-      <biological_entity constraint="x" id="o18689" name="chromosome" name_original="" src="d0_s11" type="structure">
-        <character name="quantity" src="d0_s11" value="31" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>tropical and subtropical regions, North America, Asia, Africa, Pacific Islands, Australia in Queensland.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="tropical and subtropical regions" establishment_means="native" />
-        <character name="distribution" value="North America" establishment_means="native" />
-        <character name="distribution" value="Asia" establishment_means="native" />
-        <character name="distribution" value="Africa" establishment_means="native" />
-        <character name="distribution" value="Pacific Islands" establishment_means="native" />
-        <character name="distribution" value="Australia in Queensland" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  short-creeping, thick, 1 cm diam.  Blades  2-pinnate-pinnatifid nearly throughout, broadest at base, apex gradually reduced; pinnae pinnate-pinnatifid, sessile or stalked, not connected by wing along rachis; costae not grooved adaxially; buds absent; veins free, often forked, tips not reaching margin; rachises and costae lacking scales; indument abaxially of unbranched, septate hairs mostly over 1 mm.  Sori  round, medial to supramedial; indusia small, less than 0.3 mm diam., often obscured in mature sori; sporangial capsules bearing short-stalked glands.  x  = 31.</description>
+  <description type="distribution">tropical and subtropical regions, North America, Asia, Africa, Pacific Islands, Australia in Queensland.</description>
   <number>2</number>
   <discussion>Species ca. 10 (1 introduced in the flora):</discussion>
   <references>
     <reference>Holttum, R. E. 1969. Studies in the family Thelypteridaceae. The genera  Phegopteris ,  Pseudophegopteris , and  Macrothelypteris . Blumea 17: 5--32.</reference>
     <reference>Leonard, S. W. 1972. The distribution of  Thelypteris torresiana  in the southeastern United States. Amer. Fern J. 62: 97--99.</reference>
   </references>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_797_d3_s0">
-      <text>Pinnae free, rachis not winged;</text>
-      <biological_entity id="from_key_V2_797_o23201" name="pinna" name_original="pinnae" src="d3_s0" type="structure">
-        <character is_modifier="false" name="fusion" src="d3_s0" value="free" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_797_o23202" name="rachis" name_original="rachis" src="d3_s0" type="structure">
-        <character is_modifier="false" modifier="not" name="architecture" src="d3_s0" value="winged" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_797_d3_s1">
-      <text>blades 2-pinnate or more divided;</text>
-      <biological_entity id="from_key_V2_797_o23203" name="blade" name_original="blades" src="d3_s1" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d3_s1" value="2-pinnate" />
-        <character is_modifier="false" name="shape" src="d3_s1" value="divided" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_797_d3_s2">
-      <text>costal hairs septate, often longer than 1 mm;</text>
-      <biological_entity constraint="costal" id="from_key_V2_797_o23204" name="hair" name_original="hairs" src="d3_s2" type="structure">
-        <character is_modifier="false" name="architecture" src="d3_s2" value="septate" />
-        <character modifier="often longer than" name="some_measurement" src="d3_s2" unit="mm" value="1" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_797_d3_s3">
-      <text>indusia small, less than 0.3 mm diam.</text>
-      <biological_entity id="from_key_V2_797_o23205" name="indusium" name_original="indusia" src="d3_s3" type="structure">
-        <character is_modifier="false" name="size" src="d3_s3" value="small" />
-        <character char_type="range_value" from="0" from_unit="mm" name="diameter" src="d3_s3" to="0.3" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_797_d2_s0">
-      <text>Blades 2-pinnatifid, with pinnae at least in distal 1/2 of blade connected by wings along rachis, or blades 2-pinnate-pinnatifid;</text>
-      <biological_entity id="from_key_V2_797_o23190" name="blade" name_original="blades" src="d2_s0" type="structure">
-        <character is_modifier="false" name="shape" src="d2_s0" value="2-pinnatifid" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_797_o23191" name="pinna" name_original="pinnae" src="d2_s0" type="structure" />
-      <biological_entity constraint="distal" id="from_key_V2_797_o23192" name="1/2" name_original="1/2" src="d2_s0" type="structure">
-        <character constraint="by wings" constraintid="o23194" is_modifier="false" name="fusion" src="d2_s0" value="connected" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_797_o23193" name="blade" name_original="blade" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_797_o23194" name="wing" name_original="wings" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_797_o23195" name="rachis" name_original="rachis" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_797_o23196" name="blade" name_original="blades" src="d2_s0" type="structure">
-        <character is_modifier="false" name="shape" src="d2_s0" value="2-pinnate-pinnatifid" />
-      </biological_entity>
-      <relation from="from_key_V2_797_o23190" id="from_key_V2_797_r5431" name="with" negation="false" src="d2_s0" to="from_key_V2_797_o23191" />
-      <relation from="from_key_V2_797_o23191" id="from_key_V2_797_r5432" name="in" negation="false" src="d2_s0" to="from_key_V2_797_o23192" />
-      <relation from="from_key_V2_797_o23192" id="from_key_V2_797_r5433" name="part_of" negation="false" src="d2_s0" to="from_key_V2_797_o23193" />
-      <relation from="from_key_V2_797_o23194" id="from_key_V2_797_r5434" name="along" negation="false" src="d2_s0" to="from_key_V2_797_o23195" />
-    </statement>
-    <statement id="from_key_V2_797_d2_s1">
-      <text>costae not grooved adaxially;</text>
-      <biological_entity id="from_key_V2_797_o23197" name="costa" name_original="costae" src="d2_s1" type="structure">
-        <character is_modifier="false" modifier="not; adaxially" name="architecture" src="d2_s1" value="grooved" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_797_d2_s2">
-      <text>veins commonly meeting margin above sinus.</text>
-      <biological_entity id="from_key_V2_797_o23198" name="vein" name_original="veins" src="d2_s2" type="structure" />
-      <biological_entity id="from_key_V2_797_o23199" name="margin" name_original="margin" src="d2_s2" type="structure" />
-      <biological_entity id="from_key_V2_797_o23200" name="sinus" name_original="sinus" src="d2_s2" type="structure" />
-      <relation from="from_key_V2_797_o23198" id="from_key_V2_797_r5435" name="meeting" negation="false" src="d2_s2" to="from_key_V2_797_o23199" />
-      <relation from="from_key_V2_797_o23198" id="from_key_V2_797_r5436" name="above" negation="false" src="d2_s2" to="from_key_V2_797_o23200" />
-    </statement>
-  </description>
 </bio:treatment>

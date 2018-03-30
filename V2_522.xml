@@ -1,248 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="1754" rank="genus">adiantum</taxon_name>
-    <taxon_name authority="Müller Halle" date="1864" rank="species">jordanii</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="1754">adiantum</taxon_name>
+    <taxon_name rank="species" authority="Müller Halle" date="1864">jordanii</taxon_name>
     <place_of_publication>
       <publication_title>Bot. Zeitung</publication_title>
       <place_in_publication>1864: 26. 1864</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family pteridaceae;genus adiantum;species jordanii</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems short-creeping;</text>
-      <biological_entity id="o14125" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="short-creeping" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>scales reddish-brown, concolored, margins entire.</text>
-      <biological_entity id="o14126" name="scale" name_original="scales" src="d0_s1" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s1" value="reddish-brown" />
-        <character is_modifier="false" name="coloration" src="d0_s1" value="concolored" />
-      </biological_entity>
-      <biological_entity id="o14127" name="margin" name_original="margins" src="d0_s1" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s1" value="entire" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves arching or pendent, clustered, 30-45 cm.</text>
-      <biological_entity id="o14128" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s2" value="arching" />
-        <character is_modifier="false" name="orientation" src="d0_s2" value="pendent" />
-        <character is_modifier="false" name="arrangement_or_growth_form" src="d0_s2" value="clustered" />
-        <character char_type="range_value" from="30" from_unit="cm" name="some_measurement" src="d0_s2" to="45" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Petiole 1-1.5 mm diam., glabrous, not glaucous.</text>
-      <biological_entity id="o14129" name="petiole" name_original="petiole" src="d0_s3" type="structure">
-        <character char_type="range_value" from="1" from_unit="mm" name="diameter" src="d0_s3" to="1.5" to_unit="mm" />
-        <character is_modifier="false" name="pubescence" src="d0_s3" value="glabrous" />
-        <character is_modifier="false" modifier="not" name="pubescence" src="d0_s3" value="glaucous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Blade lanceolate, pinnate, 20-24 × 8-10 cm, gradually reduced distally, glabrous;</text>
-      <biological_entity id="o14130" name="blade" name_original="blade" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s4" value="lanceolate" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s4" value="pinnate" />
-        <character char_type="range_value" from="20" from_unit="cm" name="length" src="d0_s4" to="24" to_unit="cm" />
-        <character char_type="range_value" from="8" from_unit="cm" name="width" src="d0_s4" to="10" to_unit="cm" />
-        <character is_modifier="false" modifier="gradually; distally" name="size" src="d0_s4" value="reduced" />
-        <character is_modifier="false" name="pubescence" src="d0_s4" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>proximal pinnae 3 (-4) -pinnate;</text>
-      <biological_entity constraint="proximal" id="o14131" name="pinna" name_original="pinnae" src="d0_s5" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s5" value="3(-4)-pinnate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>rachis straight, glabrous, not glaucous.</text>
-      <biological_entity id="o14132" name="rachis" name_original="rachis" src="d0_s6" type="structure">
-        <character is_modifier="false" name="course" src="d0_s6" value="straight" />
-        <character is_modifier="false" name="pubescence" src="d0_s6" value="glabrous" />
-        <character is_modifier="false" modifier="not" name="pubescence" src="d0_s6" value="glaucous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Segment stalks 1-4 mm, with dark color ending abruptly at segment base.</text>
-      <biological_entity constraint="segment" id="o14133" name="stalk" name_original="stalks" src="d0_s7" type="structure">
-        <character char_type="range_value" from="1" from_unit="mm" name="some_measurement" src="d0_s7" to="4" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o14134" name="ending" name_original="ending" src="d0_s7" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s7" value="dark color" />
-      </biological_entity>
-      <biological_entity constraint="segment" id="o14135" name="base" name_original="base" src="d0_s7" type="structure" />
-      <relation from="o14133" id="r3370" name="with" negation="false" src="d0_s7" to="o14134" />
-      <relation from="o14134" id="r3371" name="at" negation="false" src="d0_s7" to="o14135" />
-    </statement>
-    <statement id="d0_s8">
-      <text>Ultimate segments fan-shaped, not quite as long as broad;</text>
-      <biological_entity constraint="ultimate" id="o14136" name="segment" name_original="segments" src="d0_s8" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s8" value="fan--shaped" value_original="fan-shaped" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>base truncate or broadly cuneate;</text>
-      <biological_entity id="o14137" name="base" name_original="base" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s9" value="truncate" />
-        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s9" value="cuneate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>margins of fertile segments unlobed but very narrowly incised, sterile segments with margins lobed, denticulate;</text>
-      <biological_entity id="o14138" name="margin" name_original="margins" src="d0_s10" type="structure" constraint="segment">
-        <character is_modifier="false" name="shape" src="d0_s10" value="unlobed" />
-        <character is_modifier="false" modifier="very narrowly" name="shape" src="d0_s10" value="incised" />
-      </biological_entity>
-      <biological_entity id="o14139" name="segment" name_original="segments" src="d0_s10" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s10" value="fertile" />
-      </biological_entity>
-      <biological_entity id="o14140" name="segment" name_original="segments" src="d0_s10" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s10" value="sterile" />
-        <character is_modifier="false" name="shape" notes="" src="d0_s10" value="denticulate" />
-      </biological_entity>
-      <biological_entity id="o14141" name="margin" name_original="margins" src="d0_s10" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s10" value="lobed" />
-      </biological_entity>
-      <relation from="o14138" id="r3372" name="part_of" negation="false" src="d0_s10" to="o14139" />
-      <relation from="o14140" id="r3373" name="with" negation="false" src="d0_s10" to="o14141" />
-    </statement>
-    <statement id="d0_s11">
-      <text>apex rounded.</text>
-      <biological_entity id="o14142" name="apex" name_original="apex" src="d0_s11" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s11" value="rounded" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s12">
-      <text>Indusia transversely oblong, 3-10 mm, glabrous.</text>
-      <biological_entity id="o14143" name="indusium" name_original="indusia" src="d0_s12" type="structure">
-        <character is_modifier="false" modifier="transversely" name="shape" src="d0_s12" value="oblong" />
-        <character char_type="range_value" from="3" from_unit="mm" name="some_measurement" src="d0_s12" to="10" to_unit="mm" />
-        <character is_modifier="false" name="pubescence" src="d0_s12" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s13">
-      <text>Spores mostly 40-50 µm diam. 2 n = 60.</text>
-      <biological_entity id="o14144" name="spore" name_original="spores" src="d0_s13" type="structure">
-        <character char_type="range_value" from="40" from_unit="um" name="diameter" src="d0_s13" to="50" to_unit="um" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o14145" name="chromosome" name_original="" src="d0_s13" type="structure">
-        <character name="quantity" src="d0_s13" value="60" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulating early spring--midsummer.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="early spring-midsummer" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Seasonally moist, shaded, rocky banks, canyons, and ravines;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="moist shaded , rocky banks" />
-        <character name="habitat" value="canyons" />
-        <character name="habitat" value="and ravines ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--1000 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1000" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Calif., Oreg.; Mexico in Baja California.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
-        <character name="distribution" value="Mexico in Baja California" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  short-creeping; scales reddish brown, concolored, margins entire.  Leaves  arching or pendent, clustered, 30--45 cm.  Petiole  1--1.5 mm diam., glabrous, not glaucous.  Blade  lanceolate, pinnate, 20--24 × 8--10 cm, gradually reduced distally, glabrous; proximal pinnae 3(--4)-pinnate; rachis straight, glabrous, not glaucous.  Segment stalks  1--4 mm, with dark color ending abruptly at segment base.  Ultimate segments  fan-shaped, not quite as long as broad; base truncate or broadly cuneate; margins of fertile segments unlobed but very narrowly incised, sterile segments with margins lobed, denticulate;   apex rounded.  Indusia  transversely oblong, 3--10 mm,   glabrous.  Spores  mostly 40--50 µm diam. 2 n  = 60 .</description>
+  <description type="phenology">Sporulating early spring--midsummer.</description>
+  <description type="habitat">Seasonally moist, shaded, rocky banks, canyons, and ravines;</description>
+  <description type="elevation">0--1000 m;</description>
+  <description type="distribution">Calif., Oreg.; Mexico in Baja California.</description>
   <number>3</number>
   <other_name type="common_name">California maidenhair</other_name>
   <discussion>Adiantum jordanii occasionally hybridizes with A . aleuticum where their ranges overlap in northern California, yielding the sterile hybrid Adiantum × tracyi C. C. Hall ex W. H. Wagner. Adiantum × tracyi , morphologically intermediate between its parental species, can be distinguished from A . jordanii by its broadly deltate leaf blade that tapers abruptly from the 4(--5)-pinnate base to a 1-pinnate apex. It is best separated from A . aleuticum by leaf blades with a strong rachis, and by ultimate blade segments that are less than twice as long as broad. Adiantum × tracyi shows 59 univalents at metaphase; its spores are irregular and misshapen (W. H. Wagner Jr. 1962).</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_455_d7_s0">
-      <text>Ultimate segments glabrous.</text>
-      <biological_entity constraint="ultimate" id="from_key_V2_455_o11391" name="segment" name_original="segments" src="d7_s0" type="structure">
-        <character is_modifier="false" name="pubescence" src="d7_s0" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_455_d6_s0">
-      <text>Segment stalks not terminating in small, cupulelike swelling at base of ultimate segments.</text>
-      <biological_entity constraint="segment" id="from_key_V2_455_o11388" name="stalk" name_original="stalks" src="d6_s0" type="structure" />
-      <biological_entity id="from_key_V2_455_o11389" name="base" name_original="base" src="d6_s0" type="structure">
-        <character is_modifier="true" name="size" src="d6_s0" value="small" />
-        <character is_modifier="true" name="shape" src="d6_s0" value="cupulelike" />
-        <character is_modifier="true" name="size" src="d6_s0" value="swelling" />
-      </biological_entity>
-      <biological_entity constraint="ultimate" id="from_key_V2_455_o11390" name="segment" name_original="segments" src="d6_s0" type="structure">
-        <character is_modifier="true" name="size" src="d6_s0" value="small" />
-        <character is_modifier="true" name="shape" src="d6_s0" value="cupulelike" />
-        <character is_modifier="true" name="size" src="d6_s0" value="swelling" />
-      </biological_entity>
-      <relation from="from_key_V2_455_o11388" id="from_key_V2_455_r2631" name="terminating in" negation="false" src="d6_s0" to="from_key_V2_455_o11389" />
-      <relation from="from_key_V2_455_o11388" id="from_key_V2_455_r2632" name="terminating in" negation="false" src="d6_s0" to="from_key_V2_455_o11390" />
-    </statement>
-    <statement id="from_key_V2_455_d4_s0">
-      <text>Dark color of stalks ending ± abruptly at base of ultimate segments.</text>
-      <biological_entity id="from_key_V2_455_o11381" name="whole_organism" name_original="" src="d4_s0" type="structure">
-        <character constraint="of stalks" constraintid="o11382" is_modifier="false" name="coloration" src="d4_s0" value="dark color" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_455_o11382" name="stalk" name_original="stalks" src="d4_s0" type="structure" />
-      <biological_entity id="from_key_V2_455_o11383" name="base" name_original="base" src="d4_s0" type="structure" />
-      <biological_entity constraint="ultimate" id="from_key_V2_455_o11384" name="segment" name_original="segments" src="d4_s0" type="structure" />
-      <relation from="from_key_V2_455_o11382" id="from_key_V2_455_r2627" name="ending" negation="false" src="d4_s0" to="from_key_V2_455_o11383" />
-      <relation from="from_key_V2_455_o11381" id="from_key_V2_455_r2628" name="part_of" negation="false" src="d4_s0" to="from_key_V2_455_o11384" />
-    </statement>
-    <statement id="from_key_V2_455_d1_s0">
-      <text>Segments at middle of penultimate divisions of blades ± fan-shaped, rhombic, transversely oblong, or nearly round, about as long as broad.</text>
-      <biological_entity id="from_key_V2_455_o11369" name="segment" name_original="segments" src="d1_s0" type="structure">
-        <character is_modifier="false" name="shape" notes="alterIDs:o11370" src="d1_s0" value="rhombic" />
-        <character is_modifier="false" modifier="transversely" name="shape" src="d1_s0" value="oblong" />
-        <character is_modifier="false" modifier="nearly" name="shape" src="d1_s0" value="round" />
-        <character is_modifier="false" modifier="transversely" name="shape" src="d1_s0" value="oblong" />
-        <character is_modifier="false" modifier="nearly" name="shape" src="d1_s0" value="round" />
-        <character is_modifier="false" name="width" src="d1_s0" value="broad" />
-      </biological_entity>
-      <biological_entity constraint="middle" id="from_key_V2_455_o11370" name="segment" name_original="segments" src="d1_s0" type="structure">
-        <character is_modifier="false" modifier="more or less" name="shape" src="d1_s0" value="fan-shaped" />
-      </biological_entity>
-      <biological_entity constraint="penultimate" id="from_key_V2_455_o11371" name="division" name_original="divisions" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_455_o11372" name="blade" name_original="blades" src="d1_s0" type="structure" />
-      <relation from="from_key_V2_455_o11369" id="from_key_V2_455_r2619" name="at" negation="false" src="d1_s0" to="from_key_V2_455_o11370" />
-      <relation from="from_key_V2_455_o11370" id="from_key_V2_455_r2620" name="part_of" negation="false" src="d1_s0" to="from_key_V2_455_o11371" />
-      <relation from="from_key_V2_455_o11370" id="from_key_V2_455_r2621" name="part_of" negation="false" src="d1_s0" to="from_key_V2_455_o11372" />
-    </statement>
-  </description>
 </bio:treatment>

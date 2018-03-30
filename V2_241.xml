@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
-    <taxon_name authority="Spach" date="1841" rank="genus">chamaecyparis</taxon_name>
-    <taxon_name authority="(Linnaeus) Britton" date="1888" rank="species">thyoides</taxon_name>
+    <taxon_name rank="family" authority="Bartlett" date="unknown">cupressaceae</taxon_name>
+    <taxon_name rank="genus" authority="Spach" date="1841">chamaecyparis</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) Britton" date="1888">thyoides</taxon_name>
     <place_of_publication>
       <publication_title>Prelim. Cat.</publication_title>
       <place_in_publication>71. 1888</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family cupressaceae;genus chamaecyparis;species thyoides</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Cupressus</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="species">thyoides</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Cupressus</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="unknown">thyoides</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl.</publication_title>
       <place_in_publication>2: 1003. 1753</place_in_publication>
@@ -35,189 +27,29 @@
     <taxon_hierarchy>genus Cupressus;species thyoides;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Chamaecyparis</taxon_name>
-    <taxon_name authority="Li H. L." date="unknown" rank="species">henryae</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Chamaecyparis</taxon_name>
+    <taxon_name rank="species" authority="Li H. L." date="unknown">henryae</taxon_name>
     <taxon_hierarchy>genus Chamaecyparis;species henryae;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Chamaecyparis</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">thyoides</taxon_name>
-    <taxon_name authority="(Li H. L.) E. Murray" date="unknown" rank="subspecies">henryae</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Chamaecyparis</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">thyoides</taxon_name>
+    <taxon_name rank="subspecies" authority="(Li H. L.) E. Murray" date="unknown">henryae</taxon_name>
     <taxon_hierarchy>genus Chamaecyparis;species thyoides;subspecies henryae;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Chamaecyparis</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">thyoides</taxon_name>
-    <taxon_name authority="(Li H. L.) Little" date="unknown" rank="variety">henryae</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Chamaecyparis</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">thyoides</taxon_name>
+    <taxon_name rank="variety" authority="(Li H. L.) Little" date="unknown">henryae</taxon_name>
     <taxon_hierarchy>genus Chamaecyparis;species thyoides;variety henryae;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees to 20 (-28) m;</text>
-      <biological_entity id="o4496" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="20" from_inclusive="false" from_unit="m" name="atypical_some_measurement" src="d0_s0" to="28" to_unit="m" />
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="20" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk to 0.8 (-1.5) m diam.</text>
-      <biological_entity id="o4497" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0.8" from_inclusive="false" from_unit="m" name="diameter" src="d0_s1" to="1.5" to_unit="m" />
-        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="0.8" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Bark dark brownish red, less than 3 cm thick, irregularly furrowed and ridged.</text>
-      <biological_entity id="o4498" name="bark" name_original="bark" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s2" value="dark brownish" />
-        <character is_modifier="false" name="coloration" src="d0_s2" value="red" />
-        <character char_type="range_value" from="0" from_unit="cm" name="thickness" src="d0_s2" to="3" to_unit="cm" />
-        <character is_modifier="false" modifier="irregularly" name="architecture" src="d0_s2" value="furrowed" />
-        <character is_modifier="false" name="shape" src="d0_s2" value="ridged" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Branchlet sprays fan-shaped.</text>
-      <biological_entity constraint="branchlet" id="o4499" name="spray" name_original="sprays" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="fan--shaped" value_original="fan-shaped" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Leaves of branchlets to 2 mm, apex acute to acuminate, bases of facial leaves often overlapped by apices of subtending facial leaves;</text>
-      <biological_entity id="o4500" name="leaf" name_original="leaves" src="d0_s4" type="structure">
-        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s4" to="2" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o4501" name="branchlet" name_original="branchlets" src="d0_s4" type="structure" />
-      <biological_entity id="o4502" name="apex" name_original="apex" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="acute" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="acuminate" />
-        <character char_type="range_value" from="acute" name="shape" src="d0_s4" to="acuminate" />
-      </biological_entity>
-      <biological_entity id="o4503" name="base" name_original="bases" src="d0_s4" type="structure" />
-      <biological_entity constraint="facial" id="o4504" name="leaf" name_original="leaves" src="d0_s4" type="structure" />
-      <biological_entity id="o4505" name="apex" name_original="apices" src="d0_s4" type="structure" />
-      <biological_entity constraint="subtending facial" id="o4506" name="leaf" name_original="leaves" src="d0_s4" type="structure" />
-      <relation from="o4500" id="r1056" name="part_of" negation="false" src="d0_s4" to="o4501" />
-      <relation from="o4503" id="r1057" name="part_of" negation="false" src="d0_s4" to="o4504" />
-      <relation from="o4503" id="r1058" name="overlapped by" negation="false" src="d0_s4" to="o4505" />
-      <relation from="o4503" id="r1059" name="overlapped by" negation="false" src="d0_s4" to="o4506" />
-    </statement>
-    <statement id="d0_s5">
-      <text>glands usually present, circular.</text>
-      <biological_entity id="o4507" name="gland" name_original="glands" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="usually" name="presence" src="d0_s5" value="absent" />
-        <character is_modifier="false" name="arrangement_or_shape" src="d0_s5" value="circular" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Pollen cones 2-4 mm, dark-brown;</text>
-      <biological_entity constraint="pollen" id="o4508" name="cone" name_original="cones" src="d0_s6" type="structure">
-        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s6" to="4" to_unit="mm" />
-        <character is_modifier="false" name="coloration" src="d0_s6" value="dark-brown" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>pollen-sacs yellow.</text>
-      <biological_entity id="o4509" name="pollen-sac" name_original="pollen-sacs" src="d0_s7" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s7" value="yellow" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>Seed-cones maturing and opening the first-year, 4-9 mm broad, glaucous, bluish purple to reddish-brown, not notably resinous;</text>
-      <biological_entity id="o4510" name="seed-cone" name_original="seed-cones" src="d0_s8" type="structure">
-        <character is_modifier="false" name="life_cycle" src="d0_s8" value="maturing" />
-        <character is_modifier="false" name="structure_subtype" src="d0_s8" value="first-year" />
-        <character char_type="range_value" from="4" from_unit="mm" name="width" src="d0_s8" to="9" to_unit="mm" />
-        <character is_modifier="false" name="pubescence" src="d0_s8" value="glaucous" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s8" value="bluish purple" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s8" value="reddish-brown" />
-        <character char_type="range_value" from="bluish purple" name="coloration" src="d0_s8" to="reddish-brown" />
-        <character is_modifier="false" modifier="not notably" name="coating" src="d0_s8" value="resinous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>scales 5-7.</text>
-      <biological_entity id="o4511" name="scale" name_original="scales" src="d0_s9" type="structure">
-        <character char_type="range_value" from="5" name="quantity" src="d0_s9" to="7" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>Seeds 1-2 per scale, 2-3 mm, wing narrower than body.</text>
-      <biological_entity id="o4512" name="seed" name_original="seeds" src="d0_s10" type="structure">
-        <character char_type="range_value" constraint="per scale" constraintid="o4513" from="1" name="quantity" src="d0_s10" to="2" />
-        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" notes="" src="d0_s10" to="3" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o4513" name="scale" name_original="scale" src="d0_s10" type="structure" />
-      <biological_entity id="o4514" name="wing" name_original="wing" src="d0_s10" type="structure">
-        <character constraint="than body" constraintid="o4515" is_modifier="false" name="width" src="d0_s10" value="narrower" />
-      </biological_entity>
-      <biological_entity id="o4515" name="body" name_original="body" src="d0_s10" type="structure" />
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Bogs and swamps of the Atlantic and Gulf coasts (primarily Coastal Plain);</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="bogs and swamps of the atlantic and gulf coasts ( coastal plain ) ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--500 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="500" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ala., Conn., Del., Fla., Ga., Maine, Md., Mass., Miss., N.H., N.J., N.Y., N.C., Pa., R.I., S.C., Va.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees  to 20(--28) m; trunk to 0.8(--1.5) m diam.  Bark  dark brownish red, less than 3 cm thick, irregularly furrowed and ridged.  Branchlet  sprays fan-shaped.  Leaves  of branchlets to 2 mm, apex acute to acuminate, bases of facial leaves often overlapped by apices of subtending facial leaves; glands usually present, circular.  Pollen cones  2--4 mm, dark brown; pollen sacs yellow.  Seed cones  maturing and opening the first year, 4--9 mm broad, glaucous, bluish purple to reddish brown, not notably resinous; scales 5--7.  Seeds  1--2 per scale, 2--3 mm, wing narrower than body.</description>
+  <description type="habitat">Bogs and swamps of the Atlantic and Gulf coasts (primarily Coastal Plain);</description>
+  <description type="elevation">0--500 m;</description>
+  <description type="distribution">Ala., Conn., Del., Fla., Ga., Maine, Md., Mass., Miss., N.H., N.J., N.Y., N.C., Pa., R.I., S.C., Va.</description>
   <number>1</number>
   <other_name type="common_name">Atlantic white-cedar</other_name>
   <other_name type="common_name">southern white-cedar</other_name>
   <discussion>Li H. L. (1962) segregated some populations at the extreme southwestern limit of the species in Alabama, Florida, and Mississippi as Chamaecyparis henryae based on smoother bark, less flattened branchlets, lighter yellowish green foliage, steeper angle of leaf appression to the stem, more prominently keeled but less glandular leaves, and slightly larger cones, seeds, and seed wings. These features were contrasted with phenotypes found in the "northern and mid-Atlantic" populations, and Li proposed a relationship to C . nootkatensis rather than to C . thyoides . Preliminary comparison of herbarium material from the Southeast (including populations in Georgia and Florida) leads to retention of C . thyoides as a subtly variable complex with the imperfectly differentiated C . henryae at one end of the range.</discussion>
   <discussion>A. J. Rehder (1949) listed, with bibliographic citations, 30 published varieties and forms best considered as cultivars.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_311_d1_s0">
-      <text>Seed-cones 4-9 mm broad;</text>
-      <biological_entity id="from_key_V2_311_o7074" name="seed-cone" name_original="seed-cones" src="d1_s0" type="structure">
-        <character char_type="range_value" from="4" from_unit="mm" name="width" src="d1_s0" to="9" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_311_d1_s1">
-      <text>leaves usually with circular abaxial glands;</text>
-      <biological_entity constraint="abaxial" id="from_key_V2_311_o7076" name="gland" name_original="glands" src="d1_s1" type="structure">
-        <character is_modifier="true" name="arrangement_or_shape" src="d1_s1" value="circular" />
-      </biological_entity>
-      <relation from="from_key_V2_311_o7075" id="from_key_V2_311_r1655" name="with" negation="false" src="d1_s1" to="from_key_V2_311_o7076" />
-    </statement>
-    <statement id="from_key_V2_311_d1_s2">
-      <text>Atlantic and Gulf coasts.</text>
-      <biological_entity id="from_key_V2_311_o7075" name="leaf" name_original="leaves" src="d1_s1" type="structure">
-        <character is_modifier="false" name="habitat" src="d1_s2" value="coasts" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

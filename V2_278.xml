@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">onoclea</taxon_name>
-    <taxon_name authority="Linnaeus" date="1753" rank="species">sensibilis</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">onoclea</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="1753">sensibilis</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl.</publication_title>
       <place_in_publication>2: 1062. 1753</place_in_publication>
@@ -26,216 +18,26 @@
     <taxon_hierarchy>family dryopteridaceae;genus onoclea;species sensibilis</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Onoclea</taxon_name>
-    <taxon_name authority="forma hemiphyllodes (Kiss &amp; Kümmerle) Gilbert" date="unknown" rank="species">sensibilis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Onoclea</taxon_name>
+    <taxon_name rank="species" authority="forma hemiphyllodes (Kiss &amp; Kümmerle) Gilbert" date="unknown">sensibilis</taxon_name>
     <taxon_hierarchy>genus Onoclea;species sensibilis;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Onoclea</taxon_name>
-    <taxon_name authority="forma obtusilobata (Schkuhr) Gilbert" date="unknown" rank="species">sensibilis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Onoclea</taxon_name>
+    <taxon_name rank="species" authority="forma obtusilobata (Schkuhr) Gilbert" date="unknown">sensibilis</taxon_name>
     <taxon_hierarchy>genus Onoclea;species sensibilis;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Onoclea</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">sensibilis</taxon_name>
-    <taxon_name authority="(Schkuhr) Torrey" date="unknown" rank="variety">obtusilobata</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Onoclea</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">sensibilis</taxon_name>
+    <taxon_name rank="variety" authority="(Schkuhr) Torrey" date="unknown">obtusilobata</taxon_name>
     <taxon_hierarchy>genus Onoclea;species sensibilis;variety obtusilobata;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Leaves irregularly spaced along stem.</text>
-      <biological_entity id="o5625" name="leaf" name_original="leaves" src="d0_s0" type="structure">
-        <character constraint="along stem" constraintid="o5626" is_modifier="false" modifier="irregularly" name="arrangement" src="d0_s0" value="spaced" />
-      </biological_entity>
-      <biological_entity id="o5626" name="stem" name_original="stem" src="d0_s0" type="structure" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Sterile leaves yellow-green, deltate, coarsely divided, 13-34 × 15-30 cm.</text>
-      <biological_entity id="o5627" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s1" value="sterile" />
-        <character is_modifier="false" name="coloration" src="d0_s1" value="yellow-green" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="deltate" />
-        <character is_modifier="false" modifier="coarsely" name="shape" src="d0_s1" value="divided" />
-        <character char_type="range_value" from="13" from_unit="cm" name="length" src="d0_s1" to="34" to_unit="cm" />
-        <character char_type="range_value" from="15" from_unit="cm" name="width" src="d0_s1" to="30" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Petiole of sterile leaf black, 22-58 cm, flattened at base;</text>
-      <biological_entity id="o5628" name="petiole" name_original="petiole" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s2" value="black" />
-        <character char_type="range_value" from="22" from_unit="cm" name="some_measurement" src="d0_s2" to="58" to_unit="cm" />
-        <character constraint="at base" constraintid="o5630" is_modifier="false" name="shape" src="d0_s2" value="flattened" />
-      </biological_entity>
-      <biological_entity id="o5629" name="leaf" name_original="leaf" src="d0_s2" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s2" value="sterile" />
-      </biological_entity>
-      <biological_entity id="o5630" name="base" name_original="base" src="d0_s2" type="structure" />
-      <relation from="o5628" id="r1287" name="part_of" negation="false" src="d0_s2" to="o5629" />
-    </statement>
-    <statement id="d0_s3">
-      <text>rachis winged, becoming broader toward apex.</text>
-      <biological_entity id="o5631" name="rachis" name_original="rachis" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s3" value="winged" />
-        <character constraint="toward apex" constraintid="o5632" is_modifier="false" modifier="becoming" name="width" src="d0_s3" value="broader" />
-      </biological_entity>
-      <biological_entity id="o5632" name="apex" name_original="apex" src="d0_s3" type="structure" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Pinnae 5-11 per side, lanceolate;</text>
-      <biological_entity id="o5633" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
-        <character char_type="range_value" constraint="per side" constraintid="o5634" from="5" name="quantity" src="d0_s4" to="11" />
-        <character is_modifier="false" name="shape" notes="" src="d0_s4" value="lanceolate" />
-      </biological_entity>
-      <biological_entity id="o5634" name="side" name_original="side" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>proximal pinnae 9-18 cm, margins entire, sinuate, or laciniate.</text>
-      <biological_entity constraint="proximal" id="o5635" name="pinna" name_original="pinnae" src="d0_s5" type="structure">
-        <character char_type="range_value" from="9" from_unit="cm" name="some_measurement" src="d0_s5" to="18" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o5636" name="margin" name_original="margins" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="entire" />
-        <character is_modifier="false" name="shape" src="d0_s5" value="sinuate" />
-        <character is_modifier="false" name="shape" src="d0_s5" value="laciniate" />
-        <character is_modifier="false" name="shape" src="d0_s5" value="sinuate" />
-        <character is_modifier="false" name="shape" src="d0_s5" value="laciniate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Sporophyll leaves green, becoming black at maturity, oblong, 7-17 × 1-4 cm.</text>
-      <biological_entity constraint="sporophyll" id="o5637" name="leaf" name_original="leaves" src="d0_s6" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s6" value="green" />
-        <character constraint="at maturity" is_modifier="false" modifier="becoming" name="coloration" src="d0_s6" value="black" />
-        <character is_modifier="false" name="shape" src="d0_s6" value="oblong" />
-        <character char_type="range_value" from="7" from_unit="cm" name="length" src="d0_s6" to="17" to_unit="cm" />
-        <character char_type="range_value" from="1" from_unit="cm" name="width" src="d0_s6" to="4" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Petiole 19-40 cm, base sparsely scaly.</text>
-      <biological_entity id="o5638" name="petiole" name_original="petiole" src="d0_s7" type="structure">
-        <character char_type="range_value" from="19" from_unit="cm" name="some_measurement" src="d0_s7" to="40" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o5639" name="base" name_original="base" src="d0_s7" type="structure">
-        <character is_modifier="false" modifier="sparsely" name="architecture_or_pubescence" src="d0_s7" value="scaly" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>Pinnae linear, 5-11 per side, 2.5-5 cm;</text>
-      <biological_entity id="o5640" name="pinna" name_original="pinnae" src="d0_s8" type="structure">
-        <character is_modifier="false" name="arrangement_or_course_or_shape" src="d0_s8" value="linear" />
-        <character char_type="range_value" constraint="per side" constraintid="o5641" from="5" name="quantity" src="d0_s8" to="11" />
-        <character char_type="range_value" from="2.5" from_unit="cm" name="some_measurement" notes="" src="d0_s8" to="5" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o5641" name="side" name_original="side" src="d0_s8" type="structure" />
-    </statement>
-    <statement id="d0_s9">
-      <text>ultimate segments revolute to form beadlike structures, 2-4 mm diam.</text>
-      <biological_entity constraint="ultimate" id="o5642" name="segment" name_original="segments" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape_or_vernation" src="d0_s9" value="revolute" />
-        <character char_type="range_value" from="2" from_unit="mm" name="diameter" notes="" src="d0_s9" to="4" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o5643" name="structure" name_original="structures" src="d0_s9" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s9" value="beadlike" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>Sori borne on free veins, enclosed by ultimate segments.</text>
-      <biological_entity id="o5645" name="vein" name_original="veins" src="d0_s10" type="structure">
-        <character is_modifier="true" name="fusion" src="d0_s10" value="free" />
-      </biological_entity>
-      <biological_entity constraint="ultimate" id="o5646" name="segment" name_original="segments" src="d0_s10" type="structure" />
-      <relation from="o5644" id="r1288" name="borne on" negation="false" src="d0_s10" to="o5645" />
-      <relation from="o5644" id="r1289" name="enclosed by" negation="false" src="d0_s10" to="o5646" />
-    </statement>
-    <statement id="d0_s11">
-      <text>2 n = 74.</text>
-      <biological_entity id="o5644" name="sorus" name_original="sori" src="d0_s10" type="structure" />
-      <biological_entity constraint="2n" id="o5647" name="chromosome" name_original="" src="d0_s11" type="structure">
-        <character name="quantity" src="d0_s11" value="74" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporophylls produced May--October.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="May-October" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Open swamps, thickets, marshes, or low woods, in sunny or shaded locations, often forming thick stands;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="open swamps , thickets , marshes , or low woods , in sunny or shaded locations , forming thick stands" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--1500 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1500" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>St. Pierre and Miquelon; Man., N.B., Nfld., N.S., Ont., P.E.I., Que.; Ala., Ark., Colo., Conn., Del., Fla., Ga., Ill., Ind., Iowa, Kans., Ky., La., Maine, Md., Mass., Mich., Minn., Miss., Mo., Nebr., N.H., N.J., N.Y., N.C., N.Dak., Ohio, Okla., Pa., R.I., S.C., S.Dak., Tenn., Tex., Vt., Va., W.Va., Wis., Wyo.; e Asia.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="St. Pierre and Miquelon" establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Man." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Nfld." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="P.E.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Colo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Nebr." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Dak." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.Dak." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wyo." establishment_means="native" />
-        <character name="distribution" value="e Asia" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Leaves  irregularly spaced along stem.  Sterile leaves  yellow-green, deltate, coarsely divided, 13--34 × 15--30 cm.  Petiole  of sterile leaf black, 22--58 cm, flattened at base; rachis winged, becoming broader toward apex.  Pinnae  5--11 per side, lanceolate; proximal pinnae 9--18 cm, margins entire, sinuate, or laciniate.  Sporophyll leaves  green, becoming black at maturity, oblong, 7--17 × 1--4 cm.  Petiole  19--40 cm, base sparsely scaly.  Pinnae  linear, 5--11 per side, 2.5--5 cm; ultimate segments revolute to form beadlike structures, 2--4 mm diam.  Sori  borne on free veins, enclosed by ultimate segments. 2 n  = 74.</description>
+  <description type="phenology">Sporophylls produced May--October.</description>
+  <description type="habitat">Open swamps, thickets, marshes, or low woods, in sunny or shaded locations, often forming thick stands;</description>
+  <description type="elevation">0--1500 m;</description>
+  <description type="distribution">St. Pierre and Miquelon; Man., N.B., Nfld., N.S., Ont., P.E.I., Que.; Ala., Ark., Colo., Conn., Del., Fla., Ga., Ill., Ind., Iowa, Kans., Ky., La., Maine, Md., Mass., Mich., Minn., Miss., Mo., Nebr., N.H., N.J., N.Y., N.C., N.Dak., Ohio, Okla., Pa., R.I., S.C., S.Dak., Tenn., Tex., Vt., Va., W.Va., Wis., Wyo.; e Asia.</description>
   <number>1</number>
   <other_name type="common_name">Sensitive fern</other_name>
   <other_name type="common_name">onoclée sensible</other_name>

@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>Alan R. Smith</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Ching ex Pichi Sermolli" date="unknown" rank="family">thelypteridaceae</taxon_name>
-    <taxon_name authority="Schmidel" date="1763" rank="genus">Thelypteris</taxon_name>
+    <taxon_name rank="family" authority="Ching ex Pichi Sermolli" date="unknown">thelypteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Schmidel" date="1763">Thelypteris</taxon_name>
     <place_of_publication>
       <publication_title>Icon. Pl. ed. Keller, 3</publication_title>
       <place_in_publication>45, plates 11, 13. 1763</place_in_publication>
@@ -25,144 +17,8 @@
     <taxon_hierarchy>family thelypteridaceae;genus Thelypteris</taxon_hierarchy>
     <other_info_on_name type="etymology">[Greek thelys, female, and pteris, fern]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems long-creeping to ascending to erect, 1.5-12 mm or more diam.</text>
-      <biological_entity id="o10969" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s0" value="long-creeping" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s0" value="ascending" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s0" value="erect" />
-        <character char_type="range_value" from="long-creeping" name="orientation" src="d0_s0" to="ascending" />
-        <character char_type="range_value" from="1.5" from_unit="mm" name="diam" src="d0_s0" to="12" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Blades 1-pinnate to pinnate-pinnatifid, rarely 2-pinnate, proximal pinnae reduced or not, apex commonly gradually reduced, infrequently abruptly reduced and pinnalike;</text>
-      <biological_entity id="o10970" name="blade" name_original="blades" src="d0_s1" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="1-pinnate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="pinnate-pinnatifid" />
-        <character char_type="range_value" from="1-pinnate" name="shape" src="d0_s1" to="pinnate-pinnatifid" />
-        <character is_modifier="false" modifier="rarely" name="architecture_or_shape" src="d0_s1" value="2-pinnate" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="o10971" name="pinna" name_original="pinnae" src="d0_s1" type="structure">
-        <character is_modifier="false" name="size" src="d0_s1" value="reduced" />
-        <character name="size" src="d0_s1" value="not" />
-      </biological_entity>
-      <biological_entity id="o10972" name="apex" name_original="apex" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="commonly gradually" name="size" src="d0_s1" value="reduced" />
-        <character is_modifier="false" modifier="infrequently abruptly" name="size" src="d0_s1" value="reduced" />
-        <character is_modifier="false" name="architecture" src="d0_s1" value="pinnalike" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>pinnae entire to deeply pinnatifid, sessile or short-stalked;</text>
-      <biological_entity id="o10973" name="pinna" name_original="pinnae" src="d0_s2" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s2" value="entire" />
-        <character is_modifier="false" modifier="deeply" name="shape" notes="[duplicate value]" src="d0_s2" value="pinnatifid" />
-        <character char_type="range_value" from="entire" name="shape" src="d0_s2" to="deeply pinnatifid" />
-        <character is_modifier="false" name="architecture" src="d0_s2" value="sessile" />
-        <character is_modifier="false" name="architecture" src="d0_s2" value="short-stalked" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>costae grooved adaxially;</text>
-      <biological_entity id="o10974" name="costa" name_original="costae" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="adaxially" name="architecture" src="d0_s3" value="grooved" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>buds absent or uncommonly present in axils of pinnae;</text>
-      <biological_entity id="o10975" name="bud" name_original="buds" src="d0_s4" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s4" value="absent" />
-        <character constraint="in axils" constraintid="o10976" is_modifier="false" modifier="uncommonly" name="presence" src="d0_s4" value="absent" />
-      </biological_entity>
-      <biological_entity id="o10976" name="axil" name_original="axils" src="d0_s4" type="structure" />
-      <biological_entity id="o10977" name="pinna" name_original="pinnae" src="d0_s4" type="structure" />
-      <relation from="o10976" id="r2497" name="part_of" negation="false" src="d0_s4" to="o10977" />
-    </statement>
-    <statement id="d0_s5">
-      <text>veins free to regularly anastomosing, commonly simple (1-forked in a few species, e.g., Thelypteris palustris) and reaching margin;</text>
-      <biological_entity id="o10978" name="vein" name_original="veins" src="d0_s5" type="structure">
-        <character is_modifier="false" name="fusion" src="d0_s5" value="free" />
-        <character is_modifier="false" modifier="regularly" name="architecture" src="d0_s5" value="anastomosing" />
-        <character is_modifier="false" modifier="commonly" name="architecture" src="d0_s5" value="simple" />
-      </biological_entity>
-      <biological_entity id="o10979" name="margin" name_original="margin" src="d0_s5" type="structure" />
-      <relation from="o10978" id="r2498" name="reaching" negation="false" src="d0_s5" to="o10979" />
-    </statement>
-    <statement id="d0_s6">
-      <text>indument various abaxially, often of simple or branched hairs on blades, rachises and costae with or usually without scales.</text>
-      <biological_entity id="o10980" name="indument" name_original="indument" src="d0_s6" type="structure" constraint="hair">
-        <character is_modifier="false" modifier="abaxially" name="variability" src="d0_s6" value="various" />
-      </biological_entity>
-      <biological_entity id="o10981" name="hair" name_original="hairs" src="d0_s6" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s6" value="simple" />
-        <character is_modifier="true" name="architecture" src="d0_s6" value="branched" />
-      </biological_entity>
-      <biological_entity id="o10982" name="blade" name_original="blades" src="d0_s6" type="structure" />
-      <biological_entity id="o10983" name="rachis" name_original="rachises" src="d0_s6" type="structure" />
-      <biological_entity id="o10984" name="costa" name_original="costae" src="d0_s6" type="structure" />
-      <biological_entity id="o10985" name="scale" name_original="scales" src="d0_s6" type="structure" />
-      <relation from="o10980" id="r2499" modifier="often" name="part_of" negation="false" src="d0_s6" to="o10981" />
-      <relation from="o10980" id="r2500" name="on" negation="false" src="d0_s6" to="o10982" />
-      <relation from="o10980" id="r2501" name="on" negation="false" src="d0_s6" to="o10983" />
-      <relation from="o10980" id="r2502" name="on" negation="false" src="d0_s6" to="o10984" />
-      <relation from="o10980" id="r2503" modifier="usually" name="without" negation="false" src="d0_s6" to="o10985" />
-    </statement>
-    <statement id="d0_s7">
-      <text>Sori round, oblong, or elongate along veins, commonly medial to supramedial;</text>
-      <biological_entity id="o10986" name="sorus" name_original="sori" src="d0_s7" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s7" value="round" />
-        <character is_modifier="false" name="shape" src="d0_s7" value="oblong" />
-        <character is_modifier="false" name="shape" src="d0_s7" value="elongate" />
-        <character is_modifier="false" name="shape" src="d0_s7" value="oblong" />
-        <character constraint="along veins" constraintid="o10987" is_modifier="false" name="shape" src="d0_s7" value="elongate" />
-        <character is_modifier="false" modifier="commonly" name="position" notes="[duplicate value]" src="d0_s7" value="medial" />
-        <character is_modifier="false" name="position" notes="[duplicate value]" src="d0_s7" value="supramedial" />
-        <character char_type="range_value" from="commonly medial" name="position" notes="" src="d0_s7" to="supramedial" />
-      </biological_entity>
-      <biological_entity id="o10987" name="vein" name_original="veins" src="d0_s7" type="structure" />
-    </statement>
-    <statement id="d0_s8">
-      <text>indusia round-reniform, large (ca. 1 mm diam.) and persistent or sometimes small (less than 0.3 mm diam.), occasionally ephemeral, sometimes absent;</text>
-      <biological_entity id="o10988" name="indusium" name_original="indusia" src="d0_s8" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s8" value="round-reniform" />
-        <character is_modifier="false" name="size" src="d0_s8" value="large" />
-        <character is_modifier="false" name="duration" src="d0_s8" value="persistent" />
-        <character is_modifier="false" modifier="sometimes" name="size" src="d0_s8" value="small" />
-        <character is_modifier="false" modifier="occasionally" name="duration" src="d0_s8" value="ephemeral" />
-        <character is_modifier="false" modifier="sometimes" name="presence" src="d0_s8" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>sporangial capsules glabrous or occasionally hairy.</text>
-    </statement>
-    <statement id="d0_s10">
-      <text>x = 27, 29, 31, 32, 33, 34, 35, 36.</text>
-      <biological_entity constraint="sporangial" id="o10989" name="capsule" name_original="capsules" src="d0_s9" type="structure">
-        <character is_modifier="false" name="pubescence" src="d0_s9" value="glabrous" />
-        <character is_modifier="false" modifier="occasionally" name="pubescence" src="d0_s9" value="hairy" />
-      </biological_entity>
-      <biological_entity constraint="x" id="o10990" name="chromosome" name_original="" src="d0_s10" type="structure">
-        <character name="quantity" src="d0_s10" value="27" />
-        <character name="quantity" src="d0_s10" value="29" />
-        <character name="quantity" src="d0_s10" value="31" />
-        <character name="quantity" src="d0_s10" value="32" />
-        <character name="quantity" src="d0_s10" value="33" />
-        <character name="quantity" src="d0_s10" value="34" />
-        <character name="quantity" src="d0_s10" value="35" />
-        <character name="quantity" src="d0_s10" value="36" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>nearly worldwide.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="nearly worldwide" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  long-creeping to ascending to erect, 1.5--12 mm or more diam.  Blades  1-pinnate to pinnate-pinnatifid, rarely 2-pinnate, proximal pinnae reduced or not, apex commonly gradually reduced, infrequently abruptly reduced and pinnalike; pinnae entire to deeply pinnatifid, sessile or short-stalked; costae grooved adaxially; buds absent or uncommonly present in axils of pinnae; veins free to regularly anastomosing, commonly simple (1-forked in a few species, e.g.,  Thelypteris palustris ) and reaching margin; indument various abaxially, often of simple or branched hairs on blades, rachises and costae with or usually without scales.  Sori  round, oblong, or elongate along veins, commonly medial to supramedial; indusia round-reniform, large (ca. 1 mm diam.) and persistent or sometimes small (less than 0.3 mm diam.), occasionally ephemeral, sometimes absent; sporangial capsules glabrous or occasionally hairy.  x  = 27, 29, 31, 32, 33, 34, 35, 36.</description>
+  <description type="distribution">nearly worldwide.</description>
   <number>1</number>
   <other_name type="common_name">Oct.)</other_name>
   <other_name type="common_name">Female fern</other_name>
@@ -180,1300 +36,212 @@
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Pinnae entire or merely serrate;</text>
-          <biological_entity id="o10991" name="pinna" name_original="pinnae" src="d1_s0" type="structure">
-            <character is_modifier="false" name="architecture_or_shape" src="d1_s0" value="entire" />
-            <character is_modifier="false" modifier="merely" name="architecture_or_shape" src="d1_s0" value="serrate" />
-          </biological_entity>
-        </statement>
-        <statement id="d1_s1">
-          <text>veins regularly united in pairs to form parallel rows of more than 5 areoles between costa and pinna margin, areoles each with single excurrent, usually free veinlet (subg. Meniscium).</text>
-          <biological_entity id="o10992" name="vein" name_original="veins" src="d1_s1" type="structure">
-            <character constraint="in pairs" constraintid="o10993" is_modifier="false" modifier="regularly" name="fusion" src="d1_s1" value="united" />
-          </biological_entity>
-          <biological_entity id="o10993" name="pair" name_original="pairs" src="d1_s1" type="structure" />
-          <biological_entity id="o10994" name="row" name_original="rows" src="d1_s1" type="structure">
-            <character is_modifier="true" name="arrangement" src="d1_s1" value="parallel" />
-          </biological_entity>
-          <biological_entity constraint="between costa and margin" constraintid="o10996-o10997" id="o10995" name="areole" name_original="areoles" src="d1_s1" type="structure">
-            <character char_type="range_value" from="5" is_modifier="true" name="quantity" src="d1_s1" upper_restricted="false" />
-          </biological_entity>
-          <biological_entity id="o10996" name="costa" name_original="costa" src="d1_s1" type="structure" />
-          <biological_entity id="o10997" name="margin" name_original="margin" src="d1_s1" type="structure" />
-          <biological_entity constraint="pinna" id="o10998" name="areole" name_original="areoles" src="d1_s1" type="structure" />
-          <biological_entity id="o10999" name="areole" name_original="areoles" src="d1_s1" type="structure" />
-          <biological_entity id="o11000" name="veinlet" name_original="veinlet" src="d1_s1" type="structure">
-            <character is_modifier="true" name="quantity" src="d1_s1" value="single" />
-            <character is_modifier="true" name="architecture" src="d1_s1" value="excurrent" />
-            <character is_modifier="true" modifier="usually" name="fusion" src="d1_s1" value="free" />
-          </biological_entity>
-          <relation from="o10994" id="r2504" name="consist_of" negation="false" src="d1_s1" to="o10995" />
-          <relation from="o10999" id="r2505" name="with" negation="false" src="d1_s1" to="o11000" />
-        </statement>
-      </description>
+      <description type="morphology">Pinnae entire or merely serrate; veins regularly united in pairs to form parallel rows of more than 5 areoles between costa and pinna margin, areoles each with single excurrent, usually free veinlet (subg. Meniscium).</description>
       <next_statement_id>2</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Pinnae shallowly to deeply lobed;</text>
-          <biological_entity id="o11001" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
-            <character is_modifier="false" modifier="shallowly to deeply" name="shape" src="d2_s0" value="lobed" />
-          </biological_entity>
-        </statement>
-        <statement id="d2_s1">
-          <text>veins free, connivent at sinuses, or 1-2 pairs between primary-veins uniting to form common vein extending to sinus.</text>
-          <biological_entity id="o11002" name="vein" name_original="veins" src="d2_s1" type="structure">
-            <character is_modifier="false" name="fusion" src="d2_s1" value="free" />
-            <character constraint="at sinuses" constraintid="o11003" is_modifier="false" name="arrangement" src="d2_s1" value="connivent" />
-          </biological_entity>
-          <biological_entity id="o11003" name="sinuse" name_original="sinuses" src="d2_s1" type="structure">
-            <character char_type="range_value" constraint="between primary-veins" constraintid="o11004" from="1" name="quantity" src="d2_s1" to="2" />
-          </biological_entity>
-          <biological_entity id="o11004" name="primary-vein" name_original="primary-veins" src="d2_s1" type="structure" />
-          <biological_entity id="o11005" name="vein" name_original="vein" src="d2_s1" type="structure">
-            <character is_modifier="true" name="quantity" src="d2_s1" value="common" />
-          </biological_entity>
-          <biological_entity id="o11006" name="sinus" name_original="sinus" src="d2_s1" type="structure">
-            <character is_modifier="true" name="quantity" src="d2_s1" value="common" />
-          </biological_entity>
-          <relation from="o11004" id="r2506" name="uniting to form" negation="false" src="d2_s1" to="o11005" />
-          <relation from="o11004" id="r2507" name="uniting to form" negation="false" src="d2_s1" to="o11006" />
-        </statement>
-      </description>
+      <description type="morphology">Pinnae shallowly to deeply lobed; veins free, connivent at sinuses, or 1-2 pairs between primary veins uniting to form common vein extending to sinus.</description>
       <next_statement_id>3</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d3_s0">
-          <text>Pinna margins hooked-serrate.</text>
-        </statement>
-        <statement id="d3_s1">
-          <text>21.</text>
-        </statement>
-        <statement id="d3_s2">
-          <text>Thelypteris serrata</text>
-          <biological_entity constraint="pinna" id="o11007" name="margin" name_original="margins" src="d3_s0" type="structure">
-            <character is_modifier="false" name="architecture_or_shape" src="d3_s0" value="hooked-serrate" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Pinna margins hooked-serrate. ….. 21. Thelypteris serrata</description>
       <determination>21 Thelypteris serrata</determination>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d4_s0">
-          <text>Pinna margins entire to undulate or crenulate.</text>
-        </statement>
-        <statement id="d4_s1">
-          <text>20.</text>
-        </statement>
-        <statement id="d4_s2">
-          <text>Thelypteris reticulata</text>
-          <biological_entity constraint="pinna" id="o11008" name="margin" name_original="margins" src="d4_s0" type="structure">
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s0" value="entire" />
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s0" value="undulate" />
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s0" value="crenulate" />
-            <character char_type="range_value" from="entire" name="shape" src="d4_s0" to="undulate or crenulate" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Pinna margins entire to undulate or crenulate. ….. 20. Thelypteris reticulata</description>
       <determination>20 Thelypteris reticulata</determination>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d5_s0">
-          <text>Stellate and/or forked hairs present, especially on scales at apex of stems, on rachises, especially in adaxial grooves, and often on other parts of blades (subg. Goniopteris).</text>
-          <biological_entity id="o11009" name="whole_organism" name_original="" src="d5_s0" type="structure">
-            <character is_modifier="false" name="shape" src="d5_s0" value="stellate" />
-            <character is_modifier="false" name="shape" src="d5_s0" value="forked" />
-          </biological_entity>
-          <biological_entity id="o11010" name="hair" name_original="hairs" src="d5_s0" type="structure">
-            <character is_modifier="false" name="presence" src="d5_s0" value="absent" />
-          </biological_entity>
-          <biological_entity id="o11011" name="scale" name_original="scales" src="d5_s0" type="structure" />
-          <biological_entity id="o11012" name="apex" name_original="apex" src="d5_s0" type="structure" />
-          <biological_entity id="o11013" name="stem" name_original="stems" src="d5_s0" type="structure" />
-          <biological_entity id="o11014" name="rachis" name_original="rachises" src="d5_s0" type="structure" />
-          <biological_entity constraint="adaxial" id="o11015" name="groove" name_original="grooves" src="d5_s0" type="structure" />
-          <biological_entity id="o11016" name="part" name_original="parts" src="d5_s0" type="structure" />
-          <biological_entity id="o11017" name="blade" name_original="blades" src="d5_s0" type="structure" />
-          <relation from="o11010" id="r2508" modifier="especially" name="on" negation="false" src="d5_s0" to="o11011" />
-          <relation from="o11011" id="r2509" name="at" negation="false" src="d5_s0" to="o11012" />
-          <relation from="o11012" id="r2510" name="part_of" negation="false" src="d5_s0" to="o11013" />
-          <relation from="o11010" id="r2511" name="on" negation="false" src="d5_s0" to="o11014" />
-          <relation from="o11010" id="r2512" modifier="especially" name="in" negation="false" src="d5_s0" to="o11015" />
-          <relation from="o11010" id="r2513" modifier="often" name="on" negation="false" src="d5_s0" to="o11016" />
-          <relation from="o11016" id="r2514" name="part_of" negation="false" src="d5_s0" to="o11017" />
-        </statement>
-      </description>
+      <description type="morphology">Stellate and/or forked hairs present, especially on scales at apex of stems, on rachises, especially in adaxial grooves, and often on other parts of blades (subg. Goniopteris).</description>
       <next_statement_id>4</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d6_s0">
-          <text>Stellate or forked hairs absent.</text>
-          <biological_entity id="o11018" name="whole_organism" name_original="" src="d6_s0" type="structure">
-            <character is_modifier="false" name="shape" src="d6_s0" value="stellate" />
-            <character is_modifier="false" name="shape" src="d6_s0" value="forked" />
-          </biological_entity>
-          <biological_entity id="o11019" name="hair" name_original="hairs" src="d6_s0" type="structure">
-            <character is_modifier="false" name="presence" src="d6_s0" value="absent" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Stellate or forked hairs absent.</description>
       <next_statement_id>6</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>4</statement_id>
-      <description type="morphology">
-        <statement id="d7_s0">
-          <text>Blades mostly 15-25 cm wide, proximal pinnae not reduced, blade abruptly narrowed distally, apical pinna similar to lateral pinnae;</text>
-          <biological_entity id="o11020" name="blade" name_original="blades" src="d7_s0" type="structure">
-            <character char_type="range_value" from="15" from_unit="cm" name="width" src="d7_s0" to="25" to_unit="cm" />
-          </biological_entity>
-          <biological_entity constraint="proximal" id="o11021" name="pinna" name_original="pinnae" src="d7_s0" type="structure">
-            <character is_modifier="false" modifier="not" name="size" src="d7_s0" value="reduced" />
-          </biological_entity>
-          <biological_entity id="o11022" name="blade" name_original="blade" src="d7_s0" type="structure">
-            <character is_modifier="false" modifier="abruptly; distally" name="shape" src="d7_s0" value="narrowed" />
-          </biological_entity>
-          <biological_entity constraint="apical" id="o11023" name="pinna" name_original="pinna" src="d7_s0" type="structure" />
-          <biological_entity constraint="lateral" id="o11024" name="pinna" name_original="pinnae" src="d7_s0" type="structure" />
-          <relation from="o11023" id="r2515" name="to" negation="false" src="d7_s0" to="o11024" />
-        </statement>
-        <statement id="d7_s1">
-          <text>pinnae usually 6-8 pairs.</text>
-        </statement>
-        <statement id="d7_s2">
-          <text>19.</text>
-        </statement>
-        <statement id="d7_s3">
-          <text>Thelypteris tetragona</text>
-          <biological_entity id="o11025" name="pinna" name_original="pinnae" src="d7_s1" type="structure">
-            <character char_type="range_value" from="6" name="quantity" src="d7_s1" to="8" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Blades mostly 15-25 cm wide, proximal pinnae not reduced, blade abruptly narrowed distally, apical pinna similar to lateral pinnae; pinnae usually 6-8 pairs. ….. 19. Thelypteris tetragona</description>
       <determination>19 Thelypteris tetragona</determination>
     </key_statement>
     <key_statement>
       <statement_id>4</statement_id>
-      <description type="morphology">
-        <statement id="d8_s0">
-          <text>Blades mostly 2-8 (-10) cm wide, with or without reduced proximal pinnae, blade gradually narrowed distally to pinnatifid apex, apical pinna not similar to lateral pinnae;</text>
-          <biological_entity id="o11026" name="blade" name_original="blades" src="d8_s0" type="structure">
-            <character char_type="range_value" from="8" from_inclusive="false" from_unit="cm" name="width" src="d8_s0" to="10" to_unit="cm" />
-            <character char_type="range_value" from="2" from_unit="cm" name="width" src="d8_s0" to="8" to_unit="cm" />
-            <character is_modifier="false" modifier="gradually" name="shape" notes="" src="d8_s0" value="narrowed" />
-          </biological_entity>
-          <biological_entity constraint="proximal" id="o11027" name="pinna" name_original="pinnae" src="d8_s0" type="structure">
-            <character is_modifier="true" name="size" src="d8_s0" value="reduced" />
-          </biological_entity>
-          <biological_entity constraint="proximal" id="o11028" name="blade" name_original="blade" src="d8_s0" type="structure">
-            <character is_modifier="true" name="size" src="d8_s0" value="reduced" />
-          </biological_entity>
-          <biological_entity constraint="proximal" id="o11029" name="pinna" name_original="pinna" src="d8_s0" type="structure">
-            <character is_modifier="true" name="size" src="d8_s0" value="reduced" />
-          </biological_entity>
-          <biological_entity id="o11030" name="apex" name_original="apex" src="d8_s0" type="structure">
-            <character is_modifier="true" name="shape" src="d8_s0" value="pinnatifid" />
-          </biological_entity>
-          <biological_entity constraint="apical" id="o11031" name="pinna" name_original="pinnae" src="d8_s0" type="structure" />
-          <biological_entity constraint="lateral" id="o11032" name="pinna" name_original="pinnae" src="d8_s0" type="structure" />
-          <relation from="o11026" id="r2516" modifier="distally; distally; distally; distally; distally; distally; distally; distally; not; distally; distally; distally; distally; distally; distally; distally; distally; not" name="with or without" negation="false" src="d8_s0" to="o11027" />
-          <relation from="o11026" id="r2517" modifier="distally; distally; distally; distally; distally; distally; distally; distally; not; distally; distally; distally; distally; distally; distally; distally; distally; not" name="with or without" negation="false" src="d8_s0" to="o11028" />
-          <relation from="o11026" id="r2518" modifier="distally; distally; distally; distally; distally; distally; distally; distally; not; distally; distally; distally; distally; distally; distally; distally; distally; not" name="with or without" negation="false" src="d8_s0" to="o11029" />
-          <relation from="o11026" id="r2519" modifier="distally" name="to" negation="false" src="d8_s0" to="o11030" />
-          <relation from="o11026" id="r2520" modifier="distally; distally; distally; distally; distally; distally; distally; distally; distally; distally; distally; distally; distally; distally; distally; distally" name="to" negation="true" src="d8_s0" to="o11032" />
-        </statement>
-        <statement id="d8_s1">
-          <text>pinnae 6-25 (-30) pairs.</text>
-          <biological_entity id="o11033" name="pinna" name_original="pinnae" src="d8_s1" type="structure">
-            <character char_type="range_value" from="25" from_inclusive="false" name="atypical_quantity" src="d8_s1" to="30" />
-            <character char_type="range_value" from="6" name="quantity" src="d8_s1" to="25" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Blades mostly 2-8(-10) cm wide, with or without reduced proximal pinnae, blade gradually narrowed distally to pinnatifid apex, apical pinna not similar to lateral pinnae; pinnae 6-25(-30) pairs.</description>
       <next_statement_id>5</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>5</statement_id>
-      <description type="morphology">
-        <statement id="d9_s0">
-          <text>Pinnae with acute lobes;</text>
-          <biological_entity id="o11034" name="pinna" name_original="pinnae" src="d9_s0" type="structure" />
-          <biological_entity id="o11035" name="lobe" name_original="lobes" src="d9_s0" type="structure">
-            <character is_modifier="true" name="shape" src="d9_s0" value="acute" />
-          </biological_entity>
-          <relation from="o11034" id="r2521" name="with" negation="false" src="d9_s0" to="o11035" />
-        </statement>
-        <statement id="d9_s1">
-          <text>blade hairs subsessile, stellate;</text>
-          <biological_entity constraint="blade" id="o11036" name="hair" name_original="hairs" src="d9_s1" type="structure">
-            <character is_modifier="false" name="architecture" src="d9_s1" value="subsessile" />
-            <character is_modifier="false" name="arrangement_or_shape" src="d9_s1" value="stellate" />
-          </biological_entity>
-        </statement>
-        <statement id="d9_s2">
-          <text>blades erect, not rooting at apex.</text>
-          <biological_entity id="o11038" name="apex" name_original="apex" src="d9_s2" type="structure" />
-        </statement>
-        <statement id="d9_s3">
-          <text>18.</text>
-        </statement>
-        <statement id="d9_s4">
-          <text>Thelypteris sclerophylla</text>
-          <biological_entity id="o11037" name="blade" name_original="blades" src="d9_s2" type="structure">
-            <character is_modifier="false" name="orientation" src="d9_s2" value="erect" />
-            <character constraint="at apex" constraintid="o11038" is_modifier="false" modifier="not" name="architecture" src="d9_s2" value="rooting" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Pinnae with acute lobes; blade hairs subsessile, stellate; blades erect, not rooting at apex. ….. 18. Thelypteris sclerophylla</description>
       <determination>18 Thelypteris sclerophylla</determination>
     </key_statement>
     <key_statement>
       <statement_id>5</statement_id>
-      <description type="morphology">
-        <statement id="d10_s0">
-          <text>Pinnae entire or with shallow, rounded lobes;</text>
-          <biological_entity id="o11039" name="pinna" name_original="pinnae" src="d10_s0" type="structure">
-            <character is_modifier="false" name="architecture_or_shape" src="d10_s0" value="entire" />
-            <character is_modifier="false" name="architecture_or_shape" src="d10_s0" value="with shallow , rounded lobes" />
-          </biological_entity>
-          <biological_entity id="o11040" name="lobe" name_original="lobes" src="d10_s0" type="structure">
-            <character is_modifier="true" name="depth" src="d10_s0" value="shallow" />
-            <character is_modifier="true" name="shape" src="d10_s0" value="rounded" />
-          </biological_entity>
-          <relation from="o11039" id="r2522" name="with" negation="false" src="d10_s0" to="o11040" />
-        </statement>
-        <statement id="d10_s1">
-          <text>blade hairs stalked, stellate, mixed with needlelike hairs;</text>
-          <biological_entity constraint="blade" id="o11041" name="hair" name_original="hairs" src="d10_s1" type="structure">
-            <character is_modifier="false" name="architecture" src="d10_s1" value="stalked" />
-            <character is_modifier="false" name="arrangement_or_shape" src="d10_s1" value="stellate" />
-            <character constraint="with hairs" constraintid="o11042" is_modifier="false" name="arrangement" src="d10_s1" value="mixed" />
-          </biological_entity>
-          <biological_entity id="o11042" name="hair" name_original="hairs" src="d10_s1" type="structure">
-            <character is_modifier="true" name="architecture_or_shape" src="d10_s1" value="needlelike" />
-          </biological_entity>
-        </statement>
-        <statement id="d10_s2">
-          <text>blades commonly arching or pendent and rooting at apex.</text>
-          <biological_entity id="o11044" name="apex" name_original="apex" src="d10_s2" type="structure" />
-        </statement>
-        <statement id="d10_s3">
-          <text>17.</text>
-        </statement>
-        <statement id="d10_s4">
-          <text>Thelypteris reptans</text>
-          <biological_entity id="o11043" name="blade" name_original="blades" src="d10_s2" type="structure">
-            <character is_modifier="false" modifier="commonly" name="orientation" src="d10_s2" value="arching" />
-            <character is_modifier="false" name="orientation" src="d10_s2" value="pendent" />
-            <character constraint="at apex" constraintid="o11044" is_modifier="false" name="architecture" src="d10_s2" value="rooting" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Pinnae entire or with shallow, rounded lobes; blade hairs stalked, stellate, mixed with needlelike hairs; blades commonly arching or pendent and rooting at apex. ….. 17. Thelypteris reptans</description>
       <determination>17 Thelypteris reptans</determination>
     </key_statement>
     <key_statement>
       <statement_id>6</statement_id>
-      <description type="morphology">
-        <statement id="d11_s0">
-          <text>Sori elongate;</text>
-          <biological_entity id="o11045" name="sorus" name_original="sori" src="d11_s0" type="structure">
-            <character is_modifier="false" name="shape" src="d11_s0" value="elongate" />
-          </biological_entity>
-        </statement>
-        <statement id="d11_s1">
-          <text>sporangia minutely hairy (subg. Stegnogramma).</text>
-        </statement>
-        <statement id="d11_s2">
-          <text>16.</text>
-        </statement>
-        <statement id="d11_s3">
-          <text>Thelypteris pilosa var. alabamensis</text>
-          <biological_entity id="o11046" name="sporangium" name_original="sporangia" src="d11_s1" type="structure">
-            <character is_modifier="false" modifier="minutely" name="pubescence" src="d11_s1" value="hairy" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sori elongate; sporangia minutely hairy (subg. Stegnogramma). ….. 16. Thelypteris pilosa var. alabamensis</description>
       <determination>16 Thelypteris pilosa var. alabamensis</determination>
     </key_statement>
     <key_statement>
       <statement_id>6</statement_id>
-      <description type="morphology">
-        <statement id="d12_s0">
-          <text>Sori round or slightly oblong;</text>
-          <biological_entity id="o11047" name="sorus" name_original="sori" src="d12_s0" type="structure">
-            <character is_modifier="false" name="shape" src="d12_s0" value="round" />
-            <character is_modifier="false" modifier="slightly" name="shape" src="d12_s0" value="oblong" />
-          </biological_entity>
-        </statement>
-        <statement id="d12_s1">
-          <text>sporangia glabrous.</text>
-          <biological_entity id="o11048" name="sporangium" name_original="sporangia" src="d12_s1" type="structure">
-            <character is_modifier="false" name="pubescence" src="d12_s1" value="glabrous" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sori round or slightly oblong; sporangia glabrous.</description>
       <next_statement_id>7</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>7</statement_id>
-      <description type="morphology">
-        <statement id="d13_s0">
-          <text>Blades with all veins extending to margin above sinus;</text>
-          <biological_entity id="o11049" name="blade" name_original="blades" src="d13_s0" type="structure" />
-          <biological_entity id="o11050" name="vein" name_original="veins" src="d13_s0" type="structure" />
-          <biological_entity id="o11051" name="margin" name_original="margin" src="d13_s0" type="structure" />
-          <biological_entity id="o11052" name="sinus" name_original="sinus" src="d13_s0" type="structure" />
-          <relation from="o11049" id="r2523" name="with" negation="false" src="d13_s0" to="o11050" />
-          <relation from="o11050" id="r2524" name="extending to" negation="false" src="d13_s0" to="o11051" />
-          <relation from="o11050" id="r2525" name="extending to" negation="false" src="d13_s0" to="o11052" />
-        </statement>
-        <statement id="d13_s1">
-          <text>proximal pinnae greatly reduced or not.</text>
-          <biological_entity constraint="proximal" id="o11053" name="pinna" name_original="pinnae" src="d13_s1" type="structure">
-            <character is_modifier="false" modifier="greatly" name="size" src="d13_s1" value="reduced" />
-            <character name="size" src="d13_s1" value="not" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Blades with all veins extending to margin above sinus; proximal pinnae greatly reduced or not.</description>
       <next_statement_id>8</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>7</statement_id>
-      <description type="morphology">
-        <statement id="d14_s0">
-          <text>Blades with at least some basal veins extending to, connivent at, or united below sinus;</text>
-          <biological_entity id="o11054" name="blade" name_original="blades" src="d14_s0" type="structure" />
-          <biological_entity constraint="basal" id="o11055" name="vein" name_original="veins" src="d14_s0" type="structure" />
-          <biological_entity id="o11056" name="sinus" name_original="sinus" src="d14_s0" type="structure">
-            <character is_modifier="true" name="arrangement" src="d14_s0" value="connivent" />
-            <character is_modifier="true" name="fusion" src="d14_s0" value="united" />
-          </biological_entity>
-          <relation from="o11054" id="r2526" name="with" negation="false" src="d14_s0" to="o11055" />
-          <relation from="o11055" id="r2527" name="extending to" negation="false" src="d14_s0" to="o11056" />
-        </statement>
-        <statement id="d14_s1">
-          <text>proximal pinnae usually not reduced (subg. Cyclosorus), or if reduced, then veins united below sinus.</text>
-          <biological_entity constraint="proximal" id="o11057" name="pinna" name_original="pinnae" src="d14_s1" type="structure">
-            <character is_modifier="false" modifier="usually not" name="size" src="d14_s1" value="reduced" />
-            <character is_modifier="false" name="size" src="d14_s1" value="reduced" />
-          </biological_entity>
-          <biological_entity id="o11058" name="vein" name_original="veins" src="d14_s1" type="structure" />
-          <biological_entity id="o11059" name="sinus" name_original="sinus" src="d14_s1" type="structure" />
-          <relation from="o11058" id="r2528" name="united" negation="false" src="d14_s1" to="o11059" />
-        </statement>
-      </description>
+      <description type="morphology">Blades with at least some basal veins extending to, connivent at, or united below sinus; proximal pinnae usually not reduced (subg. Cyclosorus), or if reduced, then veins united below sinus.</description>
       <next_statement_id>13</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>8</statement_id>
-      <description type="morphology">
-        <statement id="d15_s0">
-          <text>Proximal pinnae not reduced or only slightly so, not much shorter than middle pinnae.</text>
-          <biological_entity constraint="proximal" id="o11060" name="pinna" name_original="pinnae" src="d15_s0" type="structure">
-            <character is_modifier="false" modifier="not" name="size" src="d15_s0" value="reduced" />
-            <character name="size" src="d15_s0" value="only slightly" />
-            <character constraint="than middle pinnae" constraintid="o11061" is_modifier="false" name="height_or_length_or_size" src="d15_s0" value="not much shorter" />
-          </biological_entity>
-          <biological_entity constraint="middle" id="o11061" name="pinna" name_original="pinnae" src="d15_s0" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Proximal pinnae not reduced or only slightly so, not much shorter than middle pinnae.</description>
       <next_statement_id>9</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>8</statement_id>
-      <description type="morphology">
-        <statement id="d16_s0">
-          <text>Proximal pinnae greatly reduced, much shorter than middle pinnae.</text>
-          <biological_entity constraint="proximal" id="o11062" name="pinna" name_original="pinnae" src="d16_s0" type="structure">
-            <character is_modifier="false" modifier="greatly" name="size" src="d16_s0" value="reduced" />
-            <character constraint="than middle pinnae" constraintid="o11063" is_modifier="false" name="height_or_length_or_size" src="d16_s0" value="much shorter" />
-          </biological_entity>
-          <biological_entity constraint="middle" id="o11063" name="pinna" name_original="pinnae" src="d16_s0" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Proximal pinnae greatly reduced, much shorter than middle pinnae.</description>
       <next_statement_id>10</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>9</statement_id>
-      <description type="morphology">
-        <statement id="d17_s0">
-          <text>Segment veins often forked;</text>
-          <biological_entity constraint="segment" id="o11064" name="vein" name_original="veins" src="d17_s0" type="structure">
-            <character is_modifier="false" modifier="often" name="shape" src="d17_s0" value="forked" />
-          </biological_entity>
-        </statement>
-        <statement id="d17_s1">
-          <text>blades lacking glands;</text>
-          <biological_entity id="o11065" name="blade" name_original="blades" src="d17_s1" type="structure" />
-          <biological_entity id="o11066" name="gland" name_original="glands" src="d17_s1" type="structure">
-            <character is_modifier="true" name="quantity" src="d17_s1" value="lacking" />
-          </biological_entity>
-        </statement>
-        <statement id="d17_s2">
-          <text>abaxial surface of costae with tan, ovate scales (subg. Thelypteris).</text>
-          <biological_entity id="o11068" name="costa" name_original="costae" src="d17_s2" type="structure" />
-          <biological_entity id="o11069" name="scale" name_original="scales" src="d17_s2" type="structure">
-            <character is_modifier="true" name="coloration" src="d17_s2" value="tan" />
-            <character is_modifier="true" name="shape" src="d17_s2" value="ovate" />
-          </biological_entity>
-          <relation from="o11067" id="r2529" name="part_of" negation="false" src="d17_s2" to="o11068" />
-          <relation from="o11067" id="r2530" name="with" negation="false" src="d17_s2" to="o11069" />
-        </statement>
-        <statement id="d17_s3">
-          <text>6a.</text>
-        </statement>
-        <statement id="d17_s4">
-          <text>Thelypteris palustris var. pubescens</text>
-          <biological_entity constraint="abaxial" id="o11067" name="surface" name_original="surface" src="d17_s2" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Segment veins often forked; blades lacking glands; abaxial surface of costae with tan, ovate scales (subg. Thelypteris). ….. 6a. Thelypteris palustris var. pubescens</description>
       <determination>6 Thelypteris palustris var. pubescens</determination>
     </key_statement>
     <key_statement>
       <statement_id>9</statement_id>
-      <description type="morphology">
-        <statement id="d18_s0">
-          <text>Segment veins not forked;</text>
-          <biological_entity constraint="segment" id="o11070" name="vein" name_original="veins" src="d18_s0" type="structure">
-            <character is_modifier="false" modifier="not" name="shape" src="d18_s0" value="forked" />
-          </biological_entity>
-        </statement>
-        <statement id="d18_s1">
-          <text>blades bearing sessile glands abaxially;</text>
-          <biological_entity id="o11071" name="blade" name_original="blades" src="d18_s1" type="structure" />
-          <biological_entity id="o11072" name="gland" name_original="glands" src="d18_s1" type="structure">
-            <character is_modifier="true" name="architecture" src="d18_s1" value="sessile" />
-          </biological_entity>
-          <relation from="o11071" id="r2531" modifier="abaxially" name="bearing" negation="false" src="d18_s1" to="o11072" />
-        </statement>
-        <statement id="d18_s2">
-          <text>costae lacking scales (subg. Parathelypteris).</text>
-          <biological_entity id="o11074" name="scale" name_original="scales" src="d18_s2" type="structure">
-            <character is_modifier="true" name="quantity" src="d18_s2" value="lacking" />
-          </biological_entity>
-        </statement>
-        <statement id="d18_s3">
-          <text>3.</text>
-        </statement>
-        <statement id="d18_s4">
-          <text>Thelypteris simulata</text>
-          <biological_entity id="o11073" name="costa" name_original="costae" src="d18_s2" type="structure">
-            <character name="quantity" src="d18_s4" value="3" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Segment veins not forked; blades bearing sessile glands abaxially; costae lacking scales (subg. Parathelypteris). ….. 3. Thelypteris simulata</description>
       <determination>3 Thelypteris simulata</determination>
     </key_statement>
     <key_statement>
       <statement_id>10</statement_id>
-      <description type="morphology">
-        <statement id="d19_s0">
-          <text>Petioles (and often rachises and costae) with persistent tan to straw-colored, linear-lanceolate scales abaxially (subg. Lastrea).</text>
-          <biological_entity id="o11076" name="scale" name_original="scales" src="d19_s0" type="structure">
-            <character is_modifier="true" name="coloration" src="d19_s0" value="persistent" />
-            <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d19_s0" value="tan" />
-            <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d19_s0" value="straw-colored" />
-            <character char_type="range_value" from="tan" is_modifier="true" name="coloration" src="d19_s0" to="straw-colored" />
-            <character is_modifier="true" name="shape" src="d19_s0" value="linear-lanceolate" />
-          </biological_entity>
-          <relation from="o11075" id="r2532" name="with" negation="false" src="d19_s0" to="o11076" />
-        </statement>
-        <statement id="d19_s1">
-          <text>5.</text>
-        </statement>
-        <statement id="d19_s2">
-          <text>Thelypteris quelpaertensis</text>
-          <biological_entity id="o11075" name="petiole" name_original="petioles" src="d19_s0" type="structure">
-            <character name="quantity" src="d19_s2" value="5" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Petioles (and often rachises and costae) with persistent tan to straw-colored, linear-lanceolate scales abaxially (subg. Lastrea). ….. 5. Thelypteris quelpaertensis</description>
       <determination>5 Thelypteris quelpaertensis</determination>
     </key_statement>
     <key_statement>
       <statement_id>10</statement_id>
-      <description type="morphology">
-        <statement id="d20_s0">
-          <text>Petioles persistently scaly only toward base, rachises and costae lacking scales abaxially.</text>
-          <biological_entity id="o11077" name="petiole" name_original="petioles" src="d20_s0" type="structure">
-            <character constraint="toward costae" constraintid="o11080" is_modifier="false" modifier="persistently" name="architecture_or_pubescence" src="d20_s0" value="scaly" />
-          </biological_entity>
-          <biological_entity id="o11078" name="base" name_original="base" src="d20_s0" type="structure" />
-          <biological_entity id="o11079" name="rachis" name_original="rachises" src="d20_s0" type="structure" />
-          <biological_entity id="o11080" name="costa" name_original="costae" src="d20_s0" type="structure" />
-          <biological_entity id="o11081" name="scale" name_original="scales" src="d20_s0" type="structure">
-            <character is_modifier="true" name="quantity" src="d20_s0" value="lacking" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Petioles persistently scaly only toward base, rachises and costae lacking scales abaxially.</description>
       <next_statement_id>11</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>11</statement_id>
-      <description type="morphology">
-        <statement id="d21_s0">
-          <text>Stems erect, trunklike with age;</text>
-          <biological_entity id="o11082" name="stem" name_original="stems" src="d21_s0" type="structure">
-            <character is_modifier="false" name="orientation" src="d21_s0" value="erect" />
-            <character constraint="with age" constraintid="o11083" is_modifier="false" name="shape" src="d21_s0" value="trunklike" />
-          </biological_entity>
-          <biological_entity id="o11083" name="age" name_original="age" src="d21_s0" type="structure" />
-        </statement>
-        <statement id="d21_s1">
-          <text>leaves evergreen;</text>
-          <biological_entity id="o11084" name="leaf" name_original="leaves" src="d21_s1" type="structure">
-            <character is_modifier="false" name="duration" src="d21_s1" value="evergreen" />
-          </biological_entity>
-        </statement>
-        <statement id="d21_s2">
-          <text>blades abaxially with dense reddish, hemispheric, sessile glands (subg. Amauropelta).</text>
-          <biological_entity id="o11086" name="gland" name_original="glands" src="d21_s2" type="structure">
-            <character is_modifier="true" name="density" src="d21_s2" value="dense" />
-            <character is_modifier="true" name="coloration" src="d21_s2" value="reddish" />
-            <character is_modifier="true" name="shape" src="d21_s2" value="hemispheric" />
-            <character is_modifier="true" name="architecture" src="d21_s2" value="sessile" />
-          </biological_entity>
-          <relation from="o11085" id="r2533" name="with" negation="false" src="d21_s2" to="o11086" />
-        </statement>
-        <statement id="d21_s3">
-          <text>4.</text>
-        </statement>
-        <statement id="d21_s4">
-          <text>Thelypteris resinifera</text>
-          <biological_entity id="o11085" name="blade" name_original="blades" src="d21_s2" type="structure">
-            <character name="quantity" src="d21_s4" value="4" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Stems erect, trunklike with age; leaves evergreen; blades abaxially with dense reddish, hemispheric, sessile glands (subg. Amauropelta). ….. 4. Thelypteris resinifera</description>
       <determination>4 Thelypteris resinifera</determination>
     </key_statement>
     <key_statement>
       <statement_id>11</statement_id>
-      <description type="morphology">
-        <statement id="d22_s0">
-          <text>Stems creeping (apices sometimes upturned with leaves clustered);</text>
-          <biological_entity id="o11087" name="stem" name_original="stems" src="d22_s0" type="structure">
-            <character is_modifier="false" name="growth_form_or_orientation" src="d22_s0" value="creeping" />
-          </biological_entity>
-        </statement>
-        <statement id="d22_s1">
-          <text>leaves dying back in winter;</text>
-          <biological_entity id="o11088" name="leaf" name_original="leaves" src="d22_s1" type="structure">
-            <character constraint="in winter" is_modifier="false" name="condition" src="d22_s1" value="dying" />
-          </biological_entity>
-        </statement>
-        <statement id="d22_s2">
-          <text>blades glandular or not abaxially (subg. Parathelypteris).</text>
-          <biological_entity id="o11089" name="blade" name_original="blades" src="d22_s2" type="structure">
-            <character is_modifier="false" name="architecture_or_function_or_pubescence" src="d22_s2" value="glandular" />
-            <character name="architecture_or_function_or_pubescence" src="d22_s2" value="not abaxially" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Stems creeping (apices sometimes upturned with leaves clustered); leaves dying back in winter; blades glandular or not abaxially (subg. Parathelypteris).</description>
       <next_statement_id>12</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>12</statement_id>
-      <description type="morphology">
-        <statement id="d23_s0">
-          <text>Costae conspicuously hairy abaxially, hairs ca. 1 mm;</text>
-          <biological_entity id="o11090" name="costa" name_original="costae" src="d23_s0" type="structure">
-            <character is_modifier="false" modifier="conspicuously; abaxially" name="pubescence" src="d23_s0" value="hairy" />
-          </biological_entity>
-          <biological_entity id="o11091" name="hair" name_original="hairs" src="d23_s0" type="structure">
-            <character name="some_measurement" src="d23_s0" unit="mm" value="1" />
-          </biological_entity>
-        </statement>
-        <statement id="d23_s1">
-          <text>blades abaxially lacking glands or with sparse, mostly sessile glands.</text>
-          <biological_entity id="o11092" name="blade" name_original="blades" src="d23_s1" type="structure" />
-          <biological_entity id="o11094" name="gland" name_original="glands" src="d23_s1" type="structure">
-            <character is_modifier="true" name="count_or_density" src="d23_s1" value="sparse" />
-            <character is_modifier="true" modifier="mostly" name="architecture" src="d23_s1" value="sessile" />
-          </biological_entity>
-          <relation from="o11093" id="r2534" name="with" negation="false" src="d23_s1" to="o11094" />
-        </statement>
-        <statement id="d23_s2">
-          <text>2.</text>
-        </statement>
-        <statement id="d23_s3">
-          <text>Thelypteris noveboracensis</text>
-          <biological_entity id="o11093" name="gland" name_original="glands" src="d23_s1" type="structure">
-            <character is_modifier="true" modifier="abaxially" name="quantity" src="d23_s1" value="lacking" />
-            <character name="quantity" src="d23_s3" value="2" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Costae conspicuously hairy abaxially, hairs ca. 1 mm; blades abaxially lacking glands or with sparse, mostly sessile glands. ….. 2. Thelypteris noveboracensis</description>
       <determination>2 Thelypteris noveboracensis</determination>
     </key_statement>
     <key_statement>
       <statement_id>12</statement_id>
-      <description type="morphology">
-        <statement id="d24_s0">
-          <text>Costae glabrous or sparsely hairy abaxially, hairs 0.2-0.7 mm;</text>
-          <biological_entity id="o11095" name="costa" name_original="costae" src="d24_s0" type="structure">
-            <character is_modifier="false" name="pubescence" src="d24_s0" value="glabrous" />
-            <character is_modifier="false" modifier="sparsely; abaxially" name="pubescence" src="d24_s0" value="hairy" />
-          </biological_entity>
-          <biological_entity id="o11096" name="hair" name_original="hairs" src="d24_s0" type="structure">
-            <character char_type="range_value" from="0.2" from_unit="mm" name="some_measurement" src="d24_s0" to="0.7" to_unit="mm" />
-          </biological_entity>
-        </statement>
-        <statement id="d24_s1">
-          <text>blades abaxially with numerous yellow to orange, mostly short-stipitate glands.</text>
-          <biological_entity id="o11098" name="gland" name_original="glands" src="d24_s1" type="structure">
-            <character is_modifier="true" name="coloration" src="d24_s1" value="numerous" />
-            <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d24_s1" value="yellow" />
-            <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d24_s1" value="orange" />
-            <character char_type="range_value" from="yellow" is_modifier="true" name="coloration" src="d24_s1" to="orange" />
-            <character is_modifier="true" modifier="mostly" name="architecture" src="d24_s1" value="short-stipitate" />
-          </biological_entity>
-          <relation from="o11097" id="r2535" name="with" negation="false" src="d24_s1" to="o11098" />
-        </statement>
-        <statement id="d24_s2">
-          <text>1.</text>
-        </statement>
-        <statement id="d24_s3">
-          <text>Thelypteris nevadensis</text>
-          <biological_entity id="o11097" name="blade" name_original="blades" src="d24_s1" type="structure">
-            <character name="quantity" src="d24_s3" value="1" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Costae glabrous or sparsely hairy abaxially, hairs 0.2-0.7 mm; blades abaxially with numerous yellow to orange, mostly short-stipitate glands. ….. 1. Thelypteris nevadensis</description>
       <determination>1 Thelypteris nevadensis</determination>
     </key_statement>
     <key_statement>
       <statement_id>13</statement_id>
-      <description type="morphology">
-        <statement id="d25_s0">
-          <text>Basal veins of adjacent segments united below sinus, excurrent vein leading toward sinus.</text>
-          <biological_entity constraint="basal" id="o11099" name="vein" name_original="veins" src="d25_s0" type="structure" />
-          <biological_entity id="o11100" name="segment" name_original="segments" src="d25_s0" type="structure">
-            <character is_modifier="true" name="arrangement" src="d25_s0" value="adjacent" />
-          </biological_entity>
-          <biological_entity id="o11102" name="vein" name_original="vein" src="d25_s0" type="structure">
-            <character is_modifier="true" name="architecture" src="d25_s0" value="excurrent" />
-          </biological_entity>
-          <biological_entity id="o11103" name="sinus" name_original="sinus" src="d25_s0" type="structure">
-            <character is_modifier="true" name="architecture" src="d25_s0" value="excurrent" />
-            <character is_modifier="true" name="position" src="d25_s0" value="leading" />
-          </biological_entity>
-          <relation from="o11099" id="r2536" name="part_of" negation="false" src="d25_s0" to="o11100" />
-          <relation from="o11099" id="r2537" name="united" negation="false" src="d25_s0" to="o11102" />
-          <relation from="o11099" id="r2538" name="united" negation="false" src="d25_s0" to="o11103" />
-        </statement>
-      </description>
+      <description type="morphology">Basal veins of adjacent segments united below sinus, excurrent vein leading toward sinus.</description>
       <next_statement_id>14</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>13</statement_id>
-      <description type="morphology">
-        <statement id="d26_s0">
-          <text>Basal veins of adjacent segments free, or connivent at sinuses.</text>
-          <biological_entity constraint="basal" id="o11104" name="vein" name_original="veins" src="d26_s0" type="structure">
-            <character is_modifier="false" name="fusion" src="d26_s0" value="free" />
-            <character constraint="at sinuses" constraintid="o11106" is_modifier="false" name="arrangement" src="d26_s0" value="connivent" />
-          </biological_entity>
-          <biological_entity id="o11105" name="segment" name_original="segments" src="d26_s0" type="structure">
-            <character is_modifier="true" name="arrangement" src="d26_s0" value="adjacent" />
-          </biological_entity>
-          <biological_entity id="o11106" name="sinuse" name_original="sinuses" src="d26_s0" type="structure" />
-          <relation from="o11104" id="r2539" name="part_of" negation="false" src="d26_s0" to="o11105" />
-        </statement>
-      </description>
+      <description type="morphology">Basal veins of adjacent segments free, or connivent at sinuses.</description>
       <next_statement_id>16</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>14</statement_id>
-      <description type="morphology">
-        <statement id="d27_s0">
-          <text>Stems long-creeping;</text>
-          <biological_entity id="o11107" name="stem" name_original="stems" src="d27_s0" type="structure">
-            <character is_modifier="false" name="growth_form_or_orientation" src="d27_s0" value="long-creeping" />
-          </biological_entity>
-        </statement>
-        <statement id="d27_s1">
-          <text>costae with tan ovate scales abaxially;</text>
-          <biological_entity id="o11108" name="costa" name_original="costae" src="d27_s1" type="structure" />
-          <biological_entity id="o11109" name="scale" name_original="scales" src="d27_s1" type="structure">
-            <character is_modifier="true" name="coloration" src="d27_s1" value="tan" />
-            <character is_modifier="true" name="shape" src="d27_s1" value="ovate" />
-          </biological_entity>
-          <relation from="o11108" id="r2540" name="with" negation="false" src="d27_s1" to="o11109" />
-        </statement>
-        <statement id="d27_s2">
-          <text>veins, costules, and costae adaxially glabrous or sparsely hairy with hairs less than 0.2 mm. …..</text>
-          <biological_entity id="o11110" name="vein" name_original="veins" src="d27_s2" type="structure" />
-          <biological_entity id="o11111" name="costule" name_original="costules" src="d27_s2" type="structure" />
-          <biological_entity id="o11113" name="hair" name_original="hairs" src="d27_s2" type="structure">
-            <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d27_s2" to="0.2" to_unit="mm" />
-          </biological_entity>
-        </statement>
-        <statement id="d27_s3">
-          <text>15.</text>
-        </statement>
-        <statement id="d27_s4">
-          <text>Thelypteris interrupta</text>
-          <biological_entity id="o11112" name="costa" name_original="costae" src="d27_s2" type="structure">
-            <character is_modifier="false" modifier="adaxially" name="pubescence" src="d27_s2" value="glabrous" />
-            <character constraint="with hairs" constraintid="o11113" is_modifier="false" modifier="sparsely" name="pubescence" src="d27_s2" value="hairy" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Stems long-creeping; costae with tan ovate scales abaxially; veins, costules, and costae adaxially glabrous or sparsely hairy with hairs less than 0.2 mm. ….. 15. Thelypteris interrupta</description>
       <determination>15 Thelypteris interrupta</determination>
     </key_statement>
     <key_statement>
       <statement_id>14</statement_id>
-      <description type="morphology">
-        <statement id="d28_s0">
-          <text>Stems short-creeping or suberect;</text>
-          <biological_entity id="o11114" name="stem" name_original="stems" src="d28_s0" type="structure">
-            <character is_modifier="false" name="orientation" src="d28_s0" value="short-creeping" />
-            <character is_modifier="false" name="orientation" src="d28_s0" value="suberect" />
-          </biological_entity>
-        </statement>
-        <statement id="d28_s1">
-          <text>costae without scales abaxially;</text>
-          <biological_entity id="o11115" name="costa" name_original="costae" src="d28_s1" type="structure" />
-          <biological_entity id="o11116" name="scale" name_original="scales" src="d28_s1" type="structure" />
-          <relation from="o11115" id="r2541" name="without" negation="false" src="d28_s1" to="o11116" />
-        </statement>
-        <statement id="d28_s2">
-          <text>veins, costules, and costae moderately to rather densely hairy adaxially with hairs greater than 0.3 mm.</text>
-          <biological_entity id="o11117" name="vein" name_original="veins" src="d28_s2" type="structure">
-            <character constraint="with hairs" constraintid="o11120" is_modifier="false" modifier="moderately to rather densely" name="pubescence" src="d28_s2" value="hairy" />
-          </biological_entity>
-          <biological_entity id="o11118" name="costule" name_original="costules" src="d28_s2" type="structure">
-            <character constraint="with hairs" constraintid="o11120" is_modifier="false" modifier="moderately to rather densely" name="pubescence" src="d28_s2" value="hairy" />
-          </biological_entity>
-          <biological_entity id="o11119" name="costa" name_original="costae" src="d28_s2" type="structure">
-            <character constraint="with hairs" constraintid="o11120" is_modifier="false" modifier="moderately to rather densely" name="pubescence" src="d28_s2" value="hairy" />
-          </biological_entity>
-          <biological_entity id="o11120" name="hair" name_original="hairs" src="d28_s2" type="structure">
-            <character char_type="range_value" from="0.3" from_unit="mm" name="some_measurement" src="d28_s2" upper_restricted="false" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Stems short-creeping or suberect; costae without scales abaxially; veins, costules, and costae moderately to rather densely hairy adaxially with hairs greater than 0.3 mm.</description>
       <next_statement_id>15</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>15</statement_id>
-      <description type="morphology">
-        <statement id="d29_s0">
-          <text>Costae with predominantly short hairs uniform in length (less than 0.2 mm and often less than 0.1 mm) on abaxial surface;</text>
-          <biological_entity id="o11121" name="costa" name_original="costae" src="d29_s0" type="structure" />
-          <biological_entity id="o11122" name="hair" name_original="hairs" src="d29_s0" type="structure">
-            <character is_modifier="true" modifier="predominantly" name="height_or_length_or_size" src="d29_s0" value="short" />
-            <character constraint="on abaxial surface" constraintid="o11123" is_modifier="false" name="length" src="d29_s0" value="uniform" />
-          </biological_entity>
-          <biological_entity constraint="abaxial" id="o11123" name="surface" name_original="surface" src="d29_s0" type="structure" />
-          <relation from="o11121" id="r2542" name="with" negation="false" src="d29_s0" to="o11122" />
-        </statement>
-        <statement id="d29_s1">
-          <text>excurrent veins mostly greater than 2 mm;</text>
-          <biological_entity id="o11124" name="vein" name_original="veins" src="d29_s1" type="structure">
-            <character is_modifier="true" name="architecture" src="d29_s1" value="excurrent" />
-            <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d29_s1" upper_restricted="false" />
-          </biological_entity>
-        </statement>
-        <statement id="d29_s2">
-          <text>petioles purplish;</text>
-          <biological_entity id="o11125" name="petiole" name_original="petioles" src="d29_s2" type="structure">
-            <character is_modifier="false" name="coloration" src="d29_s2" value="purplish" />
-          </biological_entity>
-        </statement>
-        <statement id="d29_s3">
-          <text>leaves with usually more than 2 pairs of greatly reduced proximal pinnae.</text>
-          <biological_entity id="o11127" name="pair" name_original="pairs" src="d29_s3" type="structure" constraint="pinna">
-            <character char_type="range_value" from="2" is_modifier="true" modifier="usually" name="quantity" src="d29_s3" upper_restricted="false" />
-          </biological_entity>
-          <biological_entity constraint="proximal" id="o11128" name="pinna" name_original="pinnae" src="d29_s3" type="structure">
-            <character is_modifier="true" modifier="greatly" name="size" src="d29_s3" value="reduced" />
-          </biological_entity>
-          <relation from="o11126" id="r2543" name="with" negation="false" src="d29_s3" to="o11127" />
-          <relation from="o11127" id="r2544" name="part_of" negation="false" src="d29_s3" to="o11128" />
-        </statement>
-        <statement id="d29_s4">
-          <text>14.</text>
-        </statement>
-        <statement id="d29_s5">
-          <text>Thelypteris dentata</text>
-          <biological_entity id="o11126" name="leaf" name_original="leaves" src="d29_s3" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Costae with predominantly short hairs uniform in length (less than 0.2 mm and often less than 0.1 mm) on abaxial surface; excurrent veins mostly greater than 2 mm; petioles purplish; leaves with usually more than 2 pairs of greatly reduced proximal pinnae. ….. 14. Thelypteris dentata</description>
       <determination>14 Thelypteris dentata</determination>
     </key_statement>
     <key_statement>
       <statement_id>15</statement_id>
-      <description type="morphology">
-        <statement id="d30_s0">
-          <text>Costae with most hairs greater than 0.3 mm (some exceeding 0.5 mm) on abaxial surface, hairs not uniform;</text>
-          <biological_entity id="o11129" name="costa" name_original="costae" src="d30_s0" type="structure" />
-          <biological_entity id="o11130" name="hair" name_original="hairs" src="d30_s0" type="structure">
-            <character char_type="range_value" constraint="on abaxial surface" constraintid="o11131" from="0.3" from_unit="mm" name="some_measurement" src="d30_s0" upper_restricted="false" />
-          </biological_entity>
-          <biological_entity constraint="abaxial" id="o11131" name="surface" name_original="surface" src="d30_s0" type="structure" />
-          <biological_entity id="o11132" name="hair" name_original="hairs" src="d30_s0" type="structure">
-            <character is_modifier="false" modifier="not" name="variability" src="d30_s0" value="uniform" />
-          </biological_entity>
-          <relation from="o11129" id="r2545" name="with" negation="false" src="d30_s0" to="o11130" />
-        </statement>
-        <statement id="d30_s1">
-          <text>excurrent veins less than 2 mm;</text>
-          <biological_entity id="o11133" name="vein" name_original="veins" src="d30_s1" type="structure">
-            <character is_modifier="true" name="architecture" src="d30_s1" value="excurrent" />
-            <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d30_s1" to="2" to_unit="mm" />
-          </biological_entity>
-        </statement>
-        <statement id="d30_s2">
-          <text>petioles straw-colored;</text>
-          <biological_entity id="o11134" name="petiole" name_original="petioles" src="d30_s2" type="structure">
-            <character is_modifier="false" name="coloration" src="d30_s2" value="straw-colored" />
-          </biological_entity>
-        </statement>
-        <statement id="d30_s3">
-          <text>leaves with 0-2 pairs of slightly reduced proximal pinnae.</text>
-          <biological_entity id="o11136" name="pair" name_original="pairs" src="d30_s3" type="structure" constraint="pinna">
-            <character char_type="range_value" from="0" is_modifier="true" name="quantity" src="d30_s3" to="2" />
-          </biological_entity>
-          <biological_entity constraint="proximal" id="o11137" name="pinna" name_original="pinnae" src="d30_s3" type="structure">
-            <character is_modifier="true" modifier="slightly" name="size" src="d30_s3" value="reduced" />
-          </biological_entity>
-          <relation from="o11135" id="r2546" name="with" negation="false" src="d30_s3" to="o11136" />
-          <relation from="o11136" id="r2547" name="part_of" negation="false" src="d30_s3" to="o11137" />
-        </statement>
-        <statement id="d30_s4">
-          <text>13a.</text>
-        </statement>
-        <statement id="d30_s5">
-          <text>Thelypteris hispidula var. versicolor</text>
-          <biological_entity id="o11135" name="leaf" name_original="leaves" src="d30_s3" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Costae with most hairs greater than 0.3 mm (some exceeding 0.5 mm) on abaxial surface, hairs not uniform; excurrent veins less than 2 mm; petioles straw-colored; leaves with 0-2 pairs of slightly reduced proximal pinnae. ….. 13a. Thelypteris hispidula var. versicolor</description>
       <determination>13 Thelypteris hispidula var. versicolor</determination>
     </key_statement>
     <key_statement>
       <statement_id>16</statement_id>
-      <description type="morphology">
-        <statement id="d31_s0">
-          <text>Stems suberect to erect;</text>
-          <biological_entity id="o11138" name="stem" name_original="stems" src="d31_s0" type="structure">
-            <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d31_s0" value="suberect" />
-            <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d31_s0" value="erect" />
-            <character char_type="range_value" from="suberect" name="orientation" src="d31_s0" to="erect" />
-          </biological_entity>
-        </statement>
-        <statement id="d31_s1">
-          <text>scales at base of petioles ovate, glabrous.</text>
-          <biological_entity id="o11140" name="base" name_original="base" src="d31_s1" type="structure" constraint="petiole">
-            <character is_modifier="false" name="shape" src="d31_s1" value="ovate" />
-          </biological_entity>
-          <biological_entity id="o11141" name="petiole" name_original="petioles" src="d31_s1" type="structure" />
-          <relation from="o11139" id="r2548" name="at" negation="false" src="d31_s1" to="o11140" />
-          <relation from="o11140" id="r2549" name="part_of" negation="false" src="d31_s1" to="o11141" />
-        </statement>
-        <statement id="d31_s2">
-          <text>11a.</text>
-        </statement>
-        <statement id="d31_s3">
-          <text>Thelypteris patens var. patens</text>
-          <biological_entity id="o11139" name="scale" name_original="scales" src="d31_s1" type="structure">
-            <character is_modifier="false" name="pubescence" notes="" src="d31_s1" value="glabrous" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Stems suberect to erect; scales at base of petioles ovate, glabrous. ….. 11a. Thelypteris patens var. patens</description>
       <determination>11 Thelypteris patens var. patens</determination>
     </key_statement>
     <key_statement>
       <statement_id>16</statement_id>
-      <description type="morphology">
-        <statement id="d32_s0">
-          <text>Stems long to short-creeping;</text>
-          <biological_entity id="o11142" name="stem" name_original="stems" src="d32_s0" type="structure">
-            <character is_modifier="false" name="length_or_size" src="d32_s0" value="long" />
-            <character is_modifier="false" name="growth_form_or_orientation" src="d32_s0" value="short-creeping" />
-          </biological_entity>
-        </statement>
-        <statement id="d32_s1">
-          <text>scales at base of petioles lanceolate, usually hairy.</text>
-          <biological_entity id="o11143" name="scale" name_original="scales" src="d32_s1" type="structure">
-            <character is_modifier="false" modifier="usually" name="pubescence" notes="" src="d32_s1" value="hairy" />
-          </biological_entity>
-          <biological_entity id="o11144" name="base" name_original="base" src="d32_s1" type="structure">
-            <character is_modifier="false" name="shape" src="d32_s1" value="lanceolate" />
-          </biological_entity>
-          <biological_entity id="o11145" name="petiole" name_original="petioles" src="d32_s1" type="structure" />
-          <relation from="o11143" id="r2550" name="at" negation="false" src="d32_s1" to="o11144" />
-          <relation from="o11144" id="r2551" name="part_of" negation="false" src="d32_s1" to="o11145" />
-        </statement>
-      </description>
+      <description type="morphology">Stems long- to short-creeping; scales at base of petioles lanceolate, usually hairy.</description>
       <next_statement_id>17</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>17</statement_id>
-      <description type="morphology">
-        <statement id="d33_s0">
-          <text>Costules and veins adaxially with at least a few rather stout hairs mostly longer than 0.3 mm;</text>
-          <biological_entity id="o11146" name="costule" name_original="costules" src="d33_s0" type="structure" />
-          <biological_entity id="o11147" name="vein" name_original="veins" src="d33_s0" type="structure" />
-          <biological_entity id="o11148" name="hair" name_original="hairs" src="d33_s0" type="structure">
-            <character is_modifier="true" modifier="at-least" name="quantity" src="d33_s0" value="few" />
-            <character is_modifier="true" modifier="rather" name="fragility_or_size" src="d33_s0" value="stout" />
-            <character modifier="mostly longer than" name="some_measurement" src="d33_s0" unit="mm" value="0.3" />
-          </biological_entity>
-          <relation from="o11146" id="r2552" name="with" negation="false" src="d33_s0" to="o11148" />
-          <relation from="o11147" id="r2553" name="with" negation="false" src="d33_s0" to="o11148" />
-        </statement>
-        <statement id="d33_s1">
-          <text>blades adaxially often rather glandular;</text>
-          <biological_entity id="o11149" name="blade" name_original="blades" src="d33_s1" type="structure">
-            <character is_modifier="false" modifier="adaxially often rather" name="architecture_or_function_or_pubescence" src="d33_s1" value="glandular" />
-          </biological_entity>
-        </statement>
-        <statement id="d33_s2">
-          <text>scales absent on abaxial surface of rachises and costae of mature leaves.</text>
-          <biological_entity id="o11150" name="scale" name_original="scales" src="d33_s2" type="structure">
-            <character constraint="on abaxial surface" constraintid="o11151" is_modifier="false" name="presence" src="d33_s2" value="absent" />
-          </biological_entity>
-          <biological_entity constraint="abaxial" id="o11151" name="surface" name_original="surface" src="d33_s2" type="structure" />
-          <biological_entity id="o11152" name="rachis" name_original="rachises" src="d33_s2" type="structure" />
-          <biological_entity id="o11153" name="costa" name_original="costae" src="d33_s2" type="structure" />
-          <biological_entity id="o11154" name="leaf" name_original="leaves" src="d33_s2" type="structure">
-            <character is_modifier="true" name="life_cycle" src="d33_s2" value="mature" />
-          </biological_entity>
-          <relation from="o11151" id="r2554" name="part_of" negation="false" src="d33_s2" to="o11152" />
-          <relation from="o11151" id="r2555" name="part_of" negation="false" src="d33_s2" to="o11153" />
-          <relation from="o11151" id="r2556" name="part_of" negation="false" src="d33_s2" to="o11154" />
-        </statement>
-      </description>
+      <description type="morphology">Costules and veins adaxially with at least a few rather stout hairs mostly longer than 0.3 mm; blades adaxially often rather glandular; scales absent on abaxial surface of rachises and costae of mature leaves.</description>
       <next_statement_id>18</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>17</statement_id>
-      <description type="morphology">
-        <statement id="d34_s0">
-          <text>Costules and veins adaxially glabrous;</text>
-          <biological_entity id="o11155" name="costule" name_original="costules" src="d34_s0" type="structure">
-            <character is_modifier="false" modifier="adaxially" name="pubescence" src="d34_s0" value="glabrous" />
-          </biological_entity>
-          <biological_entity id="o11156" name="vein" name_original="veins" src="d34_s0" type="structure">
-            <character is_modifier="false" modifier="adaxially" name="pubescence" src="d34_s0" value="glabrous" />
-          </biological_entity>
-        </statement>
-        <statement id="d34_s1">
-          <text>blades adaxially lacking glands;</text>
-          <biological_entity id="o11157" name="blade" name_original="blades" src="d34_s1" type="structure" />
-          <biological_entity id="o11158" name="gland" name_original="glands" src="d34_s1" type="structure">
-            <character is_modifier="true" modifier="adaxially" name="quantity" src="d34_s1" value="lacking" />
-          </biological_entity>
-        </statement>
-        <statement id="d34_s2">
-          <text>a few scales often persistent on rachises and/or costae abaxially.</text>
-          <biological_entity id="o11159" name="scale" name_original="scales" src="d34_s2" type="structure">
-            <character is_modifier="true" name="quantity" src="d34_s2" value="few" />
-            <character constraint="on rachises, costae" constraintid="o11160, o11161" is_modifier="false" modifier="often" name="duration" src="d34_s2" value="persistent" />
-          </biological_entity>
-          <biological_entity id="o11160" name="rachis" name_original="rachises" src="d34_s2" type="structure" />
-          <biological_entity id="o11161" name="costa" name_original="costae" src="d34_s2" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Costules and veins adaxially glabrous; blades adaxially lacking glands; a few scales often persistent on rachises and/or costae abaxially.</description>
       <next_statement_id>19</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>18</statement_id>
-      <description type="morphology">
-        <statement id="d35_s0">
-          <text>Proximal pinnae (1-2 pairs) somewhat reduced;</text>
-          <biological_entity constraint="proximal" id="o11162" name="pinna" name_original="pinnae" src="d35_s0" type="structure">
-            <character is_modifier="false" modifier="somewhat" name="size" src="d35_s0" value="reduced" />
-          </biological_entity>
-        </statement>
-        <statement id="d35_s1">
-          <text>stems short-creeping, sometimes appearing suberect;</text>
-        </statement>
-        <statement id="d35_s2">
-          <text>venation variable, even on same leaf, veins united and giving rise to short-excurrent vein or veins connivent at sinus;</text>
-          <biological_entity id="o11163" name="stem" name_original="stems" src="d35_s1" type="structure">
-            <character is_modifier="false" name="growth_form_or_orientation" src="d35_s1" value="short-creeping" />
-            <character is_modifier="false" modifier="sometimes" name="orientation" src="d35_s1" value="suberect" />
-            <character is_modifier="false" name="variability" src="d35_s2" value="variable" />
-          </biological_entity>
-          <biological_entity id="o11164" name="leaf" name_original="leaf" src="d35_s2" type="structure" />
-          <biological_entity id="o11165" name="vein" name_original="veins" src="d35_s2" type="structure">
-            <character is_modifier="false" name="fusion" src="d35_s2" value="united" />
-          </biological_entity>
-          <biological_entity id="o11166" name="rise" name_original="rise" src="d35_s2" type="structure" />
-          <biological_entity id="o11167" name="vein" name_original="vein" src="d35_s2" type="structure">
-            <character is_modifier="true" name="architecture" src="d35_s2" value="short-excurrent" />
-          </biological_entity>
-          <biological_entity id="o11168" name="vein" name_original="veins" src="d35_s2" type="structure">
-            <character constraint="at sinus" constraintid="o11169" is_modifier="false" name="arrangement" src="d35_s2" value="connivent" />
-          </biological_entity>
-          <biological_entity id="o11169" name="sinus" name_original="sinus" src="d35_s2" type="structure" />
-          <relation from="o11165" id="r2557" name="giving" negation="false" src="d35_s2" to="o11166" />
-          <relation from="o11165" id="r2558" name="to" negation="false" src="d35_s2" to="o11167" />
-          <relation from="o11165" id="r2559" name="to" negation="false" src="d35_s2" to="o11168" />
-        </statement>
-        <statement id="d35_s3">
-          <text>blades adaxially often somewhat hairy;</text>
-          <biological_entity id="o11170" name="blade" name_original="blades" src="d35_s3" type="structure">
-            <character is_modifier="false" modifier="adaxially often somewhat" name="pubescence" src="d35_s3" value="hairy" />
-          </biological_entity>
-        </statement>
-        <statement id="d35_s4">
-          <text>veins adaxially always with stout hairs, many longer than 0.4 mm. …..</text>
-          <biological_entity id="o11172" name="hair" name_original="hairs" src="d35_s4" type="structure">
-            <character is_modifier="true" name="fragility_or_size" src="d35_s4" value="stout" />
-          </biological_entity>
-          <relation from="o11171" id="r2560" name="with" negation="false" src="d35_s4" to="o11172" />
-        </statement>
-        <statement id="d35_s5">
-          <text>13a.</text>
-        </statement>
-        <statement id="d35_s6">
-          <text>Thelypteris hispidula var. versicolor</text>
-          <biological_entity id="o11171" name="vein" name_original="veins" src="d35_s4" type="structure">
-            <character is_modifier="false" name="quantity" notes="" src="d35_s4" value="many" />
-            <character modifier="longer than" name="some_measurement" src="d35_s4" unit="mm" value="0.4" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Proximal pinnae (1-2 pairs) somewhat reduced; stems short-creeping, sometimes appearing suberect; venation variable, even on same leaf, veins united and giving rise to short-excurrent vein or veins connivent at sinus; blades adaxially often somewhat hairy; veins adaxially always with stout hairs, many longer than 0.4 mm. ….. 13a. Thelypteris hispidula var. versicolor</description>
       <determination>13 Thelypteris hispidula var. versicolor</determination>
     </key_statement>
     <key_statement>
       <statement_id>18</statement_id>
-      <description type="morphology">
-        <statement id="d36_s0">
-          <text>Proximal pinnae usually not at all reduced;</text>
-          <biological_entity constraint="proximal" id="o11173" name="pinna" name_original="pinnae" src="d36_s0" type="structure" />
-        </statement>
-        <statement id="d36_s1">
-          <text>stems short to long-creeping;</text>
-          <biological_entity id="o11174" name="stem" name_original="stems" src="d36_s1" type="structure">
-            <character is_modifier="false" name="height_or_length_or_size" src="d36_s1" value="short" />
-            <character is_modifier="false" name="growth_form_or_orientation" src="d36_s1" value="long-creeping" />
-          </biological_entity>
-        </statement>
-        <statement id="d36_s2">
-          <text>veins connivent at sinus or distal vein of each pair meeting margin slightly above sinus;</text>
-          <biological_entity id="o11175" name="vein" name_original="veins" src="d36_s2" type="structure">
-            <character constraint="at " constraintid="o11177" is_modifier="false" name="arrangement" src="d36_s2" value="connivent" />
-          </biological_entity>
-          <biological_entity id="o11176" name="sinus" name_original="sinus" src="d36_s2" type="structure" />
-          <biological_entity constraint="distal" id="o11177" name="vein" name_original="vein" src="d36_s2" type="structure" />
-          <biological_entity id="o11178" name="pair" name_original="pair" src="d36_s2" type="structure" />
-          <biological_entity id="o11179" name="margin" name_original="margin" src="d36_s2" type="structure" />
-          <biological_entity id="o11180" name="sinus" name_original="sinus" src="d36_s2" type="structure" />
-          <relation from="o11177" id="r2561" name="part_of" negation="false" src="d36_s2" to="o11178" />
-          <relation from="o11177" id="r2562" name="part_of" negation="false" src="d36_s2" to="o11179" />
-          <relation from="o11177" id="r2563" name="above" negation="false" src="d36_s2" to="o11180" />
-        </statement>
-        <statement id="d36_s3">
-          <text>blades glabrous or sparsely hairy adaxially;</text>
-          <biological_entity id="o11181" name="blade" name_original="blades" src="d36_s3" type="structure">
-            <character is_modifier="false" name="pubescence" src="d36_s3" value="glabrous" />
-            <character is_modifier="false" modifier="sparsely; adaxially" name="pubescence" src="d36_s3" value="hairy" />
-          </biological_entity>
-        </statement>
-        <statement id="d36_s4">
-          <text>veins adaxially with or without stout hairs.</text>
-          <biological_entity id="o11183" name="hair" name_original="hairs" src="d36_s4" type="structure">
-            <character is_modifier="true" name="fragility_or_size" src="d36_s4" value="stout" />
-          </biological_entity>
-          <relation from="o11182" id="r2564" name="with or without" negation="false" src="d36_s4" to="o11183" />
-        </statement>
-        <statement id="d36_s5">
-          <text>12.</text>
-        </statement>
-        <statement id="d36_s6">
-          <text>Thelypteris kunthii</text>
-          <biological_entity id="o11182" name="vein" name_original="veins" src="d36_s4" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Proximal pinnae usually not at all reduced; stems short- to long-creeping; veins connivent at sinus or distal vein of each pair meeting margin slightly above sinus; blades glabrous or sparsely hairy adaxially; veins adaxially with or without stout hairs. ….. 12. Thelypteris kunthii</description>
       <determination>12 Thelypteris kunthii</determination>
     </key_statement>
     <key_statement>
       <statement_id>19</statement_id>
-      <description type="morphology">
-        <statement id="d37_s0">
-          <text>Apical portion of blades somewhat similar to lateral pinnae;</text>
-          <biological_entity constraint="apical" id="o11184" name="portion" name_original="portion" src="d37_s0" type="structure" />
-          <biological_entity id="o11185" name="blade" name_original="blades" src="d37_s0" type="structure" />
-          <biological_entity constraint="lateral" id="o11186" name="pinna" name_original="pinnae" src="d37_s0" type="structure" />
-          <relation from="o11184" id="r2565" name="part_of" negation="false" src="d37_s0" to="o11185" />
-          <relation from="o11184" id="r2566" name="to" negation="false" src="d37_s0" to="o11186" />
-        </statement>
-        <statement id="d37_s1">
-          <text>pinnae less than 2 cm wide.</text>
-        </statement>
-        <statement id="d37_s2">
-          <text>7.</text>
-        </statement>
-        <statement id="d37_s3">
-          <text>Thelypteris augescens</text>
-          <biological_entity id="o11187" name="pinna" name_original="pinnae" src="d37_s1" type="structure">
-            <character char_type="range_value" from="0" from_unit="cm" name="width" src="d37_s1" to="2" to_unit="cm" />
-            <character name="quantity" src="d37_s3" value="7" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Apical portion of blades somewhat similar to lateral pinnae; pinnae less than 2 cm wide. ….. 7. Thelypteris augescens</description>
       <determination>7 Thelypteris augescens</determination>
     </key_statement>
     <key_statement>
       <statement_id>19</statement_id>
-      <description type="morphology">
-        <statement id="d38_s0">
-          <text>Apical portion of blades ± attenuated, different from lateral pinnae;</text>
-          <biological_entity constraint="apical" id="o11188" name="portion" name_original="portion" src="d38_s0" type="structure">
-            <character is_modifier="false" modifier="more or less" name="shape" src="d38_s0" value="attenuated" />
-          </biological_entity>
-          <biological_entity id="o11189" name="blade" name_original="blades" src="d38_s0" type="structure" />
-          <biological_entity constraint="lateral" id="o11190" name="pinna" name_original="pinnae" src="d38_s0" type="structure" />
-          <relation from="o11188" id="r2567" name="part_of" negation="false" src="d38_s0" to="o11189" />
-          <relation from="o11188" id="r2568" name="from" negation="false" src="d38_s0" to="o11190" />
-        </statement>
-        <statement id="d38_s1">
-          <text>pinnae 0.8-4.8 cm wide.</text>
-          <biological_entity id="o11191" name="pinna" name_original="pinnae" src="d38_s1" type="structure">
-            <character char_type="range_value" from="0.8" from_unit="cm" name="width" src="d38_s1" to="4.8" to_unit="cm" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Apical portion of blades ± attenuated, different from lateral pinnae; pinnae 0.8-4.8 cm wide.</description>
       <next_statement_id>20</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>20</statement_id>
-      <description type="morphology">
-        <statement id="d39_s0">
-          <text>Basal segments of pinnae near base of blade slightly elongate and parallel to rachis;</text>
-          <biological_entity constraint="basal" id="o11192" name="segment" name_original="segments" src="d39_s0" type="structure">
-            <character constraint="to rachis" constraintid="o11196" is_modifier="false" name="arrangement" src="d39_s0" value="parallel" />
-          </biological_entity>
-          <biological_entity id="o11193" name="pinna" name_original="pinnae" src="d39_s0" type="structure" />
-          <biological_entity id="o11194" name="base" name_original="base" src="d39_s0" type="structure">
-            <character is_modifier="false" modifier="slightly" name="shape" src="d39_s0" value="elongate" />
-          </biological_entity>
-          <biological_entity id="o11195" name="blade" name_original="blade" src="d39_s0" type="structure" />
-          <biological_entity id="o11196" name="rachis" name_original="rachis" src="d39_s0" type="structure" />
-          <relation from="o11192" id="r2569" name="part_of" negation="false" src="d39_s0" to="o11193" />
-          <relation from="o11192" id="r2570" name="near" negation="false" src="d39_s0" to="o11194" />
-          <relation from="o11194" id="r2571" name="part_of" negation="false" src="d39_s0" to="o11195" />
-        </statement>
-        <statement id="d39_s1">
-          <text>costae abaxially lacking scales or scales sparse.</text>
-          <biological_entity id="o11197" name="costa" name_original="costae" src="d39_s1" type="structure" />
-        </statement>
-        <statement id="d39_s2">
-          <text>9.</text>
-        </statement>
-        <statement id="d39_s3">
-          <text>Thelypteris ovata</text>
-          <biological_entity id="o11199" name="scale" name_original="scales" src="d39_s1" type="structure">
-            <character is_modifier="true" modifier="abaxially" name="quantity" src="d39_s1" value="lacking" />
-            <character is_modifier="false" name="count_or_density" src="d39_s1" value="sparse" />
-            <character name="quantity" src="d39_s3" value="9" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Basal segments of pinnae near base of blade slightly elongate and parallel to rachis; costae abaxially lacking scales or scales sparse. ….. 9. Thelypteris ovata</description>
       <determination>9 Thelypteris ovata</determination>
     </key_statement>
     <key_statement>
       <statement_id>20</statement_id>
-      <description type="morphology">
-        <statement id="d40_s0">
-          <text>Basal segments of pinnae near base of blade not elongate and not parallel to rachis, or only those facing apex of rachis elongate and enlarged;</text>
-          <biological_entity constraint="basal" id="o11200" name="segment" name_original="segments" src="d40_s0" type="structure">
-            <character constraint="to rachis" constraintid="o11204" is_modifier="false" modifier="not" name="arrangement" src="d40_s0" value="parallel" />
-            <character is_modifier="false" name="shape" src="d40_s0" value="elongate" />
-            <character is_modifier="false" name="size" src="d40_s0" value="enlarged" />
-          </biological_entity>
-          <biological_entity id="o11201" name="pinna" name_original="pinnae" src="d40_s0" type="structure" />
-          <biological_entity id="o11202" name="base" name_original="base" src="d40_s0" type="structure">
-            <character is_modifier="false" modifier="not" name="shape" src="d40_s0" value="elongate" />
-          </biological_entity>
-          <biological_entity id="o11203" name="blade" name_original="blade" src="d40_s0" type="structure" />
-          <biological_entity id="o11204" name="rachis" name_original="rachis" src="d40_s0" type="structure" />
-          <biological_entity id="o11205" name="apex" name_original="apex" src="d40_s0" type="structure" />
-          <biological_entity id="o11206" name="rachis" name_original="rachis" src="d40_s0" type="structure" />
-          <relation from="o11200" id="r2572" name="part_of" negation="false" src="d40_s0" to="o11201" />
-          <relation from="o11200" id="r2573" name="near" negation="false" src="d40_s0" to="o11202" />
-          <relation from="o11202" id="r2574" name="part_of" negation="false" src="d40_s0" to="o11203" />
-          <relation from="o11200" id="r2575" modifier="only" name="facing" negation="false" src="d40_s0" to="o11205" />
-          <relation from="o11200" id="r2576" modifier="only" name="part_of" negation="false" src="d40_s0" to="o11206" />
-        </statement>
-        <statement id="d40_s1">
-          <text>costae abaxially bearing few-to-many scales.</text>
-          <biological_entity id="o11207" name="costa" name_original="costae" src="d40_s1" type="structure" />
-          <biological_entity id="o11208" name="scale" name_original="scales" src="d40_s1" type="structure">
-            <character is_modifier="true" name="quantity" src="d40_s1" value="few-to-many" />
-          </biological_entity>
-          <relation from="o11207" id="r2577" name="bearing" negation="false" src="d40_s1" to="o11208" />
-        </statement>
-      </description>
+      <description type="morphology">Basal segments of pinnae near base of blade not elongate and not parallel to rachis, or only those facing apex of rachis elongate and enlarged; costae abaxially bearing few to many scales.</description>
       <next_statement_id>21</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>21</statement_id>
-      <description type="morphology">
-        <statement id="d41_s0">
-          <text>Pinnae more than 2 cm wide;</text>
-          <biological_entity id="o11209" name="pinna" name_original="pinnae" src="d41_s0" type="structure">
-            <character char_type="range_value" from="2" from_unit="cm" name="width" src="d41_s0" upper_restricted="false" />
-          </biological_entity>
-        </statement>
-        <statement id="d41_s1">
-          <text>costae abaxially with hairs ca. 0.1 mm. …..</text>
-          <biological_entity id="o11211" name="hair" name_original="hairs" src="d41_s1" type="structure">
-            <character name="some_measurement" src="d41_s1" unit="mm" value="0.1" />
-          </biological_entity>
-          <relation from="o11210" id="r2578" name="with" negation="false" src="d41_s1" to="o11211" />
-        </statement>
-        <statement id="d41_s2">
-          <text>8a.</text>
-        </statement>
-        <statement id="d41_s3">
-          <text>Thelypteris grandis var. grandis</text>
-          <biological_entity id="o11210" name="costa" name_original="costae" src="d41_s1" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Pinnae more than 2 cm wide; costae abaxially with hairs ca. 0.1 mm. ….. 8a. Thelypteris grandis var. grandis</description>
       <determination>8 Thelypteris grandis var. grandis</determination>
     </key_statement>
     <key_statement>
       <statement_id>21</statement_id>
-      <description type="morphology">
-        <statement id="d42_s0">
-          <text>Pinnae less than 2 cm wide;</text>
-          <biological_entity id="o11212" name="pinna" name_original="pinnae" src="d42_s0" type="structure">
-            <character char_type="range_value" from="0" from_unit="cm" name="width" src="d42_s0" to="2" to_unit="cm" />
-          </biological_entity>
-        </statement>
-        <statement id="d42_s1">
-          <text>costae abaxially with hairs at least 0.2 mm. …..</text>
-          <biological_entity id="o11214" name="hair" name_original="hairs" src="d42_s1" type="structure">
-            <character name="some_measurement" src="d42_s1" unit="mm" value="0.2" />
-          </biological_entity>
-          <relation from="o11213" id="r2579" name="with" negation="false" src="d42_s1" to="o11214" />
-        </statement>
-        <statement id="d42_s2">
-          <text>10a.</text>
-        </statement>
-        <statement id="d42_s3">
-          <text>Thelypteris puberula var. sonorensis</text>
-          <biological_entity id="o11213" name="costa" name_original="costae" src="d42_s1" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Pinnae less than 2 cm wide; costae abaxially with hairs at least 0.2 mm. ….. 10a. Thelypteris puberula var. sonorensis</description>
       <determination>Thelypteris puberula var. sonorensis</determination>
     </key_statement>
   </key>

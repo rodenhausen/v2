@@ -1,222 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="Link" date="1841" rank="genus">pellaea</taxon_name>
-    <taxon_name authority="Mettenius ex Kuhn" date="1869" rank="species">glabella</taxon_name>
-    <taxon_name authority="Mettenius ex Kuhn" date="unknown" rank="subspecies">glabella</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Link" date="1841">pellaea</taxon_name>
+    <taxon_name rank="species" authority="Mettenius ex Kuhn" date="1869">glabella</taxon_name>
+    <taxon_name rank="subspecies" authority="Mettenius ex Kuhn" date="unknown">glabella</taxon_name>
     <taxon_hierarchy>family pteridaceae;genus pellaea;species glabella;subspecies glabella</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pellaea</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">atropurpurea</taxon_name>
-    <taxon_name authority="Mackenzie" date="unknown" rank="variety">bushii</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pellaea</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">atropurpurea</taxon_name>
+    <taxon_name rank="variety" authority="Mackenzie" date="unknown">bushii</taxon_name>
     <taxon_hierarchy>genus Pellaea;species atropurpurea;variety bushii;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Some ultimate segments (especially terminal segments) with hairlike scales abaxially near midrib;</text>
-      <biological_entity id="o22126" name="scale" name_original="scales" src="d0_s0" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s0" value="hairlike" />
-      </biological_entity>
-      <biological_entity id="o22127" name="midrib" name_original="midrib" src="d0_s0" type="structure" />
-      <relation from="o22125" id="r5164" name="with" negation="false" src="d0_s0" to="o22126" />
-      <relation from="o22126" id="r5165" name="near" negation="false" src="d0_s0" to="o22127" />
-    </statement>
-    <statement id="d0_s1">
-      <text>most sporangia containing 32 spores;</text>
-      <biological_entity constraint="ultimate" id="o22125" name="segment" name_original="segments" src="d0_s0" type="structure" />
-      <biological_entity id="o22128" name="sporangium" name_original="sporangia" src="d0_s1" type="structure" />
-      <biological_entity id="o22129" name="spore" name_original="spores" src="d0_s1" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s1" value="32" />
-      </biological_entity>
-      <relation from="o22128" id="r5166" name="containing" negation="false" src="d0_s1" to="o22129" />
-    </statement>
-    <statement id="d0_s2">
-      <text>spores averaging 60-72 µm diam. n = 2 n = 116, apogamous.</text>
-      <biological_entity id="o22130" name="spore" name_original="spores" src="d0_s2" type="structure">
-        <character char_type="range_value" from="60" from_unit="um" name="diameter" src="d0_s2" to="72" to_unit="um" />
-      </biological_entity>
-      <biological_entity constraint="n=2n" id="o22131" name="chromosome" name_original="" src="d0_s2" type="structure">
-        <character name="quantity" src="d0_s2" unit=",apogamous" value="116" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulating summer--fall.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="summer-fall" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Calcareous cliffs and ledges, usually on limestone substrates;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="calcareous cliffs and ledges , on limestone substrates ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--1200 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1200" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ont., Que.; Ark., Conn., Ill., Ind., Iowa, Kans., Ky., Md., Mass., Mich., Minn., Mo., Nebr., N.Y., Ohio, Okla., Pa., Tenn., Tex., Vt., Va., W.Va., Wis.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Nebr." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Some  ultimate segments  (especially terminal segments) with hairlike scales abaxially near midrib; most sporangia containing 32 spores; spores averaging 60--72 µm diam.  n  = 2 n  = 116, apogamous.</description>
+  <description type="phenology">Sporulating summer--fall.</description>
+  <description type="habitat">Calcareous cliffs and ledges, usually on limestone substrates;</description>
+  <description type="elevation">0--1200 m;</description>
+  <description type="distribution">Ont., Que.; Ark., Conn., Ill., Ind., Iowa, Kans., Ky., Md., Mass., Mich., Minn., Mo., Nebr., N.Y., Ohio, Okla., Pa., Tenn., Tex., Vt., Va., W.Va., Wis.</description>
   <number>12a</number>
   <discussion>G. J. Gastony (1988) has shown that this apogamous tetraploid was derived from Pellaea glabella subsp. missouriensis by an autopolyploid increase in chromosome number.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_470_d24_s0">
-      <text>Proximal pinnae deeply divided into 3–7 lobes or segments (occasionally simple);</text>
-      <biological_entity constraint="proximal" id="from_key_V2_470_o12006" name="pinna" name_original="pinnae" src="d24_s0" type="structure">
-        <character constraint="into lobes, segments" constraintid="o12007, o12008" is_modifier="false" modifier="deeply" name="shape" src="d24_s0" value="divided" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_470_o12007" name="lobe" name_original="lobes" src="d24_s0" type="structure">
-        <character char_type="range_value" from="3" is_modifier="true" name="count" src="d24_s0" to="7" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_470_o12008" name="segment" name_original="segments" src="d24_s0" type="structure">
-        <character char_type="range_value" from="3" is_modifier="true" name="count" src="d24_s0" to="7" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_470_d24_s1">
-      <text>petioles lacking articulation lines or, if present, then rachises of mature leaves brown to terminal pinna;</text>
-      <biological_entity id="from_key_V2_470_o12009" name="petiole" name_original="petioles" src="d24_s1" type="structure" />
-      <biological_entity constraint="articulation" id="from_key_V2_470_o12010" name="line" name_original="lines" src="d24_s1" type="structure">
-        <character is_modifier="true" name="count" src="d24_s1" value="lacking" />
-        <character is_modifier="false" name="count" src="d24_s1" value="present" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_470_o12012" name="leaf" name_original="leaves" src="d24_s1" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d24_s1" value="mature" />
-      </biological_entity>
-      <biological_entity constraint="terminal" id="from_key_V2_470_o12013" name="pinna" name_original="pinna" src="d24_s1" type="structure" />
-      <relation from="from_key_V2_470_o12011" id="from_key_V2_470_r2796" name="part_of" negation="false" src="d24_s1" to="from_key_V2_470_o12012" />
-    </statement>
-    <statement id="from_key_V2_470_d24_s2">
-      <text>some sporangia long-stalked.</text>
-      <biological_entity id="from_key_V2_470_o12011" name="rachis" name_original="rachises" src="d24_s1" type="structure">
-        <character constraint="to terminal pinna" constraintid="o12013" is_modifier="false" name="coloration" src="d24_s1" value="brown" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_470_o12014" name="sporangium" name_original="sporangia" src="d24_s2" type="structure">
-        <character is_modifier="false" name="architecture" src="d24_s2" value="long-stalked" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_470_d21_s0">
-      <text>Ultimate segments glabrous abaxially or with isolated hairlike scales on a few segments or, if sparsely villous, then rachises nearly glabrous;</text>
-      <biological_entity constraint="ultimate" id="from_key_V2_470_o11982" name="segment" name_original="segments" src="d21_s0" type="structure">
-        <character is_modifier="false" modifier="abaxially" name="pubescence" src="d21_s0" value="glabrous" />
-        <character is_modifier="false" name="pubescence" src="d21_s0" value="with isolated hairlike scales" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_470_o11983" name="scale" name_original="scales" src="d21_s0" type="structure">
-        <character is_modifier="true" name="arrangement" src="d21_s0" value="isolated" />
-        <character is_modifier="true" name="shape" src="d21_s0" value="hairlike" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_470_o11984" name="segment" name_original="segments" src="d21_s0" type="structure">
-        <character is_modifier="true" name="count" src="d21_s0" value="few" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_470_o11985" name="rachis" name_original="rachises" src="d21_s0" type="structure">
-        <character is_modifier="true" modifier="sparsely" name="pubescence" src="d21_s0" value="villous" />
-        <character is_modifier="false" modifier="nearly" name="pubescence" src="d21_s0" value="glabrous" />
-      </biological_entity>
-      <relation from="from_key_V2_470_o11982" id="from_key_V2_470_r2789" name="with" negation="false" src="d21_s0" to="from_key_V2_470_o11983" />
-      <relation from="from_key_V2_470_o11983" id="from_key_V2_470_r2790" name="on" negation="false" src="d21_s0" to="from_key_V2_470_o11984" />
-      <relation from="from_key_V2_470_o11983" id="from_key_V2_470_r2791" name="on" negation="false" src="d21_s0" to="from_key_V2_470_o11985" />
-    </statement>
-    <statement id="from_key_V2_470_d21_s1">
-      <text>pinnae or costae slightly decurrent on rachis;</text>
-      <biological_entity id="from_key_V2_470_o11986" name="pinna" name_original="pinnae" src="d21_s1" type="structure">
-        <character constraint="on rachis" constraintid="o11988" is_modifier="false" modifier="slightly" name="shape" src="d21_s1" value="decurrent" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_470_o11987" name="costa" name_original="costae" src="d21_s1" type="structure">
-        <character constraint="on rachis" constraintid="o11988" is_modifier="false" modifier="slightly" name="shape" src="d21_s1" value="decurrent" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_470_o11988" name="rachis" name_original="rachis" src="d21_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_470_d21_s2">
-      <text>blades linear-oblong to lanceolate.</text>
-      <biological_entity id="from_key_V2_470_o11989" name="blade" name_original="blades" src="d21_s2" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d21_s2" value="linear-oblong" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d21_s2" value="lanceolate" />
-        <character char_type="range_value" from="linear-oblong" name="shape" src="d21_s2" to="lanceolate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_470_d10_s0">
-      <text>Stem scales uniformly reddish-brown or tan.</text>
-      <biological_entity constraint="stem" id="from_key_V2_470_o11919" name="scale" name_original="scales" src="d10_s0" type="structure">
-        <character is_modifier="false" modifier="uniformly" name="coloration" src="d10_s0" value="reddish-brown" />
-        <character is_modifier="false" name="coloration" src="d10_s0" value="tan" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_470_d2_s0">
-      <text>Petioles and rachises dark-brown to black, usually lustrous;</text>
-      <biological_entity id="from_key_V2_470_o11885" name="petiole" name_original="petioles" src="d2_s0" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d2_s0" value="dark-brown" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d2_s0" value="black" />
-        <character char_type="range_value" from="dark-brown" name="coloration" src="d2_s0" to="black" />
-        <character is_modifier="false" modifier="usually" name="reflectance" src="d2_s0" value="lustrous" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_470_o11886" name="rachis" name_original="rachises" src="d2_s0" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d2_s0" value="dark-brown" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d2_s0" value="black" />
-        <character char_type="range_value" from="dark-brown" name="coloration" src="d2_s0" to="black" />
-        <character is_modifier="false" modifier="usually" name="reflectance" src="d2_s0" value="lustrous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_470_d2_s1">
-      <text>stem scales linear-subulate, less than 0.3 mm wide.</text>
-      <biological_entity constraint="stem" id="from_key_V2_470_o11887" name="scale" name_original="scales" src="d2_s1" type="structure">
-        <character is_modifier="false" name="shape" src="d2_s1" value="linear-subulate" />
-        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d2_s1" to="0.3" to_unit="mm" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

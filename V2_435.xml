@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Link" date="unknown" rank="family">anemiaceae</taxon_name>
-    <taxon_name authority="Swartz" date="1806" rank="genus">anemia</taxon_name>
-    <taxon_name authority="(Linnaeus) Swartz" date="1806" rank="species">adiantifolia</taxon_name>
+    <taxon_name rank="family" authority="Link" date="unknown">anemiaceae</taxon_name>
+    <taxon_name rank="genus" authority="Swartz" date="1806">anemia</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) Swartz" date="1806">adiantifolia</taxon_name>
     <place_of_publication>
       <publication_title>Syn. Fil.</publication_title>
       <place_in_publication>157. 1806</place_in_publication>
@@ -26,174 +18,18 @@
     <taxon_hierarchy>family anemiaceae;genus anemia;species adiantifolia</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Osmunda</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="species">adiantifolia</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Osmunda</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="unknown">adiantifolia</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl.</publication_title>
       <place_in_publication>2: 1065. 1753</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Osmunda;species adiantifolia;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems ca. 2 mm diam.</text>
-      <biological_entity id="o10307" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character name="diameter" src="d0_s0" unit="mm" value="2" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves partially dimorphic (sporangia limited to proximal pair of pinnae), 17-85 × 7-35 cm, sterile leaves (excluding erect fertile pinnae) 17-60 cm.</text>
-      <biological_entity id="o10308" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="partially" name="growth_form" src="d0_s1" value="dimorphic" />
-        <character char_type="range_value" from="17" from_unit="cm" name="length" src="d0_s1" to="85" to_unit="cm" />
-        <character char_type="range_value" from="7" from_unit="cm" name="width" src="d0_s1" to="35" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o10309" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s1" value="sterile" />
-        <character char_type="range_value" from="17" from_unit="cm" name="some_measurement" src="d0_s1" to="60" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Petiole straw-colored to chestnut-brown, 1/2-2/3 length of leaf, 1-1.4 mm wide, hirsute to glabrous.</text>
-      <biological_entity id="o10310" name="petiole" name_original="petiole" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s2" value="straw-colored" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s2" value="chestnut-brown" />
-        <character char_type="range_value" from="straw-colored" name="coloration" src="d0_s2" to="chestnut-brown" />
-        <character char_type="range_value" from="1/2 length of leaf" name="length" src="d0_s2" to="2/3 length of leaf" />
-        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s2" to="1.4" to_unit="mm" />
-        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d0_s2" value="hirsute" />
-        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d0_s2" value="glabrous" />
-        <character char_type="range_value" from="hirsute" name="pubescence" src="d0_s2" to="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Blade deltate, 3-pinnate, leathery.</text>
-      <biological_entity id="o10311" name="blade" name_original="blade" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="deltate" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s3" value="3-pinnate" />
-        <character is_modifier="false" name="texture" src="d0_s3" value="leathery" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Pinnae 10-18 pairs, alternate to subopposite, segments oblanceolate, base cuneate, margins minutely denticulate, apex obtuse, pilose with stiff white hairs.</text>
-      <biological_entity id="o10312" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
-        <character char_type="range_value" from="10" name="quantity" src="d0_s4" to="18" />
-        <character is_modifier="false" name="arrangement" notes="[duplicate value]" src="d0_s4" value="alternate" />
-        <character is_modifier="false" name="arrangement" notes="[duplicate value]" src="d0_s4" value="subopposite" />
-        <character char_type="range_value" from="alternate" name="arrangement" src="d0_s4" to="subopposite" />
-      </biological_entity>
-      <biological_entity id="o10313" name="segment" name_original="segments" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s4" value="oblanceolate" />
-      </biological_entity>
-      <biological_entity id="o10314" name="base" name_original="base" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s4" value="cuneate" />
-      </biological_entity>
-      <biological_entity id="o10315" name="margin" name_original="margins" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="minutely" name="shape" src="d0_s4" value="denticulate" />
-      </biological_entity>
-      <biological_entity id="o10316" name="apex" name_original="apex" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s4" value="obtuse" />
-        <character constraint="with hairs" constraintid="o10317" is_modifier="false" name="pubescence" src="d0_s4" value="pilose" />
-      </biological_entity>
-      <biological_entity id="o10317" name="hair" name_original="hairs" src="d0_s4" type="structure">
-        <character is_modifier="true" name="fragility" src="d0_s4" value="stiff" />
-        <character is_modifier="true" name="coloration" src="d0_s4" value="white" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Fertile pinnae usually taller than sterile blades.</text>
-      <biological_entity id="o10318" name="pinna" name_original="pinnae" src="d0_s5" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s5" value="fertile" />
-        <character constraint="than sterile blades" constraintid="o10319" is_modifier="false" name="height" src="d0_s5" value="usually taller" />
-      </biological_entity>
-      <biological_entity id="o10319" name="blade" name_original="blades" src="d0_s5" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s5" value="sterile" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Spores with ridges ± parallel, distant.</text>
-      <biological_entity id="o10321" name="ridge" name_original="ridges" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="more or less" name="arrangement" src="d0_s6" value="parallel" />
-      </biological_entity>
-      <relation from="o10320" id="r2351" name="with" negation="false" src="d0_s6" to="o10321" />
-    </statement>
-    <statement id="d0_s7">
-      <text>2 n = 76, 114, 152.</text>
-      <biological_entity id="o10320" name="spore" name_original="spores" src="d0_s6" type="structure">
-        <character is_modifier="false" name="arrangement" notes="" src="d0_s6" value="distant" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o10322" name="chromosome" name_original="" src="d0_s7" type="structure">
-        <character name="quantity" src="d0_s7" value="76" />
-        <character name="quantity" src="d0_s7" value="114" />
-        <character name="quantity" src="d0_s7" value="152" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Terrestrial on open to lightly shaded, rocky slopes and in hammocks and pine woods, often on limestone;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="terrestrial on open to shaded , rocky slopes and in hammocks and pine woods , on limestone" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--30 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="30" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Fla.; Mexico; West Indies in the Antilles, Trinidad; Central America; South America to Ecuador and Brazil.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-        <character name="distribution" value="West Indies in the Antilles" establishment_means="native" />
-        <character name="distribution" value="Trinidad" establishment_means="native" />
-        <character name="distribution" value="Central America" establishment_means="native" />
-        <character name="distribution" value="South America to Ecuador and Brazil" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  ca. 2 mm diam.  Leaves  partially dimorphic (sporangia limited to proximal pair of pinnae), 17--85 × 7--35 cm, sterile leaves (excluding erect fertile pinnae) 17--60 cm.  Petiole  straw-colored to chestnut brown, 1/2--2/3 length of leaf, 1--1.4 mm wide, hirsute to glabrous.  Blade  deltate, 3-pinnate, leathery.  Pinnae  10--18 pairs, alternate to subopposite, segments oblanceolate, base cuneate, margins minutely denticulate, apex obtuse, pilose with stiff white hairs.  Fertile   pinnae  usually taller than sterile blades.  Spores  with ridges ± parallel, distant. 2 n  = 76, 114, 152.</description>
+  <description type="habitat">Terrestrial on open to lightly shaded, rocky slopes and in hammocks and pine woods, often on limestone;</description>
+  <description type="elevation">0--30 m;</description>
+  <description type="distribution">Fla.; Mexico; West Indies in the Antilles, Trinidad; Central America; South America to Ecuador and Brazil.</description>
   <number>1</number>
   <other_name type="common_name">Pine fern</other_name>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_558_d4_s0">
-      <text>Leaves 3-pinnate, often with dimorphic pinnae;</text>
-      <biological_entity id="from_key_V2_558_o15099" name="leaf" name_original="leaves" src="d4_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d4_s0" value="3-pinnate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_558_o15100" name="pinna" name_original="pinnae" src="d4_s0" type="structure">
-        <character is_modifier="true" name="growth_form" src="d4_s0" value="dimorphic" />
-      </biological_entity>
-      <relation from="from_key_V2_558_o15099" id="from_key_V2_558_r3561" modifier="often" name="with" negation="false" src="d4_s0" to="from_key_V2_558_o15100" />
-    </statement>
-    <statement id="from_key_V2_558_d4_s1">
-      <text>sporangia limited to proximal pair of pinnae;</text>
-      <biological_entity id="from_key_V2_558_o15101" name="sporangium" name_original="sporangia" src="d4_s1" type="structure" />
-      <biological_entity constraint="proximal" id="from_key_V2_558_o15102" name="pair" name_original="pair" src="d4_s1" type="structure" />
-      <biological_entity id="from_key_V2_558_o15103" name="pinna" name_original="pinnae" src="d4_s1" type="structure" />
-      <relation from="from_key_V2_558_o15101" id="from_key_V2_558_r3562" name="to" negation="false" src="d4_s1" to="from_key_V2_558_o15102" />
-      <relation from="from_key_V2_558_o15102" id="from_key_V2_558_r3563" name="part_of" negation="false" src="d4_s1" to="from_key_V2_558_o15103" />
-    </statement>
-    <statement id="from_key_V2_558_d4_s2">
-      <text>sterile leaves (excluding erect fertile pinnae) 17-60 cm.</text>
-      <biological_entity id="from_key_V2_558_o15104" name="leaf" name_original="leaves" src="d4_s2" type="structure">
-        <character is_modifier="true" name="reproduction" src="d4_s2" value="sterile" />
-        <character char_type="range_value" from="17" from_unit="cm" name="some_measurement" src="d4_s2" to="60" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_558_d2_s0">
-      <text>Blades 2-3-pinnate;</text>
-    </statement>
-    <statement id="from_key_V2_558_d2_s1">
-      <text>Florida.</text>
-      <biological_entity id="from_key_V2_558_o15090" name="blade" name_original="blades" src="d2_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d2_s0" value="2-3-pinnate" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

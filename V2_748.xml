@@ -1,127 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Reichenbach" date="unknown" rank="family">salviniaceae</taxon_name>
-    <taxon_name authority="Séguier" date="1754" rank="genus">salvinia</taxon_name>
-    <taxon_name authority="Baker" date="1886" rank="species">minima</taxon_name>
+    <taxon_name rank="family" authority="Reichenbach" date="unknown">salviniaceae</taxon_name>
+    <taxon_name rank="genus" authority="Séguier" date="1754">salvinia</taxon_name>
+    <taxon_name rank="species" authority="Baker" date="1886">minima</taxon_name>
     <place_of_publication>
       <publication_title>J. Bot.</publication_title>
       <place_in_publication>24: 98. 1886</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family salviniaceae;genus salvinia;species minima</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants deep green, ± elongate.</text>
-      <biological_entity id="o21550" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="depth" src="d0_s0" value="deep" />
-        <character is_modifier="false" name="coloration" src="d0_s0" value="green" />
-        <character is_modifier="false" modifier="more or less" name="shape" src="d0_s0" value="elongate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems to ca. 6 cm;</text>
-      <biological_entity id="o21551" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s1" to="6" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>hairs dark.</text>
-      <biological_entity id="o21552" name="hair" name_original="hairs" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s2" value="dark" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Leaves 1-1.5 cm.</text>
-      <biological_entity id="o21553" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s3" to="1.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Blades of floating leaves almost round to elliptic, obtuse or notched at tip, rounded to cordate at base, abaxially (facing upward) with stiff hairs, with 4 separated branches (i.e., not fused at their tips), adaxially (facing into water) brown and pubescent with slender unbranched hairs.</text>
-      <biological_entity id="o21555" name="leaf" name_original="leaves" src="d0_s4" type="structure">
-        <character is_modifier="true" name="growth_form_or_location" src="d0_s4" value="floating" />
-      </biological_entity>
-      <biological_entity id="o21556" name="tip" name_original="tip" src="d0_s4" type="structure" />
-      <biological_entity id="o21557" name="base" name_original="base" src="d0_s4" type="structure" />
-      <biological_entity id="o21558" name="hair" name_original="hairs" src="d0_s4" type="structure">
-        <character is_modifier="true" name="fragility" src="d0_s4" value="stiff" />
-      </biological_entity>
-      <biological_entity id="o21559" name="branch" name_original="branches" src="d0_s4" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s4" value="4" />
-        <character is_modifier="true" name="arrangement" src="d0_s4" value="separated" />
-      </biological_entity>
-      <biological_entity constraint="slender" id="o21560" name="hair" name_original="hairs" src="d0_s4" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s4" value="unbranched" />
-      </biological_entity>
-      <relation from="o21554" id="r5048" name="part_of" negation="false" src="d0_s4" to="o21555" />
-      <relation from="o21554" id="r5049" modifier="abaxially" name="with" negation="false" src="d0_s4" to="o21558" />
-      <relation from="o21554" id="r5050" name="with" negation="false" src="d0_s4" to="o21559" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Venation obscure, areolate, but tips of veins free, ending short of margins.</text>
-      <biological_entity id="o21554" name="blade" name_original="blades" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="round" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="elliptic" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="obtuse" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="notched" />
-        <character char_type="range_value" from="round" name="shape" src="d0_s4" to="elliptic obtuse or notched" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="round" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="elliptic" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="obtuse" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="notched" />
-        <character char_type="range_value" constraint="at tip" constraintid="o21556" from="round" name="shape" src="d0_s4" to="elliptic obtuse or notched" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="rounded" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="cordate" />
-        <character char_type="range_value" constraint="at base" constraintid="o21557" from="rounded" name="shape" notes="" src="d0_s4" to="cordate" />
-        <character is_modifier="false" modifier="adaxially" name="coloration" notes="" src="d0_s4" value="brown" />
-        <character constraint="with slender hairs" constraintid="o21560" is_modifier="false" name="pubescence" src="d0_s4" value="pubescent" />
-        <character is_modifier="false" name="prominence" src="d0_s5" value="obscure" />
-        <character is_modifier="false" name="architecture_or_relief" src="d0_s5" value="areolate" />
-      </biological_entity>
-      <biological_entity id="o21561" name="tip" name_original="tips" src="d0_s5" type="structure">
-        <character is_modifier="false" name="fusion" src="d0_s5" value="free" />
-      </biological_entity>
-      <biological_entity id="o21562" name="vein" name_original="veins" src="d0_s5" type="structure" />
-      <biological_entity id="o21563" name="margin" name_original="margins" src="d0_s5" type="structure">
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s5" value="short" />
-      </biological_entity>
-      <relation from="o21561" id="r5051" name="part_of" negation="false" src="d0_s5" to="o21562" />
-      <relation from="o21561" id="r5052" name="ending" negation="false" src="d0_s5" to="o21563" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Sporocarps in clusters of 4-8, proximal sporocarps with up to 25 megasporangia, distal sporocarps with numerous microsporangia.</text>
-      <biological_entity id="o21564" name="sporocarp" name_original="sporocarps" src="d0_s6" type="structure" />
-      <biological_entity constraint="proximal" id="o21565" name="sporocarp" name_original="sporocarps" src="d0_s6" type="structure">
-        <character char_type="range_value" from="4" is_modifier="true" name="quantity" src="d0_s6" to="8" />
-      </biological_entity>
-      <biological_entity id="o21566" name="megasporangium" name_original="megasporangia" src="d0_s6" type="structure">
-        <character char_type="range_value" from="0" is_modifier="true" name="quantity" src="d0_s6" to="25" />
-      </biological_entity>
-      <biological_entity constraint="distal" id="o21567" name="sporocarp" name_original="sporocarps" src="d0_s6" type="structure" />
-      <biological_entity id="o21568" name="microsporangium" name_original="microsporangia" src="d0_s6" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s6" value="numerous" />
-      </biological_entity>
-      <relation from="o21564" id="r5053" modifier="in clusters" name="part_of" negation="false" src="d0_s6" to="o21565" />
-      <relation from="o21564" id="r5054" name="with" negation="false" src="d0_s6" to="o21566" />
-      <relation from="o21567" id="r5055" name="with" negation="false" src="d0_s6" to="o21568" />
-    </statement>
-  </description>
+  <description type="morphology">Plants  deep green, ± elongate.  Stems  to ca. 6 cm; hairs dark.  Leaves  1--1.5 cm.  Blades  of floating leaves almost round to elliptic, obtuse or notched at tip, rounded to cordate at base, abaxially (facing upward) with stiff hairs, with 4 separated branches (i.e., not fused at their tips), adaxially (facing into water) brown and pubescent with slender unbranched hairs.  Venation  obscure, areolate, but tips of veins free, ending short of margins.  Sporocarps  in clusters of 4--8, proximal sporocarps with up to 25 megasporangia, distal sporocarps with numerous microsporangia.</description>
   <number>1</number>
   <other_name type="common_name">Water spangles</other_name>
   <other_name type="common_name">floating fern.</other_name>

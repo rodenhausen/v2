@@ -1,172 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="D. M. Benham &amp; Windham" date="1992" rank="genus">astrolepis</taxon_name>
-    <taxon_name authority="(Lagasca ex Swartz) D. M. Benham &amp; Windham" date="1992" rank="species">sinuata</taxon_name>
-    <taxon_name authority="(Lagasca ex Swartz) D. M. Benham &amp; Windham" date="unknown" rank="subspecies">sinuata</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="D. M. Benham &amp; Windham" date="1992">astrolepis</taxon_name>
+    <taxon_name rank="species" authority="(Lagasca ex Swartz) D. M. Benham &amp; Windham" date="1992">sinuata</taxon_name>
+    <taxon_name rank="subspecies" authority="(Lagasca ex Swartz) D. M. Benham &amp; Windham" date="unknown">sinuata</taxon_name>
     <taxon_hierarchy>family pteridaceae;genus astrolepis;species sinuata;subspecies sinuata</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Sporangia containing 32 spores;</text>
-      <biological_entity id="o23153" name="sporangium" name_original="sporangia" src="d0_s0" type="structure" />
-      <biological_entity id="o23154" name="spore" name_original="spores" src="d0_s0" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s0" value="32" />
-      </biological_entity>
-      <relation from="o23153" id="r5419" name="containing" negation="false" src="d0_s0" to="o23154" />
-    </statement>
-    <statement id="d0_s1">
-      <text>spores averaging 50-65 µm diam. n = 2 n = 87, apogamous.</text>
-      <biological_entity id="o23155" name="spore" name_original="spores" src="d0_s1" type="structure">
-        <character char_type="range_value" from="50" from_unit="um" name="diameter" src="d0_s1" to="65" to_unit="um" />
-      </biological_entity>
-      <biological_entity constraint="n=2n" id="o23156" name="chromosome" name_original="" src="d0_s1" type="structure">
-        <character name="quantity" src="d0_s1" unit=",apogamous" value="87" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulating summer--fall.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="summer-fall" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Rocky slopes and cliffs, occurring on calcareous and noncalcareous substrates;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="rocky slopes and cliffs , occurring on calcareous and noncalcareous substrates" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>800--2100 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2100" to_unit="m" from="800" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., Ga., N.Mex., Tex.; Mexico; West Indies; Central America; South America.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-        <character name="distribution" value="West Indies" establishment_means="native" />
-        <character name="distribution" value="Central America" establishment_means="native" />
-        <character name="distribution" value="South America" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Sporangia  containing 32 spores; spores averaging 50--65 µm diam.  n  = 2 n  = 87, apogamous.</description>
+  <description type="phenology">Sporulating summer--fall.</description>
+  <description type="habitat">Rocky slopes and cliffs, occurring on calcareous and noncalcareous substrates;</description>
+  <description type="elevation">800--2100 m;</description>
+  <description type="distribution">Ariz., Ga., N.Mex., Tex.; Mexico; West Indies; Central America; South America.</description>
   <number>4a</number>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_263_d6_s0">
-      <text>Adaxial pinna surface sparsely scaly to glabrescent, most scales deciduous with age;</text>
-      <biological_entity constraint="adaxial pinna" id="from_key_V2_263_o5064" name="surface" name_original="surface" src="d6_s0" type="structure">
-        <character is_modifier="false" modifier="sparsely" name="pubescence" notes="[duplicate value]" src="d6_s0" value="scaly" />
-        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d6_s0" value="glabrescent" />
-        <character char_type="range_value" from="sparsely scaly" name="pubescence" src="d6_s0" to="glabrescent" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_263_o5065" name="scale" name_original="scales" src="d6_s0" type="structure">
-        <character constraint="with age" constraintid="o5066" is_modifier="false" name="duration" src="d6_s0" value="deciduous" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_263_o5066" name="age" name_original="age" src="d6_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_263_d6_s1">
-      <text>body of adaxial scales 1–2 cells wide;</text>
-      <biological_entity id="from_key_V2_263_o5067" name="body" name_original="body" src="d6_s1" type="structure" />
-      <biological_entity constraint="adaxial" id="from_key_V2_263_o5068" name="scale" name_original="scales" src="d6_s1" type="structure">
-        <character char_type="range_value" from="1" name="count" src="d6_s1" to="2" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_263_o5069" name="cell" name_original="cells" src="d6_s1" type="structure">
-        <character is_modifier="false" name="width" src="d6_s1" value="wide" />
-      </biological_entity>
-      <relation from="from_key_V2_263_o5067" id="from_key_V2_263_r1168" name="consist_of" negation="false" src="d6_s1" to="from_key_V2_263_o5068" />
-    </statement>
-    <statement id="from_key_V2_263_d6_s2">
-      <text>abaxial scales ciliate-dentate with delicate marginal projections;</text>
-      <biological_entity constraint="abaxial" id="from_key_V2_263_o5070" name="scale" name_original="scales" src="d6_s2" type="structure">
-        <character constraint="with marginal projections" constraintid="o5071" is_modifier="false" name="architecture_or_shape" src="d6_s2" value="ciliate-dentate" />
-      </biological_entity>
-      <biological_entity constraint="marginal" id="from_key_V2_263_o5071" name="projection" name_original="projections" src="d6_s2" type="structure">
-        <character is_modifier="true" name="fragility" src="d6_s2" value="delicate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_263_d6_s3">
-      <text>pinnae usually deeply lobed, lobes often acute.</text>
-      <biological_entity id="from_key_V2_263_o5072" name="pinna" name_original="pinnae" src="d6_s3" type="structure">
-        <character is_modifier="false" modifier="usually deeply" name="shape" src="d6_s3" value="lobed" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_263_o5073" name="lobe" name_original="lobes" src="d6_s3" type="structure">
-        <character is_modifier="false" modifier="often" name="shape" src="d6_s3" value="acute" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_263_d4_s0">
-      <text>Adaxial scales sparse, often deciduous;</text>
-      <biological_entity constraint="adaxial" id="from_key_V2_263_o5050" name="scale" name_original="scales" src="d4_s0" type="structure">
-        <character is_modifier="false" name="count_or_density" src="d4_s0" value="sparse" />
-        <character is_modifier="false" modifier="often" name="duration" src="d4_s0" value="deciduous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_263_d4_s1">
-      <text>largest pinnae usually symmetrically lobed;</text>
-      <biological_entity constraint="largest" id="from_key_V2_263_o5051" name="pinna" name_original="pinnae" src="d4_s1" type="structure">
-        <character is_modifier="false" modifier="usually symmetrically" name="shape" src="d4_s1" value="lobed" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_263_d4_s2">
-      <text>body of adaxial pinna scales 1–4 cells wide.</text>
-      <biological_entity id="from_key_V2_263_o5052" name="body" name_original="body" src="d4_s2" type="structure" />
-      <biological_entity constraint="adaxial pinna" id="from_key_V2_263_o5053" name="scale" name_original="scales" src="d4_s2" type="structure">
-        <character char_type="range_value" from="1" name="count" src="d4_s2" to="4" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_263_o5054" name="cell" name_original="cells" src="d4_s2" type="structure">
-        <character is_modifier="false" name="width" src="d4_s2" value="wide" />
-      </biological_entity>
-      <relation from="from_key_V2_263_o5052" id="from_key_V2_263_r1166" name="consist_of" negation="false" src="d4_s2" to="from_key_V2_263_o5053" />
-    </statement>
-    <statement id="from_key_V2_263_d2_s0">
-      <text>Largest pinnae usually 7–35 mm;</text>
-    </statement>
-    <statement id="from_key_V2_263_d2_s1">
-      <text>most adaxial scales elongate, attached at their base;</text>
-      <biological_entity constraint="largest" id="from_key_V2_263_o5041" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
-        <character char_type="range_value" from="7" from_unit="mm" name="some_measurement" src="d2_s0" to="35" to_unit="mm" />
-      </biological_entity>
-      <biological_entity constraint="adaxial" id="from_key_V2_263_o5042" name="scale" name_original="scales" src="d2_s1" type="structure">
-        <character is_modifier="false" name="shape" src="d2_s1" value="elongate" />
-        <character constraint="at base" constraintid="o5043" is_modifier="false" name="fixation" src="d2_s1" value="attached" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_263_o5043" name="base" name_original="base" src="d2_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_263_d2_s2">
-      <text>abaxial scales lanceolate, 1–1.5 mm.</text>
-      <biological_entity constraint="abaxial" id="from_key_V2_263_o5044" name="scale" name_original="scales" src="d2_s2" type="structure">
-        <character is_modifier="false" name="shape" src="d2_s2" value="lanceolate" />
-        <character char_type="range_value" from="1" from_unit="mm" name="some_measurement" src="d2_s2" to="1.5" to_unit="mm" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

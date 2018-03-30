@@ -1,189 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Martius" date="unknown" rank="family">hymenophyllaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">trichomanes</taxon_name>
-    <taxon_name authority="Sturm" date="1861" rank="species">boschianum</taxon_name>
+    <taxon_name rank="family" authority="Martius" date="unknown">hymenophyllaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">trichomanes</taxon_name>
+    <taxon_name rank="species" authority="Sturm" date="1861">boschianum</taxon_name>
     <place_of_publication>
       <publication_title>Ned. Kruidk. Arch.</publication_title>
       <place_in_publication>5(2): 160. 1861</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family hymenophyllaceae;genus trichomanes;species boschianum</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants on rock.</text>
-      <biological_entity id="o9443" name="plant" name_original="plants" src="d0_s0" type="structure" />
-      <biological_entity id="o9444" name="rock" name_original="rock" src="d0_s0" type="structure" />
-      <relation from="o9443" id="r2162" name="on" negation="false" src="d0_s0" to="o9444" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems long-creeping, slender, bearing widely spaced leaves;</text>
-      <biological_entity id="o9445" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="long-creeping" />
-        <character is_modifier="false" name="size" src="d0_s1" value="slender" />
-      </biological_entity>
-      <biological_entity id="o9446" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="true" modifier="widely" name="arrangement" src="d0_s1" value="spaced" />
-      </biological_entity>
-      <relation from="o9445" id="r2163" name="bearing" negation="false" src="d0_s1" to="o9446" />
-    </statement>
-    <statement id="d0_s2">
-      <text>stems covered with dark multicellular hairs of 2 kinds, unbranched gland-tipped hairs and branched or unbranched rhizoidlike hairs, sparsely rooted.</text>
-      <biological_entity id="o9447" name="stem" name_original="stems" src="d0_s2" type="structure" />
-      <biological_entity id="o9448" name="hair" name_original="hairs" src="d0_s2" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s2" value="dark" />
-        <character is_modifier="true" name="architecture" src="d0_s2" value="multicellular" />
-      </biological_entity>
-      <biological_entity id="o9449" name="kind" name_original="kinds" src="d0_s2" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s2" value="2" />
-      </biological_entity>
-      <biological_entity id="o9450" name="hair" name_original="hairs" src="d0_s2" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s2" value="unbranched" />
-        <character is_modifier="true" name="architecture" src="d0_s2" value="gland-tipped" />
-        <character is_modifier="false" name="architecture" src="d0_s2" value="branched" />
-        <character is_modifier="false" name="architecture" src="d0_s2" value="unbranched" />
-        <character is_modifier="false" modifier="sparsely" name="architecture" notes="" src="d0_s2" value="rooted" />
-      </biological_entity>
-      <biological_entity id="o9451" name="hair" name_original="hairs" src="d0_s2" type="structure">
-        <character is_modifier="true" name="architecture_or_shape" src="d0_s2" value="rhizoidlike" />
-      </biological_entity>
-      <relation from="o9447" id="r2164" name="covered with" negation="false" src="d0_s2" to="o9448" />
-      <relation from="o9447" id="r2165" name="consist_of" negation="false" src="d0_s2" to="o9449" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Leaves lanceolate, 1-2-pinnate-pinnatifid, 4-20 × 1-4 cm, bearing scattered short, unbranched, glandular-hairs on principal veins;</text>
-      <biological_entity id="o9452" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="lanceolate" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="1-2-pinnate-pinnatifid" />
-        <character char_type="range_value" from="4" from_unit="cm" name="length" src="d0_s3" to="20" to_unit="cm" />
-        <character char_type="range_value" from="1" from_unit="cm" name="width" src="d0_s3" to="4" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o9453" name="glandular-hair" name_original="glandular-hairs" src="d0_s3" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s3" value="scattered" />
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s3" value="short" />
-        <character is_modifier="true" name="architecture" src="d0_s3" value="unbranched" />
-      </biological_entity>
-      <biological_entity constraint="principal" id="o9454" name="vein" name_original="veins" src="d0_s3" type="structure" />
-      <relation from="o9452" id="r2166" name="bearing" negation="false" src="d0_s3" to="o9453" />
-      <relation from="o9452" id="r2167" name="on" negation="false" src="d0_s3" to="o9454" />
-    </statement>
-    <statement id="d0_s4">
-      <text>petioles shorter than blades.</text>
-      <biological_entity id="o9456" name="blade" name_original="blades" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Venation pinnate, without unconnected false veins.</text>
-      <biological_entity id="o9455" name="petiole" name_original="petioles" src="d0_s4" type="structure">
-        <character constraint="than blades" constraintid="o9456" is_modifier="false" name="height_or_length_or_size" src="d0_s4" value="shorter" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s5" value="pinnate" />
-      </biological_entity>
-      <biological_entity constraint="false" id="o9457" name="vein" name_original="veins" src="d0_s5" type="structure">
-        <character is_modifier="true" name="fusion" src="d0_s5" value="unconnected" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Soral involucres terminal on lateral-veins at base of lobes, conic, not flaring at mouth;</text>
-      <biological_entity constraint="soral" id="o9458" name="involucre" name_original="involucres" src="d0_s6" type="structure">
-        <character constraint="on lateral-veins" constraintid="o9459" is_modifier="false" name="position_or_structure_subtype" src="d0_s6" value="terminal" />
-        <character is_modifier="false" name="shape" notes="" src="d0_s6" value="conic" />
-        <character constraint="at mouth" constraintid="o9462" is_modifier="false" modifier="not" name="shape" src="d0_s6" value="flaring" />
-      </biological_entity>
-      <biological_entity id="o9459" name="lateral-vein" name_original="lateral-veins" src="d0_s6" type="structure" />
-      <biological_entity id="o9460" name="base" name_original="base" src="d0_s6" type="structure" />
-      <biological_entity id="o9461" name="lobe" name_original="lobes" src="d0_s6" type="structure" />
-      <biological_entity id="o9462" name="mouth" name_original="mouth" src="d0_s6" type="structure" />
-      <relation from="o9459" id="r2168" name="at" negation="false" src="d0_s6" to="o9460" />
-      <relation from="o9460" id="r2169" name="part_of" negation="false" src="d0_s6" to="o9461" />
-    </statement>
-    <statement id="d0_s7">
-      <text>involucral lips not dark-edged.</text>
-      <biological_entity id="o9463" name="lip" name_original="lips" src="d0_s7" type="structure">
-        <character is_modifier="true" name="derivation" src="d0_s7" value="involucral" />
-        <character is_modifier="false" modifier="not" name="architecture" src="d0_s7" value="dark-edged" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>Gametophytes composed entirely of branching filaments.</text>
-      <biological_entity id="o9464" name="gametophyte" name_original="gametophytes" src="d0_s8" type="structure" />
-      <biological_entity id="o9465" name="filament" name_original="filaments" src="d0_s8" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s8" value="branching" />
-      </biological_entity>
-      <relation from="o9464" id="r2170" modifier="entirely" name="part_of" negation="false" src="d0_s8" to="o9465" />
-    </statement>
-    <statement id="d0_s9">
-      <text>Gemmae composed of short filaments of undifferentiated cells.</text>
-      <biological_entity id="o9467" name="filament" name_original="filaments" src="d0_s9" type="structure">
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s9" value="short" />
-      </biological_entity>
-      <biological_entity id="o9468" name="cell" name_original="cells" src="d0_s9" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s9" value="undifferentiated" />
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s9" value="short" />
-      </biological_entity>
-      <relation from="o9466" id="r2171" name="composed of" negation="false" src="d0_s9" to="o9467" />
-      <relation from="o9466" id="r2172" name="composed of" negation="false" src="d0_s9" to="o9468" />
-    </statement>
-    <statement id="d0_s10">
-      <text>2 n = 72, 108, 144.</text>
-      <biological_entity id="o9466" name="gemma" name_original="gemmae" src="d0_s9" type="structure" />
-      <biological_entity constraint="2n" id="o9469" name="chromosome" name_original="" src="d0_s10" type="structure">
-        <character name="quantity" src="d0_s10" value="72" />
-        <character name="quantity" src="d0_s10" value="108" />
-        <character name="quantity" src="d0_s10" value="144" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>In deeply sheltered grottoes on noncalcareous rocks;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="in sheltered grottoes on noncalcareous rocks ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>150--800 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="800" to_unit="m" from="150" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ala., Ark., Ga., Ill., Ind., Ky., N.C., Ohio, S.C., Tenn., Va., W.Va.; Mexico in Chihuahua.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-        <character name="distribution" value="Mexico in Chihuahua" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  on rock.  Stems  long-creeping, slender, bearing widely spaced leaves; stems covered with dark multicellular hairs of 2 kinds, unbranched gland-tipped hairs and branched or unbranched rhizoidlike hairs, sparsely rooted.  Leaves  lanceolate, 1--2-pinnate-pinnatifid, 4--20 × 1--4 cm, bearing scattered short, unbranched, glandular hairs on principal veins; petioles shorter than blades.  Venation  pinnate, without unconnected false veins.  Soral involucres  terminal on lateral veins at base of lobes, conic, not flaring at mouth; involucral lips not dark-edged.  Gametophytes  composed entirely of branching filaments.  Gemmae  composed of short filaments of undifferentiated cells. 2 n  = 72, 108, 144.</description>
+  <description type="habitat">In deeply sheltered grottoes on noncalcareous rocks;</description>
+  <description type="elevation">150--800 m;</description>
+  <description type="distribution">Ala., Ark., Ga., Ill., Ind., Ky., N.C., Ohio, S.C., Tenn., Va., W.Va.; Mexico in Chihuahua.</description>
   <number>1</number>
   <other_name type="common_name">Appalachian filmy fern</other_name>
   <other_name type="common_name">Appalachian bristle fern</other_name>

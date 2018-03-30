@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Agardh" date="unknown" rank="family">ophioglossaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">ophioglossum</taxon_name>
-    <taxon_name authority="Rafinesque" date="1814" rank="species">pusillum</taxon_name>
+    <taxon_name rank="family" authority="Agardh" date="unknown">ophioglossaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">ophioglossum</taxon_name>
+    <taxon_name rank="species" authority="Rafinesque" date="1814">pusillum</taxon_name>
     <place_of_publication>
       <publication_title>Précis Découv. Somiol.</publication_title>
       <place_in_publication>46. 1814</place_in_publication>
@@ -26,266 +18,18 @@
     <taxon_hierarchy>family ophioglossaceae;genus ophioglossum;species pusillum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Ophioglossum</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="species">vulgatum</taxon_name>
-    <taxon_name authority="(S.F. Blake) Farwell" date="unknown" rank="variety">pseudopodum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Ophioglossum</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="unknown">vulgatum</taxon_name>
+    <taxon_name rank="variety" authority="(S.F. Blake) Farwell" date="unknown">pseudopodum</taxon_name>
     <taxon_hierarchy>genus Ophioglossum;species vulgatum;variety pseudopodum;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Roots yellow to tan, to 15 per plant, 0.3-1 mm diam., producing proliferations.</text>
-      <biological_entity id="o7351" name="root" name_original="roots" src="d0_s0" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s0" value="yellow" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s0" value="tan" />
-        <character char_type="range_value" from="yellow" name="coloration" src="d0_s0" to="tan" />
-        <character char_type="range_value" constraint="per plant" constraintid="o7352" from="0" name="quantity" src="d0_s0" to="15" />
-        <character char_type="range_value" from="0.3" from_unit="mm" name="diameter" notes="" src="d0_s0" to="1" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o7352" name="plant" name_original="plant" src="d0_s0" type="structure" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Stem upright, to 2 cm, 3mm diam., 1 leaf per stem.</text>
-      <biological_entity id="o7353" name="stem" name_original="stem" src="d0_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s1" value="upright" />
-        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s1" to="2" to_unit="cm" />
-        <character name="diameter" src="d0_s1" unit="mm" value="3" />
-        <character name="quantity" src="d0_s1" value="1" />
-      </biological_entity>
-      <biological_entity id="o7354" name="leaf" name_original="leaf" src="d0_s1" type="structure" />
-      <biological_entity id="o7355" name="stem" name_original="stem" src="d0_s1" type="structure" />
-      <relation from="o7354" id="r1726" name="per" negation="false" src="d0_s1" to="o7355" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Trophophore stalk expanding gradually into blade.</text>
-      <biological_entity constraint="trophophore" id="o7356" name="stalk" name_original="stalk" src="d0_s2" type="structure">
-        <character constraint="into blade" constraintid="o7357" is_modifier="false" name="size" src="d0_s2" value="expanding" />
-      </biological_entity>
-      <biological_entity id="o7357" name="blade" name_original="blade" src="d0_s2" type="structure" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Trophophore blade erect or spreading, usually plane when alive, pale green, dull, mostly oblanceolate to obovate to ovate, widest point in middle, to 10 × 3.5 cm, soft, herbaceous, base tapering gradually, apex rounded;</text>
-      <biological_entity constraint="trophophore" id="o7358" name="blade" name_original="blade" src="d0_s3" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s3" value="erect" />
-        <character is_modifier="false" name="orientation" src="d0_s3" value="spreading" />
-        <character is_modifier="false" modifier="when alive" name="shape" src="d0_s3" value="plane" />
-        <character is_modifier="false" name="coloration" src="d0_s3" value="pale green" />
-        <character is_modifier="false" name="reflectance" src="d0_s3" value="dull" />
-        <character is_modifier="false" modifier="mostly" name="shape" notes="[duplicate value]" src="d0_s3" value="oblanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="obovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="ovate" />
-        <character char_type="range_value" from="mostly oblanceolate" name="shape" src="d0_s3" to="obovate" />
-      </biological_entity>
-      <biological_entity constraint="widest" id="o7359" name="point" name_original="point" src="d0_s3" type="structure">
-        <character char_type="range_value" from="0" from_unit="cm" name="length" notes="" src="d0_s3" to="10" to_unit="cm" />
-        <character char_type="range_value" from="0" from_unit="cm" name="width" notes="" src="d0_s3" to="3.5" to_unit="cm" />
-        <character is_modifier="false" name="pubescence_or_texture" src="d0_s3" value="soft" />
-        <character is_modifier="false" name="growth_form_or_texture" src="d0_s3" value="herbaceous" />
-      </biological_entity>
-      <biological_entity id="o7360" name="middle" name_original="middle" src="d0_s3" type="structure" />
-      <biological_entity id="o7361" name="base" name_original="base" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="gradually" name="shape" src="d0_s3" value="tapering" />
-      </biological_entity>
-      <relation from="o7359" id="r1727" name="in" negation="false" src="d0_s3" to="o7360" />
-    </statement>
-    <statement id="d0_s4">
-      <text>venation complex-reticulate, with included free veinlets in areoles.</text>
-      <biological_entity id="o7362" name="apex" name_original="apex" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="rounded" />
-        <character is_modifier="false" name="architecture_or_coloration_or_relief" src="d0_s4" value="complex-reticulate" />
-      </biological_entity>
-      <biological_entity id="o7363" name="veinlet" name_original="veinlets" src="d0_s4" type="structure">
-        <character is_modifier="true" name="fusion" src="d0_s4" value="free" />
-      </biological_entity>
-      <biological_entity id="o7364" name="areole" name_original="areoles" src="d0_s4" type="structure" />
-      <relation from="o7362" id="r1728" name="included" negation="false" src="d0_s4" to="o7363" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Sporophores arising at ground level, 2.5-4.5 times length of trophophore;</text>
-      <biological_entity id="o7366" name="level" name_original="level" src="d0_s5" type="structure" />
-      <biological_entity id="o7367" name="trophophore" name_original="trophophore" src="d0_s5" type="structure" />
-    </statement>
-    <statement id="d0_s6">
-      <text>sporangial clusters 20-45 × 1-4 mm, with 10-40 pairs of sporangia, apiculum 1-2 mm. 2 n =960.</text>
-      <biological_entity id="o7365" name="sporophore" name_original="sporophores" src="d0_s5" type="structure">
-        <character constraint="at level" constraintid="o7366" is_modifier="false" name="orientation" src="d0_s5" value="arising" />
-        <character constraint="trophophore" constraintid="o7367" is_modifier="false" name="length" notes="" src="d0_s5" value="2.5-4.5 times length of trophophore" />
-        <character is_modifier="false" name="structure_in_adjective_form" src="d0_s6" value="sporangial" />
-      </biological_entity>
-      <biological_entity id="o7368" name="pair" name_original="pairs" src="d0_s6" type="structure">
-        <character is_modifier="false" name="arrangement" src="d0_s6" value="cluster" value_original="clusters" />
-        <character char_type="range_value" from="10" is_modifier="true" name="quantity" src="d0_s6" to="40" />
-      </biological_entity>
-      <biological_entity id="o7369" name="sporangium" name_original="sporangia" src="d0_s6" type="structure" />
-      <biological_entity id="o7370" name="apiculum" name_original="apiculum" src="d0_s6" type="structure">
-        <character char_type="range_value" from="1" from_unit="mm" name="some_measurement" src="d0_s6" to="2" to_unit="mm" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o7371" name="chromosome" name_original="" src="d0_s6" type="structure">
-        <character name="quantity" src="d0_s6" value="960" />
-      </biological_entity>
-      <relation from="o7368" id="r1729" name="part_of" negation="false" src="d0_s6" to="o7369" />
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Leaves appearing midspring.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="leaves appearing time" value="midspring" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Frequent and widespread, open fens, marsh edges, pastures, and grassy shores and roadside ditches, north of the southern boundary of Wisconsin glaciation;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="frequent and widespread open fens" />
-        <character name="habitat" value="marsh edges" />
-        <character name="habitat" value="pastures , and grassy shores and roadside ditches , north of the southern boundary of wisconsin glaciation ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>100-2000 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2000" to_unit="m" from="100" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>B.C., N.B., N.S., Ont., Que.; Alaska, Calif., Conn., Idaho, Ill., Ind., Iowa, Ky., Maine, Md., Mass., Mich., Minn., Mont., Nebr., N.H., N.J., N.Y., N.Dak., Ohio, Oreg., Pa., R.I., S.Dak., Vt., Va., Wash., W.Va., Wis.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Idaho" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Nebr." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Dak." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.Dak." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Roots  yellow to tan, to 15 per plant, 0.3-1 mm diam., producing proliferations.  Stem  upright, to 2 cm, 3mm diam., 1 leaf per stem.  Trophophore stalk  expanding gradually into blade.  Trophophore blade  erect or spreading, usually plane when alive, pale green, dull, mostly oblanceolate to obovate to ovate, widest point in middle, to 10 × 3.5 cm, soft, herbaceous, base tapering gradually, apex rounded; venation complex-reticulate, with included free veinlets in areoles.  Sporophores  arising at ground level, 2.5-4.5 times length of trophophore; sporangial clusters 20-45 × 1-4 mm, with 10-40 pairs of sporangia, apiculum 1-2 mm. 2 n =960.</description>
+  <description type="phenology">Leaves appearing midspring.</description>
+  <description type="habitat">Frequent and widespread, open fens, marsh edges, pastures, and grassy shores and roadside ditches, north of the southern boundary of Wisconsin glaciation;</description>
+  <description type="elevation">100-2000 m;</description>
+  <description type="distribution">B.C., N.B., N.S., Ont., Que.; Alaska, Calif., Conn., Idaho, Ill., Ind., Iowa, Ky., Maine, Md., Mass., Mich., Minn., Mont., Nebr., N.H., N.J., N.Y., N.Dak., Ohio, Oreg., Pa., R.I., S.Dak., Vt., Va., Wash., W.Va., Wis.</description>
   <number>6</number>
   <other_name type="common_name">Northern adder's-tongue</other_name>
   <other_name type="common_name">herbe-sans-couture</other_name>
   <discussion>Ophioglossum pusillum is inconspicuous and may be much more common than collections indicate. It differs from O . vulgatum in having an ephemeral, membranous basal sheath.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_519_d10_s0">
-      <text>Blades pale green, dull (alive), obovate to oblanceolate or ovate, herbaceous, base gradually tapering;</text>
-      <biological_entity id="from_key_V2_519_o14024" name="blade" name_original="blades" src="d10_s0" type="structure">
-        <character is_modifier="false" name="coloration" src="d10_s0" value="pale green" />
-        <character is_modifier="false" name="reflectance" src="d10_s0" value="dull" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="obovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="oblanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s0" value="ovate" />
-        <character char_type="range_value" from="obovate" name="shape" src="d10_s0" to="oblanceolate or ovate" />
-        <character is_modifier="false" name="growth_form_or_texture" src="d10_s0" value="herbaceous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_519_d10_s1">
-      <text>open pastures, meadows, marshes, ditches;</text>
-    </statement>
-    <statement id="from_key_V2_519_d10_s2">
-      <text>n North America.</text>
-      <biological_entity id="from_key_V2_519_o14025" name="base" name_original="base" src="d10_s0" type="structure">
-        <character is_modifier="false" modifier="gradually" name="shape" src="d10_s0" value="tapering" />
-        <character is_modifier="false" name="architecture" src="d10_s1" value="open" />
-        <character is_modifier="false" name="habitat" src="d10_s1" value="marshes" />
-        <character is_modifier="false" name="geographical_terms" src="d10_s2" value="north" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_519_d7_s0">
-      <text>Blades rounded at apex, apiculum absent, ovatelanceolate, oblanceolate, ovate, to trowel-shaped, to 10 × 3.5 cm;</text>
-      <biological_entity id="from_key_V2_519_o14010" name="blade" name_original="blades" src="d7_s0" type="structure">
-        <character constraint="at apex" constraintid="o14011" is_modifier="false" name="shape" src="d7_s0" value="rounded" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_519_o14011" name="apex" name_original="apex" src="d7_s0" type="structure" />
-      <biological_entity id="from_key_V2_519_o14012" name="apiculum" name_original="apiculum" src="d7_s0" type="structure">
-        <character is_modifier="false" name="count" src="d7_s0" value="absent" />
-        <character is_modifier="false" name="shape" src="d7_s0" value="ovatelanceolate" />
-        <character is_modifier="false" name="shape" src="d7_s0" value="oblanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d7_s0" value="ovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d7_s0" value="trowel-shaped" />
-        <character char_type="range_value" from="ovate" name="shape" src="d7_s0" to="trowel-shaped" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d7_s0" value="ovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d7_s0" value="trowel-shaped" />
-        <character char_type="range_value" from="ovate" name="shape" src="d7_s0" to="trowel-shaped" />
-        <character char_type="range_value" from="0" from_unit="cm" name="length" src="d7_s0" to="10" to_unit="cm" />
-        <character char_type="range_value" from="0" from_unit="cm" name="width" src="d7_s0" to="3.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_519_d7_s1">
-      <text>adult leaves usually 1 per stem, appearing in a single flush once per year.</text>
-      <biological_entity id="from_key_V2_519_o14013" name="leaf" name_original="leaves" src="d7_s1" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d7_s1" value="adult" />
-        <character constraint="per stem" constraintid="o14014" name="count" src="d7_s1" value="1" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_519_o14014" name="stem" name_original="stem" src="d7_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_519_d4_s0">
-      <text>Trophophore veins forming only branching or nonbranching, free, included veinlets within larger areoles.</text>
-      <biological_entity constraint="trophophore" id="from_key_V2_519_o13995" name="vein" name_original="veins" src="d4_s0" type="structure" />
-      <biological_entity constraint="included" id="from_key_V2_519_o13996" name="veinlet" name_original="veinlets" src="d4_s0" type="structure">
-        <character is_modifier="true" modifier="only" name="architecture" src="d4_s0" value="branching" />
-        <character is_modifier="true" name="fusion" src="d4_s0" value="free" />
-      </biological_entity>
-      <biological_entity constraint="larger" id="from_key_V2_519_o13997" name="areole" name_original="areoles" src="d4_s0" type="structure" />
-      <relation from="from_key_V2_519_o13995" id="from_key_V2_519_r3346" name="forming" negation="false" src="d4_s0" to="from_key_V2_519_o13996" />
-      <relation from="from_key_V2_519_o13995" id="from_key_V2_519_r3347" name="within" negation="false" src="d4_s0" to="from_key_V2_519_o13997" />
-    </statement>
-    <statement id="from_key_V2_519_d2_s0">
-      <text>Stems upright, 1-5 mm diam., seldom more;</text>
-      <biological_entity id="from_key_V2_519_o13986" name="stem" name_original="stems" src="d2_s0" type="structure">
-        <character is_modifier="false" name="orientation" src="d2_s0" value="upright" />
-        <character char_type="range_value" from="1" from_unit="mm" name="diameter" src="d2_s0" to="5" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_519_d2_s1">
-      <text>leaves arising at top of stem;</text>
-      <biological_entity id="from_key_V2_519_o13987" name="leaf" name_original="leaves" src="d2_s1" type="structure">
-        <character constraint="at top" constraintid="o13988" is_modifier="false" name="orientation" src="d2_s1" value="arising" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_519_o13988" name="top" name_original="top" src="d2_s1" type="structure" />
-      <biological_entity id="from_key_V2_519_o13989" name="stem" name_original="stem" src="d2_s1" type="structure" />
-      <relation from="from_key_V2_519_o13988" id="from_key_V2_519_r3342" name="top of" negation="false" src="d2_s1" to="from_key_V2_519_o13989" />
-    </statement>
-    <statement id="from_key_V2_519_d2_s2">
-      <text>trophophore blades erect to spreading, mostly ovate to lanceolate.</text>
-      <biological_entity constraint="trophophore" id="from_key_V2_519_o13990" name="blade" name_original="blades" src="d2_s2" type="structure">
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d2_s2" value="erect" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d2_s2" value="spreading" />
-        <character char_type="range_value" from="erect" name="orientation" src="d2_s2" to="spreading" />
-        <character is_modifier="false" modifier="mostly" name="shape" notes="[duplicate value]" src="d2_s2" value="ovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s2" value="lanceolate" />
-        <character char_type="range_value" from="mostly ovate" name="shape" src="d2_s2" to="lanceolate" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

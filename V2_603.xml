@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Martius" date="unknown" rank="family">hymenophyllaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">trichomanes</taxon_name>
-    <taxon_name authority="Hooker &amp; Greville" date="1830" rank="species">krausii</taxon_name>
+    <taxon_name rank="family" authority="Martius" date="unknown">hymenophyllaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">trichomanes</taxon_name>
+    <taxon_name rank="species" authority="Hooker &amp; Greville" date="1830">krausii</taxon_name>
     <place_of_publication>
       <publication_title>Icon. Filic.</publication_title>
       <place_in_publication>2: plate 149. 1830</place_in_publication>
@@ -26,184 +18,14 @@
     <taxon_hierarchy>family hymenophyllaceae;genus trichomanes;species krausii</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Didymoglossum</taxon_name>
-    <taxon_name authority="(Hooker &amp; Greville) C. Presl" date="unknown" rank="species">krausii</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Didymoglossum</taxon_name>
+    <taxon_name rank="species" authority="(Hooker &amp; Greville) C. Presl" date="unknown">krausii</taxon_name>
     <taxon_hierarchy>genus Didymoglossum;species krausii;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants epiphytic or on rock.</text>
-      <biological_entity id="o16484" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="habitat" src="d0_s0" value="epiphytic" />
-        <character is_modifier="false" name="habitat" src="d0_s0" value="on rock" />
-      </biological_entity>
-      <biological_entity id="o16485" name="rock" name_original="rock" src="d0_s0" type="structure" />
-      <relation from="o16484" id="r3863" name="on" negation="false" src="d0_s0" to="o16485" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems long-creeping, threadlike, bearing scattered leaves;</text>
-      <biological_entity id="o16486" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="long-creeping" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="thread-like" value_original="threadlike" />
-      </biological_entity>
-      <biological_entity id="o16487" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s1" value="scattered" />
-      </biological_entity>
-      <relation from="o16486" id="r3864" name="bearing" negation="false" src="d0_s1" to="o16487" />
-    </statement>
-    <statement id="d0_s2">
-      <text>stems covered with dark hairs of 2 types: 2-celled glandular-hairs and elongate rhizoidlike hairs;</text>
-      <biological_entity id="o16488" name="stem" name_original="stems" src="d0_s2" type="structure" />
-      <biological_entity id="o16489" name="hair" name_original="hairs" src="d0_s2" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s2" value="dark" />
-      </biological_entity>
-      <biological_entity id="o16490" name="type" name_original="types" src="d0_s2" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s2" value="2" />
-      </biological_entity>
-      <biological_entity id="o16491" name="glandular-hair" name_original="glandular-hairs" src="d0_s2" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s2" value="2-celled" />
-      </biological_entity>
-      <biological_entity id="o16492" name="hair" name_original="hairs" src="d0_s2" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s2" value="2-celled" />
-        <character is_modifier="true" name="shape" src="d0_s2" value="elongate" />
-        <character is_modifier="true" name="architecture_or_shape" src="d0_s2" value="rhizoidlike" />
-      </biological_entity>
-      <relation from="o16488" id="r3865" name="covered with" negation="false" src="d0_s2" to="o16489" />
-      <relation from="o16488" id="r3866" name="consist_of" negation="false" src="d0_s2" to="o16490" />
-    </statement>
-    <statement id="d0_s3">
-      <text>roots absent.</text>
-      <biological_entity id="o16493" name="stem" name_original="stems" src="d0_s3" type="structure" />
-      <biological_entity id="o16494" name="hair" name_original="hairs" src="d0_s3" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s3" value="dark" />
-      </biological_entity>
-      <biological_entity id="o16495" name="type" name_original="types" src="d0_s3" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s3" value="2" />
-      </biological_entity>
-      <biological_entity id="o16496" name="root" name_original="roots" src="d0_s3" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s3" value="absent" />
-      </biological_entity>
-      <relation from="o16493" id="r3867" name="covered with" negation="false" src="d0_s3" to="o16494" />
-      <relation from="o16493" id="r3868" name="consist_of" negation="false" src="d0_s3" to="o16495" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Leaves oblong, 1-2-pinnatifid, 1-5 × 0.5-1.5 cm, with dark, stellate marginal hairs between lobes, 2-celled glandular-hairs on petioles and veins, and dark rhizoidlike hairs on petioles and sometimes abaxially on blades;</text>
-      <biological_entity id="o16497" name="leaf" name_original="leaves" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s4" value="oblong" />
-        <character is_modifier="false" name="shape" src="d0_s4" value="1-2-pinnatifid" />
-        <character char_type="range_value" from="1" from_unit="cm" name="length" src="d0_s4" to="5" to_unit="cm" />
-        <character char_type="range_value" from="0.5" from_unit="cm" name="width" src="d0_s4" to="1.5" to_unit="cm" />
-      </biological_entity>
-      <biological_entity constraint="between lobes marginal" constraintid="o16499" id="o16498" name="hair" name_original="hairs" src="d0_s4" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s4" value="dark" />
-        <character is_modifier="true" name="arrangement_or_shape" src="d0_s4" value="stellate" />
-      </biological_entity>
-      <biological_entity id="o16499" name="lobe" name_original="lobes" src="d0_s4" type="structure" />
-      <biological_entity id="o16500" name="glandular-hair" name_original="glandular-hairs" src="d0_s4" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s4" value="2-celled" />
-      </biological_entity>
-      <biological_entity id="o16501" name="petiole" name_original="petioles" src="d0_s4" type="structure" />
-      <biological_entity id="o16502" name="vein" name_original="veins" src="d0_s4" type="structure" />
-      <biological_entity id="o16503" name="hair" name_original="hairs" src="d0_s4" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s4" value="dark" />
-        <character is_modifier="true" name="architecture_or_shape" src="d0_s4" value="rhizoidlike" />
-      </biological_entity>
-      <biological_entity id="o16504" name="petiole" name_original="petioles" src="d0_s4" type="structure" />
-      <biological_entity id="o16505" name="blade" name_original="blades" src="d0_s4" type="structure" />
-      <relation from="o16497" id="r3869" name="with" negation="false" src="d0_s4" to="o16498" />
-      <relation from="o16500" id="r3870" name="on" negation="false" src="d0_s4" to="o16501" />
-      <relation from="o16500" id="r3871" name="on" negation="false" src="d0_s4" to="o16502" />
-      <relation from="o16503" id="r3872" name="on" negation="false" src="d0_s4" to="o16504" />
-      <relation from="o16503" id="r3873" modifier="sometimes abaxially; abaxially" name="on" negation="false" src="d0_s4" to="o16505" />
-    </statement>
-    <statement id="d0_s5">
-      <text>petioles shorter than blades.</text>
-      <biological_entity id="o16507" name="blade" name_original="blades" src="d0_s5" type="structure" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Venation pinnate with unconnected false veins.</text>
-      <biological_entity id="o16506" name="petiole" name_original="petioles" src="d0_s5" type="structure">
-        <character constraint="than blades" constraintid="o16507" is_modifier="false" name="height_or_length_or_size" src="d0_s5" value="shorter" />
-        <character constraint="with false veins" constraintid="o16508" is_modifier="false" name="architecture_or_shape" src="d0_s6" value="pinnate" />
-      </biological_entity>
-      <biological_entity constraint="false" id="o16508" name="vein" name_original="veins" src="d0_s6" type="structure">
-        <character is_modifier="true" name="fusion" src="d0_s6" value="unconnected" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Soral involucres terminal on lobes near leaf apices, conic, flaring at mouth;</text>
-      <biological_entity constraint="soral" id="o16509" name="involucre" name_original="involucres" src="d0_s7" type="structure">
-        <character constraint="on lobes" constraintid="o16510" is_modifier="false" name="position_or_structure_subtype" src="d0_s7" value="terminal" />
-        <character is_modifier="false" name="shape" notes="" src="d0_s7" value="conic" />
-        <character constraint="at mouth" constraintid="o16512" is_modifier="false" name="shape" src="d0_s7" value="flaring" />
-      </biological_entity>
-      <biological_entity id="o16510" name="lobe" name_original="lobes" src="d0_s7" type="structure" />
-      <biological_entity constraint="leaf" id="o16511" name="apex" name_original="apices" src="d0_s7" type="structure" />
-      <biological_entity id="o16512" name="mouth" name_original="mouth" src="d0_s7" type="structure" />
-      <relation from="o16510" id="r3874" name="near" negation="false" src="d0_s7" to="o16511" />
-    </statement>
-    <statement id="d0_s8">
-      <text>involucre lips narrowly dark-edged.</text>
-      <biological_entity constraint="involucre" id="o16513" name="lip" name_original="lips" src="d0_s8" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="architecture" src="d0_s8" value="dark-edged" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>Gametophytes composed entirely of branching filaments.</text>
-      <biological_entity id="o16514" name="gametophyte" name_original="gametophytes" src="d0_s9" type="structure" />
-      <biological_entity id="o16515" name="filament" name_original="filaments" src="d0_s9" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s9" value="branching" />
-      </biological_entity>
-      <relation from="o16514" id="r3875" modifier="entirely" name="part_of" negation="false" src="d0_s9" to="o16515" />
-    </statement>
-    <statement id="d0_s10">
-      <text>Gemmae composed of short filaments of undifferentiated cells.</text>
-      <biological_entity id="o16517" name="filament" name_original="filaments" src="d0_s10" type="structure">
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s10" value="short" />
-      </biological_entity>
-      <biological_entity id="o16518" name="cell" name_original="cells" src="d0_s10" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s10" value="undifferentiated" />
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s10" value="short" />
-      </biological_entity>
-      <relation from="o16516" id="r3876" name="composed of" negation="false" src="d0_s10" to="o16517" />
-      <relation from="o16516" id="r3877" name="composed of" negation="false" src="d0_s10" to="o16518" />
-    </statement>
-    <statement id="d0_s11">
-      <text>2 n = 136.</text>
-      <biological_entity id="o16516" name="gemma" name_original="gemmae" src="d0_s10" type="structure" />
-      <biological_entity constraint="2n" id="o16519" name="chromosome" name_original="" src="d0_s11" type="structure">
-        <character name="quantity" src="d0_s11" value="136" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>On rock walls of limestone sinks or epiphytic on trunks and roots of trees growing in and around limestone sinks;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="on rock walls of limestone sinks or epiphytic on trunks and roots of trees growing in around limestone sinks ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>below 10 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="10" to_unit="m" from="any" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Fla.; Mexico; West Indies; Central America; South America.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-        <character name="distribution" value="West Indies" establishment_means="native" />
-        <character name="distribution" value="Central America" establishment_means="native" />
-        <character name="distribution" value="South America" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  epiphytic or on rock.  Stems  long-creeping, threadlike, bearing scattered leaves; stems covered with dark hairs of 2 types: 2-celled glandular hairs and elongate rhizoidlike hairs; roots absent.  Leaves  oblong, 1--2-pinnatifid, 1--5 × 0.5--1.5 cm, with dark, stellate marginal hairs between lobes, 2-celled glandular hairs on petioles and veins, and dark rhizoidlike hairs on petioles and sometimes abaxially on blades; petioles shorter than blades.  Venation  pinnate with unconnected false veins.  Soral involucres  terminal on lobes near leaf apices, conic, flaring at mouth; involucre lips narrowly dark edged.  Gametophytes  composed entirely of branching filaments.  Gemmae  composed of short filaments of undifferentiated cells. 2 n  = 136.</description>
+  <description type="habitat">On rock walls of limestone sinks or epiphytic on trunks and roots of trees growing in and around limestone sinks;</description>
+  <description type="elevation">below 10 m;</description>
+  <description type="distribution">Fla.; Mexico; West Indies; Central America; South America.</description>
   <number>3</number>
   <other_name type="common_name">Kraus's bristle fern</other_name>
   <discussion>Trichomanes krausii is fairly common in and around limestone sinks in hardwood forests in Dade County, Florida. Gametophytes may be found occasionally in the vicinity of sporophytes, but they do not form large independent colonies.</discussion>

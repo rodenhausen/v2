@@ -1,205 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">thuja</taxon_name>
-    <taxon_name authority="Donn ex D. Don in Lambert" date="1824" rank="species">plicata</taxon_name>
+    <taxon_name rank="family" authority="Bartlett" date="unknown">cupressaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">thuja</taxon_name>
+    <taxon_name rank="species" authority="Donn ex D. Don in Lambert" date="1824">plicata</taxon_name>
     <place_of_publication>
       <publication_title>in Lambert,Descr. Pinus</publication_title>
       <place_in_publication>2: [19]. 1824</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family cupressaceae;genus thuja;species plicata</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees to 50 (-75) m, sometimes stunted in harsh environments;</text>
-      <biological_entity id="o15894" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="50" from_inclusive="false" from_unit="m" name="atypical_some_measurement" src="d0_s0" to="75" to_unit="m" />
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="50" to_unit="m" />
-        <character constraint="in environments" constraintid="o15895" is_modifier="false" modifier="sometimes" name="development" src="d0_s0" value="stunted" />
-      </biological_entity>
-      <biological_entity id="o15895" name="environment" name_original="environments" src="d0_s0" type="structure">
-        <character is_modifier="true" name="odor" src="d0_s0" value="harsh" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk to 2 (-5) m diam., often buttressed at base;</text>
-      <biological_entity id="o15896" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character char_type="range_value" from="2" from_inclusive="false" from_unit="m" name="diameter" src="d0_s1" to="5" to_unit="m" />
-        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="2" to_unit="m" />
-        <character constraint="at base" constraintid="o15897" is_modifier="false" modifier="often" name="architecture" src="d0_s1" value="buttressed" />
-      </biological_entity>
-      <biological_entity id="o15897" name="base" name_original="base" src="d0_s1" type="structure" />
-    </statement>
-    <statement id="d0_s2">
-      <text>crown conical.</text>
-      <biological_entity id="o15898" name="crown" name_original="crown" src="d0_s2" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s2" value="conical" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Bark reddish-brown or grayish brown, 10-25 mm thick, fibrous, fissured.</text>
-      <biological_entity id="o15899" name="bark" name_original="bark" src="d0_s3" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s3" value="reddish-brown" />
-        <character is_modifier="false" name="coloration" src="d0_s3" value="grayish brown" />
-        <character char_type="range_value" from="10" from_unit="mm" name="thickness" src="d0_s3" to="25" to_unit="mm" />
-        <character is_modifier="false" name="texture" src="d0_s3" value="fibrous" />
-        <character is_modifier="false" name="relief" src="d0_s3" value="fissured" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Branches arching, branchlets pendent.</text>
-      <biological_entity id="o15900" name="branch" name_original="branches" src="d0_s4" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s4" value="arching" />
-      </biological_entity>
-      <biological_entity id="o15901" name="branchlet" name_original="branchlets" src="d0_s4" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s4" value="pendent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Leaves of branchlets (1-) 3-6 mm (sprays sometimes bearing only very small leaves), apex acute, with white markings on abaxial surface when fresh, glossy green on adaxial surface of branchlets.</text>
-      <biological_entity id="o15902" name="leaf" name_original="leaves" src="d0_s5" type="structure">
-        <character char_type="range_value" from="1" from_unit="mm" name="atypical_some_measurement" src="d0_s5" to="3" to_inclusive="false" to_unit="mm" />
-        <character char_type="range_value" from="3" from_unit="mm" name="some_measurement" src="d0_s5" to="6" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o15903" name="branchlet" name_original="branchlets" src="d0_s5" type="structure" />
-      <biological_entity id="o15904" name="apex" name_original="apex" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="acute" />
-      </biological_entity>
-      <biological_entity id="o15905" name="marking" name_original="markings" src="d0_s5" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s5" value="white" />
-      </biological_entity>
-      <biological_entity constraint="abaxial" id="o15906" name="surface" name_original="surface" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="when fresh" name="reflectance" src="d0_s5" value="glossy" />
-        <character constraint="on adaxial surface" constraintid="o15907" is_modifier="false" name="coloration" src="d0_s5" value="green" />
-      </biological_entity>
-      <biological_entity constraint="adaxial" id="o15907" name="surface" name_original="surface" src="d0_s5" type="structure" />
-      <biological_entity id="o15908" name="branchlet" name_original="branchlets" src="d0_s5" type="structure" />
-      <relation from="o15902" id="r3724" name="part_of" negation="false" src="d0_s5" to="o15903" />
-      <relation from="o15904" id="r3725" name="with" negation="false" src="d0_s5" to="o15905" />
-      <relation from="o15905" id="r3726" name="on" negation="false" src="d0_s5" to="o15906" />
-      <relation from="o15907" id="r3727" name="part_of" negation="false" src="d0_s5" to="o15908" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Pollen cones 1-3 mm, reddish.</text>
-      <biological_entity constraint="pollen" id="o15909" name="cone" name_original="cones" src="d0_s6" type="structure">
-        <character char_type="range_value" from="1" from_unit="mm" name="some_measurement" src="d0_s6" to="3" to_unit="mm" />
-        <character is_modifier="false" name="coloration" src="d0_s6" value="reddish" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Seed-cones ellipsoid, 10-14 mm, brown;</text>
-      <biological_entity id="o15910" name="cone-seed" name_original="seed-cones" src="d0_s7" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s7" value="ellipsoid" />
-        <character char_type="range_value" from="10" from_unit="mm" name="distance" src="d0_s7" to="14" to_unit="mm" />
-        <character is_modifier="false" name="coloration" src="d0_s7" value="brown" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>fertile scales 2-3 pairs, each with evident, nearly terminal, deltate projection.</text>
-      <biological_entity id="o15911" name="scale" name_original="scales" src="d0_s8" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s8" value="fertile" />
-        <character char_type="range_value" from="2" name="quantity" src="d0_s8" to="3" />
-      </biological_entity>
-      <biological_entity id="o15912" name="projection" name_original="projection" src="d0_s8" type="structure" constraint="terminal">
-        <character is_modifier="true" name="prominence" src="d0_s8" value="evident" />
-        <character is_modifier="true" name="shape" src="d0_s8" value="deltate" />
-      </biological_entity>
-      <relation from="o15911" id="r3728" modifier="nearly" name="with" negation="false" src="d0_s8" to="o15912" />
-    </statement>
-    <statement id="d0_s9">
-      <text>Seeds 8-14 per cone, 4-7.5 mm (including wings), reddish-brown.</text>
-      <biological_entity id="o15914" name="cone" name_original="cone" src="d0_s9" type="structure" />
-    </statement>
-    <statement id="d0_s10">
-      <text>2 n = 22.</text>
-      <biological_entity id="o15913" name="seed" name_original="seeds" src="d0_s9" type="structure">
-        <character char_type="range_value" constraint="per cone" constraintid="o15914" from="8" name="quantity" src="d0_s9" to="14" />
-        <character char_type="range_value" from="4" from_unit="mm" name="some_measurement" notes="" src="d0_s9" to="7.5" to_unit="mm" />
-        <character is_modifier="false" name="coloration" src="d0_s9" value="reddish-brown" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o15915" name="chromosome" name_original="" src="d0_s10" type="structure">
-        <character name="quantity" src="d0_s10" value="22" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>On various substrates, commonly in moist sites, mixed coniferous forests, usually not in pure stands;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="on various substrates" />
-        <character name="habitat" value="in moist sites , mixed coniferous forests , in pure" />
-        <character name="habitat" value="stands" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--1500(--2000) m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1500" to_unit="m" from="0" from_unit="m" />
-        <character name="elevation" char_type="atypical_range" to="2000" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Alta., B.C.; Alaska, Calif., Idaho, Mont., Oreg., Wash.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="Alta." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Idaho" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees  to 50(--75) m, sometimes stunted in harsh environments; trunk to 2(--5) m diam., often buttressed at base; crown conical.  Bark  reddish brown or grayish brown, 10--25 mm thick, fibrous, fissured.  Branches  arching, branchlets pendent.  Leaves  of branchlets (1--)3--6 mm (sprays sometimes bearing only very small leaves), apex acute, with white markings on abaxial surface when fresh, glossy green on adaxial surface of branchlets.  Pollen cones  1--3 mm, reddish.  Seed cones  ellipsoid, 10--14 mm, brown; fertile scales 2--3 pairs, each with evident, nearly terminal, deltate projection.  Seeds  8--14 per cone, 4--7.5 mm (including wings), reddish brown. 2 n  = 22.</description>
+  <description type="habitat">On various substrates, commonly in moist sites, mixed coniferous forests, usually not in pure stands;</description>
+  <description type="elevation">0--1500(--2000) m;</description>
+  <description type="distribution">Alta., B.C.; Alaska, Calif., Idaho, Mont., Oreg., Wash.</description>
   <number>2</number>
   <other_name type="common_name">Western redcedar</other_name>
   <discussion>The range of Thuja plicata consists of a Coast Range--Cascade Range segment from southeastern Alaska to northwestern California (between 56° 30' and 40° 30' N latitude) and a Rocky Mountains segment from British Columbia to Idaho and Montana (between 54° 30' and 45° 50' N latitude).</discussion>
   <discussion>Thuja plicata is an important timber tree. Its soft but extremely durable wood is valued for home construction, production of shakes and shingles, and many other uses. Native Americans of the Northwest Coast used it to build lodges, totem poles, and seagoing canoes. Many cultivars are grown for ornament, and the species is managed for timber in Europe and New Zealand.</discussion>
   <discussion>Western redcedar ( Thuja plicata ) is the provincial tree of British Columbia.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_793_d2_s0">
-      <text>Foliage white-striped abaxially when fresh, glossy green adaxially;</text>
-      <biological_entity id="from_key_V2_793_o23103" name="foliage" name_original="foliage" src="d2_s0" type="structure">
-        <character is_modifier="false" modifier="when fresh" name="coloration" src="d2_s0" value="white-striped" />
-        <character is_modifier="false" name="reflectance" src="d2_s0" value="glossy" />
-        <character is_modifier="false" modifier="adaxially" name="coloration" src="d2_s0" value="green" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_793_d2_s1">
-      <text>seed-cone scales with evident, nearly terminal, deltate projection;</text>
-      <biological_entity id="from_key_V2_793_o23105" name="projection" name_original="projection" src="d2_s1" type="structure">
-        <character is_modifier="true" name="prominence" src="d2_s1" value="evident" />
-        <character is_modifier="true" modifier="nearly" name="position_or_structure_subtype" src="d2_s1" value="terminal" />
-        <character is_modifier="true" name="shape" src="d2_s1" value="deltate" />
-      </biological_entity>
-      <relation from="from_key_V2_793_o23104" id="from_key_V2_793_r5404" name="with" negation="false" src="d2_s1" to="from_key_V2_793_o23105" />
-    </statement>
-    <statement id="from_key_V2_793_d2_s2">
-      <text>w United States and w Canada.</text>
-      <biological_entity constraint="seed-cone" id="from_key_V2_793_o23104" name="scale" name_original="scales" src="d2_s1" type="structure">
-        <character is_modifier="false" name="fusion" src="d2_s2" value="united" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

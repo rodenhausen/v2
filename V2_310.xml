@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="E. Fournier in Baillon" date="1829" rank="genus">bommeria</taxon_name>
-    <taxon_name authority="(Kuhn) L. Underwood" date="1902" rank="species">hispida</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="E. Fournier in Baillon" date="1829">bommeria</taxon_name>
+    <taxon_name rank="species" authority="(Kuhn) L. Underwood" date="1902">hispida</taxon_name>
     <place_of_publication>
       <publication_title>Bull. Torrey Bot. Club</publication_title>
       <place_in_publication>29: 633. 1902</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family pteridaceae;genus bommeria;species hispida</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Gymnogramma</taxon_name>
-    <taxon_name authority="Kuhn" date="unknown" rank="species">hispida</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Gymnogramma</taxon_name>
+    <taxon_name rank="species" authority="Kuhn" date="unknown">hispida</taxon_name>
     <place_of_publication>
       <publication_title>Linnaea</publication_title>
       <place_in_publication>36: 72. 1869</place_in_publication>
@@ -35,188 +27,26 @@
     <taxon_hierarchy>genus Gymnogramma;species hispida;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Bommeria</taxon_name>
-    <taxon_name authority="E. Fournier" date="unknown" rank="species">schnafferi</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Bommeria</taxon_name>
+    <taxon_name rank="species" authority="E. Fournier" date="unknown">schnafferi</taxon_name>
     <taxon_hierarchy>genus Bommeria;species schnafferi;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Gymnogramma</taxon_name>
-    <taxon_name authority="Klotzsch" date="unknown" rank="species">ehrenbergiana</taxon_name>
-    <taxon_name authority="Pringle ex Davenport" date="unknown" rank="variety">muralis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Gymnogramma</taxon_name>
+    <taxon_name rank="species" authority="Klotzsch" date="unknown">ehrenbergiana</taxon_name>
+    <taxon_name rank="variety" authority="Pringle ex Davenport" date="unknown">muralis</taxon_name>
     <taxon_hierarchy>genus Gymnogramma;species ehrenbergiana;variety muralis;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Gymnopteris</taxon_name>
-    <taxon_name authority="(Kuhn) L. Underwood" date="unknown" rank="species">hispida</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Gymnopteris</taxon_name>
+    <taxon_name rank="species" authority="(Kuhn) L. Underwood" date="unknown">hispida</taxon_name>
     <taxon_hierarchy>genus Gymnopteris;species hispida;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems long-creeping and often branched.</text>
-      <biological_entity id="o7022" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="long-creeping" />
-        <character is_modifier="false" modifier="often" name="architecture" src="d0_s0" value="branched" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves arising at 7-10 mm intervals.</text>
-      <biological_entity id="o7023" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character constraint="at intervals" constraintid="o7024" is_modifier="false" name="orientation" src="d0_s1" value="arising" />
-      </biological_entity>
-      <biological_entity id="o7024" name="interval" name_original="intervals" src="d0_s1" type="structure">
-        <character char_type="range_value" from="7" from_unit="mm" is_modifier="true" name="some_measurement" src="d0_s1" to="10" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Petiole generally rounded (but distally grooved in some large leaves);</text>
-      <biological_entity id="o7025" name="petiole" name_original="petiole" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="generally" name="shape" src="d0_s2" value="rounded" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>indument of scales proximally, of scales and trichomes distally, central portion generally glabrous.</text>
-      <biological_entity id="o7026" name="indument" name_original="indument" src="d0_s3" type="structure" constraint="scale" />
-      <biological_entity id="o7027" name="scale" name_original="scales" src="d0_s3" type="structure" />
-      <biological_entity id="o7028" name="scale" name_original="scales" src="d0_s3" type="structure" />
-      <biological_entity id="o7029" name="trichome" name_original="trichomes" src="d0_s3" type="structure" />
-      <biological_entity constraint="central" id="o7030" name="portion" name_original="portion" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="generally" name="pubescence" src="d0_s3" value="glabrous" />
-      </biological_entity>
-      <relation from="o7026" id="r1638" name="part_of" negation="false" src="d0_s3" to="o7027" />
-      <relation from="o7026" id="r1639" name="part_of" negation="false" src="d0_s3" to="o7028" />
-      <relation from="o7026" id="r1640" name="part_of" negation="false" src="d0_s3" to="o7029" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Blade 1-7 cm, about as long as wide;</text>
-      <biological_entity id="o7031" name="blade" name_original="blade" src="d0_s4" type="structure">
-        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s4" to="7" to_unit="cm" />
-        <character is_modifier="false" name="width" src="d0_s4" value="wide" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>ultimate segments rounded at apex;</text>
-      <biological_entity constraint="ultimate" id="o7032" name="segment" name_original="segments" src="d0_s5" type="structure">
-        <character constraint="at apex" constraintid="o7033" is_modifier="false" name="shape" src="d0_s5" value="rounded" />
-      </biological_entity>
-      <biological_entity id="o7033" name="apex" name_original="apex" src="d0_s5" type="structure" />
-    </statement>
-    <statement id="d0_s6">
-      <text>abaxial indument of scales (commonly with 10+ cells across base), unicellular needlelike trichomes (0.75-1.12 mm), and unicellular coiled trichomes (ca. 1-2 mm);</text>
-      <biological_entity constraint="abaxial; scale" id="o7034" name="indument" name_original="indument" src="d0_s6" type="structure" />
-      <biological_entity id="o7035" name="scale" name_original="scales" src="d0_s6" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s6" value="unicellular" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s6" value="needlelike" />
-      </biological_entity>
-      <biological_entity id="o7036" name="trichome" name_original="trichomes" src="d0_s6" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s6" value="unicellular" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s6" value="needlelike" />
-      </biological_entity>
-      <biological_entity id="o7037" name="trichome" name_original="trichomes" src="d0_s6" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s6" value="unicellular" />
-        <character is_modifier="true" name="architecture" src="d0_s6" value="coiled" />
-      </biological_entity>
-      <relation from="o7034" id="r1641" name="part_of" negation="false" src="d0_s6" to="o7035" />
-      <relation from="o7034" id="r1642" name="part_of" negation="false" src="d0_s6" to="o7036" />
-      <relation from="o7034" id="r1643" name="part_of" negation="false" src="d0_s6" to="o7037" />
-    </statement>
-    <statement id="d0_s7">
-      <text>adaxial indument of unicellular needlelike hairs 0.47-1.11 mm, arising from unspecialized basal-cells;</text>
-      <biological_entity constraint="adaxial; hair" id="o7038" name="indument" name_original="indument" src="d0_s7" type="structure">
-        <character char_type="range_value" from="0.47" from_unit="mm" name="some_measurement" src="d0_s7" to="1.11" to_unit="mm" />
-        <character constraint="from unspecialized basal-cells" constraintid="o7040" is_modifier="false" name="orientation" src="d0_s7" value="arising" />
-      </biological_entity>
-      <biological_entity id="o7039" name="hair" name_original="hairs" src="d0_s7" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s7" value="unicellular" />
-        <character is_modifier="true" name="architecture_or_shape" src="d0_s7" value="needlelike" />
-      </biological_entity>
-      <biological_entity constraint="unspecialized" id="o7040" name="basal-cell" name_original="basal-cells" src="d0_s7" type="structure" />
-      <relation from="o7038" id="r1644" name="part_of" negation="false" src="d0_s7" to="o7039" />
-    </statement>
-    <statement id="d0_s8">
-      <text>rachis chestnut-brown.</text>
-      <biological_entity id="o7041" name="rachis" name_original="rachis" src="d0_s8" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s8" value="chestnut-brown" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>Veins free.</text>
-      <biological_entity id="o7042" name="vein" name_original="veins" src="d0_s9" type="structure">
-        <character is_modifier="false" name="fusion" src="d0_s9" value="free" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>Sporangia covering 2/3-3/4 distance from margin of blade to costa of each ultimate segment.</text>
-      <biological_entity id="o7043" name="sporangium" name_original="sporangia" src="d0_s10" type="structure" />
-      <biological_entity id="o7044" name="distance" name_original="distance" src="d0_s10" type="structure">
-        <character char_type="range_value" from="2/3" is_modifier="true" name="quantity" src="d0_s10" to="3/4" />
-      </biological_entity>
-      <biological_entity id="o7045" name="margin" name_original="margin" src="d0_s10" type="structure" />
-      <biological_entity id="o7046" name="blade" name_original="blade" src="d0_s10" type="structure" />
-      <biological_entity id="o7047" name="costa" name_original="costa" src="d0_s10" type="structure" />
-      <biological_entity constraint="ultimate" id="o7048" name="segment" name_original="segment" src="d0_s10" type="structure" />
-      <relation from="o7043" id="r1645" name="covering" negation="false" src="d0_s10" to="o7044" />
-      <relation from="o7043" id="r1646" name="from" negation="false" src="d0_s10" to="o7045" />
-      <relation from="o7045" id="r1647" name="part_of" negation="false" src="d0_s10" to="o7046" />
-      <relation from="o7045" id="r1648" name="to" negation="false" src="d0_s10" to="o7047" />
-      <relation from="o7047" id="r1649" name="part_of" negation="false" src="d0_s10" to="o7048" />
-    </statement>
-    <statement id="d0_s11">
-      <text>Spores 64 per sporangium;</text>
-      <biological_entity id="o7049" name="spore" name_original="spores" src="d0_s11" type="structure">
-        <character constraint="per sporangium" constraintid="o7050" name="quantity" src="d0_s11" value="64" />
-      </biological_entity>
-      <biological_entity id="o7050" name="sporangium" name_original="sporangium" src="d0_s11" type="structure" />
-    </statement>
-    <statement id="d0_s12">
-      <text>perispore surface crested.</text>
-    </statement>
-    <statement id="d0_s13">
-      <text>2 n = 60.</text>
-      <biological_entity constraint="perispore" id="o7051" name="surface" name_original="surface" src="d0_s12" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s12" value="crested" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o7052" name="chromosome" name_original="" src="d0_s13" type="structure">
-        <character name="quantity" src="d0_s13" value="60" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulating summer--fall.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="summer-fall" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>At bases of large boulders on dry to moist slopes, primarily in mountainous, xeric regions, occasionally forming large mats;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="at bases of large boulders on dry to moist slopes" />
-        <character name="habitat" value="in mountainous , xeric regions" />
-        <character name="habitat" value="forming large mats" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>1000--2500 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2500" to_unit="m" from="1000" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., N.Mex., Tex.; Mexico.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  long-creeping and often branched.  Leaves  arising at 7--10 mm intervals.  Petiole  generally rounded (but distally grooved in some large leaves); indument of scales proximally, of scales and trichomes distally, central portion generally glabrous.  Blade  1--7 cm, about as long as wide; ultimate segments rounded at apex; abaxial indument of scales (commonly with 10+ cells across base), unicellular needlelike trichomes (0.75--1.12 mm), and unicellular coiled trichomes (ca. 1--2 mm); adaxial indument of unicellular needlelike hairs 0.47--1.11 mm, arising from unspecialized basal cells; rachis chestnut brown.  Veins  free.  Sporangia  covering 2/3--3/4 distance from margin of blade to costa of each ultimate segment.  Spores  64 per sporangium; perispore surface crested. 2 n  = 60.</description>
+  <description type="phenology">Sporulating summer--fall.</description>
+  <description type="habitat">At bases of large boulders on dry to moist slopes, primarily in mountainous, xeric regions, occasionally forming large mats;</description>
+  <description type="elevation">1000--2500 m;</description>
+  <description type="distribution">Ariz., N.Mex., Tex.; Mexico.</description>
   <number>1</number>
   <discussion>Bommeria hispida is the only member of this genus to occur north of Mexico. It is the most morphologically distinct species in the genus, having a relatively small leaf size, dissected segments, and copious and diverse leaf indument. Natural hybrids involving B . hispida are unknown. The pedate blade shape, lack of colored farina abaxially, and presence of both needlelike and coiled trichomes abaxially serve to distinguish this species from sympatric members of Cheilanthes , Notholaena , and Pentagramma .</discussion>
   <discussion>Reports of Bommeria hispida in California (C. H. Haufler 1979) are based on old specimens with questionable locality data.</discussion>

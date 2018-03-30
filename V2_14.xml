@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>David M. Johnson</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Mirbel" date="unknown" rank="family">marsileaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">Marsilea</taxon_name>
+    <taxon_name rank="family" authority="Mirbel" date="unknown">marsileaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">Marsilea</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl.</publication_title>
       <place_in_publication>2: 1099. 1753; Gen. Pl. ed. 5, 485, 1754</place_in_publication>
@@ -25,136 +17,8 @@
     <taxon_hierarchy>family marsileaceae;genus Marsilea</taxon_hierarchy>
     <other_info_on_name type="etymology">[for Count Luigi Marsigli (1656--1730), Italian mycologist at Bologna]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants aquatic or amphibious, forming diffuse or dense colonies.</text>
-      <biological_entity id="o1394" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="habitat" src="d0_s0" value="aquatic" />
-        <character is_modifier="false" name="habitat" src="d0_s0" value="amphibious" />
-      </biological_entity>
-      <biological_entity id="o1395" name="colony" name_original="colonies" src="d0_s0" type="structure">
-        <character is_modifier="true" name="density" src="d0_s0" value="diffuse" />
-        <character is_modifier="true" name="density" src="d0_s0" value="dense" />
-      </biological_entity>
-      <relation from="o1394" id="r304" name="forming" negation="false" src="d0_s0" to="o1395" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Roots arising at nodes, sometimes also on internodes.</text>
-      <biological_entity id="o1396" name="root" name_original="roots" src="d0_s1" type="structure">
-        <character constraint="at nodes" constraintid="o1397" is_modifier="false" name="orientation" src="d0_s1" value="arising" />
-      </biological_entity>
-      <biological_entity id="o1397" name="node" name_original="nodes" src="d0_s1" type="structure" />
-      <biological_entity id="o1398" name="internode" name_original="internodes" src="d0_s1" type="structure" />
-      <relation from="o1396" id="r305" modifier="sometimes" name="on" negation="false" src="d0_s1" to="o1398" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves deciduous in temperate regions, heteromorphic, floating leaves averaging larger than land leaves.</text>
-      <biological_entity id="o1399" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character constraint="in regions" constraintid="o1400" is_modifier="false" name="duration" src="d0_s2" value="deciduous" />
-        <character is_modifier="false" name="architecture" notes="" src="d0_s2" value="heteromorphic" />
-      </biological_entity>
-      <biological_entity id="o1400" name="region" name_original="regions" src="d0_s2" type="structure">
-        <character is_modifier="true" name="location" src="d0_s2" value="temperate" />
-      </biological_entity>
-      <biological_entity id="o1401" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="true" name="growth_form_or_location" src="d0_s2" value="floating" />
-        <character constraint="than land leaves" constraintid="o1402" is_modifier="false" name="size" src="d0_s2" value="larger" />
-      </biological_entity>
-      <biological_entity id="o1402" name="leaf" name_original="leaves" src="d0_s2" type="structure" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Petiole filiform, stiffly erect or procumbent in land leaves, lax in floating leaves.</text>
-      <biological_entity id="o1403" name="petiole" name_original="petiole" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="filiform" />
-        <character is_modifier="false" modifier="stiffly" name="orientation" src="d0_s3" value="erect" />
-        <character constraint="in land, leaves" constraintid="o1404, o1405" is_modifier="false" name="growth_form" src="d0_s3" value="procumbent" />
-        <character constraint="in leaves" constraintid="o1406" is_modifier="false" name="architecture_or_arrangement" notes="" src="d0_s3" value="lax" />
-      </biological_entity>
-      <biological_entity id="o1404" name="land" name_original="land" src="d0_s3" type="structure" />
-      <biological_entity id="o1405" name="leaf" name_original="leaves" src="d0_s3" type="structure" />
-      <biological_entity id="o1406" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="true" name="growth_form_or_location" src="d0_s3" value="floating" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Blade palmately divided into 4 pinnae.</text>
-      <biological_entity id="o1407" name="blade" name_original="blade" src="d0_s4" type="structure">
-        <character constraint="into pinnae" constraintid="o1408" is_modifier="false" modifier="palmately" name="shape" src="d0_s4" value="divided" />
-      </biological_entity>
-      <biological_entity id="o1408" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s4" value="4" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Pinnae cuneate or obdeltate, pulvinate at base, frequently with numerous red or brown streaks abaxially in floating leaves.</text>
-      <biological_entity id="o1409" name="pinna" name_original="pinnae" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="cuneate" />
-        <character is_modifier="false" name="shape" src="d0_s5" value="obdeltate" />
-        <character constraint="at base" constraintid="o1410" is_modifier="false" name="shape" src="d0_s5" value="pulvinate" />
-      </biological_entity>
-      <biological_entity id="o1410" name="base" name_original="base" src="d0_s5" type="structure" />
-      <biological_entity id="o1411" name="streak" name_original="streaks" src="d0_s5" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s5" value="numerous" />
-        <character is_modifier="true" name="coloration" src="d0_s5" value="red" />
-        <character is_modifier="true" name="coloration" src="d0_s5" value="brown" />
-      </biological_entity>
-      <biological_entity id="o1412" name="leaf" name_original="leaves" src="d0_s5" type="structure">
-        <character is_modifier="true" name="growth_form_or_location" src="d0_s5" value="floating" />
-      </biological_entity>
-      <relation from="o1409" id="r306" modifier="frequently" name="with" negation="false" src="d0_s5" to="o1411" />
-      <relation from="o1411" id="r307" name="in" negation="false" src="d0_s5" to="o1412" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Sporocarps borne on branched or unbranched stalks at or near bases of petioles, aboveground (except in Marsilea ancylopoda), attached laterally to stalk apex (attached portion called raphe), tip of stalk often protruding as bump or tooth (proximal tooth), some species also with tooth distal to stalk apex (distal tooth);</text>
-      <biological_entity id="o1413" name="sporocarp" name_original="sporocarps" src="d0_s6" type="structure">
-        <character is_modifier="false" name="location" notes="" src="d0_s6" value="aboveground" />
-        <character constraint="to stalk apex" constraintid="o1417" is_modifier="false" name="fixation" src="d0_s6" value="attached" />
-      </biological_entity>
-      <biological_entity id="o1414" name="stalk" name_original="stalks" src="d0_s6" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s6" value="branched" />
-        <character is_modifier="true" name="architecture" src="d0_s6" value="unbranched" />
-      </biological_entity>
-      <biological_entity id="o1415" name="base" name_original="bases" src="d0_s6" type="structure" />
-      <biological_entity id="o1416" name="petiole" name_original="petioles" src="d0_s6" type="structure" />
-      <biological_entity constraint="stalk" id="o1417" name="apex" name_original="apex" src="d0_s6" type="structure" />
-      <biological_entity id="o1418" name="tip" name_original="tip" src="d0_s6" type="structure">
-        <character constraint="as tooth" constraintid="o1421" is_modifier="false" modifier="often" name="prominence" src="d0_s6" value="protruding" />
-      </biological_entity>
-      <biological_entity id="o1419" name="stalk" name_original="stalk" src="d0_s6" type="structure" />
-      <biological_entity id="o1420" name="bump" name_original="bump" src="d0_s6" type="structure" />
-      <biological_entity id="o1421" name="tooth" name_original="tooth" src="d0_s6" type="structure" />
-      <biological_entity id="o1422" name="species" name_original="species" src="d0_s6" type="taxon_name" />
-      <biological_entity id="o1423" name="tooth" name_original="tooth" src="d0_s6" type="structure">
-        <character constraint="to stalk apex" constraintid="o1424" is_modifier="false" name="position_or_shape" src="d0_s6" value="distal" />
-      </biological_entity>
-      <biological_entity constraint="stalk" id="o1424" name="apex" name_original="apex" src="d0_s6" type="structure" />
-      <relation from="o1414" id="r308" name="borne on" negation="false" src="d0_s6" to="o1414" />
-      <relation from="o1414" id="r309" name="at" negation="false" src="d0_s6" to="o1415" />
-      <relation from="o1415" id="r310" name="part_of" negation="false" src="d0_s6" to="o1416" />
-      <relation from="o1418" id="r311" name="part_of" negation="false" src="d0_s6" to="o1419" />
-      <relation from="o1422" id="r312" name="with" negation="false" src="d0_s6" to="o1423" />
-    </statement>
-    <statement id="d0_s7">
-      <text>sporocarps densely to sparsely hairy, less so with age, dehiscing into 2 valves.</text>
-      <biological_entity id="o1425" name="sporocarp" name_original="sporocarps" src="d0_s7" type="structure">
-        <character is_modifier="false" modifier="densely to sparsely" name="pubescence" src="d0_s7" value="hairy" />
-        <character constraint="into valves" constraintid="o1427" is_modifier="false" name="dehiscence" notes="" src="d0_s7" value="dehiscing" />
-      </biological_entity>
-      <biological_entity id="o1426" name="age" name_original="age" src="d0_s7" type="structure" />
-      <biological_entity id="o1427" name="valve" name_original="valves" src="d0_s7" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s7" value="2" />
-      </biological_entity>
-      <relation from="o1425" id="r313" modifier="less" name="with" negation="false" src="d0_s7" to="o1426" />
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>nearly worldwide.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="nearly worldwide" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  aquatic or amphibious, forming diffuse or dense colonies.  Roots  arising at nodes, sometimes also on internodes.  Leaves  deciduous in temperate regions, heteromorphic, floating leaves averaging larger than land leaves.  Petiole  filiform, stiffly erect or procumbent in land leaves, lax in floating leaves.  Blade  palmately divided into 4 pinnae.  Pinnae  cuneate or obdeltate, pulvinate at base, frequently with numerous red or brown streaks abaxially in floating leaves.  Sporocarps  borne on branched or unbranched stalks at or near bases of petioles, aboveground (except in  Marsilea ancylopoda ), attached laterally to stalk apex (attached portion called raphe), tip of stalk often protruding as bump or tooth (proximal tooth), some species also with tooth distal to stalk apex (distal tooth); sporocarps densely to sparsely hairy, less so with age, dehiscing into 2 valves.</description>
+  <description type="distribution">nearly worldwide.</description>
   <number>1</number>
   <other_name type="common_name">Water-clover</other_name>
   <other_name type="common_name">pepperwort</other_name>
@@ -168,228 +32,53 @@
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Roots both at nodes and sparsely (1–3) along internodes;</text>
-          <biological_entity id="o1428" name="root" name_original="roots" src="d1_s0" type="structure" />
-          <biological_entity id="o1429" name="node" name_original="nodes" src="d1_s0" type="structure">
-            <character char_type="range_value" constraint="along internodes" constraintid="o1430" from="1" modifier="sparsely" name="atypical_quantity" src="d1_s0" to="3" />
-          </biological_entity>
-          <biological_entity id="o1430" name="internode" name_original="internodes" src="d1_s0" type="structure" />
-          <relation from="o1428" id="r314" name="at" negation="false" src="d1_s0" to="o1429" />
-        </statement>
-        <statement id="d1_s1">
-          <text>stalks of sporocarps frequently branched.</text>
-          <biological_entity id="o1431" name="stalk" name_original="stalks" src="d1_s1" type="structure" constraint="sporocarp">
-            <character is_modifier="false" modifier="frequently" name="architecture" src="d1_s1" value="branched" />
-          </biological_entity>
-          <biological_entity id="o1432" name="sporocarp" name_original="sporocarps" src="d1_s1" type="structure" />
-          <relation from="o1431" id="r315" name="part_of" negation="false" src="d1_s1" to="o1432" />
-        </statement>
-      </description>
+      <description type="morphology">Roots both at nodes and sparsely (1–3) along internodes; stalks of sporocarps frequently branched.</description>
       <determination>1 Marsilea quadrifolia</determination>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Roots only at nodes;</text>
-          <biological_entity id="o1433" name="root" name_original="roots" src="d2_s0" type="structure" />
-          <biological_entity id="o1434" name="node" name_original="nodes" src="d2_s0" type="structure" />
-          <relation from="o1433" id="r316" name="at" negation="false" src="d2_s0" to="o1434" />
-        </statement>
-        <statement id="d2_s1">
-          <text>stalks of sporocarps branched or unbranched.</text>
-          <biological_entity id="o1435" name="stalk" name_original="stalks" src="d2_s1" type="structure" constraint="sporocarp">
-            <character is_modifier="false" name="architecture" src="d2_s1" value="branched" />
-            <character is_modifier="false" name="architecture" src="d2_s1" value="unbranched" />
-          </biological_entity>
-          <biological_entity id="o1436" name="sporocarp" name_original="sporocarps" src="d2_s1" type="structure" />
-          <relation from="o1435" id="r317" name="part_of" negation="false" src="d2_s1" to="o1436" />
-        </statement>
-      </description>
+      <description type="morphology">Roots only at nodes; stalks of sporocarps branched or unbranched.</description>
       <next_statement_id>2</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d3_s0">
-          <text>Distal tooth of sporocarps 0.4–1.2 mm, acute.</text>
-          <biological_entity constraint="distal" id="o1437" name="tooth" name_original="tooth" src="d3_s0" type="structure">
-            <character char_type="range_value" from="0.4" from_unit="mm" name="some_measurement" src="d3_s0" to="1.2" to_unit="mm" />
-            <character is_modifier="false" name="shape" src="d3_s0" value="acute" />
-          </biological_entity>
-          <biological_entity id="o1438" name="sporocarp" name_original="sporocarps" src="d3_s0" type="structure" />
-          <relation from="o1437" id="r318" name="part_of" negation="false" src="d3_s0" to="o1438" />
-        </statement>
-      </description>
+      <description type="morphology">Distal tooth of sporocarps 0.4–1.2 mm, acute.</description>
       <determination>6 Marsilea vestita</determination>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d4_s0">
-          <text>Distal tooth of sporocarps absent or to 0.4 mm and blunt.</text>
-          <biological_entity constraint="distal" id="o1439" name="tooth" name_original="tooth" src="d4_s0" type="structure">
-            <character is_modifier="false" name="shape" notes="" src="d4_s0" value="blunt" />
-          </biological_entity>
-          <biological_entity id="o1440" name="sporocarp" name_original="sporocarps" src="d4_s0" type="structure">
-            <character is_modifier="false" name="presence" src="d4_s0" value="absent" />
-            <character name="quantity" src="d4_s0" value="0-0.4 mm" />
-          </biological_entity>
-          <relation from="o1439" id="r319" name="consist_of" negation="false" src="d4_s0" to="o1440" />
-        </statement>
-      </description>
+      <description type="morphology">Distal tooth of sporocarps absent or to 0.4 mm and blunt.</description>
       <next_statement_id>3</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d5_s0">
-          <text>Sporocarps 6–9 mm, strongly ascending;</text>
-          <biological_entity id="o1441" name="sporocarp" name_original="sporocarps" src="d5_s0" type="structure">
-            <character char_type="range_value" from="6" from_unit="mm" name="some_measurement" src="d5_s0" to="9" to_unit="mm" />
-            <character is_modifier="false" modifier="strongly" name="orientation" src="d5_s0" value="ascending" />
-          </biological_entity>
-        </statement>
-        <statement id="d5_s1">
-          <text>stalks usually branched.</text>
-          <biological_entity id="o1442" name="stalk" name_original="stalks" src="d5_s1" type="structure">
-            <character is_modifier="false" modifier="usually" name="architecture" src="d5_s1" value="branched" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sporocarps 6–9 mm, strongly ascending; stalks usually branched.</description>
       <determination>5 Marsilea macropoda</determination>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d6_s0">
-          <text>Sporocarps 2.4–6 mm, perpendicular to strongly nodding, i. e., stalk curved or bent;</text>
-          <biological_entity id="o1443" name="sporocarp" name_original="sporocarps" src="d6_s0" type="structure">
-            <character char_type="range_value" from="2.4" from_unit="mm" name="some_measurement" src="d6_s0" to="6" to_unit="mm" />
-            <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d6_s0" value="perpendicular" />
-            <character is_modifier="false" modifier="strongly" name="orientation" notes="[duplicate value]" src="d6_s0" value="nodding" />
-            <character char_type="range_value" from="perpendicular" name="orientation" src="d6_s0" to="strongly nodding" />
-          </biological_entity>
-          <biological_entity id="o1444" name="stalk" name_original="stalk" src="d6_s0" type="structure">
-            <character is_modifier="false" name="course" src="d6_s0" value="curved" />
-            <character is_modifier="false" name="shape" src="d6_s0" value="bent" />
-          </biological_entity>
-        </statement>
-        <statement id="d6_s1">
-          <text>stalks unbranched.</text>
-          <biological_entity id="o1445" name="stalk" name_original="stalks" src="d6_s1" type="structure">
-            <character is_modifier="false" name="architecture" src="d6_s1" value="unbranched" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sporocarps 2.4–6 mm, perpendicular to strongly nodding, i.e., stalk curved or bent; stalks unbranched.</description>
       <next_statement_id>4</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>4</statement_id>
-      <description type="morphology">
-        <statement id="d7_s0">
-          <text>Stalks recurved or prostrate, often hooked again at base of raphe;</text>
-          <biological_entity id="o1446" name="stalk" name_original="stalks" src="d7_s0" type="structure">
-            <character is_modifier="false" name="orientation" src="d7_s0" value="recurved" />
-            <character is_modifier="false" name="orientation" src="d7_s0" value="prostrate" />
-            <character constraint="at base" constraintid="o1447" is_modifier="false" modifier="often" name="shape" src="d7_s0" value="hooked" />
-          </biological_entity>
-          <biological_entity id="o1447" name="base" name_original="base" src="d7_s0" type="structure" />
-          <biological_entity id="o1448" name="raphe" name_original="raphe" src="d7_s0" type="structure" />
-          <relation from="o1447" id="r320" name="part_of" negation="false" src="d7_s0" to="o1448" />
-        </statement>
-        <statement id="d7_s1">
-          <text>sporocarps borne underground or below stem level.</text>
-          <biological_entity id="o1449" name="sporocarp" name_original="sporocarps" src="d7_s1" type="structure">
-            <character is_modifier="false" name="position_relational" src="d7_s1" value="level" />
-          </biological_entity>
-          <biological_entity id="o1450" name="stem" name_original="stem" src="d7_s1" type="structure">
-            <character is_modifier="true" name="location" src="d7_s1" value="underground" />
-          </biological_entity>
-          <relation from="o1449" id="r321" name="borne" negation="false" src="d7_s1" to="o1450" />
-        </statement>
-      </description>
+      <description type="morphology">Stalks recurved or prostrate, often hooked again at base of raphe; sporocarps borne underground or below stem level.</description>
       <determination>2 Marsilea ancylopoda</determination>
     </key_statement>
     <key_statement>
       <statement_id>4</statement_id>
-      <description type="morphology">
-        <statement id="d8_s0">
-          <text>Stalks erect, never hooked at base of raphe;</text>
-          <biological_entity id="o1451" name="stalk" name_original="stalks" src="d8_s0" type="structure">
-            <character is_modifier="false" name="orientation" src="d8_s0" value="erect" />
-            <character constraint="at base" constraintid="o1452" is_modifier="false" modifier="never" name="shape" src="d8_s0" value="hooked" />
-          </biological_entity>
-          <biological_entity id="o1452" name="base" name_original="base" src="d8_s0" type="structure" />
-          <biological_entity id="o1453" name="raphe" name_original="raphe" src="d8_s0" type="structure" />
-          <relation from="o1452" id="r322" name="part_of" negation="false" src="d8_s0" to="o1453" />
-        </statement>
-        <statement id="d8_s1">
-          <text>sporocarps borne aboveground or above stem level.</text>
-          <biological_entity id="o1454" name="sporocarp" name_original="sporocarps" src="d8_s1" type="structure">
-            <character is_modifier="false" name="position_relational" src="d8_s1" value="level" />
-          </biological_entity>
-          <biological_entity id="o1455" name="stem" name_original="stem" src="d8_s1" type="structure">
-            <character is_modifier="true" name="location" src="d8_s1" value="aboveground" />
-          </biological_entity>
-          <relation from="o1454" id="r323" name="borne" negation="false" src="d8_s1" to="o1455" />
-        </statement>
-      </description>
+      <description type="morphology">Stalks erect, never hooked at base of raphe; sporocarps borne aboveground or above stem level.</description>
       <next_statement_id>5</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>5</statement_id>
-      <description type="morphology">
-        <statement id="d9_s0">
-          <text>Sporocarps 2–3 mm wide, proximal tooth of sporocarp 0.2 mm or absent.</text>
-          <biological_entity id="o1456" name="sporocarp" name_original="sporocarps" src="d9_s0" type="structure">
-            <character char_type="range_value" from="2" from_unit="mm" name="width" src="d9_s0" to="3" to_unit="mm" />
-          </biological_entity>
-          <biological_entity constraint="proximal" id="o1457" name="tooth" name_original="tooth" src="d9_s0" type="structure">
-            <character name="some_measurement" src="d9_s0" unit="mm" value="0.2" />
-            <character is_modifier="false" name="presence" src="d9_s0" value="absent" />
-          </biological_entity>
-          <biological_entity id="o1458" name="sporocarp" name_original="sporocarp" src="d9_s0" type="structure" />
-          <relation from="o1457" id="r324" name="part_of" negation="false" src="d9_s0" to="o1458" />
-        </statement>
-      </description>
+      <description type="morphology">Sporocarps 2–3 mm wide, proximal tooth of sporocarp 0.2 mm or absent.</description>
       <determination>4 Marsilea mollis</determination>
     </key_statement>
     <key_statement>
       <statement_id>5</statement_id>
-      <description type="morphology">
-        <statement id="d10_s0">
-          <text>Sporocarps 3.6–4 mm wide, proximal tooth of sporocarp 0.2–0.6 mm and curved away from sporocarp.</text>
-          <biological_entity id="o1459" name="sporocarp" name_original="sporocarps" src="d10_s0" type="structure">
-            <character char_type="range_value" from="3.6" from_unit="mm" name="width" src="d10_s0" to="4" to_unit="mm" />
-          </biological_entity>
-          <biological_entity constraint="proximal" id="o1460" name="tooth" name_original="tooth" src="d10_s0" type="structure">
-            <character char_type="range_value" from="0.2" from_unit="mm" name="some_measurement" src="d10_s0" to="0.6" to_unit="mm" />
-            <character constraint="away-from sporocarp" constraintid="o1462" is_modifier="false" name="course" src="d10_s0" value="curved" />
-          </biological_entity>
-          <biological_entity id="o1461" name="sporocarp" name_original="sporocarp" src="d10_s0" type="structure" />
-          <biological_entity id="o1462" name="sporocarp" name_original="sporocarp" src="d10_s0" type="structure" />
-          <relation from="o1460" id="r325" name="part_of" negation="false" src="d10_s0" to="o1461" />
-        </statement>
-      </description>
+      <description type="morphology">Sporocarps 3.6–4 mm wide, proximal tooth of sporocarp 0.2–0.6 mm and curved away from sporocarp.</description>
       <determination>3 Marsilea oligospora</determination>
     </key_statement>
   </key>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_101_d1_s0">
-      <text>Leaves with blades palmately divided into 4 obdeltate or cuneate pinnae.</text>
-      <biological_entity id="from_key_V2_101_o88" name="leaf" name_original="leaves" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_101_o89" name="blade" name_original="blades" src="d1_s0" type="structure">
-        <character constraint="into pinnae" constraintid="o90" is_modifier="false" modifier="palmately" name="shape" src="d1_s0" value="divided" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_101_o90" name="pinna" name_original="pinnae" src="d1_s0" type="structure">
-        <character is_modifier="true" name="count" src="d1_s0" value="4" />
-        <character is_modifier="true" name="shape" src="d1_s0" value="obdeltate" />
-        <character is_modifier="true" name="shape" src="d1_s0" value="cuneate" />
-      </biological_entity>
-      <relation from="from_key_V2_101_o88" id="from_key_V2_101_r27" name="with" negation="false" src="d1_s0" to="from_key_V2_101_o89" />
-    </statement>
-  </description>
 </bio:treatment>

@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="(J. Smith) Windham" date="1987" rank="genus">argyrochosma</taxon_name>
-    <taxon_name authority="(Maxon) Windham" date="1987" rank="species">limitanea</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="(J. Smith) Windham" date="1987">argyrochosma</taxon_name>
+    <taxon_name rank="species" authority="(Maxon) Windham" date="1987">limitanea</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>77: 40. 1987</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family pteridaceae;genus argyrochosma;species limitanea</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Notholaena</taxon_name>
-    <taxon_name authority="Maxon" date="unknown" rank="species">limitanea</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Notholaena</taxon_name>
+    <taxon_name rank="species" authority="Maxon" date="unknown">limitanea</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>9: 70. 1919</place_in_publication>
@@ -35,185 +27,28 @@
     <taxon_hierarchy>genus Notholaena;species limitanea;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Cheilanthes</taxon_name>
-    <taxon_name authority="(Maxon) Mickel" date="unknown" rank="species">limitanea</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Cheilanthes</taxon_name>
+    <taxon_name rank="species" authority="(Maxon) Mickel" date="unknown">limitanea</taxon_name>
     <taxon_hierarchy>genus Cheilanthes;species limitanea;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pellaea</taxon_name>
-    <taxon_name authority="(Maxon) C. V. Morton" date="unknown" rank="species">limitanea</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pellaea</taxon_name>
+    <taxon_name rank="species" authority="(Maxon) C. V. Morton" date="unknown">limitanea</taxon_name>
     <taxon_hierarchy>genus Pellaea;species limitanea;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stem scales brown.</text>
-      <biological_entity constraint="stem" id="o6078" name="scale" name_original="scales" src="d0_s0" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s0" value="brown" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves 5-30 cm.</text>
-      <biological_entity id="o6079" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character char_type="range_value" from="5" from_unit="cm" name="some_measurement" src="d0_s1" to="30" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Petiole reddish-brown to black, 0.75-2 mm diam.</text>
-      <biological_entity id="o6080" name="petiole" name_original="petiole" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s2" value="reddish-brown" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s2" value="black" />
-        <character char_type="range_value" from="reddish-brown" name="coloration" src="d0_s2" to="black" />
-        <character char_type="range_value" from="0.75" from_unit="mm" name="diameter" src="d0_s2" to="2" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Blade lanceolate to deltate, 3-5-pinnate proximally, leathery, abaxially covered by dense white farina, adaxially glabrous or sparsely glandular;</text>
-      <biological_entity id="o6081" name="blade" name_original="blade" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="deltate" />
-        <character char_type="range_value" from="lanceolate" name="shape" src="d0_s3" to="deltate" />
-        <character is_modifier="false" modifier="proximally" name="architecture_or_shape" src="d0_s3" value="3-5-pinnate" />
-        <character is_modifier="false" name="texture" src="d0_s3" value="leathery" />
-        <character is_modifier="false" modifier="adaxially" name="pubescence" src="d0_s3" value="glabrous" />
-        <character is_modifier="false" modifier="sparsely" name="pubescence" src="d0_s3" value="glandular" />
-      </biological_entity>
-      <biological_entity id="o6082" name="farina" name_original="farina" src="d0_s3" type="structure">
-        <character is_modifier="true" name="density" src="d0_s3" value="dense" />
-        <character is_modifier="true" name="coloration" src="d0_s3" value="white" />
-      </biological_entity>
-      <relation from="o6081" id="r1390" modifier="abaxially" name="covered by" negation="false" src="d0_s3" to="o6082" />
-    </statement>
-    <statement id="d0_s4">
-      <text>rachis rounded to slightly flattened adaxially.</text>
-      <biological_entity id="o6083" name="rachis" name_original="rachis" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="rounded" />
-        <character is_modifier="false" modifier="slightly" name="shape" notes="[duplicate value]" src="d0_s4" value="flattened" />
-        <character char_type="range_value" from="rounded" modifier="adaxially" name="shape" src="d0_s4" to="slightly flattened" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Pinna costae straight to slightly flexuous, branches not arising from prominent angles.</text>
-      <biological_entity constraint="pinna" id="o6084" name="costa" name_original="costae" src="d0_s5" type="structure">
-        <character is_modifier="false" name="course" notes="[duplicate value]" src="d0_s5" value="straight" />
-        <character is_modifier="false" modifier="slightly" name="course" notes="[duplicate value]" src="d0_s5" value="flexuous" />
-        <character char_type="range_value" from="straight" name="course" src="d0_s5" to="slightly flexuous" />
-      </biological_entity>
-      <biological_entity id="o6085" name="branch" name_original="branches" src="d0_s5" type="structure">
-        <character constraint="from angles" constraintid="o6086" is_modifier="false" modifier="not" name="orientation" src="d0_s5" value="arising" />
-      </biological_entity>
-      <biological_entity id="o6086" name="angle" name_original="angles" src="d0_s5" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s5" value="prominent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Ultimate segments not articulate, dark color of stalks continuing into segment bases abaxially;</text>
-      <biological_entity constraint="ultimate" id="o6087" name="segment" name_original="segments" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="not" name="architecture" src="d0_s6" value="articulate" />
-        <character constraint="of stalks" constraintid="o6088" is_modifier="false" name="coloration" src="d0_s6" value="dark color" />
-      </biological_entity>
-      <biological_entity id="o6088" name="stalk" name_original="stalks" src="d0_s6" type="structure" />
-      <biological_entity constraint="segment" id="o6089" name="base" name_original="bases" src="d0_s6" type="structure" />
-      <relation from="o6088" id="r1391" modifier="abaxially" name="continuing into" negation="false" src="d0_s6" to="o6089" />
-    </statement>
-    <statement id="d0_s7">
-      <text>segment margins recurved, often concealing sporangia;</text>
-      <biological_entity constraint="segment" id="o6090" name="margin" name_original="margins" src="d0_s7" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s7" value="recurved" />
-      </biological_entity>
-      <biological_entity id="o6091" name="sporangium" name_original="sporangia" src="d0_s7" type="structure" />
-      <relation from="o6090" id="r1392" name="often concealing" negation="false" src="d0_s7" to="o6091" />
-    </statement>
-    <statement id="d0_s8">
-      <text>veins obscure adaxially.</text>
-      <biological_entity id="o6092" name="vein" name_original="veins" src="d0_s8" type="structure">
-        <character is_modifier="false" modifier="adaxially" name="prominence" src="d0_s8" value="obscure" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>Sporangia submarginal, borne on distal 1/2 of secondary-veins, containing 32 spores.</text>
-      <biological_entity id="o6093" name="sporangium" name_original="sporangia" src="d0_s9" type="structure">
-        <character is_modifier="false" name="position" src="d0_s9" value="submarginal" />
-      </biological_entity>
-      <biological_entity constraint="distal" id="o6094" name="1/2" name_original="1/2" src="d0_s9" type="structure" />
-      <biological_entity id="o6095" name="secondary-vein" name_original="secondary-veins" src="d0_s9" type="structure" />
-      <biological_entity id="o6096" name="spore" name_original="spores" src="d0_s9" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s9" value="32" />
-      </biological_entity>
-      <relation from="o6093" id="r1393" name="borne on" negation="false" src="d0_s9" to="o6094" />
-      <relation from="o6094" id="r1394" name="part_of" negation="false" src="d0_s9" to="o6095" />
-      <relation from="o6093" id="r1395" name="containing" negation="false" src="d0_s9" to="o6096" />
-    </statement>
-  </description>
+  <description type="morphology">Stem scales  brown.  Leaves  5--30 cm.  Petiole  reddish brown to black, 0.75--2 mm diam.  Blade  lanceolate to deltate, 3--5-pinnate proximally, leathery, abaxially covered by dense white farina, adaxially glabrous or sparsely glandular; rachis rounded to slightly flattened adaxially.  Pinna costae  straight to slightly flexuous, branches not arising from prominent angles.  Ultimate segments  not articulate, dark color of stalks continuing into segment bases abaxially; segment margins recurved, often concealing sporangia; veins obscure adaxially.  Sporangia  submarginal, borne on distal 1/2 of secondary veins, containing 32 spores.</description>
   <number>4</number>
   <discussion>Populations of Argyrochosma limitanea represent two morphologically distinctive taxa treated here as subspecies. For the most part, these taxa have different geographic ranges, and genetic interaction between them is precluded because both are asexual triploids. Isozyme analyses indicate that the two subspecies have different polyploid origins, but evolutionary relationships (and proper taxonomic treatment) cannot be resolved until sexually reproducing (64-spored) progenitors are found.</discussion>
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Leaf-blades broadly deltate-ovate, 4–5-pinnate, with proximal pinnae at least 1/2 as long as blades.</text>
-          <biological_entity id="o6097" name="leaf-blade" name_original="leaf-blades" src="d1_s0" type="structure">
-            <character is_modifier="false" modifier="broadly" name="shape" src="d1_s0" value="deltate-ovate" />
-            <character is_modifier="false" name="architecture_or_shape" src="d1_s0" value="4-5-pinnate" />
-          </biological_entity>
-          <biological_entity constraint="proximal" id="o6098" name="pinna" name_original="pinnae" src="d1_s0" type="structure">
-            <character constraint="as-long-as blades" constraintid="o6099" name="quantity" src="d1_s0" value="1/2" />
-          </biological_entity>
-          <biological_entity id="o6099" name="blade" name_original="blades" src="d1_s0" type="structure" />
-          <relation from="o6097" id="r1396" name="with" negation="false" src="d1_s0" to="o6098" />
-        </statement>
-      </description>
+      <description type="morphology">Leaf blades broadly deltate-ovate, 4–5-pinnate, with proximal pinnae at least 1/2 as long as blades.</description>
       <determination>4a subsp. limitanea</determination>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Leaf-blades lanceolate to oblong, 3–4-pinnate, with proximal pinnae 1/4–1/3 as long as blades.</text>
-          <biological_entity id="o6100" name="leaf-blade" name_original="leaf-blades" src="d2_s0" type="structure">
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s0" value="lanceolate" />
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s0" value="oblong" />
-            <character char_type="range_value" from="lanceolate" name="shape" src="d2_s0" to="oblong" />
-            <character is_modifier="false" name="architecture_or_shape" src="d2_s0" value="3-4-pinnate" />
-          </biological_entity>
-          <biological_entity constraint="proximal" id="o6101" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
-            <character char_type="range_value" constraint="as-long-as blades" constraintid="o6102" from="1/4" name="quantity" src="d2_s0" to="1/3" />
-          </biological_entity>
-          <biological_entity id="o6102" name="blade" name_original="blades" src="d2_s0" type="structure" />
-          <relation from="o6100" id="r1397" name="with" negation="false" src="d2_s0" to="o6101" />
-        </statement>
-      </description>
+      <description type="morphology">Leaf blades lanceolate to oblong, 3–4-pinnate, with proximal pinnae 1/4–1/3 as long as blades.</description>
       <determination>4b subsp. mexicana</determination>
     </key_statement>
   </key>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_297_d1_s0">
-      <text>Leaf-blades broadly deltate-ovate, 4–5-pinnate, with proximal pinnae at least 1/2 as long as blades.</text>
-      <biological_entity id="from_key_V2_297_o6097" name="leaf-blade" name_original="leaf-blades" src="d1_s0" type="structure">
-        <character is_modifier="false" modifier="broadly" name="shape" src="d1_s0" value="deltate-ovate" />
-        <character is_modifier="false" name="architecture_or_shape" src="d1_s0" value="4-5-pinnate" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="from_key_V2_297_o6098" name="pinna" name_original="pinnae" src="d1_s0" type="structure">
-        <character constraint="as-long-as blades" constraintid="o6099" name="count" src="d1_s0" value="1/2" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_297_o6099" name="blade" name_original="blades" src="d1_s0" type="structure" />
-      <relation from="from_key_V2_297_o6097" id="from_key_V2_297_r1396" name="with" negation="false" src="d1_s0" to="from_key_V2_297_o6098" />
-    </statement>
-  </description>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_297_d2_s0">
-      <text>Leaf-blades lanceolate to oblong, 3–4-pinnate, with proximal pinnae 1/4–1/3 as long as blades.</text>
-      <biological_entity id="from_key_V2_297_o6100" name="leaf-blade" name_original="leaf-blades" src="d2_s0" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s0" value="lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s0" value="oblong" />
-        <character char_type="range_value" from="lanceolate" name="shape" src="d2_s0" to="oblong" />
-        <character is_modifier="false" name="architecture_or_shape" src="d2_s0" value="3-4-pinnate" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="from_key_V2_297_o6101" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
-        <character char_type="range_value" constraint="as-long-as blades" constraintid="o6102" from="1/4" name="count" src="d2_s0" to="1/3" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_297_o6102" name="blade" name_original="blades" src="d2_s0" type="structure" />
-      <relation from="from_key_V2_297_o6100" id="from_key_V2_297_r1397" name="with" negation="false" src="d2_s0" to="from_key_V2_297_o6101" />
-    </statement>
-  </description>
 </bio:treatment>

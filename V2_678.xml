@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>Richard L. Hauke</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Michaux ex DeCandolle" date="unknown" rank="family">equisetaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">Equisetum</taxon_name>
+    <taxon_name rank="family" authority="Michaux ex DeCandolle" date="unknown">equisetaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">Equisetum</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl.</publication_title>
       <place_in_publication>2: 1061. 1753; Gen. Pl. ed. 5, 484, 1754</place_in_publication>
@@ -25,121 +17,8 @@
     <taxon_hierarchy>family equisetaceae;genus Equisetum</taxon_hierarchy>
     <other_info_on_name type="etymology">[Latin equis, horse, and seta, bristle, referring to the coarse black roots of E . fluviatile ]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants perennial, rhizomatous.</text>
-      <biological_entity id="o18738" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="duration" src="d0_s0" value="perennial" />
-        <character is_modifier="false" name="architecture" src="d0_s0" value="rhizomatous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Aerial stems annual or perennial.</text>
-      <biological_entity id="o18739" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="true" name="location" src="d0_s1" value="aerial" />
-        <character is_modifier="false" name="duration" src="d0_s1" value="annual" />
-        <character is_modifier="false" name="duration" src="d0_s1" value="perennial" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Stems with hollow center and series of small carinal (under the ridges) and larger vallecular (under the valleys) canals.</text>
-      <biological_entity id="o18740" name="stem" name_original="stems" src="d0_s2" type="structure" />
-      <biological_entity id="o18741" name="center" name_original="center" src="d0_s2" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s2" value="hollow" />
-      </biological_entity>
-      <biological_entity id="o18742" name="series" name_original="series" src="d0_s2" type="structure" />
-      <biological_entity constraint="larger vallecular" id="o18743" name="canal" name_original="canals" src="d0_s2" type="structure">
-        <character is_modifier="true" name="size" src="d0_s2" value="small" />
-        <character is_modifier="true" name="arrangement" src="d0_s2" value="carinal" />
-      </biological_entity>
-      <relation from="o18740" id="r4349" name="with" negation="false" src="d0_s2" to="o18741" />
-      <relation from="o18740" id="r4350" name="with" negation="false" src="d0_s2" to="o18742" />
-      <relation from="o18742" id="r4351" name="part_of" negation="false" src="d0_s2" to="o18743" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Leaves in whorls, fused part of length into sheaths.</text>
-      <biological_entity id="o18744" name="leaf" name_original="leaves" src="d0_s3" type="structure" />
-      <biological_entity id="o18745" name="whorl" name_original="whorls" src="d0_s3" type="structure" />
-      <biological_entity id="o18746" name="part" name_original="part" src="d0_s3" type="structure">
-        <character is_modifier="true" name="fusion" src="d0_s3" value="fused" />
-      </biological_entity>
-      <biological_entity id="o18747" name="sheath" name_original="sheaths" src="d0_s3" type="structure" />
-      <relation from="o18744" id="r4352" name="in" negation="false" src="d0_s3" to="o18745" />
-      <relation from="o18746" id="r4353" name="into" negation="false" src="d0_s3" to="o18747" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Stem ridges traversing length of internode and continuing into sheaths, terminating in sheath teeth.</text>
-      <biological_entity constraint="stem" id="o18748" name="ridge" name_original="ridges" src="d0_s4" type="structure" />
-      <biological_entity id="o18749" name="sheath" name_original="sheaths" src="d0_s4" type="structure" />
-      <biological_entity constraint="sheath" id="o18750" name="tooth" name_original="teeth" src="d0_s4" type="structure" />
-      <relation from="o18748" id="r4354" modifier="of internode" name="continuing into" negation="false" src="d0_s4" to="o18749" />
-      <relation from="o18748" id="r4355" modifier="of internode" name="terminating in" negation="false" src="d0_s4" to="o18750" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Branches when present borne at nodes, erupting through base of subtending sheath.</text>
-      <biological_entity id="o18751" name="branch" name_original="branches" src="d0_s5" type="structure" />
-      <biological_entity id="o18752" name="base" name_original="base" src="d0_s5" type="structure" />
-      <biological_entity constraint="subtending" id="o18753" name="sheath" name_original="sheath" src="d0_s5" type="structure" />
-      <relation from="o18751" id="r4356" modifier="when present borne at nodes" name="erupting" negation="false" src="d0_s5" to="o18752" />
-      <relation from="o18751" id="r4357" modifier="when present borne at nodes" name="erupting" negation="false" src="d0_s5" to="o18753" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Cones terminal on green stems or, in some species, terminating special, reproductive, brown stems, composed of whorls of peltate sporophylls;</text>
-      <biological_entity id="o18754" name="cone" name_original="cones" src="d0_s6" type="structure">
-        <character constraint="on " constraintid="o18756" is_modifier="false" name="position_or_structure_subtype" src="d0_s6" value="terminal" />
-      </biological_entity>
-      <biological_entity id="o18755" name="stem" name_original="stems" src="d0_s6" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s6" value="green" />
-      </biological_entity>
-      <biological_entity id="o18756" name="species" name_original="species" src="d0_s6" type="taxon_name" />
-      <biological_entity id="o18757" name="stem" name_original="stems" src="d0_s6" type="structure" constraint="reproductive">
-        <character is_modifier="true" name="coloration" src="d0_s6" value="brown" />
-      </biological_entity>
-      <biological_entity id="o18758" name="whorl" name_original="whorls" src="d0_s6" type="structure" />
-      <biological_entity id="o18759" name="sporophyll" name_original="sporophylls" src="d0_s6" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s6" value="peltate" />
-      </biological_entity>
-      <relation from="o18754" id="r4358" name="terminating special" negation="false" src="d0_s6" to="o18757" />
-      <relation from="o18754" id="r4359" name="composed of" negation="false" src="d0_s6" to="o18758" />
-      <relation from="o18754" id="r4360" name="composed of" negation="false" src="d0_s6" to="o18759" />
-    </statement>
-    <statement id="d0_s7">
-      <text>cone apices rounded or sharply pointed;</text>
-      <biological_entity constraint="cone" id="o18760" name="apex" name_original="apices" src="d0_s7" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s7" value="rounded" />
-        <character is_modifier="false" modifier="sharply" name="shape" src="d0_s7" value="pointed" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>sporangia 5-10 per sporophyll, pendent, attached to inner surface of sporophylls, elongate, dehiscing longitudinally.</text>
-      <biological_entity id="o18761" name="sporangium" name_original="sporangia" src="d0_s8" type="structure">
-        <character char_type="range_value" constraint="per sporophyll" constraintid="o18762" from="5" name="quantity" src="d0_s8" to="10" />
-        <character is_modifier="false" name="orientation" notes="" src="d0_s8" value="pendent" />
-        <character is_modifier="false" name="fixation" src="d0_s8" value="attached" />
-      </biological_entity>
-      <biological_entity id="o18762" name="sporophyll" name_original="sporophyll" src="d0_s8" type="structure" />
-      <biological_entity id="o18764" name="sporophyll" name_original="sporophylls" src="d0_s8" type="structure" />
-      <relation from="o18763" id="r4361" name="part_of" negation="false" src="d0_s8" to="o18764" />
-    </statement>
-    <statement id="d0_s9">
-      <text>x =108.</text>
-      <biological_entity constraint="inner; sporophyll" id="o18763" name="surface" name_original="surface" src="d0_s8" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s8" value="elongate" />
-        <character is_modifier="false" modifier="longitudinally" name="dehiscence" src="d0_s8" value="dehiscing" />
-      </biological_entity>
-      <biological_entity constraint="x" id="o18765" name="chromosome" name_original="" src="d0_s9" type="structure">
-        <character name="quantity" src="d0_s9" value="108" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>nearly worldwide.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="nearly worldwide" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  perennial, rhizomatous.  Aerial stems  annual or perennial.  Stems  with hollow center and series of small carinal (under the ridges) and larger vallecular (under the valleys) canals.  Leaves  in whorls, fused part of length into sheaths.  Stem ridges  traversing length of internode and continuing into sheaths, terminating in sheath teeth.  Branches  when present borne at nodes, erupting through base of subtending sheath.  Cones  terminal on green stems or, in some species, terminating special, reproductive, brown stems, composed of whorls of peltate sporophylls; cone apices rounded or sharply pointed; sporangia 5--10 per sporophyll, pendent, attached to inner surface of sporophylls, elongate, dehiscing longitudinally.  x =108.</description>
+  <description type="distribution">nearly worldwide.</description>
   <number>1</number>
   <other_name type="common_name">Horsetail</other_name>
   <other_name type="common_name">scouring rush</other_name>
@@ -155,874 +34,212 @@
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Aerial stems persisting only 1 year or less, usually with regular whorls of branches;</text>
-          <biological_entity id="o18766" name="stem" name_original="stems" src="d1_s0" type="structure">
-            <character is_modifier="true" name="location" src="d1_s0" value="aerial" />
-            <character is_modifier="false" modifier="only" name="duration" src="d1_s0" value="persisting" />
-            <character modifier="less" name="quantity" src="d1_s0" value="1" />
-          </biological_entity>
-          <biological_entity id="o18767" name="whorl" name_original="whorls" src="d1_s0" type="structure">
-            <character is_modifier="true" name="architecture" src="d1_s0" value="regular" />
-          </biological_entity>
-          <biological_entity id="o18768" name="branch" name_original="branches" src="d1_s0" type="structure" />
-          <relation from="o18766" id="r4362" modifier="usually" name="with" negation="false" src="d1_s0" to="o18767" />
-          <relation from="o18767" id="r4363" name="part_of" negation="false" src="d1_s0" to="o18768" />
-        </statement>
-        <statement id="d1_s1">
-          <text>stomates on surface, scattered or in bands;</text>
-          <biological_entity id="o18769" name="stomate" name_original="stomates" src="d1_s1" type="structure" />
-          <biological_entity id="o18770" name="band" name_original="bands" src="d1_s1" type="structure" />
-          <relation from="o18769" id="r4364" name="on surface , scattered or in" negation="false" src="d1_s1" to="o18770" />
-        </statement>
-        <statement id="d1_s2">
-          <text>cone apex rounded.</text>
-          <biological_entity constraint="cone" id="o18771" name="apex" name_original="apex" src="d1_s2" type="structure">
-            <character is_modifier="false" name="shape" src="d1_s2" value="rounded" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Aerial stems persisting only 1 year or less, usually with regular whorls of branches; stomates on surface, scattered or in bands; cone apex rounded.</description>
       <determination>1a Subg. Equisetum</determination>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Aerial stems persisting more than a year (except some Equisetum laevigatum), usually unbranched;</text>
-          <biological_entity id="o18772" name="stem" name_original="stems" src="d2_s0" type="structure">
-            <character is_modifier="true" name="location" src="d2_s0" value="aerial" />
-            <character is_modifier="false" name="duration" src="d2_s0" value="persisting" />
-            <character is_modifier="false" modifier="usually" name="architecture" src="d2_s0" value="unbranched" />
-          </biological_entity>
-        </statement>
-        <statement id="d2_s1">
-          <text>stomates sunken, in single lines;</text>
-          <biological_entity id="o18773" name="stomate" name_original="stomates" src="d2_s1" type="structure">
-            <character is_modifier="false" name="prominence" src="d2_s1" value="sunken" />
-          </biological_entity>
-          <biological_entity id="o18774" name="line" name_original="lines" src="d2_s1" type="structure">
-            <character is_modifier="true" name="quantity" src="d2_s1" value="single" />
-          </biological_entity>
-          <relation from="o18773" id="r4365" name="in" negation="false" src="d2_s1" to="o18774" />
-        </statement>
-        <statement id="d2_s2">
-          <text>cone apex pointed (except some E. laevigatum).</text>
-          <biological_entity constraint="cone" id="o18775" name="apex" name_original="apex" src="d2_s2" type="structure">
-            <character is_modifier="false" name="shape" src="d2_s2" value="pointed" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Aerial stems persisting more than a year (except some Equisetum laevigatum), usually unbranched; stomates sunken, in single lines; cone apex pointed (except some E. laevigatum).</description>
       <determination>1b Subg. Hippochaete</determination>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d3_s0">
-          <text>Aerial stems unbranched.</text>
-          <biological_entity id="o18776" name="stem" name_original="stems" src="d3_s0" type="structure">
-            <character is_modifier="true" name="location" src="d3_s0" value="aerial" />
-            <character is_modifier="false" name="architecture" src="d3_s0" value="unbranched" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Aerial stems unbranched.</description>
       <next_statement_id>3</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d4_s0">
-          <text>Aerial stems branched with regular whorls of branches.</text>
-          <biological_entity id="o18777" name="stem" name_original="stems" src="d4_s0" type="structure">
-            <character is_modifier="true" name="location" src="d4_s0" value="aerial" />
-            <character constraint="with whorls" constraintid="o18778" is_modifier="false" name="architecture" src="d4_s0" value="branched" />
-          </biological_entity>
-          <biological_entity id="o18778" name="whorl" name_original="whorls" src="d4_s0" type="structure">
-            <character is_modifier="true" name="architecture" src="d4_s0" value="regular" />
-          </biological_entity>
-          <biological_entity id="o18779" name="branch" name_original="branches" src="d4_s0" type="structure" />
-          <relation from="o18778" id="r4366" name="part_of" negation="false" src="d4_s0" to="o18779" />
-        </statement>
-      </description>
+      <description type="morphology">Aerial stems branched with regular whorls of branches.</description>
       <next_statement_id>8</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d5_s0">
-          <text>Aerial stems green.</text>
-          <biological_entity id="o18780" name="stem" name_original="stems" src="d5_s0" type="structure">
-            <character is_modifier="true" name="location" src="d5_s0" value="aerial" />
-            <character is_modifier="false" name="coloration" src="d5_s0" value="green" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Aerial stems green.</description>
       <next_statement_id>4</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d6_s0">
-          <text>Aerial stems not green.</text>
-          <biological_entity id="o18781" name="stem" name_original="stems" src="d6_s0" type="structure">
-            <character is_modifier="true" name="location" src="d6_s0" value="aerial" />
-            <character is_modifier="false" modifier="not" name="coloration" src="d6_s0" value="green" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Aerial stems not green.</description>
       <next_statement_id>5</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>4</statement_id>
-      <description type="morphology">
-        <statement id="d7_s0">
-          <text>Sheaths square in face view;</text>
-          <biological_entity id="o18782" name="sheath" name_original="sheaths" src="d7_s0" type="structure">
-            <character is_modifier="false" modifier="in face view" name="shape" src="d7_s0" value="square" />
-          </biological_entity>
-        </statement>
-        <statement id="d7_s1">
-          <text>teeth more than 11 per sheath, often black throughout or with narrow white margins, 2-3 mm.</text>
-          <biological_entity id="o18783" name="tooth" name_original="teeth" src="d7_s1" type="structure">
-            <character char_type="range_value" constraint="per sheath" constraintid="o18784" from="11" name="quantity" src="d7_s1" upper_restricted="false" />
-            <character is_modifier="false" modifier="often; throughout" name="coloration" notes="" src="d7_s1" value="black" />
-            <character is_modifier="false" name="coloration" src="d7_s1" value="with narrow white margins" />
-            <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" notes="" src="d7_s1" to="3" to_unit="mm" />
-          </biological_entity>
-          <biological_entity id="o18784" name="sheath" name_original="sheath" src="d7_s1" type="structure" />
-          <biological_entity id="o18785" name="margin" name_original="margins" src="d7_s1" type="structure">
-            <character is_modifier="true" name="size_or_width" src="d7_s1" value="narrow" />
-            <character is_modifier="true" name="coloration" src="d7_s1" value="white" />
-          </biological_entity>
-          <relation from="o18783" id="r4367" name="with" negation="false" src="d7_s1" to="o18785" />
-        </statement>
-      </description>
+      <description type="morphology">Sheaths square in face view; teeth more than 11 per sheath, often black throughout or with narrow white margins, 2--3 mm.</description>
       <determination>1 Equisetum fluviatile</determination>
     </key_statement>
     <key_statement>
       <statement_id>4</statement_id>
-      <description type="morphology">
-        <statement id="d8_s0">
-          <text>Sheaths elongate in face view;</text>
-          <biological_entity id="o18786" name="sheath" name_original="sheaths" src="d8_s0" type="structure">
-            <character is_modifier="false" modifier="in face view" name="shape" src="d8_s0" value="elongate" />
-          </biological_entity>
-        </statement>
-        <statement id="d8_s1">
-          <text>teeth fewer than 11 per sheath, with prominent white margins and dark centers, 2-5 mm.</text>
-          <biological_entity id="o18787" name="tooth" name_original="teeth" src="d8_s1" type="structure">
-            <character char_type="range_value" constraint="per sheath" constraintid="o18788" from="0" name="quantity" src="d8_s1" to="11" />
-            <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" notes="" src="d8_s1" to="5" to_unit="mm" />
-          </biological_entity>
-          <biological_entity id="o18788" name="sheath" name_original="sheath" src="d8_s1" type="structure" />
-          <biological_entity id="o18789" name="margin" name_original="margins" src="d8_s1" type="structure">
-            <character is_modifier="true" name="prominence" src="d8_s1" value="prominent" />
-            <character is_modifier="true" name="coloration" src="d8_s1" value="white" />
-          </biological_entity>
-          <biological_entity id="o18790" name="center" name_original="centers" src="d8_s1" type="structure">
-            <character is_modifier="true" name="coloration" src="d8_s1" value="dark" />
-          </biological_entity>
-          <relation from="o18787" id="r4368" name="with" negation="false" src="d8_s1" to="o18789" />
-        </statement>
-      </description>
+      <description type="morphology">Sheaths elongate in face view; teeth fewer than 11 per sheath, with prominent white margins and dark centers, 2--5 mm.</description>
       <determination>2 Equisetum palustre</determination>
     </key_statement>
     <key_statement>
       <statement_id>5</statement_id>
-      <description type="morphology">
-        <statement id="d9_s0">
-          <text>Sheath teeth reddish, papery, coherent into 3-4 large groups.</text>
-          <biological_entity constraint="sheath" id="o18791" name="tooth" name_original="teeth" src="d9_s0" type="structure">
-            <character is_modifier="false" name="coloration" src="d9_s0" value="reddish" />
-            <character is_modifier="false" name="texture" src="d9_s0" value="papery" />
-            <character constraint="into groups" constraintid="o18792" is_modifier="false" name="fusion" src="d9_s0" value="coherent" />
-          </biological_entity>
-          <biological_entity id="o18792" name="group" name_original="groups" src="d9_s0" type="structure">
-            <character char_type="range_value" from="3" is_modifier="true" name="quantity" src="d9_s0" to="4" />
-            <character is_modifier="true" name="size" src="d9_s0" value="large" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sheath teeth reddish, papery, coherent into 3--4 large groups.</description>
       <determination>6 Equisetum sylvaticum</determination>
     </key_statement>
     <key_statement>
       <statement_id>5</statement_id>
-      <description type="morphology">
-        <statement id="d10_s0">
-          <text>Sheath teeth black or brown, firm, separate or coherent in more than 4 small groups.</text>
-          <biological_entity constraint="sheath" id="o18793" name="tooth" name_original="teeth" src="d10_s0" type="structure">
-            <character is_modifier="false" name="coloration" src="d10_s0" value="black" />
-            <character is_modifier="false" name="coloration" src="d10_s0" value="brown" />
-            <character is_modifier="false" name="texture" src="d10_s0" value="firm" />
-            <character is_modifier="false" name="arrangement" src="d10_s0" value="separate" />
-            <character constraint="in groups" constraintid="o18794" is_modifier="false" name="fusion" src="d10_s0" value="coherent" />
-          </biological_entity>
-          <biological_entity id="o18794" name="group" name_original="groups" src="d10_s0" type="structure">
-            <character char_type="range_value" from="4" is_modifier="true" name="quantity" src="d10_s0" upper_restricted="false" />
-            <character is_modifier="true" name="size" src="d10_s0" value="small" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sheath teeth black or brown, firm, separate or coherent in more than 4 small groups.</description>
       <next_statement_id>6</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>6</statement_id>
-      <description type="morphology">
-        <statement id="d11_s0">
-          <text>Aerial stems with stomates, persistent, becoming green and branched.</text>
-          <biological_entity id="o18795" name="stem" name_original="stems" src="d11_s0" type="structure">
-            <character is_modifier="true" name="location" src="d11_s0" value="aerial" />
-            <character is_modifier="false" name="duration" notes="" src="d11_s0" value="persistent" />
-            <character is_modifier="false" modifier="becoming" name="coloration" src="d11_s0" value="green" />
-            <character is_modifier="false" name="architecture" src="d11_s0" value="branched" />
-          </biological_entity>
-          <biological_entity id="o18796" name="stomate" name_original="stomates" src="d11_s0" type="structure" />
-          <relation from="o18795" id="r4369" name="with" negation="false" src="d11_s0" to="o18796" />
-        </statement>
-      </description>
+      <description type="morphology">Aerial stems with stomates, persistent, becoming green and branched.</description>
       <determination>7 Equisetum pratense</determination>
     </key_statement>
     <key_statement>
       <statement_id>6</statement_id>
-      <description type="morphology">
-        <statement id="d12_s0">
-          <text>Aerial stems lacking stomates, dying back after spores shed.</text>
-          <biological_entity id="o18797" name="stem" name_original="stems" src="d12_s0" type="structure">
-            <character is_modifier="true" name="location" src="d12_s0" value="aerial" />
-            <character constraint="after spores" constraintid="o18799" is_modifier="false" name="condition" notes="" src="d12_s0" value="dying" />
-          </biological_entity>
-          <biological_entity id="o18798" name="stomate" name_original="stomates" src="d12_s0" type="structure">
-            <character is_modifier="true" name="quantity" src="d12_s0" value="lacking" />
-          </biological_entity>
-          <biological_entity id="o18799" name="spore" name_original="spores" src="d12_s0" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Aerial stems lacking stomates, dying back after spores are shed.</description>
       <next_statement_id>7</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>7</statement_id>
-      <description type="morphology">
-        <statement id="d13_s0">
-          <text>Sheath teeth more than 14.</text>
-          <biological_entity constraint="sheath" id="o18800" name="tooth" name_original="teeth" src="d13_s0" type="structure">
-            <character char_type="range_value" from="14" name="quantity" src="d13_s0" upper_restricted="false" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sheath teeth more than 14.</description>
       <determination>3 Equisetum telmateia</determination>
     </key_statement>
     <key_statement>
       <statement_id>7</statement_id>
-      <description type="morphology">
-        <statement id="d14_s0">
-          <text>Sheath teeth fewer than 14.</text>
-          <biological_entity constraint="sheath" id="o18801" name="tooth" name_original="teeth" src="d14_s0" type="structure">
-            <character char_type="range_value" from="0" name="quantity" src="d14_s0" to="14" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sheath teeth fewer than 14.</description>
       <determination>4 Equisetum arvense</determination>
     </key_statement>
     <key_statement>
       <statement_id>8</statement_id>
-      <description type="morphology">
-        <statement id="d15_s0">
-          <text>First internode of each branch shorter than subtending stem sheath;</text>
-          <biological_entity id="o18803" name="internode" name_original="internode" src="d15_s0" type="structure">
-            <character constraint="than subtending stem sheath" constraintid="o18805" is_modifier="false" name="height_or_length_or_size" src="d15_s0" value="shorter" />
-          </biological_entity>
-          <biological_entity id="o18804" name="branch" name_original="branch" src="d15_s0" type="structure" />
-          <biological_entity constraint="stem" id="o18805" name="sheath" name_original="sheath" src="d15_s0" type="structure" constraint_original="subtending stem" />
-          <relation from="o18803" id="r4370" name="part_of" negation="false" src="d15_s0" to="o18804" />
-        </statement>
-        <statement id="d15_s1">
-          <text>branch valleys rounded.</text>
-          <biological_entity constraint="branch" id="o18806" name="valley" name_original="valleys" src="d15_s1" type="structure">
-            <character is_modifier="false" name="shape" src="d15_s1" value="rounded" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">First internode of each branch shorter than subtending stem sheath; branch valleys rounded.</description>
       <next_statement_id>9</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>8</statement_id>
-      <description type="morphology">
-        <statement id="d16_s0">
-          <text>First internode of each branch equal to or longer than subtending stem sheath;</text>
-          <biological_entity id="o18808" name="internode" name_original="internode" src="d16_s0" type="structure">
-            <character is_modifier="false" name="variability" src="d16_s0" value="equal" />
-            <character constraint="than subtending stem sheath" constraintid="o18810" is_modifier="false" name="length_or_size" src="d16_s0" value="longer" />
-          </biological_entity>
-          <biological_entity id="o18809" name="branch" name_original="branch" src="d16_s0" type="structure" />
-          <biological_entity constraint="stem" id="o18810" name="sheath" name_original="sheath" src="d16_s0" type="structure" constraint_original="subtending stem" />
-          <relation from="o18808" id="r4371" name="part_of" negation="false" src="d16_s0" to="o18809" />
-        </statement>
-        <statement id="d16_s1">
-          <text>branch valleys channeled.</text>
-          <biological_entity constraint="branch" id="o18811" name="valley" name_original="valleys" src="d16_s1" type="structure">
-            <character is_modifier="false" name="shape" src="d16_s1" value="channeled" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">First internode of each branch equal to or longer than subtending stem sheath; branch valleys channeled.</description>
       <next_statement_id>11</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>9</statement_id>
-      <description type="morphology">
-        <statement id="d17_s0">
-          <text>Branches solid, branch ridges furrowed.</text>
-          <biological_entity id="o18812" name="branch" name_original="branches" src="d17_s0" type="structure">
-            <character is_modifier="false" name="architecture" src="d17_s0" value="solid" />
-          </biological_entity>
-          <biological_entity constraint="branch" id="o18813" name="ridge" name_original="ridges" src="d17_s0" type="structure">
-            <character is_modifier="false" name="architecture" src="d17_s0" value="furrowed" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Branches solid, branch ridges furrowed.</description>
       <determination>3 Equisetum telmateia</determination>
     </key_statement>
     <key_statement>
       <statement_id>9</statement_id>
-      <description type="morphology">
-        <statement id="d18_s0">
-          <text>Branches hollow, branch ridges rounded.</text>
-          <biological_entity id="o18814" name="branch" name_original="branches" src="d18_s0" type="structure">
-            <character is_modifier="false" name="architecture" src="d18_s0" value="hollow" />
-          </biological_entity>
-          <biological_entity constraint="branch" id="o18815" name="ridge" name_original="ridges" src="d18_s0" type="structure">
-            <character is_modifier="false" name="shape" src="d18_s0" value="rounded" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Branches hollow, branch ridges rounded.</description>
       <next_statement_id>10</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>10</statement_id>
-      <description type="morphology">
-        <statement id="d19_s0">
-          <text>Sheaths square in face view;</text>
-          <biological_entity id="o18816" name="sheath" name_original="sheaths" src="d19_s0" type="structure">
-            <character is_modifier="false" modifier="in face view" name="shape" src="d19_s0" value="square" />
-          </biological_entity>
-        </statement>
-        <statement id="d19_s1">
-          <text>teeth more than 11 per sheath, dark, occasionally with narrow white margins, 2-3 mm.</text>
-          <biological_entity id="o18817" name="tooth" name_original="teeth" src="d19_s1" type="structure">
-            <character char_type="range_value" constraint="per sheath" constraintid="o18818" from="11" name="quantity" src="d19_s1" upper_restricted="false" />
-            <character is_modifier="false" name="coloration" notes="" src="d19_s1" value="dark" />
-            <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" notes="" src="d19_s1" to="3" to_unit="mm" />
-          </biological_entity>
-          <biological_entity id="o18818" name="sheath" name_original="sheath" src="d19_s1" type="structure" />
-          <biological_entity id="o18819" name="margin" name_original="margins" src="d19_s1" type="structure">
-            <character is_modifier="true" name="size_or_width" src="d19_s1" value="narrow" />
-            <character is_modifier="true" name="coloration" src="d19_s1" value="white" />
-          </biological_entity>
-          <relation from="o18817" id="r4372" modifier="occasionally" name="with" negation="false" src="d19_s1" to="o18819" />
-        </statement>
-      </description>
+      <description type="morphology">Sheaths square in face view; teeth more than 11 per sheath, dark, occasionally with narrow white margins, 2--3 mm.</description>
       <determination>1 Equisetum fluviatile</determination>
     </key_statement>
     <key_statement>
       <statement_id>10</statement_id>
-      <description type="morphology">
-        <statement id="d20_s0">
-          <text>Sheaths elongate in face view;</text>
-          <biological_entity id="o18820" name="sheath" name_original="sheaths" src="d20_s0" type="structure">
-            <character is_modifier="false" modifier="in face view" name="shape" src="d20_s0" value="elongate" />
-          </biological_entity>
-        </statement>
-        <statement id="d20_s1">
-          <text>teeth fewer than 11 per sheath, with prominent white margins and dark centers, 2-5 mm.</text>
-          <biological_entity id="o18821" name="tooth" name_original="teeth" src="d20_s1" type="structure">
-            <character char_type="range_value" constraint="per sheath" constraintid="o18822" from="0" name="quantity" src="d20_s1" to="11" />
-            <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" notes="" src="d20_s1" to="5" to_unit="mm" />
-          </biological_entity>
-          <biological_entity id="o18822" name="sheath" name_original="sheath" src="d20_s1" type="structure" />
-          <biological_entity id="o18823" name="margin" name_original="margins" src="d20_s1" type="structure">
-            <character is_modifier="true" name="prominence" src="d20_s1" value="prominent" />
-            <character is_modifier="true" name="coloration" src="d20_s1" value="white" />
-          </biological_entity>
-          <biological_entity id="o18824" name="center" name_original="centers" src="d20_s1" type="structure">
-            <character is_modifier="true" name="coloration" src="d20_s1" value="dark" />
-          </biological_entity>
-          <relation from="o18821" id="r4373" name="with" negation="false" src="d20_s1" to="o18823" />
-        </statement>
-      </description>
+      <description type="morphology">Sheaths elongate in face view; teeth fewer than 11 per sheath, with prominent white margins and dark centers, 2--5 mm.</description>
       <determination>2 Equisetum palustre</determination>
     </key_statement>
     <key_statement>
       <statement_id>11</statement_id>
-      <description type="morphology">
-        <statement id="d21_s0">
-          <text>Aerial stem sheath teeth reddish, papery, coherent in 3-4 large groups;</text>
-          <biological_entity constraint="sheath" id="o18825" name="tooth" name_original="teeth" src="d21_s0" type="structure" constraint_original="stem sheath">
-            <character is_modifier="true" name="location" src="d21_s0" value="aerial" />
-            <character is_modifier="false" name="coloration" src="d21_s0" value="reddish" />
-            <character is_modifier="false" name="texture" src="d21_s0" value="papery" />
-            <character constraint="in groups" constraintid="o18826" is_modifier="false" name="fusion" src="d21_s0" value="coherent" />
-          </biological_entity>
-          <biological_entity id="o18826" name="group" name_original="groups" src="d21_s0" type="structure">
-            <character char_type="range_value" from="3" is_modifier="true" name="quantity" src="d21_s0" to="4" />
-            <character is_modifier="true" name="size" src="d21_s0" value="large" />
-          </biological_entity>
-        </statement>
-        <statement id="d21_s1">
-          <text>stem branches also branched.</text>
-          <biological_entity constraint="stem" id="o18827" name="branch" name_original="branches" src="d21_s1" type="structure">
-            <character is_modifier="false" name="architecture" src="d21_s1" value="branched" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Aerial stem sheath teeth reddish, papery, coherent in 3--4 large groups; stem branches also branched.</description>
       <determination>6 Equisetum sylvaticum</determination>
     </key_statement>
     <key_statement>
       <statement_id>11</statement_id>
-      <description type="morphology">
-        <statement id="d22_s0">
-          <text>Aerial stem sheath teeth dark, firm, separate or coherent in more than 4 small groups;</text>
-          <biological_entity constraint="sheath" id="o18828" name="tooth" name_original="teeth" src="d22_s0" type="structure" constraint_original="stem sheath">
-            <character is_modifier="true" name="location" src="d22_s0" value="aerial" />
-            <character is_modifier="false" name="coloration" src="d22_s0" value="dark" />
-            <character is_modifier="false" name="texture" src="d22_s0" value="firm" />
-            <character is_modifier="false" name="arrangement" src="d22_s0" value="separate" />
-            <character constraint="in groups" constraintid="o18829" is_modifier="false" name="fusion" src="d22_s0" value="coherent" />
-          </biological_entity>
-          <biological_entity id="o18829" name="group" name_original="groups" src="d22_s0" type="structure">
-            <character char_type="range_value" from="4" is_modifier="true" name="quantity" src="d22_s0" upper_restricted="false" />
-            <character is_modifier="true" name="size" src="d22_s0" value="small" />
-          </biological_entity>
-        </statement>
-        <statement id="d22_s1">
-          <text>stem branches unbranched.</text>
-          <biological_entity constraint="stem" id="o18830" name="branch" name_original="branches" src="d22_s1" type="structure">
-            <character is_modifier="false" name="architecture" src="d22_s1" value="unbranched" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Aerial stem sheath teeth dark, firm, separate or coherent in more than 4 small groups; stem branches unbranched.</description>
       <next_statement_id>12</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>12</statement_id>
-      <description type="morphology">
-        <statement id="d23_s0">
-          <text>Branch sheath teeth deltate;</text>
-          <biological_entity constraint="sheath" id="o18831" name="tooth" name_original="teeth" src="d23_s0" type="structure" constraint_original="branch sheath">
-            <character is_modifier="false" name="shape" src="d23_s0" value="deltate" />
-          </biological_entity>
-        </statement>
-        <statement id="d23_s1">
-          <text>branches spreading.</text>
-          <biological_entity id="o18832" name="branch" name_original="branches" src="d23_s1" type="structure">
-            <character is_modifier="false" name="orientation" src="d23_s1" value="spreading" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Branch sheath teeth deltate; branches spreading.</description>
       <determination>7 Equisetum pratense</determination>
     </key_statement>
     <key_statement>
       <statement_id>12</statement_id>
-      <description type="morphology">
-        <statement id="d24_s0">
-          <text>Branch sheath teeth attenuate;</text>
-          <biological_entity constraint="sheath" id="o18833" name="tooth" name_original="teeth" src="d24_s0" type="structure" constraint_original="branch sheath">
-            <character is_modifier="false" name="shape" src="d24_s0" value="attenuate" />
-          </biological_entity>
-        </statement>
-        <statement id="d24_s1">
-          <text>branches ascending.</text>
-          <biological_entity id="o18834" name="branch" name_original="branches" src="d24_s1" type="structure">
-            <character is_modifier="false" name="orientation" src="d24_s1" value="ascending" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Branch sheath teeth attenuate; branches ascending.</description>
       <next_statement_id>13</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>13</statement_id>
-      <description type="morphology">
-        <statement id="d25_s0">
-          <text>Lowest whorls of branches with 1st internode longer than sheath;</text>
-          <biological_entity constraint="lowest" id="o18835" name="whorl" name_original="whorls" src="d25_s0" type="structure">
-            <character constraint="than sheath" constraintid="o18838" is_modifier="false" name="length_or_size" src="d25_s0" value="longer" />
-          </biological_entity>
-          <biological_entity id="o18836" name="branch" name_original="branches" src="d25_s0" type="structure" />
-          <biological_entity id="o18837" name="internode" name_original="internode" src="d25_s0" type="structure">
-            <character constraint="than sheath" constraintid="o18838" is_modifier="false" name="length_or_size" src="d25_s0" value="longer" />
-          </biological_entity>
-          <biological_entity id="o18838" name="sheath" name_original="sheath" src="d25_s0" type="structure" />
-          <relation from="o18835" id="r4374" name="part_of" negation="false" src="d25_s0" to="o18836" />
-          <relation from="o18835" id="r4375" name="with" negation="false" src="d25_s0" to="o18837" />
-        </statement>
-        <statement id="d25_s1">
-          <text>spores green, spheric.</text>
-          <biological_entity id="o18839" name="spore" name_original="spores" src="d25_s1" type="structure">
-            <character is_modifier="false" name="coloration" src="d25_s1" value="green" />
-            <character is_modifier="false" name="shape" src="d25_s1" value="spheric" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Lowest whorls of branches with 1st internode longer than sheath; spores green, spheric.</description>
       <determination>4 Equisetum arvense</determination>
     </key_statement>
     <key_statement>
       <statement_id>13</statement_id>
-      <description type="morphology">
-        <statement id="d26_s0">
-          <text>Lowest whorls of branches with 1st internode nearly equal to sheath;</text>
-          <biological_entity constraint="lowest" id="o18840" name="whorl" name_original="whorls" src="d26_s0" type="structure" />
-          <biological_entity id="o18841" name="branch" name_original="branches" src="d26_s0" type="structure" />
-          <biological_entity id="o18842" name="internode" name_original="internode" src="d26_s0" type="structure">
-            <character constraint="to sheath" constraintid="o18843" is_modifier="false" modifier="nearly" name="variability" src="d26_s0" value="equal" />
-          </biological_entity>
-          <biological_entity id="o18843" name="sheath" name_original="sheath" src="d26_s0" type="structure" />
-          <relation from="o18840" id="r4376" name="part_of" negation="false" src="d26_s0" to="o18841" />
-          <relation from="o18840" id="r4377" name="with" negation="false" src="d26_s0" to="o18842" />
-        </statement>
-        <statement id="d26_s1">
-          <text>spores white, misshapen.</text>
-          <biological_entity id="o18844" name="spore" name_original="spores" src="d26_s1" type="structure">
-            <character is_modifier="false" name="coloration" src="d26_s1" value="white" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Lowest whorls of branches with 1st internode nearly equal to sheath; spores white, misshapen.</description>
       <determination>5 Equisetum ×litorale</determination>
     </key_statement>
     <key_statement>
       <statement_id>14</statement_id>
-      <description type="morphology">
-        <statement id="d27_s0">
-          <text>Aerial stems regularly branched;</text>
-          <biological_entity id="o18845" name="stem" name_original="stems" src="d27_s0" type="structure">
-            <character is_modifier="true" name="location" src="d27_s0" value="aerial" />
-            <character is_modifier="false" modifier="regularly" name="architecture" src="d27_s0" value="branched" />
-          </biological_entity>
-        </statement>
-        <statement id="d27_s1">
-          <text>stomatal lines occasionally doubled.</text>
-          <biological_entity constraint="stomatal" id="o18846" name="line" name_original="lines" src="d27_s1" type="structure">
-            <character is_modifier="false" modifier="occasionally" name="quantity" src="d27_s1" value="doubled" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Aerial stems regularly branched; stomatal lines occasionally doubled.</description>
       <determination>8 Equisetum ramosissimum</determination>
     </key_statement>
     <key_statement>
       <statement_id>14</statement_id>
-      <description type="morphology">
-        <statement id="d28_s0">
-          <text>Aerial stems unbranched or with scattered branches;</text>
-          <biological_entity id="o18847" name="stem" name_original="stems" src="d28_s0" type="structure">
-            <character is_modifier="true" name="location" src="d28_s0" value="aerial" />
-            <character is_modifier="false" name="architecture" src="d28_s0" value="unbranched" />
-            <character is_modifier="false" name="architecture" src="d28_s0" value="with scattered branches" />
-          </biological_entity>
-          <biological_entity id="o18848" name="branch" name_original="branches" src="d28_s0" type="structure">
-            <character is_modifier="true" name="arrangement" src="d28_s0" value="scattered" />
-          </biological_entity>
-          <relation from="o18847" id="r4378" name="with" negation="false" src="d28_s0" to="o18848" />
-        </statement>
-        <statement id="d28_s1">
-          <text>stomatal lines always single.</text>
-          <biological_entity constraint="stomatal" id="o18849" name="line" name_original="lines" src="d28_s1" type="structure">
-            <character is_modifier="false" modifier="always" name="quantity" src="d28_s1" value="single" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Aerial stems unbranched or with scattered branches; stomatal lines always single.</description>
       <next_statement_id>15</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>15</statement_id>
-      <description type="morphology">
-        <statement id="d29_s0">
-          <text>Cone apex rounded;</text>
-          <biological_entity constraint="cone" id="o18850" name="apex" name_original="apex" src="d29_s0" type="structure">
-            <character is_modifier="false" name="shape" src="d29_s0" value="rounded" />
-          </biological_entity>
-        </statement>
-        <statement id="d29_s1">
-          <text>aerial stems annual.</text>
-          <biological_entity id="o18851" name="stem" name_original="stems" src="d29_s1" type="structure">
-            <character is_modifier="true" name="location" src="d29_s1" value="aerial" />
-            <character is_modifier="false" name="duration" src="d29_s1" value="annual" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Cone apex rounded; aerial stems annual.</description>
       <determination>9 Equisetum laevigatum</determination>
     </key_statement>
     <key_statement>
       <statement_id>15</statement_id>
-      <description type="morphology">
-        <statement id="d30_s0">
-          <text>Cone apex pointed;</text>
-          <biological_entity constraint="cone" id="o18852" name="apex" name_original="apex" src="d30_s0" type="structure">
-            <character is_modifier="false" name="shape" src="d30_s0" value="pointed" />
-          </biological_entity>
-        </statement>
-        <statement id="d30_s1">
-          <text>aerial stems perennial (at least persisting over winter in California populations of E. laevigatum).</text>
-          <biological_entity id="o18853" name="stem" name_original="stems" src="d30_s1" type="structure">
-            <character is_modifier="true" name="location" src="d30_s1" value="aerial" />
-            <character is_modifier="false" name="duration" src="d30_s1" value="perennial" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Cone apex pointed; aerial stems perennial (at least persisting over winter in California populations of E. laevigatum).</description>
       <next_statement_id>16</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>16</statement_id>
-      <description type="morphology">
-        <statement id="d31_s0">
-          <text>Spores white, misshapen.</text>
-          <biological_entity id="o18854" name="spore" name_original="spores" src="d31_s0" type="structure">
-            <character is_modifier="false" name="coloration" src="d31_s0" value="white" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Spores white, misshapen.</description>
       <next_statement_id>17</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>16</statement_id>
-      <description type="morphology">
-        <statement id="d32_s0">
-          <text>Spores green, spheric.</text>
-          <biological_entity id="o18855" name="spore" name_original="spores" src="d32_s0" type="structure">
-            <character is_modifier="false" name="coloration" src="d32_s0" value="green" />
-            <character is_modifier="false" name="shape" src="d32_s0" value="spheric" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Spores green, spheric.</description>
       <next_statement_id>19</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>17</statement_id>
-      <description type="morphology">
-        <statement id="d33_s0">
-          <text>Sheaths green;</text>
-          <biological_entity id="o18856" name="sheath" name_original="sheaths" src="d33_s0" type="structure">
-            <character is_modifier="false" name="coloration" src="d33_s0" value="green" />
-          </biological_entity>
-        </statement>
-        <statement id="d33_s1">
-          <text>teeth persistent.</text>
-          <biological_entity id="o18857" name="tooth" name_original="teeth" src="d33_s1" type="structure">
-            <character is_modifier="false" name="duration" src="d33_s1" value="persistent" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sheaths green; teeth persistent.</description>
       <determination>14 Equisetum ×nelsonii</determination>
     </key_statement>
     <key_statement>
       <statement_id>17</statement_id>
-      <description type="morphology">
-        <statement id="d34_s0">
-          <text>Sheaths dark-girdled;</text>
-          <biological_entity id="o18858" name="sheath" name_original="sheaths" src="d34_s0" type="structure">
-            <character is_modifier="false" name="coloration" src="d34_s0" value="dark-girdled" />
-          </biological_entity>
-        </statement>
-        <statement id="d34_s1">
-          <text>teeth persistent or shed.</text>
-          <biological_entity id="o18859" name="tooth" name_original="teeth" src="d34_s1" type="structure">
-            <character is_modifier="false" name="duration" src="d34_s1" value="persistent" />
-            <character name="duration" src="d34_s1" value="shed" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sheaths dark-girdled; teeth persistent or shed.</description>
       <next_statement_id>18</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>18</statement_id>
-      <description type="morphology">
-        <statement id="d35_s0">
-          <text>Teeth 14 or fewer per sheath, persistent.</text>
-          <biological_entity id="o18860" name="tooth" name_original="teeth" src="d35_s0" type="structure">
-            <character name="quantity" src="d35_s0" unit="or fewerper" value="14" />
-            <character is_modifier="false" name="duration" notes="" src="d35_s0" value="persistent" />
-          </biological_entity>
-          <biological_entity id="o18861" name="sheath" name_original="sheath" src="d35_s0" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Teeth 14 or fewer per sheath, persistent.</description>
       <determination>13 Equisetum ×mackaii</determination>
     </key_statement>
     <key_statement>
       <statement_id>18</statement_id>
-      <description type="morphology">
-        <statement id="d36_s0">
-          <text>Teeth more than 14 per sheath, usually shed.</text>
-          <biological_entity id="o18862" name="tooth" name_original="teeth" src="d36_s0" type="structure">
-            <character char_type="range_value" constraint="per sheath" constraintid="o18863" from="14" name="quantity" src="d36_s0" upper_restricted="false" />
-          </biological_entity>
-          <biological_entity id="o18863" name="sheath" name_original="sheath" src="d36_s0" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Teeth more than 14 per sheath, usually shed.</description>
       <determination>11 Equisetum ×ferrissii</determination>
     </key_statement>
     <key_statement>
       <statement_id>19</statement_id>
-      <description type="morphology">
-        <statement id="d37_s0">
-          <text>Sheaths dark-girdled at most nodes of stem;</text>
-          <biological_entity id="o18864" name="sheath" name_original="sheaths" src="d37_s0" type="structure">
-            <character constraint="at nodes" constraintid="o18865" is_modifier="false" name="coloration" src="d37_s0" value="dark-girdled" />
-          </biological_entity>
-          <biological_entity id="o18865" name="node" name_original="nodes" src="d37_s0" type="structure" />
-          <biological_entity id="o18866" name="stem" name_original="stem" src="d37_s0" type="structure" />
-          <relation from="o18865" id="r4379" name="part_of" negation="false" src="d37_s0" to="o18866" />
-        </statement>
-        <statement id="d37_s1">
-          <text>teeth 14 or more per sheath, usually shed;</text>
-          <biological_entity id="o18867" name="tooth" name_original="teeth" src="d37_s1" type="structure">
-            <character name="quantity" src="d37_s1" unit="or moreper" value="14" />
-          </biological_entity>
-          <biological_entity id="o18868" name="sheath" name_original="sheath" src="d37_s1" type="structure" />
-        </statement>
-        <statement id="d37_s2">
-          <text>articulation line visible.</text>
-          <biological_entity constraint="articulation" id="o18869" name="line" name_original="line" src="d37_s2" type="structure">
-            <character is_modifier="false" name="prominence" src="d37_s2" value="visible" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sheaths dark-girdled at most nodes of stem; teeth 14 or more per sheath, usually shed; articulation line visible.</description>
       <determination>10 Equisetum hyemale</determination>
     </key_statement>
     <key_statement>
       <statement_id>19</statement_id>
-      <description type="morphology">
-        <statement id="d38_s0">
-          <text>Sheaths green or obscurely girdled at nodes near base of stem;</text>
-          <biological_entity id="o18870" name="sheath" name_original="sheaths" src="d38_s0" type="structure">
-            <character is_modifier="false" name="coloration" src="d38_s0" value="green" />
-            <character name="coloration" src="d38_s0" value="obscurely" />
-          </biological_entity>
-          <biological_entity id="o18871" name="node" name_original="nodes" src="d38_s0" type="structure" />
-          <biological_entity id="o18872" name="base" name_original="base" src="d38_s0" type="structure" />
-          <biological_entity id="o18873" name="stem" name_original="stem" src="d38_s0" type="structure" />
-          <relation from="o18870" id="r4380" name="girdled at" negation="false" src="d38_s0" to="o18871" />
-          <relation from="o18870" id="r4381" name="near" negation="false" src="d38_s0" to="o18872" />
-          <relation from="o18872" id="r4382" name="part_of" negation="false" src="d38_s0" to="o18873" />
-        </statement>
-        <statement id="d38_s1">
-          <text>teeth 32 or fewer per sheath, usually persistent, shed in some species;</text>
-          <biological_entity id="o18874" name="tooth" name_original="teeth" src="d38_s1" type="structure">
-            <character name="quantity" src="d38_s1" unit="or fewerper" value="32" />
-            <character is_modifier="false" modifier="usually" name="duration" notes="" src="d38_s1" value="persistent" />
-          </biological_entity>
-          <biological_entity id="o18875" name="sheath" name_original="sheath" src="d38_s1" type="structure" />
-          <biological_entity id="o18876" name="species" name_original="species" src="d38_s1" type="taxon_name" />
-          <relation from="o18874" id="r4383" name="shed in some" negation="false" src="d38_s1" to="o18876" />
-        </statement>
-        <statement id="d38_s2">
-          <text>articulation line lacking.</text>
-          <biological_entity constraint="articulation" id="o18877" name="line" name_original="line" src="d38_s2" type="structure">
-            <character is_modifier="false" name="quantity" src="d38_s2" value="lacking" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sheaths green or obscurely girdled at nodes near base of stem; teeth 32 or fewer per sheath, usually persistent, shed in some species; articulation line lacking.</description>
       <next_statement_id>20</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>20</statement_id>
-      <description type="morphology">
-        <statement id="d39_s0">
-          <text>Teeth 3-32 per sheath;</text>
-          <biological_entity id="o18878" name="tooth" name_original="teeth" src="d39_s0" type="structure">
-            <character char_type="range_value" constraint="per sheath" constraintid="o18879" from="3" name="quantity" src="d39_s0" to="32" />
-          </biological_entity>
-          <biological_entity id="o18879" name="sheath" name_original="sheath" src="d39_s0" type="structure" />
-        </statement>
-        <statement id="d39_s1">
-          <text>stem ridges same number as teeth;</text>
-          <biological_entity constraint="stem" id="o18880" name="ridge" name_original="ridges" src="d39_s1" type="structure" />
-          <biological_entity id="o18881" name="tooth" name_original="teeth" src="d39_s1" type="structure" />
-          <relation from="o18880" id="r4384" name="as" negation="false" src="d39_s1" to="o18881" />
-        </statement>
-        <statement id="d39_s2">
-          <text>aerial stems erect and straight.</text>
-          <biological_entity id="o18882" name="stem" name_original="stems" src="d39_s2" type="structure">
-            <character is_modifier="true" name="location" src="d39_s2" value="aerial" />
-            <character is_modifier="false" name="orientation" src="d39_s2" value="erect" />
-            <character is_modifier="false" name="course" src="d39_s2" value="straight" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Teeth 3--32 per sheath; stem ridges same number as teeth; aerial stems erect and straight.</description>
       <next_statement_id>21</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>20</statement_id>
-      <description type="morphology">
-        <statement id="d40_s0">
-          <text>Teeth 3 per sheath;</text>
-          <biological_entity id="o18883" name="tooth" name_original="teeth" src="d40_s0" type="structure">
-            <character constraint="per sheath" constraintid="o18884" name="quantity" src="d40_s0" value="3" />
-          </biological_entity>
-          <biological_entity id="o18884" name="sheath" name_original="sheath" src="d40_s0" type="structure" />
-        </statement>
-        <statement id="d40_s1">
-          <text>stem ridges 6;</text>
-          <biological_entity constraint="stem" id="o18885" name="ridge" name_original="ridges" src="d40_s1" type="structure">
-            <character name="quantity" src="d40_s1" value="6" />
-          </biological_entity>
-        </statement>
-        <statement id="d40_s2">
-          <text>aerial stems inclined and tortuous.</text>
-          <biological_entity id="o18886" name="stem" name_original="stems" src="d40_s2" type="structure">
-            <character is_modifier="true" name="location" src="d40_s2" value="aerial" />
-            <character is_modifier="false" name="orientation" src="d40_s2" value="inclined" />
-            <character is_modifier="false" name="course" src="d40_s2" value="tortuous" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Teeth 3 per sheath; stem ridges 6; aerial stems inclined and tortuous.</description>
       <determination>15 Equisetum scirpoides</determination>
     </key_statement>
     <key_statement>
       <statement_id>21</statement_id>
-      <description type="morphology">
-        <statement id="d41_s0">
-          <text>Sheath teeth usually shed;</text>
-          <biological_entity constraint="sheath" id="o18887" name="tooth" name_original="teeth" src="d41_s0" type="structure" />
-        </statement>
-        <statement id="d41_s1">
-          <text>cone apex rounded to apiculate with blunt tip;</text>
-          <biological_entity constraint="cone" id="o18888" name="apex" name_original="apex" src="d41_s1" type="structure">
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d41_s1" value="rounded" />
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d41_s1" value="apiculate" />
-            <character char_type="range_value" constraint="with tip" constraintid="o18889" from="rounded" name="shape" src="d41_s1" to="apiculate" />
-          </biological_entity>
-          <biological_entity id="o18889" name="tip" name_original="tip" src="d41_s1" type="structure">
-            <character is_modifier="true" name="shape" src="d41_s1" value="blunt" />
-          </biological_entity>
-        </statement>
-        <statement id="d41_s2">
-          <text>stem ridges flattened or convex.</text>
-          <biological_entity constraint="stem" id="o18890" name="ridge" name_original="ridges" src="d41_s2" type="structure">
-            <character is_modifier="false" name="shape" src="d41_s2" value="flattened" />
-            <character is_modifier="false" name="shape" src="d41_s2" value="convex" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sheath teeth usually shed; cone apex rounded to apiculate with blunt tip; stem ridges flattened or convex.</description>
       <determination>9 Equisetum laevigatum</determination>
     </key_statement>
     <key_statement>
       <statement_id>21</statement_id>
-      <description type="morphology">
-        <statement id="d42_s0">
-          <text>Sheath teeth usually persistent throughout;</text>
-          <biological_entity constraint="sheath" id="o18891" name="tooth" name_original="teeth" src="d42_s0" type="structure">
-            <character is_modifier="false" modifier="usually; throughout" name="duration" src="d42_s0" value="persistent" />
-          </biological_entity>
-        </statement>
-        <statement id="d42_s1">
-          <text>cone apex sharply apiculate;</text>
-          <biological_entity constraint="cone" id="o18892" name="apex" name_original="apex" src="d42_s1" type="structure">
-            <character is_modifier="false" modifier="sharply" name="architecture_or_shape" src="d42_s1" value="apiculate" />
-          </biological_entity>
-        </statement>
-        <statement id="d42_s2">
-          <text>stem ridges minutely grooved.</text>
-          <biological_entity constraint="stem" id="o18893" name="ridge" name_original="ridges" src="d42_s2" type="structure">
-            <character is_modifier="false" modifier="minutely" name="architecture" src="d42_s2" value="grooved" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Sheath teeth usually persistent throughout; cone apex sharply apiculate; stem ridges minutely grooved.</description>
       <determination>12 Equisetum variegatum</determination>
     </key_statement>
   </key>

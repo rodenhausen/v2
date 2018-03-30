@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="Roth" date="1799" rank="genus">athyrium</taxon_name>
-    <taxon_name authority="(Linnaeus) Roth ex Mertens" date="1799" rank="species">filix-femina</taxon_name>
-    <taxon_name authority="Butters" date="1918" rank="variety">californicum</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Roth" date="1799">athyrium</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) Roth ex Mertens" date="1799">filix-femina</taxon_name>
+    <taxon_name rank="variety" authority="Butters" date="1918">californicum</taxon_name>
     <place_of_publication>
       <publication_title>Rhodora</publication_title>
       <place_in_publication>19: 201. 1918</place_in_publication>
@@ -27,151 +19,15 @@
     <taxon_hierarchy>family dryopteridaceae;genus athyrium;species filix-femina;variety californicum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Athyrium</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">filix-femina</taxon_name>
-    <taxon_name authority="(Butters) Hultén" date="unknown" rank="subspecies">californicum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Athyrium</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">filix-femina</taxon_name>
+    <taxon_name rank="subspecies" authority="(Butters) Hultén" date="unknown">californicum</taxon_name>
     <taxon_hierarchy>genus Athyrium;species filix-femina;subspecies californicum;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Petiole 13-60 cm;</text>
-      <biological_entity id="o18603" name="petiole" name_original="petiole" src="d0_s0" type="structure">
-        <character char_type="range_value" from="13" from_unit="cm" name="some_measurement" src="d0_s0" to="60" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>scales brown or black, lanceolate or ovatelanceolate, 7-15 × 1-4 mm.</text>
-      <biological_entity id="o18604" name="scale" name_original="scales" src="d0_s1" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s1" value="brown" />
-        <character is_modifier="false" name="coloration" src="d0_s1" value="black" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="lanceolate" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="ovatelanceolate" />
-        <character char_type="range_value" from="7" from_unit="mm" name="length" src="d0_s1" to="15" to_unit="mm" />
-        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s1" to="4" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Blade narrowly elliptic to oblanceolate, 1-2-pinnate-pinnatifid, 25-130 × 8-25 cm, gradually narrowed proximally, broadest at or just above middle, apex acuminate.</text>
-      <biological_entity id="o18605" name="blade" name_original="blade" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s2" value="elliptic" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s2" value="oblanceolate" />
-        <character char_type="range_value" from="narrowly elliptic" name="shape" src="d0_s2" to="oblanceolate" />
-        <character is_modifier="false" name="shape" src="d0_s2" value="1-2-pinnate-pinnatifid" />
-        <character char_type="range_value" from="25" from_unit="cm" name="length" src="d0_s2" to="130" to_unit="cm" />
-        <character char_type="range_value" from="8" from_unit="cm" name="width" src="d0_s2" to="25" to_unit="cm" />
-        <character is_modifier="false" modifier="gradually; proximally" name="shape" src="d0_s2" value="narrowed" />
-        <character constraint="above middle" constraintid="o18606" is_modifier="false" name="width" src="d0_s2" value="broadest" />
-      </biological_entity>
-      <biological_entity id="o18606" name="middle" name_original="middle" src="d0_s2" type="structure" />
-      <biological_entity id="o18607" name="apex" name_original="apex" src="d0_s2" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s2" value="acuminate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Pinnae sessile or very short-stalked, linear-oblong, apex acuminate.</text>
-      <biological_entity id="o18608" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s3" value="sessile" />
-        <character is_modifier="false" modifier="very" name="architecture" src="d0_s3" value="short-stalked" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="linear-oblong" />
-      </biological_entity>
-      <biological_entity id="o18609" name="apex" name_original="apex" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="acuminate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Pinnules linear-oblong or linear-lanceolate, base basiscopically cuneate, acroscopically truncate, ± auriculate, apex ± acute to acuminate.</text>
-      <biological_entity id="o18610" name="pinnule" name_original="pinnules" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s4" value="linear-oblong" />
-        <character is_modifier="false" name="shape" src="d0_s4" value="linear-lanceolate" />
-      </biological_entity>
-      <biological_entity id="o18611" name="base" name_original="base" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="basiscopically" name="shape" src="d0_s4" value="cuneate" />
-        <character is_modifier="false" modifier="acroscopically" name="architecture_or_shape" src="d0_s4" value="truncate" />
-        <character is_modifier="false" modifier="more or less" name="shape" src="d0_s4" value="auriculate" />
-      </biological_entity>
-      <biological_entity id="o18612" name="apex" name_original="apex" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="more or less" name="shape" notes="[duplicate value]" src="d0_s4" value="acute" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="acuminate" />
-        <character char_type="range_value" from="less acute" name="shape" src="d0_s4" to="acuminate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Rachis, costae, and costules with scales and usually with pale glands.</text>
-      <biological_entity id="o18613" name="rachis" name_original="rachis" src="d0_s5" type="structure" />
-      <biological_entity id="o18614" name="costa" name_original="costae" src="d0_s5" type="structure" />
-      <biological_entity id="o18615" name="costule" name_original="costules" src="d0_s5" type="structure" />
-      <biological_entity id="o18616" name="scale" name_original="scales" src="d0_s5" type="structure" />
-      <biological_entity id="o18617" name="gland" name_original="glands" src="d0_s5" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s5" value="pale" />
-      </biological_entity>
-      <relation from="o18615" id="r4307" name="with" negation="false" src="d0_s5" to="o18616" />
-      <relation from="o18615" id="r4308" modifier="usually" name="with" negation="false" src="d0_s5" to="o18617" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Sori elliptic or oblong, straight, hooked at distal end, or horseshoe-shaped, medial;</text>
-      <biological_entity id="o18618" name="sorus" name_original="sori" src="d0_s6" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s6" value="elliptic" />
-        <character is_modifier="false" name="shape" src="d0_s6" value="oblong" />
-        <character is_modifier="false" name="course" src="d0_s6" value="straight" />
-        <character constraint="at distal end" constraintid="o18619" is_modifier="false" name="shape" src="d0_s6" value="hooked" />
-        <character is_modifier="false" name="shape" notes="" src="d0_s6" value="horseshoe--shaped" value_original="horseshoe-shaped" />
-        <character is_modifier="false" name="position" src="d0_s6" value="medial" />
-      </biological_entity>
-      <biological_entity constraint="distal" id="o18619" name="end" name_original="end" src="d0_s6" type="structure" />
-    </statement>
-    <statement id="d0_s7">
-      <text>indusia dentate or ciliate with nonglandular marginal hairs as long as width of indusia.</text>
-      <biological_entity id="o18620" name="indusium" name_original="indusia" src="d0_s7" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s7" value="dentate" />
-        <character constraint="with marginal hairs" constraintid="o18621" is_modifier="false" name="architecture" src="d0_s7" value="ciliate" />
-      </biological_entity>
-      <biological_entity constraint="marginal" id="o18621" name="hair" name_original="hairs" src="d0_s7" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s7" value="eglandular" value_original="nonglandular" />
-      </biological_entity>
-      <biological_entity id="o18622" name="indusium" name_original="indusia" src="d0_s7" type="structure" />
-    </statement>
-    <statement id="d0_s8">
-      <text>Spores brown.</text>
-      <biological_entity id="o18623" name="spore" name_original="spores" src="d0_s8" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s8" value="brown" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Moist woods, meadows, streambanks;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="moist woods" />
-        <character name="habitat" value="meadows" />
-        <character name="habitat" value="streambanks ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>1000--3500 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="3500" to_unit="m" from="1000" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., Calif., Colo., Idaho, Nev., N.Mex., Oreg., S.Dak., Utah, Wyo.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Colo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Idaho" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Nev." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.Dak." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Utah" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wyo." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Petiole  13--60 cm; scales brown or black, lanceolate or ovate-lanceolate, 7--15 × 1--4 mm.  Blade  narrowly elliptic to oblanceolate, 1--2-pinnate-pinnatifid, 25--130 × 8--25 cm, gradually narrowed proximally, broadest at or just above middle, apex acuminate.  Pinnae  sessile or very short-stalked, linear-oblong, apex acuminate.  Pinnules  linear-oblong or linear-lanceolate, base basiscopically cuneate, acroscopically truncate, ± auriculate, apex ± acute to acuminate.  Rachis , costae, and costules with scales and usually with pale glands.  Sori  elliptic or oblong, straight, hooked at distal end, or horseshoe-shaped, medial; indusia dentate or ciliate with nonglandular marginal hairs as long as width of indusia.  Spores  brown.</description>
+  <description type="habitat">Moist woods, meadows, streambanks;</description>
+  <description type="elevation">1000--3500 m;</description>
+  <description type="distribution">Ariz., Calif., Colo., Idaho, Nev., N.Mex., Oreg., S.Dak., Utah, Wyo.</description>
   <number>2b</number>
   <other_name type="common_name">Southwestern lady fern</other_name>
   <discussion>This southwestern variety, Athyrium filix-femina var. californicum , occurs at higher elevations than var. cyclosorum . Athyrium filix-femina var. californicum and var. cyclosorum are more closely related to each other than to eastern varieties. Distinctness between western varieties was shown by F. K. Butters (1917); F. S. Liew (1972) treated them as consubspecific.</discussion>

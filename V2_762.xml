@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Agardh" date="unknown" rank="family">ophioglossaceae</taxon_name>
-    <taxon_name authority="Swartz" date="1801" rank="genus">botrychium</taxon_name>
-    <taxon_name authority="(Savigny) L. Underwood" date="1896" rank="species">biternatum</taxon_name>
+    <taxon_name rank="family" authority="Agardh" date="unknown">ophioglossaceae</taxon_name>
+    <taxon_name rank="genus" authority="Swartz" date="1801">botrychium</taxon_name>
+    <taxon_name rank="species" authority="(Savigny) L. Underwood" date="1896">biternatum</taxon_name>
     <place_of_publication>
       <publication_title>Bot. Gaz.</publication_title>
       <place_in_publication>22: 407. 1896</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family ophioglossaceae;genus botrychium;species biternatum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Osmunda</taxon_name>
-    <taxon_name authority="Savigny" date="unknown" rank="species">biternata</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Osmunda</taxon_name>
+    <taxon_name rank="species" authority="Savigny" date="unknown">biternata</taxon_name>
     <place_of_publication>
       <publication_title>in Lamarck et al., Encycl.</publication_title>
       <place_in_publication>4: 650. 1797</place_in_publication>
@@ -35,289 +27,23 @@
     <taxon_hierarchy>genus Osmunda;species biternata;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Botrychium</taxon_name>
-    <taxon_name authority="Sprengel" date="unknown" rank="species">dissectum</taxon_name>
-    <taxon_name authority="(L.Underwood) Farwell" date="unknown" rank="variety">tenuifolium</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Botrychium</taxon_name>
+    <taxon_name rank="species" authority="Sprengel" date="unknown">dissectum</taxon_name>
+    <taxon_name rank="variety" authority="(L.Underwood) Farwell" date="unknown">tenuifolium</taxon_name>
     <taxon_hierarchy>genus Botrychium;species dissectum;variety tenuifolium;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Botrychium</taxon_name>
-    <taxon_name authority="L.Underwood" date="unknown" rank="species">tenuifolium</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Botrychium</taxon_name>
+    <taxon_name rank="species" authority="L.Underwood" date="unknown">tenuifolium</taxon_name>
     <taxon_hierarchy>genus Botrychium;species tenuifolium;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trophophore stalk 4-20 cm, 2-2.5 times length of trophophore rachis;</text>
-      <biological_entity constraint="trophophore" id="o22000" name="stalk" name_original="stalk" src="d0_s0" type="structure">
-        <character char_type="range_value" from="4" from_unit="cm" name="some_measurement" src="d0_s0" to="20" to_unit="cm" />
-        <character constraint="rachis" constraintid="o22001" is_modifier="false" name="length" src="d0_s0" value="2-2.5 times length of trophophore rachis" />
-      </biological_entity>
-      <biological_entity constraint="trophophore" id="o22001" name="rachis" name_original="rachis" src="d0_s0" type="structure" />
-    </statement>
-    <statement id="d0_s1">
-      <text>blade green to dark green, plane, 2-3-pinnate, to 18 × 28 cm, herbaceous.</text>
-      <biological_entity id="o22002" name="blade" name_original="blade" src="d0_s1" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s1" value="green" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s1" value="dark green" />
-        <character char_type="range_value" from="green" name="coloration" src="d0_s1" to="dark green" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="plane" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s1" value="2-3-pinnate" />
-        <character char_type="range_value" from="0" from_unit="cm" name="length" src="d0_s1" to="18" to_unit="cm" />
-        <character char_type="range_value" from="0" from_unit="cm" name="width" src="d0_s1" to="28" to_unit="cm" />
-        <character is_modifier="false" name="growth_form_or_texture" src="d0_s1" value="herbaceous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Pinnae to 7 pairs, usually remote, horizontal, distance between 1st and 2d pinnae not or slightly more than between 2d and 3d pairs, undivided except in proximal 2/3-1/2.</text>
-      <biological_entity constraint="between pinnae" constraintid="o22004" id="o22003" name="pinna" name_original="pinnae" src="d0_s2" type="structure">
-        <character char_type="range_value" from="0" name="quantity" src="d0_s2" to="7" />
-        <character is_modifier="false" modifier="usually" name="arrangement_or_density" src="d0_s2" value="remote" />
-        <character is_modifier="false" name="orientation" src="d0_s2" value="horizontal" />
-        <character is_modifier="false" modifier="slightly; between 2d and 3d pairs" name="architecture_or_shape" src="d0_s2" value="undivided" />
-        <character is_modifier="false" name="position" src="d0_s2" value="proximal" />
-        <character char_type="range_value" from="2/3" name="quantity" src="d0_s2" to="1/2" />
-      </biological_entity>
-      <biological_entity id="o22004" name="pinna" name_original="pinnae" src="d0_s2" type="structure" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Pinnules elongate, obliquely lanceolate to narrowly lanceolate, margins nearly parallel and finely denticulate, apex short-acuminate, venation pinnate.</text>
-      <biological_entity id="o22005" name="pinnule" name_original="pinnules" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="elongate" />
-        <character is_modifier="false" modifier="obliquely" name="shape" notes="[duplicate value]" src="d0_s3" value="lanceolate" />
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s3" value="lanceolate" />
-        <character char_type="range_value" from="obliquely lanceolate" name="shape" src="d0_s3" to="narrowly lanceolate" />
-      </biological_entity>
-      <biological_entity id="o22006" name="margin" name_original="margins" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="nearly" name="arrangement" src="d0_s3" value="parallel" />
-        <character is_modifier="false" modifier="finely" name="shape" src="d0_s3" value="denticulate" />
-      </biological_entity>
-      <biological_entity id="o22007" name="apex" name_original="apex" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="short-acuminate" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s3" value="pinnate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Sporophores 1-2-pinnate, 2-3 times length of trophophore.</text>
-      <biological_entity id="o22009" name="trophophore" name_original="trophophore" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>2 n =90.</text>
-      <biological_entity id="o22008" name="sporophore" name_original="sporophores" src="d0_s4" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s4" value="1-2-pinnate" />
-        <character constraint="trophophore" constraintid="o22009" is_modifier="false" name="length" src="d0_s4" value="2-3 times length of trophophore" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o22010" name="chromosome" name_original="" src="d0_s5" type="structure">
-        <character name="quantity" src="d0_s5" value="90" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Leaves green over winter, sporophores seasonal, new leaves appearing in late spring--early summer.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="leaves appearing time" value="late spring-early summer" />
-        <character name="leaves appearing time" value="late spring-early summer" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Frequent in low woods and brushy fields;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="frequent in low woods and brushy fields" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--600 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="600" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ala., Ark., Del., Fla., Ga., Ill., Ind., Ky., La., Md., Miss., Mo., N.J., N.C., Ohio, Okla., Pa., S.C., Tenn., Tex., Va., W.Va.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trophophore  stalk 4--20 cm, 2--2.5 times length of trophophore rachis; blade green to dark green, plane, 2--3-pinnate, to 18 × 28 cm, herbaceous.  Pinnae  to 7 pairs, usually remote, horizontal, distance between 1st and 2d pinnae not or slightly more than between 2d and 3d pairs, undivided except in proximal 2/3--1/2.  Pinnules  elongate, obliquely lanceolate to narrowly lanceolate, margins nearly parallel and finely denticulate, apex short-acuminate, venation pinnate.  Sporophores  1--2-pinnate, 2--3 times length of trophophore. 2 n =90.</description>
+  <description type="phenology">Leaves green over winter, sporophores seasonal, new leaves appearing in late spring--early summer.</description>
+  <description type="habitat">Frequent in low woods and brushy fields;</description>
+  <description type="elevation">0--600 m;</description>
+  <description type="distribution">Ala., Ark., Del., Fla., Ga., Ill., Ind., Ky., La., Md., Miss., Mo., N.J., N.C., Ohio, Okla., Pa., S.C., Tenn., Tex., Va., W.Va.</description>
   <number>3</number>
   <other_name type="common_name">Sparse-lobed grapefern</other_name>
   <other_name type="common_name">southern grapefern</other_name>
   <discussion>Botrychium biternatum often grows with B . dissectum and B . jenmanii . The name B . biternatum was misapplied by L.Underwood to B . lunarioides (W.H. Wagner Jr. 1961).</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_611_d11_s0">
-      <text>Trophophore blades usually 2-3-pinnate, terminal pinnae elongate and nearly parallel-sided;</text>
-      <biological_entity constraint="trophophore" id="from_key_V2_611_o16754" name="blade" name_original="blades" src="d11_s0" type="structure">
-        <character is_modifier="false" modifier="usually" name="architecture_or_shape" src="d11_s0" value="2-3-pinnate" />
-      </biological_entity>
-      <biological_entity constraint="terminal" id="from_key_V2_611_o16755" name="pinna" name_original="pinnae" src="d11_s0" type="structure">
-        <character is_modifier="false" name="shape" src="d11_s0" value="elongate" />
-        <character is_modifier="false" modifier="nearly" name="architecture" src="d11_s0" value="parallel-sided" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_611_d11_s1">
-      <text>leaves mostly remaining green during winter.</text>
-      <biological_entity id="from_key_V2_611_o16756" name="leaf" name_original="leaves" src="d11_s1" type="structure">
-        <character constraint="during winter" is_modifier="false" name="coloration" src="d11_s1" value="green" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_611_d9_s0">
-      <text>Terminal pinnules larger than lateral pinnules;</text>
-      <biological_entity constraint="terminal" id="from_key_V2_611_o16746" name="pinnule" name_original="pinnules" src="d9_s0" type="structure">
-        <character constraint="than lateral pinnules" constraintid="o16747" is_modifier="false" name="size" src="d9_s0" value="larger" />
-      </biological_entity>
-      <biological_entity constraint="lateral" id="from_key_V2_611_o16747" name="pinnule" name_original="pinnules" src="d9_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_611_d9_s1">
-      <text>pinnae undivided except in proximal 1/2-3/4.</text>
-      <biological_entity id="from_key_V2_611_o16748" name="pinna" name_original="pinnae" src="d9_s1" type="structure">
-        <character constraint="except-in proximal 1/2-3/4" constraintid="o16749" is_modifier="false" name="architecture_or_shape" src="d9_s1" value="undivided" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="from_key_V2_611_o16749" name="1/2-3/4" name_original="1/2-3/4" src="d9_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_611_d8_s0">
-      <text>Basal pinnae short-stalked and mostly subopposite;</text>
-      <biological_entity constraint="basal" id="from_key_V2_611_o16742" name="pinna" name_original="pinnae" src="d8_s0" type="structure">
-        <character is_modifier="false" name="architecture" src="d8_s0" value="short-stalked" />
-        <character is_modifier="false" modifier="mostly" name="arrangement" src="d8_s0" value="subopposite" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_611_d8_s1">
-      <text>pinnule venation pinnate, with strong midrib;</text>
-      <biological_entity id="from_key_V2_611_o16743" name="pinnule" name_original="pinnule" src="d8_s1" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d8_s1" value="pinnate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_611_o16744" name="midrib" name_original="midrib" src="d8_s1" type="structure">
-        <character is_modifier="true" name="fragility" src="d8_s1" value="strong" />
-      </biological_entity>
-      <relation from="from_key_V2_611_o16743" id="from_key_V2_611_r3925" name="with" negation="false" src="d8_s1" to="from_key_V2_611_o16744" />
-    </statement>
-    <statement id="from_key_V2_611_d8_s2">
-      <text>blades bluish green or green to dark green.</text>
-      <biological_entity id="from_key_V2_611_o16745" name="blade" name_original="blades" src="d8_s2" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d8_s2" value="bluish green" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d8_s2" value="green" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d8_s2" value="dark green" />
-        <character char_type="range_value" from="green" name="coloration" src="d8_s2" to="dark green" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_611_d6_s0">
-      <text>Trophophores erect or ascending, blades commonly 1 per plant;</text>
-      <biological_entity id="from_key_V2_611_o16728" name="trophophore" name_original="trophophores" src="d6_s0" type="structure">
-        <character is_modifier="false" name="orientation" src="d6_s0" value="erect" />
-        <character is_modifier="false" name="orientation" src="d6_s0" value="ascending" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_611_o16729" name="blade" name_original="blades" src="d6_s0" type="structure">
-        <character constraint="per plant" constraintid="o16730" name="count" src="d6_s0" value="1" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_611_o16730" name="plant" name_original="plant" src="d6_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_611_d6_s1">
-      <text>roots blackish, to 15 per plant;</text>
-      <biological_entity id="from_key_V2_611_o16731" name="root" name_original="roots" src="d6_s1" type="structure">
-        <character is_modifier="false" name="coloration" src="d6_s1" value="blackish" />
-        <character char_type="range_value" constraint="per plant" constraintid="o16732" from="0" name="count" src="d6_s1" to="15" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_611_o16732" name="plant" name_original="plant" src="d6_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_611_d6_s2">
-      <text>sporophore stalks and midrib only slightly flattened, not fleshy;</text>
-      <biological_entity id="from_key_V2_611_o16733" name="sporophore" name_original="sporophore" src="d6_s2" type="structure">
-        <character is_modifier="false" modifier="only slightly" name="shape" src="d6_s2" value="flattened" />
-        <character is_modifier="false" modifier="not" name="texture" src="d6_s2" value="fleshy" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_611_o16734" name="stalk" name_original="stalks" src="d6_s2" type="structure">
-        <character is_modifier="false" modifier="only slightly" name="shape" src="d6_s2" value="flattened" />
-        <character is_modifier="false" modifier="not" name="texture" src="d6_s2" value="fleshy" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_611_o16735" name="midrib" name_original="midrib" src="d6_s2" type="structure">
-        <character is_modifier="false" modifier="only slightly" name="shape" src="d6_s2" value="flattened" />
-        <character is_modifier="false" modifier="not" name="texture" src="d6_s2" value="fleshy" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_611_d6_s3">
-      <text>leaves appearing in late spring and lasting until following spring (subg. Sceptridium sect. Sceptridium).</text>
-      <biological_entity id="from_key_V2_611_o16736" name="leaf" name_original="leaves" src="d6_s3" type="structure">
-        <character constraint="until following spring" is_modifier="false" name="duration" src="d6_s3" value="lasting" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_611_d4_s0">
-      <text>Trophophore blades herbaceous or thick-papery to leathery;</text>
-      <biological_entity constraint="trophophore" id="from_key_V2_611_o16711" name="blade" name_original="blades" src="d4_s0" type="structure">
-        <character is_modifier="false" name="texture" notes="[duplicate value]" src="d4_s0" value="herbaceous" />
-        <character is_modifier="false" name="texture" notes="[duplicate value]" src="d4_s0" value="thick-papery" />
-        <character is_modifier="false" name="texture" notes="[duplicate value]" src="d4_s0" value="leathery" />
-        <character char_type="range_value" from="thick-papery" name="texture" src="d4_s0" to="leathery" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_611_d4_s1">
-      <text>leaf-sheaths closed;</text>
-      <biological_entity id="from_key_V2_611_o16712" name="leaf-sheath" name_original="leaf-sheaths" src="d4_s1" type="structure">
-        <character is_modifier="false" name="condition" src="d4_s1" value="closed" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_611_d4_s2">
-      <text>sporophores, when present, arising near ground from basal portion of common stalk;</text>
-      <biological_entity id="from_key_V2_611_o16713" name="sporophore" name_original="sporophores" src="d4_s2" type="structure">
-        <character constraint="from basal portion" constraintid="o16714" is_modifier="false" modifier="when present" name="orientation" src="d4_s2" value="arising" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="from_key_V2_611_o16714" name="portion" name_original="portion" src="d4_s2" type="structure" />
-      <biological_entity id="from_key_V2_611_o16715" name="stalk" name_original="stalk" src="d4_s2" type="structure">
-        <character is_modifier="true" name="count" src="d4_s2" value="common" />
-      </biological_entity>
-      <relation from="from_key_V2_611_o16714" id="from_key_V2_611_r3921" name="part_of" negation="false" src="d4_s2" to="from_key_V2_611_o16715" />
-    </statement>
-    <statement id="from_key_V2_611_d4_s3">
-      <text>leaves present during winter (subg. Sceptridium).</text>
-      <biological_entity id="from_key_V2_611_o16716" name="leaf" name_original="leaves" src="d4_s3" type="structure" />
-    </statement>
-    <statement id="from_key_V2_611_d1_s0">
-      <text>Leaf-blades deltate, mostly 5-25 cm, commonly sterile, sporophores absent or misshapen;</text>
-      <biological_entity id="from_key_V2_611_o16696" name="leaf-blade" name_original="leaf-blades" src="d1_s0" type="structure">
-        <character is_modifier="false" name="shape" src="d1_s0" value="deltate" />
-        <character char_type="range_value" from="5" from_unit="cm" modifier="mostly" name="distance" src="d1_s0" to="25" to_unit="cm" />
-        <character is_modifier="false" modifier="commonly" name="reproduction" src="d1_s0" value="sterile" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_611_o16697" name="sporophore" name_original="sporophores" src="d1_s0" type="structure">
-        <character is_modifier="false" name="count" src="d1_s0" value="absent" />
-        <character name="count" src="d1_s0" value="misshapen" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_611_d1_s1">
-      <text>plants mostly over 12 cm;</text>
-      <biological_entity id="from_key_V2_611_o16698" name="plant" name_original="plants" src="d1_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_611_d1_s2">
-      <text>leaf-sheaths open or closed.</text>
-      <biological_entity id="from_key_V2_611_o16699" name="leaf-sheath" name_original="leaf-sheaths" src="d1_s2" type="structure">
-        <character is_modifier="false" name="architecture" src="d1_s2" value="open" />
-        <character is_modifier="false" name="condition" src="d1_s2" value="closed" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

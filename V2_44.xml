@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="R. Brown" date="1810" rank="genus">woodsia</taxon_name>
-    <taxon_name authority="D. C. Eaton" date="1865" rank="species">scopulina</taxon_name>
-    <taxon_name authority="(T. M. C. Taylor) Windham" date="1993" rank="subspecies">appalachiana</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="R. Brown" date="1810">woodsia</taxon_name>
+    <taxon_name rank="species" authority="D. C. Eaton" date="1865">scopulina</taxon_name>
+    <taxon_name rank="subspecies" authority="(T. M. C. Taylor) Windham" date="1993">appalachiana</taxon_name>
     <place_of_publication>
       <publication_title>Contr. Univ. Michigan Herb.</publication_title>
       <place_in_publication>19: 58. 1993</place_in_publication>
@@ -27,8 +19,8 @@
     <taxon_hierarchy>family dryopteridaceae;genus woodsia;species scopulina;subspecies appalachiana</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Woodsia</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">appalachiana</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Woodsia</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">appalachiana</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>37: 88. 1947</place_in_publication>
@@ -36,93 +28,15 @@
     <taxon_hierarchy>genus Woodsia;species appalachiana;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Woodsia</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">scopulina</taxon_name>
-    <taxon_name authority="(T. M. C. Taylor) C. V. Morton" date="unknown" rank="variety">appalachiana</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Woodsia</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">scopulina</taxon_name>
+    <taxon_name rank="variety" authority="(T. M. C. Taylor) C. V. Morton" date="unknown">appalachiana</taxon_name>
     <taxon_hierarchy>genus Woodsia;species scopulina;variety appalachiana;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Scales of stems and petiole bases mostly bicolored with broad, usually continuous, dark central stripe, scales narrowly lanceolate.</text>
-      <biological_entity id="o10398" name="scale" name_original="scales" src="d0_s0" type="structure">
-        <character constraint="with central stripe" constraintid="o10401" is_modifier="false" modifier="mostly" name="coloration" src="d0_s0" value="bicolored" />
-      </biological_entity>
-      <biological_entity id="o10399" name="stem" name_original="stems" src="d0_s0" type="structure" />
-      <biological_entity constraint="petiole" id="o10400" name="base" name_original="bases" src="d0_s0" type="structure" />
-      <biological_entity constraint="central" id="o10401" name="stripe" name_original="stripe" src="d0_s0" type="structure">
-        <character is_modifier="true" name="width" src="d0_s0" value="broad" />
-        <character is_modifier="true" modifier="usually" name="architecture" src="d0_s0" value="continuous" />
-        <character is_modifier="true" name="coloration" src="d0_s0" value="dark" />
-      </biological_entity>
-      <biological_entity id="o10402" name="scale" name_original="scales" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" src="d0_s0" value="lanceolate" />
-      </biological_entity>
-      <relation from="o10398" id="r2369" name="part_of" negation="false" src="d0_s0" to="o10399" />
-      <relation from="o10398" id="r2370" name="part_of" negation="false" src="d0_s0" to="o10400" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Pinnae with longest hairs composed of 5-8 cells.</text>
-      <biological_entity id="o10403" name="pinna" name_original="pinnae" src="d0_s1" type="structure" />
-      <biological_entity constraint="longest" id="o10404" name="hair" name_original="hairs" src="d0_s1" type="structure" />
-      <biological_entity id="o10405" name="cell" name_original="cells" src="d0_s1" type="structure">
-        <character char_type="range_value" from="5" is_modifier="true" name="quantity" src="d0_s1" to="8" />
-      </biological_entity>
-      <relation from="o10403" id="r2371" name="with" negation="false" src="d0_s1" to="o10404" />
-      <relation from="o10404" id="r2372" name="composed of" negation="false" src="d0_s1" to="o10405" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Indusial segments broad, not at all filamentous.</text>
-      <biological_entity constraint="indusial" id="o10406" name="segment" name_original="segments" src="d0_s2" type="structure">
-        <character is_modifier="false" name="width" src="d0_s2" value="broad" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Spores averaging 39-46 µm.</text>
-    </statement>
-    <statement id="d0_s4">
-      <text>2 n = 76.</text>
-      <biological_entity id="o10407" name="spore" name_original="spores" src="d0_s3" type="structure" />
-      <biological_entity constraint="2n" id="o10408" name="chromosome" name_original="" src="d0_s4" type="structure">
-        <character name="quantity" src="d0_s4" value="76" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulating summer--fall.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="summer-fall" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Shaded cracks and ledges on cliffs, mostly subacidic shale and sandstone;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="shaded cracks and ledges on cliffs , subacidic shale and sandstone ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>300--1700 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1700" to_unit="m" from="300" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ark., Ky., N.C., Tenn., Va., W.Va.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Scales  of stems and petiole bases mostly bicolored with broad, usually continuous, dark central stripe, scales narrowly lanceolate.  Pinnae  with longest hairs composed of 5--8 cells.  Indusial segments  broad, not at all filamentous.  Spores  averaging 39--46 µm. 2 n  = 76.</description>
+  <description type="phenology">Sporulating summer--fall.</description>
+  <description type="habitat">Shaded cracks and ledges on cliffs, mostly subacidic shale and sandstone;</description>
+  <description type="elevation">300--1700 m;</description>
+  <description type="distribution">Ark., Ky., N.C., Tenn., Va., W.Va.</description>
   <number>4a</number>
 </bio:treatment>

@@ -1,170 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Engler" date="unknown" rank="family">ginkgoaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="1771" rank="genus">ginkgo</taxon_name>
-    <taxon_name authority="Linnaeus" date="1771" rank="species">biloba</taxon_name>
+    <taxon_name rank="family" authority="Engler" date="unknown">ginkgoaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="1771">ginkgo</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="1771">biloba</taxon_name>
     <place_of_publication>
       <publication_title>Mant. Pl.</publication_title>
       <place_in_publication>2: 313. 1771</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family ginkgoaceae;genus ginkgo;species biloba</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees to 30 m.</text>
-      <biological_entity id="o20431" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="30" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Crown somewhat ovoid to obovoid, tending to asymmetric, primary branches ascending at ca. 45° from trunk.</text>
-      <biological_entity id="o20432" name="crown" name_original="crown" src="d0_s1" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="ovoid" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="obovoid" />
-        <character char_type="range_value" from="ovoid" name="shape" src="d0_s1" to="obovoid" />
-      </biological_entity>
-      <biological_entity constraint="primary" id="o20433" name="branch" name_original="branches" src="d0_s1" type="structure">
-        <character is_modifier="true" name="architecture_or_shape" src="d0_s1" value="asymmetric" />
-        <character constraint="from trunk" constraintid="o20434" is_modifier="false" modifier="45°" name="orientation" src="d0_s1" value="ascending" />
-      </biological_entity>
-      <biological_entity id="o20434" name="trunk" name_original="trunk" src="d0_s1" type="structure" />
-      <relation from="o20432" id="r4768" name="tending to" negation="false" src="d0_s1" to="o20433" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Long-shoots faintly striate;</text>
-      <biological_entity id="o20435" name="long-shoot" name_original="long-shoots" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="faintly" name="coloration_or_pubescence_or_relief" src="d0_s2" value="striate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>spurs thick, knoblike or to 3 cm, gray, covered with bud-scale-scars.</text>
-      <biological_entity id="o20436" name="spur" name_original="spurs" src="d0_s3" type="structure">
-        <character is_modifier="false" name="width" src="d0_s3" value="thick" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="knoblike" />
-        <character name="shape" src="d0_s3" value="0-3 cm" />
-        <character is_modifier="false" name="coloration" src="d0_s3" value="gray" />
-      </biological_entity>
-      <biological_entity id="o20437" name="bud-scale-scar" name_original="bud-scale-scars" src="d0_s3" type="structure" />
-      <relation from="o20436" id="r4769" name="covered with" negation="false" src="d0_s3" to="o20437" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Buds brown, globose, scales imbricate, margins scarious.</text>
-      <biological_entity id="o20438" name="bud" name_original="buds" src="d0_s4" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s4" value="brown" />
-        <character is_modifier="false" name="shape" src="d0_s4" value="globose" />
-      </biological_entity>
-      <biological_entity id="o20439" name="scale" name_original="scales" src="d0_s4" type="structure">
-        <character is_modifier="false" name="arrangement" src="d0_s4" value="imbricate" />
-      </biological_entity>
-      <biological_entity id="o20440" name="margin" name_original="margins" src="d0_s4" type="structure">
-        <character is_modifier="false" name="texture" src="d0_s4" value="scarious" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Leaves fan-shaped, glabrous except for tuft of hairs in axils, blades 2-9.5 × 2-12 cm, mostly 1.5 times wider than long, apices cleft to truncate;</text>
-      <biological_entity id="o20441" name="leaf" name_original="leaves" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="fan--shaped" value_original="fan-shaped" />
-        <character constraint="except-for tuft" constraintid="o20442" is_modifier="false" name="pubescence" src="d0_s5" value="glabrous" />
-      </biological_entity>
-      <biological_entity id="o20442" name="tuft" name_original="tuft" src="d0_s5" type="structure" />
-      <biological_entity id="o20443" name="hair" name_original="hairs" src="d0_s5" type="structure" />
-      <biological_entity id="o20444" name="axil" name_original="axils" src="d0_s5" type="structure" />
-      <biological_entity id="o20445" name="blade" name_original="blades" src="d0_s5" type="structure">
-        <character char_type="range_value" from="2" from_unit="cm" name="length" src="d0_s5" to="9.5" to_unit="cm" />
-        <character char_type="range_value" from="2" from_unit="cm" name="width" src="d0_s5" to="12" to_unit="cm" />
-        <character is_modifier="false" name="l_w_ratio" src="d0_s5" value="1/1.5" />
-      </biological_entity>
-      <relation from="o20442" id="r4770" name="part_of" negation="false" src="d0_s5" to="o20443" />
-      <relation from="o20442" id="r4771" name="in" negation="false" src="d0_s5" to="o20444" />
-    </statement>
-    <statement id="d0_s6">
-      <text>venation dichotomous, appearing parallel;</text>
-      <biological_entity id="o20446" name="apex" name_original="apices" src="d0_s5" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" notes="[duplicate value]" src="d0_s5" value="cleft" />
-        <character is_modifier="false" name="architecture_or_shape" notes="[duplicate value]" src="d0_s5" value="truncate" />
-        <character char_type="range_value" from="cleft" name="architecture_or_shape" src="d0_s5" to="truncate" />
-        <character is_modifier="false" name="architecture" src="d0_s6" value="dichotomous" />
-        <character is_modifier="false" name="arrangement" src="d0_s6" value="parallel" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>leaf-scars semicircular;</text>
-      <biological_entity id="o20447" name="leaf-scar" name_original="leaf-scars" src="d0_s7" type="structure">
-        <character is_modifier="false" name="arrangement_or_shape" src="d0_s7" value="semicircular" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>petioles channeled on adaxial surface, 2.5-8.5 cm.</text>
-      <biological_entity id="o20448" name="petiole" name_original="petioles" src="d0_s8" type="structure">
-        <character constraint="on adaxial surface" constraintid="o20449" is_modifier="false" name="shape" src="d0_s8" value="channeled" />
-        <character char_type="range_value" from="2.5" from_unit="cm" name="some_measurement" notes="" src="d0_s8" to="8.5" to_unit="cm" />
-      </biological_entity>
-      <biological_entity constraint="adaxial" id="o20449" name="surface" name_original="surface" src="d0_s8" type="structure" />
-    </statement>
-    <statement id="d0_s9">
-      <text>Seeds obovoid to ellipsoid, yellow to orange, 2.3-2.7 × 1.9-2.3 cm, mostly 1.1-1.2 times longer than broad, glaucous, rugose, with apical scar, maturing in single season, usually 1 per peduncle, occasionally polyembryonic, outer coat foul-smelling;</text>
-      <biological_entity id="o20450" name="seed" name_original="seeds" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="obovoid" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="ellipsoid" />
-        <character char_type="range_value" from="obovoid" name="shape" src="d0_s9" to="ellipsoid" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s9" value="yellow" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s9" value="orange" />
-        <character char_type="range_value" from="yellow" name="coloration" src="d0_s9" to="orange" />
-        <character char_type="range_value" from="2.3" from_unit="cm" name="length" src="d0_s9" to="2.7" to_unit="cm" />
-        <character char_type="range_value" from="1.9" from_unit="cm" name="width" src="d0_s9" to="2.3" to_unit="cm" />
-        <character is_modifier="false" name="length_or_size_or_width" src="d0_s9" value="1.1-1.2 times longer than broad" />
-        <character is_modifier="false" name="pubescence" src="d0_s9" value="glaucous" />
-        <character is_modifier="false" name="relief" src="d0_s9" value="rugose" />
-        <character constraint="in season" constraintid="o20452" is_modifier="false" name="life_cycle" notes="" src="d0_s9" value="maturing" />
-        <character is_modifier="false" modifier="occasionally" name="architecture" notes="" src="d0_s9" value="polyembryonic" />
-      </biological_entity>
-      <biological_entity constraint="apical" id="o20451" name="scar" name_original="scar" src="d0_s9" type="structure" />
-      <biological_entity id="o20452" name="season" name_original="season" src="d0_s9" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s9" value="single" />
-        <character constraint="per peduncle" constraintid="o20453" modifier="usually" name="quantity" src="d0_s9" value="1" />
-      </biological_entity>
-      <biological_entity id="o20453" name="peduncle" name_original="peduncle" src="d0_s9" type="structure" />
-      <biological_entity constraint="outer" id="o20454" name="coat" name_original="coat" src="d0_s9" type="structure">
-        <character is_modifier="false" name="odor" src="d0_s9" value="foul-smelling" />
-      </biological_entity>
-      <relation from="o20450" id="r4772" name="with" negation="false" src="d0_s9" to="o20451" />
-    </statement>
-    <statement id="d0_s10">
-      <text>peduncles orange, glaucous, ridged, 3-9.5 cm, collar broadly elliptic, 7.2-8.6 mm broad.</text>
-      <biological_entity id="o20455" name="peduncle" name_original="peduncles" src="d0_s10" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s10" value="orange" />
-        <character is_modifier="false" name="pubescence" src="d0_s10" value="glaucous" />
-        <character is_modifier="false" name="shape" src="d0_s10" value="ridged" />
-        <character char_type="range_value" from="3" from_unit="cm" name="some_measurement" src="d0_s10" to="9.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>2 n = 24.</text>
-      <biological_entity id="o20456" name="collar" name_original="collar" src="d0_s10" type="structure">
-        <character is_modifier="false" modifier="broadly" name="arrangement_or_shape" src="d0_s10" value="elliptic" />
-        <character char_type="range_value" from="7.2" from_unit="mm" name="width" src="d0_s10" to="8.6" to_unit="mm" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o20457" name="chromosome" name_original="" src="d0_s11" type="structure">
-        <character name="quantity" src="d0_s11" value="24" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees  to 30 m.  Crown  somewhat ovoid to obovoid, tending to be asymmetric, primary branches ascending at ca. 45° from trunk.  Long shoots  faintly striate; spurs thick, knoblike or to 3 cm, gray, covered with bud-scale scars.  Buds  brown, globose, scales imbricate, margins scarious.  Leaves  fan-shaped, glabrous except for tuft of hairs in axils, blades 2--9.5 × 2--12 cm, mostly 1.5 times wider than long, apices cleft to truncate; venation dichotomous, appearing parallel; leaf scars semicircular; petioles channeled on adaxial surface, 2.5--8.5 cm.  Seeds  obovoid to ellipsoid, yellow to orange, 2.3--2.7 × 1.9--2.3 cm, mostly 1.1--1.2 times longer than broad, glaucous, rugose, with apical scar, maturing in single season, usually 1 per peduncle, occasionally polyembryonic, outer coat foul-smelling; peduncles orange, glaucous, ridged, 3--9.5 cm, collar broadly elliptic, 7.2--8.6 mm broad. 2 n  = 24.</description>
   <number>1</number>
   <other_name type="common_name">Maidenhair tree</other_name>
   <other_name type="common_name">ginkgo</other_name>

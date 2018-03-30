@@ -1,86 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Willkomm in Willkomm &amp; Lange" date="unknown" rank="family">selaginellaceae</taxon_name>
-    <taxon_name authority="Palisot de Beauvois" date="1805" rank="genus">selaginella</taxon_name>
-    <taxon_name authority="Jermy" date="1986" rank="subgenus">tetragonostachys</taxon_name>
-    <taxon_name authority="D. C. Eaton ex L. Underwood" date="1898" rank="species">mutica</taxon_name>
-    <taxon_name authority="D. C. Eaton ex L. Underwood" date="unknown" rank="variety">mutica</taxon_name>
+    <taxon_name rank="family" authority="Willkomm in Willkomm &amp; Lange" date="unknown">selaginellaceae</taxon_name>
+    <taxon_name rank="genus" authority="Palisot de Beauvois" date="1805">selaginella</taxon_name>
+    <taxon_name rank="subgenus" authority="Jermy" date="1986">tetragonostachys</taxon_name>
+    <taxon_name rank="species" authority="D. C. Eaton ex L. Underwood" date="1898">mutica</taxon_name>
+    <taxon_name rank="variety" authority="D. C. Eaton ex L. Underwood" date="unknown">mutica</taxon_name>
     <taxon_hierarchy>family selaginellaceae;genus selaginella;subgenus tetragonostachys;species mutica;variety mutica</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Leaf apex with or without bristle, 0.03-0.06 mm;</text>
-      <biological_entity constraint="leaf" id="o20509" name="apex" name_original="apex" src="d0_s0" type="structure" />
-      <biological_entity id="o20510" name="bristle" name_original="bristle" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0.03" from_unit="mm" name="some_measurement" src="d0_s0" to="0.06" to_unit="mm" />
-      </biological_entity>
-      <relation from="o20509" id="r4792" name="with or without" negation="false" src="d0_s0" to="o20510" />
-    </statement>
-    <statement id="d0_s1">
-      <text>margins long-ciliate, rarely denticulate, cilia spreading.</text>
-      <biological_entity id="o20511" name="margin" name_original="margins" src="d0_s1" type="structure">
-        <character is_modifier="false" name="architecture_or_pubescence_or_shape" src="d0_s1" value="long-ciliate" />
-        <character is_modifier="false" modifier="rarely" name="shape" src="d0_s1" value="denticulate" />
-      </biological_entity>
-      <biological_entity id="o20512" name="cilium" name_original="cilia" src="d0_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s1" value="spreading" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Sporophyll margins usually long-ciliate, seldom denticulate, cilia spreading.</text>
-      <biological_entity constraint="sporophyll" id="o20513" name="margin" name_original="margins" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="usually" name="architecture_or_pubescence_or_shape" src="d0_s2" value="long-ciliate" />
-        <character is_modifier="false" modifier="seldom" name="shape" src="d0_s2" value="denticulate" />
-      </biological_entity>
-      <biological_entity id="o20514" name="cilium" name_original="cilia" src="d0_s2" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s2" value="spreading" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Exposed or sheltered rocky bluffs, cliffs, ledges, on igneous, sandstone, or limestone;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="exposed or sheltered rocky bluffs , cliffs , ledges , on igneous , sandstone , or limestone ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>1400--4300 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="4300" to_unit="m" from="1400" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., Colo., N.Mex., Utah, Tex., Wyo.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Colo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Utah" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wyo." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Leaf  apex with or without bristle, 0.03--0.06 mm; margins long-ciliate, rarely denticulate, cilia spreading.  Sporophyll  margins usually long-ciliate, seldom denticulate, cilia spreading.</description>
+  <description type="habitat">Exposed or sheltered rocky bluffs, cliffs, ledges, on igneous, sandstone, or limestone;</description>
+  <description type="elevation">1400--4300 m;</description>
+  <description type="distribution">Ariz., Colo., N.Mex., Utah, Tex., Wyo.</description>
   <number>17a</number>
 </bio:treatment>

@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="Link" date="1841" rank="genus">pellaea</taxon_name>
-    <taxon_name authority="(D. C. Eaton) D. C. Eaton in Emory" date="1859" rank="species">mucronata</taxon_name>
-    <taxon_name authority="(Lemmon) Windham" date="1993" rank="subspecies">californica</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Link" date="1841">pellaea</taxon_name>
+    <taxon_name rank="species" authority="(D. C. Eaton) D. C. Eaton in Emory" date="1859">mucronata</taxon_name>
+    <taxon_name rank="subspecies" authority="(Lemmon) Windham" date="1993">californica</taxon_name>
     <place_of_publication>
       <publication_title>Contr. Univ. Michigan Herb.</publication_title>
       <place_in_publication>19: 42. 1993</place_in_publication>
@@ -27,9 +19,9 @@
     <taxon_hierarchy>family pteridaceae;genus pellaea;species mucronata;subspecies californica</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pellaea</taxon_name>
-    <taxon_name authority="(Davenport) Maxon" date="unknown" rank="species">wrightiana</taxon_name>
-    <taxon_name authority="Lemmon" date="unknown" rank="variety">californica</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pellaea</taxon_name>
+    <taxon_name rank="species" authority="(Davenport) Maxon" date="unknown">wrightiana</taxon_name>
+    <taxon_name rank="variety" authority="Lemmon" date="unknown">californica</taxon_name>
     <place_of_publication>
       <publication_title>Ferns Pacif. Coast,</publication_title>
       <place_in_publication>10. 1882</place_in_publication>
@@ -37,66 +29,20 @@
     <taxon_hierarchy>genus Pellaea;species wrightiana;variety californica;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pellaea</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">compacta</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pellaea</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">compacta</taxon_name>
     <taxon_hierarchy>genus Pellaea;species compacta;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pellaea</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">mucronata</taxon_name>
-    <taxon_name authority="(Lemmon) Munz &amp; I. M. Johnston" date="unknown" rank="variety">californica</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pellaea</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">mucronata</taxon_name>
+    <taxon_name rank="variety" authority="(Lemmon) Munz &amp; I. M. Johnston" date="unknown">californica</taxon_name>
     <taxon_hierarchy>genus Pellaea;species mucronata;variety californica;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Leaf-blade usually 2-pinnate proximally;</text>
-      <biological_entity id="o10051" name="leaf-blade" name_original="leaf-blade" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="usually; proximally" name="architecture_or_shape" src="d0_s0" value="2-pinnate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>pinnae ascending and overlapping, especially in distal portion of leaf.</text>
-      <biological_entity id="o10052" name="pinna" name_original="pinnae" src="d0_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s1" value="ascending" />
-        <character is_modifier="false" name="arrangement" src="d0_s1" value="overlapping" />
-      </biological_entity>
-      <biological_entity constraint="distal" id="o10053" name="portion" name_original="portion" src="d0_s1" type="structure" />
-      <biological_entity id="o10054" name="leaf" name_original="leaf" src="d0_s1" type="structure" />
-      <relation from="o10052" id="r2302" modifier="especially" name="in" negation="false" src="d0_s1" to="o10053" />
-      <relation from="o10053" id="r2303" name="part_of" negation="false" src="d0_s1" to="o10054" />
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulating summer--fall.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="summer-fall" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Cliffs and rocky slopes, usually on granitic substrates;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="cliffs and rocky slopes , on granitic substrates ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>1800--3000 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="3000" to_unit="m" from="1800" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Calif.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Leaf blade  usually 2-pinnate proximally; pinnae ascending and overlapping, especially in distal portion of leaf.</description>
+  <description type="phenology">Sporulating summer--fall.</description>
+  <description type="habitat">Cliffs and rocky slopes, usually on granitic substrates;</description>
+  <description type="elevation">1800--3000 m;</description>
+  <description type="distribution">Calif.</description>
   <number>10b</number>
 </bio:treatment>

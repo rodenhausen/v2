@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="Adanson" date="1763" rank="genus">dryopteris</taxon_name>
-    <taxon_name authority="(Cavanilles) C. Christensen" date="1911" rank="species">cinnamomea</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Adanson" date="1763">dryopteris</taxon_name>
+    <taxon_name rank="species" authority="(Cavanilles) C. Christensen" date="1911">cinnamomea</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>1: 95. 1911</place_in_publication>
@@ -26,204 +18,19 @@
     <taxon_hierarchy>family dryopteridaceae;genus dryopteris;species cinnamomea</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Tectaria</taxon_name>
-    <taxon_name authority="Cavanilles" date="unknown" rank="species">cinnamomea</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Tectaria</taxon_name>
+    <taxon_name rank="species" authority="Cavanilles" date="unknown">cinnamomea</taxon_name>
     <place_of_publication>
       <publication_title>Descr. Pl.,</publication_title>
       <place_in_publication>252. 1802</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Tectaria;species cinnamomea;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Leaves monomorphic, green through winter, 22-50 × 6-12 cm.</text>
-      <biological_entity id="o12706" name="leaf" name_original="leaves" src="d0_s0" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s0" value="monomorphic" />
-        <character constraint="through winter" is_modifier="false" name="coloration" src="d0_s0" value="green" />
-        <character char_type="range_value" from="22" from_unit="cm" name="length" src="d0_s0" to="50" to_unit="cm" />
-        <character char_type="range_value" from="6" from_unit="cm" name="width" src="d0_s0" to="12" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Petiole 1/4 length of leaf, scaly at least at base;</text>
-      <biological_entity id="o12707" name="petiole" name_original="petiole" src="d0_s1" type="structure">
-        <character name="length" src="d0_s1" value="1/4 length of leaf" />
-        <character constraint="at base" constraintid="o12708" is_modifier="false" name="architecture_or_pubescence" src="d0_s1" value="scaly" />
-      </biological_entity>
-      <biological_entity id="o12708" name="base" name_original="base" src="d0_s1" type="structure" />
-    </statement>
-    <statement id="d0_s2">
-      <text>scales scattered, cinnamon-colored.</text>
-      <biological_entity id="o12709" name="scale" name_original="scales" src="d0_s2" type="structure">
-        <character is_modifier="false" name="arrangement" src="d0_s2" value="scattered" />
-        <character is_modifier="false" name="coloration" src="d0_s2" value="cinnamon-colored" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Blade light green, deltate-ovate, 3-pinnate-pinnatifid, herbaceous, not or sparsely glandular.</text>
-      <biological_entity id="o12710" name="blade" name_original="blade" src="d0_s3" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s3" value="light green" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="deltate-ovate" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="3-pinnate-pinnatifid" />
-        <character is_modifier="false" name="growth_form_or_texture" src="d0_s3" value="herbaceous" />
-        <character is_modifier="false" modifier="not; sparsely" name="architecture_or_function_or_pubescence" src="d0_s3" value="glandular" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Pinnae in plane of blade, narrowly deltate-lanceolate to deltate-oblong, narrowed to elongate, serrate tip;</text>
-      <biological_entity id="o12711" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s4" value="deltate-lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="deltate-oblong" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="narrowed" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="elongate" />
-        <character char_type="range_value" from="narrowly deltate-lanceolate" name="shape" src="d0_s4" to="deltate-oblong narrowed" />
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s4" value="deltate-lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="deltate-oblong" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="narrowed" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="elongate" />
-        <character char_type="range_value" from="narrowly deltate-lanceolate" name="shape" src="d0_s4" to="deltate-oblong narrowed" />
-      </biological_entity>
-      <biological_entity id="o12712" name="blade" name_original="blade" src="d0_s4" type="structure" />
-      <biological_entity id="o12713" name="tip" name_original="tip" src="d0_s4" type="structure">
-        <character is_modifier="true" name="architecture_or_shape" src="d0_s4" value="serrate" />
-      </biological_entity>
-      <relation from="o12711" id="r2939" modifier="in plane" name="part_of" negation="false" src="d0_s4" to="o12712" />
-    </statement>
-    <statement id="d0_s5">
-      <text>basal pinnae deltate-oblong, somewhat reduced, basal pinnules shorter than adjacent pinnules, basal basiscopic pinnule longer than basal acroscopic pinnule;</text>
-      <biological_entity constraint="basal" id="o12714" name="pinna" name_original="pinnae" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="deltate-oblong" />
-        <character is_modifier="false" modifier="somewhat" name="size" src="d0_s5" value="reduced" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="o12715" name="pinnule" name_original="pinnules" src="d0_s5" type="structure">
-        <character constraint="than adjacent pinnules" constraintid="o12716" is_modifier="false" name="height_or_length_or_size" src="d0_s5" value="shorter" />
-      </biological_entity>
-      <biological_entity id="o12716" name="pinnule" name_original="pinnules" src="d0_s5" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s5" value="adjacent" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="o12717" name="pinnule" name_original="pinnules" src="d0_s5" type="structure" />
-      <biological_entity id="o12718" name="pinnule" name_original="pinnule" src="d0_s5" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s5" value="basiscopic" />
-        <character constraint="than basal acroscopic pinnule" constraintid="o12719" is_modifier="false" name="length_or_size" src="d0_s5" value="longer" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="o12719" name="pinnule" name_original="pinnule" src="d0_s5" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s5" value="acroscopic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>pinnule margins serrate.</text>
-      <biological_entity constraint="pinnule" id="o12720" name="margin" name_original="margins" src="d0_s6" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s6" value="serrate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Sori near sinus.</text>
-      <biological_entity id="o12721" name="sorus" name_original="sori" src="d0_s7" type="structure" />
-      <biological_entity id="o12722" name="sinus" name_original="sinus" src="d0_s7" type="structure" />
-      <relation from="o12721" id="r2940" name="near" negation="false" src="d0_s7" to="o12722" />
-    </statement>
-    <statement id="d0_s8">
-      <text>Indusia lacking glands.</text>
-      <biological_entity id="o12723" name="indusium" name_original="indusia" src="d0_s8" type="structure" />
-      <biological_entity id="o12724" name="gland" name_original="glands" src="d0_s8" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s8" value="lacking" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Rock outcrops;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="rock" />
-        <character name="habitat" value="outcrops" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>400--2600 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2600" to_unit="m" from="400" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., Tex.; Mexico.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Leaves  monomorphic, green through winter, 22--50 × 6--12 cm.  Petiole  1/4 length of leaf, scaly at least at base; scales scattered, cinnamon-colored.  Blade  light green, deltate-ovate, 3-pinnate-pinnatifid, herbaceous, not or sparsely glandular.  Pinnae  in plane of blade, narrowly deltate-lanceolate to deltate-oblong, narrowed to elongate, serrate tip; basal pinnae deltate-oblong, somewhat reduced, basal pinnules shorter than adjacent pinnules, basal basiscopic pinnule longer than basal acroscopic pinnule; pinnule margins serrate.  Sori  near sinus.  Indusia  lacking glands.</description>
+  <description type="habitat">Rock outcrops;</description>
+  <description type="elevation">400--2600 m;</description>
+  <description type="distribution">Ariz., Tex.; Mexico.</description>
   <number>10</number>
   <other_name type="common_name">Cinnamon wood fern</other_name>
   <discussion>Dryopteris cinnamomea belongs to the D . patula complex of Mexico and Central America, which is poorly understood. Arizona material of D . cinnamomea has been misidentified as D . patula , according to J. T. Mickel and J. M. Beitel (1988).</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_568_d7_s0">
-      <text>Pinnae with elongate serrate tip;</text>
-      <biological_entity id="from_key_V2_568_o15367" name="pinna" name_original="pinnae" src="d7_s0" type="structure" />
-      <biological_entity id="from_key_V2_568_o15368" name="tip" name_original="tip" src="d7_s0" type="structure">
-        <character is_modifier="true" name="shape" src="d7_s0" value="elongate" />
-        <character is_modifier="true" name="architecture_or_shape" src="d7_s0" value="serrate" />
-      </biological_entity>
-      <relation from="from_key_V2_568_o15367" id="from_key_V2_568_r3622" name="with" negation="false" src="d7_s0" to="from_key_V2_568_o15368" />
-    </statement>
-    <statement id="from_key_V2_568_d7_s1">
-      <text>blades and indusia lacking glands or sparsely glandular.</text>
-      <biological_entity id="from_key_V2_568_o15369" name="blade" name_original="blades" src="d7_s1" type="structure" />
-      <biological_entity id="from_key_V2_568_o15370" name="indusium" name_original="indusia" src="d7_s1" type="structure" />
-      <biological_entity id="from_key_V2_568_o15371" name="gland" name_original="glands" src="d7_s1" type="structure">
-        <character is_modifier="true" name="count" src="d7_s1" value="lacking" />
-        <character is_modifier="false" modifier="sparsely" name="architecture_or_function_or_pubescence" src="d7_s1" value="glandular" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_568_d5_s0">
-      <text>Basal pinnules of basal pinnae shorter than adjacent pinnules.</text>
-      <biological_entity constraint="basal" id="from_key_V2_568_o15361" name="pinnule" name_original="pinnules" src="d5_s0" type="structure">
-        <character constraint="than adjacent pinnules" constraintid="o15363" is_modifier="false" name="height_or_length_or_size" src="d5_s0" value="shorter" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="from_key_V2_568_o15362" name="pinna" name_original="pinnae" src="d5_s0" type="structure" />
-      <biological_entity id="from_key_V2_568_o15363" name="pinnule" name_original="pinnules" src="d5_s0" type="structure">
-        <character is_modifier="true" name="arrangement" src="d5_s0" value="adjacent" />
-      </biological_entity>
-      <relation from="from_key_V2_568_o15361" id="from_key_V2_568_r3620" name="part_of" negation="false" src="d5_s0" to="from_key_V2_568_o15362" />
-    </statement>
-    <statement id="from_key_V2_568_d3_s0">
-      <text>Blades 2-pinnate to 3-pinnate-pinnatifid at base.</text>
-      <biological_entity id="from_key_V2_568_o15357" name="blade" name_original="blades" src="d3_s0" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d3_s0" value="2-pinnate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d3_s0" value="3-pinnate-pinnatifid" />
-        <character char_type="range_value" constraint="at base" constraintid="o15358" from="2-pinnate" name="shape" src="d3_s0" to="3-pinnate-pinnatifid" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_568_o15358" name="base" name_original="base" src="d3_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_568_d2_s0">
-      <text>Blades glabrous to sparsely scaly abaxially, not aromatic-glandular;</text>
-      <biological_entity id="from_key_V2_568_o15353" name="blade" name_original="blades" src="d2_s0" type="structure">
-        <character is_modifier="false" name="pubescence" src="d2_s0" value="glabrous to sparsely" />
-        <character is_modifier="false" modifier="sparsely; abaxially" name="architecture_or_pubescence" src="d2_s0" value="scaly" />
-        <character is_modifier="false" modifier="not" name="architecture_or_function_or_pubescence" src="d2_s0" value="aromatic-glandular" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_568_d2_s1">
-      <text>old leaves not persisting in conspicuous gray or brown clumps;</text>
-      <biological_entity id="from_key_V2_568_o15354" name="leaf" name_original="leaves" src="d2_s1" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d2_s1" value="old" />
-        <character constraint="in clumps" constraintid="o15355" is_modifier="false" modifier="not" name="duration" src="d2_s1" value="persisting" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_568_o15355" name="clump" name_original="clumps" src="d2_s1" type="structure">
-        <character is_modifier="true" name="coloration" src="d2_s1" value="conspicuous" />
-        <character is_modifier="true" name="coloration" src="d2_s1" value="gray" />
-        <character is_modifier="true" name="coloration" src="d2_s1" value="brown" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_568_d2_s2">
-      <text>leaves usually more than 25 cm.</text>
-      <biological_entity id="from_key_V2_568_o15356" name="leaf" name_original="leaves" src="d2_s2" type="structure">
-        <character char_type="range_value" from="25" from_unit="cm" name="some_measurement" src="d2_s2" upper_restricted="false" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

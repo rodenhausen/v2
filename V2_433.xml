@@ -1,93 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Newman" date="unknown" rank="family">aspleniaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">asplenium</taxon_name>
-    <taxon_name authority="Linnaeus" date="1753" rank="species">trichomanes</taxon_name>
-    <taxon_name authority="D. E. Meyer" date="1962" rank="subspecies">quadrivalens</taxon_name>
+    <taxon_name rank="family" authority="Newman" date="unknown">aspleniaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">asplenium</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="1753">trichomanes</taxon_name>
+    <taxon_name rank="subspecies" authority="D. E. Meyer" date="1962">quadrivalens</taxon_name>
     <place_of_publication>
       <publication_title>Ber. Deutsch. Bot. Ges.</publication_title>
       <place_in_publication>74: 456. 1962</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family aspleniaceae;genus asplenium;species trichomanes;subspecies quadrivalens</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Spores (as measured in Hoyers Solution) 37-43 µm.</text>
-    </statement>
-    <statement id="d0_s1">
-      <text>2 n = 144.</text>
-      <biological_entity id="o10284" name="spore" name_original="spores" src="d0_s0" type="structure">
-        <character char_type="range_value" from="37" from_unit="um" name="some_measurement" src="d0_s0" to="43" to_unit="um" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o10285" name="chromosome" name_original="" src="d0_s1" type="structure">
-        <character name="quantity" src="d0_s1" value="144" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Calcareous rocks such as limestone and dolomite;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="calcareous rocks such as limestone and dolomite ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--3000 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="3000" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>B.C., Ont., Que.; Conn., Del., Ill., Maine, Md., Mass., Mich., N.H., N.J., N.Y., Ohio, Oreg., Pa., Vt., Va., Wash., W.Va., Wis.; Europe; Asia; Africa; Pacific Islands in New Zealand; Australia.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
-        <character name="distribution" value="Europe" establishment_means="native" />
-        <character name="distribution" value="Asia" establishment_means="native" />
-        <character name="distribution" value="Africa" establishment_means="native" />
-        <character name="distribution" value="Pacific Islands in New Zealand" establishment_means="native" />
-        <character name="distribution" value="Australia" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Spores (as measured in Hoyer's Solution) 37--43 µm. 2 n  = 144.</description>
+  <description type="habitat">Calcareous rocks such as limestone and dolomite;</description>
+  <description type="elevation">0--3000 m;</description>
+  <description type="distribution">B.C., Ont., Que.; Conn., Del., Ill., Maine, Md., Mass., Mich., N.H., N.J., N.Y., Ohio, Oreg., Pa., Vt., Va., Wash., W.Va., Wis.; Europe; Asia; Africa; Pacific Islands in New Zealand; Australia.</description>
   <number>19b</number>
 </bio:treatment>

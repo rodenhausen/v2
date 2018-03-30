@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Martius" date="unknown" rank="family">hymenophyllaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">trichomanes</taxon_name>
-    <taxon_name authority="A. Gray" date="1853" rank="species">petersii</taxon_name>
+    <taxon_name rank="family" authority="Martius" date="unknown">hymenophyllaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">trichomanes</taxon_name>
+    <taxon_name rank="species" authority="A. Gray" date="1853">petersii</taxon_name>
     <place_of_publication>
       <publication_title>Amer. J. Sci. Arts</publication_title>
       <place_in_publication>ser. 2, 15: 326. 1853</place_in_publication>
@@ -26,173 +18,14 @@
     <taxon_hierarchy>family hymenophyllaceae;genus trichomanes;species petersii</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Didymoglossum</taxon_name>
-    <taxon_name authority="(A. Gray) Copeland" date="unknown" rank="species">petersii</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Didymoglossum</taxon_name>
+    <taxon_name rank="species" authority="(A. Gray) Copeland" date="unknown">petersii</taxon_name>
     <taxon_hierarchy>genus Didymoglossum;species petersii;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants on rock or epiphytic.</text>
-      <biological_entity id="o8244" name="plant" name_original="plants" src="d0_s0" type="structure" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems long-creeping, threadlike, and intertwining, bearing scattered leaves, covered with dark hairs of 2 types, 2-celled glandular-hairs and elongate rhizoidlike hairs;</text>
-      <biological_entity id="o8245" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="long-creeping" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="thread-like" value_original="threadlike" />
-      </biological_entity>
-      <biological_entity id="o8246" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s1" value="scattered" />
-      </biological_entity>
-      <biological_entity id="o8247" name="hair" name_original="hairs" src="d0_s1" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s1" value="dark" />
-      </biological_entity>
-      <biological_entity id="o8248" name="glandular-hair" name_original="glandular-hairs" src="d0_s1" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s1" value="2" />
-        <character is_modifier="true" name="architecture" src="d0_s1" value="2-celled" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="elongate" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s1" value="rhizoidlike" />
-      </biological_entity>
-      <biological_entity id="o8249" name="hair" name_original="hairs" src="d0_s1" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s1" value="2" />
-        <character is_modifier="true" name="architecture" src="d0_s1" value="2-celled" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="elongate" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s1" value="rhizoidlike" />
-      </biological_entity>
-      <relation from="o8245" id="r1920" name="bearing" negation="false" src="d0_s1" to="o8246" />
-      <relation from="o8245" id="r1921" name="covered with" negation="false" src="d0_s1" to="o8247" />
-      <relation from="o8245" id="r1922" name="part_of" negation="false" src="d0_s1" to="o8248" />
-      <relation from="o8245" id="r1923" name="part_of" negation="false" src="d0_s1" to="o8249" />
-    </statement>
-    <statement id="d0_s2">
-      <text>roots absent.</text>
-      <biological_entity id="o8250" name="root" name_original="roots" src="d0_s2" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s2" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Leaves elliptic to oblanceolate, simple, 0.5-2 cm × 2-5 mm, ± entire, bearing simple or 2-cleft dark hairs on margin and 2-celled glandular-hairs on petioles and veins;</text>
-      <biological_entity id="o8251" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="elliptic" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="oblanceolate" />
-        <character char_type="range_value" from="elliptic" name="shape" src="d0_s3" to="oblanceolate" />
-        <character is_modifier="false" name="architecture" src="d0_s3" value="simple" />
-        <character char_type="range_value" from="0.5" from_unit="cm" name="length" src="d0_s3" to="2" to_unit="cm" />
-        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s3" to="5" to_unit="mm" />
-        <character is_modifier="false" modifier="more or less" name="architecture_or_shape" src="d0_s3" value="entire" />
-      </biological_entity>
-      <biological_entity id="o8252" name="hair" name_original="hairs" src="d0_s3" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s3" value="simple" />
-        <character is_modifier="true" name="architecture_or_shape" src="d0_s3" value="2-cleft" />
-        <character is_modifier="true" name="coloration" src="d0_s3" value="dark" />
-      </biological_entity>
-      <biological_entity id="o8253" name="margin" name_original="margin" src="d0_s3" type="structure" />
-      <biological_entity id="o8254" name="glandular-hair" name_original="glandular-hairs" src="d0_s3" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s3" value="2-celled" />
-      </biological_entity>
-      <biological_entity id="o8255" name="petiole" name_original="petioles" src="d0_s3" type="structure" />
-      <biological_entity id="o8256" name="vein" name_original="veins" src="d0_s3" type="structure" />
-      <relation from="o8251" id="r1924" name="bearing" negation="false" src="d0_s3" to="o8252" />
-      <relation from="o8251" id="r1925" name="on" negation="false" src="d0_s3" to="o8253" />
-      <relation from="o8254" id="r1926" name="on" negation="false" src="d0_s3" to="o8255" />
-      <relation from="o8254" id="r1927" name="on" negation="false" src="d0_s3" to="o8256" />
-    </statement>
-    <statement id="d0_s4">
-      <text>petioles nearly as long as blades.</text>
-      <biological_entity id="o8258" name="blade" name_original="blades" src="d0_s4" type="structure" />
-      <relation from="o8257" id="r1928" name="as long as" negation="false" src="d0_s4" to="o8258" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Venation weakly pinnate with numerous unconnected false veins.</text>
-      <biological_entity id="o8257" name="petiole" name_original="petioles" src="d0_s4" type="structure">
-        <character constraint="with false veins" constraintid="o8259" is_modifier="false" modifier="weakly" name="architecture_or_shape" src="d0_s5" value="pinnate" />
-      </biological_entity>
-      <biological_entity constraint="false" id="o8259" name="vein" name_original="veins" src="d0_s5" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s5" value="numerous" />
-        <character is_modifier="true" name="fusion" src="d0_s5" value="unconnected" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Soral involucres usually 1 per leaf, terminal on blades, short-conic, flaring widely at mouth;</text>
-      <biological_entity constraint="soral" id="o8260" name="involucre" name_original="involucres" src="d0_s6" type="structure">
-        <character constraint="per leaf" constraintid="o8261" name="quantity" src="d0_s6" value="1" />
-        <character constraint="on blades" constraintid="o8262" is_modifier="false" name="position_or_structure_subtype" notes="" src="d0_s6" value="terminal" />
-        <character is_modifier="false" name="shape" notes="" src="d0_s6" value="short-conic" />
-        <character constraint="at mouth" constraintid="o8263" is_modifier="false" name="shape" src="d0_s6" value="flaring" />
-      </biological_entity>
-      <biological_entity id="o8261" name="leaf" name_original="leaf" src="d0_s6" type="structure" />
-      <biological_entity id="o8262" name="blade" name_original="blades" src="d0_s6" type="structure" />
-      <biological_entity id="o8263" name="mouth" name_original="mouth" src="d0_s6" type="structure" />
-    </statement>
-    <statement id="d0_s7">
-      <text>involucre lips not dark-edged.</text>
-      <biological_entity constraint="involucre" id="o8264" name="lip" name_original="lips" src="d0_s7" type="structure">
-        <character is_modifier="false" modifier="not" name="architecture" src="d0_s7" value="dark-edged" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>Gametophytes composed entirely of branched filaments.</text>
-      <biological_entity id="o8265" name="gametophyte" name_original="gametophytes" src="d0_s8" type="structure" />
-      <biological_entity id="o8266" name="filament" name_original="filaments" src="d0_s8" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s8" value="branched" />
-      </biological_entity>
-      <relation from="o8265" id="r1929" modifier="entirely" name="part_of" negation="false" src="d0_s8" to="o8266" />
-    </statement>
-    <statement id="d0_s9">
-      <text>Gemmae composed of short filaments of undifferentiated cells.</text>
-      <biological_entity id="o8268" name="filament" name_original="filaments" src="d0_s9" type="structure">
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s9" value="short" />
-      </biological_entity>
-      <biological_entity id="o8269" name="cell" name_original="cells" src="d0_s9" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s9" value="undifferentiated" />
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s9" value="short" />
-      </biological_entity>
-      <relation from="o8267" id="r1930" name="composed of" negation="false" src="d0_s9" to="o8268" />
-      <relation from="o8267" id="r1931" name="composed of" negation="false" src="d0_s9" to="o8269" />
-    </statement>
-    <statement id="d0_s10">
-      <text>2 n = ca. 102.</text>
-      <biological_entity id="o8267" name="gemma" name_original="gemmae" src="d0_s9" type="structure" />
-      <biological_entity constraint="2n" id="o8270" name="chromosome" name_original="" src="d0_s10" type="structure">
-        <character name="quantity" src="d0_s10" value="102" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>On tree trunks and noncalcareous rocks in deep narrow gorges;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="on tree" />
-        <character name="habitat" value="trunks noncalcareous rocks in deep narrow gorges" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--500 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="500" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ala., Ark., Fla., Ga., La., Miss., N.C., S.C., Tenn.; Mexico; Central America in Guatemala.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-        <character name="distribution" value="Central America in Guatemala" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  on rock or epiphytic.  Stems  long-creeping, threadlike, and intertwining, bearing scattered leaves, covered with dark hairs of 2 types, 2-celled glandular hairs and elongate rhizoidlike hairs; roots absent.  Leaves  elliptic to oblanceolate, simple, 0.5--2 cm × 2--5 mm, ± entire, bearing simple or 2-cleft dark hairs on margin and 2-celled glandular hairs on petioles and veins; petioles nearly as long as blades.  Venation  weakly pinnate with numerous unconnected false veins.  Soral involucres  usually 1 per leaf, terminal on blades, short-conic, flaring widely at mouth; involucre lips not dark edged.  Gametophytes  composed entirely of branched filaments.  Gemmae  composed of short filaments of undifferentiated cells. 2 n  = ca. 102.</description>
+  <description type="habitat">On tree trunks and noncalcareous rocks in deep narrow gorges;</description>
+  <description type="elevation">0--500 m;</description>
+  <description type="distribution">Ala., Ark., Fla., Ga., La., Miss., N.C., S.C., Tenn.; Mexico; Central America in Guatemala.</description>
   <number>4</number>
   <other_name type="common_name">Dwarf bristle fern</other_name>
   <other_name type="common_name">Peters's bristle fern</other_name>

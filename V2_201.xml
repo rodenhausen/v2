@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Martius" date="unknown" rank="family">hymenophyllaceae</taxon_name>
-    <taxon_name authority="Smith" date="1793" rank="genus">hymenophyllum</taxon_name>
-    <taxon_name authority="Bosch" date="1859" rank="species">wrightii</taxon_name>
+    <taxon_name rank="family" authority="Martius" date="unknown">hymenophyllaceae</taxon_name>
+    <taxon_name rank="genus" authority="Smith" date="1793">hymenophyllum</taxon_name>
+    <taxon_name rank="species" authority="Bosch" date="1859">wrightii</taxon_name>
     <place_of_publication>
       <publication_title>Ned. Kruidk. Arch.</publication_title>
       <place_in_publication>4: 391. 1859</place_in_publication>
@@ -26,109 +18,15 @@
     <taxon_hierarchy>family hymenophyllaceae;genus hymenophyllum;species wrightii</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Mecodium</taxon_name>
-    <taxon_name authority="(Bosch) Copeland" date="unknown" rank="species">wrightii</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Mecodium</taxon_name>
+    <taxon_name rank="species" authority="(Bosch) Copeland" date="unknown">wrightii</taxon_name>
     <taxon_hierarchy>genus Mecodium;species wrightii;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants on rock or epiphytic.</text>
-      <biological_entity id="o3384" name="plant" name_original="plants" src="d0_s0" type="structure" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves triangular-ovate, 2-3-pinnatifid, 2-5 × 1-1.5 cm, nearly glabrous with a few multicellular, gland-tipped hairs;</text>
-      <biological_entity id="o3385" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s1" value="triangular-ovate" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="2-3-pinnatifid" />
-        <character char_type="range_value" from="2" from_unit="cm" name="length" src="d0_s1" to="5" to_unit="cm" />
-        <character char_type="range_value" from="1" from_unit="cm" name="width" src="d0_s1" to="1.5" to_unit="cm" />
-        <character constraint="with hairs" constraintid="o3386" is_modifier="false" modifier="nearly" name="pubescence" src="d0_s1" value="glabrous" />
-      </biological_entity>
-      <biological_entity id="o3386" name="hair" name_original="hairs" src="d0_s1" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s1" value="few" />
-        <character is_modifier="true" name="architecture" src="d0_s1" value="multicellular" />
-        <character is_modifier="true" name="architecture" src="d0_s1" value="gland-tipped" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>margins entire.</text>
-      <biological_entity id="o3387" name="margin" name_original="margins" src="d0_s2" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s2" value="entire" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Gametophyte gemmae platelike, abundant.</text>
-    </statement>
-    <statement id="d0_s4">
-      <text>2 n = 56, 84.</text>
-      <biological_entity constraint="gametophyte" id="o3388" name="gemma" name_original="gemmae" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="plate-like" value_original="platelike" />
-        <character is_modifier="false" name="quantity" src="d0_s3" value="abundant" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o3389" name="chromosome" name_original="" src="d0_s4" type="structure">
-        <character name="quantity" src="d0_s4" value="56" />
-        <character name="quantity" src="d0_s4" value="84" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Shady, wet, vertical cliffs (gametophytes on wet rock or epiphytic on bark and decaying wood of large conifers);</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="shady , wet , vertical cliffs ( gametophytes on wet rock or epiphytic on bark and decaying wood of large conifers ) ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--20 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="20" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>B.C.; Alaska; e Asia.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
-        <character name="distribution" value="e Asia" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  on rock or epiphytic.  Leaves  triangular-ovate, 2--3-pinnatifid, 2--5 × 1--1.5 cm, nearly glabrous with a few multicellular, gland-tipped hairs; margins entire.  Gametophyte gemmae  platelike, abundant. 2 n  = 56, 84.</description>
+  <description type="habitat">Shady, wet, vertical cliffs (gametophytes on wet rock or epiphytic on bark and decaying wood of large conifers);</description>
+  <description type="elevation">0--20 m;</description>
+  <description type="distribution">B.C.; Alaska; e Asia.</description>
   <number>2</number>
   <other_name type="common_name">Wright's filmy fern</other_name>
   <discussion>Although sporophytes of Hymenophyllum wrightii are known from only a single locality on Queen Charlotte Islands, British Columbia, gametophytes are more generously distributed along the coasts of Alaska and British Columbia (T. M. C. Taylor 1967). The gametophytes reproduce vegetatively and are capable of persisting and dispersing via gemmae without the intervention of the sporophyte generation.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_29_d2_s0">
-      <text>On wet rock or epiphytic on bark and decaying wood of large conifers;</text>
-    </statement>
-    <statement id="from_key_V2_29_d2_s1">
-      <text>coastal British Columbia, Alaska.</text>
-      <biological_entity id="from_key_V2_29_o5936" name="whole_organism" name_original="" src="d2_s1" type="structure">
-        <character is_modifier="false" name="habitat" src="d2_s1" value="coastal" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_29_d4_s0">
-      <text>Blade segments and involucres entire.</text>
-      <biological_entity id="from_key_V2_29_o5940" name="blade" name_original="blade" src="d4_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d4_s0" value="entire" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_29_o5941" name="segment" name_original="segments" src="d4_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d4_s0" value="entire" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_29_o5942" name="involucre" name_original="involucres" src="d4_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d4_s0" value="entire" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_29_d1_s0">
-      <text>Leaf-blades glabrous.</text>
-      <biological_entity id="from_key_V2_29_o5935" name="leaf-blade" name_original="leaf-blades" src="d1_s0" type="structure">
-        <character is_modifier="false" name="pubescence" src="d1_s0" value="glabrous" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

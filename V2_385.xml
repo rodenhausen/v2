@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="Swartz" date="1806" rank="genus">cheilanthes</taxon_name>
-    <taxon_name authority="(Buckley) Kunze" date="1847" rank="species">alabamensis</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Swartz" date="1806">cheilanthes</taxon_name>
+    <taxon_name rank="species" authority="(Buckley) Kunze" date="1847">alabamensis</taxon_name>
     <place_of_publication>
       <publication_title>Linnaea</publication_title>
       <place_in_publication>20: 4. 1847</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family pteridaceae;genus cheilanthes;species alabamensis</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pteris</taxon_name>
-    <taxon_name authority="Buckley" date="unknown" rank="species">alabamensis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pteris</taxon_name>
+    <taxon_name rank="species" authority="Buckley" date="unknown">alabamensis</taxon_name>
     <place_of_publication>
       <publication_title>Amer. J. Sci. Arts</publication_title>
       <place_in_publication>45: 177. 1843</place_in_publication>
@@ -35,305 +27,16 @@
     <taxon_hierarchy>genus Pteris;species alabamensis;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pellaea</taxon_name>
-    <taxon_name authority="(Buckley) Hooker" date="unknown" rank="species">alabamensis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pellaea</taxon_name>
+    <taxon_name rank="species" authority="(Buckley) Hooker" date="unknown">alabamensis</taxon_name>
     <taxon_hierarchy>genus Pellaea;species alabamensis;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems short-creeping to compact, 3-7 mm diam.;</text>
-      <biological_entity id="o8957" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="short-creeping" />
-        <character is_modifier="false" name="architecture_or_arrangement" src="d0_s0" value="compact" />
-        <character char_type="range_value" from="3" from_unit="mm" name="diameter" src="d0_s0" to="7" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>scales uniformly brown or slightly darker at base, linear-lanceolate, straight to slightly contorted, loosely appressed, persistent.</text>
-      <biological_entity id="o8958" name="scale" name_original="scales" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="uniformly" name="coloration" src="d0_s1" value="brown" />
-        <character constraint="at base" constraintid="o8959" is_modifier="false" modifier="slightly" name="coloration" src="d0_s1" value="darker" />
-        <character is_modifier="false" name="shape" notes="" src="d0_s1" value="linear-lanceolate" />
-        <character is_modifier="false" name="course" src="d0_s1" value="straight" />
-        <character is_modifier="false" modifier="slightly" name="arrangement_or_shape" src="d0_s1" value="contorted" />
-        <character is_modifier="false" modifier="loosely" name="fixation_or_orientation" src="d0_s1" value="appressed" />
-        <character is_modifier="false" name="duration" src="d0_s1" value="persistent" />
-      </biological_entity>
-      <biological_entity id="o8959" name="base" name_original="base" src="d0_s1" type="structure" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves clustered, 6-50 cm;</text>
-    </statement>
-    <statement id="d0_s3">
-      <text>vernation noncircinate.</text>
-      <biological_entity id="o8960" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="false" name="arrangement_or_growth_form" src="d0_s2" value="clustered" />
-        <character char_type="range_value" from="6" from_unit="cm" name="some_measurement" src="d0_s2" to="50" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Petiole black, rounded adaxially.</text>
-      <biological_entity id="o8961" name="petiole" name_original="petiole" src="d0_s4" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s4" value="black" />
-        <character is_modifier="false" modifier="adaxially" name="shape" src="d0_s4" value="rounded" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Blade lanceolate to linear-oblong, 2-pinnate to 2-pinnate-pinnatifid at base, 1-7 cm wide;</text>
-      <biological_entity id="o8962" name="blade" name_original="blade" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="linear-oblong" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="2-pinnate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="2-pinnate-pinnatifid" />
-        <character char_type="range_value" from="lanceolate" name="shape" src="d0_s5" to="linear-oblong 2-pinnate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="linear-oblong" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="2-pinnate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="2-pinnate-pinnatifid" />
-        <character char_type="range_value" constraint="at base" constraintid="o8963" from="lanceolate" name="shape" src="d0_s5" to="linear-oblong 2-pinnate" />
-        <character char_type="range_value" from="1" from_unit="cm" name="width" notes="" src="d0_s5" to="7" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o8963" name="base" name_original="base" src="d0_s5" type="structure" />
-    </statement>
-    <statement id="d0_s6">
-      <text>rachis rounded adaxially, lacking scales, with dimorphic pubescence, abaxially sparsely hirsute, adaxially covered with tortuous, appressed hairs.</text>
-      <biological_entity id="o8964" name="rachis" name_original="rachis" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="adaxially" name="shape" src="d0_s6" value="rounded" />
-      </biological_entity>
-      <biological_entity id="o8965" name="scale" name_original="scales" src="d0_s6" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s6" value="lacking" />
-        <character is_modifier="false" modifier="abaxially sparsely" name="pubescence" src="d0_s6" value="hirsute" />
-      </biological_entity>
-      <biological_entity id="o8966" name="hair" name_original="hairs" src="d0_s6" type="structure">
-        <character is_modifier="true" name="course" src="d0_s6" value="tortuous" />
-        <character is_modifier="true" name="fixation_or_orientation" src="d0_s6" value="appressed" />
-      </biological_entity>
-      <relation from="o8965" id="r2055" modifier="adaxially" name="covered with" negation="false" src="d0_s6" to="o8966" />
-    </statement>
-    <statement id="d0_s7">
-      <text>Pinnae not articulate, dark color of stalk continuing into pinna base, basal pair slightly smaller than adjacent pair, ± equilateral, appearing glabrous or sparsely pubescent adaxially.</text>
-      <biological_entity id="o8967" name="pinna" name_original="pinnae" src="d0_s7" type="structure">
-        <character is_modifier="false" modifier="not" name="architecture" src="d0_s7" value="articulate" />
-        <character constraint="of stalk" constraintid="o8968" is_modifier="false" name="coloration" src="d0_s7" value="dark color" />
-      </biological_entity>
-      <biological_entity id="o8968" name="stalk" name_original="stalk" src="d0_s7" type="structure" />
-      <biological_entity constraint="pinna" id="o8969" name="base" name_original="base" src="d0_s7" type="structure" />
-      <biological_entity constraint="basal" id="o8970" name="pinna" name_original="pinnae" src="d0_s7" type="structure">
-        <character is_modifier="false" name="size" src="d0_s7" value="slightly smaller than adjacent pair" />
-        <character is_modifier="false" modifier="more or less" name="architecture_or_shape" src="d0_s7" value="equilateral" />
-        <character is_modifier="false" name="pubescence" src="d0_s7" value="glabrous" />
-        <character is_modifier="false" modifier="sparsely; adaxially" name="pubescence" src="d0_s7" value="pubescent" />
-      </biological_entity>
-      <relation from="o8968" id="r2056" name="continuing into" negation="false" src="d0_s7" to="o8969" />
-    </statement>
-    <statement id="d0_s8">
-      <text>Costae green adaxially for most of length;</text>
-      <biological_entity id="o8971" name="costa" name_original="costae" src="d0_s8" type="structure">
-        <character constraint="for" is_modifier="false" name="length" src="d0_s8" value="green" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>abaxial scales absent.</text>
-      <biological_entity constraint="abaxial" id="o8972" name="scale" name_original="scales" src="d0_s9" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s9" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>Ultimate segments narrowly elliptic to elongate-deltate, not beadlike, the largest 3-7 mm, abaxially and adaxially sparsely hirsute to glabrescent.</text>
-      <biological_entity constraint="ultimate" id="o8973" name="segment" name_original="segments" src="d0_s10" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s10" value="elliptic" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s10" value="elongate-deltate" />
-        <character char_type="range_value" from="narrowly elliptic" name="shape" src="d0_s10" to="elongate-deltate" />
-        <character is_modifier="false" modifier="not" name="shape" src="d0_s10" value="beadlike" />
-        <character is_modifier="false" name="size" src="d0_s10" value="largest" />
-        <character char_type="range_value" from="3" from_unit="mm" name="some_measurement" src="d0_s10" to="7" to_unit="mm" />
-        <character is_modifier="false" modifier="abaxially; adaxially sparsely" name="pubescence" notes="[duplicate value]" src="d0_s10" value="hirsute" />
-        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d0_s10" value="glabrescent" />
-        <character char_type="range_value" from="adaxially sparsely hirsute" modifier="abaxially" name="pubescence" src="d0_s10" to="glabrescent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>False indusia marginal to obscurely inframarginal, somewhat differentiated, 0.1-0.4 mm wide.</text>
-      <biological_entity constraint="false" id="o8974" name="indusium" name_original="indusia" src="d0_s11" type="structure">
-        <character is_modifier="false" name="position" src="d0_s11" value="marginal" />
-        <character constraint="to obscurely inframarginal , somewhat differentiated , 0.1-0.4 mm" is_modifier="false" name="width" src="d0_s11" value="wide" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s12">
-      <text>Sori ± continuous around segment margins.</text>
-      <biological_entity id="o8975" name="sorus" name_original="sori" src="d0_s12" type="structure">
-        <character constraint="around segment margins" constraintid="o8976" is_modifier="false" modifier="more or less" name="architecture" src="d0_s12" value="continuous" />
-      </biological_entity>
-      <biological_entity constraint="segment" id="o8976" name="margin" name_original="margins" src="d0_s12" type="structure" />
-    </statement>
-    <statement id="d0_s13">
-      <text>Sporangia containing 32 spores.</text>
-      <biological_entity id="o8978" name="spore" name_original="spores" src="d0_s13" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s13" value="32" />
-      </biological_entity>
-      <relation from="o8977" id="r2057" name="containing" negation="false" src="d0_s13" to="o8978" />
-    </statement>
-    <statement id="d0_s14">
-      <text>n = 2 n = 87, apogamous.</text>
-      <biological_entity id="o8977" name="sporangium" name_original="sporangia" src="d0_s13" type="structure" />
-      <biological_entity constraint="n=2n" id="o8979" name="chromosome" name_original="" src="d0_s14" type="structure">
-        <character name="quantity" src="d0_s14" unit=",apogamous" value="87" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulating summer--fall.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="summer-fall" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Rocky slopes, cliffs, and ledges, usually on limestone;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="rocky slopes , cliffs , and ledges , on limestone ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>100--2000 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2000" to_unit="m" from="100" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ala., Ariz., Ark., Ga., Kans., Ky., La., Mo., N.Mex., N.C., Okla., Tenn., Tex., Va.; Mexico.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  short-creeping to compact, 3--7 mm diam.; scales uniformly brown or slightly darker at base, linear-lanceolate, straight to slightly contorted, loosely appressed, persistent.  Leaves  clustered, 6--50 cm; vernation noncircinate.  Petiole  black, rounded adaxially.  Blade  lanceolate to linear-oblong, 2-pinnate to 2-pinnate-pinnatifid at base, 1--7 cm wide; rachis rounded adaxially, lacking scales, with dimorphic pubescence, abaxially sparsely hirsute, adaxially covered with tortuous, appressed hairs.  Pinnae  not articulate, dark color of stalk continuing into pinna base, basal pair slightly smaller than adjacent pair, ± equilateral, appearing glabrous or sparsely pubescent adaxially.  Costae  green adaxially for most of length; abaxial scales absent.  Ultimate segments  narrowly elliptic to elongate-deltate, not beadlike, the largest 3--7 mm, abaxially and adaxially sparsely hirsute to glabrescent.  False indusia  marginal to obscurely inframarginal, somewhat differentiated, 0.1--0.4 mm wide.  Sori  ± continuous around segment margins.  Sporangia  containing 32 spores.  n  = 2 n  = 87, apogamous.</description>
+  <description type="phenology">Sporulating summer--fall.</description>
+  <description type="habitat">Rocky slopes, cliffs, and ledges, usually on limestone;</description>
+  <description type="elevation">100--2000 m;</description>
+  <description type="distribution">Ala., Ariz., Ark., Ga., Kans., Ky., La., Mo., N.Mex., N.C., Okla., Tenn., Tex., Va.; Mexico.</description>
   <number>17</number>
   <other_name type="common_name">Alabama lip fern</other_name>
   <discussion>Plants of Cheilanthes alabamensis occurring in the flora are apogamous triploids; a sexual diploid cytotype has been found in Nuevo León, Mexico (M. D. Windham, unpublished). Given the high degree of morphologic similarity between the two cytotypes, the North American triploid probably was derived from the Mexican diploid through autopolyploidy. In the flora, Cheilanthes alabamensis is most often confused with C . microphylla , from which it is distinguished by having thicker stems, mostly green costae, and 32-spored sporangia.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_440_d35_s0">
-      <text>Costae green adaxially for most of length;</text>
-    </statement>
-    <statement id="from_key_V2_440_d35_s1">
-      <text>most sporangia containing 32 spores;</text>
-      <biological_entity id="from_key_V2_440_o10590" name="costa" name_original="costae" src="d35_s0" type="structure">
-        <character constraint="for" is_modifier="false" name="length" src="d35_s0" value="green" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_440_o10591" name="sporangium" name_original="sporangia" src="d35_s1" type="structure" />
-      <biological_entity id="from_key_V2_440_o10592" name="spore" name_original="spores" src="d35_s1" type="structure">
-        <character is_modifier="true" name="count" src="d35_s1" value="32" />
-      </biological_entity>
-      <relation from="from_key_V2_440_o10591" id="from_key_V2_440_r2405" name="containing" negation="false" src="d35_s1" to="from_key_V2_440_o10592" />
-    </statement>
-    <statement id="from_key_V2_440_d35_s2">
-      <text>stems short-creeping to compact, usually 4-7 mm diam.</text>
-      <biological_entity id="from_key_V2_440_o10593" name="stem" name_original="stems" src="d35_s2" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d35_s2" value="short-creeping" />
-        <character is_modifier="false" name="architecture_or_arrangement" src="d35_s2" value="compact" />
-        <character char_type="range_value" from="4" from_unit="mm" modifier="usually" name="diameter" src="d35_s2" to="7" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_440_d34_s0">
-      <text>Basal pinnae ± equilateral, proximal basiscopic pinnules not conspicuously enlarged;</text>
-      <biological_entity constraint="basal" id="from_key_V2_440_o10586" name="pinna" name_original="pinnae" src="d34_s0" type="structure">
-        <character is_modifier="false" modifier="more or less" name="architecture_or_shape" src="d34_s0" value="equilateral" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="from_key_V2_440_o10587" name="pinna" name_original="pinnae" src="d34_s0" type="structure" />
-      <biological_entity id="from_key_V2_440_o10588" name="pinnule" name_original="pinnules" src="d34_s0" type="structure">
-        <character is_modifier="true" name="orientation" src="d34_s0" value="basiscopic" />
-        <character is_modifier="false" modifier="not conspicuously" name="size" src="d34_s0" value="enlarged" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_440_d34_s1">
-      <text>blades lanceolate to narrowly oblong, 1-7 cm wide.</text>
-      <biological_entity id="from_key_V2_440_o10589" name="blade" name_original="blades" src="d34_s1" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d34_s1" value="lanceolate" />
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d34_s1" value="oblong" />
-        <character char_type="range_value" from="lanceolate" name="shape" src="d34_s1" to="narrowly oblong" />
-        <character char_type="range_value" from="1" from_unit="cm" name="width" src="d34_s1" to="7" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_440_d31_s0">
-      <text>Rachis pubescence dimorphic, abaxially sparsely hirsute with long, divergent hairs, adaxially densely covered with tortuous, appressed hairs;</text>
-      <biological_entity id="from_key_V2_440_o10574" name="rachis" name_original="rachis" src="d31_s0" type="structure">
-        <character is_modifier="false" name="pubescence" src="d31_s0" value="dimorphic" />
-        <character constraint="with hairs" constraintid="o10575" is_modifier="false" modifier="abaxially sparsely" name="pubescence" src="d31_s0" value="hirsute" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_440_o10575" name="hair" name_original="hairs" src="d31_s0" type="structure">
-        <character is_modifier="true" name="length_or_size" src="d31_s0" value="long" />
-        <character is_modifier="true" name="arrangement" src="d31_s0" value="divergent" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_440_o10576" name="hair" name_original="hairs" src="d31_s0" type="structure">
-        <character is_modifier="true" name="course" src="d31_s0" value="tortuous" />
-        <character is_modifier="true" name="fixation_or_orientation" src="d31_s0" value="appressed" />
-      </biological_entity>
-      <relation from="from_key_V2_440_o10574" id="from_key_V2_440_r2403" modifier="adaxially densely" name="covered with" negation="false" src="d31_s0" to="from_key_V2_440_o10576" />
-    </statement>
-    <statement id="from_key_V2_440_d31_s1">
-      <text>ultimate segments sparsely and inconspicuously pubescent abaxially, often appearing glabrous.</text>
-      <biological_entity constraint="ultimate" id="from_key_V2_440_o10577" name="segment" name_original="segments" src="d31_s1" type="structure">
-        <character is_modifier="false" modifier="inconspicuously; abaxially" name="pubescence" src="d31_s1" value="pubescent" />
-        <character is_modifier="false" modifier="often" name="pubescence" src="d31_s1" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_440_d28_s0">
-      <text>Rachises (and often pinnae) pubescent or glandular;</text>
-      <biological_entity id="from_key_V2_440_o10564" name="rachis" name_original="rachises" src="d28_s0" type="structure">
-        <character is_modifier="false" name="pubescence" src="d28_s0" value="pubescent" />
-        <character is_modifier="false" name="pubescence" src="d28_s0" value="glandular" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_440_d28_s1">
-      <text>petioles rounded, flattened, or slightly grooved distally but never grooved below middle adaxially.</text>
-      <biological_entity id="from_key_V2_440_o10565" name="petiole" name_original="petioles" src="d28_s1" type="structure">
-        <character is_modifier="false" name="shape" src="d28_s1" value="rounded" />
-        <character is_modifier="false" name="shape" src="d28_s1" value="flattened" />
-        <character is_modifier="false" modifier="slightly; distally" name="architecture" src="d28_s1" value="grooved" />
-        <character constraint="below middle" is_modifier="false" modifier="never; adaxially" name="architecture" src="d28_s1" value="grooved" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_440_d2_s0">
-      <text>Costae lacking multiseriate scales, pubescent or glabrous;</text>
-      <biological_entity id="from_key_V2_440_o10450" name="scale" name_original="scales" src="d2_s0" type="structure">
-        <character is_modifier="true" name="count" src="d2_s0" value="lacking" />
-        <character is_modifier="true" name="architecture_or_arrangement" src="d2_s0" value="multiseriate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_440_d2_s1">
-      <text>vernation circinate or noncircinate, expanding leaves tightly coiled at tip in most species.</text>
-      <biological_entity id="from_key_V2_440_o10449" name="costa" name_original="costae" src="d2_s0" type="structure">
-        <character is_modifier="false" name="pubescence" src="d2_s0" value="pubescent" />
-        <character is_modifier="false" name="pubescence" src="d2_s0" value="glabrous" />
-        <character is_modifier="false" name="vernation" src="d2_s1" value="circinate" />
-        <character name="vernation" src="d2_s1" value="noncircinate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_440_o10451" name="leaf" name_original="leaves" src="d2_s1" type="structure">
-        <character is_modifier="true" name="size" src="d2_s1" value="expanding" />
-        <character constraint="at tip" constraintid="o10452" is_modifier="false" modifier="tightly" name="architecture" src="d2_s1" value="coiled" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_440_o10452" name="tip" name_original="tip" src="d2_s1" type="structure" />
-      <biological_entity id="from_key_V2_440_o10453" name="species" name_original="species" src="d2_s1" type="taxon_name" />
-      <relation from="from_key_V2_440_o10452" id="from_key_V2_440_r2385" name="in" negation="false" src="d2_s1" to="from_key_V2_440_o10453" />
-    </statement>
-  </description>
 </bio:treatment>

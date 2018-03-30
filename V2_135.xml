@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Mirbel" date="unknown" rank="family">lycopodiaceae</taxon_name>
-    <taxon_name authority="Holub" date="1964" rank="genus">lycopodiella</taxon_name>
-    <taxon_name authority="(Chapman) Cranfill" date="1981" rank="species">appressa</taxon_name>
+    <taxon_name rank="family" authority="Mirbel" date="unknown">lycopodiaceae</taxon_name>
+    <taxon_name rank="genus" authority="Holub" date="1964">lycopodiella</taxon_name>
+    <taxon_name rank="species" authority="(Chapman) Cranfill" date="1981">appressa</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>71: 97. 1981</place_in_publication>
@@ -26,9 +18,9 @@
     <taxon_hierarchy>family lycopodiaceae;genus lycopodiella;species appressa</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Lycopodium</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="species">inundatum</taxon_name>
-    <taxon_name authority="Chapman" date="unknown" rank="variety">appressum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Lycopodium</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="unknown">inundatum</taxon_name>
+    <taxon_name rank="variety" authority="Chapman" date="unknown">appressum</taxon_name>
     <place_of_publication>
       <publication_title>Bot. Gaz.</publication_title>
       <place_in_publication>3: 20. 1878</place_in_publication>
@@ -36,225 +28,20 @@
     <taxon_hierarchy>genus Lycopodium;species inundatum;variety appressum;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Lycopodium</taxon_name>
-    <taxon_name authority="(Chapman) F. E. Lloyd &amp; L. Underwood" date="unknown" rank="species">appressum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Lycopodium</taxon_name>
+    <taxon_name rank="species" authority="(Chapman) F. E. Lloyd &amp; L. Underwood" date="unknown">appressum</taxon_name>
     <taxon_hierarchy>genus Lycopodium;species appressum;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Lycopodium</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">inundatum</taxon_name>
-    <taxon_name authority="Tuckerman" date="unknown" rank="variety">bigelovii</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Lycopodium</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">inundatum</taxon_name>
+    <taxon_name rank="variety" authority="Tuckerman" date="unknown">bigelovii</taxon_name>
     <taxon_hierarchy>genus Lycopodium;species inundatum;variety bigelovii;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Horizontal stems flat on ground, 15-45 X 0.4-0.6 cm;</text>
-      <biological_entity id="o1320" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s0" value="horizontal" />
-        <character constraint="on ground" constraintid="o1321" is_modifier="false" name="prominence_or_shape" src="d0_s0" value="flat" />
-        <character char_type="range_value" from="15" from_unit="cm" name="length" notes="" src="d0_s0" to="45" to_unit="cm" />
-        <character char_type="range_value" from="0.4" from_unit="cm" name="width" notes="" src="d0_s0" to="0.6" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o1321" name="ground" name_original="ground" src="d0_s0" type="structure" />
-    </statement>
-    <statement id="d0_s1">
-      <text>stems (excluding leaves) thick, 1.5-2 mm wide;</text>
-      <biological_entity id="o1322" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="width" src="d0_s1" value="thick" />
-        <character char_type="range_value" from="1.5" from_unit="mm" name="width" src="d0_s1" to="2" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>leaves monomorphic, appressed, 5-7 X 0.8-1 mm, marginal teeth 0-7 per side.</text>
-      <biological_entity id="o1323" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s2" value="monomorphic" />
-        <character is_modifier="false" name="fixation_or_orientation" src="d0_s2" value="appressed" />
-        <character char_type="range_value" from="5" from_unit="mm" name="length" src="d0_s2" to="7" to_unit="mm" />
-        <character char_type="range_value" from="0.8" from_unit="mm" name="width" src="d0_s2" to="1" to_unit="mm" />
-      </biological_entity>
-      <biological_entity constraint="marginal" id="o1324" name="tooth" name_original="teeth" src="d0_s2" type="structure">
-        <character char_type="range_value" constraint="per side" constraintid="o1325" from="0" name="quantity" src="d0_s2" to="7" />
-      </biological_entity>
-      <biological_entity id="o1325" name="side" name_original="side" src="d0_s2" type="structure" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Peduncles 1-7 per plant, 13-40 X 0.3-0.4 cm;</text>
-      <biological_entity id="o1326" name="peduncle" name_original="peduncles" src="d0_s3" type="structure">
-        <character char_type="range_value" constraint="per plant" constraintid="o1327" from="1" name="quantity" src="d0_s3" to="7" />
-        <character char_type="range_value" from="13" from_unit="cm" name="length" notes="" src="d0_s3" to="40" to_unit="cm" />
-        <character char_type="range_value" from="0.3" from_unit="cm" name="width" notes="" src="d0_s3" to="0.4" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o1327" name="plant" name_original="plant" src="d0_s3" type="structure" />
-    </statement>
-    <statement id="d0_s4">
-      <text>strobilus 1/3-1/6 total length;</text>
-      <biological_entity id="o1328" name="strobilus" name_original="strobilus" src="d0_s4" type="structure">
-        <character char_type="range_value" from="1/3" name="length" src="d0_s4" to="1/6" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>leaves appressed, 3-5.3 X 0.3-0.5 mm, marginal teeth 0-3 per side.</text>
-      <biological_entity id="o1329" name="leaf" name_original="leaves" src="d0_s5" type="structure">
-        <character is_modifier="false" name="fixation_or_orientation" src="d0_s5" value="appressed" />
-        <character char_type="range_value" from="3" from_unit="mm" name="length" src="d0_s5" to="5.3" to_unit="mm" />
-        <character char_type="range_value" from="0.3" from_unit="mm" name="width" src="d0_s5" to="0.5" to_unit="mm" />
-      </biological_entity>
-      <biological_entity constraint="marginal" id="o1330" name="tooth" name_original="teeth" src="d0_s5" type="structure">
-        <character char_type="range_value" constraint="per side" constraintid="o1331" from="0" name="quantity" src="d0_s5" to="3" />
-      </biological_entity>
-      <biological_entity id="o1331" name="side" name_original="side" src="d0_s5" type="structure" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Strobili 25-60 X 3-4 mm.</text>
-      <biological_entity id="o1332" name="strobilus" name_original="strobili" src="d0_s6" type="structure">
-        <character char_type="range_value" from="25" from_unit="mm" name="length" src="d0_s6" to="60" to_unit="mm" />
-        <character char_type="range_value" from="3" from_unit="mm" name="width" src="d0_s6" to="4" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Sporophylls appressed, incurved, 3.5-5 X 0.3 mm, marginal teeth absent.</text>
-      <biological_entity id="o1333" name="sporophyll" name_original="sporophylls" src="d0_s7" type="structure">
-        <character is_modifier="false" name="fixation_or_orientation" src="d0_s7" value="appressed" />
-        <character is_modifier="false" name="orientation" src="d0_s7" value="incurved" />
-        <character char_type="range_value" from="3.5" from_unit="mm" name="length" src="d0_s7" to="5" to_unit="mm" />
-        <character name="width" src="d0_s7" unit="mm" value="0.3" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>2 n = 156.</text>
-      <biological_entity constraint="marginal" id="o1334" name="tooth" name_original="teeth" src="d0_s7" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s7" value="absent" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o1335" name="chromosome" name_original="" src="d0_s8" type="structure">
-        <character name="quantity" src="d0_s8" value="156" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Bogs, lakeshores, marshes, ditches, borrow pits;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="bogs" />
-        <character name="habitat" value="lakeshores" />
-        <character name="habitat" value="marshes" />
-        <character name="habitat" value="ditches" />
-        <character name="habitat" value="borrow pits" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--100 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="100" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>N.B., Nfld., N.S., P.E.I.; Ala., Ark., Conn., Del., Fla., Ga., Ill., Kans., Ky., La., Maine, Md., Mass., Miss., Mo., N.H., N.J., N.Y., N.C., Okla., Pa., R.I., S.C., Tenn., Tex., Va.; West Indies in Cuba.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Nfld." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="P.E.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" value="West Indies in Cuba" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Horizontal stems  flat on ground, 15--45 X 0.4--0.6 cm; stems (excluding leaves) thick, 1.5--2 mm wide; leaves monomorphic, appressed, 5--7 X 0.8--1 mm, marginal teeth 0--7 per side.  Peduncles  1--7 per plant, 13--40 X 0.3--0.4 cm; strobilus 1/3--1/6 total length; leaves appressed, 3--5.3 X 0.3--0.5 mm, marginal teeth 0--3 per side.  Strobili  25--60 X 3--4 mm.  Sporophylls  appressed, incurved, 3.5--5 X 0.3 mm, marginal teeth absent. 2 n  = 156.</description>
+  <description type="habitat">Bogs, lakeshores, marshes, ditches, borrow pits;</description>
+  <description type="elevation">0--100 m;</description>
+  <description type="distribution">N.B., Nfld., N.S., P.E.I.; Ala., Ark., Conn., Del., Fla., Ga., Ill., Kans., Ky., La., Maine, Md., Mass., Miss., Mo., N.H., N.J., N.Y., N.C., Okla., Pa., R.I., S.C., Tenn., Tex., Va.; West Indies in Cuba.</description>
   <number>2</number>
   <other_name type="common_name">Appressed bog club-moss</other_name>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_764_d5_s0">
-      <text>Upright shoots 15-40 × 0.3-0.4 cm;</text>
-      <biological_entity id="from_key_V2_764_o22088" name="shoot" name_original="shoots" src="d5_s0" type="structure">
-        <character is_modifier="true" name="orientation" src="d5_s0" value="upright" />
-        <character char_type="range_value" from="15" from_unit="cm" name="length" src="d5_s0" to="40" to_unit="cm" />
-        <character char_type="range_value" from="0.3" from_unit="cm" name="width" src="d5_s0" to="0.4" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_764_d5_s1">
-      <text>horizontal stem-leaves with scattered marginal teeth.</text>
-      <biological_entity id="from_key_V2_764_o22089" name="stem-leaf" name_original="stem-leaves" src="d5_s1" type="structure">
-        <character is_modifier="true" name="orientation" src="d5_s1" value="horizontal" />
-      </biological_entity>
-      <biological_entity constraint="marginal" id="from_key_V2_764_o22090" name="tooth" name_original="teeth" src="d5_s1" type="structure">
-        <character is_modifier="true" name="arrangement" src="d5_s1" value="scattered" />
-      </biological_entity>
-      <relation from="from_key_V2_764_o22089" id="from_key_V2_764_r5160" name="with" negation="false" src="d5_s1" to="from_key_V2_764_o22090" />
-    </statement>
-    <statement id="from_key_V2_764_d3_s0">
-      <text>Strobili 0-2 mm thicker than upright shoot;</text>
-      <biological_entity id="from_key_V2_764_o22080" name="strobilus" name_original="strobili" src="d3_s0" type="structure">
-        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d3_s0" to="2" to_unit="mm" />
-        <character constraint="than upright shoot" constraintid="o22081" is_modifier="false" name="width" src="d3_s0" value="thicker" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_764_o22081" name="shoot" name_original="shoot" src="d3_s0" type="structure">
-        <character is_modifier="true" name="orientation" src="d3_s0" value="upright" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_764_d3_s1">
-      <text>horizontal stem-leaves with marginal teeth absent or sparse.</text>
-      <biological_entity id="from_key_V2_764_o22082" name="stem-leaf" name_original="stem-leaves" src="d3_s1" type="structure">
-        <character is_modifier="true" name="orientation" src="d3_s1" value="horizontal" />
-      </biological_entity>
-      <biological_entity constraint="marginal" id="from_key_V2_764_o22083" name="tooth" name_original="teeth" src="d3_s1" type="structure">
-        <character is_modifier="false" name="count" src="d3_s1" value="absent" />
-        <character is_modifier="false" name="count" src="d3_s1" value="sparse" />
-      </biological_entity>
-      <relation from="from_key_V2_764_o22082" id="from_key_V2_764_r5158" name="with" negation="false" src="d3_s1" to="from_key_V2_764_o22083" />
-    </statement>
-    <statement id="from_key_V2_764_d2_s0">
-      <text>Fertile shoots 4-45 cm but mostly 8-35 cm;</text>
-      <biological_entity id="from_key_V2_764_o22076" name="shoot" name_original="shoots" src="d2_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
-        <character char_type="range_value" from="4" from_unit="cm" name="some_measurement" src="d2_s0" to="45" to_unit="cm" />
-        <character char_type="range_value" from="8" from_unit="cm" modifier="mostly" name="some_measurement" src="d2_s0" to="35" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_764_d2_s1">
-      <text>sporophylls spreading or appressed;</text>
-    </statement>
-    <statement id="from_key_V2_764_d2_s2">
-      <text>mainly south of 45° N latitude at low elevations.</text>
-      <biological_entity id="from_key_V2_764_o22077" name="sporophyll" name_original="sporophylls" src="d2_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d2_s1" value="spreading" />
-        <character is_modifier="false" name="orientation" src="d2_s1" value="appressed" />
-        <character constraint="of n" constraintid="o22078" is_modifier="false" modifier="mainly" name="geographical_terms" src="d2_s2" value="south" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_764_o22078" name="n" name_original="n" src="d2_s2" type="structure">
-        <character is_modifier="true" name="count" src="d2_s2" value="45" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_764_o22079" name="elevation" name_original="elevations" src="d2_s2" type="structure">
-        <character is_modifier="true" name="position" src="d2_s2" value="low" />
-      </biological_entity>
-      <relation from="from_key_V2_764_o22078" id="from_key_V2_764_r5157" name="at" negation="false" src="d2_s2" to="from_key_V2_764_o22079" />
-    </statement>
-  </description>
 </bio:treatment>

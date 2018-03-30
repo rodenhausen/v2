@@ -1,135 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Wettstein" date="unknown" rank="family">azollaceae</taxon_name>
-    <taxon_name authority="Lamarck in Lamarck et al." date="1783" rank="genus">azolla</taxon_name>
-    <taxon_name authority="C. Presl" date="1845" rank="species">mexicana</taxon_name>
+    <taxon_name rank="family" authority="Wettstein" date="unknown">azollaceae</taxon_name>
+    <taxon_name rank="genus" authority="Lamarck in Lamarck et al." date="1783">azolla</taxon_name>
+    <taxon_name rank="species" authority="C. Presl" date="1845">mexicana</taxon_name>
     <place_of_publication>
       <publication_title>Abh. Königl. Böhm. Ges. Wiss.</publication_title>
       <place_in_publication>ser. 5, 3: 150. 1845</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family azollaceae;genus azolla;species mexicana</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants green or often blue-green to dark red, some red-fringed leaves usually present in nature, free-floating or forming a multilayer mat to 4 cm thick in early summer;</text>
-      <biological_entity id="o8435" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s0" value="green" />
-        <character name="coloration" src="d0_s0" value="often" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s0" value="blue-green" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s0" value="dark red" />
-        <character char_type="range_value" from="blue-green" name="coloration" src="d0_s0" to="dark red" />
-      </biological_entity>
-      <biological_entity id="o8436" name="leaf" name_original="leaves" src="d0_s0" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s0" value="red-fringed" />
-        <character constraint="in nature" constraintid="o8437" is_modifier="false" modifier="usually" name="presence" src="d0_s0" value="absent" />
-        <character is_modifier="false" name="growth_form_or_location" notes="" src="d0_s0" value="free-floating" />
-        <character name="growth_form_or_location" src="d0_s0" value="forming a multilayer mat" />
-        <character char_type="range_value" constraint="in early summer" from="0" from_unit="cm" name="thickness" src="d0_s0" to="4" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o8437" name="nature" name_original="nature" src="d0_s0" type="structure" />
-    </statement>
-    <statement id="d0_s1">
-      <text>plants frequently fertile.</text>
-      <biological_entity id="o8438" name="plant" name_original="plants" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="frequently" name="reproduction" src="d0_s1" value="fertile" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Stems prostrate, 1-1.5 cm.</text>
-      <biological_entity id="o8439" name="stem" name_original="stems" src="d0_s2" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s2" value="prostrate" />
-        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s2" to="1.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Largest hairs on upper leaf lobe near stem 2 (-3) -celled;</text>
-      <biological_entity constraint="largest" id="o8440" name="hair" name_original="hairs" src="d0_s3" type="structure" />
-      <biological_entity constraint="leaf" id="o8441" name="lobe" name_original="lobe" src="d0_s3" type="structure" constraint_original="upper leaf" />
-      <biological_entity id="o8442" name="stem" name_original="stem" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s3" value="2(-3)-celled" />
-      </biological_entity>
-      <relation from="o8440" id="r1945" name="on" negation="false" src="d0_s3" to="o8441" />
-      <relation from="o8441" id="r1946" name="near" negation="false" src="d0_s3" to="o8442" />
-    </statement>
-    <statement id="d0_s4">
-      <text>broad pedicel cell often 1/2 or more height of hair, apical cell curved, with tip nearly parallel to leaf surface.</text>
-      <biological_entity constraint="pedicel" id="o8443" name="cell" name_original="cell" src="d0_s4" type="structure">
-        <character is_modifier="true" name="width" src="d0_s4" value="broad" />
-        <character name="quantity" src="d0_s4" value="1/2" />
-      </biological_entity>
-      <biological_entity id="o8444" name="hair" name_original="hair" src="d0_s4" type="structure" />
-      <biological_entity constraint="apical" id="o8445" name="cell" name_original="cell" src="d0_s4" type="structure">
-        <character is_modifier="false" name="height" src="d0_s4" value="curved" />
-      </biological_entity>
-      <biological_entity id="o8446" name="tip" name_original="tip" src="d0_s4" type="structure">
-        <character constraint="to leaf surface" constraintid="o8447" is_modifier="false" modifier="nearly" name="arrangement" src="d0_s4" value="parallel" />
-      </biological_entity>
-      <biological_entity constraint="leaf" id="o8447" name="surface" name_original="surface" src="d0_s4" type="structure" />
-      <relation from="o8445" id="r1947" name="with" negation="false" src="d0_s4" to="o8446" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Megaspores not covered with raised angular bumps, pitted and sparsely covered with a few long filaments extending over surface.</text>
-      <biological_entity id="o8448" name="megaspore" name_original="megaspores" src="d0_s5" type="structure">
-        <character is_modifier="false" name="relief" src="d0_s5" value="pitted" />
-      </biological_entity>
-      <biological_entity id="o8449" name="bump" name_original="bumps" src="d0_s5" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s5" value="raised" />
-        <character is_modifier="true" name="arrangement_or_shape" src="d0_s5" value="angular" />
-      </biological_entity>
-      <biological_entity id="o8450" name="filament" name_original="filaments" src="d0_s5" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s5" value="few" />
-        <character is_modifier="true" name="length_or_size" src="d0_s5" value="long" />
-      </biological_entity>
-      <biological_entity id="o8451" name="surface" name_original="surface" src="d0_s5" type="structure" />
-      <relation from="o8448" id="r1948" name="covered with" negation="true" src="d0_s5" to="o8449" />
-      <relation from="o8448" id="r1949" modifier="sparsely" name="covered with a" negation="false" src="d0_s5" to="o8450" />
-      <relation from="o8448" id="r1950" name="extending over" negation="false" src="d0_s5" to="o8451" />
-    </statement>
-  </description>
+  <description type="morphology">Plants  green or often blue-green to dark red, some red-fringed leaves usually present in nature, free-floating or forming a multilayer mat to 4 cm thick in early summer; plants frequently fertile.  Stems  prostrate, 1--1.5 cm.  Largest hairs  on upper leaf lobe near stem 2(--3)-celled; broad pedicel cell often 1/2 or more height of hair, apical cell curved, with tip nearly parallel to leaf surface.  Megaspores  not covered with raised angular bumps, pitted and sparsely covered with a few long filaments extending over surface.</description>
   <number>2</number>
   <discussion>Azolla mexicana is generally less cold tolerant and has a narrower environmental range than A . caroliniana . Both species are closely related and are similar vegetatively in culture. In the western United States, A . mexicana is often fertile. Distribution in the Great Plains area is tentative and needs further study. In the eastern United States, A . mexicana may have been occasionally introduced.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_390_d4_s0">
-      <text>Megaspores pitted, sparsely covered with a few long filaments (filosum).</text>
-      <biological_entity id="from_key_V2_390_o9112" name="megaspore" name_original="megaspores" src="d4_s0" type="structure">
-        <character is_modifier="false" name="relief" src="d4_s0" value="pitted" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_390_o9113" name="filament" name_original="filaments" src="d4_s0" type="structure">
-        <character is_modifier="true" name="count" src="d4_s0" value="few" />
-        <character is_modifier="true" name="length_or_size" src="d4_s0" value="long" />
-      </biological_entity>
-      <relation from="from_key_V2_390_o9112" id="from_key_V2_390_r2089" modifier="sparsely" name="covered with a" negation="false" src="d4_s0" to="from_key_V2_390_o9113" />
-    </statement>
-    <statement id="from_key_V2_390_d2_s0">
-      <text>Largest hairs on upper leaf lobe with 2 or more cells;</text>
-      <biological_entity constraint="largest" id="from_key_V2_390_o9106" name="hair" name_original="hairs" src="d2_s0" type="structure" />
-      <biological_entity constraint="upper leaf" id="from_key_V2_390_o9107" name="lobe" name_original="lobe" src="d2_s0" type="structure" />
-      <relation from="from_key_V2_390_o9106" id="from_key_V2_390_r2086" modifier="with 2 or morecells" name="on" negation="false" src="d2_s0" to="from_key_V2_390_o9107" />
-    </statement>
-    <statement id="from_key_V2_390_d2_s1">
-      <text>megaspores not covered with raised angular bumps.</text>
-      <biological_entity id="from_key_V2_390_o9108" name="megaspore" name_original="megaspores" src="d2_s1" type="structure" />
-      <biological_entity id="from_key_V2_390_o9109" name="bump" name_original="bumps" src="d2_s1" type="structure">
-        <character is_modifier="true" name="prominence" src="d2_s1" value="raised" />
-        <character is_modifier="true" name="arrangement_or_shape" src="d2_s1" value="angular" />
-      </biological_entity>
-      <relation from="from_key_V2_390_o9108" id="from_key_V2_390_r2087" name="covered with" negation="true" src="d2_s1" to="from_key_V2_390_o9109" />
-    </statement>
-  </description>
 </bio:treatment>

@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Mirbel" date="unknown" rank="family">lycopodiaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">lycopodium</taxon_name>
-    <taxon_name authority="Michaux" date="1803" rank="species">dendroideum</taxon_name>
+    <taxon_name rank="family" authority="Mirbel" date="unknown">lycopodiaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">lycopodium</taxon_name>
+    <taxon_name rank="species" authority="Michaux" date="1803">dendroideum</taxon_name>
     <place_of_publication>
       <publication_title>Fl. Bor.-Amer.</publication_title>
       <place_in_publication>2: 282. 1803</place_in_publication>
@@ -26,301 +18,16 @@
     <taxon_hierarchy>family lycopodiaceae;genus lycopodium;species dendroideum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Lycopodium</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="species">obscurum</taxon_name>
-    <taxon_name authority="(Michaux) D. C. Eaton" date="unknown" rank="variety">dendroideum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Lycopodium</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="unknown">obscurum</taxon_name>
+    <taxon_name rank="variety" authority="(Michaux) D. C. Eaton" date="unknown">dendroideum</taxon_name>
     <taxon_hierarchy>genus Lycopodium;species obscurum;variety dendroideum;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Horizontal stems subterranean.</text>
-      <biological_entity id="o12781" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s0" value="horizontal" />
-        <character is_modifier="false" name="location" src="d0_s0" value="subterranean" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Upright shoots treelike, many branched, branchlets numerous and strongly differentiated;</text>
-      <biological_entity id="o12782" name="shoot" name_original="shoots" src="d0_s1" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s1" value="upright" />
-        <character is_modifier="false" name="growth_form" src="d0_s1" value="arboreous" value_original="treelike" />
-        <character is_modifier="false" name="quantity" src="d0_s1" value="many" />
-        <character is_modifier="false" name="architecture" src="d0_s1" value="branched" />
-      </biological_entity>
-      <biological_entity id="o12783" name="branchlet" name_original="branchlets" src="d0_s1" type="structure">
-        <character is_modifier="false" name="quantity" src="d0_s1" value="numerous" />
-        <character is_modifier="false" modifier="strongly" name="variability" src="d0_s1" value="differentiated" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>annual bud constrictions absent;</text>
-      <biological_entity constraint="bud" id="o12784" name="constriction" name_original="constrictions" src="d0_s2" type="structure">
-        <character is_modifier="true" name="duration" src="d0_s2" value="annual" />
-        <character is_modifier="false" name="presence" src="d0_s2" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>leaves spreading, pale green below lateral branchlets, prickly needlelike, 3.5-4 X 0.9-1 mm.</text>
-      <biological_entity id="o12785" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s3" value="spreading" />
-        <character constraint="below lateral branchlets" constraintid="o12786" is_modifier="false" name="coloration" src="d0_s3" value="pale green" />
-        <character is_modifier="false" name="architecture" notes="" src="d0_s3" value="prickly" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s3" value="needlelike" />
-        <character char_type="range_value" from="3.5" from_unit="mm" name="length" src="d0_s3" to="4" to_unit="mm" />
-        <character char_type="range_value" from="0.9" from_unit="mm" name="width" src="d0_s3" to="1" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o12786" name="branchlet" name_original="branchlets" src="d0_s3" type="structure">
-        <character is_modifier="true" modifier="below" name="position" src="d0_s3" value="lateral" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Lateral branchlets round in cross-section, 5-8 mm diam.;</text>
-      <biological_entity constraint="lateral" id="o12787" name="branchlet" name_original="branchlets" src="d0_s4" type="structure">
-        <character constraint="in cross-section" constraintid="o12788" is_modifier="false" name="shape" src="d0_s4" value="round" />
-        <character char_type="range_value" from="5" from_unit="mm" name="diameter" notes="" src="d0_s4" to="8" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o12788" name="cross-section" name_original="cross-section" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>annual bud constrictions inconspicuous;</text>
-      <biological_entity constraint="bud" id="o12789" name="constriction" name_original="constrictions" src="d0_s5" type="structure">
-        <character is_modifier="true" name="duration" src="d0_s5" value="annual" />
-        <character is_modifier="false" name="prominence" src="d0_s5" value="inconspicuous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>leaves spreading to ascending, pale green, in 6 ranks, 2 upperside, 2 lateral, and 2 underside, equal in size, linear, 2.4-5.5 X 0.5-1.2 mm;</text>
-      <biological_entity id="o12790" name="leaf" name_original="leaves" src="d0_s6" type="structure">
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s6" value="spreading" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s6" value="ascending" />
-        <character char_type="range_value" from="spreading" name="orientation" src="d0_s6" to="ascending" />
-        <character is_modifier="false" name="coloration" src="d0_s6" value="pale green" />
-        <character is_modifier="false" name="position" src="d0_s6" value="lateral" />
-        <character name="quantity" src="d0_s6" value="2" />
-        <character is_modifier="false" name="size" notes="" src="d0_s6" value="equal" />
-        <character is_modifier="false" name="arrangement_or_course_or_shape" src="d0_s6" value="linear" />
-        <character char_type="range_value" from="2.4" from_unit="mm" name="length" src="d0_s6" to="5.5" to_unit="mm" />
-        <character char_type="range_value" from="0.5" from_unit="mm" name="width" src="d0_s6" to="1.2" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o12791" name="rank" name_original="ranks" src="d0_s6" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s6" value="6" />
-        <character name="quantity" src="d0_s6" value="2" />
-      </biological_entity>
-      <biological_entity id="o12792" name="upperside" name_original="upperside" src="d0_s6" type="structure">
-        <character name="quantity" src="d0_s6" value="2" />
-      </biological_entity>
-      <biological_entity id="o12793" name="underside" name_original="underside" src="d0_s6" type="structure" />
-      <relation from="o12790" id="r2962" name="in" negation="false" src="d0_s6" to="o12791" />
-    </statement>
-    <statement id="d0_s7">
-      <text>margins entire;</text>
-      <biological_entity id="o12794" name="margin" name_original="margins" src="d0_s7" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s7" value="entire" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>apex acuminate, lacking hair tip.</text>
-      <biological_entity id="o12795" name="apex" name_original="apex" src="d0_s8" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s8" value="acuminate" />
-      </biological_entity>
-      <biological_entity constraint="hair" id="o12796" name="tip" name_original="tip" src="d0_s8" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s8" value="lacking" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>Strobili sessile, 1-7 on tip of upright shoot, 12-55 mm.</text>
-      <biological_entity id="o12797" name="strobilus" name_original="strobili" src="d0_s9" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s9" value="sessile" />
-        <character char_type="range_value" constraint="on tip" constraintid="o12798" from="1" name="quantity" src="d0_s9" to="7" />
-        <character char_type="range_value" from="12" from_unit="mm" name="some_measurement" notes="" src="d0_s9" to="55" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o12798" name="tip" name_original="tip" src="d0_s9" type="structure" />
-      <biological_entity id="o12799" name="shoot" name_original="shoot" src="d0_s9" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s9" value="upright" />
-      </biological_entity>
-      <relation from="o12798" id="r2963" name="part_of" negation="false" src="d0_s9" to="o12799" />
-    </statement>
-    <statement id="d0_s10">
-      <text>Sporophylls 3.5 X 3.5 mm, apex short, acute, abruptly narrowing.</text>
-      <biological_entity id="o12800" name="sporophyll" name_original="sporophylls" src="d0_s10" type="structure">
-        <character name="length" src="d0_s10" unit="mm" value="3.5" />
-        <character name="width" src="d0_s10" unit="mm" value="3.5" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>2 n = 68.</text>
-      <biological_entity id="o12801" name="apex" name_original="apex" src="d0_s10" type="structure">
-        <character is_modifier="false" name="height_or_length_or_size" src="d0_s10" value="short" />
-        <character is_modifier="false" name="shape" src="d0_s10" value="acute" />
-        <character is_modifier="false" modifier="abruptly" name="width" src="d0_s10" value="narrowing" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o12802" name="chromosome" name_original="" src="d0_s11" type="structure">
-        <character name="quantity" src="d0_s11" value="68" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Dry woodlands and second-growth shrubby areas;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="dry woodlands and second-growth shrubby areas" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>50--1800 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1800" to_unit="m" from="50" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>St. Pierre and Miquelon; Alta., B.C., Man., N.B., Nfld., N.W.T., N.S., Ont., P.E.I., Que., Sask., Yukon; Alaska, Conn., Idaho, Iowa, Maine, Mass., Mich., Minn., Mo., Mont., N.H., N.Y., Pa., S.Dak., Vt., Va., Wash., W.Va., Wis., Wyo.; Asia.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="St. Pierre and Miquelon" establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Alta." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Man." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Nfld." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.W.T." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="P.E.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Sask." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Yukon" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Idaho" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.Dak." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wyo." establishment_means="native" />
-        <character name="distribution" value="Asia" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Horizontal stems  subterranean.  Upright shoots  treelike, many branched, branchlets numerous and strongly differentiated; annual bud constrictions absent; leaves spreading, pale green below lateral branchlets, prickly needlelike, 3.5--4 X 0.9--1 mm.  Lateral branchlets  round in cross section, 5--8 mm diam.; annual bud constrictions inconspicuous; leaves spreading to ascending, pale green, in 6 ranks, 2 upperside, 2 lateral, and 2 underside, equal in size, linear, 2.4--5.5 X 0.5--1.2 mm; margins entire; apex acuminate, lacking hair tip.  Strobili  sessile, 1--7 on tip of upright shoot, 12--55 mm.  Sporophylls  3.5 X 3.5 mm, apex short, acute, abruptly narrowing. 2 n  = 68.</description>
+  <description type="habitat">Dry woodlands and second-growth shrubby areas;</description>
+  <description type="elevation">50--1800 m;</description>
+  <description type="distribution">St. Pierre and Miquelon; Alta., B.C., Man., N.B., Nfld., N.W.T., N.S., Ont., P.E.I., Que., Sask., Yukon; Alaska, Conn., Idaho, Iowa, Maine, Mass., Mich., Minn., Mo., Mont., N.H., N.Y., Pa., S.Dak., Vt., Va., Wash., W.Va., Wis., Wyo.; Asia.</description>
   <number>4</number>
   <other_name type="common_name">Prickly tree club-moss</other_name>
   <other_name type="common_name">lycopode dendroïde</other_name>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_271_d10_s0">
-      <text>Leaf ranks 2 on top of lateral branch, 1 on each side, and 2 on underside;</text>
-      <biological_entity constraint="leaf" id="from_key_V2_271_o5494" name="rank" name_original="ranks" src="d10_s0" type="structure">
-        <character constraint="on-top-of lateral branch" constraintid="o5495" name="count" src="d10_s0" value="2" />
-      </biological_entity>
-      <biological_entity constraint="lateral" id="from_key_V2_271_o5495" name="branch" name_original="branch" src="d10_s0" type="structure">
-        <character constraint="on side" constraintid="o5496" name="count" src="d10_s0" value="1" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_271_o5496" name="side" name_original="side" src="d10_s0" type="structure">
-        <character constraint="on underside" constraintid="o5497" name="count" src="d10_s0" value="2" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_271_o5497" name="underside" name_original="underside" src="d10_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_271_d10_s1">
-      <text>leaves of main axis below branches pale green, spreading, prickly to touch.</text>
-      <biological_entity id="from_key_V2_271_o5498" name="leaf" name_original="leaves" src="d10_s1" type="structure">
-        <character is_modifier="false" name="orientation" notes="alterIDs:o5500" src="d10_s1" value="spreading" />
-        <character constraint="to touch" constraintid="o5501" is_modifier="false" name="architecture" src="d10_s1" value="prickly" />
-      </biological_entity>
-      <biological_entity constraint="main" id="from_key_V2_271_o5499" name="axis" name_original="axis" src="d10_s1" type="structure" />
-      <biological_entity id="from_key_V2_271_o5500" name="branch" name_original="branches" src="d10_s1" type="structure">
-        <character is_modifier="false" name="coloration" src="d10_s1" value="pale green" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_271_o5501" name="touch" name_original="touch" src="d10_s1" type="structure" />
-      <relation from="from_key_V2_271_o5498" id="from_key_V2_271_r1265" name="part_of" negation="false" src="d10_s1" to="from_key_V2_271_o5499" />
-      <relation from="from_key_V2_271_o5498" id="from_key_V2_271_r1266" name="below" negation="false" src="d10_s1" to="from_key_V2_271_o5500" />
-    </statement>
-    <statement id="from_key_V2_271_d8_s0">
-      <text>Lateral shoots round in cross-section, leaves equal in size, none twisted, adaxial leaf surfaces all facing stem, proximal leaves not reduced;</text>
-      <biological_entity constraint="lateral" id="from_key_V2_271_o5477" name="shoot" name_original="shoots" src="d8_s0" type="structure">
-        <character constraint="in cross-section" constraintid="o5478" is_modifier="false" name="shape" src="d8_s0" value="round" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_271_o5478" name="cross-section" name_original="cross-section" src="d8_s0" type="structure" />
-      <biological_entity id="from_key_V2_271_o5479" name="leaf" name_original="leaves" src="d8_s0" type="structure">
-        <character is_modifier="false" name="size" src="d8_s0" value="equal" />
-        <character is_modifier="false" modifier="none" name="architecture" src="d8_s0" value="twisted" />
-      </biological_entity>
-      <biological_entity constraint="adaxial leaf" id="from_key_V2_271_o5480" name="surface" name_original="surfaces" src="d8_s0" type="structure">
-        <character is_modifier="false" modifier="not" name="size" src="d8_s0" value="reduced" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_271_o5481" name="stem" name_original="stem" src="d8_s0" type="structure" />
-      <biological_entity constraint="proximal" id="from_key_V2_271_o5482" name="leaf" name_original="leaves" src="d8_s0" type="structure" />
-      <relation from="from_key_V2_271_o5480" id="from_key_V2_271_r1259" name="facing" negation="false" src="d8_s0" to="from_key_V2_271_o5481" />
-      <relation from="from_key_V2_271_o5480" id="from_key_V2_271_r1260" name="facing" negation="false" src="d8_s0" to="from_key_V2_271_o5482" />
-    </statement>
-    <statement id="from_key_V2_271_d8_s1">
-      <text>leaves on main axis light or dark green, spreading or appressed.</text>
-      <biological_entity id="from_key_V2_271_o5483" name="leaf" name_original="leaves" src="d8_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d8_s1" value="spreading" />
-        <character is_modifier="false" name="orientation" src="d8_s1" value="appressed" />
-      </biological_entity>
-      <biological_entity constraint="main" id="from_key_V2_271_o5484" name="axis" name_original="axis" src="d8_s1" type="structure">
-        <character is_modifier="false" name="coloration" src="d8_s1" value="light" />
-        <character is_modifier="false" name="coloration" src="d8_s1" value="dark green" />
-      </biological_entity>
-      <relation from="from_key_V2_271_o5483" id="from_key_V2_271_r1261" name="on" negation="false" src="d8_s1" to="from_key_V2_271_o5484" />
-    </statement>
-    <statement id="from_key_V2_271_d6_s0">
-      <text>Strobili 1-7 at top of many-branched, upright, treelike shoot;</text>
-      <biological_entity id="from_key_V2_271_o5465" name="strobilus" name_original="strobili" src="d6_s0" type="structure">
-        <character char_type="range_value" constraint="at top" constraintid="o5466" from="1" name="count" src="d6_s0" to="7" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_271_o5466" name="top" name_original="top" src="d6_s0" type="structure" />
-      <biological_entity id="from_key_V2_271_o5467" name="shoot" name_original="shoot" src="d6_s0" type="structure">
-        <character is_modifier="true" name="architecture" src="d6_s0" value="many-branched" />
-        <character is_modifier="true" name="orientation" src="d6_s0" value="upright" />
-        <character is_modifier="true" name="growth_form" src="d6_s0" value="treelike" />
-      </biological_entity>
-      <relation from="from_key_V2_271_o5466" id="from_key_V2_271_r1256" name="top of" negation="false" src="d6_s0" to="from_key_V2_271_o5467" />
-    </statement>
-    <statement id="from_key_V2_271_d6_s1">
-      <text>horizontal stems subterranean (L. dendroideum group).</text>
-      <biological_entity id="from_key_V2_271_o5468" name="stem" name_original="stems" src="d6_s1" type="structure">
-        <character is_modifier="true" name="orientation" src="d6_s1" value="horizontal" />
-        <character is_modifier="false" name="location" src="d6_s1" value="subterranean" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_271_d2_s0">
-      <text>Strobili sessile;</text>
-      <biological_entity id="from_key_V2_271_o5445" name="strobilus" name_original="strobili" src="d2_s0" type="structure">
-        <character is_modifier="false" name="architecture" src="d2_s0" value="sessile" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_271_d2_s1">
-      <text>upright shoots either unbranched or much branched to produce treelike habit;</text>
-      <biological_entity id="from_key_V2_271_o5446" name="shoot" name_original="shoots" src="d2_s1" type="structure">
-        <character is_modifier="true" name="orientation" src="d2_s1" value="upright" />
-        <character is_modifier="false" modifier="either" name="architecture" src="d2_s1" value="unbranched" />
-        <character is_modifier="false" modifier="much; much" name="architecture" src="d2_s1" value="branched" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_271_o5447" name="habit" name_original="habit" src="d2_s1" type="structure">
-        <character is_modifier="true" name="growth_form" src="d2_s1" value="treelike" />
-      </biological_entity>
-      <relation from="from_key_V2_271_o5446" id="from_key_V2_271_r1252" name="produce" negation="false" src="d2_s1" to="from_key_V2_271_o5447" />
-    </statement>
-    <statement id="from_key_V2_271_d2_s2">
-      <text>leaves lacking hair tips.</text>
-      <biological_entity id="from_key_V2_271_o5448" name="leaf" name_original="leaves" src="d2_s2" type="structure" />
-      <biological_entity constraint="hair" id="from_key_V2_271_o5449" name="tip" name_original="tips" src="d2_s2" type="structure">
-        <character is_modifier="true" name="count" src="d2_s2" value="lacking" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Ching" date="unknown" rank="family">dennstaedtiaceae</taxon_name>
-    <taxon_name authority="Gleditsch ex Scopoli" date="1760" rank="genus">pteridium</taxon_name>
-    <taxon_name authority="(Linnaeus) Kuhn in Decken" date="1879" rank="species">aquilinum</taxon_name>
-    <taxon_name authority="(Linnaeus) Sadebeck" date="1897" rank="variety">caudatum</taxon_name>
+    <taxon_name rank="family" authority="Ching" date="unknown">dennstaedtiaceae</taxon_name>
+    <taxon_name rank="genus" authority="Gleditsch ex Scopoli" date="1760">pteridium</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) Kuhn in Decken" date="1879">aquilinum</taxon_name>
+    <taxon_name rank="variety" authority="(Linnaeus) Sadebeck" date="1897">caudatum</taxon_name>
     <place_of_publication>
       <publication_title>Jahrb. Hamburg. Wiss. Anst. Beih.</publication_title>
       <place_in_publication>3: 5. 1897</place_in_publication>
@@ -27,8 +19,8 @@
     <taxon_hierarchy>family dennstaedtiaceae;genus pteridium;species aquilinum;variety caudatum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pteris</taxon_name>
-    <taxon_name authority="(Linnaeus) Maxon" date="unknown" rank="species">caudata</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pteris</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) Maxon" date="unknown">caudata</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl.</publication_title>
       <place_in_publication>2: 1075. 1753</place_in_publication>
@@ -36,349 +28,46 @@
     <taxon_hierarchy>genus Pteris;species caudata;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pteridium</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">caudatum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pteridium</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">caudatum</taxon_name>
     <taxon_hierarchy>genus Pteridium;species caudatum;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Petiole 20-75 cm.</text>
-      <biological_entity id="o13310" name="petiole" name_original="petiole" src="d0_s0" type="structure">
-        <character char_type="range_value" from="20" from_unit="cm" name="some_measurement" src="d0_s0" to="75" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Blade broadly ovate to deltate, 2-3-pinnate-pinnatifid, 30-100 × 20-80 cm;</text>
-      <biological_entity id="o13311" name="blade" name_original="blade" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="broadly" name="shape" notes="[duplicate value]" src="d0_s1" value="ovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="deltate" />
-        <character char_type="range_value" from="broadly ovate" name="shape" src="d0_s1" to="deltate" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="2-3-pinnate-pinnatifid" />
-        <character char_type="range_value" from="30" from_unit="cm" name="length" src="d0_s1" to="100" to_unit="cm" />
-        <character char_type="range_value" from="20" from_unit="cm" name="width" src="d0_s1" to="80" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>blades, rachises, and costae usually densely covered abaxially with abundant, straight, stiff, subappressed to spreading hairs.</text>
-      <biological_entity id="o13312" name="blade" name_original="blades" src="d0_s2" type="structure" />
-      <biological_entity id="o13313" name="rachis" name_original="rachises" src="d0_s2" type="structure" />
-      <biological_entity id="o13314" name="costa" name_original="costae" src="d0_s2" type="structure" />
-      <biological_entity id="o13315" name="hair" name_original="hairs" src="d0_s2" type="structure">
-        <character is_modifier="true" modifier="abaxially" name="quantity" src="d0_s2" value="abundant" />
-        <character is_modifier="true" name="course" src="d0_s2" value="straight" />
-        <character is_modifier="true" name="fragility" src="d0_s2" value="stiff" />
-        <character is_modifier="true" name="orientation" notes="[duplicate value]" src="d0_s2" value="subappressed" />
-        <character is_modifier="true" name="orientation" notes="[duplicate value]" src="d0_s2" value="spreading" />
-        <character char_type="range_value" from="subappressed" is_modifier="true" name="orientation" src="d0_s2" to="spreading" />
-      </biological_entity>
-      <relation from="o13312" id="r3096" modifier="usually densely" name="covered" negation="false" src="d0_s2" to="o13315" />
-      <relation from="o13313" id="r3097" modifier="usually densely" name="covered" negation="false" src="d0_s2" to="o13315" />
-      <relation from="o13314" id="r3098" modifier="usually densely" name="covered" negation="false" src="d0_s2" to="o13315" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Pinnae all narrowly to broadly triangular;</text>
-      <biological_entity id="o13316" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="narrowly to broadly" name="shape" src="d0_s3" value="triangular" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>terminal segment of each pinna ca. 10 times longer than wide, longer ultimate segments several times their width apart, ca. 1-2.5 mm wide.</text>
-      <biological_entity constraint="terminal; pinna" id="o13317" name="segment" name_original="segment" src="d0_s4" type="structure">
-        <character is_modifier="false" name="l_w_ratio" src="d0_s4" value="10" />
-      </biological_entity>
-      <biological_entity id="o13318" name="pinna" name_original="pinna" src="d0_s4" type="structure" />
-      <biological_entity constraint="longer ultimate" id="o13319" name="segment" name_original="segments" src="d0_s4" type="structure">
-        <character is_modifier="false" name="width" src="d0_s4" value="several" />
-        <character is_modifier="false" name="arrangement" src="d0_s4" value="apart" />
-        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s4" to="2.5" to_unit="mm" />
-      </biological_entity>
-      <relation from="o13317" id="r3099" name="part_of" negation="false" src="d0_s4" to="o13318" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Pinnules at nearly 90° angle to costa;</text>
-      <biological_entity id="o13320" name="pinnule" name_original="pinnules" src="d0_s5" type="structure" />
-      <biological_entity id="o13321" name="angle" name_original="angle" src="d0_s5" type="structure">
-        <character is_modifier="true" modifier="nearly" name="quantity" src="d0_s5" value="90" />
-      </biological_entity>
-      <biological_entity id="o13322" name="costa" name_original="costa" src="d0_s5" type="structure" />
-      <relation from="o13320" id="r3100" name="at" negation="false" src="d0_s5" to="o13321" />
-      <relation from="o13321" id="r3101" name="to" negation="false" src="d0_s5" to="o13322" />
-    </statement>
-    <statement id="d0_s6">
-      <text>fertile ultimate segments only decurrent, or more decurrent than surcurrent.</text>
-      <biological_entity constraint="ultimate" id="o13323" name="segment" name_original="segments" src="d0_s6" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s6" value="fertile" />
-        <character is_modifier="false" modifier="only" name="shape" src="d0_s6" value="decurrent" />
-        <character is_modifier="false" name="shape" src="d0_s6" value="more decurrent than surcurrent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Outer indusia entire, glabrous.</text>
-      <biological_entity constraint="outer" id="o13324" name="indusium" name_original="indusia" src="d0_s7" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s7" value="entire" />
-        <character is_modifier="false" name="pubescence" src="d0_s7" value="glabrous" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>In barrens, pine woodlands, and edges of deciduous woods in strongly acid to circumneutral soil, forming large colonies in exposed sites;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="in barrens" />
-        <character name="habitat" value="pine woodlands" />
-        <character name="habitat" value="edges of deciduous woods in acid to circumneutral soil , forming large colonies in" />
-        <character name="habitat" value="exposed sites" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="0" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Fla.; Mexico; West Indies; Bermuda; Central America; South America from Colombia to Peru.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-        <character name="distribution" value="West Indies" establishment_means="native" />
-        <character name="distribution" value="Bermuda" establishment_means="native" />
-        <character name="distribution" value="Central America" establishment_means="native" />
-        <character name="distribution" value="South America from Colombia to Peru" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Petiole  20--75 cm.  Blade  broadly ovate to deltate, 2--3-pinnate-pinnatifid, 30--100 × 20--80 cm; blades, rachises, and costae usually densely covered abaxially with abundant, straight, stiff, subappressed to spreading hairs.  Pinnae  all narrowly to broadly triangular; terminal segment of each pinna ca. 10 times longer than wide, longer ultimate segments several times their width apart, ca. 1--2.5 mm wide.  Pinnules  at nearly 90° angle to costa; fertile ultimate segments only decurrent, or more decurrent than surcurrent.  Outer indusia  entire, glabrous.</description>
+  <description type="habitat">In barrens, pine woodlands, and edges of deciduous woods in strongly acid to circumneutral soil, forming large colonies in exposed sites;</description>
+  <description type="elevation">0 m;</description>
+  <description type="distribution">Fla.; Mexico; West Indies; Bermuda; Central America; South America from Colombia to Peru.</description>
   <number>1a</number>
   <other_name type="common_name">Lacy bracken</other_name>
   <discussion>In Florida and West Indies material, the abaxial surfaces are quite hairy; in Central American material they are often much less hairy.</discussion>
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Fertile ultimate segments only decurrent or more decurrent than surcurrent, mostly 1–2 mm wide;</text>
-          <biological_entity constraint="ultimate" id="o13325" name="segment" name_original="segments" src="d1_s0" type="structure">
-            <character is_modifier="true" name="reproduction" src="d1_s0" value="fertile" />
-            <character is_modifier="false" modifier="only" name="shape" src="d1_s0" value="decurrent" />
-            <character is_modifier="false" name="shape" src="d1_s0" value="more decurrent than surcurrent" />
-            <character char_type="range_value" from="1" from_unit="mm" modifier="mostly" name="width" src="d1_s0" to="2" to_unit="mm" />
-          </biological_entity>
-        </statement>
-        <statement id="d1_s1">
-          <text>hairs on abaxial surface of blades abundant, straight, stiff, subappressed to spreading.</text>
-          <biological_entity constraint="abaxial; blade" id="o13327" name="surface" name_original="surface" src="d1_s1" type="structure">
-            <character is_modifier="false" name="quantity" src="d1_s1" value="abundant" />
-          </biological_entity>
-          <biological_entity id="o13328" name="blade" name_original="blades" src="d1_s1" type="structure" />
-          <relation from="o13326" id="r3102" name="on" negation="false" src="d1_s1" to="o13327" />
-          <relation from="o13327" id="r3103" name="part_of" negation="false" src="d1_s1" to="o13328" />
-        </statement>
-        <statement id="d1_s2">
-          <text>1a.</text>
-        </statement>
-        <statement id="d1_s3">
-          <text>Pteridium aquilinum var. caudatum</text>
-          <biological_entity id="o13326" name="hair" name_original="hairs" src="d1_s1" type="structure">
-            <character is_modifier="false" name="course" notes="" src="d1_s1" value="straight" />
-            <character is_modifier="false" name="fragility" src="d1_s1" value="stiff" />
-            <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d1_s1" value="subappressed" />
-            <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d1_s1" value="spreading" />
-            <character char_type="range_value" from="subappressed" name="orientation" src="d1_s1" to="spreading" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Fertile ultimate segments only decurrent or more decurrent than surcurrent, mostly 1–2 mm wide; hairs on abaxial surface of blades abundant, straight, stiff, subappressed to spreading. 1a. Pteridium aquilinum var. caudatum</description>
       <next_statement_id>1</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Fertile ultimate segments adnate or equally decurrent and surcurrent, mostly 3–6 mm wide;</text>
-          <biological_entity constraint="ultimate" id="o13329" name="segment" name_original="segments" src="d2_s0" type="structure">
-            <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
-            <character is_modifier="false" name="fusion" src="d2_s0" value="adnate" />
-            <character is_modifier="false" modifier="equally" name="shape" src="d2_s0" value="decurrent" />
-            <character is_modifier="false" name="orientation" src="d2_s0" value="surcurrent" />
-            <character char_type="range_value" from="3" from_unit="mm" modifier="mostly" name="width" src="d2_s0" to="6" to_unit="mm" />
-          </biological_entity>
-        </statement>
-        <statement id="d2_s1">
-          <text>hairs on abaxial surface of blades abundant to sparse, twisted and flexible, if abundant then lax, spreading.</text>
-          <biological_entity id="o13330" name="hair" name_original="hairs" src="d2_s1" type="structure">
-            <character is_modifier="false" name="architecture" notes="" src="d2_s1" value="twisted" />
-            <character is_modifier="false" name="fragility" src="d2_s1" value="pliable" value_original="flexible" />
-            <character is_modifier="false" name="quantity" src="d2_s1" value="abundant" />
-            <character is_modifier="false" name="architecture_or_arrangement" src="d2_s1" value="lax" />
-            <character is_modifier="false" name="orientation" src="d2_s1" value="spreading" />
-          </biological_entity>
-          <biological_entity constraint="abaxial" id="o13331" name="surface" name_original="surface" src="d2_s1" type="structure">
-            <character is_modifier="false" name="quantity" notes="[duplicate value]" src="d2_s1" value="abundant" />
-            <character is_modifier="false" name="quantity" notes="[duplicate value]" src="d2_s1" value="sparse" />
-            <character char_type="range_value" from="abundant" name="quantity" src="d2_s1" to="sparse" />
-          </biological_entity>
-          <biological_entity id="o13332" name="blade" name_original="blades" src="d2_s1" type="structure" />
-          <relation from="o13330" id="r3104" name="on" negation="false" src="d2_s1" to="o13331" />
-          <relation from="o13331" id="r3105" name="part_of" negation="false" src="d2_s1" to="o13332" />
-        </statement>
-      </description>
+      <description type="morphology">Fertile ultimate segments adnate or equally decurrent and surcurrent, mostly 3–6 mm wide; hairs on abaxial surface of blades abundant to sparse, twisted and flexible, if abundant then lax, spreading.</description>
       <next_statement_id>2</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d3_s0">
-          <text>Pinnules at nearly 90° angle to costa;</text>
-          <biological_entity id="o13333" name="pinnule" name_original="pinnules" src="d3_s0" type="structure" />
-          <biological_entity id="o13334" name="angle" name_original="angle" src="d3_s0" type="structure">
-            <character is_modifier="true" modifier="nearly" name="quantity" src="d3_s0" value="90" />
-          </biological_entity>
-          <biological_entity id="o13335" name="costa" name_original="costa" src="d3_s0" type="structure" />
-          <relation from="o13333" id="r3106" name="at" negation="false" src="d3_s0" to="o13334" />
-          <relation from="o13334" id="r3107" name="to" negation="false" src="d3_s0" to="o13335" />
-        </statement>
-        <statement id="d3_s1">
-          <text>outer indusium pilose on margin and often on surface;</text>
-          <biological_entity constraint="outer" id="o13336" name="indusium" name_original="indusium" src="d3_s1" type="structure">
-            <character constraint="on margin" constraintid="o13337" is_modifier="false" name="pubescence" src="d3_s1" value="pilose" />
-          </biological_entity>
-          <biological_entity id="o13337" name="margin" name_original="margin" src="d3_s1" type="structure" />
-          <biological_entity id="o13338" name="surface" name_original="surface" src="d3_s1" type="structure" />
-          <relation from="o13336" id="r3108" modifier="often" name="on" negation="false" src="d3_s1" to="o13338" />
-        </statement>
-        <statement id="d3_s2">
-          <text>hairs on abaxial surface of blades abundant, lax, and spreading.</text>
-          <biological_entity constraint="abaxial; blade" id="o13340" name="surface" name_original="surface" src="d3_s2" type="structure">
-            <character is_modifier="false" name="quantity" src="d3_s2" value="abundant" />
-          </biological_entity>
-          <biological_entity id="o13341" name="blade" name_original="blades" src="d3_s2" type="structure" />
-          <relation from="o13339" id="r3109" name="on" negation="false" src="d3_s2" to="o13340" />
-          <relation from="o13340" id="r3110" name="part_of" negation="false" src="d3_s2" to="o13341" />
-        </statement>
-        <statement id="d3_s3">
-          <text>1b.</text>
-        </statement>
-        <statement id="d3_s4">
-          <text>Pteridium aquilinum var. pubescens</text>
-          <biological_entity id="o13339" name="hair" name_original="hairs" src="d3_s2" type="structure">
-            <character is_modifier="false" name="architecture_or_arrangement" notes="" src="d3_s2" value="lax" />
-            <character is_modifier="false" name="orientation" src="d3_s2" value="spreading" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Pinnules at nearly 90° angle to costa; outer indusium pilose on margin and often on surface; hairs on abaxial surface of blades abundant, lax, and spreading. 1b. Pteridium aquilinum var. pubescens</description>
       <next_statement_id>2</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d4_s0">
-          <text>Pinnules at 45°–60° angle to costa;</text>
-          <biological_entity id="o13342" name="pinnule" name_original="pinnules" src="d4_s0" type="structure" />
-          <biological_entity id="o13343" name="angle" name_original="angle" src="d4_s0" type="structure">
-            <character is_modifier="true" name="quantity" src="d4_s0" value="45" />
-            <character is_modifier="true" name="quantity" src="d4_s0" value="60" />
-          </biological_entity>
-          <biological_entity id="o13344" name="costa" name_original="costa" src="d4_s0" type="structure" />
-          <relation from="o13342" id="r3111" name="at" negation="false" src="d4_s0" to="o13343" />
-          <relation from="o13343" id="r3112" name="to" negation="false" src="d4_s0" to="o13344" />
-        </statement>
-        <statement id="d4_s1">
-          <text>outer indusium glabrous;</text>
-          <biological_entity constraint="outer" id="o13345" name="indusium" name_original="indusium" src="d4_s1" type="structure">
-            <character is_modifier="false" name="pubescence" src="d4_s1" value="glabrous" />
-          </biological_entity>
-        </statement>
-        <statement id="d4_s2">
-          <text>hairs on abaxial surface of blades sparse or blades nearly glabrous.</text>
-          <biological_entity id="o13346" name="hair" name_original="hairs" src="d4_s2" type="structure" />
-          <biological_entity constraint="abaxial" id="o13347" name="surface" name_original="surface" src="d4_s2" type="structure">
-            <character is_modifier="false" name="count_or_density" src="d4_s2" value="sparse" />
-          </biological_entity>
-          <biological_entity id="o13348" name="blade" name_original="blades" src="d4_s2" type="structure" />
-          <biological_entity id="o13349" name="blade" name_original="blades" src="d4_s2" type="structure">
-            <character is_modifier="false" modifier="nearly" name="pubescence" src="d4_s2" value="glabrous" />
-          </biological_entity>
-          <relation from="o13346" id="r3113" name="on" negation="false" src="d4_s2" to="o13347" />
-          <relation from="o13347" id="r3114" name="part_of" negation="false" src="d4_s2" to="o13348" />
-        </statement>
-      </description>
+      <description type="morphology">Pinnules at 45°–60° angle to costa; outer indusium glabrous; hairs on abaxial surface of blades sparse or blades nearly glabrous.</description>
       <next_statement_id>3</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d5_s0">
-          <text>Terminal segments of pinnules 2–4 times longer than wide;</text>
-          <biological_entity constraint="terminal" id="o13350" name="segment" name_original="segments" src="d5_s0" type="structure">
-            <character is_modifier="false" name="l_w_ratio" src="d5_s0" value="2-4" />
-          </biological_entity>
-          <biological_entity id="o13351" name="pinnule" name_original="pinnules" src="d5_s0" type="structure" />
-          <relation from="o13350" id="r3115" name="part_of" negation="false" src="d5_s0" to="o13351" />
-        </statement>
-        <statement id="d5_s1">
-          <text>segment margins and abaxial surface of blade midrib and costae shaggy.</text>
-          <biological_entity id="o13354" name="midrib" name_original="midrib" src="d5_s1" type="structure" />
-          <biological_entity id="o13355" name="costa" name_original="costae" src="d5_s1" type="structure" />
-          <relation from="o13352" id="r3116" name="part_of" negation="false" src="d5_s1" to="o13354" />
-          <relation from="o13353" id="r3117" name="part_of" negation="false" src="d5_s1" to="o13354" />
-          <relation from="o13352" id="r3118" name="part_of" negation="false" src="d5_s1" to="o13355" />
-          <relation from="o13353" id="r3119" name="part_of" negation="false" src="d5_s1" to="o13355" />
-        </statement>
-        <statement id="d5_s2">
-          <text>1c.</text>
-        </statement>
-        <statement id="d5_s3">
-          <text>Pteridium aquilinum var. latiusculum</text>
-          <biological_entity constraint="segment" id="o13352" name="margin" name_original="margins" src="d5_s1" type="structure">
-            <character is_modifier="false" name="pubescence" src="d5_s1" value="shaggy" />
-          </biological_entity>
-          <biological_entity constraint="segment abaxial" id="o13353" name="surface" name_original="surface" src="d5_s1" type="structure">
-            <character is_modifier="false" name="pubescence" src="d5_s1" value="shaggy" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Terminal segments of pinnules 2–4 times longer than wide; segment margins and abaxial surface of blade midrib and costae shaggy. 1c. Pteridium aquilinum var. latiusculum</description>
       <next_statement_id>3</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d6_s0">
-          <text>Terminal segments of pinnules ca. 6–15 times longer than wide;</text>
-          <biological_entity constraint="terminal" id="o13356" name="segment" name_original="segments" src="d6_s0" type="structure">
-            <character is_modifier="false" name="l_w_ratio" src="d6_s0" value="6-15" />
-          </biological_entity>
-          <biological_entity id="o13357" name="pinnule" name_original="pinnules" src="d6_s0" type="structure" />
-          <relation from="o13356" id="r3120" name="part_of" negation="false" src="d6_s0" to="o13357" />
-        </statement>
-        <statement id="d6_s1">
-          <text>segment margins and abaxial surface of blade midrib and costae sparsely pilose to glabrous.</text>
-          <biological_entity constraint="blade" id="o13360" name="midrib" name_original="midrib" src="d6_s1" type="structure" />
-          <biological_entity id="o13361" name="costa" name_original="costae" src="d6_s1" type="structure" />
-          <relation from="o13358" id="r3121" name="part_of" negation="false" src="d6_s1" to="o13360" />
-          <relation from="o13359" id="r3122" name="part_of" negation="false" src="d6_s1" to="o13360" />
-          <relation from="o13358" id="r3123" name="part_of" negation="false" src="d6_s1" to="o13361" />
-          <relation from="o13359" id="r3124" name="part_of" negation="false" src="d6_s1" to="o13361" />
-        </statement>
-        <statement id="d6_s2">
-          <text>1d.</text>
-        </statement>
-        <statement id="d6_s3">
-          <text>Pteridium aquilinum var. pseudocaudatum</text>
-          <biological_entity constraint="segment" id="o13358" name="margin" name_original="margins" src="d6_s1" type="structure">
-            <character is_modifier="false" modifier="sparsely" name="pubescence" notes="[duplicate value]" src="d6_s1" value="pilose" />
-            <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d6_s1" value="glabrous" />
-            <character char_type="range_value" from="sparsely pilose" name="pubescence" src="d6_s1" to="glabrous" />
-          </biological_entity>
-          <biological_entity constraint="segment abaxial" id="o13359" name="surface" name_original="surface" src="d6_s1" type="structure">
-            <character is_modifier="false" modifier="sparsely" name="pubescence" notes="[duplicate value]" src="d6_s1" value="pilose" />
-            <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d6_s1" value="glabrous" />
-            <character char_type="range_value" from="sparsely pilose" name="pubescence" src="d6_s1" to="glabrous" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Terminal segments of pinnules ca. 6–15 times longer than wide; segment margins and abaxial surface of blade midrib and costae sparsely pilose to glabrous. 1d. Pteridium aquilinum var. pseudocaudatum</description>
       <next_statement_id>1</next_statement_id>
     </key_statement>
   </key>

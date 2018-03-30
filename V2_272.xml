@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="Adanson" date="1763" rank="genus">dryopteris</taxon_name>
-    <taxon_name authority="(Kunze) Small" date="1938" rank="species">ludoviciana</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Adanson" date="1763">dryopteris</taxon_name>
+    <taxon_name rank="species" authority="(Kunze) Small" date="1938">ludoviciana</taxon_name>
     <place_of_publication>
       <publication_title>Ferns S. E. States</publication_title>
       <place_in_publication>281. 1938</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family dryopteridaceae;genus dryopteris;species ludoviciana</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Aspidium</taxon_name>
-    <taxon_name authority="Kunze" date="unknown" rank="species">ludovicianum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Aspidium</taxon_name>
+    <taxon_name rank="species" authority="Kunze" date="unknown">ludovicianum</taxon_name>
     <place_of_publication>
       <publication_title>Amer. J. Sci. Arts, ser.</publication_title>
       <place_in_publication>2, 6: 84. 1848</place_in_publication>
@@ -35,247 +27,15 @@
     <taxon_hierarchy>genus Aspidium;species ludovicianum;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Dryopteris</taxon_name>
-    <taxon_name authority="(Hooker) Kunze" date="unknown" rank="species">floridana</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Dryopteris</taxon_name>
+    <taxon_name rank="species" authority="(Hooker) Kunze" date="unknown">floridana</taxon_name>
     <taxon_hierarchy>genus Dryopteris;species floridana;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Leaves somewhat dimorphic, green through winter, 35-120 × 10-30 cm.</text>
-      <biological_entity id="o5502" name="leaf" name_original="leaves" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="somewhat" name="growth_form" src="d0_s0" value="dimorphic" />
-        <character constraint="through winter" is_modifier="false" name="coloration" src="d0_s0" value="green" />
-        <character char_type="range_value" from="35" from_unit="cm" name="length" src="d0_s0" to="120" to_unit="cm" />
-        <character char_type="range_value" from="10" from_unit="cm" name="width" src="d0_s0" to="30" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Petiole more than 1/4 length of leaf, scaly at base;</text>
-      <biological_entity id="o5503" name="petiole" name_original="petiole" src="d0_s1" type="structure">
-        <character name="length" src="d0_s1" value="1 length of leaf" />
-        <character name="length" src="d0_s1" value="/4 length of leaf" />
-        <character constraint="at base" constraintid="o5504" is_modifier="false" name="architecture_or_pubescence" src="d0_s1" value="scaly" />
-      </biological_entity>
-      <biological_entity id="o5504" name="base" name_original="base" src="d0_s1" type="structure" />
-    </statement>
-    <statement id="d0_s2">
-      <text>scales scattered, brown.</text>
-      <biological_entity id="o5505" name="scale" name_original="scales" src="d0_s2" type="structure">
-        <character is_modifier="false" name="arrangement" src="d0_s2" value="scattered" />
-        <character is_modifier="false" name="coloration" src="d0_s2" value="brown" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Blade dark green, lanceolate, pinnate-pinnatifid, herbaceous, not glandular.</text>
-      <biological_entity id="o5506" name="blade" name_original="blade" src="d0_s3" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s3" value="dark green" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="lanceolate" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="pinnate-pinnatifid" />
-        <character is_modifier="false" name="growth_form_or_texture" src="d0_s3" value="herbaceous" />
-        <character is_modifier="false" modifier="not" name="architecture_or_function_or_pubescence" src="d0_s3" value="glandular" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Pinnae nearly in plane of blade, lance-oblong;</text>
-      <biological_entity id="o5507" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s4" value="lance-oblong" />
-      </biological_entity>
-      <biological_entity id="o5508" name="blade" name_original="blade" src="d0_s4" type="structure" />
-      <relation from="o5507" id="r1267" modifier="in plane" name="part_of" negation="false" src="d0_s4" to="o5508" />
-    </statement>
-    <statement id="d0_s5">
-      <text>fertile pinnae in distal 1/2 of leaf, distinctly narrower than proximal vegetative pinnae (only in this species);</text>
-      <biological_entity id="o5509" name="pinna" name_original="pinnae" src="d0_s5" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s5" value="fertile" />
-        <character constraint="than proximal vegetative pinnae" constraintid="o5512" is_modifier="false" name="width" notes="" src="d0_s5" value="distinctly narrower" />
-      </biological_entity>
-      <biological_entity constraint="distal" id="o5510" name="1/2" name_original="1/2" src="d0_s5" type="structure" />
-      <biological_entity id="o5511" name="leaf" name_original="leaf" src="d0_s5" type="structure" />
-      <biological_entity constraint="proximal" id="o5512" name="pinna" name_original="pinnae" src="d0_s5" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s5" value="vegetative" />
-      </biological_entity>
-      <relation from="o5509" id="r1268" name="in" negation="false" src="d0_s5" to="o5510" />
-      <relation from="o5510" id="r1269" name="part_of" negation="false" src="d0_s5" to="o5511" />
-    </statement>
-    <statement id="d0_s6">
-      <text>basal pinnae lanceolate-oblong, much reduced, basal pinnules slightly shorter than adjacent pinnules, basal basiscopic pinnule slightly longer than basal acroscopic pinnule;</text>
-      <biological_entity constraint="basal" id="o5513" name="pinna" name_original="pinnae" src="d0_s6" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s6" value="lanceolate-oblong" />
-        <character is_modifier="false" modifier="much" name="size" src="d0_s6" value="reduced" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="o5514" name="pinnule" name_original="pinnules" src="d0_s6" type="structure">
-        <character constraint="than adjacent pinnules" constraintid="o5515" is_modifier="false" name="height_or_length_or_size" src="d0_s6" value="slightly shorter" />
-      </biological_entity>
-      <biological_entity id="o5515" name="pinnule" name_original="pinnules" src="d0_s6" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s6" value="adjacent" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="o5516" name="pinnule" name_original="pinnules" src="d0_s6" type="structure" />
-      <biological_entity id="o5517" name="pinnule" name_original="pinnule" src="d0_s6" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s6" value="basiscopic" />
-        <character constraint="than basal acroscopic pinnule" constraintid="o5518" is_modifier="false" name="length_or_size" src="d0_s6" value="slightly longer" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="o5518" name="pinnule" name_original="pinnule" src="d0_s6" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s6" value="acroscopic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>pinnule margins distantly serrate.</text>
-      <biological_entity constraint="pinnule" id="o5519" name="margin" name_original="margins" src="d0_s7" type="structure">
-        <character is_modifier="false" modifier="distantly" name="architecture_or_shape" src="d0_s7" value="serrate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>Sori midway between midvein and margin of segments.</text>
-      <biological_entity id="o5520" name="sorus" name_original="sori" src="d0_s8" type="structure">
-        <character constraint="between midvein, margin" constraintid="o5521, o5522" is_modifier="false" name="position" src="d0_s8" value="midway" />
-      </biological_entity>
-      <biological_entity id="o5521" name="midvein" name_original="midvein" src="d0_s8" type="structure" />
-      <biological_entity id="o5522" name="margin" name_original="margin" src="d0_s8" type="structure" />
-      <biological_entity id="o5523" name="segment" name_original="segments" src="d0_s8" type="structure" />
-      <relation from="o5521" id="r1270" name="part_of" negation="false" src="d0_s8" to="o5523" />
-      <relation from="o5522" id="r1271" name="part_of" negation="false" src="d0_s8" to="o5523" />
-    </statement>
-    <statement id="d0_s9">
-      <text>Indusia lacking glands.</text>
-      <biological_entity id="o5525" name="gland" name_original="glands" src="d0_s9" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s9" value="lacking" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>2 n = 82.</text>
-      <biological_entity id="o5524" name="indusium" name_original="indusia" src="d0_s9" type="structure" />
-      <biological_entity constraint="2n" id="o5526" name="chromosome" name_original="" src="d0_s10" type="structure">
-        <character name="quantity" src="d0_s10" value="82" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Swamps and wet woods;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="swamps and wet woods ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--100 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="100" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ala., Ark., Fla., Ga., La., N.C., S.C.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Leaves  somewhat dimorphic, green through winter, 35--120 × 10--30 cm.  Petiole  more than 1/4 length of leaf, scaly at base; scales scattered, brown.  Blade  dark green, lanceolate, pinnate-pinnatifid, herbaceous, not glandular. Pinnae nearly in plane of blade, lance-oblong; fertile pinnae in distal 1/2 of leaf, distinctly narrower than proximal vegetative pinnae (only in this species); basal pinnae lanceolate-oblong, much reduced, basal pinnules slightly shorter than adjacent pinnules, basal basiscopic pinnule slightly longer than basal acroscopic pinnule; pinnule margins distantly serrate.  Sori  midway between midvein and margin of segments.  Indusia  lacking glands. 2 n  = 82.</description>
+  <description type="habitat">Swamps and wet woods;</description>
+  <description type="elevation">0--100 m;</description>
+  <description type="distribution">Ala., Ark., Fla., Ga., La., N.C., S.C.</description>
   <number>5</number>
   <other_name type="common_name">Southern wood fern</other_name>
   <discussion>Dryopteris ludoviciana is endemic to southeastern United States. This diploid is one of the parents of D . celsa and D . cristata . It crosses with D . celsa to produce sterile hybrids.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_568_d19_s0">
-      <text>Fertile pinnae narrower than vegetative pinnae, restricted to distal 1/2 of blade.</text>
-      <biological_entity id="from_key_V2_568_o15418" name="pinna" name_original="pinnae" src="d19_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d19_s0" value="fertile" />
-        <character constraint="than vegetative pinnae" constraintid="o15419" is_modifier="false" name="width" src="d19_s0" value="narrower" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_568_o15419" name="pinna" name_original="pinnae" src="d19_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d19_s0" value="vegetative" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_568_o15420" name="distal 1/2" name_original="distal 1/2" src="d19_s0" type="structure" />
-      <biological_entity id="from_key_V2_568_o15421" name="blade" name_original="blade" src="d19_s0" type="structure" />
-      <relation from="from_key_V2_568_o15418" id="from_key_V2_568_r3636" name="restricted to" negation="false" src="d19_s0" to="from_key_V2_568_o15420" />
-      <relation from="from_key_V2_568_o15418" id="from_key_V2_568_r3637" name="restricted to" negation="false" src="d19_s0" to="from_key_V2_568_o15421" />
-    </statement>
-    <statement id="from_key_V2_568_d18_s0">
-      <text>Petioles 1/4-1/3 length of leaves, scales broad to narrow, but not hairlike.</text>
-      <biological_entity id="from_key_V2_568_o15416" name="petiole" name_original="petioles" src="d18_s0" type="structure">
-        <character char_type="range_value" from="1/4 length of leaves" name="length" src="d18_s0" to="1/3 length of leaves" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_568_o15417" name="scale" name_original="scales" src="d18_s0" type="structure">
-        <character is_modifier="false" name="width" notes="[duplicate value]" src="d18_s0" value="broad" />
-        <character is_modifier="false" name="width" notes="[duplicate value]" src="d18_s0" value="narrow" />
-        <character char_type="range_value" from="broad" name="width" src="d18_s0" to="narrow" />
-        <character is_modifier="false" modifier="not" name="shape" src="d18_s0" value="hairlike" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_568_d16_s0">
-      <text>Pinnules not finely spiny, teeth blunt or incurved (e, nw North America).</text>
-      <biological_entity id="from_key_V2_568_o15411" name="pinnule" name_original="pinnules" src="d16_s0" type="structure">
-        <character is_modifier="false" modifier="not finely" name="architecture_or_shape" src="d16_s0" value="spiny" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_568_o15412" name="tooth" name_original="teeth" src="d16_s0" type="structure">
-        <character is_modifier="false" name="shape" src="d16_s0" value="blunt" />
-        <character is_modifier="false" name="orientation" src="d16_s0" value="incurved" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_568_d14_s0">
-      <text>Sori midway between margin and midrib or closer to midribs of segments;</text>
-      <biological_entity id="from_key_V2_568_o15402" name="sorus" name_original="sori" src="d14_s0" type="structure">
-        <character constraint="between midrib" constraintid="o15404" is_modifier="false" name="position" src="d14_s0" value="midway" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_568_o15403" name="margin" name_original="margin" src="d14_s0" type="structure" />
-      <biological_entity id="from_key_V2_568_o15404" name="midrib" name_original="midrib" src="d14_s0" type="structure" />
-      <biological_entity id="from_key_V2_568_o15405" name="segment" name_original="segments" src="d14_s0" type="structure" />
-      <relation from="from_key_V2_568_o15404" id="from_key_V2_568_r3632" name="part_of" negation="false" src="d14_s0" to="from_key_V2_568_o15405" />
-    </statement>
-    <statement id="from_key_V2_568_d14_s1">
-      <text>petioles with scattered tan to dark-brown scales at base.</text>
-      <biological_entity id="from_key_V2_568_o15406" name="petiole" name_original="petioles" src="d14_s1" type="structure" />
-      <biological_entity id="from_key_V2_568_o15407" name="scale" name_original="scales" src="d14_s1" type="structure">
-        <character is_modifier="true" name="coloration" src="d14_s1" value="scattered" />
-        <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d14_s1" value="tan" />
-        <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d14_s1" value="dark-brown" />
-        <character char_type="range_value" from="tan" is_modifier="true" name="coloration" src="d14_s1" to="dark-brown" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_568_o15408" name="base" name_original="base" src="d14_s1" type="structure" />
-      <relation from="from_key_V2_568_o15406" id="from_key_V2_568_r3633" name="with" negation="false" src="d14_s1" to="from_key_V2_568_o15407" />
-      <relation from="from_key_V2_568_o15407" id="from_key_V2_568_r3634" name="at" negation="false" src="d14_s1" to="from_key_V2_568_o15408" />
-    </statement>
-    <statement id="from_key_V2_568_d4_s0">
-      <text>Blades pinnate-pinnatifid to 2-pinnate at base.</text>
-      <biological_entity id="from_key_V2_568_o15359" name="blade" name_original="blades" src="d4_s0" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s0" value="pinnate-pinnatifid" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s0" value="2-pinnate" />
-        <character char_type="range_value" constraint="at base" constraintid="o15360" from="pinnate-pinnatifid" name="shape" src="d4_s0" to="2-pinnate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_568_o15360" name="base" name_original="base" src="d4_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_568_d2_s0">
-      <text>Blades glabrous to sparsely scaly abaxially, not aromatic-glandular;</text>
-      <biological_entity id="from_key_V2_568_o15353" name="blade" name_original="blades" src="d2_s0" type="structure">
-        <character is_modifier="false" name="pubescence" src="d2_s0" value="glabrous to sparsely" />
-        <character is_modifier="false" modifier="sparsely; abaxially" name="architecture_or_pubescence" src="d2_s0" value="scaly" />
-        <character is_modifier="false" modifier="not" name="architecture_or_function_or_pubescence" src="d2_s0" value="aromatic-glandular" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_568_d2_s1">
-      <text>old leaves not persisting in conspicuous gray or brown clumps;</text>
-      <biological_entity id="from_key_V2_568_o15354" name="leaf" name_original="leaves" src="d2_s1" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d2_s1" value="old" />
-        <character constraint="in clumps" constraintid="o15355" is_modifier="false" modifier="not" name="duration" src="d2_s1" value="persisting" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_568_o15355" name="clump" name_original="clumps" src="d2_s1" type="structure">
-        <character is_modifier="true" name="coloration" src="d2_s1" value="conspicuous" />
-        <character is_modifier="true" name="coloration" src="d2_s1" value="gray" />
-        <character is_modifier="true" name="coloration" src="d2_s1" value="brown" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_568_d2_s2">
-      <text>leaves usually more than 25 cm.</text>
-      <biological_entity id="from_key_V2_568_o15356" name="leaf" name_original="leaves" src="d2_s2" type="structure">
-        <character char_type="range_value" from="25" from_unit="cm" name="some_measurement" src="d2_s2" upper_restricted="false" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

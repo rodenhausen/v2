@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Michaux ex DeCandolle" date="unknown" rank="family">equisetaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">equisetum</taxon_name>
-    <taxon_name authority="Ehrhart" date="1783" rank="species">telmateia</taxon_name>
-    <taxon_name authority="(J. Milde) Hauke" date="1978" rank="subspecies">braunii</taxon_name>
+    <taxon_name rank="family" authority="Michaux ex DeCandolle" date="unknown">equisetaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">equisetum</taxon_name>
+    <taxon_name rank="species" authority="Ehrhart" date="1783">telmateia</taxon_name>
+    <taxon_name rank="subspecies" authority="(J. Milde) Hauke" date="1978">braunii</taxon_name>
     <place_of_publication>
       <publication_title>Nova Hedwigia</publication_title>
       <place_in_publication>30: 434. 1978</place_in_publication>
@@ -27,8 +19,8 @@
     <taxon_hierarchy>family equisetaceae;genus equisetum;species telmateia;subspecies braunii</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Equisetum</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">braunii</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Equisetum</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">braunii</taxon_name>
     <place_of_publication>
       <publication_title>Verh. K.K. Zool.-Bot. Ges. Wien</publication_title>
       <place_in_publication>12: 515. 1862</place_in_publication>
@@ -36,154 +28,16 @@
     <taxon_hierarchy>genus Equisetum;species braunii;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Equisetum</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">telmateia</taxon_name>
-    <taxon_name authority="(J.Milde) J.Milde" date="unknown" rank="variety">braunii</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Equisetum</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">telmateia</taxon_name>
+    <taxon_name rank="variety" authority="(J.Milde) J.Milde" date="unknown">braunii</taxon_name>
     <taxon_hierarchy>genus Equisetum;species telmateia;variety braunii;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Aerial stems dimorphic;</text>
-      <biological_entity id="o23818" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="true" name="location" src="d0_s0" value="aerial" />
-        <character is_modifier="false" name="growth_form" src="d0_s0" value="dimorphic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>vegetative stems green, branched, 30-100 (-200) cm;</text>
-      <biological_entity id="o23819" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s1" value="vegetative" />
-        <character is_modifier="false" name="coloration" src="d0_s1" value="green" />
-        <character is_modifier="false" name="architecture" src="d0_s1" value="branched" />
-        <character char_type="range_value" from="100" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d0_s1" to="200" to_unit="cm" />
-        <character char_type="range_value" from="30" from_unit="cm" name="some_measurement" src="d0_s1" to="100" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>hollow center 2/3-3/4 stem diam.</text>
-      <biological_entity id="o23820" name="center" name_original="center" src="d0_s2" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s2" value="hollow" />
-        <character char_type="range_value" from="2/3" name="quantity" src="d0_s2" to="3/4" />
-      </biological_entity>
-      <biological_entity id="o23821" name="stem" name_original="stem" src="d0_s2" type="structure" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Sheaths squarish in face view, 7-18 × 5-13 mm;</text>
-      <biological_entity id="o23822" name="sheath" name_original="sheaths" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="in face view" name="shape" src="d0_s3" value="squarish" />
-        <character char_type="range_value" from="7" from_unit="mm" name="length" src="d0_s3" to="18" to_unit="mm" />
-        <character char_type="range_value" from="5" from_unit="mm" name="width" src="d0_s3" to="13" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>teeth green proximally and dark distally, 14-30 (-36), 3-12 mm.</text>
-      <biological_entity id="o23823" name="tooth" name_original="teeth" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="proximally" name="coloration" src="d0_s4" value="green proximally and dark" />
-        <character char_type="range_value" from="30" from_inclusive="false" modifier="distally" name="atypical_quantity" src="d0_s4" to="36" />
-        <character char_type="range_value" from="14" modifier="distally" name="quantity" src="d0_s4" to="30" />
-        <character char_type="range_value" from="3" from_unit="mm" name="some_measurement" src="d0_s4" to="12" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Branches in regular whorls, ascending to spreading, solid;</text>
-      <biological_entity id="o23824" name="branch" name_original="branches" src="d0_s5" type="structure">
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s5" value="ascending" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s5" value="spreading" />
-        <character char_type="range_value" from="ascending" name="orientation" notes="" src="d0_s5" to="spreading" />
-        <character is_modifier="false" name="architecture" src="d0_s5" value="solid" />
-      </biological_entity>
-      <biological_entity id="o23825" name="whorl" name_original="whorls" src="d0_s5" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s5" value="regular" />
-      </biological_entity>
-      <relation from="o23824" id="r5571" name="in" negation="false" src="d0_s5" to="o23825" />
-    </statement>
-    <statement id="d0_s6">
-      <text>ridges 4-5, furrowed;</text>
-      <biological_entity id="o23826" name="ridge" name_original="ridges" src="d0_s6" type="structure">
-        <character char_type="range_value" from="4" name="quantity" src="d0_s6" to="5" />
-        <character is_modifier="false" name="architecture" src="d0_s6" value="furrowed" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>valleys rounded;</text>
-    </statement>
-    <statement id="d0_s8">
-      <text>1st internode of each branch shorter than subtending stem sheath;</text>
-      <biological_entity id="o23827" name="valley" name_original="valleys" src="d0_s7" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s7" value="rounded" />
-      </biological_entity>
-      <biological_entity id="o23828" name="internode" name_original="internode" src="d0_s8" type="structure">
-        <character constraint="than subtending stem sheath" constraintid="o23830" is_modifier="false" name="height_or_length_or_size" src="d0_s8" value="shorter" />
-      </biological_entity>
-      <biological_entity id="o23829" name="branch" name_original="branch" src="d0_s8" type="structure" />
-      <biological_entity constraint="stem" id="o23830" name="sheath" name_original="sheath" src="d0_s8" type="structure" constraint_original="subtending stem" />
-      <relation from="o23828" id="r5572" name="part_of" negation="false" src="d0_s8" to="o23829" />
-    </statement>
-    <statement id="d0_s9">
-      <text>sheath teeth attenuate.</text>
-      <biological_entity constraint="sheath" id="o23831" name="tooth" name_original="teeth" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s9" value="attenuate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>Fertile stems brown, lacking stomates, unbranched, shorter (17-45 cm) than vegetative stems, with larger (15-40 mm) sheaths, fleshy, ephemeral.</text>
-      <biological_entity id="o23832" name="stem" name_original="stems" src="d0_s10" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s10" value="fertile" />
-        <character is_modifier="false" name="coloration" src="d0_s10" value="brown" />
-      </biological_entity>
-      <biological_entity id="o23833" name="stomate" name_original="stomates" src="d0_s10" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s10" value="lacking" />
-        <character is_modifier="false" name="architecture" src="d0_s10" value="unbranched" />
-        <character constraint="than vegetative stems" constraintid="o23834" is_modifier="false" name="height_or_length_or_size" src="d0_s10" value="shorter" />
-        <character is_modifier="false" name="texture" notes="" src="d0_s10" value="fleshy" />
-        <character is_modifier="false" name="duration" src="d0_s10" value="ephemeral" />
-      </biological_entity>
-      <biological_entity id="o23834" name="stem" name_original="stems" src="d0_s10" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s10" value="vegetative" />
-      </biological_entity>
-      <biological_entity constraint="larger" id="o23835" name="sheath" name_original="sheaths" src="d0_s10" type="structure" />
-      <relation from="o23833" id="r5573" name="with" negation="false" src="d0_s10" to="o23835" />
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Cones maturing in early spring.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="cones maturing time" value="early spring" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Coastal marshes, stream banks, ditches, and other wet places;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="coastal marshes" />
-        <character name="habitat" value="stream banks" />
-        <character name="habitat" value="ditches" />
-        <character name="habitat" value="and other wet places ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--1000 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1000" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>B.C.; Alaska, Calif., Oreg., Wash.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Aerial stems  dimorphic; vegetative stems green, branched, 30--100(--200) cm; hollow center 2/3--3/4 stem diam.  Sheaths  squarish in face view, 7--18 × 5--13 mm; teeth green proximally and dark distally, 14--30(--36), 3--12 mm.  Branches  in regular whorls, ascending to spreading, solid; ridges 4--5, furrowed; valleys rounded; 1st internode of each branch shorter than subtending stem sheath; sheath teeth attenuate.  Fertile stems  brown, lacking stomates, unbranched, shorter (17--45 cm) than vegetative stems, with larger (15--40 mm) sheaths, fleshy, ephemeral.</description>
+  <description type="phenology">Cones maturing in early spring.</description>
+  <description type="habitat">Coastal marshes, stream banks, ditches, and other wet places;</description>
+  <description type="elevation">0--1000 m;</description>
+  <description type="distribution">B.C.; Alaska, Calif., Oreg., Wash.</description>
   <number>3a</number>
   <discussion>Equisetum telmateia subsp. telmateia , from Europe, northern Africa, and the Middle East, differs primarily in having main aerial stem with white internodes, lacking both green tissue and stomates but having green, whorled branches.</discussion>
 </bio:treatment>

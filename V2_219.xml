@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="C. Presl" date="unknown" rank="family">blechnaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">blechnum</taxon_name>
-    <taxon_name authority="Linnaeus" date="1763" rank="species">occidentale</taxon_name>
-    <taxon_name authority="Hooker" date="1860" rank="variety">minor</taxon_name>
+    <taxon_name rank="family" authority="C. Presl" date="unknown">blechnaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">blechnum</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="1763">occidentale</taxon_name>
+    <taxon_name rank="variety" authority="Hooker" date="1860">minor</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Fil.</publication_title>
       <place_in_publication>3: 51. 1860</place_in_publication>
@@ -27,182 +19,28 @@
     <taxon_hierarchy>family blechnaceae;genus blechnum;species occidentale;variety minor</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Blechnum</taxon_name>
-    <taxon_name authority="forma pubirachis (Rosenstock) Lellinger" date="unknown" rank="species">glandulosum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Blechnum</taxon_name>
+    <taxon_name rank="species" authority="forma pubirachis (Rosenstock) Lellinger" date="unknown">glandulosum</taxon_name>
     <place_of_publication>
       <publication_title>in Link</publication_title>
     </place_of_publication>
     <taxon_hierarchy>genus Blechnum;species glandulosum;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Blechnum</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">occidentale</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Blechnum</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">occidentale</taxon_name>
     <taxon_hierarchy>genus Blechnum;species occidentale;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Blechnum</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">occidentale</taxon_name>
-    <taxon_name authority="Rosenstock" date="unknown" rank="variety">pubirachis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Blechnum</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">occidentale</taxon_name>
+    <taxon_name rank="variety" authority="Rosenstock" date="unknown">pubirachis</taxon_name>
     <taxon_hierarchy>genus Blechnum;species occidentale;variety pubirachis;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems slender, creeping, elongate, branched, ascending to erect at tip, not climbing.</text>
-      <biological_entity id="o3788" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="size" src="d0_s0" value="slender" />
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="creeping" />
-        <character is_modifier="false" name="shape" src="d0_s0" value="elongate" />
-        <character is_modifier="false" name="architecture" src="d0_s0" value="branched" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s0" value="ascending" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s0" value="erect" />
-        <character char_type="range_value" constraint="at tip" constraintid="o3789" from="ascending" name="orientation" src="d0_s0" to="erect" />
-        <character is_modifier="false" modifier="not" name="growth_form" notes="" src="d0_s0" value="climbing" />
-      </biological_entity>
-      <biological_entity id="o3789" name="tip" name_original="tip" src="d0_s0" type="structure" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves ± monomorphic, cespitose to widely spaced, erect to arching, fertile leaves only slightly contracted and longer than sterile leaves.</text>
-      <biological_entity id="o3790" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="more or less" name="architecture" src="d0_s1" value="monomorphic" />
-        <character is_modifier="false" name="growth_form" src="d0_s1" value="cespitose" />
-        <character is_modifier="false" modifier="widely" name="arrangement" src="d0_s1" value="spaced" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s1" value="erect" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s1" value="arching" />
-        <character char_type="range_value" from="erect" name="orientation" src="d0_s1" to="arching" />
-      </biological_entity>
-      <biological_entity id="o3791" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s1" value="fertile" />
-        <character is_modifier="false" modifier="only slightly" name="condition_or_size" src="d0_s1" value="contracted" />
-        <character constraint="than sterile leaves" constraintid="o3792" is_modifier="false" name="length_or_size" src="d0_s1" value="longer" />
-      </biological_entity>
-      <biological_entity id="o3792" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s1" value="sterile" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Petiole straw-colored to light-brown, (4-) 8-34 cm, coarsely scaly proximally.</text>
-      <biological_entity id="o3793" name="petiole" name_original="petiole" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s2" value="straw-colored" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s2" value="light-brown" />
-        <character char_type="range_value" from="straw-colored" name="coloration" src="d0_s2" to="light-brown" />
-        <character char_type="range_value" from="4" from_unit="cm" name="atypical_some_measurement" src="d0_s2" to="8" to_inclusive="false" to_unit="cm" />
-        <character char_type="range_value" from="8" from_unit="cm" name="some_measurement" src="d0_s2" to="34" to_unit="cm" />
-        <character is_modifier="false" modifier="coarsely; proximally" name="architecture_or_pubescence" src="d0_s2" value="scaly" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Blade narrowly to broadly lanceolate, 1-pinnate proximally, becoming pinnatifid distally, or pinnatifid throughout, without conform terminal pinna, 10-30 × 3-12 cm, base truncate, pubescent abaxially.</text>
-      <biological_entity id="o3794" name="blade" name_original="blade" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="narrowly to broadly" name="shape" src="d0_s3" value="lanceolate" />
-        <character is_modifier="false" modifier="proximally" name="architecture_or_shape" src="d0_s3" value="1-pinnate" />
-        <character is_modifier="false" modifier="becoming; distally" name="shape" src="d0_s3" value="pinnatifid" />
-        <character is_modifier="false" modifier="throughout" name="shape" src="d0_s3" value="pinnatifid" />
-        <character char_type="range_value" from="10" from_unit="cm" name="length" notes="" src="d0_s3" to="30" to_unit="cm" />
-        <character char_type="range_value" from="3" from_unit="cm" name="width" notes="" src="d0_s3" to="12" to_unit="cm" />
-      </biological_entity>
-      <biological_entity constraint="terminal" id="o3795" name="pinna" name_original="pinna" src="d0_s3" type="structure" />
-      <biological_entity id="o3796" name="base" name_original="base" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s3" value="truncate" />
-        <character is_modifier="false" modifier="abaxially" name="pubescence" src="d0_s3" value="pubescent" />
-      </biological_entity>
-      <relation from="o3794" id="r901" name="without" negation="false" src="d0_s3" to="o3795" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Rachis with indument of spreading, ± gland-tipped hairs abaxially.</text>
-      <biological_entity id="o3797" name="rachis" name_original="rachis" src="d0_s4" type="structure" />
-      <biological_entity id="o3798" name="indument" name_original="indument" src="d0_s4" type="structure" />
-      <biological_entity id="o3799" name="hair" name_original="hairs" src="d0_s4" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s4" value="spreading" />
-        <character is_modifier="true" modifier="more or less" name="architecture" src="d0_s4" value="gland-tipped" />
-      </biological_entity>
-      <relation from="o3797" id="r902" name="with" negation="false" src="d0_s4" to="o3798" />
-      <relation from="o3798" id="r903" name="part_of" negation="false" src="d0_s4" to="o3799" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Pinnae not articulate to rachis, proximal pinnae sessile to subsessile, distal pinnae adnate;</text>
-      <biological_entity id="o3800" name="pinna" name_original="pinnae" src="d0_s5" type="structure">
-        <character constraint="to rachis" constraintid="o3801" is_modifier="false" modifier="not" name="architecture" src="d0_s5" value="articulate" />
-      </biological_entity>
-      <biological_entity id="o3801" name="rachis" name_original="rachis" src="d0_s5" type="structure" />
-      <biological_entity constraint="proximal" id="o3802" name="pinna" name_original="pinnae" src="d0_s5" type="structure">
-        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s5" value="sessile" />
-        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s5" value="subsessile" />
-        <character char_type="range_value" from="sessile" name="architecture" src="d0_s5" to="subsessile" />
-      </biological_entity>
-      <biological_entity constraint="distal" id="o3803" name="pinna" name_original="pinnae" src="d0_s5" type="structure">
-        <character is_modifier="false" name="fusion" src="d0_s5" value="adnate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>larger pinnae curved, lanceolate, 2-7 × 0.5-1.5 cm.</text>
-      <biological_entity constraint="larger" id="o3804" name="pinna" name_original="pinnae" src="d0_s6" type="structure">
-        <character is_modifier="false" name="course" src="d0_s6" value="curved" />
-        <character is_modifier="false" name="shape" src="d0_s6" value="lanceolate" />
-        <character char_type="range_value" from="2" from_unit="cm" name="length" src="d0_s6" to="7" to_unit="cm" />
-        <character char_type="range_value" from="0.5" from_unit="cm" name="width" src="d0_s6" to="1.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Fertile pinnae slightly contracted;</text>
-      <biological_entity id="o3805" name="pinna" name_original="pinnae" src="d0_s7" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s7" value="fertile" />
-        <character is_modifier="false" modifier="slightly" name="condition_or_size" src="d0_s7" value="contracted" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>margins minutely serrulate to nearly entire;</text>
-      <biological_entity id="o3806" name="margin" name_original="margins" src="d0_s8" type="structure">
-        <character is_modifier="false" modifier="minutely" name="architecture_or_shape" notes="[duplicate value]" src="d0_s8" value="serrulate" />
-        <character is_modifier="false" modifier="nearly" name="architecture_or_shape" notes="[duplicate value]" src="d0_s8" value="entire" />
-        <character char_type="range_value" from="minutely serrulate" name="architecture_or_shape" src="d0_s8" to="nearly entire" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>costae with indument of hairs abaxially.</text>
-      <biological_entity id="o3808" name="indument" name_original="indument" src="d0_s9" type="structure" constraint="hair" />
-      <biological_entity id="o3809" name="hair" name_original="hairs" src="d0_s9" type="structure" />
-      <relation from="o3807" id="r904" name="with" negation="false" src="d0_s9" to="o3808" />
-      <relation from="o3808" id="r905" name="part_of" negation="false" src="d0_s9" to="o3809" />
-    </statement>
-    <statement id="d0_s10">
-      <text>2 n = 124.</text>
-      <biological_entity id="o3807" name="costa" name_original="costae" src="d0_s9" type="structure" />
-      <biological_entity constraint="2n" id="o3810" name="chromosome" name_original="" src="d0_s10" type="structure">
-        <character name="quantity" src="d0_s10" value="124" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Rocky and clayey places near seasonally dry streams, shady hammocks or open woods, over limestone, soil nearly neutral;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="rocky" />
-        <character name="habitat" value="clayey places near dry streams , shady hammocks or open woods , over limestone , soil neutral" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="0" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Fla., Ga., La., Tex.; West Indies; Central America; South America to Bolivia.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" value="West Indies" establishment_means="native" />
-        <character name="distribution" value="Central America" establishment_means="native" />
-        <character name="distribution" value="South America to Bolivia" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  slender, creeping, elongate, branched, ascending to erect at tip, not climbing.  Leaves  ± monomorphic, cespitose to widely spaced, erect to arching, fertile leaves only slightly contracted and longer than sterile leaves.  Petiole  straw-colored to light brown, (4-)8-34 cm, coarsely scaly proximally.  Blade  narrowly to broadly lanceolate, 1-pinnate proximally, becoming pinnatifid distally, or pinnatifid throughout, without conform terminal pinna, 10-30 × 3-12 cm, base truncate, pubescent abaxially.  Rachis  with indument of spreading, ± gland-tipped hairs abaxially.  Pinnae  not articulate to rachis, proximal pinnae sessile to subsessile, distal pinnae adnate; larger pinnae curved, lanceolate, 2-7 × 0.5-1.5 cm.  Fertile pinnae  slightly contracted; margins minutely serrulate to nearly entire; costae with indument of hairs abaxially. 2 n  = 124.</description>
+  <description type="habitat">Rocky and clayey places near seasonally dry streams, shady hammocks or open woods, over limestone, soil nearly neutral;</description>
+  <description type="elevation">0 m;</description>
+  <description type="distribution">Fla., Ga., La., Tex.; West Indies; Central America; South America to Bolivia.</description>
   <number>2a</number>
   <other_name type="common_name">Hammock fern</other_name>
   <other_name type="common_name">New World midsorus fern</other_name>

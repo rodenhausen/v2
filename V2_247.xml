@@ -1,158 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="Roth" date="1799" rank="genus">polystichum</taxon_name>
-    <taxon_name authority="D. H. Wagner" date="1990" rank="species">kwakiutlii</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Roth" date="1799">polystichum</taxon_name>
+    <taxon_name rank="species" authority="D. H. Wagner" date="1990">kwakiutlii</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>80: 50, fig. 1. 1990</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family dryopteridaceae;genus polystichum;species kwakiutlii</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems unknown.</text>
-      <biological_entity id="o4635" name="stem" name_original="stems" src="d0_s0" type="structure" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves (only distal portion known) with bulblets present.</text>
-      <biological_entity id="o4636" name="leaf" name_original="leaves" src="d0_s1" type="structure" />
-      <biological_entity id="o4637" name="bulblet" name_original="bulblets" src="d0_s1" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s1" value="absent" />
-      </biological_entity>
-      <relation from="o4636" id="r1095" name="with" negation="false" src="d0_s1" to="o4637" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Blade lanceolate, 2-pinnate, base probably narrowed.</text>
-      <biological_entity id="o4638" name="blade" name_original="blade" src="d0_s2" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s2" value="lanceolate" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s2" value="2-pinnate" />
-      </biological_entity>
-      <biological_entity id="o4639" name="base" name_original="base" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="probably" name="shape" src="d0_s2" value="narrowed" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Pinnae narrowly lanceolate, ca. 2-7 cm, base truncate to oblique, acroscopic proximal pinnule enlarged, apex obtuse.</text>
-      <biological_entity id="o4640" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" src="d0_s3" value="lanceolate" />
-        <character char_type="range_value" from="2" from_unit="cm" name="some_measurement" src="d0_s3" to="7" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o4641" name="base" name_original="base" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="truncate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="oblique" />
-        <character char_type="range_value" from="truncate" name="shape" src="d0_s3" to="oblique" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="o4642" name="pinnule" name_original="pinnule" src="d0_s3" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s3" value="acroscopic" />
-        <character is_modifier="false" name="size" src="d0_s3" value="enlarged" />
-      </biological_entity>
-      <biological_entity id="o4643" name="apex" name_original="apex" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="obtuse" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Pinnules short-stalked, ovate-rhombic, acroscopic auricle ± well developed, margins finely spiny-dentate;</text>
-      <biological_entity id="o4644" name="pinnule" name_original="pinnules" src="d0_s4" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s4" value="short-stalked" />
-        <character is_modifier="false" name="shape" src="d0_s4" value="ovate-rhombic" />
-      </biological_entity>
-      <biological_entity id="o4645" name="auricle" name_original="auricle" src="d0_s4" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s4" value="acroscopic" />
-        <character is_modifier="false" modifier="more or less well" name="development" src="d0_s4" value="developed" />
-      </biological_entity>
-      <biological_entity id="o4646" name="margin" name_original="margins" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="finely" name="architecture_or_shape" src="d0_s4" value="spiny-dentate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>apex acuminate;</text>
-      <biological_entity id="o4647" name="apex" name_original="apex" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="acuminate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>microscales filiform, lacking projections, dense abaxially, sparse adaxially.</text>
-      <biological_entity id="o4648" name="microscale" name_original="microscales" src="d0_s6" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s6" value="filiform" />
-      </biological_entity>
-      <biological_entity id="o4649" name="projection" name_original="projections" src="d0_s6" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s6" value="lacking" />
-        <character is_modifier="false" modifier="abaxially" name="density" src="d0_s6" value="dense" />
-        <character is_modifier="false" modifier="adaxially" name="count_or_density" src="d0_s6" value="sparse" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Indusia entire.</text>
-      <biological_entity id="o4650" name="indusium" name_original="indusia" src="d0_s7" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s7" value="entire" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  unknown.  Leaves  (only distal portion known) with bulblets present.  Blade  lanceolate, 2-pinnate, base probably narrowed.  Pinnae  narrowly lanceolate, ca. 2--7 cm, base truncate to oblique, acroscopic proximal pinnule enlarged, apex obtuse.  Pinnules  short-stalked, ovate-rhombic, acroscopic auricle ± well developed, margins finely spiny-dentate; apex acuminate; microscales filiform, lacking projections, dense abaxially, sparse adaxially.  Indusia  entire.</description>
   <number>9</number>
   <discussion>Polystichum kwakiutlii is known only from the type specimen, collected at Alice Arm, British Columbia (whether referring to inlet or town is unknown). This species is presumed to be one of the diploid progenitors of P . andersonii . It should be sought among the boreal 2-pinnate polystichums, from which it can be distinguished by the presence of bulblets. Polystichum kwakiutlii differs from P . andersonii in its completely divided pinnae and entire indusia.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_234_d15_s0">
-      <text>Proliferous bulblets present on distal portion of leaves.</text>
-      <biological_entity id="from_key_V2_234_o4263" name="bulblet" name_original="bulblets" src="d15_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d15_s0" value="proliferous" />
-      </biological_entity>
-      <biological_entity constraint="distal" id="from_key_V2_234_o4264" name="portion" name_original="portion" src="d15_s0" type="structure" />
-      <biological_entity constraint="distal" id="from_key_V2_234_o4265" name="leaf" name_original="leaves" src="d15_s0" type="structure" />
-      <relation from="from_key_V2_234_o4263" id="from_key_V2_234_r997" name="present on" negation="false" src="d15_s0" to="from_key_V2_234_o4264" />
-      <relation from="from_key_V2_234_o4263" id="from_key_V2_234_r998" name="present on" negation="false" src="d15_s0" to="from_key_V2_234_o4265" />
-    </statement>
-    <statement id="from_key_V2_234_d14_s0">
-      <text>Pinnules apiculate at tip, margins spiny.</text>
-      <biological_entity id="from_key_V2_234_o4260" name="pinnule" name_original="pinnules" src="d14_s0" type="structure">
-        <character constraint="at tip" constraintid="o4261" is_modifier="false" name="architecture_or_shape" src="d14_s0" value="apiculate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_234_o4261" name="tip" name_original="tip" src="d14_s0" type="structure" />
-      <biological_entity id="from_key_V2_234_o4262" name="margin" name_original="margins" src="d14_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d14_s0" value="spiny" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d11_s0">
-      <text>Leaves 2-pinnate, pinnules petiolate.</text>
-      <biological_entity id="from_key_V2_234_o4250" name="leaf" name_original="leaves" src="d11_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d11_s0" value="2-pinnate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_234_o4251" name="pinnule" name_original="pinnules" src="d11_s0" type="structure">
-        <character is_modifier="false" name="architecture" src="d11_s0" value="petiolate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d4_s0">
-      <text>Leaves 1-pinnate-pinnatifid or 2-pinnate.</text>
-      <biological_entity id="from_key_V2_234_o4224" name="leaf" name_original="leaves" src="d4_s0" type="structure">
-        <character is_modifier="false" name="shape" src="d4_s0" value="1-pinnate-pinnatifid" />
-        <character is_modifier="false" name="shape" src="d4_s0" value="2-pinnate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d2_s0">
-      <text>Fertile pinnae not contracted, sori often distinct.</text>
-      <biological_entity id="from_key_V2_234_o4221" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
-        <character is_modifier="false" modifier="not" name="condition_or_size" src="d2_s0" value="contracted" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_234_o4222" name="sorus" name_original="sori" src="d2_s0" type="structure">
-        <character is_modifier="false" modifier="often" name="fusion" src="d2_s0" value="distinct" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

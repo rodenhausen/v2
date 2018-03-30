@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">pinus</taxon_name>
-    <taxon_name authority="Douglas ex Loudon" date="1838" rank="species">contorta</taxon_name>
-    <taxon_name authority="(Greville &amp; Balfour) Engelmann in S. Watson" date="1880" rank="variety">murrayana</taxon_name>
+    <taxon_name rank="family" authority="Lindley" date="unknown">pinaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">pinus</taxon_name>
+    <taxon_name rank="species" authority="Douglas ex Loudon" date="1838">contorta</taxon_name>
+    <taxon_name rank="variety" authority="(Greville &amp; Balfour) Engelmann in S. Watson" date="1880">murrayana</taxon_name>
     <place_of_publication>
       <publication_title>in S. Watson,Bot. California</publication_title>
       <place_in_publication>2: 126. 1880</place_in_publication>
@@ -27,8 +19,8 @@
     <taxon_hierarchy>family pinaceae;genus pinus;species contorta;variety murrayana</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pinus</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">murrayana</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pinus</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">murrayana</taxon_name>
     <place_of_publication>
       <publication_title>in A. Murray bis, Bot. Exped. Oregon</publication_title>
       <place_in_publication>8: no. 740, plate 1853</place_in_publication>
@@ -36,111 +28,15 @@
     <taxon_hierarchy>genus Pinus;species murrayana;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pinus</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">contorta</taxon_name>
-    <taxon_name authority="(Greville &amp; Balfour) Critchfield" date="unknown" rank="subspecies">murrayana</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pinus</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">contorta</taxon_name>
+    <taxon_name rank="subspecies" authority="(Greville &amp; Balfour) Critchfield" date="unknown">murrayana</taxon_name>
     <taxon_hierarchy>genus Pinus;species contorta;subspecies murrayana;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees to 50m;</text>
-      <biological_entity id="o4816" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="50" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk to 0.9m diam., straight, little tapering;</text>
-      <biological_entity id="o4817" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="0.9" to_unit="m" />
-        <character is_modifier="false" name="course" src="d0_s1" value="straight" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="tapering" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>crown mostly conic at maturity.</text>
-      <biological_entity id="o4818" name="crown" name_original="crown" src="d0_s2" type="structure">
-        <character constraint="at maturity" is_modifier="false" modifier="mostly" name="shape" src="d0_s2" value="conic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Bark scaly, not evidently furrowed, orange to purple-brown.</text>
-      <biological_entity id="o4819" name="bark" name_original="bark" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture_or_pubescence" src="d0_s3" value="scaly" />
-        <character is_modifier="false" modifier="not evidently" name="architecture" src="d0_s3" value="furrowed" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="orange" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="purple-brown" />
-        <character char_type="range_value" from="orange" name="coloration" src="d0_s3" to="purple-brown" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Branches spreading, ascending at tips.</text>
-      <biological_entity id="o4820" name="branch" name_original="branches" src="d0_s4" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s4" value="spreading" />
-        <character constraint="at tips" constraintid="o4821" is_modifier="false" name="orientation" src="d0_s4" value="ascending" />
-      </biological_entity>
-      <biological_entity id="o4821" name="tip" name_original="tips" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Leaves 5-8cm × 1-2mm, yellow-green, apex acute.</text>
-      <biological_entity id="o4822" name="leaf" name_original="leaves" src="d0_s5" type="structure">
-        <character char_type="range_value" from="5" from_unit="cm" name="length" src="d0_s5" to="8" to_unit="cm" />
-        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s5" to="2" to_unit="mm" />
-        <character is_modifier="false" name="coloration" src="d0_s5" value="yellow-green" />
-      </biological_entity>
-      <biological_entity id="o4823" name="apex" name_original="apex" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="acute" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Seed-cones maturing in 2 years, shedding seeds and falling soon thereafter, nearly symmetric, mostly spreading, rarely in whorls, more often paired or solitary, mid and lower apophyses mostly shallowly domed.</text>
-      <biological_entity id="o4824" name="seed-cone" name_original="seed-cones" src="d0_s6" type="structure">
-        <character constraint="in years" constraintid="o4825" is_modifier="false" name="life_cycle" src="d0_s6" value="maturing" />
-        <character is_modifier="false" modifier="soon thereafter; thereafter" name="life_cycle" src="d0_s6" value="falling" />
-        <character is_modifier="false" modifier="nearly" name="architecture_or_shape" src="d0_s6" value="symmetric" />
-        <character is_modifier="false" modifier="mostly" name="orientation" src="d0_s6" value="spreading" />
-        <character is_modifier="false" modifier="often" name="arrangement" src="d0_s6" value="paired" />
-        <character is_modifier="false" name="arrangement" src="d0_s6" value="solitary" />
-      </biological_entity>
-      <biological_entity id="o4825" name="year" name_original="years" src="d0_s6" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s6" value="2" />
-      </biological_entity>
-      <biological_entity id="o4826" name="seed" name_original="seeds" src="d0_s6" type="structure" />
-      <biological_entity id="o4827" name="whorl" name_original="whorls" src="d0_s6" type="structure" />
-      <biological_entity constraint="and mid lower" id="o4828" name="apophysis" name_original="apophyses" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="mostly shallowly" name="shape" src="d0_s6" value="domed" />
-      </biological_entity>
-      <relation from="o4824" id="r1126" name="shedding" negation="false" src="d0_s6" to="o4826" />
-      <relation from="o4824" id="r1127" modifier="rarely" name="in" negation="false" src="d0_s6" to="o4827" />
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Montane forests;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="montane forests ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>400--3500m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="3500" to_unit="m" from="400" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Calif., Nev., Oreg., Wash.; Mexico in Baja California.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Nev." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
-        <character name="distribution" value="Mexico in Baja California" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees  to 50m; trunk to 0.9m diam., straight, little tapering; crown mostly conic at maturity.  Bark  scaly, not evidently furrowed, orange- to purple-brown.  Branches  spreading, ascending at tips.  Leaves  5--8cm × 1--2mm, yellow-green, apex acute.  Seed cones  maturing in 2 years, shedding seeds and falling soon thereafter, nearly symmetric, mostly spreading, rarely in whorls, more often paired or solitary, mid and lower apophyses mostly shallowly domed.</description>
+  <description type="habitat">Montane forests;</description>
+  <description type="elevation">400--3500m;</description>
+  <description type="distribution">Calif., Nev., Oreg., Wash.; Mexico in Baja California.</description>
   <number>33c</number>
   <other_name type="common_name">Sierra lodgepole pine</other_name>
   <discussion>Pinus contorta var. murrayana is the tallest and best-formed variety of this species.</discussion>

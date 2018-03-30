@@ -1,97 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Willkomm in Willkomm &amp; Lange" date="unknown" rank="family">selaginellaceae</taxon_name>
-    <taxon_name authority="Palisot de Beauvois" date="1805" rank="genus">selaginella</taxon_name>
-    <taxon_name authority="Jermy" date="1986" rank="subgenus">tetragonostachys</taxon_name>
-    <taxon_name authority="D. C. Eaton ex L. Underwood" date="1898" rank="species">mutica</taxon_name>
-    <taxon_name authority="Weatherby" date="1944" rank="variety">limitanea</taxon_name>
+    <taxon_name rank="family" authority="Willkomm in Willkomm &amp; Lange" date="unknown">selaginellaceae</taxon_name>
+    <taxon_name rank="genus" authority="Palisot de Beauvois" date="1805">selaginella</taxon_name>
+    <taxon_name rank="subgenus" authority="Jermy" date="1986">tetragonostachys</taxon_name>
+    <taxon_name rank="species" authority="D. C. Eaton ex L. Underwood" date="1898">mutica</taxon_name>
+    <taxon_name rank="variety" authority="Weatherby" date="1944">limitanea</taxon_name>
     <place_of_publication>
       <publication_title>J. Arnold Arbor.</publication_title>
       <place_in_publication>25: 414. 1944</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family selaginellaceae;genus selaginella;subgenus tetragonostachys;species mutica;variety limitanea</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Leaf apex bristles 0.02-0.45 mm;</text>
-      <biological_entity constraint="apex" id="o2577" name="bristle" name_original="bristles" src="d0_s0" type="structure" constraint_original="leaf apex">
-        <character char_type="range_value" from="0.02" from_unit="mm" name="some_measurement" src="d0_s0" to="0.45" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>margins short-ciliate (rarely long-ciliate) to denticulate, cilia and teeth ascending.</text>
-      <biological_entity id="o2578" name="margin" name_original="margins" src="d0_s1" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="short-ciliate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="denticulate" />
-        <character char_type="range_value" from="short-ciliate" name="shape" src="d0_s1" to="denticulate" />
-      </biological_entity>
-      <biological_entity id="o2579" name="cilium" name_original="cilia" src="d0_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s1" value="ascending" />
-      </biological_entity>
-      <biological_entity id="o2580" name="tooth" name_original="teeth" src="d0_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s1" value="ascending" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Sporophyll margins mostly with very short cilia to denticulate, cilia and teeth ascending.</text>
-      <biological_entity constraint="sporophyll" id="o2581" name="margin" name_original="margins" src="d0_s2" type="structure" />
-      <biological_entity id="o2582" name="cilium" name_original="cilia" src="d0_s2" type="structure">
-        <character is_modifier="true" modifier="very" name="height_or_length_or_size" src="d0_s2" value="short" />
-      </biological_entity>
-      <biological_entity id="o2583" name="cilium" name_original="cilia" src="d0_s2" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s2" value="denticulate" />
-      </biological_entity>
-      <biological_entity id="o2584" name="tooth" name_original="teeth" src="d0_s2" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s2" value="ascending" />
-      </biological_entity>
-      <relation from="o2581" id="r609" name="with" negation="false" src="d0_s2" to="o2582" />
-      <relation from="o2582" id="r610" name="to" negation="false" src="d0_s2" to="o2583" />
-      <relation from="o2582" id="r611" name="to" negation="false" src="d0_s2" to="o2584" />
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Sheltered cliffs, rocky hillsides, igneous rock;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="sheltered cliffs" />
-        <character name="habitat" value="rocky hillsides" />
-        <character name="habitat" value="igneous rock" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>1300--2400 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2400" to_unit="m" from="1300" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., N.Mex., Tex.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Leaf  apex bristles 0.02--0.45 mm; margins short-ciliate (rarely long-ciliate) to denticulate, cilia and teeth ascending.  Sporophyll  margins mostly with very short cilia to denticulate, cilia and teeth ascending.</description>
+  <description type="habitat">Sheltered cliffs, rocky hillsides, igneous rock;</description>
+  <description type="elevation">1300--2400 m;</description>
+  <description type="distribution">Ariz., N.Mex., Tex.</description>
   <number>17b</number>
 </bio:treatment>

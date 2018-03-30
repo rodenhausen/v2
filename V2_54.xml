@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Agardh" date="unknown" rank="family">ophioglossaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">ophioglossum</taxon_name>
-    <taxon_name authority="Prantl" date="1883" rank="species">californicum</taxon_name>
+    <taxon_name rank="family" authority="Agardh" date="unknown">ophioglossaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">ophioglossum</taxon_name>
+    <taxon_name rank="species" authority="Prantl" date="1883">californicum</taxon_name>
     <place_of_publication>
       <publication_title>Ber. Deutsch. Bot. Ges.</publication_title>
       <place_in_publication>1: 355. 1883</place_in_publication>
@@ -26,259 +18,17 @@
     <taxon_hierarchy>family ophioglossaceae;genus ophioglossum;species californicum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Ophioglossum</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="species">lusitanicum</taxon_name>
-    <taxon_name authority="(Prantl) R. T. Clausen" date="unknown" rank="subspecies">californicum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Ophioglossum</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="unknown">lusitanicum</taxon_name>
+    <taxon_name rank="subspecies" authority="(Prantl) R. T. Clausen" date="unknown">californicum</taxon_name>
     <taxon_hierarchy>genus Ophioglossum;species lusitanicum;subspecies californicum;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Roots to 16 per plant, pale-brown, 0.5-1 mm diam., producing proliferations.</text>
-      <biological_entity id="o14521" name="root" name_original="roots" src="d0_s0" type="structure">
-        <character char_type="range_value" constraint="per plant" constraintid="o14522" from="0" name="quantity" src="d0_s0" to="16" />
-        <character is_modifier="false" name="coloration" notes="" src="d0_s0" value="pale-brown" />
-        <character char_type="range_value" from="0.5" from_unit="mm" name="diameter" src="d0_s0" to="1" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o14522" name="plant" name_original="plant" src="d0_s0" type="structure" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Stem upright, to 1.6 cm, 5mm diam., commonly 2 leaves per stem.</text>
-      <biological_entity id="o14523" name="stem" name_original="stem" src="d0_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s1" value="upright" />
-        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s1" to="1.6" to_unit="cm" />
-        <character name="diameter" src="d0_s1" unit="mm" value="5" />
-        <character modifier="commonly" name="quantity" src="d0_s1" value="2" />
-      </biological_entity>
-      <biological_entity id="o14524" name="leaf" name_original="leaves" src="d0_s1" type="structure" />
-      <biological_entity id="o14525" name="stem" name_original="stem" src="d0_s1" type="structure" />
-      <relation from="o14524" id="r3438" name="per" negation="false" src="d0_s1" to="o14525" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Trophophore stalk 0-1.8cm, to 2.5 times length of trophophore blade.</text>
-      <biological_entity constraint="trophophore" id="o14526" name="stalk" name_original="stalk" src="d0_s2" type="structure">
-        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s2" to="1.8" to_unit="cm" />
-        <character constraint="blade" constraintid="o14527" is_modifier="false" name="length" src="d0_s2" value="0-2.5 times length of trophophore blade" />
-      </biological_entity>
-      <biological_entity constraint="trophophore" id="o14527" name="blade" name_original="blade" src="d0_s2" type="structure" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Trophophore blade erect to spreading, commonly ± folded when alive, green, dull, without pale central band when dried, to 4.3 × 1 cm (rarely 0.4 × 0.3 mm), herbaceous, thick, gradually tapering to base, apex attenuate;</text>
-      <biological_entity constraint="trophophore" id="o14528" name="blade" name_original="blade" src="d0_s3" type="structure">
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s3" value="erect" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s3" value="spreading" />
-        <character char_type="range_value" from="erect" name="orientation" src="d0_s3" to="spreading" />
-        <character is_modifier="false" modifier="when alive" name="architecture_or_shape" src="d0_s3" value="folded" />
-        <character is_modifier="false" name="coloration" src="d0_s3" value="green" />
-        <character is_modifier="false" name="reflectance" src="d0_s3" value="dull" />
-      </biological_entity>
-      <biological_entity constraint="central" id="o14529" name="band" name_original="band" src="d0_s3" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s3" value="pale" />
-        <character char_type="range_value" from="0" from_unit="cm" name="length" src="d0_s3" to="4.3" to_unit="cm" />
-        <character char_type="range_value" from="0" from_unit="cm" name="width" src="d0_s3" to="1" to_unit="cm" />
-        <character is_modifier="false" modifier="when dried" name="growth_form_or_texture" src="d0_s3" value="herbaceous" />
-        <character is_modifier="false" name="width" src="d0_s3" value="thick" />
-        <character constraint="to base" constraintid="o14530" is_modifier="false" modifier="gradually" name="shape" src="d0_s3" value="tapering" />
-      </biological_entity>
-      <biological_entity id="o14530" name="base" name_original="base" src="d0_s3" type="structure" />
-      <relation from="o14528" id="r3439" name="without" negation="false" src="d0_s3" to="o14529" />
-    </statement>
-    <statement id="d0_s4">
-      <text>venation complex-reticulate, with numerous parallel narrow areoles, each with 1-several included veinlets.</text>
-      <biological_entity id="o14531" name="apex" name_original="apex" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="attenuate" />
-        <character is_modifier="false" name="architecture_or_coloration_or_relief" src="d0_s4" value="complex-reticulate" />
-      </biological_entity>
-      <biological_entity id="o14532" name="areole" name_original="areoles" src="d0_s4" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s4" value="numerous" />
-        <character is_modifier="true" name="arrangement" src="d0_s4" value="parallel" />
-        <character is_modifier="true" name="size_or_width" src="d0_s4" value="narrow" />
-        <character char_type="range_value" constraint="with" from="1" is_modifier="false" name="quantity" src="d0_s4" to="several" />
-      </biological_entity>
-      <biological_entity id="o14533" name="veinlet" name_original="veinlets" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Sporophores arising near ground level, 1-2.5 times length of trophophore;</text>
-      <biological_entity id="o14535" name="level" name_original="level" src="d0_s5" type="structure" />
-      <biological_entity id="o14536" name="trophophore" name_original="trophophore" src="d0_s5" type="structure" />
-    </statement>
-    <statement id="d0_s6">
-      <text>sporangial clusters 8-15 × 1-3 mm, with 8-15 pairs of sporangia, apiculum 0.3-1 mm.</text>
-      <biological_entity id="o14534" name="sporophore" name_original="sporophores" src="d0_s5" type="structure">
-        <character constraint="near level" constraintid="o14535" is_modifier="false" name="orientation" src="d0_s5" value="arising" />
-        <character constraint="trophophore" constraintid="o14536" is_modifier="false" name="length" notes="" src="d0_s5" value="1-2.5 times length of trophophore" />
-        <character is_modifier="false" name="structure_in_adjective_form" src="d0_s6" value="sporangial" />
-      </biological_entity>
-      <biological_entity id="o14537" name="pair" name_original="pairs" src="d0_s6" type="structure">
-        <character is_modifier="false" name="arrangement" src="d0_s6" value="cluster" value_original="clusters" />
-        <character char_type="range_value" from="8" is_modifier="true" name="quantity" src="d0_s6" to="15" />
-      </biological_entity>
-      <biological_entity id="o14538" name="sporangium" name_original="sporangia" src="d0_s6" type="structure" />
-      <biological_entity id="o14539" name="apiculum" name_original="apiculum" src="d0_s6" type="structure">
-        <character char_type="range_value" from="0.3" from_unit="mm" name="some_measurement" src="d0_s6" to="1" to_unit="mm" />
-      </biological_entity>
-      <relation from="o14537" id="r3440" name="part_of" negation="false" src="d0_s6" to="o14538" />
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Leaves appearing in late winter and early spring; apparently absent during dry years.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="leaves appearing time" value="late winter-early spring" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Open grassy fields and prairies;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="open grassy fields and prairies" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>50-300 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="300" to_unit="m" from="50" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Calif.; Mexico.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Roots  to 16 per plant, pale brown, 0.5-1 mm diam., producing proliferations.  Stem  upright, to 1.6 cm, 5mm diam., commonly 2 leaves per stem.  Trophophore stalk  0-1.8cm, to 2.5 times length of trophophore blade.  Trophophore blade  erect to spreading, commonly ± folded when alive, green, dull, without pale central band when dried, to 4.3 × 1 cm (rarely 0.4 × 0.3 mm), herbaceous, thick, gradually tapering to base, apex attenuate; venation complex-reticulate, with numerous parallel narrow areoles, each with 1-several included veinlets.  Sporophores  arising near ground level, 1-2.5 times length of trophophore; sporangial clusters 8-15 × 1-3 mm, with 8-15 pairs of sporangia, apiculum 0.3-1 mm.</description>
+  <description type="phenology">Leaves appearing in late winter and early spring; apparently absent during dry years.</description>
+  <description type="habitat">Open grassy fields and prairies;</description>
+  <description type="elevation">50-300 m;</description>
+  <description type="distribution">Calif.; Mexico.</description>
   <number>1</number>
   <other_name type="common_name">California adder's-tongue</other_name>
   <discussion>Ophioglossum californicum differs from the Old World species O . lusitanicum in that O . lusitanicum has a narrowly linear to linear-oblanceolate trophophore that is 1/4 to 1/2 as wide as long; O . lusitanicum also has a much simpler venation and usually lacks an apiculum.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_519_d13_s0">
-      <text>Roots 0.5-1 mm diam.;</text>
-      <biological_entity id="from_key_V2_519_o14033" name="root" name_original="roots" src="d13_s0" type="structure">
-        <character char_type="range_value" from="0.5" from_unit="mm" name="diameter" src="d13_s0" to="1" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_519_d13_s1">
-      <text>sporophores 1-2.5 times length of trophophore;</text>
-      <biological_entity id="from_key_V2_519_o14034" name="sporophore" name_original="sporophores" src="d13_s1" type="structure">
-        <character constraint="trophophore" constraintid="o14035" is_modifier="false" name="length" src="d13_s1" value="1-2.5 times length of trophophore" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_519_o14035" name="trophophore" name_original="trophophore" src="d13_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_519_d13_s2">
-      <text>trophophores 0.4-4.3 × 0.3-1 cm, commonly folded when alive;</text>
-      <biological_entity id="from_key_V2_519_o14036" name="trophophore" name_original="trophophores" src="d13_s2" type="structure">
-        <character char_type="range_value" from="0.4" from_unit="cm" name="length" src="d13_s2" to="4.3" to_unit="cm" />
-        <character char_type="range_value" from="0.3" from_unit="cm" name="width" src="d13_s2" to="1" to_unit="cm" />
-        <character is_modifier="false" modifier="when alive" name="architecture_or_shape" src="d13_s2" value="folded" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_519_d13_s3">
-      <text>blades thick, herbaceous;</text>
-    </statement>
-    <statement id="from_key_V2_519_d13_s4">
-      <text>California.</text>
-      <biological_entity id="from_key_V2_519_o14037" name="blade" name_original="blades" src="d13_s3" type="structure">
-        <character is_modifier="false" name="width" src="d13_s3" value="thick" />
-        <character is_modifier="false" name="growth_form_or_texture" src="d13_s3" value="herbaceous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_519_d12_s0">
-      <text>Roots yellowish to pale-brown, usually more than 12 per shoot, 0.2-1 mm diam.;</text>
-      <biological_entity id="from_key_V2_519_o14030" name="root" name_original="roots" src="d12_s0" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d12_s0" value="yellowish" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d12_s0" value="pale-brown" />
-        <character char_type="range_value" from="yellowish" name="coloration" src="d12_s0" to="pale-brown" />
-        <character char_type="range_value" constraint="per shoot" constraintid="o14031" from="12" modifier="usually" name="count" src="d12_s0" upper_restricted="false" />
-        <character char_type="range_value" from="0.2" from_unit="mm" name="diameter" notes="alterIDs:o14031" src="d12_s0" to="1" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_519_o14031" name="shoot" name_original="shoot" src="d12_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_519_d12_s1">
-      <text>blade apiculum absent or present;</text>
-    </statement>
-    <statement id="from_key_V2_519_d12_s2">
-      <text>venation usually fine, intricate.</text>
-      <biological_entity constraint="blade" id="from_key_V2_519_o14032" name="apiculum" name_original="apiculum" src="d12_s1" type="structure">
-        <character is_modifier="false" name="count" src="d12_s1" value="absent" />
-        <character is_modifier="false" name="count" src="d12_s1" value="present" />
-        <character is_modifier="false" modifier="usually" name="width" src="d12_s2" value="fine" />
-        <character is_modifier="false" name="arrangement" src="d12_s2" value="intricate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_519_d8_s0">
-      <text>Blades acute at apex, with ± developed apiculum or apiculum absent, ovate-oblong, ovate-deltate, or ovatelanceolate, to 4.5 × 1 cm (6 × 3 mm occasionally in O. petiolatum);</text>
-      <biological_entity id="from_key_V2_519_o14015" name="blade" name_original="blades" src="d8_s0" type="structure">
-        <character constraint="at apex" constraintid="o14016" is_modifier="false" name="shape" src="d8_s0" value="acute" />
-        <character is_modifier="false" name="shape" notes="alterIDs:o14018" src="d8_s0" value="ovate-oblong" />
-        <character is_modifier="false" name="shape" src="d8_s0" value="ovate-deltate" />
-        <character is_modifier="false" name="shape" src="d8_s0" value="ovatelanceolate" />
-        <character is_modifier="false" name="shape" src="d8_s0" value="ovate-deltate" />
-        <character is_modifier="false" name="shape" src="d8_s0" value="ovatelanceolate" />
-        <character char_type="range_value" from="0" from_unit="cm" name="length" src="d8_s0" to="4.5" to_unit="cm" />
-        <character char_type="range_value" from="0" from_unit="cm" name="width" src="d8_s0" to="1" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_519_o14016" name="apex" name_original="apex" src="d8_s0" type="structure" />
-      <biological_entity id="from_key_V2_519_o14017" name="apiculum" name_original="apiculum" src="d8_s0" type="structure">
-        <character is_modifier="true" modifier="more or less" name="development" src="d8_s0" value="developed" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_519_o14018" name="apiculum" name_original="apiculum" src="d8_s0" type="structure">
-        <character is_modifier="false" name="count" src="d8_s0" value="absent" />
-      </biological_entity>
-      <relation from="from_key_V2_519_o14015" id="from_key_V2_519_r3349" name="with" negation="false" src="d8_s0" to="from_key_V2_519_o14017" />
-      <relation from="from_key_V2_519_o14015" id="from_key_V2_519_r3350" name="with" negation="false" src="d8_s0" to="from_key_V2_519_o14018" />
-    </statement>
-    <statement id="from_key_V2_519_d8_s1">
-      <text>adult leaves commonly 2-3 per stem, appearing in 1 or more flushes per year, depending on rains.</text>
-      <biological_entity id="from_key_V2_519_o14019" name="leaf" name_original="leaves" src="d8_s1" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d8_s1" value="adult" />
-        <character char_type="range_value" constraint="per stem" constraintid="o14020" from="2" name="count" src="d8_s1" to="3" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_519_o14020" name="stem" name_original="stem" src="d8_s1" type="structure" />
-      <biological_entity id="from_key_V2_519_o14021" name="rain" name_original="rains" src="d8_s1" type="structure" />
-      <relation from="from_key_V2_519_o14019" id="from_key_V2_519_r3351" name="depending on" negation="false" src="d8_s1" to="from_key_V2_519_o14021" />
-    </statement>
-    <statement id="from_key_V2_519_d4_s0">
-      <text>Trophophore veins forming only branching or nonbranching, free, included veinlets within larger areoles.</text>
-      <biological_entity constraint="trophophore" id="from_key_V2_519_o13995" name="vein" name_original="veins" src="d4_s0" type="structure" />
-      <biological_entity constraint="included" id="from_key_V2_519_o13996" name="veinlet" name_original="veinlets" src="d4_s0" type="structure">
-        <character is_modifier="true" modifier="only" name="architecture" src="d4_s0" value="branching" />
-        <character is_modifier="true" name="fusion" src="d4_s0" value="free" />
-      </biological_entity>
-      <biological_entity constraint="larger" id="from_key_V2_519_o13997" name="areole" name_original="areoles" src="d4_s0" type="structure" />
-      <relation from="from_key_V2_519_o13995" id="from_key_V2_519_r3346" name="forming" negation="false" src="d4_s0" to="from_key_V2_519_o13996" />
-      <relation from="from_key_V2_519_o13995" id="from_key_V2_519_r3347" name="within" negation="false" src="d4_s0" to="from_key_V2_519_o13997" />
-    </statement>
-    <statement id="from_key_V2_519_d2_s0">
-      <text>Stems upright, 1-5 mm diam., seldom more;</text>
-      <biological_entity id="from_key_V2_519_o13986" name="stem" name_original="stems" src="d2_s0" type="structure">
-        <character is_modifier="false" name="orientation" src="d2_s0" value="upright" />
-        <character char_type="range_value" from="1" from_unit="mm" name="diameter" src="d2_s0" to="5" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_519_d2_s1">
-      <text>leaves arising at top of stem;</text>
-      <biological_entity id="from_key_V2_519_o13987" name="leaf" name_original="leaves" src="d2_s1" type="structure">
-        <character constraint="at top" constraintid="o13988" is_modifier="false" name="orientation" src="d2_s1" value="arising" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_519_o13988" name="top" name_original="top" src="d2_s1" type="structure" />
-      <biological_entity id="from_key_V2_519_o13989" name="stem" name_original="stem" src="d2_s1" type="structure" />
-      <relation from="from_key_V2_519_o13988" id="from_key_V2_519_r3342" name="top of" negation="false" src="d2_s1" to="from_key_V2_519_o13989" />
-    </statement>
-    <statement id="from_key_V2_519_d2_s2">
-      <text>trophophore blades erect to spreading, mostly ovate to lanceolate.</text>
-      <biological_entity constraint="trophophore" id="from_key_V2_519_o13990" name="blade" name_original="blades" src="d2_s2" type="structure">
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d2_s2" value="erect" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d2_s2" value="spreading" />
-        <character char_type="range_value" from="erect" name="orientation" src="d2_s2" to="spreading" />
-        <character is_modifier="false" modifier="mostly" name="shape" notes="[duplicate value]" src="d2_s2" value="ovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s2" value="lanceolate" />
-        <character char_type="range_value" from="mostly ovate" name="shape" src="d2_s2" to="lanceolate" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

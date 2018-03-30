@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>Clifton E. Nauman</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="C. Presl" date="unknown" rank="family">gleicheniaceae</taxon_name>
-    <taxon_name authority="Bernhardi" date="1805" rank="genus">Dicranopteris</taxon_name>
+    <taxon_name rank="family" authority="C. Presl" date="unknown">gleicheniaceae</taxon_name>
+    <taxon_name rank="genus" authority="Bernhardi" date="1805">Dicranopteris</taxon_name>
     <place_of_publication>
       <publication_title>Neues J. Bot.</publication_title>
       <place_in_publication>1(2): 38. 1805</place_in_publication>
@@ -25,99 +17,8 @@
     <taxon_hierarchy>family gleicheniaceae;genus Dicranopteris</taxon_hierarchy>
     <other_info_on_name type="etymology">[Greek dikranos, twice-forked, and pteris, fern, derived from pteron, feather, in reference to the leaf architecture]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems long-creeping;</text>
-      <biological_entity id="o5768" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="long-creeping" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>hairs many celled, rigid to lax.</text>
-      <biological_entity id="o5769" name="hair" name_original="hairs" src="d0_s1" type="structure">
-        <character is_modifier="false" name="quantity" src="d0_s1" value="many" />
-        <character is_modifier="false" name="architecture" src="d0_s1" value="celled" />
-        <character is_modifier="false" name="texture" src="d0_s1" value="rigid" />
-        <character is_modifier="false" name="architecture_or_arrangement" src="d0_s1" value="lax" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves usually separated several centimeters, of apparently indeterminate growth;</text>
-      <biological_entity id="o5770" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="usually" name="arrangement" src="d0_s2" value="separated" />
-        <character is_modifier="false" name="quantity" src="d0_s2" value="several" />
-      </biological_entity>
-      <biological_entity id="o5771" name="growth" name_original="growth" src="d0_s2" type="structure">
-        <character is_modifier="true" modifier="apparently" name="development" src="d0_s2" value="indeterminate" />
-      </biological_entity>
-      <relation from="o5770" id="r1308" name="part_of" negation="false" src="d0_s2" to="o5771" />
-    </statement>
-    <statement id="d0_s3">
-      <text>pinnae opposite, in 1-several pairs, each pinna 1-many times forked, equal, each fork bearing arrested apex (bud) covered with tuft of hairs (all other axes glabrous) and pair of stipulelike appendages.</text>
-      <biological_entity id="o5772" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character is_modifier="false" name="arrangement" src="d0_s3" value="opposite" />
-      </biological_entity>
-      <biological_entity id="o5773" name="pair" name_original="pairs" src="d0_s3" type="structure">
-        <character char_type="range_value" from="1" is_modifier="true" name="quantity" src="d0_s3" to="several" />
-      </biological_entity>
-      <biological_entity id="o5774" name="pinna" name_original="pinna" src="d0_s3" type="structure">
-        <character char_type="range_value" from="1" is_modifier="false" name="quantity" src="d0_s3" to="many" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="forked" />
-        <character is_modifier="false" name="variability" src="d0_s3" value="equal" />
-      </biological_entity>
-      <biological_entity id="o5775" name="fork" name_original="fork" src="d0_s3" type="structure" />
-      <biological_entity id="o5776" name="apex" name_original="apex" src="d0_s3" type="structure" />
-      <biological_entity id="o5777" name="tuft" name_original="tuft" src="d0_s3" type="structure" />
-      <biological_entity id="o5778" name="hair" name_original="hairs" src="d0_s3" type="structure" />
-      <biological_entity id="o5779" name="appendage" name_original="appendages" src="d0_s3" type="structure">
-        <character is_modifier="true" name="architecture_or_shape" src="d0_s3" value="stipulelike" />
-      </biological_entity>
-      <relation from="o5772" id="r1309" name="in" negation="false" src="d0_s3" to="o5773" />
-      <relation from="o5775" id="r1310" name="bearing arrested" negation="false" src="d0_s3" to="o5776" />
-      <relation from="o5775" id="r1311" name="covered with" negation="false" src="d0_s3" to="o5777" />
-      <relation from="o5775" id="r1312" name="covered with" negation="false" src="d0_s3" to="o5778" />
-      <relation from="o5775" id="r1313" name="covered with" negation="false" src="d0_s3" to="o5779" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Penultimate segments pectinate, in ± equal pairs, usually ascending.</text>
-      <biological_entity constraint="penultimate" id="o5780" name="segment" name_original="segments" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s4" value="pectinate" />
-        <character is_modifier="false" modifier="usually" name="orientation" notes="" src="d0_s4" value="ascending" />
-      </biological_entity>
-      <biological_entity id="o5781" name="pair" name_original="pairs" src="d0_s4" type="structure">
-        <character is_modifier="true" modifier="more or less" name="variability" src="d0_s4" value="equal" />
-      </biological_entity>
-      <relation from="o5780" id="r1314" name="in" negation="false" src="d0_s4" to="o5781" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Veins 2-4-forked.</text>
-      <biological_entity id="o5782" name="vein" name_original="veins" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="2-4-forked" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Sori with 6-15 or more sporangia, not paraphysate.</text>
-      <biological_entity id="o5783" name="sorus" name_original="sori" src="d0_s6" type="structure" />
-      <biological_entity id="o5784" name="sporangium" name_original="sporangia" src="d0_s6" type="structure">
-        <character char_type="range_value" from="6" is_modifier="true" name="quantity" src="d0_s6" to="15" />
-      </biological_entity>
-      <relation from="o5783" id="r1315" modifier="not" name="with" negation="false" src="d0_s6" to="o5784" />
-    </statement>
-    <statement id="d0_s7">
-      <text>Spores trilete.</text>
-      <biological_entity id="o5785" name="spore" name_original="spores" src="d0_s7" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s7" value="trilete" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>nearly worldwide in tropical and subtropical regions.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="nearly worldwide in tropical and subtropical regions" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  long-creeping; hairs many celled, rigid to lax.  Leaves  usually separated several centimeters, of apparently indeterminate growth; pinnae opposite, in 1--several pairs, each pinna 1--many times forked, equal, each fork bearing arrested apex (bud) covered with tuft of hairs (all other axes glabrous) and pair of stipulelike appendages.  Penultimate segments  pectinate, in ± equal pairs, usually ascending.  Veins  2--4-forked.  Sori  with 6--15 or more sporangia, not paraphysate.  Spores  trilete.</description>
+  <description type="distribution">nearly worldwide in tropical and subtropical regions.</description>
   <number>1</number>
   <other_name type="common_name">Forking ferns</other_name>
   <discussion>Species 8--12 (1 in the flora):</discussion>

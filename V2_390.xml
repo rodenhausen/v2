@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>Thomas A. Lumpkin</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Wettstein" date="unknown" rank="family">azollaceae</taxon_name>
-    <taxon_name authority="Lamarck in Lamarck et al." date="1783" rank="genus">Azolla</taxon_name>
+    <taxon_name rank="family" authority="Wettstein" date="unknown">azollaceae</taxon_name>
+    <taxon_name rank="genus" authority="Lamarck in Lamarck et al." date="1783">Azolla</taxon_name>
     <place_of_publication>
       <publication_title>in Lamarck et al.,Encycl.</publication_title>
       <place_in_publication>1: 343. 1783</place_in_publication>
@@ -25,70 +17,8 @@
     <taxon_hierarchy>family azollaceae;genus Azolla</taxon_hierarchy>
     <other_info_on_name type="etymology">[Greek azo, to dry, and ollyo, to kill, alluding to death from drought]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Roots 3-5 cm.</text>
-      <biological_entity id="o9089" name="root" name_original="roots" src="d0_s0" type="structure">
-        <character char_type="range_value" from="3" from_unit="cm" name="some_measurement" src="d0_s0" to="5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems prostrate, 1-3 cm, or nearly erect, 3-5 cm, hairs absent.</text>
-      <biological_entity id="o9090" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="prostrate" />
-        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s1" to="3" to_unit="cm" />
-        <character is_modifier="false" modifier="nearly" name="orientation" src="d0_s1" value="erect" />
-        <character char_type="range_value" from="3" from_unit="cm" name="some_measurement" src="d0_s1" to="5" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o9091" name="hair" name_original="hairs" src="d0_s1" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s1" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves with 1 (-2) -celled hairs on upper surface of upper lobe.</text>
-      <biological_entity id="o9092" name="leaf" name_original="leaves" src="d0_s2" type="structure" />
-      <biological_entity id="o9093" name="hair" name_original="hairs" src="d0_s2" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s2" value="1(-2)-celled" />
-      </biological_entity>
-      <biological_entity constraint="upper" id="o9094" name="surface" name_original="surface" src="d0_s2" type="structure" />
-      <biological_entity constraint="upper" id="o9095" name="lobe" name_original="lobe" src="d0_s2" type="structure" />
-      <relation from="o9092" id="r2079" name="with" negation="false" src="d0_s2" to="o9093" />
-      <relation from="o9093" id="r2080" name="on" negation="false" src="d0_s2" to="o9094" />
-      <relation from="o9094" id="r2081" name="part_of" negation="false" src="d0_s2" to="o9095" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Sporocarps in pairs.</text>
-      <biological_entity id="o9096" name="sporocarp" name_original="sporocarps" src="d0_s3" type="structure" />
-      <biological_entity id="o9097" name="pair" name_original="pairs" src="d0_s3" type="structure" />
-      <relation from="o9096" id="r2082" name="in" negation="false" src="d0_s3" to="o9097" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Megasporocarp megaspore with 3 floats.</text>
-      <biological_entity constraint="megasporocarp" id="o9098" name="megaspore" name_original="megaspore" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Microsporocarp masses entirely covered with arrowlike barbs.</text>
-      <biological_entity id="o9100" name="barb" name_original="barbs" src="d0_s5" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s5" value="arrowlike" />
-      </biological_entity>
-      <relation from="o9099" id="r2083" modifier="entirely" name="covered with" negation="false" src="d0_s5" to="o9100" />
-    </statement>
-    <statement id="d0_s6">
-      <text>x = 22.</text>
-      <biological_entity constraint="microsporocarp" id="o9099" name="mass" name_original="masses" src="d0_s5" type="structure" />
-      <biological_entity constraint="x" id="o9101" name="chromosome" name_original="" src="d0_s6" type="structure">
-        <character name="quantity" src="d0_s6" value="22" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>tropical to temperate regions.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="tropical to temperate regions" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Roots  3--5 cm.  Stems  prostrate, 1--3 cm, or nearly erect, 3--5 cm, hairs absent.  Leaves  with 1(--2)-celled hairs on upper surface of upper lobe.  Sporocarps  in pairs.  Megasporocarp  megaspore with 3 floats.  Microsporocarp  masses entirely covered with arrowlike barbs.  x  = 22.</description>
+  <description type="distribution">tropical to temperate regions.</description>
   <number>1</number>
   <discussion>Azolla is divided into sect. Azolla and sect. Rhizosperma (Meyen) Mettenius, which are sometimes recognized as subgenera. New World species belong to sect. Azolla and differ from sect. Rhizosperma by having 3 floats per megasporocarp (fig. 25.1), subdichotomous branching, and straight barbs on microsporangial masses (rather than 9 floats per megasporocarp, pinnate branching, and needlelike hairs or hairs absent on microsporangial masses). The genus was more diverse in past geologic ages: 30 species are known from the Cretaceous (J. W. Hall 1974).</discussion>
   <discussion>The species of Azolla are difficult taxonomically because (1) about 80% of the specimens lack sori, which are necessary for identification, and (2) the characteristics needed to identify the species are difficult to observe. A scanning electron microscope is needed to see sculpturing of the megaspores, and a light microscope is needed to see the number of cells per hair on the upper leaf lobe. (These hairs are best seen in profile on mature leaves; at least 40× magnification is needed.)</discussion>
@@ -109,80 +39,22 @@
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Largest hairs on upper leaf lobe unicellular;</text>
-          <biological_entity constraint="largest" id="o9102" name="hair" name_original="hairs" src="d1_s0" type="structure" />
-          <biological_entity constraint="leaf" id="o9103" name="lobe" name_original="lobe" src="d1_s0" type="structure" constraint_original="upper leaf">
-            <character is_modifier="false" name="architecture" src="d1_s0" value="unicellular" />
-          </biological_entity>
-          <relation from="o9102" id="r2084" name="on" negation="false" src="d1_s0" to="o9103" />
-        </statement>
-        <statement id="d1_s1">
-          <text>megaspores warty with raised angular bumps.</text>
-          <biological_entity id="o9104" name="megaspore" name_original="megaspores" src="d1_s1" type="structure">
-            <character is_modifier="false" name="pubescence_or_relief" src="d1_s1" value="warty" />
-          </biological_entity>
-          <biological_entity id="o9105" name="bump" name_original="bumps" src="d1_s1" type="structure">
-            <character is_modifier="true" name="arrangement_or_shape" src="d1_s1" value="angular" />
-          </biological_entity>
-          <relation from="o9104" id="r2085" name="raised" negation="false" src="d1_s1" to="o9105" />
-        </statement>
-      </description>
+      <description type="morphology">Largest hairs on upper leaf lobe unicellular; megaspores warty with raised angular bumps.</description>
       <determination>3 Azolla filiculoides</determination>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Largest hairs on upper leaf lobe with 2 or more cells;</text>
-          <biological_entity constraint="largest" id="o9106" name="hair" name_original="hairs" src="d2_s0" type="structure" />
-          <biological_entity constraint="leaf" id="o9107" name="lobe" name_original="lobe" src="d2_s0" type="structure" constraint_original="upper leaf" />
-          <relation from="o9106" id="r2086" modifier="with 2 or morecells" name="on" negation="false" src="d2_s0" to="o9107" />
-        </statement>
-        <statement id="d2_s1">
-          <text>megaspores not covered with raised angular bumps.</text>
-          <biological_entity id="o9108" name="megaspore" name_original="megaspores" src="d2_s1" type="structure" />
-          <biological_entity id="o9109" name="bump" name_original="bumps" src="d2_s1" type="structure">
-            <character is_modifier="true" name="prominence" src="d2_s1" value="raised" />
-            <character is_modifier="true" name="arrangement_or_shape" src="d2_s1" value="angular" />
-          </biological_entity>
-          <relation from="o9108" id="r2087" name="covered with" negation="true" src="d2_s1" to="o9109" />
-        </statement>
-      </description>
+      <description type="morphology">Largest hairs on upper leaf lobe with 2 or more cells; megaspores not covered with raised angular bumps.</description>
       <next_statement_id>2</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d3_s0">
-          <text>Megaspores not pitted, densely covered with tangled filaments (filosum).</text>
-          <biological_entity id="o9110" name="megaspore" name_original="megaspores" src="d3_s0" type="structure">
-            <character is_modifier="false" modifier="not" name="relief" src="d3_s0" value="pitted" />
-          </biological_entity>
-          <biological_entity id="o9111" name="filament" name_original="filaments" src="d3_s0" type="structure">
-            <character is_modifier="true" name="arrangement" src="d3_s0" value="tangled" />
-          </biological_entity>
-          <relation from="o9110" id="r2088" modifier="densely" name="covered with" negation="false" src="d3_s0" to="o9111" />
-        </statement>
-      </description>
+      <description type="morphology">Megaspores not pitted, densely covered with tangled filaments (filosum).</description>
       <determination>1 Azolla caroliniana</determination>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d4_s0">
-          <text>Megaspores pitted, sparsely covered with a few long filaments (filosum).</text>
-          <biological_entity id="o9112" name="megaspore" name_original="megaspores" src="d4_s0" type="structure">
-            <character is_modifier="false" name="relief" src="d4_s0" value="pitted" />
-          </biological_entity>
-          <biological_entity id="o9113" name="filament" name_original="filaments" src="d4_s0" type="structure">
-            <character is_modifier="true" name="quantity" src="d4_s0" value="few" />
-            <character is_modifier="true" name="length_or_size" src="d4_s0" value="long" />
-          </biological_entity>
-          <relation from="o9112" id="r2089" modifier="sparsely" name="covered with a" negation="false" src="d4_s0" to="o9113" />
-        </statement>
-      </description>
+      <description type="morphology">Megaspores pitted, sparsely covered with a few long filaments (filosum).</description>
       <determination>2 Azolla mexicana</determination>
     </key_statement>
   </key>

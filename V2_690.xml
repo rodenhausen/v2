@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="J. Presl &amp; C. Presl" date="unknown" rank="family">polypodiaceae</taxon_name>
-    <taxon_name authority="Humboldt &amp; Bonpland ex Willdenow" date="1810" rank="genus">pleopeltis</taxon_name>
-    <taxon_name authority="(Linnaeus) E. G. Andrews &amp; Windham in Windham" date="1993" rank="species">polypodioides</taxon_name>
-    <taxon_name authority="(Weatherby) E. G. Andrews &amp; Windham in Windham" date="1993" rank="variety">michauxiana</taxon_name>
+    <taxon_name rank="family" authority="J. Presl &amp; C. Presl" date="unknown">polypodiaceae</taxon_name>
+    <taxon_name rank="genus" authority="Humboldt &amp; Bonpland ex Willdenow" date="1810">pleopeltis</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) E. G. Andrews &amp; Windham in Windham" date="1993">polypodioides</taxon_name>
+    <taxon_name rank="variety" authority="(Weatherby) E. G. Andrews &amp; Windham in Windham" date="1993">michauxiana</taxon_name>
     <place_of_publication>
       <publication_title>in Windham,Contr. Univ. Michigan Herb.</publication_title>
       <place_in_publication>19: 46. 1993</place_in_publication>
@@ -27,211 +19,20 @@
     <taxon_hierarchy>family polypodiaceae;genus pleopeltis;species polypodioides;variety michauxiana</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Polypodium</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">polypodioides</taxon_name>
-    <taxon_name authority="Weatherby" date="unknown" rank="variety">michauxianum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Polypodium</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">polypodioides</taxon_name>
+    <taxon_name rank="variety" authority="Weatherby" date="unknown">michauxianum</taxon_name>
     <place_of_publication>
       <publication_title>Contr. Gray Herb.</publication_title>
       <place_in_publication>124: 31. 1939</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Polypodium;species polypodioides;variety michauxianum;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems long-creeping, much branched, 1-2 mm diam.;</text>
-      <biological_entity id="o19392" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="long-creeping" />
-        <character is_modifier="false" modifier="much" name="architecture" src="d0_s0" value="branched" />
-        <character char_type="range_value" from="1" from_unit="mm" name="diameter" src="d0_s0" to="2" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>scales linear to subulate, centrally clathrate with cell luminae occluded, surfaces glabrous, margins denticulate to fringed-ciliate.</text>
-      <biological_entity id="o19393" name="scale" name_original="scales" src="d0_s1" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="linear" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="subulate" />
-        <character char_type="range_value" from="linear" name="shape" src="d0_s1" to="subulate" />
-        <character constraint="with cell luminae" constraintid="o19394" is_modifier="false" modifier="centrally" name="architecture" src="d0_s1" value="clathrate" />
-      </biological_entity>
-      <biological_entity constraint="cell" id="o19394" name="lumina" name_original="luminae" src="d0_s1" type="structure">
-        <character is_modifier="false" name="arrangement" src="d0_s1" value="occluded" />
-      </biological_entity>
-      <biological_entity id="o19395" name="surface" name_original="surfaces" src="d0_s1" type="structure">
-        <character is_modifier="false" name="pubescence" src="d0_s1" value="glabrous" />
-      </biological_entity>
-      <biological_entity id="o19396" name="margin" name_original="margins" src="d0_s1" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="denticulate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="fringed-ciliate" />
-        <character char_type="range_value" from="denticulate" name="shape" src="d0_s1" to="fringed-ciliate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves to 25 cm, strongly hygroscopic.</text>
-      <biological_entity id="o19397" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="to 25 cm; strongly" name="architecture" src="d0_s2" value="hygroscopic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Petiole grooved, otherwise round in cross-section, densely scaly when young;</text>
-      <biological_entity id="o19398" name="petiole" name_original="petiole" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s3" value="grooved" />
-        <character constraint="in cross-section" constraintid="o19399" is_modifier="false" modifier="otherwise" name="shape" src="d0_s3" value="round" />
-        <character is_modifier="false" modifier="when young" name="architecture_or_pubescence" notes="" src="d0_s3" value="scaly" />
-      </biological_entity>
-      <biological_entity id="o19399" name="cross-section" name_original="cross-section" src="d0_s3" type="structure" />
-    </statement>
-    <statement id="d0_s4">
-      <text>scales often overlapping, margins mostly entire.</text>
-      <biological_entity id="o19400" name="scale" name_original="scales" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="often" name="arrangement" src="d0_s4" value="overlapping" />
-      </biological_entity>
-      <biological_entity id="o19401" name="margin" name_original="margins" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="mostly" name="architecture_or_shape" src="d0_s4" value="entire" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Blade narrowly triangular to elliptic, deeply pinnatifid, to 5 cm wide, densely scaly abaxially, glabrous adaxially except for a few lanceolate scales along rachis;</text>
-      <biological_entity id="o19402" name="blade" name_original="blade" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s5" value="triangular" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="elliptic" />
-        <character char_type="range_value" from="narrowly triangular" name="shape" src="d0_s5" to="elliptic" />
-        <character is_modifier="false" modifier="deeply" name="shape" src="d0_s5" value="pinnatifid" />
-        <character char_type="range_value" from="0" from_unit="cm" name="width" src="d0_s5" to="5" to_unit="cm" />
-        <character is_modifier="false" modifier="densely; abaxially" name="architecture_or_pubescence" src="d0_s5" value="scaly" />
-        <character constraint="except-for scales" constraintid="o19403" is_modifier="false" name="pubescence" src="d0_s5" value="glabrous" />
-      </biological_entity>
-      <biological_entity id="o19403" name="scale" name_original="scales" src="d0_s5" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s5" value="few" />
-        <character is_modifier="true" name="shape" src="d0_s5" value="lanceolate" />
-      </biological_entity>
-      <biological_entity id="o19404" name="rachis" name_original="rachis" src="d0_s5" type="structure" />
-      <relation from="o19403" id="r4490" name="along" negation="false" src="d0_s5" to="o19404" />
-    </statement>
-    <statement id="d0_s6">
-      <text>scales distinctly bicolored, spheric to deltate-ovate, usually less than 0.5 mm wide, centers dark-brown, obscurely clathrate, margins broad, transparent, entire to erose.</text>
-      <biological_entity id="o19405" name="scale" name_original="scales" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="distinctly" name="coloration" src="d0_s6" value="bicolored" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="spheric" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="deltate-ovate" />
-        <character char_type="range_value" from="spheric" name="shape" src="d0_s6" to="deltate-ovate" />
-        <character char_type="range_value" from="0" from_unit="mm" modifier="usually" name="width" src="d0_s6" to="0.5" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o19406" name="center" name_original="centers" src="d0_s6" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s6" value="dark-brown" />
-        <character is_modifier="false" modifier="obscurely" name="architecture" src="d0_s6" value="clathrate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Venation mostly free with occasional areoles, never more than 1 included veinlet in fertile areoles.</text>
-      <biological_entity id="o19407" name="margin" name_original="margins" src="d0_s6" type="structure">
-        <character is_modifier="false" name="width" src="d0_s6" value="broad" />
-        <character is_modifier="false" name="coloration" src="d0_s6" value="transparent" />
-        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s6" value="entire" />
-        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s6" value="erose" />
-        <character char_type="range_value" from="entire" name="architecture" src="d0_s6" to="erose" />
-        <character constraint="with areoles" constraintid="o19408" is_modifier="false" modifier="mostly" name="fusion" src="d0_s7" value="free" />
-      </biological_entity>
-      <biological_entity id="o19408" name="areole" name_original="areoles" src="d0_s7" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s7" value="occasional" />
-        <character char_type="range_value" from="1" modifier="never" name="quantity" src="d0_s7" upper_restricted="false" />
-      </biological_entity>
-      <biological_entity id="o19409" name="veinlet" name_original="veinlet" src="d0_s7" type="structure" />
-      <biological_entity id="o19410" name="areole" name_original="areoles" src="d0_s7" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s7" value="fertile" />
-      </biological_entity>
-      <relation from="o19409" id="r4491" name="in" negation="false" src="d0_s7" to="o19410" />
-    </statement>
-    <statement id="d0_s8">
-      <text>Sori round, discrete, deeply embossed, forming conspicuous bumps on adaxial surface, soral scales attached at periphery of receptacle.</text>
-      <biological_entity id="o19411" name="sorus" name_original="sori" src="d0_s8" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s8" value="round" />
-        <character is_modifier="false" name="fusion" src="d0_s8" value="discrete" />
-        <character is_modifier="false" modifier="deeply" name="relief" src="d0_s8" value="embossed" />
-      </biological_entity>
-      <biological_entity id="o19412" name="bump" name_original="bumps" src="d0_s8" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s8" value="conspicuous" />
-      </biological_entity>
-      <biological_entity constraint="adaxial" id="o19413" name="surface" name_original="surface" src="d0_s8" type="structure" />
-      <biological_entity constraint="soral" id="o19414" name="scale" name_original="scales" src="d0_s8" type="structure">
-        <character constraint="at periphery" constraintid="o19415" is_modifier="false" name="fixation" src="d0_s8" value="attached" />
-      </biological_entity>
-      <biological_entity id="o19415" name="periphery" name_original="periphery" src="d0_s8" type="structure" />
-      <biological_entity id="o19416" name="receptacle" name_original="receptacle" src="d0_s8" type="structure" />
-      <relation from="o19411" id="r4492" name="forming" negation="false" src="d0_s8" to="o19412" />
-      <relation from="o19411" id="r4493" name="on" negation="false" src="d0_s8" to="o19413" />
-      <relation from="o19415" id="r4494" name="part_of" negation="false" src="d0_s8" to="o19416" />
-    </statement>
-    <statement id="d0_s9">
-      <text>Spores smooth with scattered spheric deposits on surface, 45-52 µm.</text>
-      <biological_entity id="o19418" name="deposit" name_original="deposits" src="d0_s9" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s9" value="scattered" />
-        <character is_modifier="true" name="shape" src="d0_s9" value="spheric" />
-      </biological_entity>
-      <biological_entity id="o19419" name="surface" name_original="surface" src="d0_s9" type="structure" />
-      <relation from="o19418" id="r4495" name="on" negation="false" src="d0_s9" to="o19419" />
-    </statement>
-    <statement id="d0_s10">
-      <text>2 n = 74.</text>
-      <biological_entity id="o19417" name="spore" name_original="spores" src="d0_s9" type="structure">
-        <character constraint="with deposits" constraintid="o19418" is_modifier="false" name="architecture_or_pubescence_or_relief" src="d0_s9" value="smooth" />
-        <character char_type="range_value" from="45" from_unit="um" name="some_measurement" notes="" src="d0_s9" to="52" to_unit="um" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o19420" name="chromosome" name_original="" src="d0_s10" type="structure">
-        <character name="quantity" src="d0_s10" value="74" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulating summer--fall.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="summer-fall" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Epiphytic on various species of trees, especially oaks, magnolias, and elms, or on rocks (usually limestone or sandstone), fence posts, buildings, or mossy banks, usually in moist, shady areas;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure" />
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--700 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="700" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ala., Ark., Fla., Ga., Ill., Ind., Kans., Ky., La., Md., Miss., Mo., N.C., Ohio, Okla., S.C., Tenn., Tex., Va., W.Va.; Mexico; Central America in Guatemala.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-        <character name="distribution" value="Central America in Guatemala" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  long-creeping, much branched, 1--2 mm diam.; scales linear to subulate, centrally clathrate with cell luminae occluded, surfaces glabrous, margins denticulate to fringed-ciliate.  Leaves  to 25 cm, strongly hygroscopic.  Petiole  grooved, otherwise round in cross section, densely scaly when young; scales often overlapping, margins mostly entire.  Blade  narrowly triangular to elliptic, deeply pinnatifid, to 5 cm wide, densely scaly abaxially, glabrous adaxially except for a few lanceolate scales along rachis; scales distinctly bicolored, spheric to deltate-ovate, usually less than 0.5 mm wide, centers dark brown, obscurely clathrate, margins broad, transparent, entire to erose.  Venation  mostly free with occasional areoles, never more than 1 included veinlet in fertile areoles.  Sori  round, discrete, deeply embossed, forming conspicuous bumps on adaxial surface, soral scales attached at periphery of receptacle.  Spores  smooth with scattered spheric deposits on surface, 45--52 µm. 2 n  = 74.</description>
+  <description type="phenology">Sporulating summer--fall.</description>
+  <description type="habitat">Epiphytic on various species of trees, especially oaks, magnolias, and elms, or on rocks (usually limestone or sandstone), fence posts, buildings, or mossy banks, usually in moist, shady areas;</description>
+  <description type="elevation">0--700 m;</description>
+  <description type="distribution">Ala., Ark., Fla., Ga., Ill., Ind., Kans., Ky., La., Md., Miss., Mo., N.C., Ohio, Okla., S.C., Tenn., Tex., Va., W.Va.; Mexico; Central America in Guatemala.</description>
   <number>3a</number>
   <other_name type="common_name">Resurrection fern</other_name>
   <other_name type="common_name">Gray's polypody</other_name>

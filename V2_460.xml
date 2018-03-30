@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Agardh" date="unknown" rank="family">ophioglossaceae</taxon_name>
-    <taxon_name authority="C. Presl" date="1845" rank="genus">cheiroglossa</taxon_name>
-    <taxon_name authority="(Linnaeus) C. Presl" date="1845" rank="species">palmata</taxon_name>
+    <taxon_name rank="family" authority="Agardh" date="unknown">ophioglossaceae</taxon_name>
+    <taxon_name rank="genus" authority="C. Presl" date="1845">cheiroglossa</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) C. Presl" date="1845">palmata</taxon_name>
     <place_of_publication>
       <publication_title>Suppl. Tent. Pterid.</publication_title>
       <place_in_publication>57. 1845</place_in_publication>
@@ -26,166 +18,18 @@
     <taxon_hierarchy>family ophioglossaceae;genus cheiroglossa;species palmata</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Ophioglossum</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="species">palmatum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Ophioglossum</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="unknown">palmatum</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl.</publication_title>
       <place_in_publication>2: 1063. 1753</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Ophioglossum;species palmatum;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Roots tan, to 15 per plant, 1-1.5 mm diam., proliferating in humus or underneath palm leaf-bases.</text>
-      <biological_entity id="o11591" name="root" name_original="roots" src="d0_s0" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s0" value="tan" />
-        <character char_type="range_value" constraint="per plant" constraintid="o11592" from="0" name="quantity" src="d0_s0" to="15" />
-        <character char_type="range_value" from="1" from_unit="mm" name="diameter" notes="" src="d0_s0" to="1.5" to_unit="mm" />
-        <character constraint="in humus or underneath leaf-bases" constraintid="o11593" is_modifier="false" name="life_cycle" src="d0_s0" value="proliferating" />
-      </biological_entity>
-      <biological_entity id="o11592" name="plant" name_original="plant" src="d0_s0" type="structure" />
-      <biological_entity id="o11593" name="leaf-base" name_original="leaf-bases" src="d0_s0" type="structure" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems 0.5-1.5 cm, covered near apex with dense tuft of white to light-brown, multicellular hairs to 7 mm.</text>
-      <biological_entity id="o11594" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0.5" from_unit="cm" name="some_measurement" src="d0_s1" to="1.5" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o11595" name="apex" name_original="apex" src="d0_s1" type="structure" />
-      <biological_entity id="o11596" name="tuft" name_original="tuft" src="d0_s1" type="structure">
-        <character is_modifier="true" name="density" src="d0_s1" value="dense" />
-        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s1" to="7" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o11597" name="hair" name_original="hairs" src="d0_s1" type="structure">
-        <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d0_s1" value="white" />
-        <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d0_s1" value="light-brown" />
-        <character char_type="range_value" from="white" is_modifier="true" name="coloration" src="d0_s1" to="light-brown" />
-        <character is_modifier="true" name="architecture" src="d0_s1" value="multicellular" />
-      </biological_entity>
-      <relation from="o11594" id="r2689" name="covered near" negation="false" src="d0_s1" to="o11595" />
-      <relation from="o11594" id="r2690" name="with" negation="false" src="d0_s1" to="o11596" />
-      <relation from="o11596" id="r2691" name="part_of" negation="false" src="d0_s1" to="o11597" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Trophophore blades green, shiny, to 45 × 30 cm, proximal margins diverging 90°-150° from stalk, with up to 7 rounded to mostly linear, acute lobes;</text>
-      <biological_entity constraint="trophophore" id="o11598" name="blade" name_original="blades" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s2" value="green" />
-        <character is_modifier="false" name="reflectance" src="d0_s2" value="shiny" />
-        <character char_type="range_value" from="0" from_unit="cm" name="length" src="d0_s2" to="45" to_unit="cm" />
-        <character char_type="range_value" from="0" from_unit="cm" name="width" src="d0_s2" to="30" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o11600" name="stalk" name_original="stalk" src="d0_s2" type="structure" />
-      <biological_entity id="o11601" name="lobe" name_original="lobes" src="d0_s2" type="structure">
-        <character char_type="range_value" from="0" is_modifier="true" name="quantity" src="d0_s2" to="7" />
-        <character is_modifier="true" name="shape" notes="[duplicate value]" src="d0_s2" value="rounded" />
-        <character is_modifier="true" modifier="mostly" name="shape" notes="[duplicate value]" src="d0_s2" value="linear" />
-        <character char_type="range_value" from="rounded" is_modifier="true" name="shape" src="d0_s2" to="mostly linear" />
-        <character is_modifier="true" name="shape" src="d0_s2" value="acute" />
-      </biological_entity>
-      <relation from="o11599" id="r2692" name="with" negation="false" src="d0_s2" to="o11601" />
-    </statement>
-    <statement id="d0_s3">
-      <text>venation complex-reticulate, very coarse, veinlets included in (usually elongate) very large major areoles to 35 × 8 mm, veinlets free or sometimes forming individual secondary areoles;</text>
-      <biological_entity constraint="proximal" id="o11599" name="margin" name_original="margins" src="d0_s2" type="structure">
-        <character constraint="from stalk" constraintid="o11600" is_modifier="false" modifier="90°-150°" name="orientation" src="d0_s2" value="diverging" />
-        <character is_modifier="false" name="architecture_or_coloration_or_relief" src="d0_s3" value="complex-reticulate" />
-        <character is_modifier="false" modifier="very" name="relief" src="d0_s3" value="coarse" />
-      </biological_entity>
-      <biological_entity id="o11602" name="veinlet" name_original="veinlets" src="d0_s3" type="structure" />
-      <biological_entity id="o11604" name="veinlet" name_original="veinlets" src="d0_s3" type="structure">
-        <character is_modifier="true" modifier="very" name="size" src="d0_s3" value="large" />
-        <character is_modifier="true" name="size" src="d0_s3" value="major" />
-      </biological_entity>
-      <biological_entity id="o11605" name="individual" name_original="individual" src="d0_s3" type="structure">
-        <character is_modifier="true" name="fusion" src="d0_s3" value="free" />
-        <character is_modifier="true" modifier="very" name="size" src="d0_s3" value="large" />
-        <character is_modifier="true" name="size" src="d0_s3" value="major" />
-      </biological_entity>
-      <biological_entity constraint="secondary" id="o11606" name="areole" name_original="areoles" src="d0_s3" type="structure">
-        <character is_modifier="true" name="fusion" src="d0_s3" value="free" />
-        <character is_modifier="true" modifier="very" name="size" src="d0_s3" value="large" />
-        <character is_modifier="true" name="size" src="d0_s3" value="major" />
-      </biological_entity>
-      <relation from="o11602" id="r2693" name="included in" negation="false" src="d0_s3" to="o11604" />
-      <relation from="o11602" id="r2694" name="included in" negation="false" src="d0_s3" to="o11605" />
-      <relation from="o11602" id="r2695" name="included in" negation="false" src="d0_s3" to="o11606" />
-    </statement>
-    <statement id="d0_s4">
-      <text>blades firm, herbaceous.</text>
-      <biological_entity id="o11607" name="blade" name_original="blades" src="d0_s4" type="structure">
-        <character is_modifier="false" name="texture" src="d0_s4" value="firm" />
-        <character is_modifier="false" name="growth_form_or_texture" src="d0_s4" value="herbaceous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Trophophore stalk well defined, 1-2.5 times as long as trophophore blade.</text>
-      <biological_entity constraint="trophophore" id="o11608" name="stalk" name_original="stalk" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="well" name="prominence" src="d0_s5" value="defined" />
-        <character constraint="blade" constraintid="o11609" is_modifier="false" name="length" src="d0_s5" value="1-2.5 times as long as trophophore blade" />
-      </biological_entity>
-      <biological_entity constraint="trophophore" id="o11609" name="blade" name_original="blade" src="d0_s5" type="structure" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Sporophores single and central only on youngest or smallest leaves, normally to 10 per leaf, arising closely spaced from both sides of base of trophophore blade and top of stalk, sporangial clusters 1-7cm × 2.5-3 mm, apiculum absent.</text>
-      <biological_entity id="o11610" name="sporophore" name_original="sporophores" src="d0_s6" type="structure">
-        <character is_modifier="false" name="quantity" src="d0_s6" value="single" />
-        <character constraint="on smallest leaves" constraintid="o11611" is_modifier="false" name="position" src="d0_s6" value="central" />
-        <character is_modifier="false" name="orientation" notes="" src="d0_s6" value="arising" />
-        <character constraint="from sides" constraintid="o11613" is_modifier="false" modifier="closely" name="arrangement" src="d0_s6" value="spaced" />
-        <character is_modifier="false" name="structure_in_adjective_form" notes="" src="d0_s6" value="sporangial" />
-        <character is_modifier="false" name="arrangement" src="d0_s6" value="cluster" value_original="clusters" />
-        <character char_type="range_value" from="1" from_unit="cm" name="length" src="d0_s6" to="7" to_unit="cm" />
-        <character char_type="range_value" from="2.5" from_unit="mm" name="width" src="d0_s6" to="3" to_unit="mm" />
-      </biological_entity>
-      <biological_entity constraint="smallest" id="o11611" name="leaf" name_original="leaves" src="d0_s6" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d0_s6" value="youngest" />
-        <character char_type="range_value" constraint="per leaf" constraintid="o11612" from="0" modifier="normally" name="quantity" src="d0_s6" to="10" />
-      </biological_entity>
-      <biological_entity id="o11612" name="leaf" name_original="leaf" src="d0_s6" type="structure" />
-      <biological_entity id="o11613" name="side" name_original="sides" src="d0_s6" type="structure" />
-      <biological_entity id="o11614" name="base" name_original="base" src="d0_s6" type="structure" />
-      <biological_entity constraint="trophophore" id="o11615" name="blade" name_original="blade" src="d0_s6" type="structure" />
-      <biological_entity id="o11616" name="stalk" name_original="stalk" src="d0_s6" type="structure" />
-      <biological_entity id="o11617" name="apiculum" name_original="apiculum" src="d0_s6" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s6" value="absent" />
-      </biological_entity>
-      <relation from="o11613" id="r2696" name="part_of" negation="false" src="d0_s6" to="o11614" />
-      <relation from="o11613" id="r2697" name="part_of" negation="false" src="d0_s6" to="o11615" />
-      <relation from="o11610" id="r2698" name="top of" negation="false" src="d0_s6" to="o11616" />
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Evergreen. Among leaf bases on palmetto trunks [Sabal palmetto (Walter) Loddiges ex Schultes &amp; Schultes f.], mainly in hammocks and swamps;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="evergreen . among leaf bases on palmetto trunks ( sabal palmetto ( walter ) loddiges ex schultes &amp; schultes f. ) , in hammocks and swamps ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--50 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="50" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Fla.; Mexico; West Indies; Central America; South America; disjunct in Asia in s Vietnam; Africa in Madagascar, Seychelles, and Réunion.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-        <character name="distribution" value="West Indies" establishment_means="native" />
-        <character name="distribution" value="Central America" establishment_means="native" />
-        <character name="distribution" value="South America" establishment_means="native" />
-        <character name="distribution" value="disjunct in Asia in s Vietnam" establishment_means="native" />
-        <character name="distribution" value="Africa in Madagascar" establishment_means="native" />
-        <character name="distribution" value="Seychelles" establishment_means="native" />
-        <character name="distribution" value="and Réunion" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Roots  tan, to 15 per plant, 1--1.5 mm diam., proliferating in humus or underneath palm leaf bases.  Stems  0.5--1.5 cm, covered near apex with dense tuft of white to light brown, multicellular hairs to 7 mm.  Trophophore blades  green, shiny, to 45 × 30 cm, proximal margins diverging 90°--150° from stalk, with up to 7 rounded to mostly linear, acute lobes; venation complex-reticulate, very coarse, veinlets included in (usually elongate) very large major areoles to 35 × 8 mm, veinlets free or sometimes forming individual secondary areoles; blades firm, herbaceous.  Trophophore stalk  well defined, 1--2.5 times as long as trophophore blade.  Sporophores  single and central only on youngest or smallest leaves, normally to 10 per leaf, arising closely spaced from both sides of base of trophophore blade and top of stalk, sporangial clusters 1--7cm × 2.5--3 mm, apiculum absent.</description>
+  <description type="habitat">Evergreen. Among leaf bases on palmetto trunks [Sabal palmetto (Walter) Loddiges ex Schultes &amp; Schultes f.], mainly in hammocks and swamps;</description>
+  <description type="elevation">0--50 m;</description>
+  <description type="distribution">Fla.; Mexico; West Indies; Central America; South America; disjunct in Asia in s Vietnam; Africa in Madagascar, Seychelles, and Réunion.</description>
   <number>1</number>
   <other_name type="common_name">Hand fern</other_name>
   <discussion>This very remarkable plant is becoming extremely rare in Florida.</discussion>

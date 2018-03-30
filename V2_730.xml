@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Newman" date="unknown" rank="family">aspleniaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">asplenium</taxon_name>
-    <taxon_name authority="Linnaeus" date="1753" rank="species">scolopendrium</taxon_name>
-    <taxon_name authority="(Fernald) Kartesz &amp; Gandhi" date="1991" rank="variety">americanum</taxon_name>
+    <taxon_name rank="family" authority="Newman" date="unknown">aspleniaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">asplenium</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="1753">scolopendrium</taxon_name>
+    <taxon_name rank="variety" authority="(Fernald) Kartesz &amp; Gandhi" date="1991">americanum</taxon_name>
     <place_of_publication>
       <publication_title>Phytologia</publication_title>
       <place_in_publication>70: 196. 1991</place_in_publication>
@@ -27,9 +19,9 @@
     <taxon_hierarchy>family aspleniaceae;genus asplenium;species scolopendrium;variety americanum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Phyllitis</taxon_name>
-    <taxon_name authority="A. Löve" date="unknown" rank="species">scolopendrium</taxon_name>
-    <taxon_name authority="Fernald" date="unknown" rank="variety">americanum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Phyllitis</taxon_name>
+    <taxon_name rank="species" authority="A. Löve" date="unknown">scolopendrium</taxon_name>
+    <taxon_name rank="variety" authority="Fernald" date="unknown">americanum</taxon_name>
     <place_of_publication>
       <publication_title>Rhodora</publication_title>
       <place_in_publication>37: 220. 1935</place_in_publication>
@@ -37,245 +29,22 @@
     <taxon_hierarchy>genus Phyllitis;species scolopendrium;variety americanum;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Phyllitis</taxon_name>
-    <taxon_name authority="Komarov" date="unknown" rank="species">fernaldiana</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Phyllitis</taxon_name>
+    <taxon_name rank="species" authority="Komarov" date="unknown">fernaldiana</taxon_name>
     <taxon_hierarchy>genus Phyllitis;species fernaldiana;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Phyllitis</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">japonica</taxon_name>
-    <taxon_name authority="(Fernald) A. Löve &amp; D. Löve" date="unknown" rank="subspecies">americana</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Phyllitis</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">japonica</taxon_name>
+    <taxon_name rank="subspecies" authority="(Fernald) A. Löve &amp; D. Löve" date="unknown">americana</taxon_name>
     <taxon_hierarchy>genus Phyllitis;species japonica;subspecies americana;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Roots not proliferous.</text>
-      <biological_entity id="o21024" name="root" name_original="roots" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="not" name="reproduction" src="d0_s0" value="proliferous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems erect, unbranched;</text>
-      <biological_entity id="o21025" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s1" value="erect" />
-        <character is_modifier="false" name="architecture" src="d0_s1" value="unbranched" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>scales brown, lanceolate, 3-6 × 1-1.5 mm, margins entire.</text>
-      <biological_entity id="o21026" name="scale" name_original="scales" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s2" value="brown" />
-        <character is_modifier="false" name="shape" src="d0_s2" value="lanceolate" />
-        <character char_type="range_value" from="3" from_unit="mm" name="length" src="d0_s2" to="6" to_unit="mm" />
-        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s2" to="1.5" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o21027" name="margin" name_original="margins" src="d0_s2" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s2" value="entire" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Leaves monomorphic.</text>
-      <biological_entity id="o21028" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s3" value="monomorphic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Petiole brown to straw-colored, dull, 3-10 cm, 1/8-1/4 length of blade;</text>
-      <biological_entity id="o21029" name="petiole" name_original="petiole" src="d0_s4" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s4" value="brown" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s4" value="straw-colored" />
-        <character char_type="range_value" from="brown" name="coloration" src="d0_s4" to="straw-colored" />
-        <character is_modifier="false" name="reflectance" src="d0_s4" value="dull" />
-        <character char_type="range_value" from="3" from_unit="cm" name="some_measurement" src="d0_s4" to="10" to_unit="cm" />
-        <character char_type="range_value" from="1/8 length of blade" name="length" src="d0_s4" to="1/4 length of blade" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>indument of brown, narrowly lanceolate scales.</text>
-      <biological_entity id="o21030" name="indument" name_original="indument" src="d0_s5" type="structure" constraint="scale" />
-      <biological_entity id="o21031" name="scale" name_original="scales" src="d0_s5" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s5" value="brown" />
-        <character is_modifier="true" modifier="narrowly" name="shape" src="d0_s5" value="lanceolate" />
-      </biological_entity>
-      <relation from="o21030" id="r4930" name="part_of" negation="false" src="d0_s5" to="o21031" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Blade linear, simple, 8-35 × 2-4.5 cm, thick, papery, nearly glabrous;</text>
-      <biological_entity id="o21032" name="blade" name_original="blade" src="d0_s6" type="structure">
-        <character is_modifier="false" name="arrangement_or_course_or_shape" src="d0_s6" value="linear" />
-        <character is_modifier="false" name="architecture" src="d0_s6" value="simple" />
-        <character char_type="range_value" from="8" from_unit="cm" name="length" src="d0_s6" to="35" to_unit="cm" />
-        <character char_type="range_value" from="2" from_unit="cm" name="width" src="d0_s6" to="4.5" to_unit="cm" />
-        <character is_modifier="false" name="width" src="d0_s6" value="thick" />
-        <character is_modifier="false" name="texture" src="d0_s6" value="papery" />
-        <character is_modifier="false" modifier="nearly" name="pubescence" src="d0_s6" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>base cordate;</text>
-      <biological_entity id="o21033" name="base" name_original="base" src="d0_s7" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s7" value="cordate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>margins entire;</text>
-      <biological_entity id="o21034" name="margin" name_original="margins" src="d0_s8" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s8" value="entire" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>apex acuminate, not rooting.</text>
-      <biological_entity id="o21035" name="apex" name_original="apex" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s9" value="acuminate" />
-        <character is_modifier="false" modifier="not" name="architecture" src="d0_s9" value="rooting" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>Rachis brown proximally, straw-colored distally, dull, glabrous.</text>
-      <biological_entity id="o21036" name="rachis" name_original="rachis" src="d0_s10" type="structure">
-        <character is_modifier="false" modifier="proximally" name="coloration" src="d0_s10" value="brown" />
-        <character is_modifier="false" modifier="distally" name="coloration" src="d0_s10" value="straw-colored" />
-        <character is_modifier="false" name="reflectance" src="d0_s10" value="dull" />
-        <character is_modifier="false" name="pubescence" src="d0_s10" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>Veins free, obscure.</text>
-      <biological_entity id="o21037" name="vein" name_original="veins" src="d0_s11" type="structure">
-        <character is_modifier="false" name="fusion" src="d0_s11" value="free" />
-        <character is_modifier="false" name="prominence" src="d0_s11" value="obscure" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s12">
-      <text>Sori numerous, perpendicular to rachis, or nearly so, usually restricted to distal 1/2 of blade.</text>
-      <biological_entity id="o21038" name="sorus" name_original="sori" src="d0_s12" type="structure">
-        <character is_modifier="false" name="quantity" src="d0_s12" value="numerous" />
-        <character constraint="to rachis" constraintid="o21039" is_modifier="false" name="orientation" src="d0_s12" value="perpendicular" />
-      </biological_entity>
-      <biological_entity id="o21039" name="rachis" name_original="rachis" src="d0_s12" type="structure" />
-      <biological_entity id="o21040" name="distal 1/2" name_original="distal 1/2" src="d0_s12" type="structure" />
-      <biological_entity id="o21041" name="blade" name_original="blade" src="d0_s12" type="structure" />
-      <relation from="o21038" id="r4931" modifier="nearly; usually" name="restricted to" negation="false" src="d0_s12" to="o21040" />
-      <relation from="o21038" id="r4932" modifier="nearly; usually" name="restricted to" negation="false" src="d0_s12" to="o21041" />
-    </statement>
-    <statement id="d0_s13">
-      <text>Spores 64 per sporangium.</text>
-      <biological_entity id="o21043" name="sporangium" name_original="sporangium" src="d0_s13" type="structure" />
-    </statement>
-    <statement id="d0_s14">
-      <text>Usually 2 n = 144.</text>
-      <biological_entity id="o21042" name="spore" name_original="spores" src="d0_s13" type="structure">
-        <character constraint="per sporangium" constraintid="o21043" name="quantity" src="d0_s13" value="64" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o21044" name="chromosome" name_original="" src="d0_s14" type="structure">
-        <character name="quantity" src="d0_s14" value="144" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>On calcareous rocks in sinkholes, at cave entrances, and on cool, moist talus, always in deep shade;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="on calcareous rocks in sinkholes" />
-        <character name="habitat" value="at cave entrances , and on cool moist talus , in deep shade" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--100 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="100" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ont.; Ala., Mich., N.Y., Tenn.; Mexico in Nuevo León.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" value="Mexico in Nuevo León" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Roots  not proliferous.  Stems  erect, unbranched; scales brown, lanceolate, 3--6 × 1--1.5 mm, margins entire.  Leaves  monomorphic.  Petiole  brown to straw-colored, dull, 3--10 cm, 1/8--1/4 length of blade; indument of brown, narrowly lanceolate scales.  Blade  linear, simple, 8--35 × 2--4.5 cm, thick, papery, nearly glabrous; base cordate; margins entire; apex acuminate, not rooting.  Rachis  brown proximally, straw-colored distally, dull, glabrous.  Veins  free, obscure.  Sori  numerous, perpendicular to rachis, or nearly so, usually restricted to distal 1/2 of blade.  Spores  64 per sporangium. Usually 2 n  = 144.</description>
+  <description type="habitat">On calcareous rocks in sinkholes, at cave entrances, and on cool, moist talus, always in deep shade;</description>
+  <description type="elevation">0--100 m;</description>
+  <description type="distribution">Ont.; Ala., Mich., N.Y., Tenn.; Mexico in Nuevo León.</description>
   <number>5a</number>
   <other_name type="common_name">American hart's-tongue</other_name>
   <discussion>Asplenium scolopendrium is rare and has a spotty distribution in North America. Consequently, when new populations are found, they receive considerable attention from pteridologists.</discussion>
   <discussion>The American variety was distinguished from the European plants by M. L. Fernald (1935, pp. 220--221) on the basis of their smaller leaves, narrower scales with longer, attenuate tips, more promptly glabrate midribs, and blades tending to bear sori in the distal half rather than the entire length. In addition, M. L. Arreguín-Sánchez and R. Aguirre-Claverán (1986, pp. 400, 402) listed two differences in perispore morphology of the two varieties; they did not say how many specimens were studied. The most clear-cut difference is that the American plants are tetraploid and the European plants are diploid (D. M. Britton 1953), a difference insufficient for recognition of this taxon at specific rank (W. H. Wagner Jr. 1955b). More work is needed to determine if Asplenium scolopendrium var. lindenii (Hooker) Viane, Rasbach, &amp; Reichstein, which occurs in southern Mexico (Oaxaca and Chiapas) and Hispaniola, is distinguishable from var. americanum .</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_270_d9_s0">
-      <text>Blades cordate at base;</text>
-      <biological_entity id="from_key_V2_270_o5255" name="blade" name_original="blades" src="d9_s0" type="structure">
-        <character constraint="at base" constraintid="o5256" is_modifier="false" name="shape" src="d9_s0" value="cordate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_270_o5256" name="base" name_original="base" src="d9_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_270_d9_s1">
-      <text>roots not proliferous.</text>
-      <biological_entity id="from_key_V2_270_o5257" name="root" name_original="roots" src="d9_s1" type="structure">
-        <character is_modifier="false" modifier="not" name="reproduction" src="d9_s1" value="proliferous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_270_d7_s0">
-      <text>Blades simple, linear to oblanceolate.</text>
-      <biological_entity id="from_key_V2_270_o5253" name="blade" name_original="blades" src="d7_s0" type="structure">
-        <character is_modifier="false" name="architecture" src="d7_s0" value="simple" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d7_s0" value="linear" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d7_s0" value="oblanceolate" />
-        <character char_type="range_value" from="linear" name="shape" src="d7_s0" to="oblanceolate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_270_d6_s0">
-      <text>Veins free;</text>
-      <biological_entity id="from_key_V2_270_o5247" name="vein" name_original="veins" src="d6_s0" type="structure">
-        <character is_modifier="false" name="fusion" src="d6_s0" value="free" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_270_d6_s1">
-      <text>blades with apical buds or not but not rooting at tip.</text>
-      <biological_entity id="from_key_V2_270_o5248" name="blade" name_original="blades" src="d6_s1" type="structure" />
-      <biological_entity constraint="apical" id="from_key_V2_270_o5249" name="bud" name_original="buds" src="d6_s1" type="structure" />
-      <biological_entity id="from_key_V2_270_o5250" name="tip" name_original="tip" src="d6_s1" type="structure">
-        <character is_modifier="true" modifier="not" name="architecture" src="d6_s1" value="rooting" />
-      </biological_entity>
-      <biological_entity constraint="apical" id="from_key_V2_270_o5251" name="bud" name_original="buds" src="d6_s1" type="structure" />
-      <biological_entity id="from_key_V2_270_o5252" name="tip" name_original="tip" src="d6_s1" type="structure">
-        <character is_modifier="true" modifier="not" name="architecture" src="d6_s1" value="rooting" />
-      </biological_entity>
-      <relation from="from_key_V2_270_o5248" id="from_key_V2_270_r1204" name="with" negation="false" src="d6_s1" to="from_key_V2_270_o5249" />
-      <relation from="from_key_V2_270_o5248" id="from_key_V2_270_r1205" name="with" negation="false" src="d6_s1" to="from_key_V2_270_o5250" />
-      <relation from="from_key_V2_270_o5250" id="from_key_V2_270_r1206" name="with" negation="false" src="d6_s1" to="from_key_V2_270_o5251" />
-      <relation from="from_key_V2_270_o5250" id="from_key_V2_270_r1207" name="with" negation="false" src="d6_s1" to="from_key_V2_270_o5252" />
-    </statement>
-    <statement id="from_key_V2_270_d4_s0">
-      <text>Blades more than 10 mm wide, linear-lanceolate to lanceolate, if lobed, segments resembling adnate pinnae.</text>
-      <biological_entity id="from_key_V2_270_o5239" name="blade" name_original="blades" src="d4_s0" type="structure">
-        <character char_type="range_value" from="10" from_unit="mm" name="width" src="d4_s0" upper_restricted="false" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s0" value="linear-lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s0" value="lanceolate" />
-        <character char_type="range_value" from="linear-lanceolate" name="shape" src="d4_s0" to="lanceolate" />
-        <character is_modifier="false" name="shape" src="d4_s0" value="lobed" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_270_o5240" name="segment" name_original="segments" src="d4_s0" type="structure" />
-      <biological_entity id="from_key_V2_270_o5241" name="pinna" name_original="pinnae" src="d4_s0" type="structure">
-        <character is_modifier="true" name="fusion" src="d4_s0" value="adnate" />
-      </biological_entity>
-      <relation from="from_key_V2_270_o5240" id="from_key_V2_270_r1203" name="resembling" negation="false" src="d4_s0" to="from_key_V2_270_o5241" />
-    </statement>
-    <statement id="from_key_V2_270_d1_s0">
-      <text>Blades simple, pinnatifid, or forked (sometimes with free pinnae at base), not pinnate throughout.</text>
-      <biological_entity id="from_key_V2_270_o5233" name="blade" name_original="blades" src="d1_s0" type="structure">
-        <character is_modifier="false" name="architecture" src="d1_s0" value="simple" />
-        <character is_modifier="false" name="shape" src="d1_s0" value="pinnatifid" />
-        <character is_modifier="false" name="shape" src="d1_s0" value="forked" />
-        <character is_modifier="false" name="shape" src="d1_s0" value="pinnatifid" />
-        <character is_modifier="false" name="shape" src="d1_s0" value="forked" />
-        <character is_modifier="false" modifier="not; throughout" name="architecture_or_shape" src="d1_s0" value="pinnate" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

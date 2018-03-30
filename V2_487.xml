@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="R. Brown" date="1810" rank="genus">notholaena</taxon_name>
-    <taxon_name authority="Maxon" date="1916" rank="species">neglecta</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="R. Brown" date="1810">notholaena</taxon_name>
+    <taxon_name rank="species" authority="Maxon" date="1916">neglecta</taxon_name>
     <place_of_publication>
       <publication_title>Contr. U.S. Natl. Herb.</publication_title>
       <place_in_publication>17: 602. 1916</place_in_publication>
@@ -26,241 +18,20 @@
     <taxon_hierarchy>family pteridaceae;genus notholaena;species neglecta</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Cheilanthes</taxon_name>
-    <taxon_name authority="(Maxon) Mickel" date="unknown" rank="species">neglecta</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Cheilanthes</taxon_name>
+    <taxon_name rank="species" authority="(Maxon) Mickel" date="unknown">neglecta</taxon_name>
     <taxon_hierarchy>genus Cheilanthes;species neglecta;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Chrysochosma</taxon_name>
-    <taxon_name authority="(Maxon) Pichi-Sermolli" date="unknown" rank="species">neglecta</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Chrysochosma</taxon_name>
+    <taxon_name rank="species" authority="(Maxon) Pichi-Sermolli" date="unknown">neglecta</taxon_name>
     <taxon_hierarchy>genus Chrysochosma;species neglecta;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stem scales strongly bicolored, margins brown, broad and well defined, thin, ciliate-denticulate.</text>
-      <biological_entity constraint="stem" id="o12480" name="scale" name_original="scales" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="strongly" name="coloration" src="d0_s0" value="bicolored" />
-      </biological_entity>
-      <biological_entity id="o12481" name="margin" name_original="margins" src="d0_s0" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s0" value="brown" />
-        <character is_modifier="false" name="width" src="d0_s0" value="broad" />
-        <character is_modifier="false" modifier="well" name="prominence" src="d0_s0" value="defined" />
-        <character is_modifier="false" name="width" src="d0_s0" value="thin" />
-        <character is_modifier="false" name="shape" src="d0_s0" value="ciliate-denticulate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves 4-15 cm.</text>
-      <biological_entity id="o12482" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character char_type="range_value" from="4" from_unit="cm" name="some_measurement" src="d0_s1" to="15" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Petiole black, equal to or somewhat longer than blade, rounded adaxially, bearing scattered glands and a few scales near base.</text>
-      <biological_entity id="o12483" name="petiole" name_original="petiole" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s2" value="black" />
-        <character is_modifier="false" name="variability" src="d0_s2" value="equal" />
-        <character constraint="than blade" constraintid="o12484" is_modifier="false" name="length_or_size" src="d0_s2" value="somewhat longer" />
-        <character is_modifier="false" modifier="adaxially" name="shape" src="d0_s2" value="rounded" />
-      </biological_entity>
-      <biological_entity id="o12484" name="blade" name_original="blade" src="d0_s2" type="structure" />
-      <biological_entity id="o12485" name="gland" name_original="glands" src="d0_s2" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s2" value="scattered" />
-      </biological_entity>
-      <biological_entity id="o12486" name="scale" name_original="scales" src="d0_s2" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s2" value="scattered" />
-        <character is_modifier="true" name="quantity" src="d0_s2" value="few" />
-      </biological_entity>
-      <biological_entity id="o12487" name="base" name_original="base" src="d0_s2" type="structure" />
-      <relation from="o12483" id="r2884" name="bearing" negation="false" src="d0_s2" to="o12485" />
-      <relation from="o12483" id="r2885" name="bearing" negation="false" src="d0_s2" to="o12486" />
-      <relation from="o12483" id="r2886" name="near" negation="false" src="d0_s2" to="o12487" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Blade narrowly deltate-pentagonal, 3-4-pinnate, 1-2 times longer than wide, abaxially with conspicuous pale-yellow farina, scales absent, adaxially glabrous to sparsely glandular;</text>
-      <biological_entity id="o12488" name="blade" name_original="blade" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" src="d0_s3" value="deltate-pentagonal" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s3" value="3-4-pinnate" />
-        <character is_modifier="false" name="l_w_ratio" src="d0_s3" value="1-2" />
-      </biological_entity>
-      <biological_entity id="o12489" name="farina" name_original="farina" src="d0_s3" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s3" value="conspicuous" />
-        <character is_modifier="true" name="coloration" src="d0_s3" value="pale-yellow" />
-      </biological_entity>
-      <biological_entity id="o12490" name="scale" name_original="scales" src="d0_s3" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s3" value="absent" />
-        <character is_modifier="false" modifier="adaxially" name="pubescence" notes="[duplicate value]" src="d0_s3" value="glabrous" />
-        <character is_modifier="false" modifier="sparsely" name="pubescence" notes="[duplicate value]" src="d0_s3" value="glandular" />
-        <character char_type="range_value" from="adaxially glabrous" name="pubescence" src="d0_s3" to="sparsely glandular" />
-      </biological_entity>
-      <relation from="o12488" id="r2887" modifier="abaxially" name="with" negation="false" src="d0_s3" to="o12489" />
-    </statement>
-    <statement id="d0_s4">
-      <text>basal pinnae much larger than adjacent pair, strongly inequilateral, proximal basiscopic pinnules greatly enlarged.</text>
-      <biological_entity constraint="basal" id="o12491" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
-        <character constraint="than adjacent pair , strongly inequilateral , proximal pinnae" constraintid="o12492" is_modifier="false" name="size" src="d0_s4" value="much larger" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="o12492" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s4" value="adjacent" />
-        <character is_modifier="true" modifier="strongly" name="shape" src="d0_s4" value="inequilateral" />
-      </biological_entity>
-      <biological_entity id="o12493" name="pinnule" name_original="pinnules" src="d0_s4" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s4" value="basiscopic" />
-        <character is_modifier="false" modifier="greatly" name="size" src="d0_s4" value="enlarged" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Ultimate segments sessile to subsessile, narrowly adnate to costae or free;</text>
-      <biological_entity constraint="ultimate" id="o12494" name="segment" name_original="segments" src="d0_s5" type="structure">
-        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s5" value="sessile" />
-        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s5" value="subsessile" />
-        <character char_type="range_value" from="sessile" name="architecture" src="d0_s5" to="subsessile" />
-        <character constraint="to costae" constraintid="o12495" is_modifier="false" modifier="narrowly" name="fusion" src="d0_s5" value="adnate" />
-        <character is_modifier="false" name="fusion" src="d0_s5" value="free" />
-      </biological_entity>
-      <biological_entity id="o12495" name="costa" name_original="costae" src="d0_s5" type="structure" />
-    </statement>
-    <statement id="d0_s6">
-      <text>segment margins strongly revolute, often concealing sporangia.</text>
-      <biological_entity constraint="segment" id="o12496" name="margin" name_original="margins" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="strongly" name="shape_or_vernation" src="d0_s6" value="revolute" />
-      </biological_entity>
-      <biological_entity id="o12497" name="sporangium" name_original="sporangia" src="d0_s6" type="structure" />
-      <relation from="o12496" id="r2888" name="often concealing" negation="false" src="d0_s6" to="o12497" />
-    </statement>
-    <statement id="d0_s7">
-      <text>Sporangia containing 32 spores.</text>
-      <biological_entity id="o12499" name="spore" name_original="spores" src="d0_s7" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s7" value="32" />
-      </biological_entity>
-      <relation from="o12498" id="r2889" name="containing" negation="false" src="d0_s7" to="o12499" />
-    </statement>
-    <statement id="d0_s8">
-      <text>n = 2 n = 90, apogamous.</text>
-      <biological_entity id="o12498" name="sporangium" name_original="sporangia" src="d0_s7" type="structure" />
-      <biological_entity constraint="n=2n" id="o12500" name="chromosome" name_original="" src="d0_s8" type="structure">
-        <character name="quantity" src="d0_s8" unit=",apogamous" value="90" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulating summer--fall.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="summer-fall" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Rocky slopes and cliffs, apparently confined to limestone;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="rocky slopes and cliffs" />
-        <character name="habitat" value="confined to limestone" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>300--1900 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1900" to_unit="m" from="300" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., Tex.; Mexico.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stem scales  strongly bicolored, margins brown, broad and well defined, thin, ciliate-denticulate.  Leaves  4--15 cm.  Petiole  black, equal to or somewhat longer than blade, rounded adaxially, bearing scattered glands and a few scales near base.  Blade  narrowly deltate-pentagonal, 3--4-pinnate, 1--2 times longer than wide, abaxially with conspicuous pale yellow farina, scales absent, adaxially glabrous to sparsely glandular; basal pinnae much larger than adjacent pair, strongly inequilateral, proximal basiscopic pinnules greatly enlarged.  Ultimate segments  sessile to subsessile, narrowly adnate to costae or free; segment margins strongly revolute, often concealing sporangia.  Sporangia  containing 32 spores.  n  = 2 n  = 90, apogamous.</description>
+  <description type="phenology">Sporulating summer--fall.</description>
+  <description type="habitat">Rocky slopes and cliffs, apparently confined to limestone;</description>
+  <description type="elevation">300--1900 m;</description>
+  <description type="distribution">Ariz., Tex.; Mexico.</description>
   <number>8</number>
   <discussion>Notholaena neglecta is closely related to N . californica and may have been involved in the origin of polyploids within that complex. Populations occurring in the flora are composed of apogamous triploids, but a sexually reproducing diploid cytotype has been found in Nuevo León, Mexico (M. D. Windham, unpublished data).</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_771_d16_s0">
-      <text>Stem scales strongly bicolored, brown margins broad and conspicuous;</text>
-      <biological_entity constraint="stem" id="from_key_V2_771_o22412" name="scale" name_original="scales" src="d16_s0" type="structure">
-        <character is_modifier="false" modifier="strongly" name="coloration" src="d16_s0" value="bicolored" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_771_o22413" name="margin" name_original="margins" src="d16_s0" type="structure">
-        <character is_modifier="true" name="coloration" src="d16_s0" value="brown" />
-        <character is_modifier="false" name="width" src="d16_s0" value="broad" />
-        <character is_modifier="false" name="prominence" src="d16_s0" value="conspicuous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_771_d16_s1">
-      <text>blades narrowly deltate-pentagonal, adaxially glabrescent;</text>
-      <biological_entity id="from_key_V2_771_o22414" name="blade" name_original="blades" src="d16_s1" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" src="d16_s1" value="deltate-pentagonal" />
-        <character is_modifier="false" modifier="adaxially" name="pubescence" src="d16_s1" value="glabrescent" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_771_d16_s2">
-      <text>segment margins strongly revolute.</text>
-      <biological_entity constraint="segment" id="from_key_V2_771_o22415" name="margin" name_original="margins" src="d16_s2" type="structure">
-        <character is_modifier="false" modifier="strongly" name="shape_or_vernation" src="d16_s2" value="revolute" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_771_d13_s0">
-      <text>Blades clearly 3-pinnate proximally;</text>
-    </statement>
-    <statement id="from_key_V2_771_d13_s1">
-      <text>at least some ultimate segments constricted proximally and slightly stalked.</text>
-      <biological_entity id="from_key_V2_771_o22403" name="blade" name_original="blades" src="d13_s0" type="structure">
-        <character is_modifier="false" modifier="clearly; proximally" name="architecture_or_shape" src="d13_s0" value="3-pinnate" />
-      </biological_entity>
-      <biological_entity constraint="ultimate" id="from_key_V2_771_o22404" name="segment" name_original="segments" src="d13_s1" type="structure">
-        <character is_modifier="false" modifier="proximally" name="size" src="d13_s1" value="constricted" />
-        <character is_modifier="false" modifier="slightly" name="architecture" src="d13_s1" value="stalked" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_771_d10_s0">
-      <text>Petioles rounded adaxially;</text>
-      <biological_entity id="from_key_V2_771_o22391" name="petiole" name_original="petioles" src="d10_s0" type="structure">
-        <character is_modifier="false" modifier="adaxially" name="shape" src="d10_s0" value="rounded" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_771_d10_s1">
-      <text>blades pentagonal to ovate, 1–2 times longer than wide;</text>
-      <biological_entity id="from_key_V2_771_o22392" name="blade" name_original="blades" src="d10_s1" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s1" value="pentagonal" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d10_s1" value="ovate" />
-        <character char_type="range_value" from="pentagonal" name="shape" src="d10_s1" to="ovate" />
-        <character is_modifier="false" name="l_w_ratio" src="d10_s1" value="1-2" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_771_d10_s2">
-      <text>basal pinnae much larger than adjacent pair, strongly inequilateral due to enlargement of proximal basiscopic pinnules.</text>
-      <biological_entity constraint="basal" id="from_key_V2_771_o22393" name="pinna" name_original="pinnae" src="d10_s2" type="structure">
-        <character is_modifier="false" name="size" src="d10_s2" value="much larger than adjacent pair" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_771_o22394" name="due-to-enlargement" name_original="due-to-enlargement" src="d10_s2" type="structure">
-        <character is_modifier="true" modifier="strongly" name="shape" src="d10_s2" value="inequilateral" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="from_key_V2_771_o22395" name="pinnule" name_original="pinnules" src="d10_s2" type="structure">
-        <character is_modifier="true" name="orientation" src="d10_s2" value="basiscopic" />
-      </biological_entity>
-      <relation from="from_key_V2_771_o22394" id="from_key_V2_771_r5240" name="part_of" negation="false" src="d10_s2" to="from_key_V2_771_o22395" />
-    </statement>
-    <statement id="from_key_V2_771_d2_s0">
-      <text>Blades with whitish or yellowish farina only, lacking scales or multicelled hairs.</text>
-      <biological_entity id="from_key_V2_771_o22351" name="blade" name_original="blades" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_771_o22352" name="farina" name_original="farina" src="d2_s0" type="structure">
-        <character is_modifier="true" name="coloration" src="d2_s0" value="whitish" />
-        <character is_modifier="true" name="coloration" src="d2_s0" value="yellowish" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_771_o22353" name="scale" name_original="scales" src="d2_s0" type="structure">
-        <character is_modifier="true" name="count" src="d2_s0" value="lacking" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_771_o22354" name="hair" name_original="hairs" src="d2_s0" type="structure">
-        <character is_modifier="true" name="count" src="d2_s0" value="lacking" />
-        <character is_modifier="true" name="architecture" src="d2_s0" value="multicelled" />
-      </biological_entity>
-      <relation from="from_key_V2_771_o22351" id="from_key_V2_771_r5228" name="with" negation="false" src="d2_s0" to="from_key_V2_771_o22352" />
-    </statement>
-  </description>
 </bio:treatment>

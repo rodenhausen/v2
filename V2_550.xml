@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="D. M. Benham &amp; Windham" date="1992" rank="genus">astrolepis</taxon_name>
-    <taxon_name authority="(Lagasca ex Swartz) D. M. Benham &amp; Windham" date="1992" rank="species">sinuata</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="D. M. Benham &amp; Windham" date="1992">astrolepis</taxon_name>
+    <taxon_name rank="species" authority="(Lagasca ex Swartz) D. M. Benham &amp; Windham" date="1992">sinuata</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>82: 56. 1992</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family pteridaceae;genus astrolepis;species sinuata</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Acrostichum</taxon_name>
-    <taxon_name authority="Lagasca ex Swartz" date="unknown" rank="species">sinuatum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Acrostichum</taxon_name>
+    <taxon_name rank="species" authority="Lagasca ex Swartz" date="unknown">sinuatum</taxon_name>
     <place_of_publication>
       <publication_title>Syn. Fil.,</publication_title>
       <place_in_publication>14. 1806</place_in_publication>
@@ -35,208 +27,28 @@
     <taxon_hierarchy>genus Acrostichum;species sinuatum;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Cheilanthes</taxon_name>
-    <taxon_name authority="(Lagasca ex Swartz) Domin" date="unknown" rank="species">sinuata</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Cheilanthes</taxon_name>
+    <taxon_name rank="species" authority="(Lagasca ex Swartz) Domin" date="unknown">sinuata</taxon_name>
     <taxon_hierarchy>genus Cheilanthes;species sinuata;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Notholaena</taxon_name>
-    <taxon_name authority="(Lagasca ex Swartz) Kaulfuss" date="unknown" rank="species">sinuata</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Notholaena</taxon_name>
+    <taxon_name rank="species" authority="(Lagasca ex Swartz) Kaulfuss" date="unknown">sinuata</taxon_name>
     <taxon_hierarchy>genus Notholaena;species sinuata;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems compact to short-creeping;</text>
-      <biological_entity id="o14886" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_arrangement" src="d0_s0" value="compact" />
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="short-creeping" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>stem scales uniformly chestnut-brown or with lighter margin, to 6 mm, margins ciliate-dentate.</text>
-      <biological_entity constraint="stem" id="o14887" name="scale" name_original="scales" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="uniformly" name="coloration" src="d0_s1" value="chestnut-brown" />
-        <character is_modifier="false" name="coloration" src="d0_s1" value="with lighter margin" />
-        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" notes="" src="d0_s1" to="6" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o14888" name="margin" name_original="margin" src="d0_s1" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s1" value="lighter" />
-      </biological_entity>
-      <biological_entity id="o14889" name="margin" name_original="margins" src="d0_s1" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s1" value="ciliate-dentate" />
-      </biological_entity>
-      <relation from="o14887" id="r3515" name="with" negation="false" src="d0_s1" to="o14888" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves 11-130 cm.</text>
-      <biological_entity id="o14890" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character char_type="range_value" from="11" from_unit="cm" name="some_measurement" src="d0_s2" to="130" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Blade pinnate-pinnatifid, pinna pairs 30-60.</text>
-      <biological_entity id="o14891" name="blade" name_original="blade" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="pinnate-pinnatifid" />
-      </biological_entity>
-      <biological_entity id="o14892" name="pinna" name_original="pinna" src="d0_s3" type="structure">
-        <character char_type="range_value" from="30" name="quantity" src="d0_s3" to="60" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Pinnae deltate to ovate, largest 7-35 mm, symmetrically lobed, lobes 6-14 often acute, separated by deep sinuses;</text>
-      <biological_entity id="o14893" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="deltate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="ovate" />
-        <character char_type="range_value" from="deltate" name="shape" src="d0_s4" to="ovate" />
-        <character is_modifier="false" name="size" src="d0_s4" value="largest" />
-        <character char_type="range_value" from="7" from_unit="mm" name="some_measurement" src="d0_s4" to="35" to_unit="mm" />
-        <character is_modifier="false" modifier="symmetrically" name="shape" src="d0_s4" value="lobed" />
-      </biological_entity>
-      <biological_entity id="o14894" name="lobe" name_original="lobes" src="d0_s4" type="structure">
-        <character char_type="range_value" from="6" name="quantity" src="d0_s4" to="14" />
-        <character is_modifier="false" modifier="often" name="shape" src="d0_s4" value="acute" />
-        <character constraint="by sinuses" constraintid="o14895" is_modifier="false" name="arrangement" src="d0_s4" value="separated" />
-      </biological_entity>
-      <biological_entity id="o14895" name="sinuse" name_original="sinuses" src="d0_s4" type="structure">
-        <character is_modifier="true" name="depth" src="d0_s4" value="deep" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>abaxial scales concealing surface, lanceolate, usually 1-1.5 mm, ciliate-dentate with delicate marginal projections;</text>
-      <biological_entity constraint="abaxial" id="o14896" name="scale" name_original="scales" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="lanceolate" />
-        <character char_type="range_value" from="1" from_unit="mm" modifier="usually" name="some_measurement" src="d0_s5" to="1.5" to_unit="mm" />
-        <character constraint="with marginal projections" constraintid="o14898" is_modifier="false" name="architecture_or_shape" src="d0_s5" value="ciliate-dentate" />
-      </biological_entity>
-      <biological_entity id="o14897" name="surface" name_original="surface" src="d0_s5" type="structure" />
-      <biological_entity constraint="marginal" id="o14898" name="projection" name_original="projections" src="d0_s5" type="structure">
-        <character is_modifier="true" name="fragility" src="d0_s5" value="delicate" />
-      </biological_entity>
-      <relation from="o14896" id="r3516" name="concealing" negation="false" src="d0_s5" to="o14897" />
-    </statement>
-    <statement id="d0_s6">
-      <text>adaxial scales sparse, deciduous, elongate, stellate, attached at base, body 1-2 cells wide, attached at base.</text>
-      <biological_entity constraint="adaxial" id="o14899" name="scale" name_original="scales" src="d0_s6" type="structure">
-        <character is_modifier="false" name="count_or_density" src="d0_s6" value="sparse" />
-        <character is_modifier="false" name="duration" src="d0_s6" value="deciduous" />
-        <character is_modifier="false" name="shape" src="d0_s6" value="elongate" />
-        <character is_modifier="false" name="arrangement_or_shape" src="d0_s6" value="stellate" />
-        <character constraint="at base" constraintid="o14900" is_modifier="false" name="fixation" src="d0_s6" value="attached" />
-      </biological_entity>
-      <biological_entity id="o14900" name="base" name_original="base" src="d0_s6" type="structure" />
-      <biological_entity id="o14901" name="body" name_original="body" src="d0_s6" type="structure">
-        <character char_type="range_value" from="1" name="quantity" src="d0_s6" to="2" />
-      </biological_entity>
-      <biological_entity id="o14902" name="cell" name_original="cells" src="d0_s6" type="structure">
-        <character is_modifier="false" name="width" src="d0_s6" value="wide" />
-        <character constraint="at base" constraintid="o14903" is_modifier="false" name="fixation" src="d0_s6" value="attached" />
-      </biological_entity>
-      <biological_entity id="o14903" name="base" name_original="base" src="d0_s6" type="structure" />
-    </statement>
-    <statement id="d0_s7">
-      <text>Sporangia containing 32 or 64 spores.</text>
-      <biological_entity id="o14904" name="sporangium" name_original="sporangia" src="d0_s7" type="structure">
-        <character name="quantity" src="d0_s7" unit="or spores" value="32" />
-        <character name="quantity" src="d0_s7" unit="or spores" value="64" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  compact to short-creeping; stem scales uniformly chestnut brown or with lighter margin, to 6 mm, margins ciliate-dentate.  Leaves  11--130 cm.  Blade  pinnate-pinnatifid, pinna pairs 30--60.  Pinnae  deltate to ovate, largest 7--35 mm, symmetrically lobed, lobes 6--14 often acute, separated by deep sinuses; abaxial scales concealing surface, lanceolate, usually 1--1.5 mm, ciliate-dentate with delicate marginal projections; adaxial scales sparse, deciduous, elongate, stellate, attached at base, body 1--2 cells wide, attached at base.  Sporangia  containing 32 or 64 spores.</description>
   <number>4</number>
   <discussion>Astrolepis sinuata comprises two cytotypes that tend to occupy different ranges and are treated here as subspecies. Sexual diploid populations (subsp. mexicana ) are widely distributed in Mexico, but in the flora they are apparently confined to the Davis and Chisos mountains of Texas and to southeast New Mexico. The range of the apogamous triploid (subsp. sinuata ) extends from Argentina to the southwestern United States, with a disjunct population in Georgia. Isozyme studies suggest that subsp. sinuata was derived from the diploid subsp. mexicana through autopolyploidy (D. M. Benham 1989).</discussion>
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Sporangia containing 32 spores;</text>
-          <biological_entity id="o14905" name="sporangium" name_original="sporangia" src="d1_s0" type="structure" />
-          <biological_entity id="o14906" name="spore" name_original="spores" src="d1_s0" type="structure">
-            <character is_modifier="true" name="quantity" src="d1_s0" value="32" />
-          </biological_entity>
-          <relation from="o14905" id="r3517" name="containing" negation="false" src="d1_s0" to="o14906" />
-        </statement>
-        <statement id="d1_s1">
-          <text>spores averaging 50– 65 µm diam.;</text>
-          <biological_entity id="o14907" name="spore" name_original="spores" src="d1_s1" type="structure" />
-        </statement>
-        <statement id="d1_s2">
-          <text>plants widespread in sw United States and disjunct in Georgia.</text>
-          <biological_entity id="o14908" name="plant" name_original="plants" src="d1_s2" type="structure">
-            <character constraint="in georgia" constraintid="o14910" is_modifier="false" name="arrangement_or_position" notes="" src="d1_s2" value="disjunct" />
-          </biological_entity>
-          <biological_entity id="o14909" name="sw" name_original="sw" src="d1_s2" type="structure">
-            <character is_modifier="false" name="fusion" src="d1_s2" value="united" />
-          </biological_entity>
-          <biological_entity id="o14910" name="georgia" name_original="georgia" src="d1_s2" type="structure" />
-          <relation from="o14908" id="r3518" name="in" negation="false" src="d1_s2" to="o14909" />
-        </statement>
-      </description>
+      <description type="morphology">Sporangia containing 32 spores; spores averaging 50– 65 µm diam.; plants widespread in sw United States and disjunct in Georgia.</description>
       <determination>4a subsp. sinuata</determination>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Sporangia containing 64 spores;</text>
-          <biological_entity id="o14911" name="sporangium" name_original="sporangia" src="d2_s0" type="structure" />
-          <biological_entity id="o14912" name="spore" name_original="spores" src="d2_s0" type="structure">
-            <character is_modifier="true" name="quantity" src="d2_s0" value="64" />
-          </biological_entity>
-          <relation from="o14911" id="r3519" name="containing" negation="false" src="d2_s0" to="o14912" />
-        </statement>
-        <statement id="d2_s1">
-          <text>spores averaging 37– 44 µm diam.;</text>
-          <biological_entity id="o14913" name="spore" name_original="spores" src="d2_s1" type="structure" />
-        </statement>
-        <statement id="d2_s2">
-          <text>plants apparently restricted to w Texas and se New Mexico.</text>
-          <biological_entity id="o14914" name="plant" name_original="plants" src="d2_s2" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Sporangia containing 64 spores; spores averaging 37– 44 µm diam.; plants apparently restricted to w Texas and se New Mexico.</description>
       <determination>4b subsp. mexicana</determination>
     </key_statement>
   </key>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_550_d1_s0">
-      <text>Sporangia containing 32 spores;</text>
-      <biological_entity id="from_key_V2_550_o14905" name="sporangium" name_original="sporangia" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_550_o14906" name="spore" name_original="spores" src="d1_s0" type="structure">
-        <character is_modifier="true" name="count" src="d1_s0" value="32" />
-      </biological_entity>
-      <relation from="from_key_V2_550_o14905" id="from_key_V2_550_r3517" name="containing" negation="false" src="d1_s0" to="from_key_V2_550_o14906" />
-    </statement>
-    <statement id="from_key_V2_550_d1_s1">
-      <text>spores averaging 50– 65 µm diam.;</text>
-      <biological_entity id="from_key_V2_550_o14907" name="spore" name_original="spores" src="d1_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_550_d1_s2">
-      <text>plants widespread in sw United States and disjunct in Georgia.</text>
-      <biological_entity id="from_key_V2_550_o14908" name="plant" name_original="plants" src="d1_s2" type="structure">
-        <character constraint="in georgia" constraintid="o14910" is_modifier="false" name="arrangement_or_position" notes="alterIDs:o14909" src="d1_s2" value="disjunct" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_550_o14909" name="sw" name_original="sw" src="d1_s2" type="structure">
-        <character is_modifier="false" name="fusion" src="d1_s2" value="united" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_550_o14910" name="georgia" name_original="georgia" src="d1_s2" type="structure" />
-      <relation from="from_key_V2_550_o14908" id="from_key_V2_550_r3518" name="in" negation="false" src="d1_s2" to="from_key_V2_550_o14909" />
-    </statement>
-  </description>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_550_d2_s0">
-      <text>Sporangia containing 64 spores;</text>
-      <biological_entity id="from_key_V2_550_o14911" name="sporangium" name_original="sporangia" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_550_o14912" name="spore" name_original="spores" src="d2_s0" type="structure">
-        <character is_modifier="true" name="count" src="d2_s0" value="64" />
-      </biological_entity>
-      <relation from="from_key_V2_550_o14911" id="from_key_V2_550_r3519" name="containing" negation="false" src="d2_s0" to="from_key_V2_550_o14912" />
-    </statement>
-    <statement id="from_key_V2_550_d2_s1">
-      <text>spores averaging 37– 44 µm diam.;</text>
-      <biological_entity id="from_key_V2_550_o14913" name="spore" name_original="spores" src="d2_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_550_d2_s2">
-      <text>plants apparently restricted to w Texas and se New Mexico.</text>
-      <biological_entity id="from_key_V2_550_o14914" name="plant" name_original="plants" src="d2_s2" type="structure" />
-    </statement>
-  </description>
 </bio:treatment>

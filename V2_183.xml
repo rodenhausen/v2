@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="Link" date="1841" rank="genus">pellaea</taxon_name>
-    <taxon_name authority="(Sessé &amp; Mociño) A. R. Smith" date="1980" rank="species">cordifolia</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Link" date="1841">pellaea</taxon_name>
+    <taxon_name rank="species" authority="(Sessé &amp; Mociño) A. R. Smith" date="1980">cordifolia</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>70: 26. 1980</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family pteridaceae;genus pellaea;species cordifolia</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Adiantum</taxon_name>
-    <taxon_name authority="Sessé &amp; Mociño" date="unknown" rank="species">cordifolium</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Adiantum</taxon_name>
+    <taxon_name rank="species" authority="Sessé &amp; Mociño" date="unknown">cordifolium</taxon_name>
     <place_of_publication>
       <publication_title>Naturaleza (Mexico City), ser.</publication_title>
       <place_in_publication>2, 1(App.): 182. 1890</place_in_publication>
@@ -35,300 +27,21 @@
     <taxon_hierarchy>genus Adiantum;species cordifolium;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pellaea</taxon_name>
-    <taxon_name authority="Weatherby" date="unknown" rank="species">cardiomorpha</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pellaea</taxon_name>
+    <taxon_name rank="species" authority="Weatherby" date="unknown">cardiomorpha</taxon_name>
     <taxon_hierarchy>genus Pellaea;species cardiomorpha;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pellaea</taxon_name>
-    <taxon_name authority="(Cavanilles) Link" date="unknown" rank="species">sagittata</taxon_name>
-    <taxon_name authority="(Cavanilles) A. F. Tryon" date="unknown" rank="variety">cordata</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pellaea</taxon_name>
+    <taxon_name rank="species" authority="(Cavanilles) Link" date="unknown">sagittata</taxon_name>
+    <taxon_name rank="variety" authority="(Cavanilles) A. F. Tryon" date="unknown">cordata</taxon_name>
     <taxon_hierarchy>genus Pellaea;species sagittata;variety cordata;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems compact, ascending, stout, 6-10 mm diam.;</text>
-      <biological_entity id="o2846" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_arrangement" src="d0_s0" value="compact" />
-        <character is_modifier="false" name="orientation" src="d0_s0" value="ascending" />
-        <character is_modifier="false" name="fragility_or_size" src="d0_s0" value="stout" />
-        <character char_type="range_value" from="6" from_unit="mm" name="diameter" src="d0_s0" to="10" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>scales uniformly orangebrown and thin, lanceolate to ovate, largest scales 0.3-1 mm wide, margins dentate.</text>
-      <biological_entity id="o2847" name="scale" name_original="scales" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="uniformly" name="coloration" src="d0_s1" value="orangebrown" />
-        <character is_modifier="false" name="width" src="d0_s1" value="thin" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="ovate" />
-        <character char_type="range_value" from="lanceolate" name="shape" src="d0_s1" to="ovate" />
-      </biological_entity>
-      <biological_entity constraint="largest" id="o2848" name="scale" name_original="scales" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0.3" from_unit="mm" name="width" src="d0_s1" to="1" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o2849" name="margin" name_original="margins" src="d0_s1" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s1" value="dentate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves somewhat dimorphic, sterile leaves shorter than fertile leaves, clustered on stem, 15-50 cm;</text>
-      <biological_entity id="o2850" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="somewhat" name="growth_form" src="d0_s2" value="dimorphic" />
-      </biological_entity>
-      <biological_entity id="o2851" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s2" value="sterile" />
-        <character constraint="than fertile leaves" constraintid="o2852" is_modifier="false" name="height_or_length_or_size" src="d0_s2" value="shorter" />
-        <character constraint="on stem" constraintid="o2853" is_modifier="false" name="arrangement_or_growth_form" src="d0_s2" value="clustered" />
-        <character char_type="range_value" from="15" from_unit="cm" name="some_measurement" notes="" src="d0_s2" to="50" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o2852" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s2" value="fertile" />
-      </biological_entity>
-      <biological_entity id="o2853" name="stem" name_original="stem" src="d0_s2" type="structure" />
-    </statement>
-    <statement id="d0_s3">
-      <text>croziers not conspicuously pubescent, densely scaly.</text>
-      <biological_entity id="o2854" name="crozier" name_original="croziers" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="not conspicuously" name="pubescence" src="d0_s3" value="pubescent" />
-        <character is_modifier="false" modifier="densely" name="architecture_or_pubescence" src="d0_s3" value="scaly" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Petiole straw-colored, tan, or gray, not lustrous, rounded or slightly flattened adaxially, without prominent articulation lines.</text>
-      <biological_entity id="o2855" name="petiole" name_original="petiole" src="d0_s4" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s4" value="straw-colored" />
-        <character is_modifier="false" name="coloration" src="d0_s4" value="tan" />
-        <character is_modifier="false" name="coloration" src="d0_s4" value="gray" />
-        <character is_modifier="false" name="coloration" src="d0_s4" value="tan" />
-        <character is_modifier="false" name="coloration" src="d0_s4" value="gray" />
-        <character is_modifier="false" modifier="not" name="reflectance" src="d0_s4" value="lustrous" />
-        <character is_modifier="false" name="shape" src="d0_s4" value="rounded" />
-        <character is_modifier="false" modifier="slightly; adaxially" name="shape" src="d0_s4" value="flattened" />
-      </biological_entity>
-      <biological_entity constraint="articulation" id="o2856" name="line" name_original="lines" src="d0_s4" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s4" value="prominent" />
-      </biological_entity>
-      <relation from="o2855" id="r686" name="without" negation="false" src="d0_s4" to="o2856" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Blade ovate-deltate, 2-pinnate proximally, 5-20 cm wide;</text>
-      <biological_entity id="o2857" name="blade" name_original="blade" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="ovate-deltate" />
-        <character is_modifier="false" modifier="proximally" name="architecture_or_shape" src="d0_s5" value="2-pinnate" />
-        <character char_type="range_value" from="5" from_unit="cm" name="width" src="d0_s5" to="20" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>rachis tan throughout, straight to slightly flexuous, rounded or flattened adaxially, glabrous.</text>
-      <biological_entity id="o2858" name="rachis" name_original="rachis" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="throughout" name="coloration" src="d0_s6" value="tan" />
-        <character is_modifier="false" name="course" notes="[duplicate value]" src="d0_s6" value="straight" />
-        <character is_modifier="false" modifier="slightly" name="course" notes="[duplicate value]" src="d0_s6" value="flexuous" />
-        <character char_type="range_value" from="straight" name="course" src="d0_s6" to="slightly flexuous" />
-        <character is_modifier="false" name="shape" src="d0_s6" value="rounded" />
-        <character is_modifier="false" modifier="adaxially" name="shape" src="d0_s6" value="flattened" />
-        <character is_modifier="false" name="pubescence" src="d0_s6" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Pinnae perpendicular to rachis or slightly ascending, not decurrent on rachis, usually with 3-15 ultimate segments;</text>
-      <biological_entity id="o2859" name="pinna" name_original="pinnae" src="d0_s7" type="structure">
-        <character constraint="to " constraintid="o2861" is_modifier="false" name="orientation" src="d0_s7" value="perpendicular" />
-      </biological_entity>
-      <biological_entity id="o2860" name="rachis" name_original="rachis" src="d0_s7" type="structure" />
-      <biological_entity id="o2861" name="rachis" name_original="rachis" src="d0_s7" type="structure">
-        <character is_modifier="true" modifier="slightly" name="orientation" src="d0_s7" value="ascending" />
-        <character is_modifier="true" modifier="not" name="shape" src="d0_s7" value="decurrent" />
-      </biological_entity>
-      <biological_entity constraint="ultimate" id="o2862" name="segment" name_original="segments" src="d0_s7" type="structure">
-        <character char_type="range_value" from="3" is_modifier="true" name="quantity" src="d0_s7" to="15" />
-      </biological_entity>
-      <relation from="o2859" id="r687" modifier="usually" name="with" negation="false" src="d0_s7" to="o2862" />
-    </statement>
-    <statement id="d0_s8">
-      <text>costae straight to slightly flexuous, 25-100 mm, longer than ultimate segments.</text>
-      <biological_entity id="o2863" name="costa" name_original="costae" src="d0_s8" type="structure">
-        <character is_modifier="false" name="course" notes="[duplicate value]" src="d0_s8" value="straight" />
-        <character is_modifier="false" modifier="slightly" name="course" notes="[duplicate value]" src="d0_s8" value="flexuous" />
-        <character char_type="range_value" from="straight" name="course" src="d0_s8" to="slightly flexuous" />
-        <character char_type="range_value" from="25" from_unit="mm" name="some_measurement" src="d0_s8" to="100" to_unit="mm" />
-        <character constraint="than ultimate segments" constraintid="o2864" is_modifier="false" name="length_or_size" src="d0_s8" value="longer" />
-      </biological_entity>
-      <biological_entity constraint="ultimate" id="o2864" name="segment" name_original="segments" src="d0_s8" type="structure" />
-    </statement>
-    <statement id="d0_s9">
-      <text>Ultimate segments round-cordate to deltate-cordate, 5-15 mm, herbaceous to leathery, glabrous or puberulent;</text>
-      <biological_entity constraint="ultimate" id="o2865" name="segment" name_original="segments" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="round-cordate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="deltate-cordate" />
-        <character char_type="range_value" from="round-cordate" name="shape" src="d0_s9" to="deltate-cordate" />
-        <character char_type="range_value" from="5" from_unit="mm" name="some_measurement" src="d0_s9" to="15" to_unit="mm" />
-        <character is_modifier="false" name="texture" notes="[duplicate value]" src="d0_s9" value="herbaceous" />
-        <character is_modifier="false" name="texture" notes="[duplicate value]" src="d0_s9" value="leathery" />
-        <character char_type="range_value" from="herbaceous" name="texture" src="d0_s9" to="leathery" />
-        <character is_modifier="false" name="pubescence" src="d0_s9" value="glabrous" />
-        <character is_modifier="false" name="pubescence" src="d0_s9" value="puberulent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>margins recurved on fertile segments, covering less than 1/2 abaxial surface, borders whitish, crenulate;</text>
-      <biological_entity id="o2866" name="margin" name_original="margins" src="d0_s10" type="structure">
-        <character constraint="on segments" constraintid="o2867" is_modifier="false" name="orientation" src="d0_s10" value="recurved" />
-      </biological_entity>
-      <biological_entity id="o2867" name="segment" name_original="segments" src="d0_s10" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s10" value="fertile" />
-      </biological_entity>
-      <biological_entity constraint="abaxial" id="o2868" name="surface" name_original="surface" src="d0_s10" type="structure">
-        <character char_type="range_value" from="0" is_modifier="true" name="quantity" src="d0_s10" to="1/2" />
-      </biological_entity>
-      <biological_entity id="o2869" name="border" name_original="borders" src="d0_s10" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s10" value="whitish" />
-        <character is_modifier="false" name="shape" src="d0_s10" value="crenulate" />
-      </biological_entity>
-      <relation from="o2866" id="r688" name="covering" negation="false" src="d0_s10" to="o2868" />
-    </statement>
-    <statement id="d0_s11">
-      <text>apex rounded or retuse.</text>
-      <biological_entity id="o2870" name="apex" name_original="apex" src="d0_s11" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s11" value="rounded" />
-        <character is_modifier="false" name="shape" src="d0_s11" value="retuse" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s12">
-      <text>Veins of ultimate segments usually evident.</text>
-      <biological_entity id="o2871" name="vein" name_original="veins" src="d0_s12" type="structure">
-        <character is_modifier="false" modifier="usually" name="prominence" src="d0_s12" value="evident" />
-      </biological_entity>
-      <biological_entity constraint="ultimate" id="o2872" name="segment" name_original="segments" src="d0_s12" type="structure" />
-      <relation from="o2871" id="r689" name="part_of" negation="false" src="d0_s12" to="o2872" />
-    </statement>
-    <statement id="d0_s13">
-      <text>Sporangia short-stalked, containing 64 spores, not intermixed with farina-producing glands.</text>
-      <biological_entity id="o2874" name="spore" name_original="spores" src="d0_s13" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s13" value="64" />
-      </biological_entity>
-      <biological_entity id="o2875" name="gland" name_original="glands" src="d0_s13" type="structure" />
-      <relation from="o2873" id="r690" name="containing" negation="false" src="d0_s13" to="o2874" />
-      <relation from="o2873" id="r691" name="intermixed with farina-producing" negation="true" src="d0_s13" to="o2875" />
-    </statement>
-    <statement id="d0_s14">
-      <text>2 n = 58.</text>
-      <biological_entity id="o2873" name="sporangium" name_original="sporangia" src="d0_s13" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s13" value="short-stalked" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o2876" name="chromosome" name_original="" src="d0_s14" type="structure">
-        <character name="quantity" src="d0_s14" value="58" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulating summer--fall.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="summer-fall" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Rocky slopes and ledges, usually on volcanic substrates;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="rocky slopes and ledges" />
-        <character name="habitat" value="on volcanic substrates" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>1000--2500 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2500" to_unit="m" from="1000" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Tex.; Mexico.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  compact, ascending, stout, 6--10 mm diam.; scales uniformly orange-brown and thin, lanceolate to ovate, largest scales 0.3--1 mm wide, margins dentate.  Leaves  somewhat dimorphic, sterile leaves shorter than fertile leaves, clustered on stem, 15--50 cm; croziers not conspicuously pubescent, densely scaly.  Petiole  straw-colored, tan, or gray, not lustrous, rounded or slightly flattened adaxially, without prominent articulation lines.  Blade  ovate-deltate, 2-pinnate proximally, 5--20 cm wide; rachis tan throughout, straight to slightly flexuous, rounded or flattened adaxially, glabrous.  Pinnae  perpendicular to rachis or slightly ascending, not decurrent on rachis, usually with 3--15 ultimate segments; costae straight to slightly flexuous, 25--100 mm, longer than ultimate segments.  Ultimate segments  round-cordate to deltate-cordate, 5--15 mm, herbaceous to leathery, glabrous or puberulent; margins recurved on fertile segments, covering less than 1/2 abaxial surface, borders whitish, crenulate; apex rounded or retuse.  Veins  of ultimate segments usually evident.  Sporangia  short-stalked, containing 64 spores, not intermixed with farina-producing glands. 2 n  = 58.</description>
+  <description type="phenology">Sporulating summer--fall.</description>
+  <description type="habitat">Rocky slopes and ledges, usually on volcanic substrates;</description>
+  <description type="elevation">1000--2500 m;</description>
+  <description type="distribution">Tex.; Mexico.</description>
   <number>2</number>
   <discussion>The diploid Pellaea cordifolia has often been treated as a variety of the Central American and South American apogamous triploid, P . sagittata . The two taxa are distinguished by a number of qualitative morphologic features (A. R. Smith 1980), and it seems unlikely that they represent cytotypes of a single species. A. F. Tryon (1957) suggested that P . sagittata may have originated through hybridization between P . ovata and P . cordifolia (as P . sagittata var. cordata ).</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_470_d5_s0">
-      <text>Stems stout and compact, more than 5 mm diam.;</text>
-      <biological_entity id="from_key_V2_470_o11897" name="stem" name_original="stems" src="d5_s0" type="structure">
-        <character is_modifier="false" name="fragility_or_size" src="d5_s0" value="stout" />
-        <character is_modifier="false" name="architecture_or_arrangement" src="d5_s0" value="compact" />
-        <character char_type="range_value" from="5" from_unit="mm" name="diameter" src="d5_s0" upper_restricted="false" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_470_d5_s1">
-      <text>stem scales uniformly orangebrown and thin;</text>
-      <biological_entity constraint="stem" id="from_key_V2_470_o11898" name="scale" name_original="scales" src="d5_s1" type="structure">
-        <character is_modifier="false" modifier="uniformly" name="coloration" src="d5_s1" value="orangebrown" />
-        <character is_modifier="false" name="width" src="d5_s1" value="thin" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_470_d5_s2">
-      <text>ultimate segments rotund-cordate to deltate-cordate.</text>
-      <biological_entity constraint="ultimate" id="from_key_V2_470_o11899" name="segment" name_original="segments" src="d5_s2" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d5_s2" value="rotund-cordate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d5_s2" value="deltate-cordate" />
-        <character char_type="range_value" from="rotund-cordate" name="shape" src="d5_s2" to="deltate-cordate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_470_d4_s0">
-      <text>Rachises and costae straight or slightly flexuous;</text>
-      <biological_entity id="from_key_V2_470_o11893" name="rachis" name_original="rachises" src="d4_s0" type="structure">
-        <character is_modifier="false" name="course" src="d4_s0" value="straight" />
-        <character is_modifier="false" modifier="slightly" name="course" src="d4_s0" value="flexuous" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_470_o11894" name="costa" name_original="costae" src="d4_s0" type="structure">
-        <character is_modifier="false" name="course" src="d4_s0" value="straight" />
-        <character is_modifier="false" modifier="slightly" name="course" src="d4_s0" value="flexuous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_470_d4_s1">
-      <text>pinnae perpendicular to rachis or ascending.</text>
-      <biological_entity id="from_key_V2_470_o11895" name="pinna" name_original="pinnae" src="d4_s1" type="structure">
-        <character constraint="to rachis" constraintid="o11896" is_modifier="false" name="orientation" src="d4_s1" value="perpendicular" />
-        <character is_modifier="false" name="orientation" src="d4_s1" value="ascending" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_470_o11896" name="rachis" name_original="rachis" src="d4_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_470_d1_s0">
-      <text>Petioles and rachises straw-colored, tan, or gray, rarely lustrous;</text>
-      <biological_entity id="from_key_V2_470_o11882" name="petiole" name_original="petioles" src="d1_s0" type="structure">
-        <character is_modifier="false" name="coloration" src="d1_s0" value="straw-colored" />
-        <character is_modifier="false" name="coloration" src="d1_s0" value="tan" />
-        <character is_modifier="false" name="coloration" src="d1_s0" value="gray" />
-        <character is_modifier="false" name="coloration" src="d1_s0" value="tan" />
-        <character is_modifier="false" name="coloration" src="d1_s0" value="gray" />
-        <character is_modifier="false" modifier="rarely" name="reflectance" src="d1_s0" value="lustrous" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_470_o11883" name="rachis" name_original="rachises" src="d1_s0" type="structure">
-        <character is_modifier="false" name="coloration" src="d1_s0" value="straw-colored" />
-        <character is_modifier="false" name="coloration" src="d1_s0" value="tan" />
-        <character is_modifier="false" name="coloration" src="d1_s0" value="gray" />
-        <character is_modifier="false" name="coloration" src="d1_s0" value="tan" />
-        <character is_modifier="false" name="coloration" src="d1_s0" value="gray" />
-        <character is_modifier="false" modifier="rarely" name="reflectance" src="d1_s0" value="lustrous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_470_d1_s1">
-      <text>stem scales narrowly lanceolate to ovate, largest more than 0.3 mm wide.</text>
-      <biological_entity constraint="stem" id="from_key_V2_470_o11884" name="scale" name_original="scales" src="d1_s1" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d1_s1" value="lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s1" value="ovate" />
-        <character char_type="range_value" from="narrowly lanceolate" name="shape" src="d1_s1" to="ovate" />
-        <character is_modifier="false" name="size" src="d1_s1" value="largest" />
-        <character char_type="range_value" from="0.3" from_unit="mm" name="width" src="d1_s1" upper_restricted="false" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

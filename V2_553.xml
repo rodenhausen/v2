@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Ching ex Pichi Sermolli" date="unknown" rank="family">thelypteridaceae</taxon_name>
-    <taxon_name authority="Schmidel" date="1763" rank="genus">thelypteris</taxon_name>
-    <taxon_name authority="(Davenport) Nieuwland" date="1910" rank="species">simulata</taxon_name>
+    <taxon_name rank="family" authority="Ching ex Pichi Sermolli" date="unknown">thelypteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Schmidel" date="1763">thelypteris</taxon_name>
+    <taxon_name rank="species" authority="(Davenport) Nieuwland" date="1910">simulata</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Midl. Naturalist</publication_title>
       <place_in_publication>1: 226. 1910</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family thelypteridaceae;genus thelypteris;species simulata</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Aspidium</taxon_name>
-    <taxon_name authority="Davenport" date="unknown" rank="species">simulatum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Aspidium</taxon_name>
+    <taxon_name rank="species" authority="Davenport" date="unknown">simulatum</taxon_name>
     <place_of_publication>
       <publication_title>Bot. Gaz.</publication_title>
       <place_in_publication>19: 495. 1894</place_in_publication>
@@ -35,314 +27,15 @@
     <taxon_hierarchy>genus Aspidium;species simulatum;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Parathelypteris</taxon_name>
-    <taxon_name authority="(Davenport) Holttum" date="unknown" rank="species">simulata</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Parathelypteris</taxon_name>
+    <taxon_name rank="species" authority="(Davenport) Holttum" date="unknown">simulata</taxon_name>
     <taxon_hierarchy>genus Parathelypteris;species simulata;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems long-creeping, 1.5-3 mm diam.</text>
-      <biological_entity id="o14953" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="long-creeping" />
-        <character char_type="range_value" from="1.5" from_unit="mm" name="diameter" src="d0_s0" to="3" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves monomorphic, dying back in winter, often 1 cm or more apart, fertile leaves often somewhat longer than sterile leaves, 25-80 cm.</text>
-      <biological_entity id="o14954" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s1" value="monomorphic" />
-        <character constraint="in winter" is_modifier="false" name="condition" src="d0_s1" value="dying" />
-        <character modifier="often" name="some_measurement" src="d0_s1" unit="cm" value="1" />
-        <character is_modifier="false" name="arrangement" src="d0_s1" value="apart" />
-      </biological_entity>
-      <biological_entity id="o14955" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s1" value="fertile" />
-        <character constraint="than sterile leaves" constraintid="o14956" is_modifier="false" name="length_or_size" src="d0_s1" value="often somewhat longer" />
-        <character char_type="range_value" from="25" from_unit="cm" name="some_measurement" src="d0_s1" to="80" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o14956" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s1" value="sterile" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Petiole straw-colored above base, 12-45 cm × 1-3 mm, at base sparsely set with tan, ovate, glabrous scales.</text>
-      <biological_entity id="o14957" name="petiole" name_original="petiole" src="d0_s2" type="structure">
-        <character constraint="above base" constraintid="o14958" is_modifier="false" name="coloration" src="d0_s2" value="straw-colored" />
-        <character char_type="range_value" from="12" from_unit="cm" name="length" notes="" src="d0_s2" to="45" to_unit="cm" />
-        <character char_type="range_value" from="1" from_unit="mm" name="width" notes="" src="d0_s2" to="3" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o14958" name="base" name_original="base" src="d0_s2" type="structure" />
-      <biological_entity id="o14959" name="base" name_original="base" src="d0_s2" type="structure" />
-      <biological_entity id="o14960" name="set" name_original="set" src="d0_s2" type="structure" />
-      <biological_entity id="o14961" name="scale" name_original="scales" src="d0_s2" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s2" value="tan" />
-        <character is_modifier="true" name="shape" src="d0_s2" value="ovate" />
-        <character is_modifier="true" name="pubescence" src="d0_s2" value="glabrous" />
-      </biological_entity>
-      <relation from="o14957" id="r3529" name="at" negation="false" src="d0_s2" to="o14959" />
-      <relation from="o14960" id="r3530" name="with" negation="false" src="d0_s2" to="o14961" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Blade lanceolate, 14-35 cm, proximal pinnae largest, or lowest pair slightly smaller, blade tapered gradually to pinnatifid apex.</text>
-      <biological_entity id="o14962" name="blade" name_original="blade" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="lanceolate" />
-        <character char_type="range_value" from="14" from_unit="cm" name="some_measurement" src="d0_s3" to="35" to_unit="cm" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="o14963" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character is_modifier="false" name="size" src="d0_s3" value="largest" />
-        <character is_modifier="false" name="position" src="d0_s3" value="lowest" />
-        <character is_modifier="false" modifier="slightly" name="size" src="d0_s3" value="smaller" />
-      </biological_entity>
-      <biological_entity id="o14964" name="blade" name_original="blade" src="d0_s3" type="structure">
-        <character constraint="to apex" constraintid="o14965" is_modifier="false" name="shape" src="d0_s3" value="tapered" />
-      </biological_entity>
-      <biological_entity id="o14965" name="apex" name_original="apex" src="d0_s3" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s3" value="pinnatifid" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Pinnae deeply pinnatifid to ca. 1 mm from costa, 3-10 × 1-2 cm;</text>
-      <biological_entity id="o14966" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="deeply" name="shape" src="d0_s4" value="pinnatifid" />
-        <character char_type="range_value" constraint="from costa" constraintid="o14967" from="0" from_unit="mm" name="location" src="d0_s4" to="1" to_unit="mm" />
-        <character char_type="range_value" from="3" from_unit="cm" name="length" notes="" src="d0_s4" to="10" to_unit="cm" />
-        <character char_type="range_value" from="1" from_unit="cm" name="width" notes="" src="d0_s4" to="2" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o14967" name="costa" name_original="costa" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>segments oblong, somewhat oblique, entire;</text>
-      <biological_entity id="o14968" name="segment" name_original="segments" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="oblong" />
-        <character is_modifier="false" modifier="somewhat" name="orientation_or_shape" src="d0_s5" value="oblique" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s5" value="entire" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>proximal pair of veins from adjacent segments meeting margin above sinus.</text>
-      <biological_entity constraint="proximal; vein" id="o14969" name="segment" name_original="segments" src="d0_s6" type="structure" />
-      <biological_entity id="o14970" name="vein" name_original="veins" src="d0_s6" type="structure" />
-      <biological_entity id="o14971" name="segment" name_original="segments" src="d0_s6" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s6" value="adjacent" />
-      </biological_entity>
-      <biological_entity id="o14972" name="margin" name_original="margin" src="d0_s6" type="structure" />
-      <biological_entity id="o14973" name="sinus" name_original="sinus" src="d0_s6" type="structure" />
-      <relation from="o14969" id="r3531" name="part_of" negation="false" src="d0_s6" to="o14970" />
-      <relation from="o14969" id="r3532" name="from" negation="false" src="d0_s6" to="o14971" />
-      <relation from="o14971" id="r3533" name="meeting" negation="false" src="d0_s6" to="o14972" />
-      <relation from="o14969" id="r3534" name="above" negation="false" src="d0_s6" to="o14973" />
-    </statement>
-    <statement id="d0_s7">
-      <text>Indument abaxially of sparsely set hairs 0.2-0.4 mm primarily on costae, also of yellowish short-stalked glands less than 0.1 mm, blade tissue with numerous reddish to orangish, resinous, shiny, sessile, hemispheric glands;</text>
-      <biological_entity id="o14974" name="indument" name_original="indument" src="d0_s7" type="structure">
-        <character char_type="range_value" constraint="on costae" constraintid="o14976" from="0.2" from_unit="mm" name="some_measurement" src="d0_s7" to="0.4" to_unit="mm" />
-        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s7" to="0.1" to_unit="mm" />
-      </biological_entity>
-      <biological_entity constraint="set" id="o14975" name="hair" name_original="hairs" src="d0_s7" type="structure" />
-      <biological_entity id="o14976" name="costa" name_original="costae" src="d0_s7" type="structure" />
-      <biological_entity id="o14977" name="gland" name_original="glands" src="d0_s7" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s7" value="yellowish" />
-        <character is_modifier="true" name="architecture" src="d0_s7" value="short-stalked" />
-      </biological_entity>
-      <biological_entity constraint="blade" id="o14978" name="tissue" name_original="tissue" src="d0_s7" type="structure" />
-      <biological_entity id="o14979" name="gland" name_original="glands" src="d0_s7" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s7" value="numerous" />
-        <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d0_s7" value="reddish" />
-        <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d0_s7" value="orangish" />
-        <character char_type="range_value" from="reddish" is_modifier="true" name="coloration" src="d0_s7" to="orangish" />
-        <character is_modifier="true" name="coating" src="d0_s7" value="resinous" />
-        <character is_modifier="true" name="reflectance" src="d0_s7" value="shiny" />
-        <character is_modifier="true" name="architecture" src="d0_s7" value="sessile" />
-        <character is_modifier="true" name="shape" src="d0_s7" value="hemispheric" />
-      </biological_entity>
-      <relation from="o14974" id="r3535" name="part_of" negation="false" src="d0_s7" to="o14975" />
-      <relation from="o14974" id="r3536" name="part_of" negation="false" src="d0_s7" to="o14977" />
-      <relation from="o14978" id="r3537" name="with" negation="false" src="d0_s7" to="o14979" />
-    </statement>
-    <statement id="d0_s8">
-      <text>blades adaxially with scattered hairs on veins.</text>
-      <biological_entity id="o14980" name="blade" name_original="blades" src="d0_s8" type="structure" />
-      <biological_entity id="o14981" name="hair" name_original="hairs" src="d0_s8" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s8" value="scattered" />
-      </biological_entity>
-      <biological_entity id="o14982" name="vein" name_original="veins" src="d0_s8" type="structure" />
-      <relation from="o14980" id="r3538" name="with" negation="false" src="d0_s8" to="o14981" />
-      <relation from="o14981" id="r3539" name="on" negation="false" src="d0_s8" to="o14982" />
-    </statement>
-    <statement id="d0_s9">
-      <text>Sori round, medial;</text>
-      <biological_entity id="o14983" name="sorus" name_original="sori" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s9" value="round" />
-        <character is_modifier="false" name="position" src="d0_s9" value="medial" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>indusia tan, often glandular;</text>
-      <biological_entity id="o14984" name="indusium" name_original="indusia" src="d0_s10" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s10" value="tan" />
-        <character is_modifier="false" modifier="often" name="architecture_or_function_or_pubescence" src="d0_s10" value="glandular" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>sporangia glabrous.</text>
-    </statement>
-    <statement id="d0_s12">
-      <text>2 n = 128.</text>
-      <biological_entity id="o14985" name="sporangium" name_original="sporangia" src="d0_s11" type="structure">
-        <character is_modifier="false" name="pubescence" src="d0_s11" value="glabrous" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o14986" name="chromosome" name_original="" src="d0_s12" type="structure">
-        <character name="quantity" src="d0_s12" value="128" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Terrestrial in acid soils of shaded swamps and bogs, frequently associated with sphagnum;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="terrestrial in acid soils of shaded swamps and bogs , associated with sphagnum ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--100 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="100" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>N.B., N.S., Ont., Que.; Conn., Del., Maine, Md., Mass., N.H., N.J., N.Y., Pa., R.I., Vt., Va., W.Va., Wis.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  long-creeping, 1.5--3 mm diam.  Leaves  monomorphic, dying back in winter, often 1 cm or more apart, fertile leaves often somewhat longer than sterile leaves, 25--80 cm.  Petiole  straw-colored above base, 12--45 cm × 1--3 mm, at base sparsely set with tan, ovate, glabrous scales.  Blade  lanceolate, 14--35 cm, proximal pinnae largest, or lowest pair slightly smaller, blade tapered gradually to pinnatifid apex.  Pinnae  deeply pinnatifid to ca. 1 mm from costa, 3--10 × 1--2 cm; segments oblong, somewhat oblique, entire; proximal pair of veins from adjacent segments meeting margin above sinus.  Indument  abaxially of sparsely set hairs 0.2--0.4 mm primarily on costae, also of yellowish short-stalked glands less than 0.1 mm, blade tissue with numerous reddish to orangish, resinous, shiny, sessile, hemispheric glands; blades adaxially with scattered hairs on veins.  Sori  round, medial; indusia tan, often glandular; sporangia glabrous. 2 n  = 128.</description>
+  <description type="habitat">Terrestrial in acid soils of shaded swamps and bogs, frequently associated with sphagnum;</description>
+  <description type="elevation">0--100 m;</description>
+  <description type="distribution">N.B., N.S., Ont., Que.; Conn., Del., Maine, Md., Mass., N.H., N.J., N.Y., Pa., R.I., Vt., Va., W.Va., Wis.</description>
   <number>3</number>
   <other_name type="common_name">Massachusetts fern</other_name>
   <other_name type="common_name">thélyptère simulatrice</other_name>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_451_d18_s0">
-      <text>Segment veins not forked;</text>
-      <biological_entity constraint="segment" id="from_key_V2_451_o11070" name="vein" name_original="veins" src="d18_s0" type="structure">
-        <character is_modifier="false" modifier="not" name="shape" src="d18_s0" value="forked" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_451_d18_s1">
-      <text>blades bearing sessile glands abaxially;</text>
-      <biological_entity id="from_key_V2_451_o11071" name="blade" name_original="blades" src="d18_s1" type="structure" />
-      <biological_entity id="from_key_V2_451_o11072" name="gland" name_original="glands" src="d18_s1" type="structure">
-        <character is_modifier="true" name="architecture" src="d18_s1" value="sessile" />
-      </biological_entity>
-      <relation from="from_key_V2_451_o11071" id="from_key_V2_451_r2531" modifier="abaxially" name="bearing" negation="false" src="d18_s1" to="from_key_V2_451_o11072" />
-    </statement>
-    <statement id="from_key_V2_451_d18_s2">
-      <text>costae lacking scales (subg. Parathelypteris).</text>
-      <biological_entity id="from_key_V2_451_o11074" name="scale" name_original="scales" src="d18_s2" type="structure">
-        <character is_modifier="true" name="count" src="d18_s2" value="lacking" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_451_d18_s3">
-      <text>3.</text>
-    </statement>
-    <statement id="from_key_V2_451_d18_s4">
-      <text>Thelypteris simulata</text>
-      <biological_entity id="from_key_V2_451_o11073" name="costa" name_original="costae" src="d18_s2" type="structure">
-        <character name="count" src="d18_s4" value="3" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_451_d15_s0">
-      <text>Proximal pinnae not reduced or only slightly so, not much shorter than middle pinnae.</text>
-      <biological_entity constraint="proximal" id="from_key_V2_451_o11060" name="pinna" name_original="pinnae" src="d15_s0" type="structure">
-        <character is_modifier="false" modifier="not" name="size" src="d15_s0" value="reduced" />
-        <character name="size" src="d15_s0" value="only slightly" />
-        <character constraint="than middle pinnae" constraintid="o11061" is_modifier="false" name="height_or_length_or_size" src="d15_s0" value="not much shorter" />
-      </biological_entity>
-      <biological_entity constraint="middle" id="from_key_V2_451_o11061" name="pinna" name_original="pinnae" src="d15_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_451_d13_s0">
-      <text>Blades with all veins extending to margin above sinus;</text>
-      <biological_entity id="from_key_V2_451_o11049" name="blade" name_original="blades" src="d13_s0" type="structure" />
-      <biological_entity id="from_key_V2_451_o11050" name="vein" name_original="veins" src="d13_s0" type="structure" />
-      <biological_entity id="from_key_V2_451_o11051" name="margin" name_original="margin" src="d13_s0" type="structure" />
-      <biological_entity id="from_key_V2_451_o11052" name="sinus" name_original="sinus" src="d13_s0" type="structure" />
-      <relation from="from_key_V2_451_o11049" id="from_key_V2_451_r2523" name="with" negation="false" src="d13_s0" to="from_key_V2_451_o11050" />
-      <relation from="from_key_V2_451_o11050" id="from_key_V2_451_r2524" name="extending to" negation="false" src="d13_s0" to="from_key_V2_451_o11051" />
-      <relation from="from_key_V2_451_o11050" id="from_key_V2_451_r2525" name="extending to" negation="false" src="d13_s0" to="from_key_V2_451_o11052" />
-    </statement>
-    <statement id="from_key_V2_451_d13_s1">
-      <text>proximal pinnae greatly reduced or not.</text>
-      <biological_entity constraint="proximal" id="from_key_V2_451_o11053" name="pinna" name_original="pinnae" src="d13_s1" type="structure">
-        <character is_modifier="false" modifier="greatly" name="size" src="d13_s1" value="reduced" />
-        <character name="size" src="d13_s1" value="not" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_451_d12_s0">
-      <text>Sori round or slightly oblong;</text>
-      <biological_entity id="from_key_V2_451_o11047" name="sorus" name_original="sori" src="d12_s0" type="structure">
-        <character is_modifier="false" name="shape" src="d12_s0" value="round" />
-        <character is_modifier="false" modifier="slightly" name="shape" src="d12_s0" value="oblong" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_451_d12_s1">
-      <text>sporangia glabrous.</text>
-      <biological_entity id="from_key_V2_451_o11048" name="sporangium" name_original="sporangia" src="d12_s1" type="structure">
-        <character is_modifier="false" name="pubescence" src="d12_s1" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_451_d6_s0">
-      <text>Stellate or forked hairs absent.</text>
-      <biological_entity id="from_key_V2_451_o11018" name="whole_organism" name_original="" src="d6_s0" type="structure">
-        <character is_modifier="false" name="shape" src="d6_s0" value="stellate" />
-        <character is_modifier="false" name="shape" src="d6_s0" value="forked" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_451_o11019" name="hair" name_original="hairs" src="d6_s0" type="structure">
-        <character is_modifier="false" name="count" src="d6_s0" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_451_d2_s0">
-      <text>Pinnae shallowly to deeply lobed;</text>
-      <biological_entity id="from_key_V2_451_o11001" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
-        <character is_modifier="false" modifier="shallowly to deeply" name="shape" src="d2_s0" value="lobed" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_451_d2_s1">
-      <text>veins free, connivent at sinuses, or 1-2 pairs between primary-veins uniting to form common vein extending to sinus.</text>
-      <biological_entity id="from_key_V2_451_o11002" name="vein" name_original="veins" src="d2_s1" type="structure">
-        <character is_modifier="false" name="fusion" src="d2_s1" value="free" />
-        <character constraint="at sinuses" constraintid="o11003" is_modifier="false" name="arrangement" src="d2_s1" value="connivent" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_451_o11003" name="sinuse" name_original="sinuses" src="d2_s1" type="structure">
-        <character char_type="range_value" constraint="between primary-veins" constraintid="o11004" from="1" name="count" src="d2_s1" to="2" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_451_o11004" name="primary-vein" name_original="primary-veins" src="d2_s1" type="structure" />
-      <biological_entity id="from_key_V2_451_o11005" name="vein" name_original="vein" src="d2_s1" type="structure">
-        <character is_modifier="true" name="count" src="d2_s1" value="common" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_451_o11006" name="sinus" name_original="sinus" src="d2_s1" type="structure">
-        <character is_modifier="true" name="count" src="d2_s1" value="common" />
-      </biological_entity>
-      <relation from="from_key_V2_451_o11004" id="from_key_V2_451_r2506" name="uniting to form" negation="false" src="d2_s1" to="from_key_V2_451_o11005" />
-      <relation from="from_key_V2_451_o11004" id="from_key_V2_451_r2507" name="uniting to form" negation="false" src="d2_s1" to="from_key_V2_451_o11006" />
-    </statement>
-  </description>
 </bio:treatment>

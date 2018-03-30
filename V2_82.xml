@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="C. Presl" date="1836" rank="genus">cyrtomium</taxon_name>
-    <taxon_name authority="(Linnaeus f.) C. Presl" date="1836" rank="species">falcatum</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="C. Presl" date="1836">cyrtomium</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus f.) C. Presl" date="1836">falcatum</taxon_name>
     <place_of_publication>
       <publication_title>Tent. Pterid.</publication_title>
       <place_in_publication>86. 1836</place_in_publication>
@@ -26,125 +18,18 @@
     <taxon_hierarchy>family dryopteridaceae;genus cyrtomium;species falcatum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Polypodium</taxon_name>
-    <taxon_name authority="Linnaeus f." date="unknown" rank="species">falcatum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Polypodium</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus f." date="unknown">falcatum</taxon_name>
     <place_of_publication>
       <publication_title>Suppl. Pl.,</publication_title>
       <place_in_publication>446. 1782</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Polypodium;species falcatum;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stem scales orangebrown, ovate with attenuate apices.</text>
-      <biological_entity constraint="stem" id="o23999" name="scale" name_original="scales" src="d0_s0" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s0" value="orangebrown" />
-        <character constraint="with apices" constraintid="o24000" is_modifier="false" name="shape" src="d0_s0" value="ovate" />
-      </biological_entity>
-      <biological_entity id="o24000" name="apex" name_original="apices" src="d0_s0" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s0" value="attenuate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves 30-60 (-100) cm.</text>
-      <biological_entity id="o24001" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character char_type="range_value" from="60" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d0_s1" to="100" to_unit="cm" />
-        <character char_type="range_value" from="30" from_unit="cm" name="some_measurement" src="d0_s1" to="60" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Pinnae bright green and shiny adaxially, 4-10 (-12) pairs, ovate-attenuate, usually falcate, 4-8.5 cm, leathery, sometimes with short, basal, acroscopic lobe, margins often undulate or coarsely and irregularly dentate.</text>
-      <biological_entity id="o24002" name="pinna" name_original="pinnae" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s2" value="bright green" />
-        <character is_modifier="false" modifier="adaxially" name="reflectance" src="d0_s2" value="shiny" />
-        <character char_type="range_value" from="10" from_inclusive="false" name="atypical_quantity" src="d0_s2" to="12" />
-        <character char_type="range_value" from="4" name="quantity" src="d0_s2" to="10" />
-        <character is_modifier="false" name="shape" src="d0_s2" value="ovate-attenuate" />
-        <character is_modifier="false" modifier="usually" name="shape" src="d0_s2" value="falcate" />
-        <character char_type="range_value" from="4" from_unit="cm" name="some_measurement" src="d0_s2" to="8.5" to_unit="cm" />
-        <character is_modifier="false" name="texture" src="d0_s2" value="leathery" />
-      </biological_entity>
-      <biological_entity id="o24003" name="lobe" name_original="lobe" src="d0_s2" type="structure">
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s2" value="short" />
-        <character is_modifier="true" name="position" src="d0_s2" value="basal" />
-        <character is_modifier="true" name="orientation" src="d0_s2" value="acroscopic" />
-      </biological_entity>
-      <biological_entity id="o24004" name="margin" name_original="margins" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="often" name="shape" src="d0_s2" value="undulate" />
-        <character name="shape" src="d0_s2" value="coarsely" />
-        <character is_modifier="false" modifier="irregularly" name="architecture_or_shape" src="d0_s2" value="dentate" />
-      </biological_entity>
-      <relation from="o24002" id="r5620" modifier="sometimes" name="with" negation="false" src="d0_s2" to="o24003" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Indusia brown, sometimes with blackish centers, not shriveled at maturity.</text>
-      <biological_entity id="o24006" name="center" name_original="centers" src="d0_s3" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s3" value="blackish" />
-      </biological_entity>
-      <relation from="o24005" id="r5621" modifier="sometimes" name="with" negation="false" src="d0_s3" to="o24006" />
-    </statement>
-    <statement id="d0_s4">
-      <text>n = 2n = 123, apogamous.</text>
-      <biological_entity id="o24005" name="indusium" name_original="indusia" src="d0_s3" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s3" value="brown" />
-        <character constraint="at maturity" is_modifier="false" modifier="not" name="shape" notes="" src="d0_s3" value="shriveled" />
-      </biological_entity>
-      <biological_entity constraint="n=2n" id="o24007" name="chromosome" name_original="" src="d0_s4" type="structure">
-        <character name="quantity" src="d0_s4" unit=",apogamous" value="123" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Brick or stone walls, rocky areas, mesic forests, and coastal bluffs;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="brick or stone walls" />
-        <character name="habitat" value="rocky areas" />
-        <character name="habitat" value="mesic forests" />
-        <character name="habitat" value="and coastal bluffs ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--100 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="100" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>introduced; Calif., Fla., Ga., La., Miss., S.C.; Europe; Asia.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="introduced" />
-        <character name="distribution" value="Europe" establishment_means="native" />
-        <character name="distribution" value="Asia" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stem scales orange-brown, ovate with attenuate apices. Leaves 30--60(--100) cm. Pinnae bright green and shiny adaxially, 4--10(--12) pairs, ovate-attenuate, usually falcate, 4--8.5 cm, leathery, sometimes with short, basal, acroscopic lobe, margins often undulate or coarsely and irregularly dentate. Indusia brown, sometimes with blackish centers, not shriveled at maturity. n = 2n = 123, apogamous.</description>
+  <description type="habitat">Brick or stone walls, rocky areas, mesic forests, and coastal bluffs;</description>
+  <description type="elevation">0--100 m;</description>
+  <description type="distribution">introduced; Calif., Fla., Ga., La., Miss., S.C.; Europe; Asia.</description>
   <number>1</number>
   <discussion>Cyrtomium falcatum is native to east Asia and widely escaped from cultivation. All plants in the flora appear to be the 32-spored, apogamous triploid.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_578_d1_s0">
-      <text>Pinnae 4-10 (-12) pairs, leathery, shiny adaxially, margins sometimes undulate or coarsely dentate, but not minutely crenulate or denticulate.</text>
-      <biological_entity id="from_key_V2_578_o15694" name="pinna" name_original="pinnae" src="d1_s0" type="structure">
-        <character char_type="range_value" from="10" from_inclusive="false" name="atypical_count" src="d1_s0" to="12" />
-        <character char_type="range_value" from="4" name="count" src="d1_s0" to="10" />
-        <character is_modifier="false" name="texture" src="d1_s0" value="leathery" />
-        <character is_modifier="false" modifier="adaxially" name="reflectance" src="d1_s0" value="shiny" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_578_o15695" name="margin" name_original="margins" src="d1_s0" type="structure">
-        <character is_modifier="false" name="shape" src="d1_s0" value="undulate" />
-        <character is_modifier="false" modifier="coarsely" name="shape" src="d1_s0" value="dentate" />
-        <character is_modifier="false" modifier="not minutely" name="shape" src="d1_s0" value="crenulate" />
-        <character is_modifier="false" name="shape" src="d1_s0" value="denticulate" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

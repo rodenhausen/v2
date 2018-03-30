@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Dumortier" date="unknown" rank="family">ephedraceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">ephedra</taxon_name>
-    <taxon_name authority="S. Watson" date="1879" rank="species">nevadensis</taxon_name>
+    <taxon_name rank="family" authority="Dumortier" date="unknown">ephedraceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">ephedra</taxon_name>
+    <taxon_name rank="species" authority="S. Watson" date="1879">nevadensis</taxon_name>
     <place_of_publication>
       <publication_title>Proc. Amer. Acad. Arts</publication_title>
       <place_in_publication>14: 298. 1879</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family ephedraceae;genus ephedra;species nevadensis</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Ephedra</taxon_name>
-    <taxon_name authority="S. Watson" date="unknown" rank="species">antisyphilitica</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Ephedra</taxon_name>
+    <taxon_name rank="species" authority="S. Watson" date="unknown">antisyphilitica</taxon_name>
     <place_of_publication>
       <place_in_publication>1871,</place_in_publication>
       <other_info_on_pub>not Berlandier ex C. A. Meyer 1846</other_info_on_pub>
@@ -35,339 +27,22 @@
     <taxon_hierarchy>genus Ephedra;species antisyphilitica;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Ephedra</taxon_name>
-    <taxon_name authority="S. Watson" date="unknown" rank="species">antisyphilitica</taxon_name>
-    <taxon_name authority="S. Watson" date="unknown" rank="variety">pedunculata</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Ephedra</taxon_name>
+    <taxon_name rank="species" authority="S. Watson" date="unknown">antisyphilitica</taxon_name>
+    <taxon_name rank="variety" authority="S. Watson" date="unknown">pedunculata</taxon_name>
     <taxon_hierarchy>genus Ephedra;species antisyphilitica;variety pedunculata;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Ephedra</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">nevadensis</taxon_name>
-    <taxon_name authority="Stapf" date="unknown" rank="variety">paucibracteata</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Ephedra</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">nevadensis</taxon_name>
+    <taxon_name rank="variety" authority="Stapf" date="unknown">paucibracteata</taxon_name>
     <taxon_hierarchy>genus Ephedra;species nevadensis;variety paucibracteata;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Shrubs erect, 0.25-1.5 m.</text>
-      <biological_entity id="o7664" name="shrub" name_original="shrubs" src="d0_s0" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s0" value="erect" />
-        <character char_type="range_value" from="0.25" from_unit="m" name="some_measurement" src="d0_s0" to="1.5" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Bark gray, fissured.</text>
-      <biological_entity id="o7665" name="bark" name_original="bark" src="d0_s1" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s1" value="gray" />
-        <character is_modifier="false" name="relief" src="d0_s1" value="fissured" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Branches alternate or whorled, rigid, angle of divergence about 45°.</text>
-      <biological_entity id="o7666" name="branch" name_original="branches" src="d0_s2" type="structure">
-        <character is_modifier="false" name="arrangement" src="d0_s2" value="alternate" />
-        <character is_modifier="false" name="arrangement" src="d0_s2" value="whorled" />
-        <character is_modifier="false" name="texture" src="d0_s2" value="rigid" />
-      </biological_entity>
-      <biological_entity id="o7667" name="angle" name_original="angle" src="d0_s2" type="structure">
-        <character name="degree" src="d0_s2" value="45°" />
-      </biological_entity>
-      <biological_entity id="o7668" name="divergence" name_original="divergence" src="d0_s2" type="structure" />
-      <relation from="o7667" id="r1792" name="part_of" negation="false" src="d0_s2" to="o7668" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Twigs pale green, becoming yellow with age, not viscid, glaucous, with numerous longitudinal grooves;</text>
-      <biological_entity id="o7669" name="twig" name_original="twigs" src="d0_s3" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s3" value="pale green" />
-        <character constraint="with age" constraintid="o7670" is_modifier="false" modifier="becoming" name="coloration" src="d0_s3" value="yellow" />
-        <character is_modifier="false" modifier="not" name="coating" notes="" src="d0_s3" value="viscid" />
-        <character is_modifier="false" name="pubescence" src="d0_s3" value="glaucous" />
-      </biological_entity>
-      <biological_entity id="o7670" name="age" name_original="age" src="d0_s3" type="structure" />
-      <biological_entity id="o7671" name="groove" name_original="grooves" src="d0_s3" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s3" value="numerous" />
-        <character is_modifier="true" name="dehiscence_or_orientation" src="d0_s3" value="longitudinal" />
-      </biological_entity>
-      <relation from="o7669" id="r1793" name="with" negation="false" src="d0_s3" to="o7671" />
-    </statement>
-    <statement id="d0_s4">
-      <text>internodes 1-6 cm.</text>
-      <biological_entity id="o7672" name="internode" name_original="internodes" src="d0_s4" type="structure">
-        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s4" to="6" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Terminal buds conic, 1-3 mm, apex obtuse.</text>
-      <biological_entity constraint="terminal" id="o7673" name="bud" name_original="buds" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="conic" />
-        <character char_type="range_value" from="1" from_unit="mm" name="some_measurement" src="d0_s5" to="3" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o7674" name="apex" name_original="apex" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="obtuse" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Leaves opposite (rarely in whorls of 3), 2-4 (-8) mm, connate to 1/2-3/4 their length;</text>
-      <biological_entity id="o7675" name="leaf" name_original="leaves" src="d0_s6" type="structure">
-        <character is_modifier="false" name="arrangement" src="d0_s6" value="opposite" />
-        <character char_type="range_value" from="4" from_inclusive="false" from_unit="mm" name="atypical_some_measurement" src="d0_s6" to="8" to_unit="mm" />
-        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s6" to="4" to_unit="mm" />
-        <character is_modifier="false" name="fusion" src="d0_s6" value="connate" />
-        <character char_type="range_value" from="0" name="length" src="d0_s6" to="1/2-3/4" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>bases thickened, brown, completely deciduous;</text>
-      <biological_entity id="o7676" name="base" name_original="bases" src="d0_s7" type="structure">
-        <character is_modifier="false" name="size_or_width" src="d0_s7" value="thickened" />
-        <character is_modifier="false" name="coloration" src="d0_s7" value="brown" />
-        <character is_modifier="false" modifier="completely" name="duration" src="d0_s7" value="deciduous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>apex obtuse.</text>
-      <biological_entity id="o7677" name="apex" name_original="apex" src="d0_s8" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s8" value="obtuse" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>Pollen cones 1-several at node, ellipsoid, 4-8 mm, sessile or on short peduncles with 2 pairs of basal bracts;</text>
-      <biological_entity constraint="pollen" id="o7678" name="cone" name_original="cones" src="d0_s9" type="structure">
-        <character char_type="range_value" constraint="at node" constraintid="o7679" from="1" is_modifier="false" name="quantity" src="d0_s9" to="several" />
-        <character is_modifier="false" name="shape" notes="" src="d0_s9" value="ellipsoid" />
-        <character char_type="range_value" from="4" from_unit="mm" name="some_measurement" src="d0_s9" to="8" to_unit="mm" />
-        <character is_modifier="false" name="architecture" src="d0_s9" value="sessile" />
-        <character is_modifier="false" name="architecture" src="d0_s9" value="on short peduncles" />
-      </biological_entity>
-      <biological_entity id="o7679" name="node" name_original="node" src="d0_s9" type="structure" />
-      <biological_entity id="o7680" name="peduncle" name_original="peduncles" src="d0_s9" type="structure">
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s9" value="short" />
-      </biological_entity>
-      <biological_entity id="o7681" name="pair" name_original="pairs" src="d0_s9" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s9" value="2" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="o7682" name="bract" name_original="bracts" src="d0_s9" type="structure" />
-      <relation from="o7678" id="r1794" name="on" negation="false" src="d0_s9" to="o7680" />
-      <relation from="o7680" id="r1795" name="with" negation="false" src="d0_s9" to="o7681" />
-      <relation from="o7681" id="r1796" name="part_of" negation="false" src="d0_s9" to="o7682" />
-    </statement>
-    <statement id="d0_s10">
-      <text>bracts opposite, 5-9 pairs, yellow to light-brown, obovate, 3-4 × 2-3 mm, membranous;</text>
-      <biological_entity id="o7683" name="bract" name_original="bracts" src="d0_s10" type="structure">
-        <character is_modifier="false" name="arrangement" src="d0_s10" value="opposite" />
-        <character char_type="range_value" from="5" name="quantity" src="d0_s10" to="9" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s10" value="yellow" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s10" value="light-brown" />
-        <character char_type="range_value" from="yellow" name="coloration" src="d0_s10" to="light-brown" />
-        <character is_modifier="false" name="shape" src="d0_s10" value="obovate" />
-        <character char_type="range_value" from="3" from_unit="mm" name="length" src="d0_s10" to="4" to_unit="mm" />
-        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s10" to="3" to_unit="mm" />
-        <character is_modifier="false" name="texture" src="d0_s10" value="membranous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>bracteoles slightly exceeding bracts;</text>
-      <biological_entity id="o7684" name="bracteole" name_original="bracteoles" src="d0_s11" type="structure" />
-      <biological_entity id="o7685" name="bract" name_original="bracts" src="d0_s11" type="structure" />
-      <relation from="o7684" id="r1797" modifier="slightly" name="exceeding" negation="false" src="d0_s11" to="o7685" />
-    </statement>
-    <statement id="d0_s12">
-      <text>sporangiophores 3-5 mm, exserted to 1/4-1/2 their length, with 6-9 sessile to short-stalked (less than 1 mm) microsporangia.</text>
-      <biological_entity id="o7686" name="sporangiophore" name_original="sporangiophores" src="d0_s12" type="structure">
-        <character char_type="range_value" from="3" from_unit="mm" name="some_measurement" src="d0_s12" to="5" to_unit="mm" />
-        <character is_modifier="false" name="length" src="d0_s12" value="exserted" />
-        <character char_type="range_value" from="6" modifier="with" name="quantity" src="d0_s12" to="9" />
-        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s12" value="sessile" />
-        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s12" value="short-stalked" />
-        <character char_type="range_value" from="sessile" name="architecture" src="d0_s12" to="short-stalked" />
-      </biological_entity>
-      <biological_entity id="o7687" name="microsporangium" name_original="microsporangia" src="d0_s12" type="structure" />
-    </statement>
-    <statement id="d0_s13">
-      <text>Seed-cones 1-several at node, nearly globose, 5-11 mm, on long peduncles, with 1-2 pairs of basal bracts;</text>
-      <biological_entity id="o7688" name="cone-seed" name_original="seed-cones" src="d0_s13" type="structure">
-        <character char_type="range_value" constraint="at node" constraintid="o7689" from="1" is_modifier="false" name="quantity" src="d0_s13" to="several" />
-        <character is_modifier="false" modifier="nearly" name="shape" notes="" src="d0_s13" value="globose" />
-        <character char_type="range_value" from="5" from_unit="mm" name="distance" src="d0_s13" to="11" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o7689" name="node" name_original="node" src="d0_s13" type="structure" />
-      <biological_entity id="o7690" name="peduncle" name_original="peduncles" src="d0_s13" type="structure">
-        <character is_modifier="true" name="length_or_size" src="d0_s13" value="long" />
-      </biological_entity>
-      <biological_entity id="o7691" name="pair" name_original="pairs" src="d0_s13" type="structure">
-        <character char_type="range_value" from="1" is_modifier="true" name="quantity" src="d0_s13" to="2" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="o7692" name="bract" name_original="bracts" src="d0_s13" type="structure" />
-      <relation from="o7688" id="r1798" name="on" negation="false" src="d0_s13" to="o7690" />
-      <relation from="o7688" id="r1799" name="with" negation="false" src="d0_s13" to="o7691" />
-      <relation from="o7691" id="r1800" name="part_of" negation="false" src="d0_s13" to="o7692" />
-    </statement>
-    <statement id="d0_s14">
-      <text>bracts opposite, 3-5 pairs, nearly circular, 4-8 × 3-6 mm, herbaceous, with light-brown to yellow-green center, occasionally pinkish tinged, margins entire.</text>
-      <biological_entity id="o7693" name="bract" name_original="bracts" src="d0_s14" type="structure">
-        <character is_modifier="false" name="arrangement" src="d0_s14" value="opposite" />
-        <character char_type="range_value" from="3" name="quantity" src="d0_s14" to="5" />
-        <character is_modifier="false" modifier="nearly" name="arrangement_or_shape" src="d0_s14" value="circular" />
-        <character char_type="range_value" from="4" from_unit="mm" name="length" src="d0_s14" to="8" to_unit="mm" />
-        <character char_type="range_value" from="3" from_unit="mm" name="width" src="d0_s14" to="6" to_unit="mm" />
-        <character is_modifier="false" name="growth_form_or_texture" src="d0_s14" value="herbaceous" />
-        <character is_modifier="false" modifier="occasionally" name="coloration" notes="" src="d0_s14" value="pinkish tinged" />
-      </biological_entity>
-      <biological_entity id="o7694" name="center" name_original="center" src="d0_s14" type="structure">
-        <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d0_s14" value="light-brown" />
-        <character is_modifier="true" name="coloration" notes="[duplicate value]" src="d0_s14" value="yellow-green" />
-        <character char_type="range_value" from="light-brown" is_modifier="true" name="coloration" src="d0_s14" to="yellow-green" />
-      </biological_entity>
-      <biological_entity id="o7695" name="margin" name_original="margins" src="d0_s14" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s14" value="entire" />
-      </biological_entity>
-      <relation from="o7693" id="r1801" name="with" negation="false" src="d0_s14" to="o7694" />
-    </statement>
-    <statement id="d0_s15">
-      <text>Seeds (1-) 2, ellipsoid, 6-9 × 2-4 mm, brown, smooth.</text>
-    </statement>
-    <statement id="d0_s16">
-      <text>2 n = 14, 28.</text>
-      <biological_entity id="o7696" name="seed" name_original="seeds" src="d0_s15" type="structure">
-        <character char_type="range_value" from="1" name="atypical_quantity" src="d0_s15" to="2" to_inclusive="false" />
-        <character name="quantity" src="d0_s15" value="2" />
-        <character is_modifier="false" name="shape" src="d0_s15" value="ellipsoid" />
-        <character char_type="range_value" from="6" from_unit="mm" name="length" src="d0_s15" to="9" to_unit="mm" />
-        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s15" to="4" to_unit="mm" />
-        <character is_modifier="false" name="coloration" src="d0_s15" value="brown" />
-        <character is_modifier="false" name="architecture_or_pubescence_or_relief" src="d0_s15" value="smooth" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o7697" name="chromosome" name_original="" src="d0_s16" type="structure">
-        <character name="quantity" src="d0_s16" value="14" />
-        <character name="quantity" src="d0_s16" value="28" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Coning late winter--midspring.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="coning time" value="late winter-midspring" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Dry, rocky slopes and hills, rarely in sandy flat areas;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="dry" />
-        <character name="habitat" value="rocky slopes and hills" />
-        <character name="habitat" value="in sandy flat areas ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>700--1900 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1900" to_unit="m" from="700" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., Calif., Nev., Oreg., Utah.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Nev." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Utah." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Shrubs  erect, 0.25--1.5 m.  Bark  gray, fissured.  Branches  alternate or whorled, rigid, angle of divergence about 45°.  Twigs  pale green, becoming yellow with age, not viscid, glaucous, with numerous longitudinal grooves; internodes 1--6 cm.  Terminal buds  conic, 1--3 mm, apex obtuse.  Leaves  opposite (rarely in whorls of 3), 2--4(--8) mm, connate to 1/2--3/4 their length; bases thickened, brown, completely deciduous; apex obtuse.  Pollen cones  1--several at node, ellipsoid, 4--8 mm, sessile or on short peduncles with 2 pairs of basal bracts; bracts opposite, 5--9 pairs, yellow to light brown, obovate, 3--4 × 2--3 mm, membranous; bracteoles slightly exceeding bracts; sporangiophores 3--5 mm, exserted to 1/4--1/2 their length, with 6--9 sessile to short-stalked (less than 1 mm) microsporangia.  Seed cones  1--several at node, nearly globose, 5--11 mm, on long peduncles, with 1--2 pairs of basal bracts; bracts opposite, 3--5 pairs, nearly circular, 4--8 × 3--6 mm, herbaceous, with light brown to yellow-green center, occasionally pinkish tinged, margins entire.  Seeds  (1--)2, ellipsoid, 6--9 × 2--4 mm, brown, smooth. 2 n  = 14, 28.</description>
+  <description type="phenology">Coning late winter--midspring.</description>
+  <description type="habitat">Dry, rocky slopes and hills, rarely in sandy flat areas;</description>
+  <description type="elevation">700--1900 m;</description>
+  <description type="distribution">Ariz., Calif., Nev., Oreg., Utah.</description>
   <number>8</number>
   <other_name type="common_name">Nevada ephedra</other_name>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_454_d19_s0">
-      <text>Bracts of pollen cones yellow to light-brown;</text>
-      <biological_entity id="from_key_V2_454_o11318" name="bract" name_original="bracts" src="d19_s0" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d19_s0" value="yellow" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d19_s0" value="light-brown" />
-        <character char_type="range_value" from="yellow" name="coloration" src="d19_s0" to="light-brown" />
-      </biological_entity>
-      <biological_entity constraint="pollen" id="from_key_V2_454_o11319" name="cone" name_original="cones" src="d19_s0" type="structure" />
-      <relation from="from_key_V2_454_o11318" id="from_key_V2_454_r2602" name="part_of" negation="false" src="d19_s0" to="from_key_V2_454_o11319" />
-    </statement>
-    <statement id="from_key_V2_454_d19_s1">
-      <text>inner bracts of seed-cones herbaceous;</text>
-      <biological_entity constraint="inner" id="from_key_V2_454_o11320" name="bract" name_original="bracts" src="d19_s1" type="structure">
-        <character is_modifier="false" name="growth_form_or_texture" src="d19_s1" value="herbaceous" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_454_o11321" name="seed-cone" name_original="seed-cones" src="d19_s1" type="structure" />
-      <relation from="from_key_V2_454_o11320" id="from_key_V2_454_r2603" name="part_of" negation="false" src="d19_s1" to="from_key_V2_454_o11321" />
-    </statement>
-    <statement id="from_key_V2_454_d19_s2">
-      <text>seeds (1-) 2.</text>
-      <biological_entity id="from_key_V2_454_o11322" name="seed" name_original="seeds" src="d19_s2" type="structure">
-        <character char_type="range_value" from="1" name="atypical_count" src="d19_s2" to="2" to_inclusive="false" />
-        <character name="count" src="d19_s2" value="2" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_454_d17_s0">
-      <text>Leaf-bases completely deciduous, brown when shed;</text>
-      <biological_entity id="from_key_V2_454_o11313" name="leaf-base" name_original="leaf-bases" src="d17_s0" type="structure">
-        <character is_modifier="false" modifier="completely" name="duration" src="d17_s0" value="deciduous" />
-        <character is_modifier="false" modifier="when shed" name="coloration" src="d17_s0" value="brown" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_454_d17_s1">
-      <text>seeds 1-2.</text>
-      <biological_entity id="from_key_V2_454_o11314" name="seed" name_original="seeds" src="d17_s1" type="structure">
-        <character char_type="range_value" from="1" name="count" src="d17_s1" to="2" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_454_d14_s0">
-      <text>Leaf-bases completely deciduous or becoming gray and shredded with age;</text>
-      <biological_entity id="from_key_V2_454_o11297" name="leaf-base" name_original="leaf-bases" src="d14_s0" type="structure">
-        <character is_modifier="false" modifier="completely" name="duration" src="d14_s0" value="deciduous" />
-        <character is_modifier="false" modifier="becoming; becoming" name="coloration" src="d14_s0" value="gray" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_454_o11298" name="age" name_original="age" src="d14_s0" type="structure" />
-      <relation from="from_key_V2_454_o11297" id="from_key_V2_454_r2595" name="shredded with" negation="false" src="d14_s0" to="from_key_V2_454_o11298" />
-    </statement>
-    <statement id="from_key_V2_454_d14_s1">
-      <text>nodes not or only inconspicuously swollen;</text>
-      <biological_entity id="from_key_V2_454_o11299" name="node" name_original="nodes" src="d14_s1" type="structure">
-        <character is_modifier="false" modifier="only inconspicuously" name="shape" src="d14_s1" value="swollen" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_454_d14_s2">
-      <text>seeds 1-2.</text>
-      <biological_entity id="from_key_V2_454_o11300" name="seed" name_original="seeds" src="d14_s2" type="structure">
-        <character char_type="range_value" from="1" name="count" src="d14_s2" to="2" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_454_d12_s0">
-      <text>Twigs not viscid.</text>
-      <biological_entity id="from_key_V2_454_o11292" name="twig" name_original="twigs" src="d12_s0" type="structure">
-        <character is_modifier="false" modifier="not" name="coating" src="d12_s0" value="viscid" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_454_d10_s0">
-      <text>Branches rigid;</text>
-    </statement>
-    <statement id="from_key_V2_454_d10_s1">
-      <text>microsporangial stalks less than 1 mm.</text>
-      <biological_entity id="from_key_V2_454_o11289" name="branch" name_original="branches" src="d10_s0" type="structure">
-        <character is_modifier="false" name="texture" src="d10_s0" value="rigid" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_454_o11290" name="stalk" name_original="stalks" src="d10_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d10_s1" to="1" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_454_d2_s0">
-      <text>Leaves and bracts mostly opposite.</text>
-      <biological_entity id="from_key_V2_454_o11263" name="leaf" name_original="leaves" src="d2_s0" type="structure">
-        <character is_modifier="false" modifier="mostly" name="arrangement" src="d2_s0" value="opposite" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_454_o11264" name="bract" name_original="bracts" src="d2_s0" type="structure">
-        <character is_modifier="false" modifier="mostly" name="arrangement" src="d2_s0" value="opposite" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

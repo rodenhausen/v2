@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
-    <taxon_name authority="Kurz" date="1873" rank="genus">calocedrus</taxon_name>
-    <taxon_name authority="(Torrey) Florin" date="1956" rank="species">decurrens</taxon_name>
+    <taxon_name rank="family" authority="Bartlett" date="unknown">cupressaceae</taxon_name>
+    <taxon_name rank="genus" authority="Kurz" date="1873">calocedrus</taxon_name>
+    <taxon_name rank="species" authority="(Torrey) Florin" date="1956">decurrens</taxon_name>
     <place_of_publication>
       <publication_title>Taxon</publication_title>
       <place_in_publication>5: 192. 1956</place_in_publication>
@@ -26,134 +18,18 @@
     <taxon_hierarchy>family cupressaceae;genus calocedrus;species decurrens</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Libocedrus</taxon_name>
-    <taxon_name authority="Torrey" date="unknown" rank="species">decurrens</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Libocedrus</taxon_name>
+    <taxon_name rank="species" authority="Torrey" date="unknown">decurrens</taxon_name>
     <place_of_publication>
       <publication_title>Smithsonian Contr. Knowl.</publication_title>
       <place_in_publication>5(1) [6(2)]: 7, plate 3. 1853</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Libocedrus;species decurrens;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees to 57 m;</text>
-      <biological_entity id="o10813" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="57" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk to 3.6 m diam.</text>
-      <biological_entity id="o10814" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="3.6" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Bark cinnamon brown, fibrous, furrowed and ridged.</text>
-      <biological_entity id="o10815" name="bark" name_original="bark" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s2" value="cinnamon brown" />
-        <character is_modifier="false" name="texture" src="d0_s2" value="fibrous" />
-        <character is_modifier="false" name="architecture" src="d0_s2" value="furrowed" />
-        <character is_modifier="false" name="shape" src="d0_s2" value="ridged" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Branchlet segments mostly 2 or more times longer than wide, broadening distally.</text>
-      <biological_entity constraint="branchlet" id="o10816" name="segment" name_original="segments" src="d0_s3" type="structure">
-        <character is_modifier="false" name="length_or_size" src="d0_s3" value="mostly longer than wide" />
-        <character name="quantity" src="d0_s3" unit="or moretimes" value="2" />
-        <character is_modifier="false" name="length_or_size" src="d0_s3" value="mostly longer than wide" />
-        <character is_modifier="false" modifier="distally" name="size" src="d0_s3" value="broadening" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Leaves 3-14 mm, including long-decurrent base, rounded abaxially, apex acute (often abruptly), usually mucronate.</text>
-      <biological_entity id="o10817" name="leaf" name_original="leaves" src="d0_s4" type="structure">
-        <character char_type="range_value" from="3" from_unit="mm" name="some_measurement" src="d0_s4" to="14" to_unit="mm" />
-        <character is_modifier="false" modifier="abaxially" name="shape" src="d0_s4" value="rounded" />
-      </biological_entity>
-      <biological_entity id="o10818" name="base" name_original="base" src="d0_s4" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s4" value="long-decurrent" />
-      </biological_entity>
-      <biological_entity id="o10819" name="apex" name_original="apex" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s4" value="acute" />
-        <character is_modifier="false" modifier="usually" name="shape" src="d0_s4" value="mucronate" />
-      </biological_entity>
-      <relation from="o10817" id="r2454" name="including" negation="false" src="d0_s4" to="o10818" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Pollen cones redbrown to light-brown.</text>
-      <biological_entity constraint="pollen" id="o10820" name="cone" name_original="cones" src="d0_s5" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s5" value="redbrown" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s5" value="light-brown" />
-        <character char_type="range_value" from="redbrown" name="coloration" src="d0_s5" to="light-brown" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Seed-cones oblong-ovate when closed, redbrown to golden brown, proximal scales often reflexed at cone maturity, median scales then widely spreading to recurved, distal scales erect.</text>
-      <biological_entity id="o10821" name="seed-cone" name_original="seed-cones" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="when closed" name="shape" src="d0_s6" value="oblong-ovate" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s6" value="redbrown" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s6" value="golden brown" />
-        <character char_type="range_value" from="redbrown" name="coloration" src="d0_s6" to="golden brown" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="o10822" name="scale" name_original="scales" src="d0_s6" type="structure">
-        <character constraint="at cone" constraintid="o10823" is_modifier="false" modifier="often" name="orientation" src="d0_s6" value="reflexed" />
-      </biological_entity>
-      <biological_entity id="o10823" name="cone" name_original="cone" src="d0_s6" type="structure">
-        <character is_modifier="false" name="life_cycle" src="d0_s6" value="maturity" />
-      </biological_entity>
-      <biological_entity constraint="median" id="o10824" name="scale" name_original="scales" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="widely" name="orientation" notes="[duplicate value]" src="d0_s6" value="spreading" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s6" value="recurved" />
-        <character char_type="range_value" from="widely spreading" name="orientation" src="d0_s6" to="recurved" />
-      </biological_entity>
-      <biological_entity constraint="distal" id="o10825" name="scale" name_original="scales" src="d0_s6" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s6" value="erect" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Seeds 4 or fewer in cone, 14-25 mm (including wings), light-brown.</text>
-      <biological_entity id="o10827" name="cone" name_original="cone" src="d0_s7" type="structure" />
-    </statement>
-    <statement id="d0_s8">
-      <text>2 n = 22.</text>
-      <biological_entity id="o10826" name="seed" name_original="seeds" src="d0_s7" type="structure">
-        <character name="quantity" src="d0_s7" unit="or fewerin" value="4" />
-        <character char_type="range_value" from="14" from_unit="mm" name="some_measurement" notes="" src="d0_s7" to="25" to_unit="mm" />
-        <character is_modifier="false" name="coloration" src="d0_s7" value="light-brown" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o10828" name="chromosome" name_original="" src="d0_s8" type="structure">
-        <character name="quantity" src="d0_s8" value="22" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Montane forests;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="montane forests ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>300--2800 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2800" to_unit="m" from="300" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Calif., Nev., Oreg.; Mexico in Baja California.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Nev." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
-        <character name="distribution" value="Mexico in Baja California" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees  to 57 m; trunk to 3.6 m diam.  Bark  cinnamon brown, fibrous, furrowed and ridged.  Branchlet  segments mostly 2 or more times longer than wide, broadening distally.  Leaves  3--14 mm, including long-decurrent base, rounded abaxially, apex acute (often abruptly), usually mucronate.  Pollen cones  red-brown to light brown.  Seed cones  oblong-ovate when closed, red-brown to golden brown, proximal scales often reflexed at cone maturity, median scales then widely spreading to recurved, distal scales erect.  Seeds  4 or fewer in cone, 14--25 mm (including wings), light brown. 2 n  = 22.</description>
+  <description type="habitat">Montane forests;</description>
+  <description type="elevation">300--2800 m;</description>
+  <description type="distribution">Calif., Nev., Oreg.; Mexico in Baja California.</description>
   <number>1</number>
   <other_name type="common_name">Incense-cedar</other_name>
   <other_name type="common_name">cedro incienso</other_name>

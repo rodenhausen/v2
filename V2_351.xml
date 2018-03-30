@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">pinus</taxon_name>
-    <taxon_name authority="Engelmann in Wislizenus" date="1848" rank="species">edulis</taxon_name>
+    <taxon_name rank="family" authority="Lindley" date="unknown">pinaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">pinus</taxon_name>
+    <taxon_name rank="species" authority="Engelmann in Wislizenus" date="1848">edulis</taxon_name>
     <place_of_publication>
       <publication_title>in Wislizenus,Mem. Tour N. Mexico</publication_title>
       <place_in_publication>88. 1848</place_in_publication>
@@ -26,357 +18,24 @@
     <taxon_hierarchy>family pinaceae;genus pinus;species edulis</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Caryopitys</taxon_name>
-    <taxon_name authority="(Engelmann) Small" date="unknown" rank="species">edulis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Caryopitys</taxon_name>
+    <taxon_name rank="species" authority="(Engelmann) Small" date="unknown">edulis</taxon_name>
     <taxon_hierarchy>genus Caryopitys;species edulis;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pinus</taxon_name>
-    <taxon_name authority="Zuccarini" date="unknown" rank="species">cembroides</taxon_name>
-    <taxon_name authority="(Engelmann) Voss" date="unknown" rank="variety">edulis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pinus</taxon_name>
+    <taxon_name rank="species" authority="Zuccarini" date="unknown">cembroides</taxon_name>
+    <taxon_name rank="variety" authority="(Engelmann) Voss" date="unknown">edulis</taxon_name>
     <taxon_hierarchy>genus Pinus;species cembroides;variety edulis;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Shrubs or trees to 21m;</text>
-      <biological_entity id="o8110" name="shrub" name_original="shrubs" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="21" to_unit="m" />
-      </biological_entity>
-      <biological_entity id="o8111" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="21" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk to 0.6m diam., strongly tapering, erect;</text>
-      <biological_entity id="o8112" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="0.6" to_unit="m" />
-        <character is_modifier="false" modifier="strongly" name="shape" src="d0_s1" value="tapering" />
-        <character is_modifier="false" name="orientation" src="d0_s1" value="erect" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>crown conic, rounded, dense.</text>
-      <biological_entity id="o8113" name="crown" name_original="crown" src="d0_s2" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s2" value="conic" />
-        <character is_modifier="false" name="shape" src="d0_s2" value="rounded" />
-        <character is_modifier="false" name="density" src="d0_s2" value="dense" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Bark redbrown, shallowly and irregularly furrowed, ridges scaly, rounded.</text>
-      <biological_entity id="o8114" name="bark" name_original="bark" src="d0_s3" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s3" value="redbrown" />
-        <character is_modifier="false" modifier="shallowly; irregularly" name="architecture" src="d0_s3" value="furrowed" />
-      </biological_entity>
-      <biological_entity id="o8115" name="ridge" name_original="ridges" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture_or_pubescence" src="d0_s3" value="scaly" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="rounded" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Branches persistent to near trunk base;</text>
-      <biological_entity id="o8116" name="branch" name_original="branches" src="d0_s4" type="structure">
-        <character constraint="to trunk base" constraintid="o8117" is_modifier="false" name="duration" src="d0_s4" value="persistent" />
-      </biological_entity>
-      <biological_entity constraint="trunk" id="o8117" name="base" name_original="base" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>twigs pale redbrown to tan, rarely glaucous, aging gray-brown to gray, glabrous to papillose-puberulent.</text>
-      <biological_entity id="o8118" name="twig" name_original="twigs" src="d0_s5" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s5" value="pale redbrown" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s5" value="tan" />
-        <character char_type="range_value" from="pale redbrown" name="coloration" src="d0_s5" to="tan" />
-        <character is_modifier="false" modifier="rarely" name="pubescence" src="d0_s5" value="glaucous" />
-        <character is_modifier="false" name="coloration" src="d0_s5" value="aging" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s5" value="gray-brown" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s5" value="gray" />
-        <character char_type="range_value" from="gray-brown" name="coloration" src="d0_s5" to="gray" />
-        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d0_s5" value="glabrous" />
-        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d0_s5" value="papillose-puberulent" />
-        <character char_type="range_value" from="glabrous" name="pubescence" src="d0_s5" to="papillose-puberulent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Buds ovoid to ellipsoid, redbrown, 0.5-1cm, resinous.</text>
-      <biological_entity id="o8119" name="bud" name_original="buds" src="d0_s6" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="ovoid" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="ellipsoid" />
-        <character char_type="range_value" from="ovoid" name="shape" src="d0_s6" to="ellipsoid" />
-        <character is_modifier="false" name="coloration" src="d0_s6" value="redbrown" />
-        <character char_type="range_value" from="0.5" from_unit="cm" name="some_measurement" src="d0_s6" to="1" to_unit="cm" />
-        <character is_modifier="false" name="coating" src="d0_s6" value="resinous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Leaves (1-) 2 (-3) per fascicle, upcurved, persisting 4-6 years, 2-4cm × (0.9-) 1-1.5mm, connivent, 2-sided (1-leaved fascicles with leaves 2-grooved, 3-leaved fascicles with leaves 3-sided), blue-green, all surfaces marked with pale stomatal bands, particularly the adaxial, margins entire or finely serrulate, apex narrowly acute to subulate;</text>
-      <biological_entity id="o8120" name="leaf" name_original="leaves" src="d0_s7" type="structure">
-        <character char_type="range_value" from="1" name="atypical_quantity" src="d0_s7" to="2" to_inclusive="false" />
-        <character char_type="range_value" from="2" from_inclusive="false" name="atypical_quantity" src="d0_s7" to="3" />
-        <character constraint="per fascicle" constraintid="o8121" name="quantity" src="d0_s7" value="2" />
-        <character is_modifier="false" name="orientation" notes="" src="d0_s7" value="upcurved" />
-        <character is_modifier="false" name="duration" src="d0_s7" value="persisting" />
-        <character char_type="range_value" from="4" name="quantity" src="d0_s7" to="6" />
-        <character char_type="range_value" from="2" from_unit="cm" name="length" src="d0_s7" to="4" to_unit="cm" />
-        <character char_type="range_value" from="0.9" from_unit="mm" name="atypical_width" src="d0_s7" to="1" to_inclusive="false" to_unit="mm" />
-        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s7" to="1.5" to_unit="mm" />
-        <character is_modifier="false" name="arrangement" src="d0_s7" value="connivent" />
-        <character is_modifier="false" name="coloration" src="d0_s7" value="blue-green" />
-      </biological_entity>
-      <biological_entity id="o8121" name="fascicle" name_original="fascicle" src="d0_s7" type="structure" />
-      <biological_entity id="o8122" name="surface" name_original="surfaces" src="d0_s7" type="structure" />
-      <biological_entity id="o8123" name="stomatal" name_original="stomatal" src="d0_s7" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s7" value="pale" />
-      </biological_entity>
-      <biological_entity id="o8124" name="band" name_original="bands" src="d0_s7" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s7" value="pale" />
-      </biological_entity>
-      <biological_entity constraint="adaxial" id="o8125" name="surface" name_original="surfaces" src="d0_s7" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s7" value="pale" />
-      </biological_entity>
-      <biological_entity id="o8126" name="margin" name_original="margins" src="d0_s7" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s7" value="entire" />
-        <character is_modifier="false" modifier="finely" name="architecture_or_shape" src="d0_s7" value="serrulate" />
-      </biological_entity>
-      <biological_entity id="o8127" name="apex" name_original="apex" src="d0_s7" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s7" value="acute" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s7" value="subulate" />
-        <character char_type="range_value" from="narrowly acute" name="shape" src="d0_s7" to="subulate" />
-      </biological_entity>
-      <relation from="o8122" id="r1898" name="marked with" negation="false" src="d0_s7" to="o8123" />
-      <relation from="o8122" id="r1899" name="marked with" negation="false" src="d0_s7" to="o8124" />
-      <relation from="o8122" id="r1900" name="marked with" negation="false" src="d0_s7" to="o8125" />
-    </statement>
-    <statement id="d0_s8">
-      <text>sheath 0.5-0.7cm, scales soon recurved, forming rosette, shed early.</text>
-      <biological_entity id="o8128" name="sheath" name_original="sheath" src="d0_s8" type="structure">
-        <character char_type="range_value" from="0.5" from_unit="cm" name="some_measurement" src="d0_s8" to="0.7" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o8129" name="scale" name_original="scales" src="d0_s8" type="structure">
-        <character is_modifier="false" modifier="soon" name="orientation" src="d0_s8" value="recurved" />
-      </biological_entity>
-      <biological_entity id="o8130" name="rosette" name_original="rosette" src="d0_s8" type="structure" />
-      <relation from="o8129" id="r1901" name="forming" negation="false" src="d0_s8" to="o8130" />
-    </statement>
-    <statement id="d0_s9">
-      <text>Pollen cones ellipsoid, ca. 7mm, yellowish to redbrown.</text>
-      <biological_entity constraint="pollen" id="o8131" name="cone" name_original="cones" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s9" value="ellipsoid" />
-        <character name="some_measurement" src="d0_s9" unit="mm" value="7" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s9" value="yellowish" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s9" value="redbrown" />
-        <character char_type="range_value" from="yellowish" name="coloration" src="d0_s9" to="redbrown" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>Seed-cones maturing in 2 years, shedding seeds and falling soon thereafter, spreading, symmetric, ovoid before opening, depressed-ovoid to nearly globose when open, ca.</text>
-      <biological_entity id="o8133" name="year" name_original="years" src="d0_s10" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s10" value="2" />
-      </biological_entity>
-      <biological_entity id="o8134" name="seed" name_original="seeds" src="d0_s10" type="structure" />
-      <biological_entity id="o8135" name="opening" name_original="opening" src="d0_s10" type="structure" />
-      <relation from="o8132" id="r1902" name="shedding" negation="false" src="d0_s10" to="o8134" />
-    </statement>
-    <statement id="d0_s11">
-      <text>(3.5-) 4 (-5) cm, pale-yellow to pale redbrown, resinous, nearly sessile to short-stalked;</text>
-      <biological_entity id="o8132" name="cone-seed" name_original="seed-cones" src="d0_s10" type="structure">
-        <character constraint="in years" constraintid="o8133" is_modifier="false" name="life_cycle" src="d0_s10" value="maturing" />
-        <character is_modifier="false" modifier="soon thereafter; thereafter" name="life_cycle" src="d0_s10" value="falling" />
-        <character is_modifier="false" name="orientation" src="d0_s10" value="spreading" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s10" value="symmetric" />
-        <character constraint="before opening" constraintid="o8135" is_modifier="false" name="shape" src="d0_s10" value="ovoid" />
-        <character is_modifier="false" modifier="when open" name="shape" notes="[duplicate value]" src="d0_s10" value="depressed-ovoid" />
-        <character is_modifier="false" modifier="when open" name="shape" notes="[duplicate value]" src="d0_s10" value="globose" />
-        <character char_type="range_value" from="depressed-ovoid" modifier="when open" name="shape" notes="" src="d0_s10" to="nearly globose" />
-        <character char_type="range_value" from="3.5" from_unit="cm" name="atypical_distance" src="d0_s11" to="4" to_inclusive="false" to_unit="cm" />
-        <character char_type="range_value" from="4" from_inclusive="false" from_unit="cm" name="atypical_distance" src="d0_s11" to="5" to_unit="cm" />
-        <character name="distance" src="d0_s11" unit="cm" value="4" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s11" value="pale-yellow" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s11" value="pale redbrown" />
-        <character char_type="range_value" from="pale-yellow" name="coloration" src="d0_s11" to="pale redbrown" />
-        <character is_modifier="false" name="coating" src="d0_s11" value="resinous" />
-        <character is_modifier="false" modifier="nearly" name="architecture" notes="[duplicate value]" src="d0_s11" value="sessile" />
-        <character is_modifier="false" name="architecture" notes="[duplicate value]" src="d0_s11" value="short-stalked" />
-        <character char_type="range_value" from="nearly sessile" name="architecture" src="d0_s11" to="short-stalked" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s12">
-      <text>apophyses thickened, raised, angulate;</text>
-      <biological_entity id="o8136" name="apophysis" name_original="apophyses" src="d0_s12" type="structure">
-        <character is_modifier="false" name="size_or_width" src="d0_s12" value="thickened" />
-        <character is_modifier="false" name="prominence" src="d0_s12" value="raised" />
-        <character is_modifier="false" name="shape" src="d0_s12" value="angulate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s13">
-      <text>umbo subcentral, slightly raised or depressed, truncate or umbilicate.</text>
-      <biological_entity id="o8137" name="umbo" name_original="umbo" src="d0_s13" type="structure">
-        <character is_modifier="false" name="position" src="d0_s13" value="subcentral" />
-        <character is_modifier="false" modifier="slightly" name="prominence" src="d0_s13" value="raised" />
-        <character is_modifier="false" name="shape" src="d0_s13" value="depressed" />
-        <character is_modifier="false" name="shape" src="d0_s13" value="truncate" />
-        <character is_modifier="false" name="shape" src="d0_s13" value="umbilicate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s14">
-      <text>Seeds mostly ellipsoid to obovoid;</text>
-      <biological_entity id="o8138" name="seed" name_original="seeds" src="d0_s14" type="structure">
-        <character is_modifier="false" modifier="mostly" name="shape" notes="[duplicate value]" src="d0_s14" value="ellipsoid" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s14" value="obovoid" />
-        <character char_type="range_value" from="mostly ellipsoid" name="shape" src="d0_s14" to="obovoid" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s15">
-      <text>body 10-15mm, brown, wingless.</text>
-    </statement>
-    <statement id="d0_s16">
-      <text>2 n =24.</text>
-      <biological_entity id="o8139" name="body" name_original="body" src="d0_s15" type="structure">
-        <character char_type="range_value" from="10" from_unit="mm" name="some_measurement" src="d0_s15" to="15" to_unit="mm" />
-        <character is_modifier="false" name="coloration" src="d0_s15" value="brown" />
-        <character is_modifier="false" name="architecture" src="d0_s15" value="wingless" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o8140" name="chromosome" name_original="" src="d0_s16" type="structure">
-        <character name="quantity" src="d0_s16" value="24" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Dry mountain slopes, mesas, plateaus, and pinyon-juniper woodland;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="dry mountain slopes" />
-        <character name="habitat" value="mesas" />
-        <character name="habitat" value="plateaus" />
-        <character name="habitat" value="and pinyon-juniper woodland ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>1500--2100(--2700)m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2100" to_unit="m" from="1500" from_unit="m" />
-        <character name="elevation" char_type="atypical_range" to="2700" to_unit="m" from="1500" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., Calif., Colo., N.Mex., Okla., Tex., Utah, Wyo.; Mexico in Chihuahua.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Colo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Utah" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wyo." establishment_means="native" />
-        <character name="distribution" value="Mexico in Chihuahua" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Shrubs or trees  to 21m; trunk to 0.6m diam., strongly tapering, erect; crown conic, rounded, dense.  Bark  red-brown, shallowly and irregularly furrowed, ridges scaly, rounded.  Branches  persistent to near trunk base; twigs pale red-brown to tan, rarely glaucous, aging gray-brown to gray, glabrous to papillose-puberulent.  Buds  ovoid to ellipsoid, red-brown, 0.5--1cm, resinous.  Leaves  (1--)2(--3) per fascicle, upcurved, persisting 4--6 years, 2--4cm × (0.9--)1--1.5mm, connivent, 2-sided (1-leaved fascicles with leaves 2-grooved, 3-leaved fascicles with leaves 3-sided), blue-green, all surfaces marked with pale stomatal bands, particularly the adaxial, margins entire or finely serrulate, apex narrowly acute to subulate; sheath 0.5--0.7cm, scales soon recurved, forming rosette, shed early.  Pollen cones  ellipsoid, ca. 7mm, yellowish to red-brown.  Seed cones  maturing in 2 years, shedding seeds and falling soon thereafter, spreading, symmetric, ovoid before opening, depressed-ovoid to nearly globose when open, ca. (3.5--)4(--5)cm, pale yellow- to pale red-brown, resinous, nearly sessile to short-stalked; apophyses thickened, raised, angulate; umbo subcentral, slightly raised or depressed, truncate or umbilicate.  Seeds  mostly ellipsoid to obovoid; body 10--15mm, brown, wingless. 2 n =24.</description>
+  <description type="habitat">Dry mountain slopes, mesas, plateaus, and pinyon-juniper woodland;</description>
+  <description type="elevation">1500--2100(--2700)m;</description>
+  <description type="distribution">Ariz., Calif., Colo., N.Mex., Okla., Tex., Utah, Wyo.; Mexico in Chihuahua.</description>
   <number>8</number>
   <other_name type="common_name">Pinyon</other_name>
   <other_name type="common_name">piñón</other_name>
   <discussion>Pinus edulis var. fallax Little ( P . californiarum subsp. fallax (Little) D.K.Bailey) appears to combine features of P . edulis and P . monophylla . More study is needed.</discussion>
   <discussion>Seeds of Pinus edulis , the commonest southwestern United States pinyon, are much eaten and traded by Native Americans.</discussion>
   <discussion>Pinyon ( Pinus edulis ) is the state tree of New Mexico.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_300_d26_s0">
-      <text>Leaves (1-) 2 (-3) per fascicle;</text>
-      <biological_entity id="from_key_V2_300_o6429" name="leaf" name_original="leaves" src="d26_s0" type="structure">
-        <character char_type="range_value" from="1" name="atypical_count" src="d26_s0" to="2" to_inclusive="false" />
-        <character char_type="range_value" from="2" from_inclusive="false" name="atypical_count" src="d26_s0" to="3" />
-        <character constraint="per fascicle" constraintid="o6430" name="count" src="d26_s0" value="2" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_300_o6430" name="fascicle" name_original="fascicle" src="d26_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_300_d26_s1">
-      <text>trees in n Mexico and Rocky Mountains northward, rarely in California Sierra Nevada.</text>
-      <biological_entity id="from_key_V2_300_o6431" name="tree" name_original="trees" src="d26_s1" type="structure" />
-      <biological_entity id="from_key_V2_300_o6432" name="california" name_original="california" src="d26_s1" type="structure" />
-      <relation from="from_key_V2_300_o6431" id="from_key_V2_300_r1480" modifier="in n mexico and rocky mountains; rarely" name="in" negation="false" src="d26_s1" to="from_key_V2_300_o6432" />
-    </statement>
-    <statement id="from_key_V2_300_d24_s0">
-      <text>Leaves at least 1 mm wide, (1-) 2-4 per fascicle.</text>
-      <biological_entity id="from_key_V2_300_o6424" name="leaf" name_original="leaves" src="d24_s0" type="structure">
-        <character name="width" src="d24_s0" unit="mm" value="1" />
-        <character char_type="range_value" from="1" name="atypical_count" src="d24_s0" to="2" to_inclusive="false" />
-        <character char_type="range_value" constraint="per fascicle" constraintid="o6425" from="2" name="count" src="d24_s0" to="4" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_300_o6425" name="fascicle" name_original="fascicle" src="d24_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_300_d22_s0">
-      <text>Leaves mostly 2-4 (-5) per fascicle, mostly 2-3-sided.</text>
-      <biological_entity id="from_key_V2_300_o6420" name="leaf" name_original="leaves" src="d22_s0" type="structure">
-        <character char_type="range_value" from="4" from_inclusive="false" name="atypical_count" src="d22_s0" to="5" />
-        <character char_type="range_value" constraint="per fascicle" constraintid="o6421" from="2" name="count" src="d22_s0" to="4" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_300_o6421" name="fascicle" name_original="fascicle" src="d22_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_300_d4_s0">
-      <text>Leaves mostly 1-4 per fascicle, terete or 2-3-sided, stiff and strongly incurved;</text>
-      <biological_entity id="from_key_V2_300_o6321" name="fascicle" name_original="fascicle" src="d4_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_300_d4_s1">
-      <text>open seed-cones depressed-ovoid to nearly globose;</text>
-      <biological_entity id="from_key_V2_300_o6320" name="leaf" name_original="leaves" src="d4_s0" type="structure">
-        <character char_type="range_value" constraint="per fascicle" constraintid="o6321" from="1" name="count" src="d4_s0" to="4" />
-        <character is_modifier="false" name="shape" notes="alterIDs:o6321" src="d4_s0" value="terete" />
-        <character name="shape" src="d4_s0" value="2-3-sided" />
-        <character is_modifier="false" name="fragility" src="d4_s0" value="stiff" />
-        <character is_modifier="false" modifier="strongly" name="orientation" src="d4_s0" value="incurved" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s1" value="depressed-ovoid" />
-        <character is_modifier="false" modifier="nearly" name="shape" notes="[duplicate value]" src="d4_s1" value="globose" />
-        <character char_type="range_value" from="depressed-ovoid" name="shape" src="d4_s1" to="nearly globose" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_300_o6322" name="seed-cone" name_original="seed-cones" src="d4_s1" type="structure" />
-      <relation from="from_key_V2_300_o6320" id="from_key_V2_300_r1456" name="open" negation="false" src="d4_s1" to="from_key_V2_300_o6322" />
-    </statement>
-    <statement id="from_key_V2_300_d4_s2">
-      <text>seeds wingless.</text>
-      <biological_entity id="from_key_V2_300_o6323" name="seed" name_original="seeds" src="d4_s2" type="structure">
-        <character is_modifier="false" name="architecture" src="d4_s2" value="wingless" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_300_d1_s0">
-      <text>Leaves in cross-section with 1 fibrovascular bundle;</text>
-      <biological_entity id="from_key_V2_300_o6295" name="leaf" name_original="leaves" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_300_o6296" name="cross-section" name_original="cross-section" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_300_o6297" name="fibrovascular" name_original="fibrovascular" src="d1_s0" type="structure">
-        <character is_modifier="true" name="count" src="d1_s0" value="1" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_300_o6298" name="bundle" name_original="bundle" src="d1_s0" type="structure">
-        <character is_modifier="true" name="count" src="d1_s0" value="1" />
-      </biological_entity>
-      <relation from="from_key_V2_300_o6295" id="from_key_V2_300_r1444" name="in" negation="false" src="d1_s0" to="from_key_V2_300_o6296" />
-      <relation from="from_key_V2_300_o6296" id="from_key_V2_300_r1445" name="with" negation="false" src="d1_s0" to="from_key_V2_300_o6297" />
-      <relation from="from_key_V2_300_o6296" id="from_key_V2_300_r1446" name="with" negation="false" src="d1_s0" to="from_key_V2_300_o6298" />
-    </statement>
-    <statement id="from_key_V2_300_d1_s1">
-      <text>scales of fascicle sheaths shed early, not falling with fascicle, these and bud-scales mostly with margins entire, less often finely ciliate or finely fringed;</text>
-      <biological_entity id="from_key_V2_300_o6299" name="scale" name_original="scales" src="d1_s1" type="structure" />
-      <biological_entity constraint="fascicle" id="from_key_V2_300_o6300" name="sheath" name_original="sheaths" src="d1_s1" type="structure" />
-      <biological_entity id="from_key_V2_300_o6301" name="fascicle" name_original="fascicle" src="d1_s1" type="structure">
-        <character is_modifier="true" modifier="not" name="life_cycle" src="d1_s1" value="falling" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_300_o6302" name="bud-scale" name_original="bud-scales" src="d1_s1" type="structure">
-        <character is_modifier="false" modifier="less often; often finely" name="shape" src="d1_s1" value="ciliate" />
-        <character is_modifier="false" modifier="finely" name="shape" src="d1_s1" value="fringed" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_300_o6303" name="margin" name_original="margins" src="d1_s1" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d1_s1" value="entire" />
-      </biological_entity>
-      <relation from="from_key_V2_300_o6299" id="from_key_V2_300_r1447" name="part_of" negation="false" src="d1_s1" to="from_key_V2_300_o6300" />
-      <relation from="from_key_V2_300_o6299" id="from_key_V2_300_r1448" name="shed early" negation="false" src="d1_s1" to="from_key_V2_300_o6301" />
-      <relation from="from_key_V2_300_o6302" id="from_key_V2_300_r1449" name="with" negation="false" src="d1_s1" to="from_key_V2_300_o6303" />
-    </statement>
-    <statement id="from_key_V2_300_d1_s2">
-      <text>seed-cones unarmed (except in P. balfouriana, P. aristata, P. longaeva) (subg. Strobus).</text>
-      <biological_entity id="from_key_V2_300_o6304" name="seed-cone" name_original="seed-cones" src="d1_s2" type="structure">
-        <character is_modifier="false" name="architecture" src="d1_s2" value="unarmed" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

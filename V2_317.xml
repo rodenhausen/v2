@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Willkomm in Willkomm &amp; Lange" date="unknown" rank="family">selaginellaceae</taxon_name>
-    <taxon_name authority="Palisot de Beauvois" date="1805" rank="genus">selaginella</taxon_name>
-    <taxon_name authority="(Palisot de Beauvois) Baker" date="1883" rank="subgenus">stachygynandrum</taxon_name>
-    <taxon_name authority="(Kunze) A. Braun" date="1860" rank="species">kraussiana</taxon_name>
+    <taxon_name rank="family" authority="Willkomm in Willkomm &amp; Lange" date="unknown">selaginellaceae</taxon_name>
+    <taxon_name rank="genus" authority="Palisot de Beauvois" date="1805">selaginella</taxon_name>
+    <taxon_name rank="subgenus" authority="(Palisot de Beauvois) Baker" date="1883">stachygynandrum</taxon_name>
+    <taxon_name rank="species" authority="(Kunze) A. Braun" date="1860">kraussiana</taxon_name>
     <place_of_publication>
       <publication_title>Index Seminum (Berlin)</publication_title>
       <place_in_publication>App. 22. 1860</place_in_publication>
@@ -27,254 +19,19 @@
     <taxon_hierarchy>family selaginellaceae;genus selaginella;subgenus stachygynandrum;species kraussiana</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Lycopodium</taxon_name>
-    <taxon_name authority="Kunze" date="unknown" rank="species">kraussianum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Lycopodium</taxon_name>
+    <taxon_name rank="species" authority="Kunze" date="unknown">kraussianum</taxon_name>
     <place_of_publication>
       <publication_title>Linnaea</publication_title>
       <place_in_publication>18: 114. 1844</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Lycopodium;species kraussianum;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants terrestrial, forming diffuse mats.</text>
-      <biological_entity id="o7184" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="terrestrial" />
-      </biological_entity>
-      <biological_entity id="o7185" name="mat" name_original="mats" src="d0_s0" type="structure">
-        <character is_modifier="true" name="density" src="d0_s0" value="diffuse" />
-      </biological_entity>
-      <relation from="o7184" id="r1692" name="forming" negation="false" src="d0_s0" to="o7185" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems long-creeping, branched, branches 3-forked, flat, articulate, glabrous.</text>
-      <biological_entity id="o7186" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="long-creeping" />
-        <character is_modifier="false" name="architecture" src="d0_s1" value="branched" />
-      </biological_entity>
-      <biological_entity id="o7187" name="branch" name_original="branches" src="d0_s1" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s1" value="3-forked" />
-        <character is_modifier="false" name="prominence_or_shape" src="d0_s1" value="flat" />
-        <character is_modifier="false" name="architecture" src="d0_s1" value="articulate" />
-        <character is_modifier="false" name="pubescence" src="d0_s1" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Rhizophores borne on upperside of stems throughout stem length, 1-3 mm diam.</text>
-      <biological_entity id="o7188" name="rhizophore" name_original="rhizophores" src="d0_s2" type="structure">
-        <character char_type="range_value" from="1" from_unit="mm" name="diameter" src="d0_s2" to="3" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o7189" name="upperside" name_original="upperside" src="d0_s2" type="structure" />
-      <biological_entity id="o7190" name="stem" name_original="stems" src="d0_s2" type="structure" />
-      <relation from="o7188" id="r1693" name="borne on" negation="false" src="d0_s2" to="o7189" />
-      <relation from="o7188" id="r1694" name="part_of" negation="false" src="d0_s2" to="o7190" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Leaves delicate, papery.</text>
-      <biological_entity id="o7191" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="false" name="fragility" src="d0_s3" value="delicate" />
-        <character is_modifier="false" name="texture" src="d0_s3" value="papery" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Lateral leaves nearly perpendicular to stem, well spaced, green, lanceolate, 2.5-3.6 X 0.8-1.2 mm;</text>
-      <biological_entity constraint="lateral" id="o7192" name="leaf" name_original="leaves" src="d0_s4" type="structure">
-        <character constraint="to stem" constraintid="o7193" is_modifier="false" modifier="nearly" name="orientation" src="d0_s4" value="perpendicular" />
-        <character is_modifier="false" modifier="well" name="arrangement" notes="" src="d0_s4" value="spaced" />
-        <character is_modifier="false" name="coloration" src="d0_s4" value="green" />
-        <character is_modifier="false" name="shape" src="d0_s4" value="lanceolate" />
-        <character char_type="range_value" from="2.5" from_unit="mm" name="length" src="d0_s4" to="3.6" to_unit="mm" />
-        <character char_type="range_value" from="0.8" from_unit="mm" name="width" src="d0_s4" to="1.2" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o7193" name="stem" name_original="stem" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>base rounded;</text>
-      <biological_entity id="o7194" name="base" name_original="base" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="rounded" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>margins slightly transparent to green, dentate;</text>
-      <biological_entity id="o7195" name="margin" name_original="margins" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="slightly" name="coloration" notes="[duplicate value]" src="d0_s6" value="transparent" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s6" value="green" />
-        <character char_type="range_value" from="slightly transparent" name="coloration" src="d0_s6" to="green" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s6" value="dentate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>apex acute.</text>
-      <biological_entity id="o7196" name="apex" name_original="apex" src="d0_s7" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s7" value="acute" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>Median leaves lanceolate to linear-lanceolate, 2-2.7 X 0.6-0.8 mm;</text>
-      <biological_entity constraint="median" id="o7197" name="leaf" name_original="leaves" src="d0_s8" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="linear-lanceolate" />
-        <character char_type="range_value" from="lanceolate" name="shape" src="d0_s8" to="linear-lanceolate" />
-        <character char_type="range_value" from="2" from_unit="mm" name="length" src="d0_s8" to="2.7" to_unit="mm" />
-        <character char_type="range_value" from="0.6" from_unit="mm" name="width" src="d0_s8" to="0.8" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>base with small outer auricle;</text>
-      <biological_entity id="o7198" name="base" name_original="base" src="d0_s9" type="structure" />
-      <biological_entity constraint="outer" id="o7199" name="auricle" name_original="auricle" src="d0_s9" type="structure">
-        <character is_modifier="true" name="size" src="d0_s9" value="small" />
-      </biological_entity>
-      <relation from="o7198" id="r1695" name="with" negation="false" src="d0_s9" to="o7199" />
-    </statement>
-    <statement id="d0_s10">
-      <text>margins slightly transparent to green, dentate;</text>
-      <biological_entity id="o7200" name="margin" name_original="margins" src="d0_s10" type="structure">
-        <character is_modifier="false" modifier="slightly" name="coloration" notes="[duplicate value]" src="d0_s10" value="transparent" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s10" value="green" />
-        <character char_type="range_value" from="slightly transparent" name="coloration" src="d0_s10" to="green" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s10" value="dentate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>apex acuminate.</text>
-      <biological_entity id="o7201" name="apex" name_original="apex" src="d0_s11" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s11" value="acuminate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s12">
-      <text>Strobili solitary, 0.2-2.5 cm, with only 1 megasporangium, megasporangium basal;</text>
-      <biological_entity id="o7202" name="strobilus" name_original="strobili" src="d0_s12" type="structure">
-        <character is_modifier="false" name="architecture_or_arrangement_or_growth_form" src="d0_s12" value="solitary" />
-        <character char_type="range_value" from="0.2" from_unit="cm" name="some_measurement" src="d0_s12" to="2.5" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o7203" name="megasporangium" name_original="megasporangium" src="d0_s12" type="structure">
-        <character is_modifier="true" modifier="only" name="quantity" src="d0_s12" value="1" />
-      </biological_entity>
-      <biological_entity id="o7204" name="megasporangium" name_original="megasporangium" src="d0_s12" type="structure">
-        <character is_modifier="false" name="position" src="d0_s12" value="basal" />
-      </biological_entity>
-      <relation from="o7202" id="r1696" name="with" negation="false" src="d0_s12" to="o7203" />
-    </statement>
-    <statement id="d0_s13">
-      <text>sporophylls keeled, dentate, strongly tapering toward apex, base glabrous, margins denticulate, apex acuminate;</text>
-      <biological_entity id="o7205" name="sporophyll" name_original="sporophylls" src="d0_s13" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s13" value="keeled" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s13" value="dentate" />
-        <character constraint="toward apex" constraintid="o7206" is_modifier="false" modifier="strongly" name="shape" src="d0_s13" value="tapering" />
-      </biological_entity>
-      <biological_entity id="o7206" name="apex" name_original="apex" src="d0_s13" type="structure" />
-      <biological_entity id="o7207" name="base" name_original="base" src="d0_s13" type="structure">
-        <character is_modifier="false" name="pubescence" src="d0_s13" value="glabrous" />
-      </biological_entity>
-      <biological_entity id="o7208" name="margin" name_original="margins" src="d0_s13" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s13" value="denticulate" />
-      </biological_entity>
-      <biological_entity id="o7209" name="apex" name_original="apex" src="d0_s13" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s13" value="acuminate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s14">
-      <text>megasporophylls larger than microsporophylls, in groups of 4, 2 like vegetative leaves, 2 like sporophylls, of the latter 1 large, lanceolate-elliptic, 1 smaller, falcate-lanceolate;</text>
-      <biological_entity id="o7210" name="megasporophyll" name_original="megasporophylls" src="d0_s14" type="structure">
-        <character constraint="than microsporophylls" constraintid="o7211" is_modifier="false" name="size" src="d0_s14" value="larger" />
-        <character is_modifier="false" modifier="of the latter 1 large" name="arrangement_or_shape" notes="" src="d0_s14" value="lanceolate-elliptic" />
-        <character name="quantity" src="d0_s14" value="1" />
-        <character is_modifier="false" name="size" src="d0_s14" value="smaller" />
-        <character is_modifier="false" name="shape" src="d0_s14" value="falcate-lanceolate" />
-      </biological_entity>
-      <biological_entity id="o7211" name="microsporophyll" name_original="microsporophylls" src="d0_s14" type="structure" />
-      <biological_entity id="o7212" name="group" name_original="groups" src="d0_s14" type="structure">
-        <character name="quantity" src="d0_s14" value="2" />
-      </biological_entity>
-      <biological_entity id="o7213" name="leaf" name_original="leaves" src="d0_s14" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s14" value="4" />
-        <character is_modifier="true" name="quantity" src="d0_s14" value="2" />
-        <character is_modifier="true" name="shape" src="d0_s14" value="like" />
-        <character is_modifier="true" name="reproduction" src="d0_s14" value="vegetative" />
-      </biological_entity>
-      <biological_entity id="o7214" name="sporophyll" name_original="sporophylls" src="d0_s14" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s14" value="like" />
-      </biological_entity>
-      <relation from="o7210" id="r1697" name="in" negation="false" src="d0_s14" to="o7212" />
-      <relation from="o7212" id="r1698" name="part_of" negation="false" src="d0_s14" to="o7213" />
-    </statement>
-    <statement id="d0_s15">
-      <text>microsporophylls lanceolate to narrowly ovatelanceolate.</text>
-    </statement>
-    <statement id="d0_s16">
-      <text>2 n = 20.</text>
-      <biological_entity id="o7215" name="microsporophyll" name_original="microsporophylls" src="d0_s15" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s15" value="lanceolate" />
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s15" value="ovatelanceolate" />
-        <character char_type="range_value" from="lanceolate" name="shape" src="d0_s15" to="narrowly ovatelanceolate" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o7216" name="chromosome" name_original="" src="d0_s16" type="structure">
-        <character name="quantity" src="d0_s16" value="20" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Moist areas, riverbanks, lake margins, lawns;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="moist areas" />
-        <character name="habitat" value="riverbanks" />
-        <character name="habitat" value="lake margins" />
-        <character name="habitat" value="lawns ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--50 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="50" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>introduced; Ala., Ga.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="introduced" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  terrestrial, forming diffuse mats.  Stems  long-creeping, branched, branches 3-forked, flat, articulate, glabrous.  Rhizophores  borne on upperside of stems throughout stem length, 1--3 mm diam.  Leaves  delicate, papery.  Lateral leaves  nearly perpendicular to stem, well spaced, green, lanceolate, 2.5--3.6 X 0.8--1.2 mm; base rounded; margins slightly transparent to green, dentate; apex acute.  Median leaves  lanceolate to linear-lanceolate, 2--2.7 X 0.6--0.8 mm; base with small outer auricle; margins slightly transparent to green, dentate; apex acuminate.  Strobili  solitary, 0.2--2.5 cm, with only 1 megasporangium, megasporangium basal; sporophylls keeled, dentate, strongly tapering toward apex, base glabrous, margins denticulate, apex acuminate; megasporophylls larger than microsporophylls, in groups of 4, 2 like vegetative leaves, 2 like sporophylls, of the latter 1 large, lanceolate-elliptic, 1 smaller, falcate-lanceolate; microsporophylls lanceolate to narrowly ovate-lanceolate. 2 n  = 20.</description>
+  <description type="habitat">Moist areas, riverbanks, lake margins, lawns;</description>
+  <description type="elevation">0--50 m;</description>
+  <description type="distribution">introduced; Ala., Ga.</description>
   <number>35</number>
   <other_name type="common_name">Mat spike-moss</other_name>
   <discussion>Selaginella kraussiana has escaped from cultivation and is naturalized in central Georgia, and probably farther south and west. It has been reported as far north as coastal central California and northern Virginia (D. B. Lellinger 1985), but I have not seen specimens from these areas. Selaginella kraussiana is frequently cultivated and has several cultivars. It is widely used in morphologic and anatomic research and for teaching purposes. This species belongs to the series Articulatae Spring, a very distinct group of heterophyllous selaginellas with rhizophores on the upper side of the stem, special microsporangium type and dehiscence (P. Somers 1982), basal megasporangia, the largest megaspores in the genus, mostly spiny microspores, and usually more than one meristele. These and other characteristics suggest that series Articulatae probably deserves subgeneric ranking.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_812_d1_s0">
-      <text>Stems articulate or swollen;</text>
-      <biological_entity id="from_key_V2_812_o23720" name="stem" name_original="stems" src="d1_s0" type="structure">
-        <character is_modifier="false" name="architecture" src="d1_s0" value="articulate" />
-        <character is_modifier="false" name="shape" src="d1_s0" value="swollen" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_812_d1_s1">
-      <text>rhizophores on upperside of stems;</text>
-      <biological_entity id="from_key_V2_812_o23721" name="rhizophore" name_original="rhizophores" src="d1_s1" type="structure" />
-      <biological_entity id="from_key_V2_812_o23722" name="upperside" name_original="upperside" src="d1_s1" type="structure" />
-      <biological_entity id="from_key_V2_812_o23723" name="stem" name_original="stems" src="d1_s1" type="structure" />
-      <relation from="from_key_V2_812_o23721" id="from_key_V2_812_r5538" name="on" negation="false" src="d1_s1" to="from_key_V2_812_o23722" />
-      <relation from="from_key_V2_812_o23722" id="from_key_V2_812_r5539" name="part_of" negation="false" src="d1_s1" to="from_key_V2_812_o23723" />
-    </statement>
-    <statement id="from_key_V2_812_d1_s2">
-      <text>strobili with only 1 basal megasporangium;</text>
-      <biological_entity id="from_key_V2_812_o23724" name="strobilus" name_original="strobili" src="d1_s2" type="structure" />
-      <biological_entity constraint="basal" id="from_key_V2_812_o23725" name="megasporangium" name_original="megasporangium" src="d1_s2" type="structure">
-        <character is_modifier="true" modifier="only" name="count" src="d1_s2" value="1" />
-      </biological_entity>
-      <relation from="from_key_V2_812_o23724" id="from_key_V2_812_r5540" name="with" negation="false" src="d1_s2" to="from_key_V2_812_o23725" />
-    </statement>
-    <statement id="from_key_V2_812_d1_s3">
-      <text>megasporophylls larger than microsporophylls.</text>
-      <biological_entity id="from_key_V2_812_o23726" name="megasporophyll" name_original="megasporophylls" src="d1_s3" type="structure">
-        <character constraint="than microsporophylls" constraintid="o23727" is_modifier="false" name="size" src="d1_s3" value="larger" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_812_o23727" name="microsporophyll" name_original="microsporophylls" src="d1_s3" type="structure" />
-    </statement>
-  </description>
 </bio:treatment>

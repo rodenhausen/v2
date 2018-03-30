@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="C. Presl" date="unknown" rank="family">lygodiaceae</taxon_name>
-    <taxon_name authority="Swartz" date="1801" rank="genus">lygodium</taxon_name>
-    <taxon_name authority="(Cavanilles) R. Brown" date="1810" rank="species">microphyllum</taxon_name>
+    <taxon_name rank="family" authority="C. Presl" date="unknown">lygodiaceae</taxon_name>
+    <taxon_name rank="genus" authority="Swartz" date="1801">lygodium</taxon_name>
+    <taxon_name rank="species" authority="(Cavanilles) R. Brown" date="1810">microphyllum</taxon_name>
     <place_of_publication>
       <publication_title>Prodr.</publication_title>
       <place_in_publication>162. 1810</place_in_publication>
@@ -26,188 +18,16 @@
     <taxon_hierarchy>family lygodiaceae;genus lygodium;species microphyllum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Ugena</taxon_name>
-    <taxon_name authority="Cavanilles" date="unknown" rank="species">microphylla</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Ugena</taxon_name>
+    <taxon_name rank="species" authority="Cavanilles" date="unknown">microphylla</taxon_name>
     <place_of_publication>
       <publication_title>Icon.</publication_title>
       <place_in_publication>6: 76, plate 595. 1801</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Ugena;species microphylla;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems creeping.</text>
-      <biological_entity id="o17985" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="creeping" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves to ca. 10 m.</text>
-      <biological_entity id="o17986" name="leaf" name_original="leaves" src="d0_s1" type="structure" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Petioles borne 2-5 mm apart, 7-25 cm.</text>
-      <biological_entity id="o17987" name="petiole" name_original="petioles" src="d0_s2" type="structure">
-        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s2" to="5" to_unit="mm" />
-        <character is_modifier="false" name="arrangement" src="d0_s2" value="apart" />
-        <character char_type="range_value" from="7" from_unit="cm" name="some_measurement" src="d0_s2" to="25" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Sterile pinnae on 0.5-1.5 cm stalks, oblong, 1-pinnate, 5-12 × 3-6 cm;</text>
-      <biological_entity id="o17988" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s3" value="sterile" />
-        <character is_modifier="false" name="shape" notes="" src="d0_s3" value="oblong" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s3" value="1-pinnate" />
-        <character char_type="range_value" from="5" from_unit="cm" name="length" src="d0_s3" to="12" to_unit="cm" />
-        <character char_type="range_value" from="3" from_unit="cm" name="width" src="d0_s3" to="6" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o17989" name="stalk" name_original="stalks" src="d0_s3" type="structure">
-        <character char_type="range_value" from="0.5" from_unit="cm" is_modifier="true" name="some_measurement" src="d0_s3" to="1.5" to_unit="cm" />
-      </biological_entity>
-      <relation from="o17988" id="r4179" name="on" negation="false" src="d0_s3" to="o17989" />
-    </statement>
-    <statement id="d0_s4">
-      <text>ultimate segments triangular-lanceolate to oblong-lanceolate, truncate to shallowly cordate or somewhat auriculate proximally, usually not lobed, but if lobed, lobes rounded at apex and not directed toward leaf apex;</text>
-      <biological_entity constraint="ultimate" id="o17990" name="segment" name_original="segments" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="triangular-lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="oblong-lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="truncate" />
-        <character is_modifier="false" modifier="shallowly" name="shape" notes="[duplicate value]" src="d0_s4" value="cordate" />
-        <character char_type="range_value" from="triangular-lanceolate" name="shape" src="d0_s4" to="oblong-lanceolate truncate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="triangular-lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="oblong-lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="truncate" />
-        <character is_modifier="false" modifier="shallowly" name="shape" notes="[duplicate value]" src="d0_s4" value="cordate" />
-        <character char_type="range_value" from="triangular-lanceolate" name="shape" src="d0_s4" to="oblong-lanceolate truncate" />
-        <character is_modifier="false" modifier="somewhat; somewhat; proximally" name="shape" src="d0_s4" value="auriculate" />
-        <character is_modifier="false" modifier="usually not" name="shape" src="d0_s4" value="lobed" />
-        <character is_modifier="false" name="shape" src="d0_s4" value="lobed" />
-      </biological_entity>
-      <biological_entity id="o17991" name="lobe" name_original="lobes" src="d0_s4" type="structure">
-        <character constraint="at apex" constraintid="o17992" is_modifier="false" name="shape" src="d0_s4" value="rounded" />
-        <character constraint="toward leaf apex" constraintid="o17993" is_modifier="false" modifier="not" name="orientation" notes="" src="d0_s4" value="directed" />
-      </biological_entity>
-      <biological_entity id="o17992" name="apex" name_original="apex" src="d0_s4" type="structure" />
-      <biological_entity constraint="leaf" id="o17993" name="apex" name_original="apex" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>segment apex rounded-acute to obtuse;</text>
-      <biological_entity constraint="segment" id="o17994" name="apex" name_original="apex" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="rounded-acute" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="obtuse" />
-        <character char_type="range_value" from="rounded-acute" name="shape" src="d0_s5" to="obtuse" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>segments articulate to petiolules, leaving wiry stalks when detached;</text>
-      <biological_entity id="o17995" name="segment" name_original="segments" src="d0_s6" type="structure">
-        <character constraint="to petiolules" constraintid="o17996" is_modifier="false" name="architecture" src="d0_s6" value="articulate" />
-      </biological_entity>
-      <biological_entity id="o17996" name="petiolule" name_original="petiolules" src="d0_s6" type="structure" />
-      <biological_entity id="o17997" name="stalk" name_original="stalks" src="d0_s6" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s6" value="wiry" />
-      </biological_entity>
-      <relation from="o17995" id="r4180" name="leaving" negation="false" src="d0_s6" to="o17997" />
-    </statement>
-    <statement id="d0_s7">
-      <text>blade tissue glabrous abaxially.</text>
-      <biological_entity constraint="blade" id="o17998" name="tissue" name_original="tissue" src="d0_s7" type="structure">
-        <character is_modifier="false" modifier="abaxially" name="pubescence" src="d0_s7" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>Fertile pinnae on 0.5-1 cm stalks, oblong, 1-pinnate, 3-14 × 2.5-6 cm;</text>
-      <biological_entity id="o17999" name="pinna" name_original="pinnae" src="d0_s8" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s8" value="fertile" />
-        <character is_modifier="false" name="shape" notes="" src="d0_s8" value="oblong" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s8" value="1-pinnate" />
-        <character char_type="range_value" from="3" from_unit="cm" name="length" src="d0_s8" to="14" to_unit="cm" />
-        <character char_type="range_value" from="2.5" from_unit="cm" name="width" src="d0_s8" to="6" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o18000" name="stalk" name_original="stalks" src="d0_s8" type="structure">
-        <character char_type="range_value" from="0.5" from_unit="cm" is_modifier="true" name="some_measurement" src="d0_s8" to="1" to_unit="cm" />
-      </biological_entity>
-      <relation from="o17999" id="r4181" name="on" negation="false" src="d0_s8" to="o18000" />
-    </statement>
-    <statement id="d0_s9">
-      <text>ultimate segments ovate to lanceolate-oblong, fringed with fertile lobes, otherwise similar to sterile segments.</text>
-      <biological_entity constraint="ultimate" id="o18001" name="segment" name_original="segments" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="ovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="lanceolate-oblong" />
-        <character char_type="range_value" from="ovate" name="shape" src="d0_s9" to="lanceolate-oblong" />
-        <character constraint="with lobes" constraintid="o18002" is_modifier="false" name="shape" src="d0_s9" value="fringed" />
-      </biological_entity>
-      <biological_entity id="o18002" name="lobe" name_original="lobes" src="d0_s9" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s9" value="fertile" />
-      </biological_entity>
-      <biological_entity id="o18003" name="segment" name_original="segments" src="d0_s9" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s9" value="sterile" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  creeping.  Leaves  to ca. 10 m.  Petioles  borne 2-5 mm apart, 7-25 cm.  Sterile pinnae  on 0.5-1.5 cm stalks, oblong, 1-pinnate, 5-12 × 3-6 cm; ultimate segments triangular-lanceolate to oblong-lanceolate, truncate to shallowly cordate or somewhat auriculate proximally, usually not lobed, but if lobed, lobes rounded at apex and not directed toward leaf apex; segment apex rounded-acute to obtuse; segments articulate to petiolules, leaving wiry stalks when detached; blade tissue glabrous abaxially.  Fertile pinnae  on 0.5-1 cm stalks, oblong, 1-pinnate, 3-14 × 2.5-6 cm; ultimate segments ovate to lanceolate-oblong, fringed with fertile lobes, otherwise similar to sterile segments.</description>
   <number>2</number>
   <other_name type="common_name">Small-leaved climbing fern</other_name>
   <discussion>Lygodium microphyllum is native to southeastern Asia and recently naturalized. The species may be very abundant locally and may climb to a height of 9 meters in trees. Sometimes it forms thick mats covering considerable areas at ground level (J. Beckner 1968; C. E. Nauman and D. F. Austin 1978).</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_684_d3_s0">
-      <text>Pinnules usually 1-pinnate, primary divisions mostly undivided, usually without basal lobes;</text>
-      <biological_entity id="from_key_V2_684_o19106" name="pinnule" name_original="pinnules" src="d3_s0" type="structure">
-        <character is_modifier="false" modifier="usually" name="architecture_or_shape" src="d3_s0" value="1-pinnate" />
-      </biological_entity>
-      <biological_entity constraint="primary" id="from_key_V2_684_o19107" name="division" name_original="divisions" src="d3_s0" type="structure">
-        <character is_modifier="false" modifier="mostly" name="architecture_or_shape" src="d3_s0" value="undivided" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="from_key_V2_684_o19108" name="lobe" name_original="lobes" src="d3_s0" type="structure" />
-      <relation from="from_key_V2_684_o19107" id="from_key_V2_684_r4435" modifier="usually" name="without" negation="false" src="d3_s0" to="from_key_V2_684_o19108" />
-    </statement>
-    <statement id="from_key_V2_684_d3_s1">
-      <text>lobes absent or rounded, auriculate, not directed toward leaf apex;</text>
-      <biological_entity id="from_key_V2_684_o19109" name="lobe" name_original="lobes" src="d3_s1" type="structure">
-        <character is_modifier="false" name="count" src="d3_s1" value="absent" />
-        <character is_modifier="false" name="shape" src="d3_s1" value="rounded" />
-        <character is_modifier="false" name="shape" src="d3_s1" value="auriculate" />
-        <character constraint="toward leaf apex" constraintid="o19110" is_modifier="false" modifier="not" name="orientation" src="d3_s1" value="directed" />
-      </biological_entity>
-      <biological_entity constraint="leaf" id="from_key_V2_684_o19110" name="apex" name_original="apex" src="d3_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_684_d3_s2">
-      <text>ultimate segments articulate to petiolules, leaving wiry stalks when detached;</text>
-      <biological_entity constraint="ultimate" id="from_key_V2_684_o19111" name="segment" name_original="segments" src="d3_s2" type="structure">
-        <character constraint="to petiolules" constraintid="o19112" is_modifier="false" name="architecture" src="d3_s2" value="articulate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_684_o19112" name="petiolule" name_original="petiolules" src="d3_s2" type="structure" />
-      <biological_entity id="from_key_V2_684_o19113" name="stalk" name_original="stalks" src="d3_s2" type="structure">
-        <character is_modifier="true" name="architecture" src="d3_s2" value="wiry" />
-      </biological_entity>
-      <relation from="from_key_V2_684_o19111" id="from_key_V2_684_r4436" name="leaving" negation="false" src="d3_s2" to="from_key_V2_684_o19113" />
-    </statement>
-    <statement id="from_key_V2_684_d3_s3">
-      <text>blade tissue glabrous abaxially.</text>
-      <biological_entity constraint="blade" id="from_key_V2_684_o19114" name="tissue" name_original="tissue" src="d3_s3" type="structure">
-        <character is_modifier="false" modifier="abaxially" name="pubescence" src="d3_s3" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_684_d2_s0">
-      <text>Pinnules 1-pinnate to palmately lobed, sterile tissue present on fertile lobes;</text>
-      <biological_entity id="from_key_V2_684_o19102" name="pinnule" name_original="pinnules" src="d2_s0" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s0" value="1-pinnate" />
-        <character is_modifier="false" modifier="palmately" name="shape" notes="[duplicate value]" src="d2_s0" value="lobed" />
-        <character char_type="range_value" from="1-pinnate" name="shape" src="d2_s0" to="palmately lobed" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_684_o19103" name="tissue" name_original="tissue" src="d2_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d2_s0" value="sterile" />
-        <character constraint="on lobes" constraintid="o19104" is_modifier="false" name="count" src="d2_s0" value="present" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_684_o19104" name="lobe" name_original="lobes" src="d2_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_684_d2_s1">
-      <text>petioles borne less than 1 cm apart.</text>
-      <biological_entity id="from_key_V2_684_o19105" name="petiole" name_original="petioles" src="d2_s1" type="structure">
-        <character is_modifier="false" name="arrangement" src="d2_s1" value="apart" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

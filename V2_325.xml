@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
-    <taxon_name authority="Spach" date="1841" rank="genus">chamaecyparis</taxon_name>
-    <taxon_name authority="(D. Don) Sudworth" date="1897" rank="species">nootkatensis</taxon_name>
+    <taxon_name rank="family" authority="Bartlett" date="unknown">cupressaceae</taxon_name>
+    <taxon_name rank="genus" authority="Spach" date="1841">chamaecyparis</taxon_name>
+    <taxon_name rank="species" authority="(D. Don) Sudworth" date="1897">nootkatensis</taxon_name>
     <place_of_publication>
       <publication_title>U.S.D.A. Div. Forest. Bull.</publication_title>
       <place_in_publication>14: 79. 1897</place_in_publication>
@@ -26,149 +18,18 @@
     <taxon_hierarchy>family cupressaceae;genus chamaecyparis;species nootkatensis</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Cupressus</taxon_name>
-    <taxon_name authority="D. Don" date="unknown" rank="species">nootkatensis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Cupressus</taxon_name>
+    <taxon_name rank="species" authority="D. Don" date="unknown">nootkatensis</taxon_name>
     <place_of_publication>
       <publication_title>in Lambert, Descr. Pinus</publication_title>
       <place_in_publication>2: 113. 1824</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Cupressus;species nootkatensis;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees to 40 m or dwarfed at high elevations;</text>
-      <biological_entity id="o7391" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="40" to_unit="m" />
-        <character constraint="at high elevations" is_modifier="false" name="size" src="d0_s0" value="dwarfed" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk to 2 m diam.</text>
-      <biological_entity id="o7392" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="2" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Bark grayish brown, 1-2 cm thick, irregularly fissured.</text>
-      <biological_entity id="o7393" name="bark" name_original="bark" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s2" value="grayish brown" />
-        <character char_type="range_value" from="1" from_unit="cm" name="thickness" src="d0_s2" to="2" to_unit="cm" />
-        <character is_modifier="false" modifier="irregularly" name="relief" src="d0_s2" value="fissured" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Branchlet sprays pinnate.</text>
-      <biological_entity constraint="branchlet" id="o7394" name="spray" name_original="sprays" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s3" value="pinnate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Leaves of branchlets mostly 1.5-2.5 mm, stout, occasionally glandular on keel, apex rounded to acute or acuminate, bases of facial leaves often overlapped by apices of subtending facial leaves;</text>
-      <biological_entity id="o7395" name="leaf" name_original="leaves" src="d0_s4" type="structure">
-        <character char_type="range_value" from="1.5" from_unit="mm" name="some_measurement" src="d0_s4" to="2.5" to_unit="mm" />
-        <character is_modifier="false" name="fragility_or_size" src="d0_s4" value="stout" />
-        <character constraint="on keel" constraintid="o7397" is_modifier="false" modifier="occasionally" name="architecture_or_function_or_pubescence" src="d0_s4" value="glandular" />
-      </biological_entity>
-      <biological_entity id="o7396" name="branchlet" name_original="branchlets" src="d0_s4" type="structure" />
-      <biological_entity id="o7397" name="keel" name_original="keel" src="d0_s4" type="structure" />
-      <biological_entity id="o7398" name="apex" name_original="apex" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="rounded" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="acute" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="acuminate" />
-        <character char_type="range_value" from="rounded" name="shape" src="d0_s4" to="acute or acuminate" />
-      </biological_entity>
-      <biological_entity id="o7399" name="base" name_original="bases" src="d0_s4" type="structure" />
-      <biological_entity constraint="facial" id="o7400" name="leaf" name_original="leaves" src="d0_s4" type="structure" />
-      <biological_entity id="o7401" name="apex" name_original="apices" src="d0_s4" type="structure" />
-      <biological_entity constraint="subtending facial" id="o7402" name="leaf" name_original="leaves" src="d0_s4" type="structure" />
-      <relation from="o7395" id="r1732" name="part_of" negation="false" src="d0_s4" to="o7396" />
-      <relation from="o7399" id="r1733" name="part_of" negation="false" src="d0_s4" to="o7400" />
-      <relation from="o7399" id="r1734" name="overlapped by" negation="false" src="d0_s4" to="o7401" />
-      <relation from="o7399" id="r1735" name="overlapped by" negation="false" src="d0_s4" to="o7402" />
-    </statement>
-    <statement id="d0_s5">
-      <text>glands usually absent (circular when present).</text>
-      <biological_entity id="o7403" name="gland" name_original="glands" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="usually" name="presence" src="d0_s5" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Pollen cones 2-5 mm, grayish brown;</text>
-      <biological_entity constraint="pollen" id="o7404" name="cone" name_original="cones" src="d0_s6" type="structure">
-        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s6" to="5" to_unit="mm" />
-        <character is_modifier="false" name="coloration" src="d0_s6" value="grayish brown" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>pollen-sacs yellow.</text>
-      <biological_entity id="o7405" name="pollen-sac" name_original="pollen-sacs" src="d0_s7" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s7" value="yellow" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>Seed-cones maturing and opening the first-year, in some populations the second-year (J. N. Owens and M. Molder 1975), 8-12 mm broad, glaucous, dark reddish-brown, becoming resinous;</text>
-      <biological_entity id="o7406" name="seed-cone" name_original="seed-cones" src="d0_s8" type="structure">
-        <character is_modifier="false" name="life_cycle" src="d0_s8" value="maturing" />
-        <character is_modifier="false" name="structure_subtype" src="d0_s8" value="first-year" />
-        <character char_type="range_value" from="8" from_unit="mm" name="width" notes="" src="d0_s8" to="12" to_unit="mm" />
-        <character is_modifier="false" name="pubescence" src="d0_s8" value="glaucous" />
-        <character is_modifier="false" name="coloration" src="d0_s8" value="dark reddish-brown" />
-        <character is_modifier="false" modifier="becoming" name="coating" src="d0_s8" value="resinous" />
-      </biological_entity>
-      <biological_entity id="o7407" name="population" name_original="populations" src="d0_s8" type="structure">
-        <character is_modifier="false" name="structure_subtype" src="d0_s8" value="second-year" />
-      </biological_entity>
-      <relation from="o7406" id="r1736" name="in" negation="false" src="d0_s8" to="o7407" />
-    </statement>
-    <statement id="d0_s9">
-      <text>scales 4-6.</text>
-      <biological_entity id="o7408" name="scale" name_original="scales" src="d0_s9" type="structure">
-        <character char_type="range_value" from="4" name="quantity" src="d0_s9" to="6" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>Seeds 2-4 per scale, 2-5 mm, wing equal to or broader than body.</text>
-      <biological_entity id="o7409" name="seed" name_original="seeds" src="d0_s10" type="structure">
-        <character char_type="range_value" constraint="per scale" constraintid="o7410" from="2" name="quantity" src="d0_s10" to="4" />
-        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" notes="" src="d0_s10" to="5" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o7410" name="scale" name_original="scale" src="d0_s10" type="structure" />
-      <biological_entity id="o7411" name="wing" name_original="wing" src="d0_s10" type="structure">
-        <character is_modifier="false" name="variability" src="d0_s10" value="equal" />
-        <character constraint="than body" constraintid="o7412" is_modifier="false" name="width" src="d0_s10" value="broader" />
-      </biological_entity>
-      <biological_entity id="o7412" name="body" name_original="body" src="d0_s10" type="structure" />
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Coastal mountain ranges;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="coastal mountain" />
-        <character name="habitat" value="ranges" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--1500 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1500" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>B.C.; Alaska, Calif., Oreg., Wash.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees  to 40 m or dwarfed at high elevations; trunk to 2 m diam.  Bark  grayish brown, 1--2 cm thick, irregularly fissured.  Branchlet  sprays pinnate.  Leaves  of branchlets mostly 1.5--2.5 mm, stout, occasionally glandular on keel, apex rounded to acute or acuminate, bases of facial leaves often overlapped by apices of subtending facial leaves; glands usually absent (circular when present).  Pollen cones  2--5 mm, grayish brown; pollen sacs yellow.  Seed cones  maturing and opening the first year, in some populations the second year (J. N. Owens and M. Molder 1975), 8--12 mm broad, glaucous, dark reddish brown, becoming resinous; scales 4--6.  Seeds  2--4 per scale, 2--5 mm, wing equal to or broader than body.</description>
+  <description type="habitat">Coastal mountain ranges;</description>
+  <description type="elevation">0--1500 m;</description>
+  <description type="distribution">B.C.; Alaska, Calif., Oreg., Wash.</description>
   <number>3</number>
   <other_name type="common_name">Alaska-cedar</other_name>
   <other_name type="common_name">yellow-cypress</other_name>
@@ -177,66 +38,4 @@
   <references>
     <reference>Owens, J. N. and M. Molder. 1975. Pollination, female gametophyte, and embryo and seed development in yellow cedar ( Chamaecyparis nootkatensis ). Canad. J. Bot. 53: 186--199.</reference>
   </references>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_311_d4_s0">
-      <text>Seed-cones with 4-6 scales, sometimes remaining closed at end of first-year, becoming resinous;</text>
-      <biological_entity id="from_key_V2_311_o7091" name="seed-cone" name_original="seed-cones" src="d4_s0" type="structure">
-        <character is_modifier="false" modifier="becoming" name="coating" src="d4_s0" value="resinous" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_311_o7092" name="scale" name_original="scales" src="d4_s0" type="structure">
-        <character char_type="range_value" from="4" is_modifier="true" name="count" src="d4_s0" to="6" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_311_o7093" name="end" name_original="end" src="d4_s0" type="structure">
-        <character is_modifier="true" name="condition" src="d4_s0" value="closed" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_311_o7094" name="first-year" name_original="first-year" src="d4_s0" type="structure" />
-      <relation from="from_key_V2_311_o7091" id="from_key_V2_311_r1664" name="with" negation="false" src="d4_s0" to="from_key_V2_311_o7092" />
-      <relation from="from_key_V2_311_o7091" id="from_key_V2_311_r1665" modifier="sometimes" name="remaining" negation="false" src="d4_s0" to="from_key_V2_311_o7093" />
-      <relation from="from_key_V2_311_o7091" id="from_key_V2_311_r1666" modifier="sometimes" name="part_of" negation="false" src="d4_s0" to="from_key_V2_311_o7094" />
-    </statement>
-    <statement id="from_key_V2_311_d4_s1">
-      <text>leaves usually without glands, these circular when present;</text>
-      <biological_entity id="from_key_V2_311_o7095" name="leaf" name_original="leaves" src="d4_s1" type="structure">
-        <character is_modifier="false" modifier="when present" name="arrangement_or_shape" notes="alterIDs:o7096" src="d4_s1" value="circular" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_311_o7096" name="gland" name_original="glands" src="d4_s1" type="structure" />
-      <relation from="from_key_V2_311_o7095" id="from_key_V2_311_r1667" name="without" negation="false" src="d4_s1" to="from_key_V2_311_o7096" />
-    </statement>
-    <statement id="from_key_V2_311_d4_s2">
-      <text>apices of facial leaves of branchlets often overlapping the base of next facial leaf.</text>
-      <biological_entity id="from_key_V2_311_o7097" name="apex" name_original="apices" src="d4_s2" type="structure" />
-      <biological_entity constraint="facial" id="from_key_V2_311_o7098" name="leaf" name_original="leaves" src="d4_s2" type="structure" />
-      <biological_entity id="from_key_V2_311_o7099" name="branchlet" name_original="branchlets" src="d4_s2" type="structure" />
-      <biological_entity id="from_key_V2_311_o7100" name="base" name_original="base" src="d4_s2" type="structure">
-        <character is_modifier="true" modifier="often" name="arrangement" src="d4_s2" value="overlapping" />
-      </biological_entity>
-      <biological_entity constraint="next facial" id="from_key_V2_311_o7101" name="leaf" name_original="leaf" src="d4_s2" type="structure" />
-      <relation from="from_key_V2_311_o7097" id="from_key_V2_311_r1668" name="part_of" negation="false" src="d4_s2" to="from_key_V2_311_o7098" />
-      <relation from="from_key_V2_311_o7097" id="from_key_V2_311_r1669" name="part_of" negation="false" src="d4_s2" to="from_key_V2_311_o7099" />
-      <relation from="from_key_V2_311_o7100" id="from_key_V2_311_r1670" name="part_of" negation="false" src="d4_s2" to="from_key_V2_311_o7101" />
-    </statement>
-    <statement id="from_key_V2_311_d2_s0">
-      <text>Seed-cones 8-12 mm broad;</text>
-      <biological_entity id="from_key_V2_311_o7077" name="seed-cone" name_original="seed-cones" src="d2_s0" type="structure">
-        <character char_type="range_value" from="8" from_unit="mm" name="width" src="d2_s0" to="12" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_311_d2_s1">
-      <text>leaves with linear to circular abaxial glands or glands absent;</text>
-      <biological_entity constraint="abaxial" id="from_key_V2_311_o7079" name="gland" name_original="glands" src="d2_s1" type="structure">
-        <character is_modifier="true" name="arrangement_or_shape" src="d2_s1" value="linear to circular" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_311_o7080" name="gland" name_original="glands" src="d2_s1" type="structure">
-        <character is_modifier="false" name="count" src="d2_s1" value="absent" />
-      </biological_entity>
-      <relation from="from_key_V2_311_o7078" id="from_key_V2_311_r1656" name="linear to circular abaxial glands or glands" negation="false" src="d2_s1" to="from_key_V2_311_o7079" />
-      <relation from="from_key_V2_311_o7078" id="from_key_V2_311_r1657" name="linear to circular abaxial glands or glands" negation="false" src="d2_s1" to="from_key_V2_311_o7080" />
-    </statement>
-    <statement id="from_key_V2_311_d2_s2">
-      <text>Pacific Coast.</text>
-      <biological_entity id="from_key_V2_311_o7078" name="leaf" name_original="leaves" src="d2_s1" type="structure">
-        <character is_modifier="false" name="habitat" src="d2_s2" value="coast" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

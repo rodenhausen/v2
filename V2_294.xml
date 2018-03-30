@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="(J. Smith) Windham" date="1987" rank="genus">argyrochosma</taxon_name>
-    <taxon_name authority="(Maxon) Windham" date="1987" rank="species">jonesii</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="(J. Smith) Windham" date="1987">argyrochosma</taxon_name>
+    <taxon_name rank="species" authority="(Maxon) Windham" date="1987">jonesii</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>77: 40. 1987</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family pteridaceae;genus argyrochosma;species jonesii</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Notholaena</taxon_name>
-    <taxon_name authority="Maxon" date="unknown" rank="species">jonesii</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Notholaena</taxon_name>
+    <taxon_name rank="species" authority="Maxon" date="unknown">jonesii</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>7: 108. 1917</place_in_publication>
@@ -35,195 +27,20 @@
     <taxon_hierarchy>genus Notholaena;species jonesii;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Cheilanthes</taxon_name>
-    <taxon_name authority="(Maxon) Munz" date="unknown" rank="species">jonesii</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Cheilanthes</taxon_name>
+    <taxon_name rank="species" authority="(Maxon) Munz" date="unknown">jonesii</taxon_name>
     <taxon_hierarchy>genus Cheilanthes;species jonesii;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pellaea</taxon_name>
-    <taxon_name authority="(Maxon) C. V. Morton" date="unknown" rank="species">jonesii</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pellaea</taxon_name>
+    <taxon_name rank="species" authority="(Maxon) C. V. Morton" date="unknown">jonesii</taxon_name>
     <taxon_hierarchy>genus Pellaea;species jonesii;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stem scales brown to nearly black.</text>
-      <biological_entity constraint="stem" id="o6025" name="scale" name_original="scales" src="d0_s0" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s0" value="brown" />
-        <character is_modifier="false" modifier="nearly" name="coloration" notes="[duplicate value]" src="d0_s0" value="black" />
-        <character char_type="range_value" from="brown" name="coloration" src="d0_s0" to="nearly black" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves 4-15 cm.</text>
-      <biological_entity id="o6026" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character char_type="range_value" from="4" from_unit="cm" name="some_measurement" src="d0_s1" to="15" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Petiole dark-brown, 0.75-1.5 mm diam.</text>
-      <biological_entity id="o6027" name="petiole" name_original="petiole" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s2" value="dark-brown" />
-        <character char_type="range_value" from="0.75" from_unit="mm" name="diameter" src="d0_s2" to="1.5" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Blade ovatelanceolate, 2-3-pinnate proximally, leathery, abaxially and adaxially glabrous;</text>
-      <biological_entity id="o6028" name="blade" name_original="blade" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="ovatelanceolate" />
-        <character is_modifier="false" modifier="proximally" name="architecture_or_shape" src="d0_s3" value="2-3-pinnate" />
-        <character is_modifier="false" name="texture" src="d0_s3" value="leathery" />
-        <character is_modifier="false" modifier="abaxially; adaxially" name="pubescence" src="d0_s3" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>rachis rounded to slightly flattened adaxially.</text>
-      <biological_entity id="o6029" name="rachis" name_original="rachis" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="rounded" />
-        <character is_modifier="false" modifier="slightly" name="shape" notes="[duplicate value]" src="d0_s4" value="flattened" />
-        <character char_type="range_value" from="rounded" modifier="adaxially" name="shape" src="d0_s4" to="slightly flattened" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Pinna costae straight or nearly so, branches not arising from prominent angles.</text>
-      <biological_entity constraint="pinna" id="o6030" name="costa" name_original="costae" src="d0_s5" type="structure">
-        <character is_modifier="false" name="course" src="d0_s5" value="straight" />
-        <character name="course" src="d0_s5" value="nearly" />
-      </biological_entity>
-      <biological_entity id="o6031" name="branch" name_original="branches" src="d0_s5" type="structure">
-        <character constraint="from angles" constraintid="o6032" is_modifier="false" modifier="not" name="orientation" src="d0_s5" value="arising" />
-      </biological_entity>
-      <biological_entity id="o6032" name="angle" name_original="angles" src="d0_s5" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s5" value="prominent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Ultimate segments not articulate, dark color of stalks continuing into segment bases abaxially;</text>
-      <biological_entity constraint="ultimate" id="o6033" name="segment" name_original="segments" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="not" name="architecture" src="d0_s6" value="articulate" />
-        <character constraint="of stalks" constraintid="o6034" is_modifier="false" name="coloration" src="d0_s6" value="dark color" />
-      </biological_entity>
-      <biological_entity id="o6034" name="stalk" name_original="stalks" src="d0_s6" type="structure" />
-      <biological_entity constraint="segment" id="o6035" name="base" name_original="bases" src="d0_s6" type="structure" />
-      <relation from="o6034" id="r1373" modifier="abaxially" name="continuing into" negation="false" src="d0_s6" to="o6035" />
-    </statement>
-    <statement id="d0_s7">
-      <text>segment margins plane to slightly recurved, not concealing sporangia;</text>
-      <biological_entity constraint="segment" id="o6036" name="margin" name_original="margins" src="d0_s7" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s7" value="plane" />
-        <character is_modifier="false" modifier="slightly" name="orientation" src="d0_s7" value="recurved" />
-      </biological_entity>
-      <biological_entity id="o6037" name="sporangium" name_original="sporangia" src="d0_s7" type="structure" />
-      <relation from="o6036" id="r1374" name="concealing" negation="true" src="d0_s7" to="o6037" />
-    </statement>
-    <statement id="d0_s8">
-      <text>veins obscure adaxially.</text>
-      <biological_entity id="o6038" name="vein" name_original="veins" src="d0_s8" type="structure">
-        <character is_modifier="false" modifier="adaxially" name="prominence" src="d0_s8" value="obscure" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>Sporangia submarginal, borne on distal 1/2 of secondary-veins, containing 64 spores.</text>
-      <biological_entity constraint="distal" id="o6040" name="1/2" name_original="1/2" src="d0_s9" type="structure" />
-      <biological_entity id="o6041" name="secondary-vein" name_original="secondary-veins" src="d0_s9" type="structure" />
-      <biological_entity id="o6042" name="spore" name_original="spores" src="d0_s9" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s9" value="64" />
-      </biological_entity>
-      <relation from="o6039" id="r1375" name="borne on" negation="false" src="d0_s9" to="o6040" />
-      <relation from="o6040" id="r1376" name="part_of" negation="false" src="d0_s9" to="o6041" />
-      <relation from="o6039" id="r1377" name="containing" negation="false" src="d0_s9" to="o6042" />
-    </statement>
-    <statement id="d0_s10">
-      <text>2 n = 54, 108.</text>
-      <biological_entity id="o6039" name="sporangium" name_original="sporangia" src="d0_s9" type="structure">
-        <character is_modifier="false" name="position" src="d0_s9" value="submarginal" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o6043" name="chromosome" name_original="" src="d0_s10" type="structure">
-        <character name="quantity" src="d0_s10" value="54" />
-        <character name="quantity" src="d0_s10" value="108" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulating spring--fall.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="spring-fall" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Calcareous cliffs and ledges;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="calcareous cliffs and ledges ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>600--1900 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1900" to_unit="m" from="600" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., Calif., Nev., Utah; Mexico in Sonora.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Nev." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Utah" establishment_means="native" />
-        <character name="distribution" value="Mexico in Sonora" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stem scales  brown to nearly black.  Leaves  4--15 cm.  Petiole  dark brown, 0.75--1.5 mm diam.  Blade  ovate-lanceolate, 2--3-pinnate proximally, leathery, abaxially and adaxially glabrous; rachis rounded to slightly flattened adaxially.  Pinna costae  straight or nearly so, branches not arising from prominent angles.  Ultimate segments  not articulate, dark color of stalks continuing into segment bases abaxially; segment margins plane to slightly recurved, not concealing sporangia; veins obscure adaxially.  Sporangia  submarginal, borne on distal 1/2 of secondary veins, containing 64 spores. 2 n  = 54, 108.</description>
+  <description type="phenology">Sporulating spring--fall.</description>
+  <description type="habitat">Calcareous cliffs and ledges;</description>
+  <description type="elevation">600--1900 m;</description>
+  <description type="distribution">Ariz., Calif., Nev., Utah; Mexico in Sonora.</description>
   <number>6</number>
   <discussion>Argyrochosma jonesii includes two sexually reproducing cytotypes. The diploid is known from a few localities in the Sonoran and Mojave Deserts; the tetraploid is found throughout the Mojave Desert and cismontane southern California. Although subtle morphologic differences exist between these cytotypes, they are distinguished primarily by characteristics known to correlate with increases in ploidy level (such as spore size and the length of stomatal guard cells). Further investigation is necessary to determine whether the tetraploid arose through autopolyploidy or hybridization between cryptic species.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_89_d4_s0">
-      <text>Ultimate leaf segments not articulate, dark color of stalks continuing into segment bases abaxially;</text>
-      <biological_entity constraint="ultimate leaf" id="from_key_V2_89_o24410" name="segment" name_original="segments" src="d4_s0" type="structure">
-        <character is_modifier="false" modifier="not" name="architecture" src="d4_s0" value="articulate" />
-        <character constraint="of stalks" constraintid="o24411" is_modifier="false" name="coloration" src="d4_s0" value="dark color" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_89_o24411" name="stalk" name_original="stalks" src="d4_s0" type="structure" />
-      <biological_entity constraint="segment" id="from_key_V2_89_o24412" name="base" name_original="bases" src="d4_s0" type="structure" />
-      <relation from="from_key_V2_89_o24411" id="from_key_V2_89_r5708" modifier="abaxially" name="continuing into" negation="false" src="d4_s0" to="from_key_V2_89_o24412" />
-    </statement>
-    <statement id="from_key_V2_89_d4_s1">
-      <text>rachises rounded adaxially;</text>
-      <biological_entity id="from_key_V2_89_o24413" name="rachis" name_original="rachises" src="d4_s1" type="structure">
-        <character is_modifier="false" modifier="adaxially" name="shape" src="d4_s1" value="rounded" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_89_d4_s2">
-      <text>margins of fertile ultimate segments plane to somewhat recurved, not concealing mature sporangia.</text>
-      <biological_entity id="from_key_V2_89_o24414" name="margin" name_original="margins" src="d4_s2" type="structure">
-        <character is_modifier="false" name="shape" src="d4_s2" value="plane" />
-        <character is_modifier="false" modifier="somewhat" name="orientation" src="d4_s2" value="recurved" />
-      </biological_entity>
-      <biological_entity constraint="ultimate" id="from_key_V2_89_o24415" name="segment" name_original="segments" src="d4_s2" type="structure">
-        <character is_modifier="true" name="reproduction" src="d4_s2" value="fertile" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_89_o24416" name="sporangium" name_original="sporangia" src="d4_s2" type="structure">
-        <character is_modifier="true" modifier="not" name="position" src="d4_s2" value="concealing" />
-        <character is_modifier="true" name="life_cycle" src="d4_s2" value="mature" />
-      </biological_entity>
-      <relation from="from_key_V2_89_o24414" id="from_key_V2_89_r5709" name="part_of" negation="false" src="d4_s2" to="from_key_V2_89_o24415" />
-    </statement>
-    <statement id="from_key_V2_89_d1_s0">
-      <text>Abaxial surfaces of blades glabrous, lacking whitish farina.</text>
-      <biological_entity constraint="abaxial" id="from_key_V2_89_o24397" name="surface" name_original="surfaces" src="d1_s0" type="structure">
-        <character is_modifier="false" name="pubescence" src="d1_s0" value="glabrous" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_89_o24398" name="blade" name_original="blades" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_89_o24399" name="farina" name_original="farina" src="d1_s0" type="structure">
-        <character is_modifier="true" name="count" src="d1_s0" value="lacking" />
-        <character is_modifier="true" name="coloration" src="d1_s0" value="whitish" />
-      </biological_entity>
-      <relation from="from_key_V2_89_o24397" id="from_key_V2_89_r5704" name="part_of" negation="false" src="d1_s0" to="from_key_V2_89_o24398" />
-    </statement>
-  </description>
 </bio:treatment>

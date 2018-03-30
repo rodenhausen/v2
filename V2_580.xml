@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="R. Brown" date="1810" rank="genus">notholaena</taxon_name>
-    <taxon_name authority="Davenport" date="1880" rank="species">grayi</taxon_name>
-    <taxon_name authority="Windham" date="1993" rank="subspecies">sonorensis</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="R. Brown" date="1810">notholaena</taxon_name>
+    <taxon_name rank="species" authority="Davenport" date="1880">grayi</taxon_name>
+    <taxon_name rank="subspecies" authority="Windham" date="1993">sonorensis</taxon_name>
     <place_of_publication>
       <publication_title>Contr. Univ. Michigan Herb.</publication_title>
       <place_in_publication>19: 36. 1993</place_in_publication>
@@ -27,65 +19,14 @@
     <taxon_hierarchy>family pteridaceae;genus notholaena;species grayi;subspecies sonorensis</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Notholaena</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">hypoleuca</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Notholaena</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">hypoleuca</taxon_name>
     <taxon_hierarchy>genus Notholaena;species hypoleuca;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Most sporangia containing 32 spores;</text>
-      <biological_entity id="o15753" name="sporangium" name_original="sporangia" src="d0_s0" type="structure" />
-      <biological_entity id="o15754" name="spore" name_original="spores" src="d0_s0" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s0" value="32" />
-      </biological_entity>
-      <relation from="o15753" id="r3709" name="containing" negation="false" src="d0_s0" to="o15754" />
-    </statement>
-    <statement id="d0_s1">
-      <text>spores generally less than 55 µm.</text>
-    </statement>
-    <statement id="d0_s2">
-      <text>2 n = 60.</text>
-      <biological_entity id="o15755" name="spore" name_original="spores" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="um" name="some_measurement" src="d0_s1" to="55" to_unit="um" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o15756" name="chromosome" name_original="" src="d0_s2" type="structure">
-        <character name="quantity" src="d0_s2" value="60" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulating summer--fall.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="summer-fall" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Rocky slopes and cliffs, usually on granitic or volcanic substrates;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="rocky slopes and cliffs" />
-        <character name="habitat" value="on granitic or volcanic substrates" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>1200--1900 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1900" to_unit="m" from="1200" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz.; w Mexico.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" value="w Mexico" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Most sporangia containing 32 spores; spores generally less than 55 µm. 2 n  = 60.</description>
+  <description type="phenology">Sporulating summer--fall.</description>
+  <description type="habitat">Rocky slopes and cliffs, usually on granitic or volcanic substrates;</description>
+  <description type="elevation">1200--1900 m;</description>
+  <description type="distribution">Ariz.; w Mexico.</description>
   <number>4b</number>
 </bio:treatment>

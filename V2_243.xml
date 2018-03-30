@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">acrostichum</taxon_name>
-    <taxon_name authority="Langsdorff &amp; Fischer" date="1810" rank="species">danaeifolium</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">acrostichum</taxon_name>
+    <taxon_name rank="species" authority="Langsdorff &amp; Fischer" date="1810">danaeifolium</taxon_name>
     <place_of_publication>
       <publication_title>Pl. Voy. Russes Monde</publication_title>
       <place_in_publication>1: 5, plate 1. 1810</place_in_publication>
@@ -26,174 +18,14 @@
     <taxon_hierarchy>family pteridaceae;genus acrostichum;species danaeifolium</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Acrostichum</taxon_name>
-    <taxon_name authority="Jenman" date="unknown" rank="species">lomarioides</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Acrostichum</taxon_name>
+    <taxon_name rank="species" authority="Jenman" date="unknown">lomarioides</taxon_name>
     <taxon_hierarchy>genus Acrostichum;species lomarioides;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems usually erect, infrequently branched.</text>
-      <biological_entity id="o4537" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="usually" name="orientation" src="d0_s0" value="erect" />
-        <character is_modifier="false" modifier="infrequently" name="architecture" src="d0_s0" value="branched" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves ascending or erect, 1.5-5 m × 15-60 cm.</text>
-      <biological_entity id="o4538" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s1" value="ascending" />
-        <character is_modifier="false" name="orientation" src="d0_s1" value="erect" />
-        <character char_type="range_value" from="1.5" from_unit="m" name="length" src="d0_s1" to="5" to_unit="m" />
-        <character char_type="range_value" from="15" from_unit="cm" name="width" src="d0_s1" to="60" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Rachis shallowly grooved abaxially, flat or shallowly grooved adaxially.</text>
-      <biological_entity id="o4539" name="rachis" name_original="rachis" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="shallowly; abaxially" name="architecture" src="d0_s2" value="grooved" />
-        <character is_modifier="false" name="prominence_or_shape" src="d0_s2" value="flat" />
-        <character is_modifier="false" modifier="shallowly; adaxially" name="architecture" src="d0_s2" value="grooved" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Pinnae 20-32 (-64), distant to closely spaced, usually overlapping, 7-37 × 1.5-5.5 cm, tapering toward apex, abruptly acute at tip;</text>
-      <biological_entity id="o4540" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character char_type="range_value" from="32" from_inclusive="false" name="atypical_quantity" src="d0_s3" to="64" />
-        <character char_type="range_value" from="20" name="quantity" src="d0_s3" to="32" />
-        <character is_modifier="false" name="arrangement" notes="[duplicate value]" src="d0_s3" value="distant" />
-        <character is_modifier="false" modifier="closely" name="arrangement" notes="[duplicate value]" src="d0_s3" value="spaced" />
-        <character char_type="range_value" from="distant" name="arrangement" src="d0_s3" to="closely spaced" />
-        <character is_modifier="false" modifier="usually" name="arrangement" src="d0_s3" value="overlapping" />
-        <character char_type="range_value" from="7" from_unit="cm" name="length" src="d0_s3" to="37" to_unit="cm" />
-        <character char_type="range_value" from="1.5" from_unit="cm" name="width" src="d0_s3" to="5.5" to_unit="cm" />
-        <character constraint="toward apex" constraintid="o4541" is_modifier="false" name="shape" src="d0_s3" value="tapering" />
-        <character constraint="at tip" constraintid="o4542" is_modifier="false" modifier="abruptly" name="shape" notes="" src="d0_s3" value="acute" />
-      </biological_entity>
-      <biological_entity id="o4541" name="apex" name_original="apex" src="d0_s3" type="structure" />
-      <biological_entity id="o4542" name="tip" name_original="tip" src="d0_s3" type="structure" />
-    </statement>
-    <statement id="d0_s4">
-      <text>costal areoles less than 3 times longer than wide;</text>
-    </statement>
-    <statement id="d0_s5">
-      <text>most pinnae of fertile leaves bearing sporangia.</text>
-      <biological_entity constraint="costal" id="o4543" name="areole" name_original="areoles" src="d0_s4" type="structure">
-        <character is_modifier="false" name="l_w_ratio" src="d0_s4" value="0-3" />
-      </biological_entity>
-      <biological_entity id="o4544" name="pinna" name_original="pinnae" src="d0_s5" type="structure" />
-      <biological_entity id="o4545" name="leaf" name_original="leaves" src="d0_s5" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s5" value="fertile" />
-      </biological_entity>
-      <biological_entity id="o4546" name="sporangium" name_original="sporangia" src="d0_s5" type="structure" />
-      <relation from="o4544" id="r1068" name="part_of" negation="false" src="d0_s5" to="o4545" />
-      <relation from="o4544" id="r1069" name="bearing" negation="false" src="d0_s5" to="o4546" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Sporangia spread over abaxial surface of fertile pinnae;</text>
-      <biological_entity id="o4547" name="sporangium" name_original="sporangia" src="d0_s6" type="structure" />
-      <biological_entity constraint="abaxial" id="o4548" name="surface" name_original="surface" src="d0_s6" type="structure" />
-      <biological_entity constraint="abaxial" id="o4549" name="pinna" name_original="pinnae" src="d0_s6" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s6" value="fertile" />
-      </biological_entity>
-      <relation from="o4547" id="r1070" name="spread over" negation="false" src="d0_s6" to="o4548" />
-      <relation from="o4547" id="r1071" name="spread over" negation="false" src="d0_s6" to="o4549" />
-    </statement>
-    <statement id="d0_s7">
-      <text>paraphyses stalked, ending with horizontally extended, smooth or little-lobed cell.</text>
-      <biological_entity id="o4550" name="paraphyse" name_original="paraphyses" src="d0_s7" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s7" value="stalked" />
-      </biological_entity>
-      <biological_entity id="o4551" name="cell" name_original="cell" src="d0_s7" type="structure">
-        <character is_modifier="true" modifier="horizontally" name="size" src="d0_s7" value="extended" />
-        <character is_modifier="true" name="architecture_or_pubescence_or_relief" src="d0_s7" value="smooth" />
-        <character is_modifier="true" name="shape" src="d0_s7" value="little-lobed" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>Spores (44-) 54 (-72) µm diam., surface minutely roughened with small projecting papillae.</text>
-      <biological_entity id="o4552" name="spore" name_original="spores" src="d0_s8" type="structure">
-        <character char_type="range_value" from="44" from_unit="um" name="diameter" src="d0_s8" to="54" to_inclusive="false" to_unit="um" />
-        <character char_type="range_value" from="54" from_inclusive="false" from_unit="um" name="diameter" src="d0_s8" to="72" to_unit="um" />
-        <character name="diameter" src="d0_s8" unit="um" value="54" />
-      </biological_entity>
-      <biological_entity id="o4554" name="papilla" name_original="papillae" src="d0_s8" type="structure">
-        <character is_modifier="true" name="size" src="d0_s8" value="small" />
-        <character is_modifier="true" name="orientation" src="d0_s8" value="projecting" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>2 n = 60.</text>
-      <biological_entity id="o4553" name="surface" name_original="surface" src="d0_s8" type="structure">
-        <character constraint="with papillae" constraintid="o4554" is_modifier="false" modifier="minutely" name="relief_or_texture" src="d0_s8" value="roughened" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o4555" name="chromosome" name_original="" src="d0_s9" type="structure">
-        <character name="quantity" src="d0_s9" value="60" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Somewhat saline to freshwater swamps, canal and pond margins, commonly in sinkholes in hammocks, disturbed marl sites, inland to coastal regions;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="saline to freshwater swamps , canal and pond margins , in sinkholes in hammocks , disturbed marl sites , inland to coastal regions" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--50 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="50" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Fla.; Central America; South America.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" value="Central America" establishment_means="native" />
-        <character name="distribution" value="South America" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  usually erect, infrequently branched.  Leaves  ascending or erect, 1.5--5 m × 15--60 cm.  Rachis  shallowly grooved abaxially, flat or shallowly grooved adaxially.  Pinnae  20--32(--64), distant to closely spaced, usually overlapping, 7--37 × 1.5--5.5 cm, tapering toward apex, abruptly acute at tip; costal areoles less than 3 times longer than wide; most pinnae of fertile leaves bearing sporangia.  Sporangia  spread over abaxial surface of fertile pinnae; paraphyses stalked, ending with horizontally extended, smooth or little-lobed cell.  Spores  (44--)54(--72) µm diam., surface minutely roughened with small projecting papillae. 2 n  = 60.</description>
+  <description type="habitat">Somewhat saline to freshwater swamps, canal and pond margins, commonly in sinkholes in hammocks, disturbed marl sites, inland to coastal regions;</description>
+  <description type="elevation">0--50 m;</description>
+  <description type="distribution">Fla.; Central America; South America.</description>
   <number>2</number>
   <discussion>These species frequently can be distinguished by the distribution of pinnae, the distribution of fertile pinnae, the shape of the costal areoles, and the structure of the paraphyses. In parts of Florida, their distributions are contiguous and abruptly separated by habitat. Acrosticum aureum is more frequently found in coastal shaded areas, in saline black-mangrove communities, and in the southern and southwestern parts of the state. Acrostichum danaeifolium grows vigorously in full sun and is common and widely distributed in Florida, where it has been collected in virtually every county throughout the southern two-thirds of the state. Hybrids have been produced in the laboratory, although these have not been analyzed cytologically. Hybrids are apparently rare in the field and have been reported only in the Dominican Republic (I. García de López 1978).</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_595_d2_s0">
-      <text>Fertile leaves with most pinnae fertile;</text>
-      <biological_entity id="from_key_V2_595_o16259" name="leaf" name_original="leaves" src="d2_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_595_o16260" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
-        <character is_modifier="false" name="reproduction" src="d2_s0" value="fertile" />
-      </biological_entity>
-      <relation from="from_key_V2_595_o16259" id="from_key_V2_595_r3820" name="with" negation="false" src="d2_s0" to="from_key_V2_595_o16260" />
-    </statement>
-    <statement id="from_key_V2_595_d2_s1">
-      <text>pinnae distant to closely spaced and ± overlapping;</text>
-      <biological_entity id="from_key_V2_595_o16261" name="pinna" name_original="pinnae" src="d2_s1" type="structure">
-        <character is_modifier="false" name="arrangement" notes="[duplicate value]" src="d2_s1" value="distant" />
-        <character is_modifier="false" modifier="closely" name="arrangement" notes="[duplicate value]" src="d2_s1" value="spaced" />
-        <character char_type="range_value" from="distant" name="arrangement" src="d2_s1" to="closely spaced" />
-        <character is_modifier="false" modifier="more or less" name="arrangement" src="d2_s1" value="overlapping" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_595_d2_s2">
-      <text>costal areoles usually broad, less than 3 times longer than wide;</text>
-      <biological_entity constraint="costal" id="from_key_V2_595_o16262" name="areole" name_original="areoles" src="d2_s2" type="structure">
-        <character is_modifier="false" modifier="usually" name="width" src="d2_s2" value="broad" />
-        <character is_modifier="false" name="l_w_ratio" src="d2_s2" value="0-3" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_595_d2_s3">
-      <text>paraphyses terminating in horizontally extended, smooth or lobed cell.</text>
-      <biological_entity id="from_key_V2_595_o16263" name="paraphyse" name_original="paraphyses" src="d2_s3" type="structure" />
-      <biological_entity id="from_key_V2_595_o16264" name="cell" name_original="cell" src="d2_s3" type="structure">
-        <character is_modifier="true" modifier="horizontally" name="size" src="d2_s3" value="extended" />
-        <character is_modifier="true" name="architecture_or_pubescence_or_relief" src="d2_s3" value="smooth" />
-        <character is_modifier="true" name="shape" src="d2_s3" value="lobed" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

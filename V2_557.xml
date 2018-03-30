@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="1754" rank="genus">pteris</taxon_name>
-    <taxon_name authority="Linnaeus" date="1809" rank="species">vittata</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="1754">pteris</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="1809">vittata</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl.</publication_title>
       <place_in_publication>2: 1074. 1753, not Schkuhr. 1809</place_in_publication>
@@ -26,255 +18,18 @@
     <taxon_hierarchy>family pteridaceae;genus pteris;species vittata</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pycnodoria</taxon_name>
-    <taxon_name authority="(Linnaeus) Small" date="unknown" rank="species">vittata</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pycnodoria</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) Small" date="unknown">vittata</taxon_name>
     <taxon_hierarchy>genus Pycnodoria;species vittata;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems stout, short-creeping, densely scaly;</text>
-      <biological_entity id="o15048" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="fragility_or_size" src="d0_s0" value="stout" />
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="short-creeping" />
-        <character is_modifier="false" modifier="densely" name="architecture_or_pubescence" src="d0_s0" value="scaly" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>scales pale-brown.</text>
-      <biological_entity id="o15049" name="scale" name_original="scales" src="d0_s1" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s1" value="pale-brown" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves clustered, 1-10 dm.</text>
-      <biological_entity id="o15050" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="false" name="arrangement_or_growth_form" src="d0_s2" value="clustered" />
-        <character char_type="range_value" from="1" from_unit="dm" name="some_measurement" src="d0_s2" to="10" to_unit="dm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Petiole green to pale-brown, 1-30 cm, densely scaly;</text>
-      <biological_entity id="o15051" name="petiole" name_original="petiole" src="d0_s3" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="green" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="pale-brown" />
-        <character char_type="range_value" from="green" name="coloration" src="d0_s3" to="pale-brown" />
-        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s3" to="30" to_unit="cm" />
-        <character is_modifier="false" modifier="densely" name="architecture_or_pubescence" src="d0_s3" value="scaly" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>scales dense proximally, extending to and along rachis.</text>
-      <biological_entity id="o15052" name="scale" name_original="scales" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="proximally" name="density" src="d0_s4" value="dense" />
-      </biological_entity>
-      <biological_entity id="o15053" name="rachis" name_original="rachis" src="d0_s4" type="structure" />
-      <relation from="o15052" id="r3547" name="extending to" negation="false" src="d0_s4" to="o15053" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Blade oblanceolate, 1-pinnate, (15-) 25-50 (-80) × (6-) 13-25 cm;</text>
-      <biological_entity id="o15054" name="blade" name_original="blade" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="oblanceolate" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s5" value="1-pinnate" />
-        <character char_type="range_value" from="15" from_unit="cm" name="atypical_length" src="d0_s5" to="25" to_inclusive="false" to_unit="cm" />
-        <character char_type="range_value" from="50" from_inclusive="false" from_unit="cm" name="atypical_length" src="d0_s5" to="80" to_unit="cm" />
-        <character char_type="range_value" from="25" from_unit="cm" name="length" src="d0_s5" to="50" to_unit="cm" />
-        <character char_type="range_value" from="6" from_unit="cm" name="atypical_width" src="d0_s5" to="13" to_inclusive="false" to_unit="cm" />
-        <character char_type="range_value" from="13" from_unit="cm" name="width" src="d0_s5" to="25" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>rachis not winged.</text>
-      <biological_entity id="o15055" name="rachis" name_original="rachis" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="not" name="architecture" src="d0_s6" value="winged" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Pinnae numerous, separated proximally, closely spaced to barely overlapping distally, not remaining green through winter, not decurrent on rachis, not articulate to rachis, linear-lanceolate to linear-attenuate, simple, 2-18 cm × 4-9 mm;</text>
-      <biological_entity id="o15056" name="pinna" name_original="pinnae" src="d0_s7" type="structure">
-        <character is_modifier="false" name="quantity" src="d0_s7" value="numerous" />
-        <character is_modifier="false" modifier="proximally" name="arrangement" src="d0_s7" value="separated" />
-        <character is_modifier="false" modifier="closely" name="arrangement" notes="[duplicate value]" src="d0_s7" value="spaced" />
-        <character is_modifier="false" modifier="barely" name="arrangement" notes="[duplicate value]" src="d0_s7" value="overlapping" />
-        <character char_type="range_value" from="closely spaced" modifier="distally" name="arrangement" src="d0_s7" to="barely overlapping" />
-        <character constraint="through winter" is_modifier="false" modifier="not" name="coloration" src="d0_s7" value="green" />
-        <character constraint="on rachis" constraintid="o15057" is_modifier="false" modifier="not" name="shape" src="d0_s7" value="decurrent" />
-        <character constraint="to rachis" constraintid="o15058" is_modifier="false" modifier="not" name="architecture" notes="" src="d0_s7" value="articulate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s7" value="linear-lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s7" value="linear-attenuate" />
-        <character char_type="range_value" from="linear-lanceolate" name="shape" notes="" src="d0_s7" to="linear-attenuate" />
-        <character is_modifier="false" name="architecture" src="d0_s7" value="simple" />
-        <character char_type="range_value" from="2" from_unit="cm" name="length" src="d0_s7" to="18" to_unit="cm" />
-        <character char_type="range_value" from="4" from_unit="mm" name="width" src="d0_s7" to="9" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o15057" name="rachis" name_original="rachis" src="d0_s7" type="structure" />
-      <biological_entity id="o15058" name="rachis" name_original="rachis" src="d0_s7" type="structure" />
-    </statement>
-    <statement id="d0_s8">
-      <text>base asymmetrically cordate to widened or truncate;</text>
-      <biological_entity id="o15059" name="base" name_original="base" src="d0_s8" type="structure">
-        <character is_modifier="false" modifier="asymmetrically" name="shape" src="d0_s8" value="cordate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>margins serrulate, prominently so near apex;</text>
-      <biological_entity id="o15060" name="margin" name_original="margins" src="d0_s9" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s9" value="serrulate" />
-      </biological_entity>
-      <biological_entity id="o15061" name="apex" name_original="apex" src="d0_s9" type="structure" />
-      <relation from="o15060" id="r3548" modifier="prominently" name="near" negation="false" src="d0_s9" to="o15061" />
-    </statement>
-    <statement id="d0_s10">
-      <text>apex acuminate, attenuate, or acute;</text>
-      <biological_entity id="o15062" name="apex" name_original="apex" src="d0_s10" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s10" value="acuminate" />
-        <character is_modifier="false" name="shape" src="d0_s10" value="attenuate" />
-        <character is_modifier="false" name="shape" src="d0_s10" value="acute" />
-        <character is_modifier="false" name="shape" src="d0_s10" value="attenuate" />
-        <character is_modifier="false" name="shape" src="d0_s10" value="acute" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>scales of rachis grading into uniseriate hairs on abaxial costae, or hairs absent on abaxial costae;</text>
-      <biological_entity id="o15063" name="scale" name_original="scales" src="d0_s11" type="structure" constraint="rachis" />
-      <biological_entity id="o15064" name="rachis" name_original="rachis" src="d0_s11" type="structure" />
-      <biological_entity id="o15065" name="hair" name_original="hairs" src="d0_s11" type="structure">
-        <character is_modifier="true" name="architecture_or_arrangement" src="d0_s11" value="uniseriate" />
-      </biological_entity>
-      <biological_entity constraint="abaxial" id="o15066" name="costa" name_original="costae" src="d0_s11" type="structure" />
-      <biological_entity id="o15067" name="hair" name_original="hairs" src="d0_s11" type="structure">
-        <character constraint="on abaxial costae" constraintid="o15068" is_modifier="false" name="presence" src="d0_s11" value="absent" />
-      </biological_entity>
-      <biological_entity constraint="abaxial" id="o15068" name="costa" name_original="costae" src="d0_s11" type="structure" />
-      <relation from="o15063" id="r3549" name="part_of" negation="false" src="d0_s11" to="o15064" />
-      <relation from="o15063" id="r3550" name="into" negation="false" src="d0_s11" to="o15065" />
-      <relation from="o15065" id="r3551" name="on" negation="false" src="d0_s11" to="o15066" />
-    </statement>
-    <statement id="d0_s12">
-      <text>proximal pinnae not divided or lobed.</text>
-      <biological_entity constraint="proximal" id="o15069" name="pinna" name_original="pinnae" src="d0_s12" type="structure">
-        <character is_modifier="false" modifier="not" name="shape" src="d0_s12" value="divided" />
-        <character is_modifier="false" name="shape" src="d0_s12" value="lobed" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s13">
-      <text>Veins free, forked.</text>
-      <biological_entity id="o15070" name="vein" name_original="veins" src="d0_s13" type="structure">
-        <character is_modifier="false" name="fusion" src="d0_s13" value="free" />
-        <character is_modifier="false" name="shape" src="d0_s13" value="forked" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s14">
-      <text>Sori narrow, blade tissue exposed abaxially.</text>
-      <biological_entity id="o15071" name="sorus" name_original="sori" src="d0_s14" type="structure">
-        <character is_modifier="false" name="size_or_width" src="d0_s14" value="narrow" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s15">
-      <text>2 n = 116.</text>
-      <biological_entity constraint="blade" id="o15072" name="tissue" name_original="tissue" src="d0_s14" type="structure">
-        <character is_modifier="false" modifier="abaxially" name="prominence" src="d0_s14" value="exposed" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o15073" name="chromosome" name_original="" src="d0_s15" type="structure">
-        <character name="quantity" src="d0_s15" value="116" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Roadsides and other disturbed habitats, coastal plain;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="roadsides and other disturbed habitats" />
-        <character name="habitat" value="coastal plain ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--50 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="50" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>introduced; Ala., Calif., D.C., Fla., Ga., La., Miss., S.C.; West Indies; South America; native to Asia.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="D.C." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="introduced" />
-        <character name="distribution" value="West Indies" establishment_means="native" />
-        <character name="distribution" value="South America" establishment_means="native" />
-        <character name="distribution" value="native to Asia" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems stout, short-creeping, densely scaly; scales pale brown. Leaves clustered, 1--10 dm. Petiole green to pale brown, 1--30 cm, densely scaly; scales dense proximally, extending to and along rachis. Blade oblanceolate, 1-pinnate, (15--)25--50(--80) × (6--)13--25 cm; rachis not winged. Pinnae numerous, separated proximally, closely spaced to barely overlapping distally, not remaining green through winter, not decurrent on rachis, not articulate to rachis, linear-lanceolate to linear-attenuate, simple, 2--18 cm × 4--9 mm; base asymmetrically cordate to widened or truncate; margins serrulate, prominently so near apex; apex acuminate, attenuate, or acute; scales of rachis grading into uniseriate hairs on abaxial costae, or hairs absent on abaxial costae; proximal pinnae not divided or lobed. Veins free, forked. Sori narrow, blade tissue exposed abaxially. 2 n = 116.</description>
+  <description type="habitat">Roadsides and other disturbed habitats, coastal plain;</description>
+  <description type="elevation">0--50 m;</description>
+  <description type="distribution">introduced; Ala., Calif., D.C., Fla., Ga., La., Miss., S.C.; West Indies; South America; native to Asia.</description>
   <number>2</number>
   <other_name type="common_name">Ladder brake</other_name>
   <other_name type="common_name">Chinese brake</other_name>
   <other_name type="common_name">Chinese ladder brake</other_name>
   <discussion>Pteris vittata has escaped from cultivation. It is found on almost any calcareous substrate, such as old masonry, sidewalks, building crevices, and nearly every habitat in southern Florida with exposed limestone, notably pinelands. It is scattered throughout Florida and is sporadic, becoming less frequent to rare northward in the coastal plain.</discussion>
   <discussion>Pteris vittata varies exceedingly in size, density of scales on the rachis, presence or absence of hairs on the abaxial costae, and overall color and aspect of the leaf. As a result, it may occasionally bear a resemblance to forms of P . × delchampsii W. H. Wagner &amp; Nauman, the hybrid between P . bahamensis and P . vittata .</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_9_d7_s0">
-      <text>Petioles and often also rachises densely scaly, scales light to reddish, often grading into hairs on abaxial costae;</text>
-      <biological_entity id="from_key_V2_9_o24503" name="petiole" name_original="petioles" src="d7_s0" type="structure" />
-      <biological_entity id="from_key_V2_9_o24504" name="rachis" name_original="rachises" src="d7_s0" type="structure">
-        <character is_modifier="false" modifier="often; densely" name="architecture_or_pubescence" src="d7_s0" value="scaly" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_9_o24505" name="scale" name_original="scales" src="d7_s0" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d7_s0" value="light" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d7_s0" value="reddish" />
-        <character char_type="range_value" from="light" name="coloration" src="d7_s0" to="reddish" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_9_o24506" name="hair" name_original="hairs" src="d7_s0" type="structure" />
-      <biological_entity constraint="abaxial" id="from_key_V2_9_o24507" name="costa" name_original="costae" src="d7_s0" type="structure" />
-      <relation from="from_key_V2_9_o24505" id="from_key_V2_9_r5734" modifier="often" name="into" negation="false" src="d7_s0" to="from_key_V2_9_o24506" />
-      <relation from="from_key_V2_9_o24506" id="from_key_V2_9_r5735" name="on" negation="false" src="d7_s0" to="from_key_V2_9_o24507" />
-    </statement>
-    <statement id="from_key_V2_9_d7_s1">
-      <text>pinnae appearing not articulate to rachis, apices long-attenuate or sharply acute;</text>
-      <biological_entity id="from_key_V2_9_o24508" name="pinna" name_original="pinnae" src="d7_s1" type="structure" />
-      <biological_entity id="from_key_V2_9_o24509" name="rachis" name_original="rachis" src="d7_s1" type="structure">
-        <character is_modifier="true" modifier="not" name="architecture" src="d7_s1" value="articulate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_9_o24510" name="apex" name_original="apices" src="d7_s1" type="structure">
-        <character is_modifier="false" name="shape" src="d7_s1" value="long-attenuate" />
-        <character is_modifier="false" modifier="sharply" name="shape" src="d7_s1" value="acute" />
-      </biological_entity>
-      <relation from="from_key_V2_9_o24508" id="from_key_V2_9_r5736" name="appearing" negation="false" src="d7_s1" to="from_key_V2_9_o24509" />
-    </statement>
-    <statement id="from_key_V2_9_d7_s2">
-      <text>sori narrow, with most of abaxial blade surface exposed.</text>
-      <biological_entity id="from_key_V2_9_o24511" name="sorus" name_original="sori" src="d7_s2" type="structure">
-        <character is_modifier="false" name="size_or_width" src="d7_s2" value="narrow" />
-        <character is_modifier="false" name="prominence" src="d7_s2" value="exposed" />
-      </biological_entity>
-      <biological_entity constraint="abaxial blade" id="from_key_V2_9_o24512" name="surface" name_original="surface" src="d7_s2" type="structure" />
-      <relation from="from_key_V2_9_o24511" id="from_key_V2_9_r5737" modifier="with" name="part_of" negation="false" src="d7_s2" to="from_key_V2_9_o24512" />
-    </statement>
-    <statement id="from_key_V2_9_d4_s0">
-      <text>Leaves strictly 1-pinnate, pinnae not lobed or divided.</text>
-      <biological_entity id="from_key_V2_9_o24491" name="leaf" name_original="leaves" src="d4_s0" type="structure">
-        <character is_modifier="false" modifier="strictly" name="architecture_or_shape" src="d4_s0" value="1-pinnate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_9_o24492" name="pinna" name_original="pinnae" src="d4_s0" type="structure">
-        <character is_modifier="false" modifier="not" name="shape" src="d4_s0" value="lobed" />
-        <character is_modifier="false" name="shape" src="d4_s0" value="divided" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_9_d2_s0">
-      <text>Veins in leaves entirely free.</text>
-      <biological_entity id="from_key_V2_9_o24487" name="vein" name_original="veins" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_9_o24488" name="leaf" name_original="leaves" src="d2_s0" type="structure">
-        <character is_modifier="false" modifier="entirely" name="fusion" src="d2_s0" value="free" />
-      </biological_entity>
-      <relation from="from_key_V2_9_o24487" id="from_key_V2_9_r5729" name="in" negation="false" src="d2_s0" to="from_key_V2_9_o24488" />
-    </statement>
-  </description>
 </bio:treatment>

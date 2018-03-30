@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Gray" date="unknown" rank="family">taxaceae</taxon_name>
-    <taxon_name authority="Arnott" date="1838" rank="genus">torreya</taxon_name>
-    <taxon_name authority="Torrey" date="1854" rank="species">californica</taxon_name>
+    <taxon_name rank="family" authority="Gray" date="unknown">taxaceae</taxon_name>
+    <taxon_name rank="genus" authority="Arnott" date="1838">torreya</taxon_name>
+    <taxon_name rank="species" authority="Torrey" date="1854">californica</taxon_name>
     <place_of_publication>
       <publication_title>New York J. Pharm.</publication_title>
       <place_in_publication>(1852--1854) 3: 49. 1854</place_in_publication>
@@ -26,161 +18,20 @@
     <taxon_hierarchy>family taxaceae;genus torreya;species californica</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Torreya</taxon_name>
-    <taxon_name authority="Hooker" date="unknown" rank="species">myristica</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Torreya</taxon_name>
+    <taxon_name rank="species" authority="Hooker" date="unknown">myristica</taxon_name>
     <taxon_hierarchy>genus Torreya;species myristica;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Tumion</taxon_name>
-    <taxon_name authority="(Torrey) Greene" date="unknown" rank="species">californicum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Tumion</taxon_name>
+    <taxon_name rank="species" authority="(Torrey) Greene" date="unknown">californicum</taxon_name>
     <taxon_hierarchy>genus Tumion;species californicum;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees to 20 (-25) m;</text>
-      <biological_entity id="o2949" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="20" from_inclusive="false" from_unit="m" name="atypical_some_measurement" src="d0_s0" to="25" to_unit="m" />
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="20" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk to 9 (-12) dm diam.;</text>
-      <biological_entity id="o2950" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character char_type="range_value" from="9" from_inclusive="false" from_unit="dm" name="diameter" src="d0_s1" to="12" to_unit="dm" />
-        <character char_type="range_value" from="0" from_unit="dm" name="diameter" src="d0_s1" to="9" to_unit="dm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>crown conic or, in age, round-topped.</text>
-      <biological_entity id="o2951" name="crown" name_original="crown" src="d0_s2" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s2" value="conic" />
-        <character name="shape" src="d0_s2" value="," />
-        <character is_modifier="false" name="shape" notes="" src="d0_s2" value="round-topped" />
-      </biological_entity>
-      <biological_entity id="o2952" name="age" name_original="age" src="d0_s2" type="structure" />
-      <relation from="o2951" id="r704" name="in" negation="false" src="d0_s2" to="o2952" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Branches spreading to slightly drooping;</text>
-      <biological_entity id="o2953" name="branch" name_original="branches" src="d0_s3" type="structure">
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s3" value="spreading" />
-        <character is_modifier="false" modifier="slightly" name="orientation" notes="[duplicate value]" src="d0_s3" value="drooping" />
-        <character char_type="range_value" from="spreading" name="orientation" src="d0_s3" to="slightly drooping" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>2-year-old branches reddish-brown.</text>
-      <biological_entity id="o2954" name="branch" name_original="branches" src="d0_s4" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d0_s4" value="2-year-old" />
-        <character is_modifier="false" name="coloration" src="d0_s4" value="reddish-brown" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Leaves 3-8 cm, abaxial side with 2 deeply impressed, glaucous bands of stomates, flattened on adaxial side, emitting pungent odor when crushed.</text>
-      <biological_entity id="o2955" name="leaf" name_original="leaves" src="d0_s5" type="structure">
-        <character char_type="range_value" from="3" from_unit="cm" name="some_measurement" src="d0_s5" to="8" to_unit="cm" />
-      </biological_entity>
-      <biological_entity constraint="abaxial" id="o2956" name="side" name_original="side" src="d0_s5" type="structure">
-        <character constraint="on adaxial side" constraintid="o2959" is_modifier="false" name="shape" notes="" src="d0_s5" value="flattened" />
-        <character is_modifier="false" modifier="when crushed" name="odor" notes="" src="d0_s5" value="pungent" />
-      </biological_entity>
-      <biological_entity id="o2957" name="band" name_original="bands" src="d0_s5" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s5" value="2" />
-        <character is_modifier="true" modifier="deeply" name="prominence" src="d0_s5" value="impressed" />
-        <character is_modifier="true" name="pubescence" src="d0_s5" value="glaucous" />
-      </biological_entity>
-      <biological_entity id="o2958" name="stomate" name_original="stomates" src="d0_s5" type="structure" />
-      <biological_entity constraint="adaxial" id="o2959" name="side" name_original="side" src="d0_s5" type="structure" />
-      <relation from="o2956" id="r705" name="with" negation="false" src="d0_s5" to="o2957" />
-      <relation from="o2957" id="r706" name="part_of" negation="false" src="d0_s5" to="o2958" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Pollen cones whitish.</text>
-      <biological_entity constraint="pollen" id="o2960" name="cone" name_original="cones" src="d0_s6" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s6" value="whitish" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Seed (including aril) 2.5-3.5 cm;</text>
-      <biological_entity id="o2961" name="seed" name_original="seed" src="d0_s7" type="structure">
-        <character char_type="range_value" from="2.5" from_unit="cm" name="some_measurement" src="d0_s7" to="3.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>aril light green streaked with purple.</text>
-    </statement>
-    <statement id="d0_s9">
-      <text>2 n = 16.</text>
-      <biological_entity id="o2962" name="aril" name_original="aril" src="d0_s8" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s8" value="light green" />
-        <character is_modifier="false" name="coloration" src="d0_s8" value="streaked with purple" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o2963" name="chromosome" name_original="" src="d0_s9" type="structure">
-        <character name="quantity" src="d0_s9" value="16" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Rare and local along mountain streams, protected slopes, creek bottoms, and moist canyons of the Coastal Range and Sierra Nevada;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="rare and local along mountain streams , protected slopes , creek bottoms , and moist canyons of the coastal range and sierra nevada ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--2000 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2000" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Calif.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees  to 20(--25) m; trunk to 9(--12) dm diam.; crown conic or, in age, round-topped.  Branches  spreading to slightly drooping; 2-year-old branches reddish brown.  Leaves  3--8 cm, abaxial side with 2 deeply impressed, glaucous bands of stomates, flattened on adaxial side, emitting pungent odor when crushed.  Pollen cones  whitish.  Seed  (including aril) 2.5--3.5 cm; aril light green streaked with purple. 2 n  = 16.</description>
+  <description type="habitat">Rare and local along mountain streams, protected slopes, creek bottoms, and moist canyons of the Coastal Range and Sierra Nevada;</description>
+  <description type="elevation">0--2000 m;</description>
+  <description type="distribution">Calif.</description>
   <number>1</number>
   <other_name type="common_name">California torreya</other_name>
   <other_name type="common_name">California-nutmeg</other_name>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_68_d1_s0">
-      <text>Two-year-old branches reddish-brown;</text>
-      <biological_entity id="from_key_V2_68_o18951" name="branch" name_original="branches" src="d1_s0" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d1_s0" value="2-year-old" />
-        <character is_modifier="false" name="coloration" src="d1_s0" value="reddish-brown" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_68_d1_s1">
-      <text>leaves 3-8 cm, flattened on adaxial side, with 2 deeply impressed, glaucous bands of stomates abaxially, emitting pungent odor when crushed;</text>
-      <biological_entity id="from_key_V2_68_o18952" name="leaf" name_original="leaves" src="d1_s1" type="structure">
-        <character char_type="range_value" from="3" from_unit="cm" name="some_measurement" src="d1_s1" to="8" to_unit="cm" />
-        <character constraint="on adaxial side" constraintid="o18953" is_modifier="false" name="shape" src="d1_s1" value="flattened" />
-        <character is_modifier="false" modifier="when crushed" name="odor" notes="alterIDs:o18954" src="d1_s1" value="pungent" />
-      </biological_entity>
-      <biological_entity constraint="adaxial" id="from_key_V2_68_o18953" name="side" name_original="side" src="d1_s1" type="structure" />
-      <biological_entity id="from_key_V2_68_o18954" name="band" name_original="bands" src="d1_s1" type="structure">
-        <character is_modifier="true" name="count" src="d1_s1" value="2" />
-        <character is_modifier="true" modifier="deeply" name="prominence" src="d1_s1" value="impressed" />
-        <character is_modifier="true" name="pubescence" src="d1_s1" value="glaucous" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_68_o18955" name="stomate" name_original="stomates" src="d1_s1" type="structure" />
-      <relation from="from_key_V2_68_o18952" id="from_key_V2_68_r4400" name="with" negation="false" src="d1_s1" to="from_key_V2_68_o18954" />
-      <relation from="from_key_V2_68_o18954" id="from_key_V2_68_r4401" name="part_of" negation="false" src="d1_s1" to="from_key_V2_68_o18955" />
-    </statement>
-    <statement id="from_key_V2_68_d1_s2">
-      <text>aril light green streaked with purple;</text>
-    </statement>
-    <statement id="from_key_V2_68_d1_s3">
-      <text>California.</text>
-      <biological_entity id="from_key_V2_68_o18956" name="aril" name_original="aril" src="d1_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d1_s2" value="light green" />
-        <character is_modifier="false" name="coloration" src="d1_s2" value="streaked with purple" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

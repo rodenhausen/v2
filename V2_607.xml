@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="(C. Christensen) C. Christensen in Verdoorn et al." date="1938" rank="genus">ctenitis</taxon_name>
-    <taxon_name authority="(Langsdorff &amp; Fischer) Ching" date="1940" rank="species">submarginalis</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="(C. Christensen) C. Christensen in Verdoorn et al." date="1938">ctenitis</taxon_name>
+    <taxon_name rank="species" authority="(Langsdorff &amp; Fischer) Ching" date="1940">submarginalis</taxon_name>
     <place_of_publication>
       <publication_title>Sunyatsenia</publication_title>
       <place_in_publication>5: 250. 1940</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family dryopteridaceae;genus ctenitis;species submarginalis</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Polypodium</taxon_name>
-    <taxon_name authority="Langsdorff &amp; Fischer" date="unknown" rank="species">submarginale</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Polypodium</taxon_name>
+    <taxon_name rank="species" authority="Langsdorff &amp; Fischer" date="unknown">submarginale</taxon_name>
     <place_of_publication>
       <publication_title>Pl. Voy. Russes Monde,</publication_title>
       <place_in_publication>12, plate 13. 1818</place_in_publication>
@@ -35,135 +27,17 @@
     <taxon_hierarchy>genus Polypodium;species submarginale;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Dryopteris</taxon_name>
-    <taxon_name authority="(Langsdorff &amp; Fischer) C. Christensen" date="unknown" rank="species">submarginalis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Dryopteris</taxon_name>
+    <taxon_name rank="species" authority="(Langsdorff &amp; Fischer) C. Christensen" date="unknown">submarginalis</taxon_name>
     <taxon_hierarchy>genus Dryopteris;species submarginalis;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Petiole scales brown, linear, 10-20 × 0.8-1.5 mm, lax, not densely tangled or woollike.</text>
-      <biological_entity constraint="petiole" id="o16589" name="scale" name_original="scales" src="d0_s0" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s0" value="brown" />
-        <character is_modifier="false" name="arrangement_or_course_or_shape" src="d0_s0" value="linear" />
-        <character char_type="range_value" from="10" from_unit="mm" name="length" src="d0_s0" to="20" to_unit="mm" />
-        <character char_type="range_value" from="0.8" from_unit="mm" name="width" src="d0_s0" to="1.5" to_unit="mm" />
-        <character is_modifier="false" name="architecture_or_arrangement" src="d0_s0" value="lax" />
-        <character is_modifier="false" modifier="not densely" name="arrangement" src="d0_s0" value="tangled" />
-        <character is_modifier="false" name="shape" src="d0_s0" value="woollike" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Blade 1-pinnate-pinnatifid, glabrous or pubescent on both surfaces, glandular abaxially and occasionally adaxially, glands pale-yellow, ca. 0.5 mm.</text>
-      <biological_entity id="o16590" name="blade" name_original="blade" src="d0_s1" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s1" value="1-pinnate-pinnatifid" />
-        <character is_modifier="false" name="pubescence" src="d0_s1" value="glabrous" />
-        <character constraint="on surfaces" constraintid="o16591" is_modifier="false" name="pubescence" src="d0_s1" value="pubescent" />
-        <character is_modifier="false" modifier="abaxially" name="architecture_or_function_or_pubescence" notes="" src="d0_s1" value="glandular" />
-      </biological_entity>
-      <biological_entity id="o16591" name="surface" name_original="surfaces" src="d0_s1" type="structure" />
-      <biological_entity id="o16592" name="gland" name_original="glands" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="occasionally adaxially; adaxially" name="coloration" src="d0_s1" value="pale-yellow" />
-        <character name="some_measurement" src="d0_s1" unit="mm" value="0.5" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Basal pinnae 8-18 × 2-3 cm, equilateral, incised more than 3/4 distance to costae.</text>
-      <biological_entity constraint="basal" id="o16593" name="pinna" name_original="pinnae" src="d0_s2" type="structure">
-        <character char_type="range_value" from="8" from_unit="cm" name="length" src="d0_s2" to="18" to_unit="cm" />
-        <character char_type="range_value" from="2" from_unit="cm" name="width" src="d0_s2" to="3" to_unit="cm" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s2" value="equilateral" />
-        <character is_modifier="false" name="shape" src="d0_s2" value="incised" />
-        <character name="quantity" src="d0_s2" value="3" />
-        <character constraint="to costae" constraintid="o16594" name="quantity" src="d0_s2" value="/4" />
-      </biological_entity>
-      <biological_entity id="o16594" name="costa" name_original="costae" src="d0_s2" type="structure" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Ultimate segments 4-7 mm wide, margins ciliate.</text>
-      <biological_entity constraint="ultimate" id="o16595" name="segment" name_original="segments" src="d0_s3" type="structure">
-        <character char_type="range_value" from="4" from_unit="mm" name="width" src="d0_s3" to="7" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o16596" name="margin" name_original="margins" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture_or_pubescence_or_shape" src="d0_s3" value="ciliate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Veins 6-10 (-15) pairs per segment, unbranched.</text>
-      <biological_entity id="o16597" name="vein" name_original="veins" src="d0_s4" type="structure">
-        <character char_type="range_value" from="10" from_inclusive="false" name="atypical_quantity" src="d0_s4" to="15" />
-        <character char_type="range_value" constraint="per segment" constraintid="o16598" from="6" name="quantity" src="d0_s4" to="10" />
-        <character is_modifier="false" name="architecture" notes="" src="d0_s4" value="unbranched" />
-      </biological_entity>
-      <biological_entity id="o16598" name="segment" name_original="segment" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Sori medial to supramedial;</text>
-      <biological_entity id="o16599" name="sorus" name_original="sori" src="d0_s5" type="structure">
-        <character is_modifier="false" name="position" notes="[duplicate value]" src="d0_s5" value="medial" />
-        <character is_modifier="false" name="position" notes="[duplicate value]" src="d0_s5" value="supramedial" />
-        <character char_type="range_value" from="medial" name="position" src="d0_s5" to="supramedial" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>indusia present but soon deciduous or completely absent.</text>
-      <biological_entity id="o16600" name="indusium" name_original="indusia" src="d0_s6" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s6" value="absent" />
-        <character is_modifier="false" modifier="soon" name="duration" src="d0_s6" value="deciduous" />
-        <character is_modifier="false" modifier="completely; completely" name="presence" src="d0_s6" value="absent" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Cypress swamps, hammocks, old forested spoil banks;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="cypress swamps" />
-        <character name="habitat" value="hammocks" />
-        <character name="habitat" value="old forested spoil banks ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="0" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Fla., La.; e, s Mexico; West Indies in Hispaniola; Central America; South America to Uruguay.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
-        <character name="distribution" value="e" establishment_means="native" />
-        <character name="distribution" value="s Mexico" establishment_means="native" />
-        <character name="distribution" value="West Indies in Hispaniola" establishment_means="native" />
-        <character name="distribution" value="Central America" establishment_means="native" />
-        <character name="distribution" value="South America to Uruguay" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Petiole  scales brown, linear, 10--20 × 0.8--1.5 mm, lax, not densely tangled or woollike.  Blade  1-pinnate-pinnatifid, glabrous or pubescent on both surfaces, glandular abaxially and occasionally adaxially, glands pale yellow, ca. 0.5 mm. Basal pinnae 8--18 × 2--3 cm, equilateral, incised more than 3/4 distance to costae. Ultimate segments 4--7 mm wide, margins ciliate.  Veins  6--10(--15) pairs per segment, unbranched.  Sori  medial to supramedial; indusia present but soon deciduous or completely absent.</description>
+  <description type="habitat">Cypress swamps, hammocks, old forested spoil banks;</description>
+  <description type="elevation">0 m;</description>
+  <description type="distribution">Fla., La.; e, s Mexico; West Indies in Hispaniola; Central America; South America to Uruguay.</description>
   <number>2</number>
   <discussion>Combining authorship of the accepted name sometimes has been incorrectly attributed to E. B. Copeland (1947). The Louisiana population of Ctenitis submarginalis occurs more than 960 km from populations in Florida and represents the northernmost locality for the species (G. P. Landry and W. D. Reese 1991). Unlike most ferns in North America, the plants in the Louisiana population are nonseasonal, producing leaves and sori throughout the year.</discussion>
   <references>
     <reference>Landrey, G. P. and W. D. Reese. 1991.  Ctenitis submarginalis  (Langsd. &amp; Fisch.) Copel. new to Louisiana: First record in the U.S. outside of Florida. Amer. Fern J. 81: 105--106.</reference>
   </references>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_535_d2_s0">
-      <text>Blades oblong or narrowly lanceolate, 1-pinnate-pinnatifid;</text>
-      <biological_entity id="from_key_V2_535_o14426" name="blade" name_original="blades" src="d2_s0" type="structure">
-        <character is_modifier="false" name="shape" src="d2_s0" value="oblong" />
-        <character is_modifier="false" modifier="narrowly" name="shape" src="d2_s0" value="lanceolate" />
-        <character is_modifier="false" name="shape" src="d2_s0" value="1-pinnate-pinnatifid" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_535_d2_s1">
-      <text>basal pinnae equilateral.</text>
-      <biological_entity constraint="basal" id="from_key_V2_535_o14427" name="pinna" name_original="pinnae" src="d2_s1" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d2_s1" value="equilateral" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

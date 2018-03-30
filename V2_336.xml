@@ -1,90 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="Yatskievych" date="1990" rank="genus">pentagramma</taxon_name>
-    <taxon_name authority="(Weatherby) Yatskievych" date="1920" rank="species">pallida</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Yatskievych" date="1990">pentagramma</taxon_name>
+    <taxon_name rank="species" authority="(Weatherby) Yatskievych" date="1920">pallida</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>80: 15. 1990 Pityrogramma triangularis  (Kaulfuss). 1920</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family pteridaceae;genus pentagramma;species pallida</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Petiole black or nearly so, not shiny, farinose;</text>
-      <biological_entity id="o7631" name="petiole" name_original="petiole" src="d0_s0" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s0" value="black" />
-        <character name="coloration" src="d0_s0" value="nearly" />
-        <character is_modifier="false" modifier="not" name="reflectance" src="d0_s0" value="shiny" />
-        <character is_modifier="false" name="pubescence" src="d0_s0" value="farinose" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>farina white, especially in young leaves.</text>
-      <biological_entity id="o7632" name="farina" name_original="farina" src="d0_s1" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s1" value="white" />
-      </biological_entity>
-      <biological_entity id="o7633" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d0_s1" value="young" />
-      </biological_entity>
-      <relation from="o7632" id="r1787" modifier="especially" name="in" negation="false" src="d0_s1" to="o7633" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Blade thin, herbaceous, white-farinose abaxially and adaxially, appearing grayish adaxially when fresh.</text>
-    </statement>
-    <statement id="d0_s3">
-      <text>2 n = 60.</text>
-      <biological_entity id="o7634" name="blade" name_original="blade" src="d0_s2" type="structure">
-        <character is_modifier="false" name="width" src="d0_s2" value="thin" />
-        <character is_modifier="false" name="growth_form_or_texture" src="d0_s2" value="herbaceous" />
-        <character is_modifier="false" modifier="abaxially" name="pubescence" src="d0_s2" value="white-farinose" />
-        <character is_modifier="false" modifier="when fresh" name="coloration" src="d0_s2" value="grayish" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o7635" name="chromosome" name_original="" src="d0_s3" type="structure">
-        <character name="quantity" src="d0_s3" value="60" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Rock crevices and at base of boulders, in drainages and on slopes, rarely on roadbanks, pine and oak woodlands;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="rock crevices and at base of boulders , in drainages and on slopes , on roadbanks , pine and oak woodlands" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>100--400 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="400" to_unit="m" from="100" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Calif.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Petiole  black or nearly so, not shiny, farinose; farina white, especially in young leaves.  Blade  thin, herbaceous, white-farinose abaxially and adaxially, appearing grayish adaxially when fresh. 2 n  = 60.</description>
+  <description type="habitat">Rock crevices and at base of boulders, in drainages and on slopes, rarely on roadbanks, pine and oak woodlands;</description>
+  <description type="elevation">100--400 m;</description>
+  <description type="distribution">Calif.</description>
   <number>1</number>
   <other_name type="common_name">P . pallida (Weatherby) K. S. Alt &amp; V. E. Grant</other_name>
   <discussion>Pentagramma pallida is endemic to the foothills of the Sierra Nevada. C. A. Weatherby (1920), K. S. Alt and V. Grant (1960), and D. M. Smith (1980) agreed that P . pallida is among the most easily distinguishable taxa in the group, particularly in the field. In addition to the key characteristics, the usually blackish, nonlustrous petioles of this species are unique in the genus. Alt and Grant noted a case of apparent hybridization between this species and Pentagramma triangularis in Tuolumne County, California.</discussion>
@@ -92,24 +28,4 @@
     <reference>Smith, D. M. 1980. Flavonoid analysis of the  Pityrogramma triangularis  complex. Bull. Torrey Bot. Club 107: 134--145.</reference>
     <reference>Weatherby, C. A. 1920. Varieties of  Pityrogramma triangularis . Rhodora 22: 113--120.</reference>
   </references>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_717_d1_s0">
-      <text>Petioles, especially in young leaves, and stem apices farinose;</text>
-      <biological_entity id="from_key_V2_717_o20570" name="petiole" name_original="petioles" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_717_o20571" name="leaf" name_original="leaves" src="d1_s0" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d1_s0" value="young" />
-      </biological_entity>
-      <biological_entity constraint="stem" id="from_key_V2_717_o20572" name="apex" name_original="apices" src="d1_s0" type="structure">
-        <character is_modifier="false" name="pubescence" src="d1_s0" value="farinose" />
-      </biological_entity>
-      <relation from="from_key_V2_717_o20570" id="from_key_V2_717_r4806" modifier="especially" name="in" negation="false" src="d1_s0" to="from_key_V2_717_o20571" />
-    </statement>
-    <statement id="from_key_V2_717_d1_s1">
-      <text>blades white-farinose abaxially and adaxially, appearing grayish adaxially when fresh.</text>
-      <biological_entity id="from_key_V2_717_o20573" name="blade" name_original="blades" src="d1_s1" type="structure">
-        <character is_modifier="false" modifier="abaxially" name="pubescence" src="d1_s1" value="white-farinose" />
-        <character is_modifier="false" modifier="when fresh" name="coloration" src="d1_s1" value="grayish" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

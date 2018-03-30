@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Newman" date="unknown" rank="family">aspleniaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">asplenium</taxon_name>
-    <taxon_name authority="Linnaeus" date="1753" rank="species">rhizophyllum</taxon_name>
+    <taxon_name rank="family" authority="Newman" date="unknown">aspleniaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">asplenium</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="1753">rhizophyllum</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl.</publication_title>
       <place_in_publication>2: 1078. 1753</place_in_publication>
@@ -26,279 +18,16 @@
     <taxon_hierarchy>family aspleniaceae;genus asplenium;species rhizophyllum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Camptosorus</taxon_name>
-    <taxon_name authority="(Linnaeus) Link" date="unknown" rank="species">rhizophyllus</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Camptosorus</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) Link" date="unknown">rhizophyllus</taxon_name>
     <taxon_hierarchy>genus Camptosorus;species rhizophyllus;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Roots not proliferous.</text>
-      <biological_entity id="o1261" name="root" name_original="roots" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="not" name="reproduction" src="d0_s0" value="proliferous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems erect or ascending, usually unbranched;</text>
-      <biological_entity id="o1262" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s1" value="erect" />
-        <character is_modifier="false" name="orientation" src="d0_s1" value="ascending" />
-        <character is_modifier="false" modifier="usually" name="architecture" src="d0_s1" value="unbranched" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>scales dark-brown throughout, narrowly deltate, 2-3 × (0.2-) 0.5-1 mm, margins entire.</text>
-      <biological_entity id="o1263" name="scale" name_original="scales" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="throughout" name="coloration" src="d0_s2" value="dark-brown" />
-        <character is_modifier="false" modifier="narrowly" name="shape" src="d0_s2" value="deltate" />
-        <character char_type="range_value" from="2" from_unit="mm" name="length" src="d0_s2" to="3" to_unit="mm" />
-        <character char_type="range_value" from="0.2" from_unit="mm" name="atypical_width" src="d0_s2" to="0.5" to_inclusive="false" to_unit="mm" />
-        <character char_type="range_value" from="0.5" from_unit="mm" name="width" src="d0_s2" to="1" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o1264" name="margin" name_original="margins" src="d0_s2" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s2" value="entire" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Leaves monomorphic but fertile leaves generally larger than sterile leaves.</text>
-      <biological_entity id="o1265" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s3" value="monomorphic" />
-      </biological_entity>
-      <biological_entity id="o1266" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s3" value="fertile" />
-        <character constraint="than sterile leaves" constraintid="o1267" is_modifier="false" name="size" src="d0_s3" value="generally larger" />
-      </biological_entity>
-      <biological_entity id="o1267" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s3" value="sterile" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Petiole reddish-brown at base, becoming green distally, dull but sometimes lustrous at base, 0.5-12 cm, 0.1-1.5 times length of blade;</text>
-      <biological_entity id="o1268" name="petiole" name_original="petiole" src="d0_s4" type="structure">
-        <character constraint="at base" constraintid="o1269" is_modifier="false" name="coloration" src="d0_s4" value="reddish-brown" />
-        <character is_modifier="false" modifier="becoming; distally" name="coloration" notes="" src="d0_s4" value="green" />
-        <character is_modifier="false" name="reflectance" src="d0_s4" value="dull" />
-        <character constraint="at base" constraintid="o1270" is_modifier="false" modifier="sometimes" name="reflectance" src="d0_s4" value="lustrous" />
-        <character char_type="range_value" from="0.5" from_unit="cm" name="some_measurement" notes="" src="d0_s4" to="12" to_unit="cm" />
-        <character constraint="blade" constraintid="o1271" is_modifier="false" name="length" src="d0_s4" value="0.1-1.5 times length of blade" />
-      </biological_entity>
-      <biological_entity id="o1269" name="base" name_original="base" src="d0_s4" type="structure" />
-      <biological_entity id="o1270" name="base" name_original="base" src="d0_s4" type="structure" />
-      <biological_entity id="o1271" name="blade" name_original="blade" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>indument of dark-brown, narrowly deltate scales at base, of minute, club-shaped hairs distally.</text>
-      <biological_entity id="o1272" name="indument" name_original="indument" src="d0_s5" type="structure" constraint="scale" />
-      <biological_entity id="o1273" name="scale" name_original="scales" src="d0_s5" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s5" value="dark-brown" />
-        <character is_modifier="true" modifier="narrowly" name="shape" src="d0_s5" value="deltate" />
-      </biological_entity>
-      <biological_entity id="o1274" name="base" name_original="base" src="d0_s5" type="structure" />
-      <biological_entity id="o1275" name="hair" name_original="hairs" src="d0_s5" type="structure">
-        <character is_modifier="true" name="size" src="d0_s5" value="minute" />
-        <character is_modifier="true" name="shape" src="d0_s5" value="club--shaped" value_original="club-shaped" />
-      </biological_entity>
-      <relation from="o1272" id="r275" name="part_of" negation="false" src="d0_s5" to="o1273" />
-      <relation from="o1272" id="r276" name="at" negation="false" src="d0_s5" to="o1274" />
-      <relation from="o1272" id="r277" name="part_of" negation="false" src="d0_s5" to="o1275" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Blades highly variable in size and shape, even on 1 plant, narrowly deltate to linear-lanceolate, simple, 1-30 × 0.5-5 cm, leathery, sparsely pubescent, hairs more numerous abaxially than adaxially;</text>
-      <biological_entity id="o1276" name="blade" name_original="blades" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="highly" name="shape" src="d0_s6" value="variable" />
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s6" value="deltate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="linear-lanceolate" />
-        <character char_type="range_value" from="narrowly deltate" name="shape" notes="" src="d0_s6" to="linear-lanceolate" />
-        <character is_modifier="false" name="architecture" src="d0_s6" value="simple" />
-        <character char_type="range_value" from="1" from_unit="cm" name="length" src="d0_s6" to="30" to_unit="cm" />
-        <character char_type="range_value" from="0.5" from_unit="cm" name="width" src="d0_s6" to="5" to_unit="cm" />
-        <character is_modifier="false" name="texture" src="d0_s6" value="leathery" />
-        <character is_modifier="false" modifier="sparsely" name="pubescence" src="d0_s6" value="pubescent" />
-      </biological_entity>
-      <biological_entity id="o1277" name="plant" name_original="plant" src="d0_s6" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s6" value="1" />
-      </biological_entity>
-      <biological_entity id="o1278" name="hair" name_original="hairs" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="abaxially" name="quantity" src="d0_s6" value="numerous" />
-      </biological_entity>
-      <relation from="o1276" id="r278" modifier="even" name="on" negation="false" src="d0_s6" to="o1277" />
-    </statement>
-    <statement id="d0_s7">
-      <text>blade base cordate, auriculate, or occasionally hastate, auricles rarely attenuate and radicant;</text>
-      <biological_entity constraint="blade" id="o1279" name="base" name_original="base" src="d0_s7" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s7" value="cordate" />
-        <character is_modifier="false" name="shape" src="d0_s7" value="auriculate" />
-        <character is_modifier="false" modifier="occasionally" name="shape" src="d0_s7" value="hastate" />
-        <character is_modifier="false" name="shape" src="d0_s7" value="auriculate" />
-        <character is_modifier="false" modifier="occasionally" name="shape" src="d0_s7" value="hastate" />
-      </biological_entity>
-      <biological_entity id="o1280" name="auricle" name_original="auricles" src="d0_s7" type="structure">
-        <character is_modifier="false" modifier="rarely" name="shape" src="d0_s7" value="attenuate" />
-        <character is_modifier="false" name="architecture" src="d0_s7" value="radicant" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>margins entire to sinuate, rarely irregularly incised;</text>
-      <biological_entity id="o1281" name="margin" name_original="margins" src="d0_s8" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="entire" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="sinuate" />
-        <character char_type="range_value" from="entire" name="shape" src="d0_s8" to="sinuate" />
-        <character is_modifier="false" modifier="rarely irregularly" name="shape" src="d0_s8" value="incised" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>apex rounded to very long-attenuate and, if attenuate, generally rooting at tip.</text>
-      <biological_entity id="o1282" name="apex" name_original="apex" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s9" value="rounded to very" />
-        <character is_modifier="false" modifier="very" name="shape" src="d0_s9" value="long-attenuate" />
-        <character is_modifier="false" name="shape" src="d0_s9" value="attenuate" />
-        <character constraint="at tip" constraintid="o1283" is_modifier="false" modifier="generally" name="architecture" src="d0_s9" value="rooting" />
-      </biological_entity>
-      <biological_entity id="o1283" name="tip" name_original="tip" src="d0_s9" type="structure" />
-    </statement>
-    <statement id="d0_s10">
-      <text>Rachis green, dull, nearly glabrous.</text>
-      <biological_entity id="o1284" name="rachis" name_original="rachis" src="d0_s10" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s10" value="green" />
-        <character is_modifier="false" name="reflectance" src="d0_s10" value="dull" />
-        <character is_modifier="false" modifier="nearly" name="pubescence" src="d0_s10" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>Veins obscure, anastomosing to form areoles near midrib.</text>
-      <biological_entity id="o1285" name="vein" name_original="veins" src="d0_s11" type="structure">
-        <character is_modifier="false" name="prominence" src="d0_s11" value="obscure" />
-        <character constraint="to form, areoles" constraintid="o1286, o1287" is_modifier="false" name="architecture" src="d0_s11" value="anastomosing" />
-      </biological_entity>
-      <biological_entity id="o1286" name="form" name_original="form" src="d0_s11" type="structure" />
-      <biological_entity id="o1287" name="areole" name_original="areoles" src="d0_s11" type="structure" />
-      <biological_entity id="o1288" name="midrib" name_original="midrib" src="d0_s11" type="structure" />
-      <relation from="o1286" id="r279" name="near" negation="false" src="d0_s11" to="o1288" />
-      <relation from="o1287" id="r280" name="near" negation="false" src="d0_s11" to="o1288" />
-    </statement>
-    <statement id="d0_s12">
-      <text>Sori numerous, scattered somewhat irregularly over blade, often joined at vein junctures.</text>
-      <biological_entity id="o1289" name="sorus" name_original="sori" src="d0_s12" type="structure">
-        <character is_modifier="false" name="quantity" src="d0_s12" value="numerous" />
-        <character constraint="over blade" constraintid="o1290" is_modifier="false" modifier="somewhat irregularly" name="arrangement" src="d0_s12" value="scattered" />
-        <character constraint="at vein junctures" constraintid="o1291" is_modifier="false" modifier="often" name="fusion" notes="" src="d0_s12" value="joined" />
-      </biological_entity>
-      <biological_entity id="o1290" name="blade" name_original="blade" src="d0_s12" type="structure" />
-      <biological_entity constraint="vein" id="o1291" name="juncture" name_original="junctures" src="d0_s12" type="structure" />
-    </statement>
-    <statement id="d0_s13">
-      <text>Spores 64 per sporangium.</text>
-      <biological_entity id="o1293" name="sporangium" name_original="sporangium" src="d0_s13" type="structure" />
-    </statement>
-    <statement id="d0_s14">
-      <text>2 n = 72.</text>
-      <biological_entity id="o1292" name="spore" name_original="spores" src="d0_s13" type="structure">
-        <character constraint="per sporangium" constraintid="o1293" name="quantity" src="d0_s13" value="64" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o1294" name="chromosome" name_original="" src="d0_s14" type="structure">
-        <character name="quantity" src="d0_s14" value="72" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Shaded, usually moss-covered boulders and ledges, usually on limestone or other basic rocks, but occasionally on sandstone or other acidic rocks, rarely on fallen tree trunks;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="shaded , moss-covered boulders and ledges , on limestone or other basic rocks , but on sandstone or other acidic rocks , on fallen tree trunks ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--1000 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1000" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ont., Que.; Ala., Ark., Conn., D.C., Ga., Ill., Ind., Iowa, Kans., Ky., Maine, Md., Mass., Mich., Minn., Miss., Mo., N.H., N.J., N.Y., N.C., Ohio, Okla., Pa., R.I., Tenn., Vt., Va., W.Va., Wis.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="D.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Roots  not proliferous.  Stems  erect or ascending, usually unbranched; scales dark brown throughout, narrowly deltate, 2--3 × (0.2--)0.5--1 mm, margins entire.  Leaves  monomorphic but fertile leaves generally larger than sterile leaves.  Petiole  reddish brown at base, becoming green distally, dull but sometimes lustrous at base, 0.5--12 cm, 0.1--1.5 times length of blade; indument of dark brown, narrowly deltate scales at base, of minute, club-shaped hairs distally.  Blades  highly variable in size and shape, even on 1 plant, narrowly deltate to linear-lanceolate, simple, 1--30 × 0.5--5 cm, leathery, sparsely pubescent, hairs more numerous abaxially than adaxially; blade base cordate, auriculate, or occasionally hastate, auricles rarely attenuate and radicant; margins entire to sinuate, rarely irregularly incised; apex rounded to very long-attenuate and, if attenuate, generally rooting at tip.  Rachis  green, dull, nearly glabrous.  Veins  obscure, anastomosing to form areoles near midrib.  Sori  numerous, scattered somewhat irregularly over blade, often joined at vein junctures.  Spores  64 per sporangium. 2 n  = 72.</description>
+  <description type="habitat">Shaded, usually moss-covered boulders and ledges, usually on limestone or other basic rocks, but occasionally on sandstone or other acidic rocks, rarely on fallen tree trunks;</description>
+  <description type="elevation">0--1000 m;</description>
+  <description type="distribution">Ont., Que.; Ala., Ark., Conn., D.C., Ga., Ill., Ind., Iowa, Kans., Ky., Maine, Md., Mass., Mich., Minn., Miss., Mo., N.H., N.J., N.Y., N.C., Ohio, Okla., Pa., R.I., Tenn., Vt., Va., W.Va., Wis.</description>
   <number>4</number>
   <other_name type="common_name">Walking fern</other_name>
   <other_name type="common_name">doradille ambulante</other_name>
   <discussion>Asplenium rhizophyllum , a diploid species, is morphologically very distinctive within Asplenium and is segregated by many authors, along with its sister species A . ruprechtii Kurata of eastern Asia, into the genus Camptosorus Link. Proliferations arising from leaf tips result in the formation of clonal patches, often dense and extensive, on the mossy boulders and ledges where it typically grows. Naturally occurring sterile hybrids are known with A . platyneuron (these and their fertile allotetraploid derivatives are both referred to A . ebenoides ), A . ruta-muraria ( A . × inexpectatum E. L. Braun ex C. V. Morton), A . trichomanes subsp. trichomanes [ A . × shawneense (R. C. Moran) H. E. Ballard], and A . ebenoides . In addition, the allotetraploid A . pinnatifidum is derived from the hybrid A . montanum × rhizophyllum ; the sterile diploid hybrid is unknown.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_270_d5_s0">
-      <text>Veins anastomosing to form areoles;</text>
-      <biological_entity id="from_key_V2_270_o5242" name="vein" name_original="veins" src="d5_s0" type="structure">
-        <character constraint="to form, areoles" constraintid="o5243, o5244" is_modifier="false" name="architecture" src="d5_s0" value="anastomosing" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_270_o5243" name="form" name_original="form" src="d5_s0" type="structure" />
-      <biological_entity id="from_key_V2_270_o5244" name="areole" name_original="areoles" src="d5_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_270_d5_s1">
-      <text>blades rooting at tip.</text>
-      <biological_entity id="from_key_V2_270_o5245" name="blade" name_original="blades" src="d5_s1" type="structure">
-        <character constraint="at tip" constraintid="o5246" is_modifier="false" name="architecture" src="d5_s1" value="rooting" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_270_o5246" name="tip" name_original="tip" src="d5_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_270_d4_s0">
-      <text>Blades more than 10 mm wide, linear-lanceolate to lanceolate, if lobed, segments resembling adnate pinnae.</text>
-      <biological_entity id="from_key_V2_270_o5239" name="blade" name_original="blades" src="d4_s0" type="structure">
-        <character char_type="range_value" from="10" from_unit="mm" name="width" src="d4_s0" upper_restricted="false" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s0" value="linear-lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d4_s0" value="lanceolate" />
-        <character char_type="range_value" from="linear-lanceolate" name="shape" src="d4_s0" to="lanceolate" />
-        <character is_modifier="false" name="shape" src="d4_s0" value="lobed" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_270_o5240" name="segment" name_original="segments" src="d4_s0" type="structure" />
-      <biological_entity id="from_key_V2_270_o5241" name="pinna" name_original="pinnae" src="d4_s0" type="structure">
-        <character is_modifier="true" name="fusion" src="d4_s0" value="adnate" />
-      </biological_entity>
-      <relation from="from_key_V2_270_o5240" id="from_key_V2_270_r1203" name="resembling" negation="false" src="d4_s0" to="from_key_V2_270_o5241" />
-    </statement>
-    <statement id="from_key_V2_270_d1_s0">
-      <text>Blades simple, pinnatifid, or forked (sometimes with free pinnae at base), not pinnate throughout.</text>
-      <biological_entity id="from_key_V2_270_o5233" name="blade" name_original="blades" src="d1_s0" type="structure">
-        <character is_modifier="false" name="architecture" src="d1_s0" value="simple" />
-        <character is_modifier="false" name="shape" src="d1_s0" value="pinnatifid" />
-        <character is_modifier="false" name="shape" src="d1_s0" value="forked" />
-        <character is_modifier="false" name="shape" src="d1_s0" value="pinnatifid" />
-        <character is_modifier="false" name="shape" src="d1_s0" value="forked" />
-        <character is_modifier="false" modifier="not; throughout" name="architecture_or_shape" src="d1_s0" value="pinnate" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

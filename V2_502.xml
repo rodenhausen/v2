@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Mirbel" date="unknown" rank="family">lycopodiaceae</taxon_name>
-    <taxon_name authority="Holub" date="1975" rank="genus">Diphasiastrum</taxon_name>
+    <taxon_name rank="family" authority="Mirbel" date="unknown">lycopodiaceae</taxon_name>
+    <taxon_name rank="genus" authority="Holub" date="1975">Diphasiastrum</taxon_name>
     <place_of_publication>
       <publication_title>Preslia</publication_title>
       <place_in_publication>47: 104. 1975</place_in_publication>
@@ -25,195 +17,8 @@
     <taxon_hierarchy>family lycopodiaceae;genus Diphasiastrum</taxon_hierarchy>
     <other_info_on_name type="etymology">[ Diphasium, a generic name, and -astrum, incomplete resemblance]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants terrestrial, mainly trailing on ground with erect shoots.</text>
-      <biological_entity id="o12866" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="terrestrial" />
-        <character constraint="on ground" constraintid="o12867" is_modifier="false" modifier="mainly" name="orientation" src="d0_s0" value="trailing" />
-      </biological_entity>
-      <biological_entity id="o12867" name="ground" name_original="ground" src="d0_s0" type="structure" />
-      <biological_entity id="o12868" name="shoot" name_original="shoots" src="d0_s0" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s0" value="erect" />
-      </biological_entity>
-      <relation from="o12867" id="r2974" name="with" negation="false" src="d0_s0" to="o12868" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Roots emerging immediately on underside of main-stems.</text>
-      <biological_entity id="o12869" name="root" name_original="roots" src="d0_s1" type="structure">
-        <character constraint="on underside" constraintid="o12870" is_modifier="false" name="position_relational" src="d0_s1" value="emerging" />
-      </biological_entity>
-      <biological_entity id="o12870" name="underside" name_original="underside" src="d0_s1" type="structure" />
-      <biological_entity id="o12871" name="main-stem" name_original="main-stems" src="d0_s1" type="structure" />
-      <relation from="o12870" id="r2975" name="part_of" negation="false" src="d0_s1" to="o12871" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Horizontal stems on substrate surface to subterranean, long-creeping.</text>
-      <biological_entity id="o12872" name="stem" name_original="stems" src="d0_s2" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s2" value="horizontal" />
-        <character is_modifier="false" name="growth_form_or_orientation" notes="" src="d0_s2" value="long-creeping" />
-      </biological_entity>
-      <biological_entity id="o12873" name="surface" name_original="surface" src="d0_s2" type="structure">
-        <character is_modifier="false" name="location" src="d0_s2" value="subterranean" />
-      </biological_entity>
-      <relation from="o12872" id="r2976" name="on" negation="false" src="d0_s2" to="o12873" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Upright shoots quadrate to flattened (except in D. sitchense), 2-6 mm diam., usually with 2-5 lateral branchlets on main erect stem;</text>
-      <biological_entity id="o12874" name="shoot" name_original="shoots" src="d0_s3" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s3" value="upright" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="quadrate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s3" value="flattened" />
-        <character char_type="range_value" from="quadrate" name="shape" src="d0_s3" to="flattened" />
-        <character char_type="range_value" from="2" from_unit="mm" name="diameter" src="d0_s3" to="6" to_unit="mm" />
-      </biological_entity>
-      <biological_entity constraint="lateral" id="o12875" name="branchlet" name_original="branchlets" src="d0_s3" type="structure">
-        <character char_type="range_value" from="2" is_modifier="true" name="quantity" src="d0_s3" to="5" />
-      </biological_entity>
-      <biological_entity constraint="main" id="o12876" name="stem" name_original="stem" src="d0_s3" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s3" value="erect" />
-      </biological_entity>
-      <relation from="o12874" id="r2977" modifier="usually" name="with" negation="false" src="d0_s3" to="o12875" />
-      <relation from="o12875" id="r2978" name="on" negation="false" src="d0_s3" to="o12876" />
-    </statement>
-    <statement id="d0_s4">
-      <text>lateral branchlets leafy, ± flat in cross-section.</text>
-      <biological_entity constraint="lateral" id="o12877" name="branchlet" name_original="branchlets" src="d0_s4" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s4" value="leafy" />
-        <character constraint="in cross-section" constraintid="o12878" is_modifier="false" modifier="more or less" name="prominence_or_shape" src="d0_s4" value="flat" />
-      </biological_entity>
-      <biological_entity id="o12878" name="cross-section" name_original="cross-section" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Leaves on horizontal stems somewhat distant, appressed, linear to lanceolate, thin, scalelike;</text>
-      <biological_entity id="o12879" name="leaf" name_original="leaves" src="d0_s5" type="structure">
-        <character is_modifier="false" name="fixation_or_orientation" notes="" src="d0_s5" value="appressed" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="linear" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="lanceolate" />
-        <character char_type="range_value" from="linear" name="shape" src="d0_s5" to="lanceolate" />
-        <character is_modifier="false" name="width" src="d0_s5" value="thin" />
-        <character is_modifier="false" name="shape" src="d0_s5" value="scale-like" value_original="scalelike" />
-      </biological_entity>
-      <biological_entity id="o12880" name="stem" name_original="stems" src="d0_s5" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s5" value="horizontal" />
-        <character is_modifier="false" modifier="somewhat" name="arrangement" src="d0_s5" value="distant" />
-      </biological_entity>
-      <relation from="o12879" id="r2979" name="on" negation="false" src="d0_s5" to="o12880" />
-    </statement>
-    <statement id="d0_s6">
-      <text>leaves on ultimate branchlets appressed to divergent, linear-lanceolate to nearly filiform, usually almost scalelike and mostly imbricate, in 4 ranks, leaves of lateral ranks larger, more spreading than those of upperside and underside ranks (except in Diphasiastrum sitchense with 5 ranks of uniform nonimbricate leaves).</text>
-      <biological_entity id="o12881" name="leaf" name_original="leaves" src="d0_s6" type="structure">
-        <character is_modifier="false" name="arrangement" src="d0_s6" value="divergent" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="linear-lanceolate" />
-        <character is_modifier="false" modifier="nearly" name="shape" notes="[duplicate value]" src="d0_s6" value="filiform" />
-        <character char_type="range_value" from="linear-lanceolate" name="shape" src="d0_s6" to="nearly filiform" />
-        <character is_modifier="false" modifier="usually almost" name="shape" src="d0_s6" value="scale-like" value_original="scalelike" />
-        <character is_modifier="false" modifier="mostly" name="arrangement" src="d0_s6" value="imbricate" />
-      </biological_entity>
-      <biological_entity constraint="ultimate" id="o12882" name="branchlet" name_original="branchlets" src="d0_s6" type="structure">
-        <character is_modifier="false" name="fixation_or_orientation" src="d0_s6" value="appressed" />
-      </biological_entity>
-      <biological_entity id="o12883" name="rank" name_original="ranks" src="d0_s6" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s6" value="4" />
-      </biological_entity>
-      <biological_entity id="o12884" name="leaf" name_original="leaves" src="d0_s6" type="structure">
-        <character is_modifier="false" name="size" src="d0_s6" value="larger" />
-      </biological_entity>
-      <biological_entity constraint="lateral" id="o12885" name="rank" name_original="ranks" src="d0_s6" type="structure" />
-      <relation from="o12881" id="r2980" name="on" negation="false" src="d0_s6" to="o12882" />
-      <relation from="o12881" id="r2981" name="in" negation="false" src="d0_s6" to="o12883" />
-      <relation from="o12884" id="r2982" name="part_of" negation="false" src="d0_s6" to="o12885" />
-    </statement>
-    <statement id="d0_s7">
-      <text>Gemmiferous branchlets and gemmae absent.</text>
-      <biological_entity id="o12886" name="branchlet" name_original="branchlets" src="d0_s7" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s7" value="gemmiferous" />
-        <character is_modifier="false" name="presence" src="d0_s7" value="absent" />
-      </biological_entity>
-      <biological_entity id="o12887" name="gemma" name_original="gemmae" src="d0_s7" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s7" value="gemmiferous" />
-        <character is_modifier="false" name="presence" src="d0_s7" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>Strobili solitary and sessile or multiple and stalked, apex blunt, acute, or with sterile apical projection;</text>
-      <biological_entity id="o12888" name="strobilus" name_original="strobili" src="d0_s8" type="structure">
-        <character is_modifier="false" name="architecture_or_arrangement_or_growth_form" src="d0_s8" value="solitary" />
-        <character is_modifier="false" name="architecture" src="d0_s8" value="sessile" />
-        <character is_modifier="false" name="quantity" src="d0_s8" value="multiple" />
-        <character is_modifier="false" name="architecture" src="d0_s8" value="stalked" />
-      </biological_entity>
-      <biological_entity id="o12889" name="apex" name_original="apex" src="d0_s8" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s8" value="blunt" />
-        <character is_modifier="false" name="shape" src="d0_s8" value="acute" />
-      </biological_entity>
-      <biological_entity constraint="apical" id="o12890" name="projection" name_original="projection" src="d0_s8" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s8" value="sterile" />
-      </biological_entity>
-      <relation from="o12889" id="r2983" name="with" negation="false" src="d0_s8" to="o12890" />
-    </statement>
-    <statement id="d0_s9">
-      <text>peduncle conspicuously leafy;</text>
-      <biological_entity id="o12891" name="peduncle" name_original="peduncle" src="d0_s9" type="structure">
-        <character is_modifier="false" modifier="conspicuously" name="architecture" src="d0_s9" value="leafy" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>sporophylls shorter than peduncle leaves.</text>
-      <biological_entity id="o12892" name="sporophyll" name_original="sporophylls" src="d0_s10" type="structure">
-        <character constraint="than peduncle leaves" constraintid="o12893" is_modifier="false" name="height_or_length_or_size" src="d0_s10" value="shorter" />
-      </biological_entity>
-      <biological_entity constraint="peduncle" id="o12893" name="leaf" name_original="leaves" src="d0_s10" type="structure" />
-    </statement>
-    <statement id="d0_s11">
-      <text>Sporangia reniform.</text>
-      <biological_entity id="o12894" name="sporangium" name_original="sporangia" src="d0_s11" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s11" value="reniform" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s12">
-      <text>Spores reticulate, sides at equator convex, angles acute.</text>
-      <biological_entity id="o12895" name="spore" name_original="spores" src="d0_s12" type="structure">
-        <character is_modifier="false" name="architecture_or_coloration_or_relief" src="d0_s12" value="reticulate" />
-      </biological_entity>
-      <biological_entity id="o12896" name="side" name_original="sides" src="d0_s12" type="structure">
-        <character constraint="at equator" is_modifier="false" name="shape" src="d0_s12" value="convex" />
-      </biological_entity>
-      <biological_entity id="o12897" name="angle" name_original="angles" src="d0_s12" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s12" value="acute" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s13">
-      <text>Gametophytes nonphotosynthetic, mycorrhizal, carrot-shaped, paraphyses absent;</text>
-      <biological_entity id="o12898" name="gametophyte" name_original="gametophytes" src="d0_s13" type="structure">
-        <character is_modifier="false" name="structure_in_adjective_form" src="d0_s13" value="mycorrhizal" />
-        <character is_modifier="false" name="shape" src="d0_s13" value="carrot--shaped" value_original="carrot-shaped" />
-      </biological_entity>
-      <biological_entity id="o12899" name="paraphyse" name_original="paraphyses" src="d0_s13" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s13" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s14">
-      <text>ring meristem present.</text>
-    </statement>
-    <statement id="d0_s15">
-      <text>x = 23.</text>
-      <biological_entity constraint="ring" id="o12900" name="meristem" name_original="meristem" src="d0_s14" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s14" value="absent" />
-      </biological_entity>
-      <biological_entity constraint="x" id="o12901" name="chromosome" name_original="" src="d0_s15" type="structure">
-        <character name="quantity" src="d0_s15" value="23" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>mainly north temperate and subarctic.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="mainly north temperate and subarctic" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  terrestrial, mainly trailing on ground with erect shoots.  Roots  emerging immediately on underside of main stems.  Horizontal stems  on substrate surface to subterranean, long-creeping.  Upright shoots  quadrate to flattened (except in  D .  sitchense ), 2--6 mm diam., usually with 2--5 lateral branchlets on main erect stem; lateral branchlets leafy, ± flat in cross section.  Leaves  on horizontal stems somewhat distant, appressed, linear to lanceolate, thin, scalelike; leaves on ultimate branchlets appressed to divergent, linear-lanceolate to nearly filiform, usually almost scalelike and mostly imbricate, in 4 ranks, leaves of lateral ranks larger, more spreading than those of upperside and underside ranks (except in  Diphasiastrum sitchense  with 5 ranks of uniform nonimbricate leaves).  Gemmiferous branchlets and gemmae  absent.  Strobili  solitary and sessile or multiple and stalked, apex blunt, acute, or with sterile apical projection; peduncle conspicuously leafy; sporophylls shorter than peduncle leaves.  Sporangia  reniform.  Spores  reticulate, sides at equator convex, angles acute.  Gametophytes  nonphotosynthetic, mycorrhizal, carrot-shaped, paraphyses absent; ring meristem present.  x  = 23.</description>
+  <description type="distribution">mainly north temperate and subarctic.</description>
   <number>4</number>
   <other_name type="common_name">False Diphasium</other_name>
   <discussion>Diphasiastrum is remarkable in North America for its ability to form numerous homoploid, apparently fertile interspecific hybrids, some of which are frequent to common and must be reckoned with in floristic studies. Field and laboratory studies of these hybrids and their parents are needed for determination of the population dynamics of Diphasiastrum and to answer questions as to why the parental species retain their genetic identities.</discussion>
@@ -226,321 +31,43 @@
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Upright shoots to 18 cm, mostly less than 12 cm including base;</text>
-          <biological_entity id="o12902" name="shoot" name_original="shoots" src="d1_s0" type="structure">
-            <character is_modifier="true" name="orientation" src="d1_s0" value="upright" />
-            <character char_type="range_value" from="0" from_unit="cm" modifier="to 18 cm; mostly" name="some_measurement" src="d1_s0" to="12" to_unit="cm" />
-          </biological_entity>
-          <biological_entity id="o12903" name="base" name_original="base" src="d1_s0" type="structure" />
-          <relation from="o12902" id="r2984" name="including" negation="false" src="d1_s0" to="o12903" />
-        </statement>
-        <statement id="d1_s1">
-          <text>strobili mostly sessile.</text>
-          <biological_entity id="o12904" name="strobilus" name_original="strobili" src="d1_s1" type="structure">
-            <character is_modifier="false" modifier="mostly" name="architecture" src="d1_s1" value="sessile" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Upright shoots to 18 cm, mostly less than 12 cm including base; strobili mostly sessile.</description>
       <next_statement_id>2</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Upright shoots, 8-50 cm, mostly more than 12 cm, including base;</text>
-          <biological_entity id="o12905" name="shoot" name_original="shoots" src="d2_s0" type="structure">
-            <character is_modifier="true" name="orientation" src="d2_s0" value="upright" />
-            <character char_type="range_value" from="8" from_unit="cm" name="some_measurement" src="d2_s0" to="50" to_unit="cm" />
-            <character char_type="range_value" from="12" from_unit="cm" modifier="mostly" name="some_measurement" src="d2_s0" upper_restricted="false" />
-          </biological_entity>
-          <biological_entity id="o12906" name="base" name_original="base" src="d2_s0" type="structure" />
-          <relation from="o12905" id="r2985" name="including" negation="false" src="d2_s0" to="o12906" />
-        </statement>
-        <statement id="d2_s1">
-          <text>strobili stalked.</text>
-          <biological_entity id="o12907" name="strobilus" name_original="strobili" src="d2_s1" type="structure">
-            <character is_modifier="false" name="architecture" src="d2_s1" value="stalked" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Upright shoots, 8--50 cm, mostly more than 12 cm, including base; strobili stalked.</description>
       <next_statement_id>3</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d3_s0">
-          <text>Ultimate branchlets approximately square in cross-section;</text>
-          <biological_entity constraint="ultimate" id="o12908" name="branchlet" name_original="branchlets" src="d3_s0" type="structure">
-            <character constraint="in cross-section" constraintid="o12909" is_modifier="false" modifier="approximately" name="shape" src="d3_s0" value="square" />
-          </biological_entity>
-          <biological_entity id="o12909" name="cross-section" name_original="cross-section" src="d3_s0" type="structure" />
-        </statement>
-        <statement id="d3_s1">
-          <text>leaves 4-ranked, strongly overlapping.</text>
-          <biological_entity id="o12910" name="leaf" name_original="leaves" src="d3_s1" type="structure">
-            <character is_modifier="false" name="arrangement" src="d3_s1" value="4-ranked" />
-            <character is_modifier="false" modifier="strongly" name="arrangement" src="d3_s1" value="overlapping" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Ultimate branchlets approximately square in cross section; leaves 4-ranked, strongly overlapping.</description>
       <determination>1 Diphasiastrum alpinum</determination>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d4_s0">
-          <text>Ultimate branchlets round in cross-section;</text>
-          <biological_entity constraint="ultimate" id="o12911" name="branchlet" name_original="branchlets" src="d4_s0" type="structure">
-            <character constraint="in cross-section" constraintid="o12912" is_modifier="false" name="shape" src="d4_s0" value="round" />
-          </biological_entity>
-          <biological_entity id="o12912" name="cross-section" name_original="cross-section" src="d4_s0" type="structure" />
-        </statement>
-        <statement id="d4_s1">
-          <text>leaves 5-ranked, not overlapping.</text>
-          <biological_entity id="o12913" name="leaf" name_original="leaves" src="d4_s1" type="structure">
-            <character is_modifier="false" name="arrangement" src="d4_s1" value="5-ranked" />
-            <character is_modifier="false" modifier="not" name="arrangement" src="d4_s1" value="overlapping" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Ultimate branchlets round in cross section; leaves 5-ranked, not overlapping.</description>
       <determination>4 Diphasiastrum sitchense</determination>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d5_s0">
-          <text>Ultimate branchlets cordlike, nearly square in cross-section, usually bluish glaucous;</text>
-          <biological_entity constraint="ultimate" id="o12914" name="branchlet" name_original="branchlets" src="d5_s0" type="structure">
-            <character is_modifier="false" name="shape" src="d5_s0" value="cordlike" />
-            <character constraint="in cross-section" constraintid="o12915" is_modifier="false" modifier="nearly" name="shape" src="d5_s0" value="square" />
-            <character is_modifier="false" modifier="usually" name="coloration" notes="" src="d5_s0" value="bluish" />
-            <character is_modifier="false" name="pubescence" src="d5_s0" value="glaucous" />
-          </biological_entity>
-          <biological_entity id="o12915" name="cross-section" name_original="cross-section" src="d5_s0" type="structure" />
-        </statement>
-        <statement id="d5_s1">
-          <text>underside leaves approximately equal in size to lateral and upperside leaves.</text>
-          <biological_entity constraint="underside" id="o12916" name="leaf" name_original="leaves" src="d5_s1" type="structure">
-            <character constraint="in lateral" constraintid="o12917" is_modifier="false" modifier="approximately" name="variability" src="d5_s1" value="equal" />
-          </biological_entity>
-          <biological_entity id="o12917" name="lateral" name_original="lateral" src="d5_s1" type="structure">
-            <character is_modifier="true" name="character" src="d5_s1" value="size" />
-          </biological_entity>
-          <biological_entity constraint="upperside" id="o12918" name="leaf" name_original="leaves" src="d5_s1" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Ultimate branchlets cordlike, nearly square in cross section, usually bluish glaucous; underside leaves approximately equal in size to lateral and upperside leaves.</description>
       <determination>5 Diphasiastrum tristachyum</determination>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d6_s0">
-          <text>Ultimate branchlets narrowly bladelike, flat in cross-section, usually green;</text>
-          <biological_entity constraint="ultimate" id="o12919" name="branchlet" name_original="branchlets" src="d6_s0" type="structure">
-            <character is_modifier="false" modifier="narrowly" name="shape" src="d6_s0" value="bladelike" />
-            <character constraint="in cross-section" constraintid="o12920" is_modifier="false" name="prominence_or_shape" src="d6_s0" value="flat" />
-            <character is_modifier="false" modifier="usually" name="coloration" notes="" src="d6_s0" value="green" />
-          </biological_entity>
-          <biological_entity id="o12920" name="cross-section" name_original="cross-section" src="d6_s0" type="structure" />
-        </statement>
-        <statement id="d6_s1">
-          <text>underside leaves much smaller than lateral and upperside leaves.</text>
-          <biological_entity constraint="underside" id="o12921" name="leaf" name_original="leaves" src="d6_s1" type="structure">
-            <character constraint="than lateral" constraintid="o12922" is_modifier="false" name="size" src="d6_s1" value="much smaller" />
-          </biological_entity>
-          <biological_entity id="o12922" name="lateral" name_original="lateral" src="d6_s1" type="structure" />
-          <biological_entity constraint="upperside" id="o12923" name="leaf" name_original="leaves" src="d6_s1" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Ultimate branchlets narrowly bladelike, flat in cross section, usually green; underside leaves much smaller than lateral and upperside leaves.</description>
       <next_statement_id>4</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>4</statement_id>
-      <description type="morphology">
-        <statement id="d7_s0">
-          <text>Branchlets irregular, with conspicuous annual bud constrictions;</text>
-          <biological_entity id="o12924" name="branchlet" name_original="branchlets" src="d7_s0" type="structure">
-            <character is_modifier="false" name="architecture_or_course" src="d7_s0" value="irregular" />
-          </biological_entity>
-          <biological_entity constraint="bud" id="o12925" name="constriction" name_original="constrictions" src="d7_s0" type="structure">
-            <character is_modifier="true" name="prominence" src="d7_s0" value="conspicuous" />
-            <character is_modifier="true" name="duration" src="d7_s0" value="annual" />
-          </biological_entity>
-          <relation from="o12924" id="r2986" name="with" negation="false" src="d7_s0" to="o12925" />
-        </statement>
-        <statement id="d7_s1">
-          <text>peduncles, if present, regularly forked;</text>
-          <biological_entity id="o12926" name="peduncle" name_original="peduncles" src="d7_s1" type="structure">
-            <character is_modifier="false" name="presence" src="d7_s1" value="absent" />
-            <character is_modifier="false" modifier="regularly" name="shape" src="d7_s1" value="forked" />
-          </biological_entity>
-        </statement>
-        <statement id="d7_s2">
-          <text>strobili mostly 15-25 mm, lacking sterile tips.</text>
-          <biological_entity id="o12927" name="strobilus" name_original="strobili" src="d7_s2" type="structure">
-            <character char_type="range_value" from="15" from_unit="mm" name="some_measurement" src="d7_s2" to="25" to_unit="mm" />
-          </biological_entity>
-          <biological_entity id="o12928" name="tip" name_original="tips" src="d7_s2" type="structure">
-            <character is_modifier="true" name="quantity" src="d7_s2" value="lacking" />
-            <character is_modifier="true" name="reproduction" src="d7_s2" value="sterile" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Branchlets irregular, with conspicuous annual bud constrictions; peduncles, if present, regularly forked; strobili mostly 15--25 mm, lacking sterile tips.</description>
       <determination>2 Diphasiastrum complanatum</determination>
     </key_statement>
     <key_statement>
       <statement_id>4</statement_id>
-      <description type="morphology">
-        <statement id="d8_s0">
-          <text>Branchlets very regularly fan-shaped, lacking conspicuous annual bud constrictions;</text>
-          <biological_entity id="o12929" name="branchlet" name_original="branchlets" src="d8_s0" type="structure">
-            <character is_modifier="false" modifier="very regularly" name="shape" src="d8_s0" value="fan--shaped" value_original="fan-shaped" />
-          </biological_entity>
-          <biological_entity constraint="bud" id="o12930" name="constriction" name_original="constrictions" src="d8_s0" type="structure">
-            <character is_modifier="true" name="quantity" src="d8_s0" value="lacking" />
-            <character is_modifier="true" name="prominence" src="d8_s0" value="conspicuous" />
-            <character is_modifier="true" name="duration" src="d8_s0" value="annual" />
-          </biological_entity>
-        </statement>
-        <statement id="d8_s1">
-          <text>peduncles mostly branching abruptly at base to produce false whorl of strobili;</text>
-          <biological_entity id="o12931" name="peduncle" name_original="peduncles" src="d8_s1" type="structure" constraint="strobilus">
-            <character constraint="at base" constraintid="o12932" is_modifier="false" modifier="mostly" name="architecture" src="d8_s1" value="branching" />
-          </biological_entity>
-          <biological_entity id="o12932" name="base" name_original="base" src="d8_s1" type="structure" />
-          <biological_entity constraint="false" id="o12933" name="whorl" name_original="whorl" src="d8_s1" type="structure" />
-          <biological_entity id="o12934" name="strobilus" name_original="strobili" src="d8_s1" type="structure" />
-          <relation from="o12932" id="r2987" name="produce" negation="false" src="d8_s1" to="o12933" />
-          <relation from="o12931" id="r2988" name="part_of" negation="false" src="d8_s1" to="o12934" />
-        </statement>
-        <statement id="d8_s2">
-          <text>strobili mostly 20-35 mm, many with sterile tips.</text>
-          <biological_entity id="o12935" name="strobilus" name_original="strobili" src="d8_s2" type="structure">
-            <character char_type="range_value" from="20" from_unit="mm" name="some_measurement" src="d8_s2" to="35" to_unit="mm" />
-            <character constraint="with tips" constraintid="o12936" is_modifier="false" name="quantity" src="d8_s2" value="many" />
-          </biological_entity>
-          <biological_entity id="o12936" name="tip" name_original="tips" src="d8_s2" type="structure">
-            <character is_modifier="true" name="reproduction" src="d8_s2" value="sterile" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Branchlets very regularly fan-shaped, lacking conspicuous annual bud constrictions; peduncles mostly branching abruptly at base to produce false whorl of strobili; strobili mostly 20--35 mm, many with sterile tips.</description>
       <determination>3 Diphasiastrum digitatum</determination>
     </key_statement>
   </key>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_781_d8_s0">
-      <text>Ultimate shoots (including leaves) 2-6 mm diam., quadrate to flattened (except in D. sitchense, which round-branched);</text>
-      <biological_entity constraint="ultimate" id="from_key_V2_781_o22723" name="shoot" name_original="shoots" src="d8_s0" type="structure">
-        <character char_type="range_value" from="2" from_unit="mm" name="diameter" src="d8_s0" to="6" to_unit="mm" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d8_s0" value="quadrate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d8_s0" value="flattened" />
-        <character char_type="range_value" from="quadrate" name="shape" src="d8_s0" to="flattened" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_781_d8_s1">
-      <text>leaves mostly 4-5-ranked, mostly imbricate (except in D. sitchense);</text>
-      <biological_entity id="from_key_V2_781_o22724" name="leaf" name_original="leaves" src="d8_s1" type="structure">
-        <character is_modifier="false" modifier="mostly" name="arrangement" src="d8_s1" value="4-5-ranked" />
-        <character is_modifier="false" modifier="mostly" name="arrangement" src="d8_s1" value="imbricate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_781_d8_s2">
-      <text>peduncles, if present, dichotomously branched;</text>
-      <biological_entity id="from_key_V2_781_o22725" name="peduncle" name_original="peduncles" src="d8_s2" type="structure">
-        <character is_modifier="false" name="count" src="d8_s2" value="present" />
-        <character is_modifier="false" modifier="dichotomously" name="architecture" src="d8_s2" value="branched" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_781_d8_s3">
-      <text>gametophytes carrot-shaped.</text>
-      <biological_entity id="from_key_V2_781_o22726" name="gametophyte" name_original="gametophytes" src="d8_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d8_s3" value="carrot-shaped" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_781_d5_s0">
-      <text>Strobili borne on distinct peduncles or sessile;</text>
-      <biological_entity id="from_key_V2_781_o22702" name="strobilus" name_original="strobili" src="d5_s0" type="structure">
-        <character is_modifier="false" name="architecture" notes="alterIDs:o22703" src="d5_s0" value="sessile" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_781_o22703" name="peduncle" name_original="peduncles" src="d5_s0" type="structure">
-        <character is_modifier="true" name="fusion" src="d5_s0" value="distinct" />
-      </biological_entity>
-      <relation from="from_key_V2_781_o22702" id="from_key_V2_781_r5317" name="borne on" negation="false" src="d5_s0" to="from_key_V2_781_o22703" />
-    </statement>
-    <statement id="from_key_V2_781_d5_s1">
-      <text>peduncles, if present, bearing remote, reduced leaves;</text>
-      <biological_entity id="from_key_V2_781_o22704" name="peduncle" name_original="peduncles" src="d5_s1" type="structure">
-        <character is_modifier="false" name="count" src="d5_s1" value="present" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_781_o22705" name="leaf" name_original="leaves" src="d5_s1" type="structure">
-        <character is_modifier="true" name="arrangement_or_density" src="d5_s1" value="remote" />
-        <character is_modifier="true" name="size" src="d5_s1" value="reduced" />
-      </biological_entity>
-      <relation from="from_key_V2_781_o22704" id="from_key_V2_781_r5318" name="bearing" negation="false" src="d5_s1" to="from_key_V2_781_o22705" />
-    </statement>
-    <statement id="from_key_V2_781_d5_s2">
-      <text>spores reticulate;</text>
-      <biological_entity id="from_key_V2_781_o22706" name="spore" name_original="spores" src="d5_s2" type="structure">
-        <character is_modifier="false" name="architecture_or_coloration_or_relief" src="d5_s2" value="reticulate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_781_d5_s3">
-      <text>gametophytes subterranean, nonphotosynthetic;</text>
-    </statement>
-    <statement id="from_key_V2_781_d5_s4">
-      <text>mainly dry uplands.</text>
-      <biological_entity id="from_key_V2_781_o22707" name="gametophyte" name_original="gametophytes" src="d5_s3" type="structure">
-        <character is_modifier="false" name="location" src="d5_s3" value="subterranean" />
-        <character is_modifier="false" modifier="mainly" name="condition_or_texture" src="d5_s4" value="dry" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_781_d2_s0">
-      <text>Horizontal stems present;</text>
-      <biological_entity id="from_key_V2_781_o22685" name="stem" name_original="stems" src="d2_s0" type="structure">
-        <character is_modifier="true" name="orientation" src="d2_s0" value="horizontal" />
-        <character is_modifier="false" name="count" src="d2_s0" value="present" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_781_d2_s1">
-      <text>upright shoot systems alternating along rhizome;</text>
-      <biological_entity constraint="shoot" id="from_key_V2_781_o22686" name="system" name_original="systems" src="d2_s1" type="structure">
-        <character is_modifier="true" name="orientation" src="d2_s1" value="upright" />
-        <character constraint="along rhizome" constraintid="o22687" is_modifier="false" name="arrangement" src="d2_s1" value="alternating" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_781_o22687" name="rhizome" name_original="rhizome" src="d2_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_781_d2_s2">
-      <text>roots emerging from where they originate;</text>
-      <biological_entity id="from_key_V2_781_o22688" name="root" name_original="roots" src="d2_s2" type="structure">
-        <character is_modifier="false" modifier="from where they" name="position_relational" src="d2_s2" value="emerging" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_781_d2_s3">
-      <text>sporangia borne in axils of highly modified, reduced sporophylls aggregated into upright or nodding or pendent strobili;</text>
-      <biological_entity id="from_key_V2_781_o22689" name="sporangium" name_original="sporangia" src="d2_s3" type="structure" />
-      <biological_entity id="from_key_V2_781_o22690" name="axil" name_original="axils" src="d2_s3" type="structure" />
-      <biological_entity id="from_key_V2_781_o22691" name="sporophyll" name_original="sporophylls" src="d2_s3" type="structure">
-        <character is_modifier="true" name="size" src="d2_s3" value="reduced" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_781_o22692" name="strobilus" name_original="strobili" src="d2_s3" type="structure">
-        <character is_modifier="true" name="size" src="d2_s3" value="reduced" />
-        <character is_modifier="true" name="arrangement" src="d2_s3" value="aggregated" />
-        <character is_modifier="true" name="orientation" src="d2_s3" value="upright" />
-        <character is_modifier="true" name="orientation" src="d2_s3" value="nodding" />
-        <character is_modifier="true" name="orientation" src="d2_s3" value="pendent" />
-      </biological_entity>
-      <relation from="from_key_V2_781_o22689" id="from_key_V2_781_r5314" name="borne in" negation="false" src="d2_s3" to="from_key_V2_781_o22690" />
-      <relation from="from_key_V2_781_o22689" id="from_key_V2_781_r5315" name="borne in" negation="false" src="d2_s3" to="from_key_V2_781_o22691" />
-      <relation from="from_key_V2_781_o22689" id="from_key_V2_781_r5316" name="borne in" negation="false" src="d2_s3" to="from_key_V2_781_o22692" />
-    </statement>
-    <statement id="from_key_V2_781_d2_s4">
-      <text>spores reticulate or rugulate.</text>
-      <biological_entity id="from_key_V2_781_o22693" name="spore" name_original="spores" src="d2_s4" type="structure">
-        <character is_modifier="false" name="relief" src="d2_s4" value="reticulate" />
-        <character is_modifier="false" name="relief" src="d2_s4" value="rugulate" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

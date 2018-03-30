@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="C. Presl" date="unknown" rank="family">blechnaceae</taxon_name>
-    <taxon_name authority="Smith" date="1745" rank="genus">woodwardia</taxon_name>
-    <taxon_name authority="(Linnaeus) T. Moore" date="1857" rank="species">areolata</taxon_name>
+    <taxon_name rank="family" authority="C. Presl" date="unknown">blechnaceae</taxon_name>
+    <taxon_name rank="genus" authority="Smith" date="1745">woodwardia</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) T. Moore" date="1857">areolata</taxon_name>
     <place_of_publication>
       <publication_title>Index Fil.</publication_title>
       <place_in_publication>45. 1857</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family blechnaceae;genus woodwardia;species areolata</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Acrostichum</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="species">areolatum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Acrostichum</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="unknown">areolatum</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl.</publication_title>
       <place_in_publication>2: 1069. 1753</place_in_publication>
@@ -35,394 +27,37 @@
     <taxon_hierarchy>genus Acrostichum;species areolatum;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Lorinseria</taxon_name>
-    <taxon_name authority="(Linnaeus) C. Presl" date="unknown" rank="species">areolata</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Lorinseria</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) C. Presl" date="unknown">areolata</taxon_name>
     <taxon_hierarchy>genus Lorinseria;species areolata;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems long-creeping, slender;</text>
-      <biological_entity id="o21854" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="long-creeping" />
-        <character is_modifier="false" name="size" src="d0_s0" value="slender" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>scales brown, many, broadly lanceolate.</text>
-      <biological_entity id="o21855" name="scale" name_original="scales" src="d0_s1" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s1" value="brown" />
-        <character is_modifier="false" name="quantity" src="d0_s1" value="many" />
-        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s1" value="lanceolate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves dimorphic, deciduous, few, well separated;</text>
-      <biological_entity id="o21856" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="false" name="growth_form" src="d0_s2" value="dimorphic" />
-        <character is_modifier="false" name="duration" src="d0_s2" value="deciduous" />
-        <character is_modifier="false" name="quantity" src="d0_s2" value="few" />
-        <character is_modifier="false" modifier="well" name="arrangement" src="d0_s2" value="separated" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>sterile leaves 40-58 cm, fertile leaves 49-70 cm.</text>
-      <biological_entity id="o21857" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s3" value="sterile" />
-        <character char_type="range_value" from="40" from_unit="cm" name="some_measurement" src="d0_s3" to="58" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o21858" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s3" value="fertile" />
-        <character char_type="range_value" from="49" from_unit="cm" name="some_measurement" src="d0_s3" to="70" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Petiole reddish-brown proximally, straw-colored distally;</text>
-      <biological_entity id="o21859" name="petiole" name_original="petiole" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="proximally" name="coloration" src="d0_s4" value="reddish-brown" />
-        <character is_modifier="false" modifier="distally" name="coloration" src="d0_s4" value="straw-colored" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>base not swollen, with sparsely set brown scales.</text>
-      <biological_entity id="o21860" name="base" name_original="base" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="not" name="shape" src="d0_s5" value="swollen" />
-      </biological_entity>
-      <biological_entity id="o21861" name="set" name_original="set" src="d0_s5" type="structure" />
-      <biological_entity id="o21862" name="scale" name_original="scales" src="d0_s5" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s5" value="brown" />
-      </biological_entity>
-      <relation from="o21860" id="r5119" name="with" negation="false" src="d0_s5" to="o21861" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Blade bright green, generally lanceolate, scaly-glandular upon emergence but soon glabrate;</text>
-      <biological_entity id="o21863" name="blade" name_original="blade" src="d0_s6" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s6" value="bright green" />
-        <character is_modifier="false" modifier="generally" name="shape" src="d0_s6" value="lanceolate" />
-        <character constraint="upon emergence" constraintid="o21864" is_modifier="false" name="architecture_or_function_or_pubescence" src="d0_s6" value="scaly-glandular" />
-      </biological_entity>
-      <biological_entity id="o21864" name="emergence" name_original="emergence" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="soon" name="pubescence" src="d0_s6" value="glabrate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>sterile leaves pinnatifid, 13-26 cm;</text>
-      <biological_entity id="o21865" name="leaf" name_original="leaves" src="d0_s7" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s7" value="sterile" />
-        <character is_modifier="false" name="shape" src="d0_s7" value="pinnatifid" />
-        <character char_type="range_value" from="13" from_unit="cm" name="some_measurement" src="d0_s7" to="26" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>fertile leaves pinnate, sharply contracted, 20-27 cm.</text>
-      <biological_entity id="o21866" name="leaf" name_original="leaves" src="d0_s8" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s8" value="fertile" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s8" value="pinnate" />
-        <character is_modifier="false" modifier="sharply" name="condition_or_size" src="d0_s8" value="contracted" />
-        <character char_type="range_value" from="20" from_unit="cm" name="some_measurement" src="d0_s8" to="27" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>Pinnae not articulate to rachis, arranged in 7-12 alternate pairs;</text>
-      <biological_entity id="o21867" name="pinna" name_original="pinnae" src="d0_s9" type="structure">
-        <character constraint="to rachis" constraintid="o21868" is_modifier="false" modifier="not" name="architecture" src="d0_s9" value="articulate" />
-        <character constraint="in pairs" constraintid="o21869" is_modifier="false" name="arrangement" notes="" src="d0_s9" value="arranged" />
-      </biological_entity>
-      <biological_entity id="o21868" name="rachis" name_original="rachis" src="d0_s9" type="structure" />
-      <biological_entity id="o21869" name="pair" name_original="pairs" src="d0_s9" type="structure">
-        <character char_type="range_value" from="7" is_modifier="true" name="quantity" src="d0_s9" to="12" />
-        <character is_modifier="true" name="arrangement" src="d0_s9" value="alternate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>sterile pinnae lanceolate, 3-11 × 1-2.5 cm;</text>
-      <biological_entity id="o21870" name="pinna" name_original="pinnae" src="d0_s10" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s10" value="sterile" />
-        <character is_modifier="false" name="shape" src="d0_s10" value="lanceolate" />
-        <character char_type="range_value" from="3" from_unit="cm" name="length" src="d0_s10" to="11" to_unit="cm" />
-        <character char_type="range_value" from="1" from_unit="cm" name="width" src="d0_s10" to="2.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>fertile pinnae contracted, linear, 3-11 × 0.2-0.5 cm.</text>
-      <biological_entity id="o21871" name="pinna" name_original="pinnae" src="d0_s11" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s11" value="fertile" />
-        <character is_modifier="false" name="condition_or_size" src="d0_s11" value="contracted" />
-        <character is_modifier="false" name="arrangement_or_course_or_shape" src="d0_s11" value="linear" />
-        <character char_type="range_value" from="3" from_unit="cm" name="length" src="d0_s11" to="11" to_unit="cm" />
-        <character char_type="range_value" from="0.2" from_unit="cm" name="width" src="d0_s11" to="0.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s12">
-      <text>Veins anastomosing into 2 or more rows of areoles between costae and margin, free only at blade margin.</text>
-      <biological_entity id="o21872" name="vein" name_original="veins" src="d0_s12" type="structure">
-        <character constraint="of areoles" constraintid="o21873" is_modifier="false" name="architecture" src="d0_s12" value="anastomosing" />
-        <character constraint="at blade margin" constraintid="o21876" is_modifier="false" name="fusion" notes="" src="d0_s12" value="free" />
-      </biological_entity>
-      <biological_entity constraint="between costae and margin" constraintid="o21874-o21875" id="o21873" name="areole" name_original="areoles" src="d0_s12" type="structure" />
-      <biological_entity id="o21874" name="costa" name_original="costae" src="d0_s12" type="structure" />
-      <biological_entity id="o21875" name="margin" name_original="margin" src="d0_s12" type="structure" />
-      <biological_entity constraint="blade" id="o21876" name="margin" name_original="margin" src="d0_s12" type="structure" />
-    </statement>
-    <statement id="d0_s13">
-      <text>Sori linear-oblong, deeply sunken into blades, nearly occupying full breadth of blade.</text>
-      <biological_entity id="o21877" name="sorus" name_original="sori" src="d0_s13" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s13" value="linear-oblong" />
-        <character constraint="into blades" constraintid="o21878" is_modifier="false" modifier="deeply" name="prominence" src="d0_s13" value="sunken" />
-      </biological_entity>
-      <biological_entity id="o21878" name="blade" name_original="blades" src="d0_s13" type="structure" />
-      <biological_entity id="o21879" name="blade" name_original="blade" src="d0_s13" type="structure">
-        <character is_modifier="true" name="breadth" src="d0_s13" value="full" />
-      </biological_entity>
-      <relation from="o21877" id="r5120" modifier="nearly" name="occupying" negation="false" src="d0_s13" to="o21879" />
-    </statement>
-    <statement id="d0_s14">
-      <text>Indusia ± membranous, lacking thickened cells, tucked under sporangia, not recurving but mostly disintegrating with age.</text>
-      <biological_entity id="o21880" name="indusium" name_original="indusia" src="d0_s14" type="structure">
-        <character is_modifier="false" modifier="more or less" name="texture" src="d0_s14" value="membranous" />
-      </biological_entity>
-      <biological_entity id="o21882" name="sporangium" name_original="sporangia" src="d0_s14" type="structure" />
-      <biological_entity id="o21883" name="age" name_original="age" src="d0_s14" type="structure" />
-      <relation from="o21881" id="r5121" name="tucked under" negation="false" src="d0_s14" to="o21882" />
-    </statement>
-    <statement id="d0_s15">
-      <text>2 n = 70.</text>
-      <biological_entity id="o21881" name="cell" name_original="cells" src="d0_s14" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s14" value="lacking" />
-        <character is_modifier="true" name="size_or_width" src="d0_s14" value="thickened" />
-        <character is_modifier="false" modifier="not" name="orientation" src="d0_s14" value="recurving" />
-        <character constraint="with age" constraintid="o21883" is_modifier="false" modifier="mostly" name="dehiscence" src="d0_s14" value="disintegrating" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o21884" name="chromosome" name_original="" src="d0_s15" type="structure">
-        <character name="quantity" src="d0_s15" value="70" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Acidic bogs, seeps, and wet woods, rarely on rock of siliceous cliffs and ledges on northern edge of range;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="acidic bogs , seeps , and wet woods , on rock of siliceous cliffs and ledges on northern edge of range ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0-600 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="600" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>N.S.; Ala., Ark., Conn., Del., Fla., Ga., Ill., Ind., Ky., La., Maine, Md., Mass., Miss., Mo., N.H., N.J., N.Y., N.C., Ohio, Okla., Pa., R.I., S.C., Tenn., Tex., Va., W.Va.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  long-creeping, slender; scales brown, many, broadly lanceolate.  Leaves  dimorphic, deciduous, few, well separated; sterile leaves 40-58 cm, fertile leaves 49-70 cm.  Petiole  reddish brown proximally, straw-colored distally; base not swollen, with sparsely set brown scales.  Blade  bright green, generally lanceolate, scaly-glandular upon emergence but soon glabrate; sterile leaves pinnatifid, 13-26 cm; fertile leaves pinnate, sharply contracted, 20-27 cm.  Pinnae  not articulate to rachis, arranged in 7-12 alternate pairs; sterile pinnae lanceolate, 3-11 × 1-2.5 cm; fertile pinnae contracted, linear, 3-11 × 0.2-0.5 cm.  Veins  anastomosing into 2 or more rows of areoles between costae and margin, free only at blade margin.  Sori  linear-oblong, deeply sunken into blades, nearly occupying full breadth of blade.  Indusia  ± membranous, lacking thickened cells, tucked under sporangia, not recurving but mostly disintegrating with age. 2 n  = 70.</description>
+  <description type="habitat">Acidic bogs, seeps, and wet woods, rarely on rock of siliceous cliffs and ledges on northern edge of range;</description>
+  <description type="elevation">0-600 m;</description>
+  <description type="distribution">N.S.; Ala., Ark., Conn., Del., Fla., Ga., Ill., Ind., Ky., La., Maine, Md., Mass., Miss., Mo., N.H., N.J., N.Y., N.C., Ohio, Okla., Pa., R.I., S.C., Tenn., Tex., Va., W.Va.</description>
   <number>1</number>
   <discussion>Woodwardia areolata is most abundant on the coastal plain of the eastern United States, scattered in the Ouachita and Boston mountains, Ozark and Cumberland plateaus, and the Piedmont, but not in the high Appalachians, the heavy gumbo soils of the Mississippi Valley, or the limestone regions of the Interior Low Plateaus. It apparently has been extirpated in Maine where it is known only from specimens collected in the 1860s.</discussion>
   <discussion>Features such as extreme leaf dimorphism, sunken sori, and expanded persistent indusia set Woodwardia areolata apart from all others in the genus. The existence of closely related transitional species in Asia, however, makes generic segregation uncertain. Those who wish to recognize a monotypic generic segregate based on Woodwardia areolata must coin a new name because Lorinseria C. Presl (1849) is an orthographic variant of Lorinsera Opiz (1839). For a detailed discussion of the ecology and geography of this species, see R. Cranfill (1983). Sterile specimens of this species are sometimes confused with Onoclea sensibilis .</discussion>
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Leaves strongly dimorphic;</text>
-          <biological_entity id="o21885" name="leaf" name_original="leaves" src="d1_s0" type="structure">
-            <character is_modifier="false" modifier="strongly" name="growth_form" src="d1_s0" value="dimorphic" />
-          </biological_entity>
-        </statement>
-        <statement id="d1_s1">
-          <text>sterile blades ± pinnatifid, with 2 or more rows of areoles between costae and margin, veins free only at margin.</text>
-          <biological_entity constraint="between costae and margin; areole" constraintid="o21888-o21889" id="o21886" name="blade" name_original="blades" src="d1_s1" type="structure">
-            <character is_modifier="true" name="reproduction" src="d1_s1" value="sterile" />
-            <character is_modifier="false" modifier="more or less" name="shape" src="d1_s1" value="pinnatifid" />
-          </biological_entity>
-          <biological_entity id="o21887" name="areole" name_original="areoles" src="d1_s1" type="structure" />
-          <biological_entity id="o21888" name="costa" name_original="costae" src="d1_s1" type="structure" />
-          <biological_entity id="o21889" name="margin" name_original="margin" src="d1_s1" type="structure" />
-          <biological_entity id="o21891" name="margin" name_original="margin" src="d1_s1" type="structure" />
-          <relation from="o21886" id="r5122" modifier="with 2 or morerows" name="part_of" negation="false" src="d1_s1" to="o21887" />
-        </statement>
-        <statement id="d1_s2">
-          <text>1.</text>
-        </statement>
-        <statement id="d1_s3">
-          <text>Woodwardia areolata</text>
-          <biological_entity id="o21890" name="vein" name_original="veins" src="d1_s1" type="structure">
-            <character constraint="at margin" constraintid="o21891" is_modifier="false" name="fusion" src="d1_s1" value="free" />
-            <character name="quantity" src="d1_s2" value="1" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Leaves strongly dimorphic; sterile blades ± pinnatifid, with 2 or more rows of areoles between costae and margin, veins free only at margin. 1. Woodwardia areolata</description>
       <next_statement_id>1</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Leaves ± monomorphic;</text>
-          <biological_entity id="o21892" name="leaf" name_original="leaves" src="d2_s0" type="structure">
-            <character is_modifier="false" modifier="more or less" name="architecture" src="d2_s0" value="monomorphic" />
-          </biological_entity>
-        </statement>
-        <statement id="d2_s1">
-          <text>sterile blades pinnate, with 1 row of areoles adjacent to costae or costules, veins free to margin.</text>
-          <biological_entity id="o21893" name="blade" name_original="blades" src="d2_s1" type="structure">
-            <character is_modifier="true" name="reproduction" src="d2_s1" value="sterile" />
-            <character is_modifier="false" name="architecture_or_shape" src="d2_s1" value="pinnate" />
-          </biological_entity>
-          <biological_entity id="o21894" name="row" name_original="row" src="d2_s1" type="structure">
-            <character is_modifier="true" name="quantity" src="d2_s1" value="1" />
-            <character constraint="to costules" constraintid="o21897" is_modifier="false" name="arrangement" src="d2_s1" value="adjacent" />
-          </biological_entity>
-          <biological_entity id="o21895" name="areole" name_original="areoles" src="d2_s1" type="structure" />
-          <biological_entity id="o21896" name="costa" name_original="costae" src="d2_s1" type="structure" />
-          <biological_entity id="o21897" name="costule" name_original="costules" src="d2_s1" type="structure" />
-          <biological_entity id="o21898" name="vein" name_original="veins" src="d2_s1" type="structure">
-            <character constraint="to margin" constraintid="o21899" is_modifier="false" name="fusion" src="d2_s1" value="free" />
-          </biological_entity>
-          <biological_entity id="o21899" name="margin" name_original="margin" src="d2_s1" type="structure" />
-          <relation from="o21893" id="r5123" name="with" negation="false" src="d2_s1" to="o21894" />
-          <relation from="o21894" id="r5124" name="part_of" negation="false" src="d2_s1" to="o21895" />
-        </statement>
-      </description>
+      <description type="morphology">Leaves ± monomorphic; sterile blades pinnate, with 1 row of areoles adjacent to costae or costules, veins free to margin.</description>
       <next_statement_id>2</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d3_s0">
-          <text>Stems forming stout caudex covered with petiole bases, suberect;</text>
-          <biological_entity id="o21900" name="stem" name_original="stems" src="d3_s0" type="structure">
-            <character is_modifier="false" name="orientation" src="d3_s0" value="suberect" />
-          </biological_entity>
-          <biological_entity id="o21901" name="caudex" name_original="caudex" src="d3_s0" type="structure">
-            <character is_modifier="true" name="fragility_or_size" src="d3_s0" value="stout" />
-          </biological_entity>
-          <biological_entity constraint="petiole" id="o21902" name="base" name_original="bases" src="d3_s0" type="structure" />
-          <relation from="o21900" id="r5125" name="forming" negation="false" src="d3_s0" to="o21901" />
-          <relation from="o21900" id="r5126" name="covered with" negation="false" src="d3_s0" to="o21902" />
-        </statement>
-        <statement id="d3_s1">
-          <text>petioles straw-colored and densely covered with orangish scales at base;</text>
-          <biological_entity id="o21903" name="petiole" name_original="petioles" src="d3_s1" type="structure">
-            <character is_modifier="false" name="coloration" src="d3_s1" value="straw-colored" />
-          </biological_entity>
-          <biological_entity id="o21904" name="scale" name_original="scales" src="d3_s1" type="structure">
-            <character is_modifier="true" name="coloration" src="d3_s1" value="orangish" />
-          </biological_entity>
-          <biological_entity id="o21905" name="base" name_original="base" src="d3_s1" type="structure">
-            <character is_modifier="true" name="coloration" src="d3_s1" value="orangish" />
-          </biological_entity>
-          <relation from="o21903" id="r5127" modifier="densely" name="covered with" negation="false" src="d3_s1" to="o21904" />
-          <relation from="o21903" id="r5128" modifier="densely" name="covered with" negation="false" src="d3_s1" to="o21905" />
-        </statement>
-        <statement id="d3_s2">
-          <text>pinnae not articulate to rachis.</text>
-          <biological_entity id="o21907" name="rachis" name_original="rachis" src="d3_s2" type="structure" />
-        </statement>
-        <statement id="d3_s3">
-          <text>3.</text>
-        </statement>
-        <statement id="d3_s4">
-          <text>Woodwardia fimbriata</text>
-          <biological_entity id="o21906" name="pinna" name_original="pinnae" src="d3_s2" type="structure">
-            <character constraint="to rachis" constraintid="o21907" is_modifier="false" modifier="not" name="architecture" src="d3_s2" value="articulate" />
-            <character name="quantity" src="d3_s3" value="3" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Stems forming stout caudex covered with petiole bases, suberect; petioles straw-colored and densely covered with orangish scales at base; pinnae not articulate to rachis. 3. Woodwardia fimbriata</description>
       <next_statement_id>2</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d4_s0">
-          <text>Stems relatively slender to ca. 1 cm diam., long-creeping;</text>
-          <biological_entity id="o21908" name="stem" name_original="stems" src="d4_s0" type="structure">
-            <character is_modifier="false" modifier="relatively" name="size" src="d4_s0" value="slender" />
-            <character char_type="range_value" from="0" from_unit="cm" name="diameter" src="d4_s0" to="1" to_unit="cm" />
-            <character is_modifier="false" name="growth_form_or_orientation" src="d4_s0" value="long-creeping" />
-          </biological_entity>
-        </statement>
-        <statement id="d4_s1">
-          <text>petioles blackish and glabrate at base;</text>
-          <biological_entity id="o21909" name="petiole" name_original="petioles" src="d4_s1" type="structure">
-            <character is_modifier="false" name="coloration" src="d4_s1" value="blackish" />
-            <character constraint="at base" constraintid="o21910" is_modifier="false" name="pubescence" src="d4_s1" value="glabrate" />
-          </biological_entity>
-          <biological_entity id="o21910" name="base" name_original="base" src="d4_s1" type="structure" />
-        </statement>
-        <statement id="d4_s2">
-          <text>pinnae articulate to rachis.</text>
-          <biological_entity id="o21912" name="rachis" name_original="rachis" src="d4_s2" type="structure" />
-        </statement>
-        <statement id="d4_s3">
-          <text>2.</text>
-        </statement>
-        <statement id="d4_s4">
-          <text>Woodwardia virginica</text>
-          <biological_entity id="o21911" name="pinna" name_original="pinnae" src="d4_s2" type="structure">
-            <character constraint="to rachis" constraintid="o21912" is_modifier="false" name="architecture" src="d4_s2" value="articulate" />
-            <character name="quantity" src="d4_s3" value="2" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Stems relatively slender to ca. 1 cm diam., long-creeping; petioles blackish and glabrate at base; pinnae articulate to rachis. 2. Woodwardia virginica</description>
       <next_statement_id>1</next_statement_id>
     </key_statement>
   </key>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_476_d1_s0">
-      <text>Leaves strongly dimorphic;</text>
-      <biological_entity id="from_key_V2_476_o12237" name="leaf" name_original="leaves" src="d1_s0" type="structure">
-        <character is_modifier="false" modifier="strongly" name="growth_form" src="d1_s0" value="dimorphic" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_476_d1_s1">
-      <text>sterile blades ± pinnatifid, with 2 or more rows of areoles between costae and margin, veins free only at margin.</text>
-      <biological_entity constraint="between costae and margin" constraintid="o12240-o12241" id="from_key_V2_476_o12238" name="blade" name_original="blades" src="d1_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d1_s1" value="sterile" />
-        <character is_modifier="false" modifier="more or less" name="shape" src="d1_s1" value="pinnatifid" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_476_o12239" name="areole" name_original="areoles" src="d1_s1" type="structure" />
-      <biological_entity id="from_key_V2_476_o12240" name="costa" name_original="costae" src="d1_s1" type="structure" />
-      <biological_entity id="from_key_V2_476_o12241" name="margin" name_original="margin" src="d1_s1" type="structure" />
-      <biological_entity id="from_key_V2_476_o12242" name="vein" name_original="veins" src="d1_s1" type="structure">
-        <character constraint="at margin" constraintid="o12243" is_modifier="false" name="fusion" src="d1_s1" value="free" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_476_o12243" name="margin" name_original="margin" src="d1_s1" type="structure" />
-      <relation from="from_key_V2_476_o12238" id="from_key_V2_476_r2836" modifier="with 2 or morerows" name="part_of" negation="false" src="d1_s1" to="from_key_V2_476_o12239" />
-    </statement>
-  </description>
 </bio:treatment>

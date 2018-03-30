@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="Roth" date="1799" rank="genus">polystichum</taxon_name>
-    <taxon_name authority="(Kaulfuss) C. Presl" date="1836" rank="species">munitum</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Roth" date="1799">polystichum</taxon_name>
+    <taxon_name rank="species" authority="(Kaulfuss) C. Presl" date="1836">munitum</taxon_name>
     <place_of_publication>
       <publication_title>Tent. Pterid.</publication_title>
       <place_in_publication>83. 1836</place_in_publication>
@@ -26,177 +18,18 @@
     <taxon_hierarchy>family dryopteridaceae;genus polystichum;species munitum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Aspidium</taxon_name>
-    <taxon_name authority="Kaulfuss" date="unknown" rank="species">munitum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Aspidium</taxon_name>
+    <taxon_name rank="species" authority="Kaulfuss" date="unknown">munitum</taxon_name>
     <place_of_publication>
       <publication_title>Enum. Filic.,</publication_title>
       <place_in_publication>236. 1824</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Aspidium;species munitum;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems erect or ascending.</text>
-      <biological_entity id="o2744" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s0" value="erect" />
-        <character is_modifier="false" name="orientation" src="d0_s0" value="ascending" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves arching, 5-18 dm;</text>
-      <biological_entity id="o2745" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s1" value="arching" />
-        <character char_type="range_value" from="5" from_unit="dm" name="some_measurement" src="d0_s1" to="18" to_unit="dm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>bulblets absent.</text>
-      <biological_entity id="o2746" name="bulblet" name_original="bulblets" src="d0_s2" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s2" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Petiole 1/8-1/4 length of leaf, densely scaly;</text>
-      <biological_entity id="o2747" name="petiole" name_original="petiole" src="d0_s3" type="structure">
-        <character char_type="range_value" from="1/8 length of leaf" name="length" src="d0_s3" to="1/4 length of leaf" />
-        <character is_modifier="false" modifier="densely" name="architecture_or_pubescence" src="d0_s3" value="scaly" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>scales redbrown to dark-brown or nearly black, gradually diminishing in size distally.</text>
-      <biological_entity id="o2748" name="scale" name_original="scales" src="d0_s4" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s4" value="redbrown" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s4" value="dark-brown" />
-        <character is_modifier="false" modifier="nearly" name="coloration" notes="[duplicate value]" src="d0_s4" value="black" />
-        <character char_type="range_value" from="redbrown" name="coloration" src="d0_s4" to="dark-brown or nearly black" />
-        <character is_modifier="false" modifier="gradually; distally" name="size" src="d0_s4" value="diminishing" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Blade linear-lanceolate, 1-pinnate, base slightly narrowed.</text>
-      <biological_entity id="o2749" name="blade" name_original="blade" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="linear-lanceolate" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s5" value="1-pinnate" />
-      </biological_entity>
-      <biological_entity id="o2750" name="base" name_original="base" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="slightly" name="shape" src="d0_s5" value="narrowed" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Pinnae narrowly lanceolate, straight to falcate, not overlapping, pinnae of shade-growing plants in 1 plane, those of sun-growing plants twisted or contorted, 1-15 cm;</text>
-      <biological_entity id="o2751" name="pinna" name_original="pinnae" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" src="d0_s6" value="lanceolate" />
-        <character is_modifier="false" name="course" src="d0_s6" value="straight" />
-        <character is_modifier="false" name="shape" src="d0_s6" value="falcate" />
-        <character is_modifier="false" modifier="not" name="arrangement" src="d0_s6" value="overlapping" />
-      </biological_entity>
-      <biological_entity id="o2752" name="pinna" name_original="pinnae" src="d0_s6" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s6" value="twisted" />
-        <character is_modifier="false" name="arrangement_or_shape" src="d0_s6" value="contorted" />
-        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s6" to="15" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o2753" name="plant" name_original="plants" src="d0_s6" type="structure">
-        <character is_modifier="true" name="habitat" src="d0_s6" value="shade-growing" />
-      </biological_entity>
-      <biological_entity id="o2754" name="plant" name_original="plants" src="d0_s6" type="structure">
-        <character is_modifier="true" name="habitat" src="d0_s6" value="sun-growing" />
-      </biological_entity>
-      <relation from="o2752" id="r657" name="part_of" negation="false" src="d0_s6" to="o2753" />
-      <relation from="o2752" id="r658" modifier="in 1 plane" name="part_of" negation="false" src="d0_s6" to="o2754" />
-    </statement>
-    <statement id="d0_s7">
-      <text>base ± cuneate, auricles well developed;</text>
-      <biological_entity id="o2755" name="base" name_original="base" src="d0_s7" type="structure">
-        <character is_modifier="false" modifier="more or less" name="shape" src="d0_s7" value="cuneate" />
-      </biological_entity>
-      <biological_entity id="o2756" name="auricle" name_original="auricles" src="d0_s7" type="structure">
-        <character is_modifier="false" modifier="well" name="development" src="d0_s7" value="developed" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>margins serrulate-spiny with teeth ascending;</text>
-      <biological_entity id="o2757" name="margin" name_original="margins" src="d0_s8" type="structure">
-        <character constraint="with teeth" constraintid="o2758" is_modifier="false" name="architecture_or_shape" src="d0_s8" value="serrulate-spiny" />
-      </biological_entity>
-      <biological_entity id="o2758" name="tooth" name_original="teeth" src="d0_s8" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s8" value="ascending" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>apex acuminate with subapical teeth same size as apical tooth;</text>
-      <biological_entity id="o2759" name="apex" name_original="apex" src="d0_s9" type="structure">
-        <character constraint="with subapical teeth" constraintid="o2760" is_modifier="false" name="shape" src="d0_s9" value="acuminate" />
-      </biological_entity>
-      <biological_entity constraint="subapical" id="o2760" name="tooth" name_original="teeth" src="d0_s9" type="structure" />
-      <biological_entity constraint="apical" id="o2761" name="tooth" name_original="tooth" src="d0_s9" type="structure" />
-      <relation from="o2760" id="r659" name="as" negation="false" src="d0_s9" to="o2761" />
-    </statement>
-    <statement id="d0_s10">
-      <text>microscales ovatelanceolate to linear-lanceolate, with contorted projections, dense, on abaxial surface only.</text>
-      <biological_entity id="o2762" name="microscale" name_original="microscales" src="d0_s10" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s10" value="ovatelanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s10" value="linear-lanceolate" />
-        <character char_type="range_value" from="ovatelanceolate" name="shape" src="d0_s10" to="linear-lanceolate" />
-        <character is_modifier="false" name="density" notes="" src="d0_s10" value="dense" />
-      </biological_entity>
-      <biological_entity id="o2763" name="projection" name_original="projections" src="d0_s10" type="structure">
-        <character is_modifier="true" name="arrangement_or_shape" src="d0_s10" value="contorted" />
-      </biological_entity>
-      <biological_entity constraint="abaxial" id="o2764" name="surface" name_original="surface" src="d0_s10" type="structure" />
-      <relation from="o2762" id="r660" name="with" negation="false" src="d0_s10" to="o2763" />
-      <relation from="o2762" id="r661" name="on" negation="false" src="d0_s10" to="o2764" />
-    </statement>
-    <statement id="d0_s11">
-      <text>Indusia ciliate.</text>
-      <biological_entity id="o2765" name="indusium" name_original="indusia" src="d0_s11" type="structure">
-        <character is_modifier="false" name="architecture_or_pubescence_or_shape" src="d0_s11" value="ciliate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s12">
-      <text>Spores light yellow.</text>
-    </statement>
-    <statement id="d0_s13">
-      <text>2 n = 82.</text>
-      <biological_entity id="o2766" name="spore" name_original="spores" src="d0_s12" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s12" value="light yellow" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o2767" name="chromosome" name_original="" src="d0_s13" type="structure">
-        <character name="quantity" src="d0_s13" value="82" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Terrestrial, forest floor, only occasionally on rock, in mesic coniferous to moist, mixed evergreen forests;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="terrestrial , forest floor , only on rock , in mesic coniferous to moist , mixed evergreen forests ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--2200 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2200" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>B.C.; Calif., Idaho, Mont., Oreg., S.Dak., Wash.; Mexico on Guadalupe Island; naturalized in Europe.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Idaho" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.Dak." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
-        <character name="distribution" value="Mexico on Guadalupe Island" establishment_means="native" />
-        <character name="distribution" value="naturalized in Europe" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  erect or ascending.  Leaves  arching, 5--18 dm; bulblets absent.  Petiole  1/8--1/4 length of leaf, densely scaly; scales red-brown to dark brown or nearly black, gradually diminishing in size distally.  Blade  linear-lanceolate, 1-pinnate, base slightly narrowed.  Pinnae  narrowly lanceolate, straight to falcate, not overlapping, pinnae of shade-growing plants in 1 plane, those of sun-growing plants twisted or contorted, 1--15 cm; base ± cuneate, auricles well developed; margins serrulate-spiny with teeth ascending; apex acuminate with subapical teeth same size as apical tooth; microscales ovate-lanceolate to linear-lanceolate, with contorted projections, dense, on abaxial surface only.  Indusia  ciliate.  Spores  light yellow. 2 n  = 82.</description>
+  <description type="habitat">Terrestrial, forest floor, only occasionally on rock, in mesic coniferous to moist, mixed evergreen forests;</description>
+  <description type="elevation">0--2200 m;</description>
+  <description type="distribution">B.C.; Calif., Idaho, Mont., Oreg., S.Dak., Wash.; Mexico on Guadalupe Island; naturalized in Europe.</description>
   <number>13</number>
   <other_name type="common_name">Common sword fern</other_name>
   <discussion>One of the most abundant ferns in the western flora (rivaled only by Pteridium ), Polystichum munitum also is of significant economic importance. Enormous quantities of leaves are gathered for backgrounds in funeral wreaths and other floral displays; the evergreen leaves keep well in cold storage and are exported to Europe. It is extensively used in landscaping, the trade being mainly in wild-collected plants.</discussion>
@@ -204,90 +37,4 @@
   <discussion>Polystichum munitum can be distinguished from P . imbricans by its persistent, wide (the largest wider than 1 mm) distal petiolar scales; such scales of P . imbricans are less than 1 mm wide and fall off early.</discussion>
   <discussion>From an evolutionary standpoint, Polystichum munitum is a diploid progenitor of P . andersonii , P . californicum , P . setigerum , and, perhaps, P . scopulinum . Hybrids with all except P . setigerum have been reported, all triploid, attesting to its parental role in the tetraploids (see discussion under each). Hybrids with P . braunii (A. Sleep and T. Reichstein 1967), P . kruckebergii (P. S. Soltis et al. 1987), P . dudleyi (W. H. Wagner Jr. 1973), and P . lemmonii (P. S. Soltis et al. 1989) also have been reported.</discussion>
   <discussion>The population on Guadalupe Island has been called Polystichum solitarium Maxon.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_234_d9_s0">
-      <text>Indusia ciliate;</text>
-      <biological_entity id="from_key_V2_234_o4244" name="indusium" name_original="indusia" src="d9_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_pubescence_or_shape" src="d9_s0" value="ciliate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d9_s1">
-      <text>pinna apex acuminate, base cuneate.</text>
-      <biological_entity constraint="pinna" id="from_key_V2_234_o4245" name="apex" name_original="apex" src="d9_s1" type="structure">
-        <character is_modifier="false" name="shape" src="d9_s1" value="acuminate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_234_o4246" name="base" name_original="base" src="d9_s1" type="structure">
-        <character is_modifier="false" name="shape" src="d9_s1" value="cuneate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d8_s0">
-      <text>Petioles usually greater than 1/5 length of leaf;</text>
-      <biological_entity id="from_key_V2_234_o4239" name="petiole" name_original="petioles" src="d8_s0" type="structure">
-        <character name="length" src="d8_s0" value="1 length of leaf" />
-        <character name="length" src="d8_s0" value="/5 length of leaf" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d8_s1">
-      <text>blades narrowing slightly, if at all, toward base;</text>
-      <biological_entity id="from_key_V2_234_o4240" name="blade" name_original="blades" src="d8_s1" type="structure">
-        <character is_modifier="false" modifier="slightly" name="width" src="d8_s1" value="narrowing" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_234_o4241" name="base" name_original="base" src="d8_s1" type="structure" />
-      <relation from="from_key_V2_234_o4240" id="from_key_V2_234_r994" modifier="at all" name="toward" negation="false" src="d8_s1" to="from_key_V2_234_o4241" />
-    </statement>
-    <statement id="from_key_V2_234_d8_s2">
-      <text>proximal pinnae auriculate-ovate to falcate;</text>
-      <biological_entity constraint="proximal" id="from_key_V2_234_o4242" name="pinna" name_original="pinnae" src="d8_s2" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d8_s2" value="auriculate-ovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d8_s2" value="falcate" />
-        <character char_type="range_value" from="auriculate-ovate" name="shape" src="d8_s2" to="falcate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d8_s3">
-      <text>pinnae incurved-spinulose.</text>
-      <biological_entity id="from_key_V2_234_o4243" name="pinna" name_original="pinnae" src="d8_s3" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d8_s3" value="incurved-spinulose" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d6_s0">
-      <text>Pinnae serrulate-spiny;</text>
-      <biological_entity id="from_key_V2_234_o4230" name="pinna" name_original="pinnae" src="d6_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d6_s0" value="serrulate-spiny" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d6_s1">
-      <text>pinna apex acute to cuspidate;</text>
-      <biological_entity constraint="pinna" id="from_key_V2_234_o4231" name="apex" name_original="apex" src="d6_s1" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d6_s1" value="acute" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d6_s1" value="cuspidate" />
-        <character char_type="range_value" from="acute" name="shape" src="d6_s1" to="cuspidate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d6_s2">
-      <text>microscales prominent on abaxial surface only;</text>
-      <biological_entity constraint="abaxial" id="from_key_V2_234_o4233" name="surface" name_original="surface" src="d6_s2" type="structure" />
-    </statement>
-    <statement id="from_key_V2_234_d6_s3">
-      <text>widespread.</text>
-      <biological_entity id="from_key_V2_234_o4232" name="microscale" name_original="microscales" src="d6_s2" type="structure">
-        <character constraint="on abaxial surface" constraintid="o4233" is_modifier="false" name="prominence" src="d6_s2" value="prominent" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d3_s0">
-      <text>Leaves 1-pinnate.</text>
-      <biological_entity id="from_key_V2_234_o4223" name="leaf" name_original="leaves" src="d3_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d3_s0" value="1-pinnate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d2_s0">
-      <text>Fertile pinnae not contracted, sori often distinct.</text>
-      <biological_entity id="from_key_V2_234_o4221" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
-        <character is_modifier="false" modifier="not" name="condition_or_size" src="d2_s0" value="contracted" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_234_o4222" name="sorus" name_original="sori" src="d2_s0" type="structure">
-        <character is_modifier="false" modifier="often" name="fusion" src="d2_s0" value="distinct" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

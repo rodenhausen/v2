@@ -1,107 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Martius" date="unknown" rank="family">hymenophyllaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">trichomanes</taxon_name>
-    <taxon_name authority="Farrar" date="1992" rank="species">intricatum</taxon_name>
+    <taxon_name rank="family" authority="Martius" date="unknown">hymenophyllaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">trichomanes</taxon_name>
+    <taxon_name rank="species" authority="Farrar" date="1992">intricatum</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>82: 68. 1992</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family hymenophyllaceae;genus trichomanes;species intricatum</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants on rock, occasionally epiphytic.</text>
-      <biological_entity id="o2091" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="occasionally" name="habitat" notes="" src="d0_s0" value="epiphytic" />
-      </biological_entity>
-      <biological_entity id="o2092" name="rock" name_original="rock" src="d0_s0" type="structure" />
-      <relation from="o2091" id="r476" name="on" negation="false" src="d0_s0" to="o2092" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Sporophytes not known.</text>
-      <biological_entity id="o2093" name="sporophyte" name_original="sporophytes" src="d0_s1" type="structure" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Gametophytes entirely filamentous, much branched, persistent.</text>
-      <biological_entity id="o2094" name="gametophyte" name_original="gametophytes" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="entirely" name="texture" src="d0_s2" value="filamentous" />
-        <character is_modifier="false" modifier="much" name="architecture" src="d0_s2" value="branched" />
-        <character is_modifier="false" name="duration" src="d0_s2" value="persistent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Gemmae composed of short filaments of undifferentiated cells.</text>
-      <biological_entity id="o2095" name="gemma" name_original="gemmae" src="d0_s3" type="structure" />
-      <biological_entity id="o2096" name="filament" name_original="filaments" src="d0_s3" type="structure">
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s3" value="short" />
-      </biological_entity>
-      <biological_entity id="o2097" name="cell" name_original="cells" src="d0_s3" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s3" value="undifferentiated" />
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s3" value="short" />
-      </biological_entity>
-      <relation from="o2095" id="r477" name="composed of" negation="false" src="d0_s3" to="o2096" />
-      <relation from="o2095" id="r478" name="composed of" negation="false" src="d0_s3" to="o2097" />
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>On noncalcareous rocks in deeply sheltered crevices and grottoes;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="on noncalcareous rocks in sheltered crevices and grottoes" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>150--1800 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1800" to_unit="m" from="150" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ala., Conn., Ga., Ill., Ind., Ky., Md., Mass., N.H., N.J., N.Y., N.C., Ohio, Pa., S.C., Tenn., Vt., Va., W.Va.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  on rock, occasionally epiphytic.  Sporophytes  not known.  Gametophytes  entirely filamentous, much branched, persistent.  Gemmae  composed of short filaments of undifferentiated cells.</description>
+  <description type="habitat">On noncalcareous rocks in deeply sheltered crevices and grottoes;</description>
+  <description type="elevation">150--1800 m;</description>
+  <description type="distribution">Ala., Conn., Ga., Ill., Ind., Ky., Md., Mass., N.H., N.J., N.Y., N.C., Ohio, Pa., S.C., Tenn., Vt., Va., W.Va.</description>
   <number>8</number>
   <other_name type="common_name">Appalachian trichomanes</other_name>
   <other_name type="common_name">weft fern</other_name>

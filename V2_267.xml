@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="C. Presl" date="unknown" rank="family">lygodiaceae</taxon_name>
-    <taxon_name authority="Swartz" date="1801" rank="genus">lygodium</taxon_name>
-    <taxon_name authority="(Bernhardi) Swartz" date="1806" rank="species">palmatum</taxon_name>
+    <taxon_name rank="family" authority="C. Presl" date="unknown">lygodiaceae</taxon_name>
+    <taxon_name rank="genus" authority="Swartz" date="1801">lygodium</taxon_name>
+    <taxon_name rank="species" authority="(Bernhardi) Swartz" date="1806">palmatum</taxon_name>
     <place_of_publication>
       <publication_title>Syn. Fil.</publication_title>
       <place_in_publication>154. 1806</place_in_publication>
@@ -26,136 +18,19 @@
     <taxon_hierarchy>family lygodiaceae;genus lygodium;species palmatum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Gisopteris</taxon_name>
-    <taxon_name authority="Bernhardi" date="unknown" rank="species">palmata</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Gisopteris</taxon_name>
+    <taxon_name rank="species" authority="Bernhardi" date="unknown">palmata</taxon_name>
     <place_of_publication>
       <publication_title>J. Bot. (Schrader)</publication_title>
       <place_in_publication>1800(2): 129, plate 2(1). 1801</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Gisopteris;species palmata;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems long-creeping.</text>
-      <biological_entity id="o5157" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s0" value="long-creeping" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves to ca. 3 m.</text>
-      <biological_entity id="o5158" name="leaf" name_original="leaves" src="d0_s1" type="structure" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Petioles borne 1-4 cm apart, 9-15 cm.</text>
-      <biological_entity id="o5159" name="petiole" name_original="petioles" src="d0_s2" type="structure">
-        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s2" to="4" to_unit="cm" />
-        <character is_modifier="false" name="arrangement" src="d0_s2" value="apart" />
-        <character char_type="range_value" from="9" from_unit="cm" name="some_measurement" src="d0_s2" to="15" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Sterile pinnae on 1-2 cm stalks, very broadly ovate, deeply and palmately 3-7-lobed, 1-4 × 2-6 cm;</text>
-      <biological_entity id="o5160" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s3" value="sterile" />
-        <character is_modifier="false" modifier="very broadly" name="shape" notes="" src="d0_s3" value="ovate" />
-        <character is_modifier="false" modifier="deeply; palmately" name="shape" src="d0_s3" value="3-7-lobed" />
-        <character char_type="range_value" from="1" from_unit="cm" name="length" src="d0_s3" to="4" to_unit="cm" />
-        <character char_type="range_value" from="2" from_unit="cm" name="width" src="d0_s3" to="6" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o5161" name="stalk" name_original="stalks" src="d0_s3" type="structure">
-        <character char_type="range_value" from="1" from_unit="cm" is_modifier="true" name="some_measurement" src="d0_s3" to="2" to_unit="cm" />
-      </biological_entity>
-      <relation from="o5160" id="r1191" name="on" negation="false" src="d0_s3" to="o5161" />
-    </statement>
-    <statement id="d0_s4">
-      <text>ultimate lobes triangular-elongate to oblong;</text>
-      <biological_entity constraint="ultimate" id="o5162" name="lobe" name_original="lobes" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="triangular-elongate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="oblong" />
-        <character char_type="range_value" from="triangular-elongate" name="shape" src="d0_s4" to="oblong" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>lobe apex acute to blunt or rounded;</text>
-      <biological_entity constraint="lobe" id="o5163" name="apex" name_original="apex" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="acute" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="blunt" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="rounded" />
-        <character char_type="range_value" from="acute" name="shape" src="d0_s5" to="blunt or rounded" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>segments not articulate to petiolules, not leaving wiry stalks when detached;</text>
-      <biological_entity id="o5164" name="segment" name_original="segments" src="d0_s6" type="structure">
-        <character constraint="to petiolules" constraintid="o5165" is_modifier="false" modifier="not" name="architecture" src="d0_s6" value="articulate" />
-      </biological_entity>
-      <biological_entity id="o5165" name="petiolule" name_original="petiolules" src="d0_s6" type="structure" />
-      <biological_entity id="o5166" name="stalk" name_original="stalks" src="d0_s6" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s6" value="wiry" />
-      </biological_entity>
-      <relation from="o5164" id="r1192" name="leaving" negation="true" src="d0_s6" to="o5166" />
-    </statement>
-    <statement id="d0_s7">
-      <text>blade tissue pubescent abaxially with transparent hairs.</text>
-      <biological_entity constraint="blade" id="o5167" name="tissue" name_original="tissue" src="d0_s7" type="structure">
-        <character constraint="with hairs" constraintid="o5168" is_modifier="false" name="pubescence" src="d0_s7" value="pubescent" />
-      </biological_entity>
-      <biological_entity id="o5168" name="hair" name_original="hairs" src="d0_s7" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s7" value="transparent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>Fertile pinnae stalked to ca. 1.5 cm, then ± irregularly 3-5-forked or lobed, ultimate divisions palmately and sometimes irregularly lobed, smaller than sterile pinnules, 2-4 × 2-8 cm, otherwise similar;</text>
-      <biological_entity id="o5169" name="pinna" name_original="pinnae" src="d0_s8" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s8" value="fertile" />
-        <character constraint="to 1.5 cm" is_modifier="false" name="architecture" src="d0_s8" value="stalked" />
-        <character is_modifier="false" modifier="more or less irregularly" name="shape" src="d0_s8" value="3-5-forked" />
-        <character is_modifier="false" name="shape" src="d0_s8" value="lobed" />
-      </biological_entity>
-      <biological_entity constraint="ultimate" id="o5170" name="division" name_original="divisions" src="d0_s8" type="structure">
-        <character is_modifier="false" modifier="sometimes irregularly" name="shape" src="d0_s8" value="lobed" />
-        <character constraint="than sterile pinnules" constraintid="o5171" is_modifier="false" name="size" src="d0_s8" value="smaller" />
-        <character char_type="range_value" from="2" from_unit="cm" modifier="otherwise" name="length" src="d0_s8" to="4" to_unit="cm" />
-        <character char_type="range_value" from="2" from_unit="cm" modifier="otherwise" name="width" src="d0_s8" to="8" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o5171" name="pinnule" name_original="pinnules" src="d0_s8" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s8" value="sterile" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>ultimate segments narrowly triangular to linear-triangular.</text>
-      <biological_entity constraint="ultimate" id="o5172" name="segment" name_original="segments" src="d0_s9" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s9" value="triangular" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="linear-triangular" />
-        <character char_type="range_value" from="narrowly triangular" name="shape" src="d0_s9" to="linear-triangular" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  long-creeping.  Leaves  to ca. 3 m.  Petioles  borne 1-4 cm apart, 9-15 cm.  Sterile pinnae  on 1-2 cm stalks, very broadly ovate, deeply and palmately 3-7-lobed, 1-4 × 2-6 cm; ultimate lobes triangular-elongate to oblong; lobe apex acute to blunt or rounded; segments not articulate to petiolules, not leaving wiry stalks when detached; blade tissue pubescent abaxially with transparent hairs.  Fertile pinnae  stalked to ca. 1.5 cm, then ± irregularly 3-5-forked or lobed, ultimate divisions palmately and sometimes irregularly lobed, smaller than sterile pinnules, 2-4 × 2-8 cm, otherwise similar; ultimate segments narrowly triangular to linear-triangular.</description>
   <number>1</number>
   <other_name type="common_name">Hartford fern</other_name>
   <other_name type="common_name">American climbing fern</other_name>
   <other_name type="common_name">creeping fern</other_name>
   <other_name type="common_name">Windsor fern</other_name>
   <discussion>Lygodium palmatum is generally local and rare except for the Cumberland Plateau of Kentucky and Tennessee where it is locally abundant in poorly drained, acidic soils, especially after disturbance (J. M. Shaver 1954; R. Cranfill 1980). Other authors have reported this species from Florida (O. Lakela and R. W. Long 1976), but I have not seen specimens (C. E. Nauman 1987). This species is not tolerant of shading.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_684_d1_s0">
-      <text>Pinnules palmately lobed, sterile tissue nearly absent on fertile lobes;</text>
-      <biological_entity id="from_key_V2_684_o19098" name="pinnule" name_original="pinnules" src="d1_s0" type="structure">
-        <character is_modifier="false" modifier="palmately" name="shape" src="d1_s0" value="lobed" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_684_o19099" name="tissue" name_original="tissue" src="d1_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d1_s0" value="sterile" />
-        <character constraint="on lobes" constraintid="o19100" is_modifier="false" modifier="nearly" name="count" src="d1_s0" value="absent" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_684_o19100" name="lobe" name_original="lobes" src="d1_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d1_s0" value="fertile" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_684_d1_s1">
-      <text>petioles borne 1-4 cm apart.</text>
-      <biological_entity id="from_key_V2_684_o19101" name="petiole" name_original="petioles" src="d1_s1" type="structure">
-        <character is_modifier="false" name="arrangement" src="d1_s1" value="apart" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

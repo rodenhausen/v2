@@ -1,87 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Ching ex Pichi Sermolli" date="unknown" rank="family">thelypteridaceae</taxon_name>
-    <taxon_name authority="Schmidel" date="1763" rank="genus">thelypteris</taxon_name>
-    <taxon_name authority="Schmidel" date="unknown" rank="subgenus">Thelypteris</taxon_name>
+    <taxon_name rank="family" authority="Ching ex Pichi Sermolli" date="unknown">thelypteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Schmidel" date="1763">thelypteris</taxon_name>
+    <taxon_name rank="subgenus" authority="Schmidel" date="unknown">Thelypteris</taxon_name>
     <taxon_hierarchy>family thelypteridaceae;genus thelypteris;subgenus Thelypteris</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Distinguished from other subgenera by the combination of seasonal leaves, long-creeping stems 1-3 mm diam., pinnate-pinnatifid blades, veins often forked and meeting margins above the sinuses, scales along the abaxial costae, and by the proximal pinnae not or only slightly shortened.</text>
-      <biological_entity id="o10705" name="whole_organism" name_original="" src="d0_s0" type="structure">
-        <character constraint="from subgenera" constraintid="o10706" is_modifier="false" name="prominence" src="d0_s0" value="distinguished" />
-      </biological_entity>
-      <biological_entity id="o10706" name="subgenus" name_original="subgenera" src="d0_s0" type="structure" />
-      <biological_entity id="o10707" name="combination" name_original="combination" src="d0_s0" type="structure" />
-      <biological_entity id="o10708" name="leaf" name_original="leaves" src="d0_s0" type="structure">
-        <character is_modifier="true" name="duration" src="d0_s0" value="seasonal" />
-      </biological_entity>
-      <biological_entity id="o10709" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="true" name="growth_form_or_orientation" src="d0_s0" value="long-creeping" />
-        <character char_type="range_value" from="1" from_unit="mm" name="diameter" src="d0_s0" to="3" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o10710" name="blade" name_original="blades" src="d0_s0" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s0" value="pinnate-pinnatifid" />
-      </biological_entity>
-      <biological_entity id="o10712" name="margin" name_original="margins" src="d0_s0" type="structure" />
-      <relation from="o10706" id="r2435" name="by" negation="false" src="d0_s0" to="o10707" />
-      <relation from="o10707" id="r2436" name="part_of" negation="false" src="d0_s0" to="o10708" />
-      <relation from="o10711" id="r2437" name="meeting" negation="false" src="d0_s0" to="o10712" />
-    </statement>
-    <statement id="d0_s1">
-      <text>x = 35.</text>
-      <biological_entity id="o10711" name="vein" name_original="veins" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="often" name="shape" src="d0_s0" value="forked" />
-      </biological_entity>
-      <biological_entity constraint="x" id="o10713" name="chromosome" name_original="" src="d0_s1" type="structure">
-        <character name="quantity" src="d0_s1" value="35" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Distinguished from other subgenera by the combination of seasonal leaves, long-creeping stems 1--3 mm diam., pinnate-pinnatifid blades, veins often forked and meeting margins above the sinuses, scales along the abaxial costae, and by the proximal pinnae not or only slightly shortened.  x  = 35.</description>
   <number>1d</number>
   <discussion>Thelypteris palustris and T . confluens (Thunberg) C. V. Morton from the Southern Hemisphere constitute the subgenus Thelypteris , according to R. E. Holttum (1971).</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_797_d1_s0">
-      <text>Blades 1-pinnate to deeply pinnate-pinnatifid;</text>
-      <biological_entity id="from_key_V2_797_o23184" name="blade" name_original="blades" src="d1_s0" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s0" value="1-pinnate" />
-        <character is_modifier="false" modifier="deeply" name="shape" notes="[duplicate value]" src="d1_s0" value="pinnate-pinnatifid" />
-        <character char_type="range_value" from="1-pinnate" name="shape" src="d1_s0" to="deeply pinnate-pinnatifid" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_797_d1_s1">
-      <text>costae grooved adaxially;</text>
-      <biological_entity id="from_key_V2_797_o23185" name="costa" name_original="costae" src="d1_s1" type="structure">
-        <character is_modifier="false" modifier="adaxially" name="architecture" src="d1_s1" value="grooved" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_797_d1_s2">
-      <text>veins meeting margin at or above sinus or united below sinus.</text>
-      <biological_entity id="from_key_V2_797_o23186" name="vein" name_original="veins" src="d1_s2" type="structure" />
-      <biological_entity id="from_key_V2_797_o23187" name="margin" name_original="margin" src="d1_s2" type="structure" />
-      <biological_entity id="from_key_V2_797_o23188" name="sinus" name_original="sinus" src="d1_s2" type="structure" />
-      <biological_entity id="from_key_V2_797_o23189" name="sinus" name_original="sinus" src="d1_s2" type="structure">
-        <character is_modifier="true" name="fusion" src="d1_s2" value="united" />
-      </biological_entity>
-      <relation from="from_key_V2_797_o23186" id="from_key_V2_797_r5428" name="meeting" negation="false" src="d1_s2" to="from_key_V2_797_o23187" />
-      <relation from="from_key_V2_797_o23186" id="from_key_V2_797_r5429" name="at or above" negation="false" src="d1_s2" to="from_key_V2_797_o23188" />
-      <relation from="from_key_V2_797_o23186" id="from_key_V2_797_r5430" name="at or above" negation="false" src="d1_s2" to="from_key_V2_797_o23189" />
-    </statement>
-  </description>
 </bio:treatment>

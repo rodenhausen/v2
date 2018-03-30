@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
-    <taxon_name authority="Richard" date="1810" rank="genus">taxodium</taxon_name>
-    <taxon_name authority="(Linnaeus) Richard" date="1810" rank="species">distichum</taxon_name>
+    <taxon_name rank="family" authority="Bartlett" date="unknown">cupressaceae</taxon_name>
+    <taxon_name rank="genus" authority="Richard" date="1810">taxodium</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) Richard" date="1810">distichum</taxon_name>
     <place_of_publication>
       <publication_title>Ann. Mus. Natl. Hist. Nat.</publication_title>
       <place_in_publication>16: 298. 1810</place_in_publication>
@@ -26,115 +18,16 @@
     <taxon_hierarchy>family cupressaceae;genus taxodium;species distichum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Cupressus</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="species">disticha</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Cupressus</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="unknown">disticha</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl.</publication_title>
       <place_in_publication>2: 1003. 1753</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Cupressus;species disticha;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees seasonally cladoptosic;</text>
-      <biological_entity id="o20823" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="seasonally" name="life_cycle" src="d0_s0" value="cladoptosic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk enlarged basally and often conspicuously buttressed;</text>
-      <biological_entity id="o20824" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="basally" name="size" src="d0_s1" value="enlarged" />
-        <character is_modifier="false" modifier="often conspicuously" name="architecture" src="d0_s1" value="buttressed" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>crown monopodial and conic when young, often becoming irregularly flattopped or deliquescent (branched and so divided that the main axis cannot determined) with age.</text>
-      <biological_entity id="o20825" name="crown" name_original="crown" src="d0_s2" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s2" value="monopodial" />
-        <character is_modifier="false" modifier="when young" name="shape" src="d0_s2" value="conic" />
-        <character constraint="with age" constraintid="o20826" is_modifier="false" modifier="often becoming; becoming irregularly; irregularly" name="architecture_or_texture" src="d0_s2" value="deliquescent" />
-      </biological_entity>
-      <biological_entity id="o20826" name="age" name_original="age" src="d0_s2" type="structure" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Shoot system conspicuously dimorphic, long-shoots indeterminate, bearing individually abscising, linear to lanceolate leaves, short-shoots determinate, abscising in autumn with their leaves, variable, intergrading, at one extreme pendent to horizontally spreading, bearing decurrent, narrowly linear and laterally divergent leaves in 2 rows, at other extreme strictly ascending to occasionally pendent, bearing short-lanceolate to deltate and tightly appressed leaves.</text>
-      <biological_entity constraint="shoot" id="o20827" name="system" name_original="system" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="conspicuously" name="growth_form" src="d0_s3" value="dimorphic" />
-      </biological_entity>
-      <biological_entity id="o20828" name="long-shoot" name_original="long-shoots" src="d0_s3" type="structure">
-        <character is_modifier="false" name="development" src="d0_s3" value="indeterminate" />
-      </biological_entity>
-      <biological_entity id="o20829" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="true" modifier="individually" name="life_cycle" src="d0_s3" value="abscising" />
-        <character is_modifier="true" name="shape" notes="[duplicate value]" src="d0_s3" value="linear" />
-        <character is_modifier="true" name="shape" notes="[duplicate value]" src="d0_s3" value="lanceolate" />
-        <character char_type="range_value" from="linear" is_modifier="true" name="shape" src="d0_s3" to="lanceolate" />
-      </biological_entity>
-      <biological_entity id="o20830" name="short-shoot" name_original="short-shoots" src="d0_s3" type="structure">
-        <character is_modifier="false" name="development" src="d0_s3" value="determinate" />
-        <character constraint="in autumn" constraintid="o20831" is_modifier="false" name="life_cycle" src="d0_s3" value="abscising" />
-        <character is_modifier="false" name="variability" notes="" src="d0_s3" value="variable" />
-      </biological_entity>
-      <biological_entity id="o20831" name="autumn" name_original="autumn" src="d0_s3" type="structure" />
-      <biological_entity id="o20832" name="leaf" name_original="leaves" src="d0_s3" type="structure" />
-      <biological_entity id="o20833" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="true" name="position" src="d0_s3" value="extreme" />
-        <character is_modifier="true" name="orientation" notes="[duplicate value]" src="d0_s3" value="pendent" />
-        <character is_modifier="true" modifier="horizontally" name="orientation" notes="[duplicate value]" src="d0_s3" value="spreading" />
-        <character char_type="range_value" from="pendent" is_modifier="true" name="orientation" src="d0_s3" to="horizontally spreading" />
-        <character is_modifier="true" name="shape" src="d0_s3" value="decurrent" />
-        <character is_modifier="true" modifier="narrowly" name="arrangement_or_course_or_shape" src="d0_s3" value="linear" />
-        <character is_modifier="true" modifier="laterally" name="arrangement" src="d0_s3" value="divergent" />
-      </biological_entity>
-      <biological_entity id="o20834" name="row" name_original="rows" src="d0_s3" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s3" value="2" />
-      </biological_entity>
-      <biological_entity id="o20835" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="true" name="position" src="d0_s3" value="extreme" />
-        <character is_modifier="true" modifier="strictly" name="orientation" notes="[duplicate value]" src="d0_s3" value="ascending" />
-        <character is_modifier="true" modifier="occasionally" name="orientation" notes="[duplicate value]" src="d0_s3" value="pendent" />
-        <character char_type="range_value" from="strictly ascending" is_modifier="true" name="orientation" src="d0_s3" to="occasionally pendent" />
-        <character is_modifier="true" name="shape" notes="[duplicate value]" src="d0_s3" value="short-lanceolate" />
-        <character is_modifier="true" name="shape" notes="[duplicate value]" src="d0_s3" value="deltate" />
-        <character char_type="range_value" from="short-lanceolate" is_modifier="true" name="shape" src="d0_s3" to="deltate" />
-        <character is_modifier="true" modifier="tightly" name="fixation_or_orientation" src="d0_s3" value="appressed" />
-      </biological_entity>
-      <relation from="o20828" id="r4856" name="bearing" negation="false" src="d0_s3" to="o20829" />
-      <relation from="o20831" id="r4857" name="with" negation="false" src="d0_s3" to="o20832" />
-      <relation from="o20830" id="r4858" name="at" negation="false" src="d0_s3" to="o20833" />
-      <relation from="o20833" id="r4859" name="in" negation="false" src="d0_s3" to="o20834" />
-      <relation from="o20830" id="r4860" name="at" negation="false" src="d0_s3" to="o20835" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Pollen cones in pendent panicles to ca. 25 cm, 2-3 mm, conspicuous in winter prior to pollination.</text>
-      <biological_entity constraint="pollen" id="o20836" name="cone" name_original="cones" src="d0_s4" type="structure">
-        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" notes="" src="d0_s4" to="3" to_unit="mm" />
-        <character constraint="in winter prior-to-pollination" is_modifier="false" name="prominence" src="d0_s4" value="conspicuous" />
-      </biological_entity>
-      <biological_entity id="o20837" name="panicle" name_original="panicles" src="d0_s4" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s4" value="pendent" />
-        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s4" to="25" to_unit="cm" />
-      </biological_entity>
-      <relation from="o20836" id="r4861" name="in" negation="false" src="d0_s4" to="o20837" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Seed-cones 1.5-4 cm.</text>
-      <biological_entity id="o20838" name="cone-seed" name_original="seed-cones" src="d0_s5" type="structure">
-        <character char_type="range_value" from="1.5" from_unit="cm" name="distance" src="d0_s5" to="4" to_unit="cm" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>North America, Mexico, Central America in Guatemala.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="North America" establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-        <character name="distribution" value="Central America in Guatemala" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees  seasonally cladoptosic; trunk enlarged basally and often conspicuously buttressed; crown monopodial and conic when young, often becoming irregularly flattopped or deliquescent (branched and so divided that the main axis cannot be determined) with age.  Shoot system  conspicuously dimorphic, long shoots indeterminate, bearing individually abscising, linear to lanceolate leaves, short shoots determinate, abscising in autumn with their leaves, variable, intergrading, at one extreme pendent to horizontally spreading, bearing decurrent, narrowly linear and laterally divergent leaves in 2 rows, at other extreme strictly ascending to occasionally pendent, bearing short-lanceolate to deltate and tightly appressed leaves.  Pollen cones  in pendent panicles to ca. 25 cm, 2--3 mm, conspicuous in winter prior to pollination.  Seed cones  1.5--4 cm.</description>
+  <description type="distribution">North America, Mexico, Central America in Guatemala.</description>
   <number>1</number>
   <discussion>The two varieties recognized in the flora are indistinguishable in reproductive characteristics and continuously intergrading in morphologic and phenologic characteristics, although pure populations of the extremes appear morphologically and ecologically distinct. Unlike the varieties in the flora, var. mexicanum is annually cladoptosic, with determinate short shoots abscising concomitantly with expansion of shoots of the following year. Specimens from juvenile individuals, stump sprouts, fertile branchlets, terminal vegetative branchlets, or late-season growth may not be determinable to variety.</discussion>
   <discussion>Taxodium distichum (baldcypress) is the state tree of Louisiana.</discussion>
@@ -142,129 +35,13 @@
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Determinate short-shoots with leaves mostly in 2 ranks, pendent to horizontally spreading;</text>
-          <biological_entity id="o20839" name="short-shoot" name_original="short-shoots" src="d1_s0" type="structure">
-            <character is_modifier="true" name="development" src="d1_s0" value="determinate" />
-            <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d1_s0" value="pendent" />
-            <character is_modifier="false" modifier="horizontally" name="orientation" notes="[duplicate value]" src="d1_s0" value="spreading" />
-            <character char_type="range_value" from="pendent" name="orientation" notes="" src="d1_s0" to="horizontally spreading" />
-          </biological_entity>
-          <biological_entity id="o20840" name="leaf" name_original="leaves" src="d1_s0" type="structure" />
-          <biological_entity id="o20841" name="rank" name_original="ranks" src="d1_s0" type="structure">
-            <character is_modifier="true" name="quantity" src="d1_s0" value="2" />
-          </biological_entity>
-          <relation from="o20839" id="r4862" name="with" negation="false" src="d1_s0" to="o20840" />
-          <relation from="o20840" id="r4863" name="in" negation="false" src="d1_s0" to="o20841" />
-        </statement>
-        <statement id="d1_s1">
-          <text>leaves mostly narrowly linear, ca. 5-17 mm, laterally divergent, free portion contracted and twisted basally.</text>
-          <biological_entity id="o20842" name="leaf" name_original="leaves" src="d1_s1" type="structure">
-            <character is_modifier="false" modifier="mostly narrowly" name="arrangement_or_course_or_shape" src="d1_s1" value="linear" />
-            <character char_type="range_value" from="5" from_unit="mm" name="some_measurement" src="d1_s1" to="17" to_unit="mm" />
-            <character is_modifier="false" modifier="laterally" name="arrangement" src="d1_s1" value="divergent" />
-          </biological_entity>
-          <biological_entity id="o20843" name="portion" name_original="portion" src="d1_s1" type="structure">
-            <character is_modifier="true" name="fusion" src="d1_s1" value="free" />
-            <character is_modifier="false" name="condition_or_size" src="d1_s1" value="contracted" />
-            <character is_modifier="false" modifier="basally" name="architecture" src="d1_s1" value="twisted" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Determinate short shoots with leaves mostly in 2 ranks, pendent to horizontally spreading; leaves mostly narrowly linear, ca. 5-17 mm, laterally divergent, free portion contracted and twisted basally.</description>
       <determination>1a var. distichum</determination>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Determinate short-shoots with leaves not in 2 ranks, mostly ascending vertically;</text>
-          <biological_entity id="o20844" name="short-shoot" name_original="short-shoots" src="d2_s0" type="structure">
-            <character is_modifier="true" name="development" src="d2_s0" value="determinate" />
-            <character is_modifier="false" modifier="mostly; vertically" name="orientation" notes="" src="d2_s0" value="ascending" />
-          </biological_entity>
-          <biological_entity id="o20845" name="leaf" name_original="leaves" src="d2_s0" type="structure" />
-          <biological_entity id="o20846" name="rank" name_original="ranks" src="d2_s0" type="structure">
-            <character is_modifier="true" name="quantity" src="d2_s0" value="2" />
-          </biological_entity>
-          <relation from="o20844" id="r4864" name="with" negation="false" src="d2_s0" to="o20845" />
-          <relation from="o20845" id="r4865" name="in" negation="false" src="d2_s0" to="o20846" />
-        </statement>
-        <statement id="d2_s1">
-          <text>leaves mostly narrowly lanceolate, ca. 3-10 mm, appressed and overlapping, free portion not contracted and twisted basally.</text>
-          <biological_entity id="o20847" name="leaf" name_original="leaves" src="d2_s1" type="structure">
-            <character is_modifier="false" modifier="mostly narrowly" name="shape" src="d2_s1" value="lanceolate" />
-            <character char_type="range_value" from="3" from_unit="mm" name="some_measurement" src="d2_s1" to="10" to_unit="mm" />
-            <character is_modifier="false" name="fixation_or_orientation" src="d2_s1" value="appressed" />
-            <character is_modifier="false" name="arrangement" src="d2_s1" value="overlapping" />
-          </biological_entity>
-          <biological_entity id="o20848" name="portion" name_original="portion" src="d2_s1" type="structure">
-            <character is_modifier="true" name="fusion" src="d2_s1" value="free" />
-            <character is_modifier="false" modifier="not" name="condition_or_size" src="d2_s1" value="contracted" />
-            <character is_modifier="false" modifier="basally" name="architecture" src="d2_s1" value="twisted" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Determinate short shoots with leaves not in 2 ranks, mostly ascending vertically; leaves mostly narrowly lanceolate, ca. 3-10 mm, appressed and overlapping, free portion not contracted and twisted basally.</description>
       <determination>1b var. imbricarium</determination>
     </key_statement>
   </key>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_728_d1_s0">
-      <text>Determinate short-shoots with leaves mostly in 2 ranks, pendent to horizontally spreading;</text>
-      <biological_entity id="from_key_V2_728_o20839" name="short-shoot" name_original="short-shoots" src="d1_s0" type="structure">
-        <character is_modifier="true" name="development" src="d1_s0" value="determinate" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d1_s0" value="pendent" />
-        <character is_modifier="false" modifier="horizontally" name="orientation" notes="[duplicate value]" src="d1_s0" value="spreading" />
-        <character char_type="range_value" from="pendent" name="orientation" notes="alterIDs:o20841" src="d1_s0" to="horizontally spreading" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_728_o20840" name="leaf" name_original="leaves" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_728_o20841" name="rank" name_original="ranks" src="d1_s0" type="structure">
-        <character is_modifier="true" name="count" src="d1_s0" value="2" />
-      </biological_entity>
-      <relation from="from_key_V2_728_o20839" id="from_key_V2_728_r4862" name="with" negation="false" src="d1_s0" to="from_key_V2_728_o20840" />
-      <relation from="from_key_V2_728_o20840" id="from_key_V2_728_r4863" name="in" negation="false" src="d1_s0" to="from_key_V2_728_o20841" />
-    </statement>
-    <statement id="from_key_V2_728_d1_s1">
-      <text>leaves mostly narrowly linear, ca. 5-17 mm, laterally divergent, free portion contracted and twisted basally.</text>
-      <biological_entity id="from_key_V2_728_o20842" name="leaf" name_original="leaves" src="d1_s1" type="structure">
-        <character is_modifier="false" modifier="mostly narrowly" name="arrangement_or_course_or_shape" src="d1_s1" value="linear" />
-        <character char_type="range_value" from="5" from_unit="mm" name="some_measurement" src="d1_s1" to="17" to_unit="mm" />
-        <character is_modifier="false" modifier="laterally" name="arrangement" src="d1_s1" value="divergent" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_728_o20843" name="portion" name_original="portion" src="d1_s1" type="structure">
-        <character is_modifier="true" name="fusion" src="d1_s1" value="free" />
-        <character is_modifier="false" name="condition_or_size" src="d1_s1" value="contracted" />
-        <character is_modifier="false" modifier="basally" name="architecture" src="d1_s1" value="twisted" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_728_d2_s0">
-      <text>Determinate short-shoots with leaves not in 2 ranks, mostly ascending vertically;</text>
-      <biological_entity id="from_key_V2_728_o20844" name="short-shoot" name_original="short-shoots" src="d2_s0" type="structure">
-        <character is_modifier="true" name="development" src="d2_s0" value="determinate" />
-        <character is_modifier="false" modifier="mostly; vertically" name="orientation" notes="alterIDs:o20846" src="d2_s0" value="ascending" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_728_o20845" name="leaf" name_original="leaves" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_728_o20846" name="rank" name_original="ranks" src="d2_s0" type="structure">
-        <character is_modifier="true" name="count" src="d2_s0" value="2" />
-      </biological_entity>
-      <relation from="from_key_V2_728_o20844" id="from_key_V2_728_r4864" name="with" negation="false" src="d2_s0" to="from_key_V2_728_o20845" />
-      <relation from="from_key_V2_728_o20845" id="from_key_V2_728_r4865" name="in" negation="false" src="d2_s0" to="from_key_V2_728_o20846" />
-    </statement>
-    <statement id="from_key_V2_728_d2_s1">
-      <text>leaves mostly narrowly lanceolate, ca. 3-10 mm, appressed and overlapping, free portion not contracted and twisted basally.</text>
-      <biological_entity id="from_key_V2_728_o20847" name="leaf" name_original="leaves" src="d2_s1" type="structure">
-        <character is_modifier="false" modifier="mostly narrowly" name="shape" src="d2_s1" value="lanceolate" />
-        <character char_type="range_value" from="3" from_unit="mm" name="some_measurement" src="d2_s1" to="10" to_unit="mm" />
-        <character is_modifier="false" name="fixation_or_orientation" src="d2_s1" value="appressed" />
-        <character is_modifier="false" name="arrangement" src="d2_s1" value="overlapping" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_728_o20848" name="portion" name_original="portion" src="d2_s1" type="structure">
-        <character is_modifier="true" name="fusion" src="d2_s1" value="free" />
-        <character is_modifier="false" modifier="not" name="condition_or_size" src="d2_s1" value="contracted" />
-        <character is_modifier="false" modifier="basally" name="architecture" src="d2_s1" value="twisted" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

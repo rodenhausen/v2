@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="Yatskievych" date="1990" rank="genus">pentagramma</taxon_name>
-    <taxon_name authority="(Kaulfuss) Yatskievych" date="1990" rank="species">triangularis</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Yatskievych" date="1990">pentagramma</taxon_name>
+    <taxon_name rank="species" authority="(Kaulfuss) Yatskievych" date="1990">triangularis</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>80: 15. 1990</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family pteridaceae;genus pentagramma;species triangularis</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Gymnogramma</taxon_name>
-    <taxon_name authority="Kaulfuss" date="unknown" rank="species">triangularis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Gymnogramma</taxon_name>
+    <taxon_name rank="species" authority="Kaulfuss" date="unknown">triangularis</taxon_name>
     <place_of_publication>
       <publication_title>Enum. Filic.,</publication_title>
       <place_in_publication>73. 1824</place_in_publication>
@@ -35,272 +27,43 @@
     <taxon_hierarchy>genus Gymnogramma;species triangularis;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pityrogramma</taxon_name>
-    <taxon_name authority="(Kaulfuss) Maxon" date="unknown" rank="species">triangularis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pityrogramma</taxon_name>
+    <taxon_name rank="species" authority="(Kaulfuss) Maxon" date="unknown">triangularis</taxon_name>
     <taxon_hierarchy>genus Pityrogramma;species triangularis;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Petiole chestnut-brown to dark-brown, somewhat shiny, glabrous or sometimes viscid-glandular or rarely somewhat white-farinose proximally.</text>
-      <biological_entity id="o22505" name="petiole" name_original="petiole" src="d0_s0" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s0" value="chestnut-brown" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s0" value="dark-brown" />
-        <character char_type="range_value" from="chestnut-brown" name="coloration" src="d0_s0" to="dark-brown" />
-        <character is_modifier="false" modifier="somewhat" name="reflectance" src="d0_s0" value="shiny" />
-        <character is_modifier="false" name="pubescence" src="d0_s0" value="glabrous" />
-        <character is_modifier="false" modifier="sometimes" name="architecture_or_function_or_pubescence" src="d0_s0" value="viscid-glandular" />
-        <character is_modifier="false" modifier="rarely somewhat; rarely somewhat; proximally" name="pubescence" src="d0_s0" value="white-farinose" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Blade thin and herbaceous to thick and leathery, abaxially densely farinose, farina white or yellow, adaxially bright green to yellowish green when fresh, glabrous to glandular or viscid.</text>
-      <biological_entity id="o22506" name="blade" name_original="blade" src="d0_s1" type="structure">
-        <character is_modifier="false" name="width" src="d0_s1" value="thin" />
-        <character is_modifier="false" name="growth_form_or_texture" src="d0_s1" value="herbaceous" />
-        <character is_modifier="false" name="width" src="d0_s1" value="thick" />
-        <character is_modifier="false" name="texture" src="d0_s1" value="leathery" />
-        <character is_modifier="false" modifier="abaxially densely" name="pubescence" src="d0_s1" value="farinose" />
-      </biological_entity>
-      <biological_entity id="o22507" name="farina" name_original="farina" src="d0_s1" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s1" value="white" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s1" value="yellow" />
-        <character is_modifier="false" modifier="adaxially" name="coloration" notes="[duplicate value]" src="d0_s1" value="bright green" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s1" value="yellowish green" />
-        <character char_type="range_value" from="yellow adaxially bright green" name="coloration" src="d0_s1" to="yellowish green" />
-        <character is_modifier="false" modifier="when fresh" name="coloration" notes="[duplicate value]" src="d0_s1" value="white" />
-        <character is_modifier="false" modifier="when fresh" name="coloration" notes="[duplicate value]" src="d0_s1" value="yellow" />
-        <character is_modifier="false" modifier="when fresh" name="coloration" notes="[duplicate value]" src="d0_s1" value="bright green" />
-        <character is_modifier="false" modifier="when fresh" name="coloration" notes="[duplicate value]" src="d0_s1" value="yellowish green" />
-        <character char_type="range_value" from="yellow adaxially bright green" modifier="when fresh" name="coloration" src="d0_s1" to="yellowish green" />
-        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d0_s1" value="glabrous" />
-        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d0_s1" value="glandular" />
-        <character char_type="range_value" from="glabrous" name="pubescence" src="d0_s1" to="glandular" />
-        <character is_modifier="false" name="coating" src="d0_s1" value="viscid" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Petiole  chestnut brown to dark brown, somewhat shiny, glabrous or sometimes viscid-glandular or rarely somewhat white-farinose proximally.  Blade  thin and herbaceous to thick and leathery, abaxially densely farinose, farina white or yellow, adaxially bright green to yellowish green when fresh, glabrous to glandular or viscid.</description>
   <number>2</number>
   <discussion>Pentagramma triangularis occurs in rock crevices and at the base of overhanging boulders in drainages and on slopes and roadbanks. Occasional plants in which the farina is nearly absent may be encountered. These have been described as Pityrogramma triangularis var. viridis Hoover, a name of uncertain application that appears to refer to misshapen-spored hybrids of various parentage within the Pentagramma triangularis complex.</discussion>
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Leaves viscid-glandular adaxially;</text>
-          <biological_entity id="o22508" name="leaf" name_original="leaves" src="d1_s0" type="structure">
-            <character is_modifier="false" modifier="adaxially" name="architecture_or_function_or_pubescence" src="d1_s0" value="viscid-glandular" />
-          </biological_entity>
-        </statement>
-        <statement id="d1_s1">
-          <text>distal pinnae mostly entire;</text>
-          <biological_entity constraint="distal" id="o22509" name="pinna" name_original="pinnae" src="d1_s1" type="structure">
-            <character is_modifier="false" modifier="mostly" name="architecture_or_shape" src="d1_s1" value="entire" />
-          </biological_entity>
-        </statement>
-        <statement id="d1_s2">
-          <text>proximal basiscopic lobes of basal pinnae entire to undulate or crenate.</text>
-          <biological_entity constraint="proximal; pinna" id="o22510" name="lobe" name_original="lobes" src="d1_s2" type="structure">
-            <character is_modifier="true" name="orientation" src="d1_s2" value="basiscopic" />
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s2" value="entire" />
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s2" value="undulate" />
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s2" value="crenate" />
-            <character char_type="range_value" from="entire" name="shape" src="d1_s2" to="undulate or crenate" />
-          </biological_entity>
-          <biological_entity constraint="basal" id="o22511" name="pinna" name_original="pinnae" src="d1_s2" type="structure" />
-          <relation from="o22510" id="r5263" name="part_of" negation="false" src="d1_s2" to="o22511" />
-        </statement>
-      </description>
+      <description type="morphology">Leaves viscid-glandular adaxially; distal pinnae mostly entire; proximal basiscopic lobes of basal pinnae entire to undulate or crenate.</description>
       <determination>2d subsp. viscosa</determination>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Leaves glabrous or with scattered yellowish capitate glands adaxially, not viscid-glandular;</text>
-          <biological_entity id="o22512" name="leaf" name_original="leaves" src="d2_s0" type="structure">
-            <character is_modifier="false" name="pubescence" src="d2_s0" value="glabrous" />
-            <character is_modifier="false" name="pubescence" src="d2_s0" value="with scattered yellowish capitate glands" />
-            <character is_modifier="false" modifier="not" name="architecture_or_function_or_pubescence" notes="" src="d2_s0" value="viscid-glandular" />
-          </biological_entity>
-          <biological_entity id="o22513" name="gland" name_original="glands" src="d2_s0" type="structure">
-            <character is_modifier="true" name="arrangement" src="d2_s0" value="scattered" />
-            <character is_modifier="true" name="coloration" src="d2_s0" value="yellowish" />
-            <character is_modifier="true" name="architecture_or_shape" src="d2_s0" value="capitate" />
-          </biological_entity>
-          <relation from="o22512" id="r5264" name="with" negation="false" src="d2_s0" to="o22513" />
-        </statement>
-        <statement id="d2_s1">
-          <text>distal pinnae mostly regularly lobed;</text>
-          <biological_entity constraint="distal" id="o22514" name="pinna" name_original="pinnae" src="d2_s1" type="structure">
-            <character is_modifier="false" modifier="mostly regularly" name="shape" src="d2_s1" value="lobed" />
-          </biological_entity>
-        </statement>
-        <statement id="d2_s2">
-          <text>proximal basiscopic lobes of basal pinnae pinnatifid, often deeply so.</text>
-          <biological_entity constraint="proximal; pinna" id="o22515" name="lobe" name_original="lobes" src="d2_s2" type="structure">
-            <character is_modifier="true" name="orientation" src="d2_s2" value="basiscopic" />
-            <character is_modifier="false" name="shape" src="d2_s2" value="pinnatifid" />
-          </biological_entity>
-          <biological_entity constraint="basal" id="o22516" name="pinna" name_original="pinnae" src="d2_s2" type="structure" />
-          <relation from="o22515" id="r5265" name="part_of" negation="false" src="d2_s2" to="o22516" />
-        </statement>
-      </description>
+      <description type="morphology">Leaves glabrous or with scattered yellowish capitate glands adaxially, not viscid-glandular; distal pinnae mostly regularly lobed; proximal basiscopic lobes of basal pinnae pinnatifid, often deeply so.</description>
       <next_statement_id>2</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d3_s0">
-          <text>Leaves with scattered yellowish, capitate, nonfarinose glands adaxially, white-farinose abaxially.</text>
-          <biological_entity id="o22517" name="leaf" name_original="leaves" src="d3_s0" type="structure">
-            <character is_modifier="false" modifier="abaxially" name="pubescence" notes="" src="d3_s0" value="white-farinose" />
-          </biological_entity>
-          <biological_entity id="o22518" name="gland" name_original="glands" src="d3_s0" type="structure">
-            <character is_modifier="true" name="arrangement" src="d3_s0" value="scattered" />
-            <character is_modifier="true" name="coloration" src="d3_s0" value="yellowish" />
-            <character is_modifier="true" name="architecture_or_shape" src="d3_s0" value="capitate" />
-          </biological_entity>
-          <relation from="o22517" id="r5266" name="with" negation="false" src="d3_s0" to="o22518" />
-        </statement>
-      </description>
+      <description type="morphology">Leaves with scattered yellowish, capitate, nonfarinose glands adaxially, white-farinose abaxially.</description>
       <determination>2a subsp. maxonii</determination>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d4_s0">
-          <text>Leaves glabrous adaxially, yellow or white farinose abaxially.</text>
-          <biological_entity id="o22519" name="leaf" name_original="leaves" src="d4_s0" type="structure">
-            <character is_modifier="false" modifier="adaxially" name="pubescence" src="d4_s0" value="glabrous" />
-            <character is_modifier="false" name="coloration" src="d4_s0" value="yellow" />
-            <character is_modifier="false" name="coloration" src="d4_s0" value="white" />
-            <character is_modifier="false" modifier="abaxially" name="pubescence" src="d4_s0" value="farinose" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Leaves glabrous adaxially, yellow- or white- farinose abaxially.</description>
       <next_statement_id>3</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d5_s0">
-          <text>Farina light to bright-yellow.</text>
-          <biological_entity id="o22520" name="farina" name_original="farina" src="d5_s0" type="structure">
-            <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d5_s0" value="light" />
-            <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d5_s0" value="bright-yellow" />
-            <character char_type="range_value" from="light" name="coloration" src="d5_s0" to="bright-yellow" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Farina light to bright yellow.</description>
       <determination>2c subsp. triangularis</determination>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d6_s0">
-          <text>Farina white.</text>
-          <biological_entity id="o22521" name="farina" name_original="farina" src="d6_s0" type="structure">
-            <character is_modifier="false" name="coloration" src="d6_s0" value="white" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Farina white.</description>
       <determination>2b subsp. semipallida</determination>
     </key_statement>
   </key>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_777_d1_s0">
-      <text>Leaves viscid-glandular adaxially;</text>
-      <biological_entity id="from_key_V2_777_o22508" name="leaf" name_original="leaves" src="d1_s0" type="structure">
-        <character is_modifier="false" modifier="adaxially" name="architecture_or_function_or_pubescence" src="d1_s0" value="viscid-glandular" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_777_d1_s1">
-      <text>distal pinnae mostly entire;</text>
-      <biological_entity constraint="distal" id="from_key_V2_777_o22509" name="pinna" name_original="pinnae" src="d1_s1" type="structure">
-        <character is_modifier="false" modifier="mostly" name="architecture_or_shape" src="d1_s1" value="entire" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_777_d1_s2">
-      <text>proximal basiscopic lobes of basal pinnae entire to undulate or crenate.</text>
-      <biological_entity constraint="proximal" id="from_key_V2_777_o22510" name="lobe" name_original="lobes" src="d1_s2" type="structure">
-        <character is_modifier="true" name="orientation" src="d1_s2" value="basiscopic" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s2" value="entire" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s2" value="undulate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s2" value="crenate" />
-        <character char_type="range_value" from="entire" name="shape" src="d1_s2" to="undulate or crenate" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="from_key_V2_777_o22511" name="pinna" name_original="pinnae" src="d1_s2" type="structure" />
-      <relation from="from_key_V2_777_o22510" id="from_key_V2_777_r5263" name="part_of" negation="false" src="d1_s2" to="from_key_V2_777_o22511" />
-    </statement>
-  </description>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_777_d3_s0">
-      <text>Leaves with scattered yellowish, capitate, nonfarinose glands adaxially, white-farinose abaxially.</text>
-      <biological_entity id="from_key_V2_777_o22517" name="leaf" name_original="leaves" src="d3_s0" type="structure">
-        <character is_modifier="false" modifier="abaxially" name="pubescence" notes="alterIDs:o22518" src="d3_s0" value="white-farinose" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_777_o22518" name="gland" name_original="glands" src="d3_s0" type="structure">
-        <character is_modifier="true" name="arrangement" src="d3_s0" value="scattered" />
-        <character is_modifier="true" name="coloration" src="d3_s0" value="yellowish" />
-        <character is_modifier="true" name="architecture_or_shape" src="d3_s0" value="capitate" />
-      </biological_entity>
-      <relation from="from_key_V2_777_o22517" id="from_key_V2_777_r5266" name="with" negation="false" src="d3_s0" to="from_key_V2_777_o22518" />
-    </statement>
-    <statement id="from_key_V2_777_d2_s0">
-      <text>Leaves glabrous or with scattered yellowish capitate glands adaxially, not viscid-glandular;</text>
-      <biological_entity id="from_key_V2_777_o22512" name="leaf" name_original="leaves" src="d2_s0" type="structure">
-        <character is_modifier="false" name="pubescence" src="d2_s0" value="glabrous" />
-        <character is_modifier="false" name="pubescence" src="d2_s0" value="with scattered yellowish capitate glands" />
-        <character is_modifier="false" modifier="not" name="architecture_or_function_or_pubescence" notes="alterIDs:o22513" src="d2_s0" value="viscid-glandular" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_777_o22513" name="gland" name_original="glands" src="d2_s0" type="structure">
-        <character is_modifier="true" name="arrangement" src="d2_s0" value="scattered" />
-        <character is_modifier="true" name="coloration" src="d2_s0" value="yellowish" />
-        <character is_modifier="true" name="architecture_or_shape" src="d2_s0" value="capitate" />
-      </biological_entity>
-      <relation from="from_key_V2_777_o22512" id="from_key_V2_777_r5264" name="with" negation="false" src="d2_s0" to="from_key_V2_777_o22513" />
-    </statement>
-    <statement id="from_key_V2_777_d2_s1">
-      <text>distal pinnae mostly regularly lobed;</text>
-      <biological_entity constraint="distal" id="from_key_V2_777_o22514" name="pinna" name_original="pinnae" src="d2_s1" type="structure">
-        <character is_modifier="false" modifier="mostly regularly" name="shape" src="d2_s1" value="lobed" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_777_d2_s2">
-      <text>proximal basiscopic lobes of basal pinnae pinnatifid, often deeply so.</text>
-      <biological_entity constraint="proximal" id="from_key_V2_777_o22515" name="lobe" name_original="lobes" src="d2_s2" type="structure">
-        <character is_modifier="true" name="orientation" src="d2_s2" value="basiscopic" />
-        <character is_modifier="false" name="shape" src="d2_s2" value="pinnatifid" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="from_key_V2_777_o22516" name="pinna" name_original="pinnae" src="d2_s2" type="structure" />
-      <relation from="from_key_V2_777_o22515" id="from_key_V2_777_r5265" name="part_of" negation="false" src="d2_s2" to="from_key_V2_777_o22516" />
-    </statement>
-  </description>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_777_d5_s0">
-      <text>Farina light to bright-yellow.</text>
-      <biological_entity id="from_key_V2_777_o22520" name="farina" name_original="farina" src="d5_s0" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d5_s0" value="light" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d5_s0" value="bright-yellow" />
-        <character char_type="range_value" from="light" name="coloration" src="d5_s0" to="bright-yellow" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_777_d4_s0">
-      <text>Leaves glabrous adaxially, yellow or white farinose abaxially.</text>
-      <biological_entity id="from_key_V2_777_o22519" name="leaf" name_original="leaves" src="d4_s0" type="structure">
-        <character is_modifier="false" modifier="adaxially" name="pubescence" src="d4_s0" value="glabrous" />
-        <character is_modifier="false" name="coloration" src="d4_s0" value="yellow" />
-        <character is_modifier="false" name="coloration" src="d4_s0" value="white" />
-        <character is_modifier="false" modifier="abaxially" name="pubescence" src="d4_s0" value="farinose" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_777_d6_s0">
-      <text>Farina white.</text>
-      <biological_entity id="from_key_V2_777_o22521" name="farina" name_original="farina" src="d6_s0" type="structure">
-        <character is_modifier="false" name="coloration" src="d6_s0" value="white" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

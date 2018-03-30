@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Ching" date="unknown" rank="family">dennstaedtiaceae</taxon_name>
-    <taxon_name authority="Gleditsch ex Scopoli" date="1760" rank="genus">pteridium</taxon_name>
-    <taxon_name authority="(Linnaeus) Kuhn in Decken" date="1879" rank="species">aquilinum</taxon_name>
-    <taxon_name authority="(Clute) A. Heller" date="1900" rank="variety">pseudocaudatum</taxon_name>
+    <taxon_name rank="family" authority="Ching" date="unknown">dennstaedtiaceae</taxon_name>
+    <taxon_name rank="genus" authority="Gleditsch ex Scopoli" date="1760">pteridium</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) Kuhn in Decken" date="1879">aquilinum</taxon_name>
+    <taxon_name rank="variety" authority="(Clute) A. Heller" date="1900">pseudocaudatum</taxon_name>
     <place_of_publication>
       <publication_title>Cat. N. Amer. Pl. ed. 2</publication_title>
       <place_in_publication>12. 1900</place_in_publication>
@@ -27,151 +19,19 @@
     <taxon_hierarchy>family dennstaedtiaceae;genus pteridium;species aquilinum;variety pseudocaudatum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pteris</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">aquilina</taxon_name>
-    <taxon_name authority="Clute" date="unknown" rank="variety">pseudocaudata</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pteris</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">aquilina</taxon_name>
+    <taxon_name rank="variety" authority="Clute" date="unknown">pseudocaudata</taxon_name>
     <place_of_publication>
       <publication_title>Fern Bull.</publication_title>
       <place_in_publication>8: 39. 1900</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Pteris;species aquilina;variety pseudocaudata;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Petiole 10-70 cm.</text>
-      <biological_entity id="o10055" name="petiole" name_original="petiole" src="d0_s0" type="structure">
-        <character char_type="range_value" from="10" from_unit="cm" name="some_measurement" src="d0_s0" to="70" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Blade broadly triangular to sometimes ovate, 2-3-pinnate-pinnatifid at base, 20-80 × 20-70 cm;</text>
-      <biological_entity id="o10056" name="blade" name_original="blade" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s1" value="triangular" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="triangular to sometimes" />
-        <character is_modifier="false" modifier="sometimes" name="shape" src="d0_s1" value="ovate" />
-        <character constraint="at base" constraintid="o10057" is_modifier="false" name="shape" src="d0_s1" value="2-3-pinnate-pinnatifid" />
-        <character char_type="range_value" from="20" from_unit="cm" name="length" notes="" src="d0_s1" to="80" to_unit="cm" />
-        <character char_type="range_value" from="20" from_unit="cm" name="width" notes="" src="d0_s1" to="70" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o10057" name="base" name_original="base" src="d0_s1" type="structure" />
-    </statement>
-    <statement id="d0_s2">
-      <text>blades, rachises, and costae sparsely pilose to glabrous abaxially.</text>
-      <biological_entity id="o10058" name="blade" name_original="blades" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="sparsely" name="pubescence" notes="[duplicate value]" src="d0_s2" value="pilose" />
-        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d0_s2" value="glabrous" />
-        <character char_type="range_value" from="sparsely pilose" modifier="abaxially" name="pubescence" src="d0_s2" to="glabrous" />
-      </biological_entity>
-      <biological_entity id="o10059" name="rachis" name_original="rachises" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="sparsely" name="pubescence" notes="[duplicate value]" src="d0_s2" value="pilose" />
-        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d0_s2" value="glabrous" />
-        <character char_type="range_value" from="sparsely pilose" modifier="abaxially" name="pubescence" src="d0_s2" to="glabrous" />
-      </biological_entity>
-      <biological_entity id="o10060" name="costa" name_original="costae" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="sparsely" name="pubescence" notes="[duplicate value]" src="d0_s2" value="pilose" />
-        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d0_s2" value="glabrous" />
-        <character char_type="range_value" from="sparsely pilose" modifier="abaxially" name="pubescence" src="d0_s2" to="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Pinnae (proximal) ovatelanceolate or triangular, distal pinnae oblong;</text>
-      <biological_entity id="o10061" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="ovatelanceolate" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="triangular" />
-      </biological_entity>
-      <biological_entity constraint="distal" id="o10062" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="oblong" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>terminal segment of each pinna ca. 6-15 times longer than wide, longer ultimate segments 1-2 times their width apart, ca. 2-5 mm wide.</text>
-      <biological_entity constraint="terminal; pinna" id="o10063" name="segment" name_original="segment" src="d0_s4" type="structure">
-        <character is_modifier="false" name="l_w_ratio" src="d0_s4" value="6-15" />
-      </biological_entity>
-      <biological_entity id="o10064" name="pinna" name_original="pinna" src="d0_s4" type="structure" />
-      <biological_entity constraint="longer ultimate" id="o10065" name="segment" name_original="segments" src="d0_s4" type="structure">
-        <character is_modifier="false" name="width" src="d0_s4" value="1-2 times their width apart" />
-        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s4" to="5" to_unit="mm" />
-      </biological_entity>
-      <relation from="o10063" id="r2304" name="part_of" negation="false" src="d0_s4" to="o10064" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Pinnules at 45-60° angle to costa;</text>
-      <biological_entity id="o10066" name="pinnule" name_original="pinnules" src="d0_s5" type="structure" />
-      <biological_entity id="o10067" name="angle" name_original="angle" src="d0_s5" type="structure">
-        <character char_type="range_value" from="45" is_modifier="true" name="quantity" src="d0_s5" to="60" />
-      </biological_entity>
-      <biological_entity id="o10068" name="costa" name_original="costa" src="d0_s5" type="structure" />
-      <relation from="o10066" id="r2305" name="at" negation="false" src="d0_s5" to="o10067" />
-      <relation from="o10067" id="r2306" name="to" negation="false" src="d0_s5" to="o10068" />
-    </statement>
-    <statement id="d0_s6">
-      <text>fertile ultimate segments adnate or equally decurrent and surcurrent.</text>
-      <biological_entity constraint="ultimate" id="o10069" name="segment" name_original="segments" src="d0_s6" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s6" value="fertile" />
-        <character is_modifier="false" name="fusion" src="d0_s6" value="adnate" />
-        <character is_modifier="false" modifier="equally" name="shape" src="d0_s6" value="decurrent" />
-        <character is_modifier="false" name="orientation" src="d0_s6" value="surcurrent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Outer indusia entire to somewhat erose, glabrous.</text>
-      <biological_entity constraint="outer" id="o10070" name="indusium" name_original="indusia" src="d0_s7" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s7" value="entire to somewhat" />
-        <character is_modifier="false" modifier="somewhat" name="architecture_or_relief" src="d0_s7" value="erose" />
-        <character is_modifier="false" name="pubescence" src="d0_s7" value="glabrous" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>In barrens and open pine or oak woods in acid, often sandy soil, abundant, forming large colonies;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="in barrens and open pine or oak woods in acid , sandy soil , abundant , forming large colonies ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--1000 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1000" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ala., Ark., Conn., Del., D.C., Fla., Ga., Ill., Ind., Ky., La., Md., Mass., Miss., Mo., N.J., N.Y., N.C., Ohio, Okla., Pa., S.C., Tenn., Tex., Va., W.Va.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="D.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Petiole  10--70 cm.  Blade  broadly triangular to sometimes ovate, 2--3-pinnate-pinnatifid at base, 20--80 × 20--70 cm; blades, rachises, and costae sparsely pilose to glabrous abaxially.  Pinnae  (proximal) ovate-lanceolate or triangular, distal pinnae oblong; terminal segment of each pinna ca. 6--15 times longer than wide, longer ultimate segments 1--2 times their width apart, ca. 2--5 mm wide.  Pinnules  at 45--60° angle to costa; fertile ultimate segments adnate or equally decurrent and surcurrent.  Outer indusia  entire to somewhat erose, glabrous.</description>
+  <description type="habitat">In barrens and open pine or oak woods in acid, often sandy soil, abundant, forming large colonies;</description>
+  <description type="elevation">0--1000 m;</description>
+  <description type="distribution">Ala., Ark., Conn., Del., D.C., Fla., Ga., Ill., Ind., Ky., La., Md., Mass., Miss., Mo., N.J., N.Y., N.C., Ohio, Okla., Pa., S.C., Tenn., Tex., Va., W.Va.</description>
   <number>1d</number>
   <other_name type="common_name">Tailed bracken</other_name>
   <discussion>Pteridium aquilinum var. pseudocaudatum is more common in the southern portion of the range.</discussion>

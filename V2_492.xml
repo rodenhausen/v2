@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="C. Presl" date="1836" rank="genus">phanerophlebia</taxon_name>
-    <taxon_name authority="L. Underwood" date="1899" rank="species">auriculata</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="C. Presl" date="1836">phanerophlebia</taxon_name>
+    <taxon_name rank="species" authority="L. Underwood" date="1899">auriculata</taxon_name>
     <place_of_publication>
       <publication_title>Bull. Torrey Bot. Club</publication_title>
       <place_in_publication>26: 212. 1899</place_in_publication>
@@ -26,122 +18,13 @@
     <taxon_hierarchy>family dryopteridaceae;genus phanerophlebia;species auriculata</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Cyrtomium</taxon_name>
-    <taxon_name authority="(L. Underwood) C. V. Morton" date="unknown" rank="species">auriculatum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Cyrtomium</taxon_name>
+    <taxon_name rank="species" authority="(L. Underwood) C. V. Morton" date="unknown">auriculatum</taxon_name>
     <taxon_hierarchy>genus Cyrtomium;species auriculatum;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Leaves 10-60 (-75) cm, very short leaves sometimes fertile.</text>
-      <biological_entity id="o12622" name="leaf" name_original="leaves" src="d0_s0" type="structure">
-        <character char_type="range_value" from="60" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d0_s0" to="75" to_unit="cm" />
-        <character char_type="range_value" from="10" from_unit="cm" name="some_measurement" src="d0_s0" to="60" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o12623" name="leaf" name_original="leaves" src="d0_s0" type="structure">
-        <character is_modifier="true" modifier="very" name="height_or_length_or_size" src="d0_s0" value="short" />
-        <character is_modifier="false" modifier="sometimes" name="reproduction" src="d0_s0" value="fertile" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Pinnae (2-) 5-12 pairs, ovate to lanceolate, usually falcate, 2-9 cm, base obliquely cuneate to nearly cordate, apex usually attenuate;</text>
-      <biological_entity id="o12624" name="pinna" name_original="pinnae" src="d0_s1" type="structure">
-        <character char_type="range_value" from="2" name="atypical_quantity" src="d0_s1" to="5" to_inclusive="false" />
-        <character char_type="range_value" from="5" name="quantity" src="d0_s1" to="12" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="ovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s1" value="lanceolate" />
-        <character char_type="range_value" from="ovate" name="shape" src="d0_s1" to="lanceolate" />
-        <character is_modifier="false" modifier="usually" name="shape" src="d0_s1" value="falcate" />
-        <character char_type="range_value" from="2" from_unit="cm" name="some_measurement" src="d0_s1" to="9" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o12625" name="base" name_original="base" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="obliquely" name="shape" notes="[duplicate value]" src="d0_s1" value="cuneate" />
-        <character is_modifier="false" modifier="nearly" name="shape" notes="[duplicate value]" src="d0_s1" value="cordate" />
-        <character char_type="range_value" from="obliquely cuneate" name="shape" src="d0_s1" to="nearly cordate" />
-      </biological_entity>
-      <biological_entity id="o12626" name="apex" name_original="apex" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="usually" name="shape" src="d0_s1" value="attenuate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>acroscopic lobe usually present, prominent (at least some present on every leaf);</text>
-      <biological_entity id="o12627" name="lobe" name_original="lobe" src="d0_s2" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s2" value="acroscopic" />
-        <character is_modifier="false" modifier="usually" name="presence" src="d0_s2" value="absent" />
-        <character is_modifier="false" name="prominence" src="d0_s2" value="prominent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>pinnae rarely irregularly incised.</text>
-      <biological_entity id="o12628" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="rarely irregularly" name="shape" src="d0_s3" value="incised" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Indusia membranous, flat or concave centrally, not umbonate, shriveled at maturity.</text>
-    </statement>
-    <statement id="d0_s5">
-      <text>2n = 164.</text>
-      <biological_entity id="o12629" name="indusium" name_original="indusia" src="d0_s4" type="structure">
-        <character is_modifier="false" name="texture" src="d0_s4" value="membranous" />
-        <character is_modifier="false" name="shape" src="d0_s4" value="flat" />
-        <character is_modifier="false" name="shape" src="d0_s4" value="concave" />
-        <character is_modifier="false" modifier="not" name="shape" src="d0_s4" value="umbonate" />
-        <character constraint="at maturity" is_modifier="false" name="shape" src="d0_s4" value="shriveled" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o12630" name="chromosome" name_original="" src="d0_s5" type="structure">
-        <character name="quantity" src="d0_s5" value="164" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Soil pockets in sheltered rock crevices of canyons and ravines;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="soil pockets in sheltered rock crevices of canyons and ravines ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>600--2100 m.;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2100" to_unit="m" from="600" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., N.Mex., Tex.; n Mexico.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" value="n Mexico" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Leaves  10--60(--75) cm, very short leaves sometimes fertile.  Pinnae  (2--)5--12 pairs, ovate to lanceolate, usually falcate, 2--9 cm, base obliquely cuneate to nearly cordate, apex usually attenuate; acroscopic lobe usually present, prominent (at least some present on every leaf); pinnae rarely irregularly incised.  Indusia  membranous, flat or concave centrally, not umbonate, shriveled at maturity. 2n = 164.</description>
+  <description type="habitat">Soil pockets in sheltered rock crevices of canyons and ravines;</description>
+  <description type="elevation">600--2100 m.;</description>
+  <description type="distribution">Ariz., N.Mex., Tex.; n Mexico.</description>
   <number>1</number>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_46_d1_s0">
-      <text>Pinnae, at least some on each plant, with basal, acroscopic lobe;</text>
-      <biological_entity id="from_key_V2_46_o11583" name="pinna" name_original="pinnae" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_46_o11584" name="plant" name_original="plant" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_46_o11585" name="lobe" name_original="lobe" src="d1_s0" type="structure">
-        <character is_modifier="true" name="position" src="d1_s0" value="basal" />
-        <character is_modifier="true" name="orientation" src="d1_s0" value="acroscopic" />
-      </biological_entity>
-      <relation from="from_key_V2_46_o11583" id="from_key_V2_46_r2686" modifier="at-least" name="on" negation="false" src="d1_s0" to="from_key_V2_46_o11584" />
-      <relation from="from_key_V2_46_o11583" id="from_key_V2_46_r2687" name="with" negation="false" src="d1_s0" to="from_key_V2_46_o11585" />
-    </statement>
-    <statement id="from_key_V2_46_d1_s1">
-      <text>indusia flat to concave centrally, not umbonate, shriveled at maturity.</text>
-      <biological_entity id="from_key_V2_46_o11586" name="indusium" name_original="indusia" src="d1_s1" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s1" value="flat" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s1" value="concave" />
-        <character char_type="range_value" from="flat" name="shape" src="d1_s1" to="concave centrally" />
-        <character is_modifier="false" modifier="not" name="shape" src="d1_s1" value="umbonate" />
-        <character constraint="at maturity" is_modifier="false" name="shape" src="d1_s1" value="shriveled" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

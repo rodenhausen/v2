@@ -1,220 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Willkomm in Willkomm &amp; Lange" date="unknown" rank="family">selaginellaceae</taxon_name>
-    <taxon_name authority="Palisot de Beauvois" date="1805" rank="genus">selaginella</taxon_name>
-    <taxon_name authority="Jermy" date="1986" rank="subgenus">tetragonostachys</taxon_name>
-    <taxon_name authority="Maxon" date="1920" rank="species">leucobryoides</taxon_name>
+    <taxon_name rank="family" authority="Willkomm in Willkomm &amp; Lange" date="unknown">selaginellaceae</taxon_name>
+    <taxon_name rank="genus" authority="Palisot de Beauvois" date="1805">selaginella</taxon_name>
+    <taxon_name rank="subgenus" authority="Jermy" date="1986">tetragonostachys</taxon_name>
+    <taxon_name rank="species" authority="Maxon" date="1920">leucobryoides</taxon_name>
     <place_of_publication>
       <publication_title>Smithsonian Misc. Collect.</publication_title>
       <place_in_publication>75: 8. 1920</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family selaginellaceae;genus selaginella;subgenus tetragonostachys;species leucobryoides</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants on rock, forming rounded cushionlike mats.</text>
-      <biological_entity id="o21672" name="plant" name_original="plants" src="d0_s0" type="structure" />
-      <biological_entity id="o21673" name="rock" name_original="rock" src="d0_s0" type="structure" />
-      <biological_entity id="o21674" name="mat" name_original="mats" src="d0_s0" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s0" value="rounded" />
-        <character is_modifier="true" name="shape" src="d0_s0" value="cushionlike" />
-      </biological_entity>
-      <relation from="o21672" id="r5084" name="on" negation="false" src="d0_s0" to="o21673" />
-      <relation from="o21672" id="r5085" name="forming" negation="false" src="d0_s0" to="o21674" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems decumbent to short-creeping, dry stems readily fragmenting;</text>
-      <biological_entity id="o21675" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" notes="[duplicate value]" src="d0_s1" value="decumbent" />
-        <character is_modifier="false" name="growth_form_or_orientation" notes="[duplicate value]" src="d0_s1" value="short-creeping" />
-        <character char_type="range_value" from="decumbent" name="growth_form_or_orientation" src="d0_s1" to="short-creeping" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>irregularly forked, without budlike arrested branches, tips straight;</text>
-      <biological_entity id="o21676" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="true" name="condition_or_texture" src="d0_s1" value="dry" />
-        <character is_modifier="false" modifier="irregularly" name="shape" src="d0_s2" value="forked" />
-      </biological_entity>
-      <biological_entity id="o21677" name="branch" name_original="branches" src="d0_s2" type="structure">
-        <character is_modifier="true" name="architecture_or_shape" src="d0_s2" value="budlike" />
-      </biological_entity>
-      <biological_entity id="o21678" name="tip" name_original="tips" src="d0_s2" type="structure">
-        <character is_modifier="false" name="course" src="d0_s2" value="straight" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>main-stem upperside and underside structurally slightly different, inconspicuously indeterminate, lateral branches radially symmetric, determinate, strongly ascending, 1-forked.</text>
-      <biological_entity id="o21679" name="main-stem" name_original="main-stem" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="inconspicuously" name="development" src="d0_s3" value="indeterminate" />
-      </biological_entity>
-      <biological_entity id="o21680" name="upperside" name_original="upperside" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="inconspicuously" name="development" src="d0_s3" value="indeterminate" />
-      </biological_entity>
-      <biological_entity id="o21681" name="underside" name_original="underside" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="inconspicuously" name="development" src="d0_s3" value="indeterminate" />
-      </biological_entity>
-      <biological_entity constraint="lateral" id="o21682" name="branch" name_original="branches" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="radially" name="architecture_or_shape" src="d0_s3" value="symmetric" />
-        <character is_modifier="false" name="development" src="d0_s3" value="determinate" />
-        <character is_modifier="false" modifier="strongly" name="orientation" src="d0_s3" value="ascending" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="1-forked" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Rhizophores borne on upperside of stems, throughout stem length, 0.2-0.35 mm diam.</text>
-      <biological_entity id="o21683" name="rhizophore" name_original="rhizophores" src="d0_s4" type="structure">
-        <character char_type="range_value" from="0.2" from_unit="mm" name="diameter" notes="" src="d0_s4" to="0.35" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o21684" name="upperside" name_original="upperside" src="d0_s4" type="structure" />
-      <biological_entity id="o21685" name="stem" name_original="stems" src="d0_s4" type="structure" />
-      <biological_entity id="o21686" name="stem" name_original="stem" src="d0_s4" type="structure" />
-      <relation from="o21683" id="r5086" name="borne on" negation="false" src="d0_s4" to="o21684" />
-      <relation from="o21683" id="r5087" name="borne on" negation="false" src="d0_s4" to="o21685" />
-      <relation from="o21683" id="r5088" name="throughout" negation="false" src="d0_s4" to="o21686" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Leaves monomorphic, ± in alternate pseudowhorls of 4, tightly appressed, ascending, green, linear-oblong to linear-lanceolate, sometimes falcate on lateral rows (on main-stem), 2-4.5 X 0.5-0.65 mm (usually smaller on young ascending branches);</text>
-      <biological_entity id="o21687" name="leaf" name_original="leaves" src="d0_s5" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s5" value="monomorphic" />
-        <character is_modifier="false" modifier="tightly" name="fixation_or_orientation" notes="" src="d0_s5" value="appressed" />
-        <character is_modifier="false" name="orientation" src="d0_s5" value="ascending" />
-        <character is_modifier="false" name="coloration" src="d0_s5" value="green" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="linear-oblong" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="linear-lanceolate" />
-        <character char_type="range_value" from="linear-oblong" name="shape" src="d0_s5" to="linear-lanceolate" />
-        <character constraint="on lateral rows" constraintid="o21689" is_modifier="false" modifier="sometimes" name="shape" src="d0_s5" value="falcate" />
-        <character char_type="range_value" from="2" from_unit="mm" name="length" notes="" src="d0_s5" to="4.5" to_unit="mm" />
-        <character char_type="range_value" from="0.5" from_unit="mm" name="width" notes="" src="d0_s5" to="0.65" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o21688" name="pseudowhorl" name_original="pseudowhorls" src="d0_s5" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s5" value="alternate" />
-        <character name="quantity" src="d0_s5" value="4" />
-      </biological_entity>
-      <biological_entity constraint="lateral" id="o21689" name="row" name_original="rows" src="d0_s5" type="structure" />
-      <relation from="o21687" id="r5089" modifier="more or less" name="in" negation="false" src="d0_s5" to="o21688" />
-    </statement>
-    <statement id="d0_s6">
-      <text>abaxial ridges present;</text>
-      <biological_entity constraint="abaxial" id="o21690" name="ridge" name_original="ridges" src="d0_s6" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s6" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>base cuneate and decurrent (rounded and adnate on young branches), glabrous;</text>
-      <biological_entity id="o21691" name="base" name_original="base" src="d0_s7" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s7" value="cuneate" />
-        <character is_modifier="false" name="shape" src="d0_s7" value="decurrent" />
-        <character is_modifier="false" name="pubescence" src="d0_s7" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>margins short-ciliate, cilia transparent, scattered, spreading at base to ascending and dentiform toward apex, 0.07-0.15 mm;</text>
-      <biological_entity id="o21692" name="margin" name_original="margins" src="d0_s8" type="structure">
-        <character is_modifier="false" name="architecture_or_pubescence_or_shape" src="d0_s8" value="short-ciliate" />
-      </biological_entity>
-      <biological_entity id="o21693" name="cilium" name_original="cilia" src="d0_s8" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s8" value="transparent" />
-        <character is_modifier="false" name="arrangement" src="d0_s8" value="scattered" />
-        <character constraint="at base" constraintid="o21694" is_modifier="false" name="orientation" src="d0_s8" value="spreading" />
-      </biological_entity>
-      <biological_entity id="o21694" name="base" name_original="base" src="d0_s8" type="structure" />
-      <biological_entity id="o21695" name="whole_organism" name_original="" src="d0_s8" type="structure">
-        <character char_type="range_value" from="0.07" from_unit="mm" modifier="toward apex" name="some_measurement" src="d0_s8" to="0.15" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>apex slightly attenuate and bristled or obtuse and abruptly bristled;</text>
-      <biological_entity id="o21696" name="apex" name_original="apex" src="d0_s9" type="structure">
-        <character is_modifier="false" modifier="slightly" name="shape" src="d0_s9" value="attenuate" />
-        <character is_modifier="false" name="shape" src="d0_s9" value="bristled" />
-        <character is_modifier="false" name="shape" src="d0_s9" value="obtuse" />
-        <character is_modifier="false" modifier="abruptly" name="shape" src="d0_s9" value="bristled" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>bristle whitish or transparent, puberulent, 0.2-0.6 mm.</text>
-      <biological_entity id="o21697" name="bristle" name_original="bristle" src="d0_s10" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s10" value="whitish" />
-        <character is_modifier="false" name="coloration" src="d0_s10" value="transparent" />
-        <character is_modifier="false" name="pubescence" src="d0_s10" value="puberulent" />
-        <character char_type="range_value" from="0.2" from_unit="mm" name="some_measurement" src="d0_s10" to="0.6" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>Strobili solitary, 0.4-1.5 cm;</text>
-      <biological_entity id="o21698" name="strobilus" name_original="strobili" src="d0_s11" type="structure">
-        <character is_modifier="false" name="architecture_or_arrangement_or_growth_form" src="d0_s11" value="solitary" />
-        <character char_type="range_value" from="0.4" from_unit="cm" name="some_measurement" src="d0_s11" to="1.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s12">
-      <text>sporophylls deltate-ovate or lanceolate, abaxial ridges moderately defined, base glabrous, margins short-ciliate to denticulate, apex acuminate with very short bristle.</text>
-      <biological_entity id="o21699" name="sporophyll" name_original="sporophylls" src="d0_s12" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s12" value="deltate-ovate" />
-        <character is_modifier="false" name="shape" src="d0_s12" value="lanceolate" />
-      </biological_entity>
-      <biological_entity constraint="abaxial" id="o21700" name="ridge" name_original="ridges" src="d0_s12" type="structure">
-        <character is_modifier="false" modifier="moderately" name="prominence" src="d0_s12" value="defined" />
-      </biological_entity>
-      <biological_entity id="o21701" name="base" name_original="base" src="d0_s12" type="structure">
-        <character is_modifier="false" name="pubescence" src="d0_s12" value="glabrous" />
-      </biological_entity>
-      <biological_entity id="o21702" name="margin" name_original="margins" src="d0_s12" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s12" value="short-ciliate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s12" value="denticulate" />
-        <character char_type="range_value" from="short-ciliate" name="shape" src="d0_s12" to="denticulate" />
-      </biological_entity>
-      <biological_entity id="o21703" name="apex" name_original="apex" src="d0_s12" type="structure">
-        <character constraint="with bristle" constraintid="o21704" is_modifier="false" name="shape" src="d0_s12" value="acuminate" />
-      </biological_entity>
-      <biological_entity id="o21704" name="bristle" name_original="bristle" src="d0_s12" type="structure">
-        <character is_modifier="true" modifier="very" name="height_or_length_or_size" src="d0_s12" value="short" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>In rock crevices or on exposed rock;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="in rock crevices on exposed rock ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>800--2800 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2800" to_unit="m" from="800" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., Calif., Nev.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Nev." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  on rock, forming rounded cushionlike mats.  Stems  decumbent to short-creeping, dry stems readily fragmenting; irregularly forked, without budlike arrested branches, tips straight; main stem upperside and underside structurally slightly different, inconspicuously indeterminate, lateral branches radially symmetric, determinate, strongly ascending, 1-forked.  Rhizophores  borne on upperside of stems, throughout stem length, 0.2--0.35 mm diam.  Leaves  monomorphic, ± in alternate pseudowhorls of 4, tightly appressed, ascending, green, linear-oblong to linear-lanceolate, sometimes falcate on lateral rows (on main stem), 2--4.5 X 0.5--0.65 mm (usually smaller on young ascending branches); abaxial ridges present; base cuneate and decurrent (rounded and adnate on young branches), glabrous; margins short-ciliate, cilia transparent, scattered, spreading at base to ascending and dentiform toward apex, 0.07--0.15 mm; apex slightly attenuate and bristled or obtuse and abruptly bristled; bristle whitish or transparent, puberulent, 0.2--0.6 mm.  Strobili  solitary, 0.4--1.5 cm; sporophylls deltate-ovate or lanceolate, abaxial ridges moderately defined, base glabrous, margins short-ciliate to denticulate, apex acuminate with very short bristle.</description>
+  <description type="habitat">In rock crevices or on exposed rock;</description>
+  <description type="elevation">800--2800 m;</description>
+  <description type="distribution">Ariz., Calif., Nev.</description>
   <number>24</number>
   <other_name type="common_name">Mojave spike-moss</other_name>
   <discussion>Selaginella leucobryoides has very tightly intertwined stems that readily fragment, a characteristic shared with S . utahensis and S . asprella . Selaginella leucobryoides is very closely related to, and difficult to separate from, S . utahensis (see discussion).</discussion>

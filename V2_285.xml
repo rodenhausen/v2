@@ -1,240 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
-    <taxon_name authority="(Endlicher) Carrière" date="unknown" rank="genus">tsuga</taxon_name>
-    <taxon_name authority="Engelmann" date="1881" rank="species">caroliniana</taxon_name>
+    <taxon_name rank="family" authority="Lindley" date="unknown">pinaceae</taxon_name>
+    <taxon_name rank="genus" authority="(Endlicher) Carrière" date="unknown">tsuga</taxon_name>
+    <taxon_name rank="species" authority="Engelmann" date="1881">caroliniana</taxon_name>
     <place_of_publication>
       <publication_title>Bot. Gaz.</publication_title>
       <place_in_publication>6: 223. 1881</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family pinaceae;genus tsuga;species caroliniana</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees to 30m;</text>
-      <biological_entity id="o5833" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="30" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk to 2m diam.;</text>
-      <biological_entity id="o5834" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="2" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>crown conic.</text>
-      <biological_entity id="o5835" name="crown" name_original="crown" src="d0_s2" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s2" value="conic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Bark brown, scaly and fissured.</text>
-      <biological_entity id="o5836" name="bark" name_original="bark" src="d0_s3" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s3" value="brown" />
-        <character is_modifier="false" name="architecture_or_pubescence" src="d0_s3" value="scaly" />
-        <character is_modifier="false" name="relief" src="d0_s3" value="fissured" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Twigs light-brown, thinly covered with short, dark hairs.</text>
-      <biological_entity id="o5837" name="twig" name_original="twigs" src="d0_s4" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s4" value="light-brown" />
-      </biological_entity>
-      <biological_entity id="o5838" name="hair" name_original="hairs" src="d0_s4" type="structure">
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s4" value="short" />
-        <character is_modifier="true" name="coloration" src="d0_s4" value="dark" />
-      </biological_entity>
-      <relation from="o5837" id="r1328" modifier="thinly" name="covered with" negation="false" src="d0_s4" to="o5838" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Buds oblong, 2-3mm.</text>
-      <biological_entity id="o5839" name="bud" name_original="buds" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="oblong" />
-        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s5" to="3" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Leaves 10-20mm, mostly spreading in all directions from twigs, flat but slightly revolute;</text>
-      <biological_entity id="o5840" name="leaf" name_original="leaves" src="d0_s6" type="structure">
-        <character char_type="range_value" from="10" from_unit="mm" name="some_measurement" src="d0_s6" to="20" to_unit="mm" />
-        <character constraint="in directions" constraintid="o5841" is_modifier="false" modifier="mostly" name="orientation" src="d0_s6" value="spreading" />
-        <character is_modifier="false" name="prominence_or_shape" notes="" src="d0_s6" value="flat" />
-        <character is_modifier="false" modifier="slightly" name="shape_or_vernation" src="d0_s6" value="revolute" />
-      </biological_entity>
-      <biological_entity id="o5841" name="direction" name_original="directions" src="d0_s6" type="structure" />
-      <biological_entity id="o5842" name="twig" name_original="twigs" src="d0_s6" type="structure" />
-      <relation from="o5841" id="r1329" name="from" negation="false" src="d0_s6" to="o5842" />
-    </statement>
-    <statement id="d0_s7">
-      <text>abaxial surface glaucous, with 2 broad, conspicuous stomatal bands, adaxial surface shiny green;</text>
-      <biological_entity constraint="abaxial" id="o5843" name="surface" name_original="surface" src="d0_s7" type="structure">
-        <character is_modifier="false" name="pubescence" src="d0_s7" value="glaucous" />
-      </biological_entity>
-      <biological_entity id="o5844" name="stomatal" name_original="stomatal" src="d0_s7" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s7" value="2" />
-        <character is_modifier="true" name="width" src="d0_s7" value="broad" />
-        <character is_modifier="true" name="prominence" src="d0_s7" value="conspicuous" />
-      </biological_entity>
-      <biological_entity id="o5845" name="band" name_original="bands" src="d0_s7" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s7" value="2" />
-        <character is_modifier="true" name="width" src="d0_s7" value="broad" />
-        <character is_modifier="true" name="prominence" src="d0_s7" value="conspicuous" />
-      </biological_entity>
-      <biological_entity constraint="adaxial" id="o5846" name="surface" name_original="surface" src="d0_s7" type="structure">
-        <character is_modifier="false" name="reflectance" src="d0_s7" value="shiny" />
-        <character is_modifier="false" name="coloration" src="d0_s7" value="green" />
-      </biological_entity>
-      <relation from="o5843" id="r1330" name="with" negation="false" src="d0_s7" to="o5844" />
-      <relation from="o5843" id="r1331" name="with" negation="false" src="d0_s7" to="o5845" />
-    </statement>
-    <statement id="d0_s8">
-      <text>margins entire.</text>
-      <biological_entity id="o5847" name="margin" name_original="margins" src="d0_s8" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s8" value="entire" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>Seed-cones ovoid to oblong, 2.5-4 × 1.5-2.5cm;</text>
-      <biological_entity id="o5848" name="seed-cone" name_original="seed-cones" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="ovoid" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="oblong" />
-        <character char_type="range_value" from="ovoid" name="shape" src="d0_s9" to="oblong" />
-        <character char_type="range_value" from="2.5" from_unit="cm" name="length" src="d0_s9" to="4" to_unit="cm" />
-        <character char_type="range_value" from="1.5" from_unit="cm" name="width" src="d0_s9" to="2.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>scales oblong, 12-18 × 8-12mm, bases clawed, apex rounded.</text>
-      <biological_entity id="o5849" name="scale" name_original="scales" src="d0_s10" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s10" value="oblong" />
-        <character char_type="range_value" from="12" from_unit="mm" name="length" src="d0_s10" to="18" to_unit="mm" />
-        <character char_type="range_value" from="8" from_unit="mm" name="width" src="d0_s10" to="12" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o5850" name="base" name_original="bases" src="d0_s10" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s10" value="clawed" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>2 n =24.</text>
-      <biological_entity id="o5851" name="apex" name_original="apex" src="d0_s10" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s10" value="rounded" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o5852" name="chromosome" name_original="" src="d0_s11" type="structure">
-        <character name="quantity" src="d0_s11" value="24" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Rocky montane slopes;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="rocky montane" />
-        <character name="habitat" value="slopes" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>700--1200m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1200" to_unit="m" from="700" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ga., N.C., S.C., Tenn., Va.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees  to 30m; trunk to 2m diam.; crown conic.  Bark  brown, scaly and fissured.  Twigs  light brown, thinly covered with short, dark hairs.  Buds  oblong, 2--3mm.  Leaves  10--20mm, mostly spreading in all directions from twigs, flat but slightly revolute; abaxial surface glaucous, with 2 broad, conspicuous stomatal bands, adaxial surface shiny green; margins entire.  Seed cones  ovoid to oblong, 2.5--4 × 1.5--2.5cm; scales oblong, 12--18 × 8--12mm, bases clawed, apex rounded. 2 n =24.</description>
+  <description type="habitat">Rocky montane slopes;</description>
+  <description type="elevation">700--1200m;</description>
+  <description type="distribution">Ga., N.C., S.C., Tenn., Va.</description>
   <number>1</number>
   <other_name type="common_name">Carolina hemlock</other_name>
   <discussion>Tsuga caroliniana is valuable as an attractive ornamental; a number of cultivars have been developed. The wood is of little commercial importance because of the combination of mediocre quality and the relative rarity of the species in nature.</discussion>
   <references>
     <reference>James, R.L. 1959. Carolina hemlock---wild and cultivated. Castanea 24: 112--134.</reference>
   </references>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_647_d4_s0">
-      <text>Leaves bearing stomates on abaxial surface only, flat, not notably thicker along midline, but slightly revolute;</text>
-      <biological_entity id="from_key_V2_647_o17881" name="leaf" name_original="leaves" src="d4_s0" type="structure">
-        <character is_modifier="false" name="prominence_or_shape" notes="alterIDs:o17883" src="d4_s0" value="flat" />
-        <character constraint="along midline" constraintid="o17884" is_modifier="false" modifier="not notably" name="width" src="d4_s0" value="thicker" />
-        <character is_modifier="false" modifier="slightly" name="shape_or_vernation" notes="alterIDs:o17884" src="d4_s0" value="revolute" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_647_o17882" name="stomate" name_original="stomates" src="d4_s0" type="structure" />
-      <biological_entity constraint="abaxial" id="from_key_V2_647_o17883" name="surface" name_original="surface" src="d4_s0" type="structure" />
-      <biological_entity id="from_key_V2_647_o17884" name="midline" name_original="midline" src="d4_s0" type="structure" />
-      <relation from="from_key_V2_647_o17881" id="from_key_V2_647_r4154" name="bearing" negation="false" src="d4_s0" to="from_key_V2_647_o17882" />
-      <relation from="from_key_V2_647_o17881" id="from_key_V2_647_r4155" name="on" negation="false" src="d4_s0" to="from_key_V2_647_o17883" />
-    </statement>
-    <statement id="from_key_V2_647_d4_s1">
-      <text>seed-cones 2.5-4 cm, more than half as wide;</text>
-    </statement>
-    <statement id="from_key_V2_647_d4_s2">
-      <text>montane tree of se United States.</text>
-      <biological_entity id="from_key_V2_647_o17885" name="seed-cone" name_original="seed-cones" src="d4_s1" type="structure">
-        <character char_type="range_value" from="2.5" from_unit="cm" name="distance" src="d4_s1" to="4" to_unit="cm" />
-        <character constraint="of states" constraintid="o17886" is_modifier="false" name="growth_form" src="d4_s2" value="tree" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_647_o17886" name="state" name_original="states" src="d4_s2" type="structure">
-        <character is_modifier="true" name="fusion" src="d4_s2" value="united" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_647_d1_s0">
-      <text>Leaves mostly spreading in all directions from twigs, bearing stomates on both surfaces or on abaxial surface only;</text>
-      <biological_entity id="from_key_V2_647_o17861" name="leaf" name_original="leaves" src="d1_s0" type="structure">
-        <character constraint="in directions" constraintid="o17862" is_modifier="false" modifier="mostly" name="orientation" src="d1_s0" value="spreading" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_647_o17862" name="direction" name_original="directions" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_647_o17863" name="twig" name_original="twigs" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_647_o17864" name="stomate" name_original="stomates" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_647_o17865" name="surface" name_original="surfaces" src="d1_s0" type="structure" />
-      <biological_entity constraint="abaxial" id="from_key_V2_647_o17866" name="surface" name_original="surface" src="d1_s0" type="structure" />
-      <relation from="from_key_V2_647_o17862" id="from_key_V2_647_r4145" name="from" negation="false" src="d1_s0" to="from_key_V2_647_o17863" />
-      <relation from="from_key_V2_647_o17861" id="from_key_V2_647_r4146" name="bearing" negation="false" src="d1_s0" to="from_key_V2_647_o17864" />
-      <relation from="from_key_V2_647_o17861" id="from_key_V2_647_r4147" name="on" negation="false" src="d1_s0" to="from_key_V2_647_o17865" />
-      <relation from="from_key_V2_647_o17861" id="from_key_V2_647_r4148" name="on" negation="false" src="d1_s0" to="from_key_V2_647_o17866" />
-    </statement>
-    <statement id="from_key_V2_647_d1_s1">
-      <text>seed-cones ovoid, oblong, or oblong-cylindric, 2.5-6 cm;</text>
-      <biological_entity id="from_key_V2_647_o17867" name="seed-cone" name_original="seed-cones" src="d1_s1" type="structure">
-        <character is_modifier="false" name="shape" src="d1_s1" value="ovoid" />
-        <character is_modifier="false" name="shape" src="d1_s1" value="oblong" />
-        <character is_modifier="false" name="shape" src="d1_s1" value="oblong-cylindric" />
-        <character is_modifier="false" name="shape" src="d1_s1" value="oblong" />
-        <character is_modifier="false" name="shape" src="d1_s1" value="oblong-cylindric" />
-        <character char_type="range_value" from="2.5" from_unit="cm" name="distance" src="d1_s1" to="6" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_647_d1_s2">
-      <text>scales oblong, 8-18 mm.</text>
-      <biological_entity id="from_key_V2_647_o17868" name="scale" name_original="scales" src="d1_s2" type="structure">
-        <character is_modifier="false" name="shape" src="d1_s2" value="oblong" />
-        <character char_type="range_value" from="8" from_unit="mm" name="some_measurement" src="d1_s2" to="18" to_unit="mm" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

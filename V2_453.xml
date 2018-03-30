@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="R. Brown" date="1810" rank="genus">notholaena</taxon_name>
-    <taxon_name authority="Davenport" date="1880" rank="species">grayi</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="R. Brown" date="1810">notholaena</taxon_name>
+    <taxon_name rank="species" authority="Davenport" date="1880">grayi</taxon_name>
     <place_of_publication>
       <publication_title>Bull. Torrey Bot. Club</publication_title>
       <place_in_publication>7: 50, plate 4. 1880</place_in_publication>
@@ -26,195 +18,28 @@
     <taxon_hierarchy>family pteridaceae;genus notholaena;species grayi</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Cheilanthes</taxon_name>
-    <taxon_name authority="(Davenport) Domin" date="unknown" rank="species">grayi</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Cheilanthes</taxon_name>
+    <taxon_name rank="species" authority="(Davenport) Domin" date="unknown">grayi</taxon_name>
     <taxon_hierarchy>genus Cheilanthes;species grayi;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Chrysochosma</taxon_name>
-    <taxon_name authority="(Davenport) Pichi-Sermolli" date="unknown" rank="species">grayi</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Chrysochosma</taxon_name>
+    <taxon_name rank="species" authority="(Davenport) Pichi-Sermolli" date="unknown">grayi</taxon_name>
     <taxon_hierarchy>genus Chrysochosma;species grayi;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stem scales concolored to weakly bicolored, margins usually brown, very narrow and poorly defined, thin, ciliate-denticulate.</text>
-      <biological_entity constraint="stem" id="o11221" name="scale" name_original="scales" src="d0_s0" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s0" value="concolored" />
-        <character is_modifier="false" modifier="weakly" name="coloration" notes="[duplicate value]" src="d0_s0" value="bicolored" />
-        <character char_type="range_value" from="concolored" name="coloration" src="d0_s0" to="weakly bicolored" />
-      </biological_entity>
-      <biological_entity id="o11222" name="margin" name_original="margins" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="usually" name="coloration" src="d0_s0" value="brown" />
-        <character is_modifier="false" modifier="very" name="size_or_width" src="d0_s0" value="narrow" />
-        <character is_modifier="false" modifier="poorly" name="prominence" src="d0_s0" value="defined" />
-        <character is_modifier="false" name="width" src="d0_s0" value="thin" />
-        <character is_modifier="false" name="shape" src="d0_s0" value="ciliate-denticulate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves 5-20 cm.</text>
-      <biological_entity id="o11223" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character char_type="range_value" from="5" from_unit="cm" name="some_measurement" src="d0_s1" to="20" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Petiole brown, equal to or somewhat shorter than blade, rounded adaxially, glandular-farinose, bearing scattered hairs and scales.</text>
-      <biological_entity id="o11224" name="petiole" name_original="petiole" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s2" value="brown" />
-        <character is_modifier="false" name="variability" src="d0_s2" value="equal" />
-        <character constraint="than blade" constraintid="o11225" is_modifier="false" name="height_or_length_or_size" src="d0_s2" value="somewhat shorter" />
-        <character is_modifier="false" modifier="adaxially" name="shape" src="d0_s2" value="rounded" />
-        <character is_modifier="false" name="pubescence" src="d0_s2" value="glandular-farinose" />
-      </biological_entity>
-      <biological_entity id="o11225" name="blade" name_original="blade" src="d0_s2" type="structure" />
-      <biological_entity id="o11226" name="hair" name_original="hairs" src="d0_s2" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s2" value="scattered" />
-      </biological_entity>
-      <biological_entity id="o11227" name="scale" name_original="scales" src="d0_s2" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s2" value="scattered" />
-      </biological_entity>
-      <relation from="o11224" id="r2581" name="bearing" negation="false" src="d0_s2" to="o11226" />
-      <relation from="o11224" id="r2582" name="bearing" negation="false" src="d0_s2" to="o11227" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Blade linear-lanceolate, 2-pinnate-pinnatifid, 3-6 times longer than wide, abaxially with conspicuous whitish farina and dull, light-brown, lanceolate, entire scales scattered along rachises and costae, adaxially distinctly glandular;</text>
-      <biological_entity id="o11228" name="blade" name_original="blade" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="linear-lanceolate" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="2-pinnate-pinnatifid" />
-        <character is_modifier="false" name="l_w_ratio" src="d0_s3" value="3-6" />
-        <character is_modifier="false" modifier="adaxially distinctly" name="architecture_or_function_or_pubescence" notes="" src="d0_s3" value="glandular" />
-      </biological_entity>
-      <biological_entity id="o11229" name="farina" name_original="farina" src="d0_s3" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s3" value="conspicuous" />
-        <character is_modifier="true" name="coloration" src="d0_s3" value="whitish" />
-      </biological_entity>
-      <biological_entity id="o11230" name="scale" name_original="scales" src="d0_s3" type="structure">
-        <character is_modifier="true" name="reflectance" src="d0_s3" value="dull" />
-        <character is_modifier="true" name="coloration" src="d0_s3" value="light-brown" />
-        <character is_modifier="true" name="shape" src="d0_s3" value="lanceolate" />
-        <character is_modifier="true" name="architecture_or_shape" src="d0_s3" value="entire" />
-        <character constraint="along costae" constraintid="o11232" is_modifier="false" name="arrangement" src="d0_s3" value="scattered" />
-      </biological_entity>
-      <biological_entity id="o11231" name="rachis" name_original="rachises" src="d0_s3" type="structure" />
-      <biological_entity id="o11232" name="costa" name_original="costae" src="d0_s3" type="structure" />
-      <relation from="o11228" id="r2583" modifier="abaxially" name="with" negation="false" src="d0_s3" to="o11229" />
-      <relation from="o11228" id="r2584" modifier="abaxially" name="with" negation="false" src="d0_s3" to="o11230" />
-    </statement>
-    <statement id="d0_s4">
-      <text>basal pinnae equal to or slightly larger than adjacent pair, ± equilateral, proximal basiscopic pinnules not greatly enlarged.</text>
-      <biological_entity constraint="basal" id="o11233" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
-        <character is_modifier="false" name="variability" src="d0_s4" value="equal" />
-        <character constraint="than adjacent pair , more or less equilateral , proximal pinnae" constraintid="o11234" is_modifier="false" name="size" src="d0_s4" value="slightly larger" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="o11234" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s4" value="adjacent" />
-        <character is_modifier="true" modifier="more or less" name="architecture_or_shape" src="d0_s4" value="equilateral" />
-      </biological_entity>
-      <biological_entity id="o11235" name="pinnule" name_original="pinnules" src="d0_s4" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s4" value="basiscopic" />
-        <character is_modifier="false" modifier="not greatly" name="size" src="d0_s4" value="enlarged" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Ultimate segments sessile, broadly adnate to costae;</text>
-      <biological_entity constraint="ultimate" id="o11236" name="segment" name_original="segments" src="d0_s5" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s5" value="sessile" />
-        <character constraint="to costae" constraintid="o11237" is_modifier="false" modifier="broadly" name="fusion" src="d0_s5" value="adnate" />
-      </biological_entity>
-      <biological_entity id="o11237" name="costa" name_original="costae" src="d0_s5" type="structure" />
-    </statement>
-    <statement id="d0_s6">
-      <text>segment margins slightly recurved, rarely concealing sporangia.</text>
-      <biological_entity constraint="segment" id="o11238" name="margin" name_original="margins" src="d0_s6" type="structure">
-        <character is_modifier="false" modifier="slightly" name="orientation" src="d0_s6" value="recurved" />
-      </biological_entity>
-      <biological_entity id="o11239" name="sporangium" name_original="sporangia" src="d0_s6" type="structure" />
-      <relation from="o11238" id="r2585" name="rarely concealing" negation="false" src="d0_s6" to="o11239" />
-    </statement>
-    <statement id="d0_s7">
-      <text>Sporangia containing 16 or 32 spores.</text>
-      <biological_entity id="o11240" name="sporangium" name_original="sporangia" src="d0_s7" type="structure">
-        <character name="quantity" src="d0_s7" unit="or spores" value="16" />
-        <character name="quantity" src="d0_s7" unit="or spores" value="32" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stem  scales concolored to weakly bicolored, margins usually brown, very narrow and poorly defined, thin, ciliate-denticulate.  Leaves  5--20 cm.  Petiole  brown, equal to or somewhat shorter than blade, rounded adaxially, glandular-farinose, bearing scattered hairs and scales.  Blade  linear-lanceolate, 2-pinnate-pinnatifid, 3--6 times longer than wide, abaxially with conspicuous whitish farina and dull, light brown, lanceolate, entire scales scattered along rachises and costae, adaxially distinctly glandular; basal pinnae equal to or slightly larger than adjacent pair, ± equilateral, proximal basiscopic pinnules not greatly enlarged.  Ultimate segments  sessile, broadly adnate to costae; segment margins slightly recurved, rarely concealing sporangia.  Sporangia  containing 16 or 32 spores.</description>
   <number>4</number>
   <discussion>Notholaena grayi comprises two cytotypes here treated as subspecies. Sexually reproducing diploid populations ( N . grayi subsp. sonorensis ) are concentrated in southern Arizona and western Mexico. Apogamous triploids ( N . grayi subsp. grayi ) are more widespread, extending from Arizona to central Texas and northeastern Mexico. Isozyme analyses indicate that subsp. grayi is an autotriploid derivative of subsp. sonorensis (G. J. Gastony and M. D. Windham 1989).</discussion>
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Most sporangia containing 16 spores;</text>
-          <biological_entity id="o11242" name="sporangium" name_original="sporangia" src="d1_s0" type="structure" />
-          <biological_entity id="o11243" name="spore" name_original="spores" src="d1_s0" type="structure">
-            <character is_modifier="true" name="quantity" src="d1_s0" value="16" />
-          </biological_entity>
-          <relation from="o11242" id="r2586" name="containing" negation="false" src="d1_s0" to="o11243" />
-        </statement>
-        <statement id="d1_s1">
-          <text>spores generally more than 55 µm.</text>
-          <biological_entity id="o11244" name="spore" name_original="spores" src="d1_s1" type="structure">
-            <character char_type="range_value" from="55" from_unit="um" name="some_measurement" src="d1_s1" upper_restricted="false" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Most sporangia containing 16 spores; spores generally more than 55 µm.</description>
       <determination>4a subsp. grayi</determination>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Most sporangia containing 32 spores;</text>
-          <biological_entity id="o11246" name="sporangium" name_original="sporangia" src="d2_s0" type="structure" />
-          <biological_entity id="o11247" name="spore" name_original="spores" src="d2_s0" type="structure">
-            <character is_modifier="true" name="quantity" src="d2_s0" value="32" />
-          </biological_entity>
-          <relation from="o11246" id="r2587" name="containing" negation="false" src="d2_s0" to="o11247" />
-        </statement>
-        <statement id="d2_s1">
-          <text>spores generally less than 55 µm.</text>
-          <biological_entity id="o11248" name="spore" name_original="spores" src="d2_s1" type="structure">
-            <character char_type="range_value" from="0" from_unit="um" name="some_measurement" src="d2_s1" to="55" to_unit="um" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Most sporangia containing 32 spores; spores generally less than 55 µm.</description>
       <determination>4b subsp. sonorensis</determination>
     </key_statement>
   </key>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_453_d1_s0">
-      <text>Most sporangia containing 16 spores;</text>
-      <biological_entity id="from_key_V2_453_o11241" name="whole_organism" name_original="" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_453_o11242" name="sporangium" name_original="sporangia" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_453_o11243" name="spore" name_original="spores" src="d1_s0" type="structure">
-        <character is_modifier="true" name="count" src="d1_s0" value="16" />
-      </biological_entity>
-      <relation from="from_key_V2_453_o11242" id="from_key_V2_453_r2586" name="containing" negation="false" src="d1_s0" to="from_key_V2_453_o11243" />
-    </statement>
-    <statement id="from_key_V2_453_d1_s1">
-      <text>spores generally more than 55 µm.</text>
-      <biological_entity id="from_key_V2_453_o11244" name="spore" name_original="spores" src="d1_s1" type="structure">
-        <character char_type="range_value" from="55" from_unit="um" name="some_measurement" src="d1_s1" upper_restricted="false" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_453_d2_s0">
-      <text>Most sporangia containing 32 spores;</text>
-      <biological_entity id="from_key_V2_453_o11245" name="whole_organism" name_original="" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_453_o11246" name="sporangium" name_original="sporangia" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_453_o11247" name="spore" name_original="spores" src="d2_s0" type="structure">
-        <character is_modifier="true" name="count" src="d2_s0" value="32" />
-      </biological_entity>
-      <relation from="from_key_V2_453_o11246" id="from_key_V2_453_r2587" name="containing" negation="false" src="d2_s0" to="from_key_V2_453_o11247" />
-    </statement>
-    <statement id="from_key_V2_453_d2_s1">
-      <text>spores generally less than 55 µm.</text>
-      <biological_entity id="from_key_V2_453_o11248" name="spore" name_original="spores" src="d2_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="um" name="some_measurement" src="d2_s1" to="55" to_unit="um" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

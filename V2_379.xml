@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Horianow" date="unknown" rank="family">zamiaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="1762" rank="genus">Zamia</taxon_name>
+    <taxon_name rank="family" authority="Horianow" date="unknown">zamiaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="1762">Zamia</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl., ed. 2</publication_title>
       <place_in_publication>2: 659. 1762</place_in_publication>
@@ -25,66 +17,8 @@
     <taxon_hierarchy>family zamiaceae;genus Zamia</taxon_hierarchy>
     <other_info_on_name type="etymology">[Derivation equivocal, perhaps from misreading of Latin azania, a kind of pine cone, or from Latin zamia, loss, from the "sterile appearance" of the pollen cones]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems often branched, subterranean to aboveground.</text>
-      <biological_entity id="o8797" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="often" name="architecture" src="d0_s0" value="branched" />
-        <character is_modifier="false" name="location" notes="[duplicate value]" src="d0_s0" value="subterranean" />
-        <character is_modifier="false" name="location" notes="[duplicate value]" src="d0_s0" value="aboveground" />
-        <character char_type="range_value" from="subterranean" name="location" src="d0_s0" to="aboveground" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves broadly oblongelliptic;</text>
-      <biological_entity id="o8798" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s1" value="oblongelliptic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>leaflets entire to coarsely dentate, without midribs, venation dichotomous but appearing parallel.</text>
-      <biological_entity id="o8799" name="leaflet" name_original="leaflets" src="d0_s2" type="structure">
-        <character is_modifier="false" name="shape_or_architecture" src="d0_s2" value="entire to coarsely" />
-        <character is_modifier="false" modifier="coarsely" name="architecture_or_shape" src="d0_s2" value="dentate" />
-        <character is_modifier="false" name="architecture" notes="" src="d0_s2" value="dichotomous" />
-        <character is_modifier="false" name="arrangement" src="d0_s2" value="parallel" />
-      </biological_entity>
-      <biological_entity id="o8800" name="midrib" name_original="midribs" src="d0_s2" type="structure" />
-      <relation from="o8799" id="r2029" name="without" negation="false" src="d0_s2" to="o8800" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Cones distinctly peduncled.</text>
-      <biological_entity id="o8801" name="cone" name_original="cones" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="distinctly" name="architecture" src="d0_s3" value="peduncled" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Pollen cones more slender than seed-cones.</text>
-      <biological_entity id="o8803" name="seed-cone" name_original="seed-cones" src="d0_s4" type="structure" />
-    </statement>
-    <statement id="d0_s5">
-      <text>x = 8.</text>
-      <biological_entity constraint="pollen" id="o8802" name="cone" name_original="cones" src="d0_s4" type="structure">
-        <character constraint="than seed-cones" constraintid="o8803" is_modifier="false" name="size" src="d0_s4" value="more slender" />
-      </biological_entity>
-      <biological_entity constraint="x" id="o8804" name="chromosome" name_original="" src="d0_s5" type="structure">
-        <character name="quantity" src="d0_s5" value="8" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>subtropics and tropics, North America, Mexico, West Indies, Central America, South America.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="subtropics and tropics" establishment_means="native" />
-        <character name="distribution" value="North America" establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-        <character name="distribution" value="West Indies" establishment_means="native" />
-        <character name="distribution" value="Central America" establishment_means="native" />
-        <character name="distribution" value="South America" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  often branched, subterranean to aboveground.  Leaves  broadly oblong-elliptic; leaflets entire to coarsely dentate, without midribs, venation dichotomous but appearing parallel.  Cones  distinctly peduncled.  Pollen cones  more slender than seed cones.  x  = 8.</description>
+  <description type="distribution">subtropics and tropics, North America, Mexico, West Indies, Central America, South America.</description>
   <number>1</number>
   <discussion>Species ca. 30 (1 in the flora):</discussion>
   <references>

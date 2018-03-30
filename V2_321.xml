@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
-    <taxon_name authority="A. Dietrich" date="1824" rank="genus">picea</taxon_name>
-    <taxon_name authority="Sargent" date="1898" rank="species">rubens</taxon_name>
+    <taxon_name rank="family" authority="Lindley" date="unknown">pinaceae</taxon_name>
+    <taxon_name rank="genus" authority="A. Dietrich" date="1824">picea</taxon_name>
+    <taxon_name rank="species" authority="Sargent" date="1898">rubens</taxon_name>
     <place_of_publication>
       <publication_title>Silva</publication_title>
       <place_in_publication>12: 33, plate 597. 1898</place_in_publication>
@@ -26,177 +18,29 @@
     <taxon_hierarchy>family pinaceae;genus picea;species rubens</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Picea</taxon_name>
-    <taxon_name authority="Small" date="unknown" rank="species">australis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Picea</taxon_name>
+    <taxon_name rank="species" authority="Small" date="unknown">australis</taxon_name>
     <taxon_hierarchy>genus Picea;species australis;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Picea</taxon_name>
-    <taxon_name authority="(Aiton) Link" date="unknown" rank="species">nigra</taxon_name>
-    <taxon_name authority="(DuRoi) Engelmann" date="unknown" rank="variety">rubra</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Picea</taxon_name>
+    <taxon_name rank="species" authority="(Aiton) Link" date="unknown">nigra</taxon_name>
+    <taxon_name rank="variety" authority="(DuRoi) Engelmann" date="unknown">rubra</taxon_name>
     <taxon_hierarchy>genus Picea;species nigra;variety rubra;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Picea</taxon_name>
-    <taxon_name authority="(DuRoi) Link" date="unknown" rank="species">rubra</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Picea</taxon_name>
+    <taxon_name rank="species" authority="(DuRoi) Link" date="unknown">rubra</taxon_name>
     <place_of_publication>
       <place_in_publication>1831,</place_in_publication>
       <other_info_on_pub>not A.Dietrich 1824</other_info_on_pub>
     </place_of_publication>
     <taxon_hierarchy>genus Picea;species rubra;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees to 40m;</text>
-      <biological_entity id="o7299" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="40" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk to 1m diam.;</text>
-      <biological_entity id="o7300" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="1" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>crown narrowly conic.</text>
-      <biological_entity id="o7301" name="crown" name_original="crown" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" src="d0_s2" value="conic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Bark gray-brown to reddish-brown.</text>
-      <biological_entity id="o7302" name="bark" name_original="bark" src="d0_s3" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="gray-brown" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="reddish-brown" />
-        <character char_type="range_value" from="gray-brown" name="coloration" src="d0_s3" to="reddish-brown" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Branches horizontally spreading;</text>
-      <biological_entity id="o7303" name="branch" name_original="branches" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="horizontally" name="orientation" src="d0_s4" value="spreading" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>twigs not pendent, rather stout, yellowbrown, densely pubescent to glabrate.</text>
-      <biological_entity id="o7304" name="twig" name_original="twigs" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="not" name="orientation" src="d0_s5" value="pendent" />
-        <character is_modifier="false" modifier="rather" name="fragility_or_size" src="d0_s5" value="stout" />
-        <character is_modifier="false" name="coloration" src="d0_s5" value="yellowbrown" />
-        <character is_modifier="false" modifier="densely" name="pubescence" notes="[duplicate value]" src="d0_s5" value="pubescent" />
-        <character is_modifier="false" name="pubescence" notes="[duplicate value]" src="d0_s5" value="glabrate" />
-        <character char_type="range_value" from="densely pubescent" name="pubescence" src="d0_s5" to="glabrate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Buds reddish-brown, 5-8mm, apex acute.</text>
-      <biological_entity id="o7305" name="bud" name_original="buds" src="d0_s6" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s6" value="reddish-brown" />
-        <character char_type="range_value" from="5" from_unit="mm" name="some_measurement" src="d0_s6" to="8" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o7306" name="apex" name_original="apex" src="d0_s6" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s6" value="acute" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Leaves 0.8-2.5 (-3) cm, 4-angled in cross-section, somewhat flexuous, yellow-green to dark green, not glaucous, bearing stomates on all surfaces, apex mostly acute to sharp-pointed.</text>
-      <biological_entity id="o7307" name="leaf" name_original="leaves" src="d0_s7" type="structure">
-        <character char_type="range_value" from="2.5" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d0_s7" to="3" to_unit="cm" />
-        <character char_type="range_value" from="0.8" from_unit="cm" name="some_measurement" src="d0_s7" to="2.5" to_unit="cm" />
-        <character constraint="in cross-section" constraintid="o7308" is_modifier="false" name="shape" src="d0_s7" value="4-angled" />
-        <character is_modifier="false" modifier="somewhat" name="course" notes="" src="d0_s7" value="flexuous" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s7" value="yellow-green" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s7" value="dark green" />
-        <character char_type="range_value" from="yellow-green" name="coloration" src="d0_s7" to="dark green" />
-        <character is_modifier="false" modifier="not" name="pubescence" src="d0_s7" value="glaucous" />
-      </biological_entity>
-      <biological_entity id="o7308" name="cross-section" name_original="cross-section" src="d0_s7" type="structure" />
-      <biological_entity id="o7309" name="stomate" name_original="stomates" src="d0_s7" type="structure" />
-      <biological_entity id="o7310" name="surface" name_original="surfaces" src="d0_s7" type="structure" />
-      <biological_entity id="o7311" name="apex" name_original="apex" src="d0_s7" type="structure">
-        <character is_modifier="false" modifier="mostly" name="shape" notes="[duplicate value]" src="d0_s7" value="acute" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s7" value="sharp-pointed" />
-        <character char_type="range_value" from="mostly acute" name="shape" src="d0_s7" to="sharp-pointed" />
-      </biological_entity>
-      <relation from="o7307" id="r1718" name="bearing" negation="false" src="d0_s7" to="o7309" />
-      <relation from="o7307" id="r1719" name="on" negation="false" src="d0_s7" to="o7310" />
-    </statement>
-    <statement id="d0_s8">
-      <text>Seed-cones 2.3-4.5 (-5) cm;</text>
-      <biological_entity id="o7312" name="cone-seed" name_original="seed-cones" src="d0_s8" type="structure">
-        <character char_type="range_value" from="4.5" from_inclusive="false" from_unit="cm" name="atypical_distance" src="d0_s8" to="5" to_unit="cm" />
-        <character char_type="range_value" from="2.3" from_unit="cm" name="distance" src="d0_s8" to="4.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>scales broadly fan-shaped, broadest near apex, 8-12 × 8-12mm, stiff, margin at apex entire to irregularly toothed.</text>
-      <biological_entity id="o7313" name="scale" name_original="scales" src="d0_s9" type="structure">
-        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s9" value="fan--shaped" value_original="fan-shaped" />
-        <character constraint="near apex" constraintid="o7314" is_modifier="false" name="width" src="d0_s9" value="broadest" />
-        <character char_type="range_value" from="8" from_unit="mm" name="length" notes="" src="d0_s9" to="12" to_unit="mm" />
-        <character is_modifier="false" name="fragility" src="d0_s9" value="stiff" />
-      </biological_entity>
-      <biological_entity id="o7314" name="apex" name_original="apex" src="d0_s9" type="structure">
-        <character char_type="range_value" from="8" from_unit="mm" name="width" notes="" src="d0_s9" to="12" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o7316" name="apex" name_original="apex" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="entire" />
-        <character is_modifier="false" modifier="irregularly" name="shape" notes="[duplicate value]" src="d0_s9" value="toothed" />
-        <character char_type="range_value" from="entire" name="shape" src="d0_s9" to="irregularly toothed" />
-      </biological_entity>
-      <relation from="o7315" id="r1720" name="at" negation="false" src="d0_s9" to="o7316" />
-    </statement>
-    <statement id="d0_s10">
-      <text>2 n =24.</text>
-      <biological_entity id="o7315" name="margin" name_original="margin" src="d0_s9" type="structure" />
-      <biological_entity constraint="2n" id="o7317" name="chromosome" name_original="" src="d0_s10" type="structure">
-        <character name="quantity" src="d0_s10" value="24" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Upper montane to subalpine forests;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="upper montane to subalpine forests" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--2000m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2000" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>St. Pierre and Miquelon; N.B., N.S., Ont., P.E.I., Que.; Conn., Maine, Md., Mass., N.H., N.J., N.Y., N.C., Pa., Tenn., Vt., Va., W.Va.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="St. Pierre and Miquelon" establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="P.E.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees  to 40m; trunk to 1m diam.; crown narrowly conic.  Bark  gray-brown to reddish brown.  Branches  horizontally spreading; twigs not pendent, rather stout, yellow-brown, densely pubescent to glabrate.  Buds  reddish brown, 5--8mm, apex acute.  Leaves  0.8--2.5(--3)cm, 4-angled in cross section, somewhat flexuous, yellow-green to dark green, not glaucous, bearing stomates on all surfaces, apex mostly acute to sharp-pointed.  Seed cones  2.3--4.5(--5)cm; scales broadly fan-shaped, broadest near apex, 8--12 × 8--12mm, stiff, margin at apex entire to irregularly toothed. 2 n =24.</description>
+  <description type="habitat">Upper montane to subalpine forests;</description>
+  <description type="elevation">0--2000m;</description>
+  <description type="distribution">St. Pierre and Miquelon; N.B., N.S., Ont., P.E.I., Que.; Conn., Maine, Md., Mass., N.H., N.J., N.Y., N.C., Pa., Tenn., Vt., Va., W.Va.</description>
   <number>3</number>
   <other_name type="common_name">Red spruce</other_name>
   <other_name type="common_name">épinette rouge</other_name>
@@ -205,68 +49,4 @@
   <references>
     <reference>Morgenstern, E.K. and J.L. Farrar. 1964. Introgressive Hybridization in Red Spruce and Black Spruce. [Toronto.] [Univ. Toronto, Fac. Forest., Techn. Rep. 4.]</reference>
   </references>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_472_d8_s0">
-      <text>Seed-cones 2.3-4.5 (-5) cm;</text>
-      <biological_entity id="from_key_V2_472_o12123" name="seed-cone" name_original="seed-cones" src="d8_s0" type="structure">
-        <character char_type="range_value" from="4.5" from_inclusive="false" from_unit="cm" name="atypical_distance" src="d8_s0" to="5" to_unit="cm" />
-        <character char_type="range_value" from="2.3" from_unit="cm" name="distance" src="d8_s0" to="4.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_472_d8_s1">
-      <text>leaves 0.8-2.5 (-3) cm, mostly acute, sharp-pointed, not glaucous, yellow-green to dark green.</text>
-      <biological_entity id="from_key_V2_472_o12124" name="leaf" name_original="leaves" src="d8_s1" type="structure">
-        <character char_type="range_value" from="2.5" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d8_s1" to="3" to_unit="cm" />
-        <character char_type="range_value" from="0.8" from_unit="cm" name="some_measurement" src="d8_s1" to="2.5" to_unit="cm" />
-        <character is_modifier="false" modifier="mostly" name="shape" src="d8_s1" value="acute" />
-        <character is_modifier="false" name="shape" src="d8_s1" value="sharp-pointed" />
-        <character is_modifier="false" modifier="not" name="pubescence" src="d8_s1" value="glaucous" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d8_s1" value="yellow-green" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d8_s1" value="dark green" />
-        <character char_type="range_value" from="yellow-green" name="coloration" src="d8_s1" to="dark green" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_472_d5_s0">
-      <text>Twigs pubescent;</text>
-      <biological_entity id="from_key_V2_472_o12113" name="twig" name_original="twigs" src="d5_s0" type="structure">
-        <character is_modifier="false" name="pubescence" src="d5_s0" value="pubescent" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_472_d5_s1">
-      <text>cone-scales usually fan-shaped, broadest near apex;</text>
-      <biological_entity id="from_key_V2_472_o12114" name="cone-scale" name_original="cone-scales" src="d5_s1" type="structure">
-        <character is_modifier="false" modifier="usually" name="shape" src="d5_s1" value="fan-shaped" />
-        <character constraint="near apex" constraintid="o12115" is_modifier="false" name="width" src="d5_s1" value="broadest" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_472_o12115" name="apex" name_original="apex" src="d5_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_472_d5_s2">
-      <text>seed-cones 2.3-4.5 (-5) cm;</text>
-    </statement>
-    <statement id="from_key_V2_472_d5_s3">
-      <text>mostly eastern or boreal.</text>
-      <biological_entity id="from_key_V2_472_o12116" name="seed-cone" name_original="seed-cones" src="d5_s2" type="structure">
-        <character char_type="range_value" from="4.5" from_inclusive="false" from_unit="cm" name="atypical_distance" src="d5_s2" to="5" to_unit="cm" />
-        <character char_type="range_value" from="2.3" from_unit="cm" name="distance" src="d5_s2" to="4.5" to_unit="cm" />
-        <character is_modifier="false" modifier="mostly" name="geographical_terms" src="d5_s3" value="eastern" />
-        <character name="geographical_terms" src="d5_s3" value="boreal" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_472_d2_s0">
-      <text>Leaves square in cross-section;</text>
-      <biological_entity id="from_key_V2_472_o12102" name="leaf" name_original="leaves" src="d2_s0" type="structure">
-        <character constraint="in cross-section" constraintid="o12103" is_modifier="false" name="shape" src="d2_s0" value="square" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_472_o12103" name="cross-section" name_original="cross-section" src="d2_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_472_d2_s1">
-      <text>stomates occurring more or less equally on all leaf surfaces;</text>
-      <biological_entity constraint="leaf" id="from_key_V2_472_o12105" name="surface" name_original="surfaces" src="d2_s1" type="structure" />
-      <relation from="from_key_V2_472_o12104" id="from_key_V2_472_r2812" modifier="more or less equally" name="on" negation="false" src="d2_s1" to="from_key_V2_472_o12105" />
-    </statement>
-    <statement id="from_key_V2_472_d2_s2">
-      <text>widespread.</text>
-      <biological_entity id="from_key_V2_472_o12104" name="stomate" name_original="stomates" src="d2_s1" type="structure" />
-    </statement>
-  </description>
 </bio:treatment>

@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">pinus</taxon_name>
-    <taxon_name authority="Schiede &amp; Deppe in Schlechtendal &amp; Chamisso" date="1831" rank="species">leiophylla</taxon_name>
-    <taxon_name authority="(Engelmann) G. R. Shaw" date="1909" rank="variety">chihuahuana</taxon_name>
+    <taxon_name rank="family" authority="Lindley" date="unknown">pinaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">pinus</taxon_name>
+    <taxon_name rank="species" authority="Schiede &amp; Deppe in Schlechtendal &amp; Chamisso" date="1831">leiophylla</taxon_name>
+    <taxon_name rank="variety" authority="(Engelmann) G. R. Shaw" date="1909">chihuahuana</taxon_name>
     <place_of_publication>
       <publication_title>Pines Mexico</publication_title>
       <place_in_publication>14, plate 7, figs. 10, 11. 1909</place_in_publication>
@@ -27,234 +19,18 @@
     <taxon_hierarchy>family pinaceae;genus pinus;species leiophylla;variety chihuahuana</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pinus</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">chihuahuana</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pinus</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">chihuahuana</taxon_name>
     <place_of_publication>
       <publication_title>in Wislizenus, Mem. Tour N. Mexico,</publication_title>
       <place_in_publication>103. 1848</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Pinus;species chihuahuana;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees to 25m;</text>
-      <biological_entity id="o21472" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="25" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk to 0.9m diam., slender;</text>
-      <biological_entity id="o21473" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="0.9" to_unit="m" />
-        <character is_modifier="false" name="size" src="d0_s1" value="slender" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>crown conic, becoming rounded.</text>
-      <biological_entity id="o21474" name="crown" name_original="crown" src="d0_s2" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s2" value="conic" />
-        <character is_modifier="false" modifier="becoming" name="shape" src="d0_s2" value="rounded" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Bark brown to redbrown, narrowly furrowed, cross-checked into long, irregularly and narrowly rectangular, flat, scaly ridges.</text>
-      <biological_entity id="o21475" name="bark" name_original="bark" src="d0_s3" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="brown" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s3" value="redbrown" />
-        <character char_type="range_value" from="brown" name="coloration" src="d0_s3" to="redbrown" />
-        <character is_modifier="false" modifier="narrowly" name="architecture" src="d0_s3" value="furrowed" />
-        <character is_modifier="false" modifier="into long; irregularly; narrowly" name="shape" src="d0_s3" value="rectangular" />
-        <character is_modifier="false" name="prominence_or_shape" src="d0_s3" value="flat" />
-      </biological_entity>
-      <biological_entity id="o21476" name="ridge" name_original="ridges" src="d0_s3" type="structure">
-        <character is_modifier="true" name="architecture_or_pubescence" src="d0_s3" value="scaly" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Branches ascending;</text>
-      <biological_entity id="o21477" name="branch" name_original="branches" src="d0_s4" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s4" value="ascending" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>twigs slender, orangebrown or glaucous and violet, aging redbrown, ±smooth or cracking.</text>
-      <biological_entity id="o21478" name="twig" name_original="twigs" src="d0_s5" type="structure">
-        <character is_modifier="false" name="size" src="d0_s5" value="slender" />
-        <character is_modifier="false" name="coloration" src="d0_s5" value="orangebrown" />
-        <character is_modifier="false" name="pubescence" src="d0_s5" value="glaucous" />
-        <character is_modifier="false" name="coloration" src="d0_s5" value="violet" />
-        <character is_modifier="false" name="life_cycle" src="d0_s5" value="aging" />
-        <character is_modifier="false" name="coloration" src="d0_s5" value="redbrown" />
-        <character is_modifier="false" modifier="more or less" name="architecture_or_pubescence_or_relief" src="d0_s5" value="smooth" />
-        <character name="architecture_or_pubescence_or_relief" src="d0_s5" value="cracking" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Buds ovoid, light-redbrown, ca. 0.6-0.7 (-1) cm, slightly resinous.</text>
-      <biological_entity id="o21479" name="bud" name_original="buds" src="d0_s6" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s6" value="ovoid" />
-        <character is_modifier="false" name="coloration" src="d0_s6" value="light-redbrown" />
-        <character char_type="range_value" from="0.7" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d0_s6" to="1" to_unit="cm" />
-        <character char_type="range_value" from="0.6" from_unit="cm" name="some_measurement" src="d0_s6" to="0.7" to_unit="cm" />
-        <character is_modifier="false" modifier="slightly" name="coating" src="d0_s6" value="resinous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Leaves (2-) 3 (-4) per fascicle, spreading-ascending, persisting 2 years, 6-15cm × 0.8-1mm, straight to slightly twisted, dull gray-green, all surfaces with fine stomatal lines, margins finely serrulate, apex acute to acuminate;</text>
-      <biological_entity id="o21480" name="leaf" name_original="leaves" src="d0_s7" type="structure">
-        <character char_type="range_value" from="2" name="atypical_quantity" src="d0_s7" to="3" to_inclusive="false" />
-        <character char_type="range_value" from="3" from_inclusive="false" name="atypical_quantity" src="d0_s7" to="4" />
-        <character constraint="per fascicle" constraintid="o21481" name="quantity" src="d0_s7" value="3" />
-        <character is_modifier="false" name="orientation" notes="" src="d0_s7" value="spreading-ascending" />
-        <character is_modifier="false" name="duration" src="d0_s7" value="persisting" />
-        <character name="quantity" src="d0_s7" value="2" />
-        <character char_type="range_value" from="6" from_unit="cm" name="length" src="d0_s7" to="15" to_unit="cm" />
-        <character char_type="range_value" from="0.8" from_unit="mm" name="width" src="d0_s7" to="1" to_unit="mm" />
-        <character is_modifier="false" name="course" src="d0_s7" value="straight" />
-        <character is_modifier="false" modifier="slightly" name="architecture" src="d0_s7" value="twisted" />
-        <character is_modifier="false" name="reflectance" src="d0_s7" value="dull" />
-        <character is_modifier="false" name="coloration" src="d0_s7" value="gray-green" />
-      </biological_entity>
-      <biological_entity id="o21481" name="fascicle" name_original="fascicle" src="d0_s7" type="structure" />
-      <biological_entity id="o21482" name="surface" name_original="surfaces" src="d0_s7" type="structure" />
-      <biological_entity id="o21483" name="stomatal" name_original="stomatal" src="d0_s7" type="structure">
-        <character is_modifier="true" name="width" src="d0_s7" value="fine" />
-      </biological_entity>
-      <biological_entity id="o21484" name="line" name_original="lines" src="d0_s7" type="structure">
-        <character is_modifier="true" name="width" src="d0_s7" value="fine" />
-      </biological_entity>
-      <biological_entity id="o21485" name="margin" name_original="margins" src="d0_s7" type="structure">
-        <character is_modifier="false" modifier="finely" name="architecture_or_shape" src="d0_s7" value="serrulate" />
-      </biological_entity>
-      <biological_entity id="o21486" name="apex" name_original="apex" src="d0_s7" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s7" value="acute" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s7" value="acuminate" />
-        <character char_type="range_value" from="acute" name="shape" src="d0_s7" to="acuminate" />
-      </biological_entity>
-      <relation from="o21482" id="r5039" name="with" negation="false" src="d0_s7" to="o21483" />
-      <relation from="o21482" id="r5040" name="with" negation="false" src="d0_s7" to="o21484" />
-    </statement>
-    <statement id="d0_s8">
-      <text>sheath to 1.5cm, shed early and completely.</text>
-      <biological_entity id="o21487" name="sheath" name_original="sheath" src="d0_s8" type="structure">
-        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s8" to="1.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>Pollen cones broadly ellipsoid, ca. 10-15mm, brown or yellow.</text>
-      <biological_entity constraint="pollen" id="o21488" name="cone" name_original="cones" src="d0_s9" type="structure">
-        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s9" value="ellipsoid" />
-        <character char_type="range_value" from="10" from_unit="mm" name="some_measurement" src="d0_s9" to="15" to_unit="mm" />
-        <character is_modifier="false" name="coloration" src="d0_s9" value="brown" />
-        <character is_modifier="false" name="coloration" src="d0_s9" value="yellow" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>Seed-cones maturing in 3 years, shedding seeds soon thereafter but long-persistent, paired or solitary, symmetric, lateral, narrowly ovoid before opening, broadly ovoid to nearly globose when open, 3.5-5 (-9) cm, chestnut-brown or greenish brown, aging gray to gray-brown, stalks to 1.5cm;</text>
-      <biological_entity id="o21489" name="cone-seed" name_original="seed-cones" src="d0_s10" type="structure">
-        <character constraint="in years" constraintid="o21490" is_modifier="false" name="life_cycle" src="d0_s10" value="maturing" />
-        <character is_modifier="false" name="duration" src="d0_s10" value="long-persistent" />
-        <character is_modifier="false" name="arrangement" src="d0_s10" value="paired" />
-        <character is_modifier="false" name="architecture_or_arrangement_or_growth_form" src="d0_s10" value="solitary" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s10" value="symmetric" />
-        <character is_modifier="false" name="position" src="d0_s10" value="lateral" />
-        <character constraint="before opening" constraintid="o21492" is_modifier="false" modifier="narrowly" name="shape" src="d0_s10" value="ovoid" />
-        <character is_modifier="false" modifier="when open" name="shape" notes="[duplicate value]" src="d0_s10" value="ovoid" />
-        <character is_modifier="false" modifier="when open" name="shape" notes="[duplicate value]" src="d0_s10" value="globose" />
-        <character char_type="range_value" from="broadly ovoid" modifier="when open" name="shape" notes="" src="d0_s10" to="nearly globose" />
-        <character char_type="range_value" from="5" from_inclusive="false" from_unit="cm" name="atypical_distance" src="d0_s10" to="9" to_unit="cm" />
-        <character char_type="range_value" from="3.5" from_unit="cm" name="distance" src="d0_s10" to="5" to_unit="cm" />
-        <character is_modifier="false" name="coloration" src="d0_s10" value="chestnut-brown" />
-        <character is_modifier="false" name="coloration" src="d0_s10" value="greenish brown" />
-        <character is_modifier="false" name="coloration" src="d0_s10" value="aging" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s10" value="gray" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s10" value="gray-brown" />
-        <character char_type="range_value" from="gray" name="coloration" src="d0_s10" to="gray-brown" />
-      </biological_entity>
-      <biological_entity id="o21490" name="year" name_original="years" src="d0_s10" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s10" value="3" />
-      </biological_entity>
-      <biological_entity id="o21491" name="seed" name_original="seeds" src="d0_s10" type="structure" />
-      <biological_entity id="o21492" name="opening" name_original="opening" src="d0_s10" type="structure" />
-      <biological_entity id="o21493" name="stalk" name_original="stalks" src="d0_s10" type="structure" />
-      <relation from="o21489" id="r5041" modifier="soon thereafter; thereafter" name="shedding" negation="false" src="d0_s10" to="o21491" />
-    </statement>
-    <statement id="d0_s11">
-      <text>apophyses slightly thickened and raised, not keeled;</text>
-      <biological_entity id="o21494" name="apophysis" name_original="apophyses" src="d0_s11" type="structure">
-        <character is_modifier="false" modifier="slightly" name="size_or_width" src="d0_s11" value="thickened" />
-        <character is_modifier="false" name="prominence" src="d0_s11" value="raised" />
-        <character is_modifier="false" modifier="not" name="shape" src="d0_s11" value="keeled" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s12">
-      <text>umbo central, slightly raised or depressed, with short, often deciduous prickle or unarmed.</text>
-      <biological_entity id="o21495" name="umbo" name_original="umbo" src="d0_s12" type="structure">
-        <character is_modifier="false" name="position" src="d0_s12" value="central" />
-        <character is_modifier="false" modifier="slightly" name="prominence" src="d0_s12" value="raised" />
-        <character is_modifier="false" name="shape" src="d0_s12" value="depressed" />
-        <character is_modifier="false" name="architecture" src="d0_s12" value="unarmed" />
-      </biological_entity>
-      <biological_entity id="o21496" name="prickle" name_original="prickle" src="d0_s12" type="structure">
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s12" value="short" />
-        <character is_modifier="true" modifier="often" name="duration" src="d0_s12" value="deciduous" />
-      </biological_entity>
-      <relation from="o21495" id="r5042" name="with" negation="false" src="d0_s12" to="o21496" />
-    </statement>
-    <statement id="d0_s13">
-      <text>Seeds obovoid;</text>
-      <biological_entity id="o21497" name="seed" name_original="seeds" src="d0_s13" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s13" value="obovoid" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s14">
-      <text>body ca. 2mm, gray, mottled darker;</text>
-      <biological_entity id="o21498" name="body" name_original="body" src="d0_s14" type="structure">
-        <character name="some_measurement" src="d0_s14" unit="mm" value="2" />
-        <character is_modifier="false" name="coloration" src="d0_s14" value="gray" />
-        <character is_modifier="false" name="coloration" src="d0_s14" value="mottled darker" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s15">
-      <text>wing ca. 10mm, dark-lined.</text>
-    </statement>
-    <statement id="d0_s16">
-      <text>2 n =24.</text>
-      <biological_entity id="o21499" name="wing" name_original="wing" src="d0_s15" type="structure">
-        <character name="some_measurement" src="d0_s15" unit="mm" value="10" />
-        <character is_modifier="false" name="coloration" src="d0_s15" value="dark-lined" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o21500" name="chromosome" name_original="" src="d0_s16" type="structure">
-        <character name="quantity" src="d0_s16" value="24" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Dry slopes and plateaus;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="dry slopes and plateaus" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>1500--2500m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2500" to_unit="m" from="1500" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., N.Mex.; Mexico.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees  to 25m; trunk to 0.9m diam., slender; crown conic, becoming rounded.  Bark  brown to red-brown, narrowly furrowed, cross-checked into long, irregularly and narrowly rectangular, flat, scaly ridges.  Branches  ascending; twigs slender, orange-brown or glaucous and violet, aging red-brown, ±smooth or cracking.  Buds  ovoid, light red-brown, ca. 0.6--0.7(--1)cm, slightly resinous.  Leaves  (2--)3(--4) per fascicle, spreading-ascending, persisting 2 years, 6--15cm × 0.8--1mm, straight to slightly twisted, dull gray-green, all surfaces with fine stomatal lines, margins finely serrulate, apex acute to acuminate; sheath to 1.5cm, shed early and completely.  Pollen cones  broadly ellipsoid, ca. 10--15mm, brown or yellow.  Seed cones  maturing in 3 years, shedding seeds soon thereafter but long-persistent, paired or solitary, symmetric, lateral, narrowly ovoid before opening, broadly ovoid to nearly globose when open, 3.5--5(--9)cm, chestnut brown or greenish brown, aging gray to gray-brown, stalks to 1.5cm; apophyses slightly thickened and raised, not keeled; umbo central, slightly raised or depressed, with short, often deciduous prickle or unarmed.  Seeds  obovoid; body ca. 2mm, gray, mottled darker; wing ca. 10mm, dark-lined. 2 n =24.</description>
+  <description type="habitat">Dry slopes and plateaus;</description>
+  <description type="elevation">1500--2500m;</description>
+  <description type="distribution">Ariz., N.Mex.; Mexico.</description>
   <number>14a</number>
   <other_name type="common_name">Chihuahua pine</other_name>
   <other_name type="common_name">pino real</other_name>

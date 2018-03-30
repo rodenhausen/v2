@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
-    <taxon_name authority="A. Dietrich" date="1824" rank="genus">picea</taxon_name>
-    <taxon_name authority="Engelmann" date="1879" rank="species">pungens</taxon_name>
+    <taxon_name rank="family" authority="Lindley" date="unknown">pinaceae</taxon_name>
+    <taxon_name rank="genus" authority="A. Dietrich" date="1824">picea</taxon_name>
+    <taxon_name rank="species" authority="Engelmann" date="1879">pungens</taxon_name>
     <place_of_publication>
       <publication_title>Gard. Chron.</publication_title>
       <place_in_publication>n. s. 11: 334. 1879</place_in_publication>
@@ -26,144 +18,14 @@
     <taxon_hierarchy>family pinaceae;genus picea;species pungens</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Picea</taxon_name>
-    <taxon_name authority="Sargent" date="unknown" rank="species">parryana</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Picea</taxon_name>
+    <taxon_name rank="species" authority="Sargent" date="unknown">parryana</taxon_name>
     <taxon_hierarchy>genus Picea;species parryana;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees to 50m;</text>
-      <biological_entity id="o1547" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="50" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk to 1.5m diam.;</text>
-      <biological_entity id="o1548" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="1.5" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>crown broadly conic.</text>
-      <biological_entity id="o1549" name="crown" name_original="crown" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s2" value="conic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Bark gray-brown.</text>
-      <biological_entity id="o1550" name="bark" name_original="bark" src="d0_s3" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s3" value="gray-brown" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Branches slightly to strongly drooping;</text>
-      <biological_entity id="o1551" name="branch" name_original="branches" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="slightly to strongly" name="orientation" src="d0_s4" value="drooping" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>twigs not pendent, stout, yellowbrown, usually glabrous.</text>
-      <biological_entity id="o1552" name="twig" name_original="twigs" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="not" name="orientation" src="d0_s5" value="pendent" />
-        <character is_modifier="false" name="fragility_or_size" src="d0_s5" value="stout" />
-        <character is_modifier="false" name="coloration" src="d0_s5" value="yellowbrown" />
-        <character is_modifier="false" modifier="usually" name="pubescence" src="d0_s5" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Buds dark orangebrown, 6-12mm, apex rounded to acute.</text>
-      <biological_entity id="o1553" name="bud" name_original="buds" src="d0_s6" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s6" value="dark orangebrown" />
-        <character char_type="range_value" from="6" from_unit="mm" name="some_measurement" src="d0_s6" to="12" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o1554" name="apex" name_original="apex" src="d0_s6" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="rounded" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="acute" />
-        <character char_type="range_value" from="rounded" name="shape" src="d0_s6" to="acute" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Leaves 1.6-3cm, 4-angled in cross-section, rigid, blue-green, bearing stomates on all surfaces, apex spine-tipped.</text>
-      <biological_entity id="o1555" name="leaf" name_original="leaves" src="d0_s7" type="structure">
-        <character char_type="range_value" from="1.6" from_unit="cm" name="some_measurement" src="d0_s7" to="3" to_unit="cm" />
-        <character constraint="in cross-section" constraintid="o1556" is_modifier="false" name="shape" src="d0_s7" value="4-angled" />
-        <character is_modifier="false" name="texture" notes="" src="d0_s7" value="rigid" />
-        <character is_modifier="false" name="coloration" src="d0_s7" value="blue-green" />
-      </biological_entity>
-      <biological_entity id="o1556" name="cross-section" name_original="cross-section" src="d0_s7" type="structure" />
-      <biological_entity id="o1557" name="stomate" name_original="stomates" src="d0_s7" type="structure" />
-      <biological_entity id="o1558" name="surface" name_original="surfaces" src="d0_s7" type="structure" />
-      <biological_entity id="o1559" name="apex" name_original="apex" src="d0_s7" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s7" value="spine-tipped" />
-      </biological_entity>
-      <relation from="o1555" id="r343" name="bearing" negation="false" src="d0_s7" to="o1557" />
-      <relation from="o1555" id="r344" name="on" negation="false" src="d0_s7" to="o1558" />
-    </statement>
-    <statement id="d0_s8">
-      <text>Seed-cones (5-) 6-11 (-12) cm;</text>
-      <biological_entity id="o1560" name="cone-seed" name_original="seed-cones" src="d0_s8" type="structure">
-        <character char_type="range_value" from="5" from_unit="cm" name="atypical_distance" src="d0_s8" to="6" to_inclusive="false" to_unit="cm" />
-        <character char_type="range_value" from="11" from_inclusive="false" from_unit="cm" name="atypical_distance" src="d0_s8" to="12" to_unit="cm" />
-        <character char_type="range_value" from="6" from_unit="cm" name="distance" src="d0_s8" to="11" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>scales elliptic to diamond-shaped, widest below middle, 15-22 × 10-15mm, rather stiff, margin at apex erose, apex extending 8-10mm beyond seed-wing impression.</text>
-      <biological_entity id="o1561" name="scale" name_original="scales" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="elliptic" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s9" value="diamond--shaped" value_original="diamond-shaped" />
-        <character char_type="range_value" from="elliptic" name="shape" src="d0_s9" to="diamond-shaped" />
-        <character constraint="below middle scales" constraintid="o1562" is_modifier="false" name="width" src="d0_s9" value="widest" />
-        <character char_type="range_value" from="15" from_unit="mm" name="length" notes="" src="d0_s9" to="22" to_unit="mm" />
-        <character is_modifier="false" modifier="rather" name="fragility" src="d0_s9" value="stiff" />
-      </biological_entity>
-      <biological_entity id="o1562" name="scale" name_original="scales" src="d0_s9" type="structure">
-        <character is_modifier="true" modifier="below" name="position" src="d0_s9" value="middle" />
-        <character char_type="range_value" from="10" from_unit="mm" name="width" notes="" src="d0_s9" to="15" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o1563" name="margin" name_original="margin" src="d0_s9" type="structure" />
-      <biological_entity id="o1564" name="apex" name_original="apex" src="d0_s9" type="structure">
-        <character is_modifier="false" name="architecture_or_relief" src="d0_s9" value="erose" />
-      </biological_entity>
-      <relation from="o1563" id="r345" name="at" negation="false" src="d0_s9" to="o1564" />
-    </statement>
-    <statement id="d0_s10">
-      <text>2 n =24.</text>
-      <biological_entity id="o1565" name="apex" name_original="apex" src="d0_s9" type="structure" />
-      <biological_entity constraint="2n" id="o1566" name="chromosome" name_original="" src="d0_s10" type="structure">
-        <character name="quantity" src="d0_s10" value="24" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Midmontane forests;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="midmontane forests ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>1800--3000m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="3000" to_unit="m" from="1800" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ariz., Colo., Idaho, N.Mex., Utah, Wyo.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Colo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Idaho" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Mex." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Utah" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wyo." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees  to 50m; trunk to 1.5m diam.; crown broadly conic.  Bark  gray-brown.  Branches  slightly to strongly drooping; twigs not pendent, stout, yellow-brown, usually glabrous.  Buds  dark orange-brown, 6--12mm, apex rounded to acute.  Leaves  1.6--3cm, 4-angled in cross section, rigid, blue-green, bearing stomates on all surfaces, apex spine-tipped.  Seed cones  (5--)6--11(--12)cm; scales elliptic to diamond-shaped, widest below middle, 15--22 × 10--15mm, rather stiff, margin at apex erose, apex extending 8--10mm beyond seed-wing impression. 2 n =24.</description>
+  <description type="habitat">Midmontane forests;</description>
+  <description type="elevation">1800--3000m;</description>
+  <description type="distribution">Ariz., Colo., Idaho, N.Mex., Utah, Wyo.</description>
   <number>6</number>
   <other_name type="common_name">Blue spruce</other_name>
   <other_name type="common_name">Colorado blue spruce</other_name>
@@ -171,115 +33,4 @@
   <other_name type="common_name">pino real</other_name>
   <discussion>Limited hybridization occurs between Picea pungens and P . engelmannii (R.Daubenmire 1972; R.J. Taylor et al. 1975).</discussion>
   <discussion>Blue spruce ( Picea pungens ) is the state tree of Colorado (as Colorado blue spruce) and Utah.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_472_d14_s0">
-      <text>Seed-cones (5-) 6-11 (-12) cm;</text>
-      <biological_entity id="from_key_V2_472_o12145" name="seed-cone" name_original="seed-cones" src="d14_s0" type="structure">
-        <character char_type="range_value" from="5" from_unit="cm" name="atypical_distance" src="d14_s0" to="6" to_inclusive="false" to_unit="cm" />
-        <character char_type="range_value" from="11" from_inclusive="false" from_unit="cm" name="atypical_distance" src="d14_s0" to="12" to_unit="cm" />
-        <character char_type="range_value" from="6" from_unit="cm" name="distance" src="d14_s0" to="11" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_472_d14_s1">
-      <text>cone-scales extending 8-10 mm beyond seed-wing impression;</text>
-      <biological_entity id="from_key_V2_472_o12146" name="cone-scale" name_original="cone-scales" src="d14_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_472_d14_s2">
-      <text>twigs usually glabrous.</text>
-      <biological_entity id="from_key_V2_472_o12147" name="twig" name_original="twigs" src="d14_s2" type="structure">
-        <character is_modifier="false" modifier="usually" name="pubescence" src="d14_s2" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_472_d12_s0">
-      <text>Seed-cone scales diamond-shaped or elliptic, margin at apex irregularly toothed to erose, apex usually extending 3 mm or more beyond seed-wing impression;</text>
-      <biological_entity constraint="seed-cone" id="from_key_V2_472_o12136" name="scale" name_original="scales" src="d12_s0" type="structure">
-        <character is_modifier="false" name="shape" src="d12_s0" value="diamond-shaped" />
-        <character is_modifier="false" name="shape" src="d12_s0" value="elliptic" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_472_o12137" name="margin" name_original="margin" src="d12_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_relief" src="d12_s0" value="erose" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_472_o12138" name="apex" name_original="apex" src="d12_s0" type="structure">
-        <character is_modifier="false" modifier="irregularly" name="shape" src="d12_s0" value="toothed" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_472_o12139" name="apex" name_original="apex" src="d12_s0" type="structure" />
-      <biological_entity id="from_key_V2_472_o12140" name="seed-wing" name_original="seed-wing" src="d12_s0" type="structure">
-        <character is_modifier="true" name="distance" src="d12_s0" unit="mm" value="3" />
-      </biological_entity>
-      <relation from="from_key_V2_472_o12137" id="from_key_V2_472_r2816" name="at" negation="false" src="d12_s0" to="from_key_V2_472_o12138" />
-      <relation from="from_key_V2_472_o12139" id="from_key_V2_472_r2817" name="extending" negation="false" src="d12_s0" to="from_key_V2_472_o12140" />
-    </statement>
-    <statement id="from_key_V2_472_d12_s1">
-      <text>leaves 1.2-3 (-3.5) cm.</text>
-      <biological_entity id="from_key_V2_472_o12141" name="leaf" name_original="leaves" src="d12_s1" type="structure">
-        <character char_type="range_value" from="3" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d12_s1" to="3.5" to_unit="cm" />
-        <character char_type="range_value" from="1.2" from_unit="cm" name="some_measurement" src="d12_s1" to="3" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_472_d10_s0">
-      <text>Seed-cones 2.5-11 (-12) cm;</text>
-      <biological_entity id="from_key_V2_472_o12128" name="seed-cone" name_original="seed-cones" src="d10_s0" type="structure">
-        <character char_type="range_value" from="11" from_inclusive="false" from_unit="cm" name="atypical_distance" src="d10_s0" to="12" to_unit="cm" />
-        <character char_type="range_value" from="2.5" from_unit="cm" name="distance" src="d10_s0" to="11" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_472_d10_s1">
-      <text>leaves (0.8-) 1.2-3 (-3.5) cm, mostly sharp-pointed;</text>
-      <biological_entity id="from_key_V2_472_o12129" name="leaf" name_original="leaves" src="d10_s1" type="structure">
-        <character char_type="range_value" from="0.8" from_unit="cm" name="atypical_some_measurement" src="d10_s1" to="1.2" to_inclusive="false" to_unit="cm" />
-        <character char_type="range_value" from="3" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d10_s1" to="3.5" to_unit="cm" />
-        <character char_type="range_value" from="1.2" from_unit="cm" name="some_measurement" src="d10_s1" to="3" to_unit="cm" />
-        <character is_modifier="false" modifier="mostly" name="shape" src="d10_s1" value="sharp-pointed" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_472_d10_s2">
-      <text>native species.</text>
-      <biological_entity id="from_key_V2_472_o12130" name="species" name_original="species" src="d10_s2" type="taxon_name">
-        <character is_modifier="true" name="condition" src="d10_s2" value="native" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_472_d6_s0">
-      <text>Twigs mostly glabrous;</text>
-      <biological_entity id="from_key_V2_472_o12117" name="twig" name_original="twigs" src="d6_s0" type="structure">
-        <character is_modifier="false" modifier="mostly" name="pubescence" src="d6_s0" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_472_d6_s1">
-      <text>cone-scales usually ± diamond-shaped or elliptic, broadest near middle (broadest at apex in Picea glauca);</text>
-      <biological_entity id="from_key_V2_472_o12118" name="cone-scale" name_original="cone-scales" src="d6_s1" type="structure">
-        <character is_modifier="false" modifier="usually more or less" name="shape" src="d6_s1" value="diamond-shaped" />
-        <character is_modifier="false" name="shape" src="d6_s1" value="elliptic" />
-        <character constraint="near middle" constraintid="o12119" is_modifier="false" name="width" src="d6_s1" value="broadest" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_472_o12119" name="middle" name_original="middle" src="d6_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_472_d6_s2">
-      <text>seed-cones (2.5-) 3-16 cm;</text>
-    </statement>
-    <statement id="from_key_V2_472_d6_s3">
-      <text>mostly western or boreal.</text>
-      <biological_entity id="from_key_V2_472_o12120" name="seed-cone" name_original="seed-cones" src="d6_s2" type="structure">
-        <character char_type="range_value" from="2.5" from_unit="cm" name="atypical_distance" src="d6_s2" to="3" to_inclusive="false" to_unit="cm" />
-        <character char_type="range_value" from="3" from_unit="cm" name="distance" src="d6_s2" to="16" to_unit="cm" />
-        <character is_modifier="false" modifier="mostly" name="geographical_terms" src="d6_s3" value="western" />
-        <character name="geographical_terms" src="d6_s3" value="boreal" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_472_d2_s0">
-      <text>Leaves square in cross-section;</text>
-      <biological_entity id="from_key_V2_472_o12102" name="leaf" name_original="leaves" src="d2_s0" type="structure">
-        <character constraint="in cross-section" constraintid="o12103" is_modifier="false" name="shape" src="d2_s0" value="square" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_472_o12103" name="cross-section" name_original="cross-section" src="d2_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_472_d2_s1">
-      <text>stomates occurring more or less equally on all leaf surfaces;</text>
-      <biological_entity constraint="leaf" id="from_key_V2_472_o12105" name="surface" name_original="surfaces" src="d2_s1" type="structure" />
-      <relation from="from_key_V2_472_o12104" id="from_key_V2_472_r2812" modifier="more or less equally" name="on" negation="false" src="d2_s1" to="from_key_V2_472_o12105" />
-    </statement>
-    <statement id="from_key_V2_472_d2_s2">
-      <text>widespread.</text>
-      <biological_entity id="from_key_V2_472_o12104" name="stomate" name_original="stomates" src="d2_s1" type="structure" />
-    </statement>
-  </description>
 </bio:treatment>

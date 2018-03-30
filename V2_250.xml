@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">pinus</taxon_name>
-    <taxon_name authority="Engelmann" date="1880" rank="species">elliottii</taxon_name>
-    <taxon_name authority="Little &amp; Dorman" date="1952" rank="variety">densa</taxon_name>
+    <taxon_name rank="family" authority="Lindley" date="unknown">pinaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">pinus</taxon_name>
+    <taxon_name rank="species" authority="Engelmann" date="1880">elliottii</taxon_name>
+    <taxon_name rank="variety" authority="Little &amp; Dorman" date="1952">densa</taxon_name>
     <place_of_publication>
       <publication_title>J. Forest. (Washington)</publication_title>
       <place_in_publication>50: 921, fig. 1, 2. 1952</place_in_publication>
@@ -27,84 +19,14 @@
     <taxon_hierarchy>family pinaceae;genus pinus;species elliottii;variety densa</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pinus</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">densa</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pinus</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">densa</taxon_name>
     <taxon_hierarchy>genus Pinus;species densa;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Seedlings with vertical growth interrupted by grass stage, stem then more thickened, fascicles much more numerous and crowded around bud, and other buds more approximate on stem.</text>
-      <biological_entity id="o4710" name="seedling" name_original="seedlings" src="d0_s0" type="structure" />
-      <biological_entity id="o4711" name="growth" name_original="growth" src="d0_s0" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s0" value="vertical" />
-        <character constraint="by stage" constraintid="o4712" is_modifier="false" name="architecture" src="d0_s0" value="interrupted" />
-      </biological_entity>
-      <biological_entity id="o4712" name="stage" name_original="stage" src="d0_s0" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s0" value="grass" />
-      </biological_entity>
-      <biological_entity id="o4713" name="stem" name_original="stem" src="d0_s0" type="structure">
-        <character is_modifier="false" name="size_or_width" src="d0_s0" value="thickened" />
-        <character is_modifier="false" modifier="much" name="arrangement" src="d0_s0" value="fascicles" />
-        <character is_modifier="false" name="quantity" src="d0_s0" value="numerous" />
-        <character constraint="around bud" constraintid="o4714" is_modifier="false" name="arrangement" src="d0_s0" value="crowded" />
-      </biological_entity>
-      <biological_entity id="o4714" name="bud" name_original="bud" src="d0_s0" type="structure" />
-      <biological_entity id="o4715" name="bud" name_original="buds" src="d0_s0" type="structure">
-        <character constraint="on stem" constraintid="o4716" is_modifier="false" name="arrangement" src="d0_s0" value="approximate" />
-      </biological_entity>
-      <biological_entity id="o4716" name="stem" name_original="stem" src="d0_s0" type="structure" />
-      <relation from="o4710" id="r1101" name="with" negation="false" src="d0_s0" to="o4711" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves mostly in 2s, sometimes in 3s on same shoot, resin canals per leaf 3-9, hypodermis (2-) 3-4 (-5) cell-layers thick.</text>
-      <biological_entity id="o4717" name="leaf" name_original="leaves" src="d0_s1" type="structure" />
-      <biological_entity id="o4718" name="shoot" name_original="shoot" src="d0_s1" type="structure" />
-      <biological_entity constraint="resin" id="o4719" name="canal" name_original="canals" src="d0_s1" type="structure" />
-      <biological_entity id="o4720" name="leaf" name_original="leaf" src="d0_s1" type="structure">
-        <character char_type="range_value" from="3" name="quantity" src="d0_s1" to="9" />
-      </biological_entity>
-      <biological_entity id="o4721" name="hypodermis" name_original="hypodermis" src="d0_s1" type="structure">
-        <character char_type="range_value" from="2" name="atypical_quantity" src="d0_s1" to="3" to_inclusive="false" />
-        <character char_type="range_value" from="4" from_inclusive="false" name="atypical_quantity" src="d0_s1" to="5" />
-        <character char_type="range_value" from="3" name="quantity" src="d0_s1" to="4" />
-      </biological_entity>
-      <biological_entity id="o4722" name="cell-layer" name_original="cell-layers" src="d0_s1" type="structure">
-        <character is_modifier="false" name="width" src="d0_s1" value="thick" />
-      </biological_entity>
-      <relation from="o4717" id="r1102" modifier="in 3s" name="on" negation="false" src="d0_s1" to="o4718" />
-      <relation from="o4719" id="r1103" name="per" negation="false" src="d0_s1" to="o4720" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Seed-cone base mostly rounded when open.</text>
-      <biological_entity constraint="seed-cone" id="o4723" name="base" name_original="base" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="when open" name="shape" src="d0_s2" value="rounded" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Flatwoods, mostly over limestone;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="flatwoods , over limestone ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--10m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="10" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Fla.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Seedlings  with vertical growth interrupted by grass stage, stem then more thickened, fascicles much more numerous and crowded around bud, and other buds more approximate on stem.  Leaves  mostly in 2s, sometimes in 3s on same shoot, resin canals per leaf 3--9, hypodermis (2--)3--4(--5) cell-layers thick.  Seed-cone base  mostly rounded when open.</description>
+  <description type="habitat">Flatwoods, mostly over limestone;</description>
+  <description type="elevation">0--10m;</description>
+  <description type="distribution">Fla.</description>
   <number>24b</number>
   <other_name type="common_name">South Florida slash pine</other_name>
   <discussion>The name Pinus caribaea Morelet has been applied in error to P . elliottii var. densa . This variety is best distinguished by its wood, which is heavier and harder than that of typical slash pine, and by its having a grass stage comparable to that of P . palustris . This variety is not used for naval stores as is the type variety; neither is it commercially planted.</discussion>

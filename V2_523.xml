@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Dropbox/FNA/fna_schema.xsd" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Dropbox/FNA/fna_schema.xsd" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
-    <taxon_name authority="Richard" date="1810" rank="genus">taxodium</taxon_name>
-    <taxon_name authority="(Linnaeus) Richard" date="1810" rank="species">distichum</taxon_name>
-    <taxon_name authority="(Nuttall) Croom" date="1837" rank="variety">imbricarium</taxon_name>
+    <taxon_name rank="family" authority="Bartlett" date="unknown">cupressaceae</taxon_name>
+    <taxon_name rank="genus" authority="Richard" date="1810">taxodium</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) Richard" date="1810">distichum</taxon_name>
+    <taxon_name rank="variety" authority="(Nuttall) Croom" date="1837">imbricarium</taxon_name>
     <place_of_publication>
       <publication_title>Cat. Pl. New Bern</publication_title>
       <place_in_publication>30. 1837</place_in_publication>
@@ -27,9 +19,9 @@
     <taxon_hierarchy>family cupressaceae;genus taxodium;species distichum;variety imbricarium</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Cupressus</taxon_name>
-    <taxon_name authority="Brongniart" date="unknown" rank="species">disticha</taxon_name>
-    <taxon_name authority="Nuttall" date="unknown" rank="variety">imbricaria</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Cupressus</taxon_name>
+    <taxon_name rank="species" authority="Brongniart" date="unknown">disticha</taxon_name>
+    <taxon_name rank="variety" authority="Nuttall" date="unknown">imbricaria</taxon_name>
     <place_of_publication>
       <publication_title>Gen. N. Amer. Pl.</publication_title>
       <place_in_publication>2: 224. 1818</place_in_publication>
@@ -37,101 +29,14 @@
     <taxon_hierarchy>genus Cupressus;species disticha;variety imbricaria;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Taxodium</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">ascendens</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Taxodium</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">ascendens</taxon_name>
     <taxon_hierarchy>genus Taxodium;species ascendens;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees to ca. 30 m;</text>
-      <biological_entity id="o14146" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="30" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk to 2 m diam.</text>
-      <biological_entity id="o14147" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="2" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Bark brown to light gray, typically somewhat thicker and more deeply furrowed than that of other varieties.</text>
-      <biological_entity id="o14148" name="bark" name_original="bark" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s2" value="brown" />
-        <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d0_s2" value="light gray" />
-        <character char_type="range_value" from="brown" name="coloration" src="d0_s2" to="light gray" />
-        <character is_modifier="false" modifier="typically somewhat" name="width" src="d0_s2" value="thicker" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Branchlets with leaves not in 2 ranks, mostly ascending vertically.</text>
-      <biological_entity id="o14149" name="branchlet" name_original="branchlets" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="mostly; vertically" name="orientation" notes="" src="d0_s3" value="ascending" />
-      </biological_entity>
-      <biological_entity id="o14150" name="leaf" name_original="leaves" src="d0_s3" type="structure" />
-      <biological_entity id="o14151" name="rank" name_original="ranks" src="d0_s3" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s3" value="2" />
-      </biological_entity>
-      <relation from="o14149" id="r3374" name="with" negation="false" src="d0_s3" to="o14150" />
-      <relation from="o14150" id="r3375" name="in" negation="false" src="d0_s3" to="o14151" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Leaves ca. 3-10 mm, appressed and overlapping, mostly narrowly lanceolate, free portion not contracted or twisted basally.</text>
-      <biological_entity id="o14152" name="leaf" name_original="leaves" src="d0_s4" type="structure">
-        <character char_type="range_value" from="3" from_unit="mm" name="some_measurement" src="d0_s4" to="10" to_unit="mm" />
-        <character is_modifier="false" name="fixation_or_orientation" src="d0_s4" value="appressed" />
-        <character is_modifier="false" name="arrangement" src="d0_s4" value="overlapping" />
-        <character is_modifier="false" modifier="mostly narrowly" name="shape" src="d0_s4" value="lanceolate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>2 n = 22.</text>
-      <biological_entity id="o14153" name="portion" name_original="portion" src="d0_s4" type="structure">
-        <character is_modifier="true" name="fusion" src="d0_s4" value="free" />
-        <character is_modifier="false" modifier="not" name="condition_or_size" src="d0_s4" value="contracted" />
-        <character is_modifier="false" modifier="basally" name="architecture" src="d0_s4" value="twisted" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o14154" name="chromosome" name_original="" src="d0_s5" type="structure">
-        <character name="quantity" src="d0_s5" value="22" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Blackwater rivers, lake margins, swamps, Carolina Bay lakes, pocosins, and wet, poorly drained, pine flatwoods;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="blackwater rivers" />
-        <character name="habitat" value="lake margins" />
-        <character name="habitat" value="swamps" />
-        <character name="habitat" value="carolina bay lakes" />
-        <character name="habitat" value="pocosins" />
-        <character name="habitat" value="and wet , drained" />
-        <character name="habitat" value="pine flatwoods ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--100 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="100" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ala., Fla., Ga., La., Miss., N.C., S.C.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees to ca. 30 m; trunk to 2 m diam. Bark brown to light gray, typically somewhat thicker and more deeply furrowed than that of other varieties. Branchlets with leaves not in 2 ranks, mostly ascending vertically. Leaves ca. 3--10 mm, appressed and overlapping, mostly narrowly lanceolate, free portion not contracted or twisted basally. 2 n = 22.</description>
+  <description type="habitat">Blackwater rivers, lake margins, swamps, Carolina Bay lakes, pocosins, and wet, poorly drained, pine flatwoods;</description>
+  <description type="elevation">0--100 m;</description>
+  <description type="distribution">Ala., Fla., Ga., La., Miss., N.C., S.C.</description>
   <number>1b</number>
   <other_name type="common_name">Pondcypress</other_name>
   <discussion>The name Taxodium distichum (Linnaeus) Richard var. nutans (Aiton) Sweet has been misapplied to this taxon; the type of this name belongs to var. distichum (F. D. Watson 1985).</discussion>

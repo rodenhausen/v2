@@ -1,159 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="1754" rank="genus">pteris</taxon_name>
-    <taxon_name authority="Linnaeus" date="1767" rank="species">cretica</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="variety">cretica</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="1754">pteris</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="1767">cretica</taxon_name>
+    <taxon_name rank="variety" authority="Linnaeus" date="unknown">cretica</taxon_name>
     <taxon_hierarchy>family pteridaceae;genus pteris;species cretica;variety cretica</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Pinnae without white or pale green, longitudinal streak along middle;</text>
-      <biological_entity id="o17333" name="pinna" name_original="pinnae" src="d0_s0" type="structure" />
-      <biological_entity id="o17334" name="streak" name_original="streak" src="d0_s0" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s0" value="white" />
-        <character is_modifier="true" name="coloration" src="d0_s0" value="pale green" />
-        <character is_modifier="true" name="dehiscence_or_orientation" src="d0_s0" value="longitudinal" />
-      </biological_entity>
-      <biological_entity constraint="middle" id="o17335" name="pinna" name_original="pinnae" src="d0_s0" type="structure" />
-      <relation from="o17333" id="r4033" name="without" negation="false" src="d0_s0" to="o17334" />
-      <relation from="o17334" id="r4034" name="along" negation="false" src="d0_s0" to="o17335" />
-    </statement>
-    <statement id="d0_s1">
-      <text>sterile pinnae less than 10 mm wide, fertile segments less than 8 mm wide;</text>
-      <biological_entity id="o17336" name="pinna" name_original="pinnae" src="d0_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s1" value="sterile" />
-        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d0_s1" to="10" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o17337" name="segment" name_original="segments" src="d0_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s1" value="fertile" />
-        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d0_s1" to="8" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>terminal pinna somewhat to barely decurrent on rachis.</text>
-      <biological_entity constraint="terminal" id="o17338" name="pinna" name_original="pinna" src="d0_s2" type="structure" />
-      <biological_entity id="o17339" name="rachis" name_original="rachis" src="d0_s2" type="structure">
-        <character is_modifier="true" modifier="barely" name="shape" src="d0_s2" value="decurrent" />
-      </biological_entity>
-      <relation from="o17338" id="r4035" name="to" negation="false" src="d0_s2" to="o17339" />
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Terrestrial or on rock in rocky hammocks, limesinks, grottoes, and river bluffs;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="terrestrial or on rock in rocky hammocks , limesinks , grottoes , and river bluffs ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>introduced; Fla., La.; widely scattered worldwide in tropical and subtropical regions.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="introduced" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="introduced" />
-        <character name="distribution" value="widely scattered worldwide in tropical and subtropical regions" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Pinnae  without white or pale green, longitudinal streak along middle; sterile pinnae less than 10 mm wide, fertile segments less than 8 mm wide; terminal pinna somewhat to barely decurrent on rachis.</description>
+  <description type="habitat">Terrestrial or on rock in rocky hammocks, limesinks, grottoes, and river bluffs;</description>
+  <description type="distribution">introduced; Fla., La.; widely scattered worldwide in tropical and subtropical regions.</description>
   <number>5a</number>
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Pinnae green throughout.</text>
-        </statement>
-        <statement id="d1_s1">
-          <text>5a.</text>
-        </statement>
-        <statement id="d1_s2">
-          <text>Pteris cretica var. cretica</text>
-          <biological_entity id="o17340" name="pinna" name_original="pinnae" src="d1_s0" type="structure">
-            <character is_modifier="false" modifier="throughout" name="coloration" src="d1_s0" value="green" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Pinnae green throughout. 5a. Pteris cretica var. cretica</description>
       <next_statement_id>1</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Pinnae with broad, white, central stripe.</text>
-          <biological_entity constraint="central" id="o17342" name="stripe" name_original="stripe" src="d2_s0" type="structure">
-            <character is_modifier="true" name="width" src="d2_s0" value="broad" />
-            <character is_modifier="true" name="coloration" src="d2_s0" value="white" />
-          </biological_entity>
-          <relation from="o17341" id="r4036" name="with" negation="false" src="d2_s0" to="o17342" />
-        </statement>
-        <statement id="d2_s1">
-          <text>5b.</text>
-        </statement>
-        <statement id="d2_s2">
-          <text>Pteris cretica var. albolineata</text>
-          <biological_entity id="o17341" name="pinna" name_original="pinnae" src="d2_s0" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Pinnae with broad, white, central stripe. 5b. Pteris cretica var. albolineata</description>
       <next_statement_id>1</next_statement_id>
     </key_statement>
   </key>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_9_d6_s0">
-      <text>Pinnae of mature leaves not decurrent to relatively broad-winged rachis or only terminal pinna decurrent on rachis.</text>
-      <biological_entity id="from_key_V2_9_o24498" name="pinna" name_original="pinnae" src="d6_s0" type="structure">
-        <character is_modifier="false" modifier="not" name="shape" src="d6_s0" value="decurrent" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_9_o24499" name="leaf" name_original="leaves" src="d6_s0" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d6_s0" value="mature" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_9_o24500" name="rachis" name_original="rachis" src="d6_s0" type="structure">
-        <character is_modifier="true" modifier="relatively" name="architecture" src="d6_s0" value="broad-winged" />
-        <character constraint="on rachis" constraintid="o24502" is_modifier="false" name="shape" src="d6_s0" value="decurrent" />
-      </biological_entity>
-      <biological_entity constraint="terminal" id="from_key_V2_9_o24501" name="pinna" name_original="pinna" src="d6_s0" type="structure">
-        <character is_modifier="true" modifier="relatively" name="architecture" src="d6_s0" value="broad-winged" />
-        <character constraint="on rachis" constraintid="o24502" is_modifier="false" name="shape" src="d6_s0" value="decurrent" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_9_o24502" name="rachis" name_original="rachis" src="d6_s0" type="structure" />
-      <relation from="from_key_V2_9_o24498" id="from_key_V2_9_r5733" name="part_of" negation="false" src="d6_s0" to="from_key_V2_9_o24499" />
-    </statement>
-    <statement id="from_key_V2_9_d3_s0">
-      <text>Leaves not strictly 1-pinnate, at least proximal pinnae pinnatifid-lobed or variously forked or divided.</text>
-      <biological_entity id="from_key_V2_9_o24489" name="leaf" name_original="leaves" src="d3_s0" type="structure">
-        <character is_modifier="false" modifier="not strictly" name="architecture_or_shape" src="d3_s0" value="1-pinnate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_9_o24490" name="pinna" name_original="pinnae" src="d3_s0" type="structure">
-        <character is_modifier="true" modifier="at-least" name="position" src="d3_s0" value="proximal" />
-        <character is_modifier="false" name="shape" src="d3_s0" value="pinnatifid-lobed" />
-        <character is_modifier="false" modifier="variously" name="shape" src="d3_s0" value="forked" />
-        <character is_modifier="false" name="shape" src="d3_s0" value="divided" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_9_d2_s0">
-      <text>Veins in leaves entirely free.</text>
-      <biological_entity id="from_key_V2_9_o24487" name="vein" name_original="veins" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_9_o24488" name="leaf" name_original="leaves" src="d2_s0" type="structure">
-        <character is_modifier="false" modifier="entirely" name="fusion" src="d2_s0" value="free" />
-      </biological_entity>
-      <relation from="from_key_V2_9_o24487" id="from_key_V2_9_r5729" name="in" negation="false" src="d2_s0" to="from_key_V2_9_o24488" />
-    </statement>
-  </description>
 </bio:treatment>

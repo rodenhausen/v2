@@ -1,183 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Berchtold &amp; J. S. Presl" date="unknown" rank="family">osmundaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">osmunda</taxon_name>
-    <taxon_name authority="R. M. Tryon" date="1940" rank="species">ruggii</taxon_name>
+    <taxon_name rank="family" authority="Berchtold &amp; J. S. Presl" date="unknown">osmundaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">osmunda</taxon_name>
+    <taxon_name rank="species" authority="R. M. Tryon" date="1940">ruggii</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>30: 65. 1940</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family osmundaceae;genus osmunda;species ruggii</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Leaves 2-pinnate;</text>
-      <biological_entity id="o7591" name="leaf" name_original="leaves" src="d0_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s0" value="2-pinnate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>petioles ca. 1/3-1/2 length of blades, not winged, with light-brown hairs, becoming glabrate.</text>
-      <biological_entity id="o7592" name="petiole" name_original="petioles" src="d0_s1" type="structure">
-        <character char_type="range_value" from="1/3 length of blades" name="length" src="d0_s1" to="1/2 length of blades" />
-        <character is_modifier="false" modifier="not" name="architecture" src="d0_s1" value="winged" />
-        <character is_modifier="false" modifier="becoming" name="pubescence" notes="" src="d0_s1" value="glabrate" />
-      </biological_entity>
-      <biological_entity id="o7593" name="hair" name_original="hairs" src="d0_s1" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s1" value="light-brown" />
-      </biological_entity>
-      <relation from="o7592" id="r1779" name="with" negation="false" src="d0_s1" to="o7593" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Sterile leaves ovate to ovatelanceolate, 0.50-0.75 m;</text>
-      <biological_entity id="o7594" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s2" value="sterile" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s2" value="ovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s2" value="ovatelanceolate" />
-        <character char_type="range_value" from="ovate" name="shape" src="d0_s2" to="ovatelanceolate" />
-        <character char_type="range_value" from="0.50" from_unit="m" name="some_measurement" src="d0_s2" to="0.75" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>pinnae lanceolate, lacking persistent tuft of hairs at base;</text>
-      <biological_entity id="o7595" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="lanceolate" />
-      </biological_entity>
-      <biological_entity id="o7596" name="tuft" name_original="tuft" src="d0_s3" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s3" value="lacking" />
-        <character is_modifier="true" name="duration" src="d0_s3" value="persistent" />
-      </biological_entity>
-      <biological_entity id="o7597" name="hair" name_original="hairs" src="d0_s3" type="structure" />
-      <biological_entity id="o7598" name="base" name_original="base" src="d0_s3" type="structure" />
-      <relation from="o7596" id="r1780" name="part_of" negation="false" src="d0_s3" to="o7597" />
-      <relation from="o7596" id="r1781" name="at" negation="false" src="d0_s3" to="o7598" />
-    </statement>
-    <statement id="d0_s4">
-      <text>pinnules sessile, base narrowly adnate to costae, margins nearly entire, apex obtuse to acute.</text>
-      <biological_entity id="o7599" name="pinnule" name_original="pinnules" src="d0_s4" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s4" value="sessile" />
-      </biological_entity>
-      <biological_entity id="o7600" name="base" name_original="base" src="d0_s4" type="structure">
-        <character constraint="to costae" constraintid="o7601" is_modifier="false" modifier="narrowly" name="fusion" src="d0_s4" value="adnate" />
-      </biological_entity>
-      <biological_entity id="o7601" name="costa" name_original="costae" src="d0_s4" type="structure" />
-      <biological_entity id="o7602" name="margin" name_original="margins" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="nearly" name="architecture_or_shape" src="d0_s4" value="entire" />
-      </biological_entity>
-      <biological_entity id="o7603" name="apex" name_original="apex" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="obtuse" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="acute" />
-        <character char_type="range_value" from="obtuse" name="shape" src="d0_s4" to="acute" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Fertile leaves with greatly reduced, sporangia-bearing pinnae at apex, midleaf, or both, or comprising most of leaf, notably smaller than sterile leaves.</text>
-      <biological_entity id="o7604" name="leaf" name_original="leaves" src="d0_s5" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s5" value="fertile" />
-      </biological_entity>
-      <biological_entity id="o7605" name="pinna" name_original="pinnae" src="d0_s5" type="structure">
-        <character is_modifier="true" modifier="greatly" name="size" src="d0_s5" value="reduced" />
-        <character is_modifier="true" name="architecture" src="d0_s5" value="sporangia-bearing" />
-      </biological_entity>
-      <biological_entity id="o7606" name="apex" name_original="apex" src="d0_s5" type="structure" />
-      <biological_entity id="o7608" name="leaf" name_original="leaf" src="d0_s5" type="structure" />
-      <biological_entity id="o7609" name="leaf" name_original="leaves" src="d0_s5" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s5" value="sterile" />
-      </biological_entity>
-      <relation from="o7604" id="r1782" name="with" negation="false" src="d0_s5" to="o7605" />
-      <relation from="o7605" id="r1783" name="at" negation="false" src="d0_s5" to="o7606" />
-      <relation from="o7607" id="r1784" name="comprising most" negation="false" src="d0_s5" to="o7608" />
-    </statement>
-    <statement id="d0_s6">
-      <text>(Fertile leaves not known from natural populations).</text>
-    </statement>
-    <statement id="d0_s7">
-      <text>2 n = 44.</text>
-      <biological_entity id="o7607" name="midleaf" name_original="midleaf" src="d0_s5" type="structure">
-        <character constraint="than sterile leaves" constraintid="o7609" is_modifier="false" name="size" src="d0_s5" value="notably smaller" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o7610" name="chromosome" name_original="" src="d0_s7" type="structure">
-        <character name="quantity" src="d0_s7" value="44" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulation late spring--early summer.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="late spring-early summer" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>650 m;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="650 m ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Conn., Va.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Leaves  2-pinnate; petioles ca. 1/3--1/2 length of blades, not winged, with light brown hairs, becoming glabrate.  Sterile leaves  ovate to ovate-lanceolate, 0.50--0.75 m; pinnae lanceolate, lacking persistent tuft of hairs at base; pinnules sessile, base narrowly adnate to costae, margins nearly entire, apex obtuse to acute.  Fertile leaves  with greatly reduced, sporangia-bearing pinnae at apex, midleaf, or both, or comprising most of leaf, notably smaller than sterile leaves. (Fertile leaves not known from natural populations). 2 n  = 44.</description>
+  <description type="phenology">Sporulation late spring--early summer.</description>
+  <description type="habitat">650 m;</description>
+  <description type="distribution">Conn., Va.</description>
   <number>4</number>
   <discussion>Osmunda ruggii is a sterile, natural hybrid between O . claytoniana and O . regalis and one of only two interspecific hybrids known to occur in Osmundaceae. This nothospecies is known from two natural populations despite the widespread sympatry of parental stocks. The first reported population in Fairfield County, Connecticut, has not been relocated and is most likely extirpated. A single natural population is known to exist in Craig County, Virginia; it is estimated that its age could be greater than 1100 years.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_418_d3_s0">
-      <text>Sterile leaves 2-pinnate with pinnules sessile.</text>
-      <biological_entity id="from_key_V2_418_o9913" name="leaf" name_original="leaves" src="d3_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d3_s0" value="sterile" />
-        <character constraint="with pinnules" constraintid="o9914" is_modifier="false" name="architecture_or_shape" src="d3_s0" value="2-pinnate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_418_o9914" name="pinnule" name_original="pinnules" src="d3_s0" type="structure">
-        <character is_modifier="false" name="architecture" src="d3_s0" value="sessile" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_418_d2_s0">
-      <text>Fertile leaves with pinnae dimorphic, some spore-bearing, some not;</text>
-      <biological_entity id="from_key_V2_418_o9906" name="leaf" name_original="leaves" src="d2_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
-        <character is_modifier="false" name="architecture" notes="alterIDs:o9907" src="d2_s0" value="spore-bearing" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_418_o9907" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
-        <character is_modifier="false" name="growth_form" src="d2_s0" value="dimorphic" />
-      </biological_entity>
-      <relation from="from_key_V2_418_o9906" id="from_key_V2_418_r2286" name="with" negation="false" src="d2_s0" to="from_key_V2_418_o9907" />
-    </statement>
-    <statement id="from_key_V2_418_d2_s1">
-      <text>tuft of hairs absent on abaxial surface of pinnae near base.</text>
-      <biological_entity id="from_key_V2_418_o9908" name="tuft" name_original="tuft" src="d2_s1" type="structure" />
-      <biological_entity id="from_key_V2_418_o9909" name="hair" name_original="hairs" src="d2_s1" type="structure">
-        <character constraint="on abaxial surface" constraintid="o9910" is_modifier="false" name="count" src="d2_s1" value="absent" />
-      </biological_entity>
-      <biological_entity constraint="abaxial" id="from_key_V2_418_o9910" name="surface" name_original="surface" src="d2_s1" type="structure" />
-      <biological_entity id="from_key_V2_418_o9911" name="pinna" name_original="pinnae" src="d2_s1" type="structure" />
-      <biological_entity id="from_key_V2_418_o9912" name="base" name_original="base" src="d2_s1" type="structure" />
-      <relation from="from_key_V2_418_o9908" id="from_key_V2_418_r2287" name="consist_of" negation="false" src="d2_s1" to="from_key_V2_418_o9909" />
-      <relation from="from_key_V2_418_o9910" id="from_key_V2_418_r2288" name="part_of" negation="false" src="d2_s1" to="from_key_V2_418_o9911" />
-      <relation from="from_key_V2_418_o9910" id="from_key_V2_418_r2289" name="near" negation="false" src="d2_s1" to="from_key_V2_418_o9912" />
-    </statement>
-  </description>
 </bio:treatment>

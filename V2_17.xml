@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>Michael D. Windham</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="R. Brown" date="1810" rank="genus">Woodsia</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="R. Brown" date="1810">Woodsia</taxon_name>
     <place_of_publication>
       <publication_title>Prodr.</publication_title>
       <place_in_publication>158. 1810</place_in_publication>
@@ -25,186 +17,8 @@
     <taxon_hierarchy>family dryopteridaceae;genus Woodsia</taxon_hierarchy>
     <other_info_on_name type="etymology">[for English botanist Joseph Woods]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants usually on rock.</text>
-      <biological_entity id="o2374" name="plant" name_original="plants" src="d0_s0" type="structure" />
-      <biological_entity id="o2375" name="rock" name_original="rock" src="d0_s0" type="structure" />
-      <relation from="o2374" id="r546" name="on" negation="false" src="d0_s0" to="o2375" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems compact to creeping;</text>
-    </statement>
-    <statement id="d0_s2">
-      <text>ascending or erect (rarely horizontal), stolons absent.</text>
-      <biological_entity id="o2376" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="architecture_or_arrangement" src="d0_s1" value="compact" />
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="creeping" />
-        <character is_modifier="false" name="orientation" src="d0_s2" value="ascending" />
-        <character is_modifier="false" name="orientation" src="d0_s2" value="erect" />
-      </biological_entity>
-      <biological_entity id="o2377" name="stolon" name_original="stolons" src="d0_s2" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s2" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Leaves monomorphic, dying back over winter or sometimes persistent into the next season.</text>
-      <biological_entity id="o2378" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s3" value="monomorphic" />
-        <character constraint="over " constraintid="o2379" is_modifier="false" name="condition" src="d0_s3" value="dying" />
-      </biological_entity>
-      <biological_entity constraint="next" id="o2379" name="season" name_original="season" src="d0_s3" type="structure">
-        <character is_modifier="true" name="season" src="d0_s3" value="winter" />
-        <character is_modifier="true" modifier="sometimes" name="duration" src="d0_s3" value="persistent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Petiole 1/5-3/4 length of blade, base not conspicuously swollen;</text>
-      <biological_entity id="o2380" name="petiole" name_original="petiole" src="d0_s4" type="structure">
-        <character char_type="range_value" from="1/5 length of blade" name="length" src="d0_s4" to="3/4 length of blade" />
-      </biological_entity>
-      <biological_entity id="o2381" name="base" name_original="base" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="not conspicuously" name="shape" src="d0_s4" value="swollen" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>vascular-bundles 2, arranged laterally, ± round or oblong in cross-section.</text>
-      <biological_entity id="o2382" name="vascular-bundle" name_original="vascular-bundles" src="d0_s5" type="structure">
-        <character name="quantity" src="d0_s5" value="2" />
-        <character is_modifier="false" modifier="laterally" name="arrangement" src="d0_s5" value="arranged" />
-        <character is_modifier="false" modifier="more or less" name="shape" src="d0_s5" value="round" />
-        <character constraint="in cross-section" constraintid="o2383" is_modifier="false" name="shape" src="d0_s5" value="oblong" />
-      </biological_entity>
-      <biological_entity id="o2383" name="cross-section" name_original="cross-section" src="d0_s5" type="structure" />
-    </statement>
-    <statement id="d0_s6">
-      <text>Blade linear to lanceolate or ovate, 1-2-pinnate-pinnatifid, gradually reduced distally to pinnatifid apex, herbaceous.</text>
-      <biological_entity id="o2384" name="blade" name_original="blade" src="d0_s6" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="linear" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s6" value="ovate" />
-        <character char_type="range_value" from="linear" name="shape" src="d0_s6" to="lanceolate or ovate" />
-        <character is_modifier="false" name="shape" src="d0_s6" value="1-2-pinnate-pinnatifid" />
-        <character constraint="to apex" constraintid="o2385" is_modifier="false" modifier="gradually" name="size" src="d0_s6" value="reduced" />
-        <character is_modifier="false" name="growth_form_or_texture" notes="" src="d0_s6" value="herbaceous" />
-      </biological_entity>
-      <biological_entity id="o2385" name="apex" name_original="apex" src="d0_s6" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s6" value="pinnatifid" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Pinnae not articulate to rachis, segment margins entire to dentate, not spiny;</text>
-      <biological_entity id="o2386" name="pinna" name_original="pinnae" src="d0_s7" type="structure">
-        <character constraint="to rachis" constraintid="o2387" is_modifier="false" modifier="not" name="architecture" src="d0_s7" value="articulate" />
-      </biological_entity>
-      <biological_entity id="o2387" name="rachis" name_original="rachis" src="d0_s7" type="structure" />
-      <biological_entity constraint="segment" id="o2388" name="margin" name_original="margins" src="d0_s7" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" notes="[duplicate value]" src="d0_s7" value="entire" />
-        <character is_modifier="false" name="architecture_or_shape" notes="[duplicate value]" src="d0_s7" value="dentate" />
-        <character char_type="range_value" from="entire" name="architecture_or_shape" src="d0_s7" to="dentate" />
-        <character is_modifier="false" modifier="not" name="architecture_or_shape" src="d0_s7" value="spiny" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>proximal pinnae somewhat reduced, sessile, bases usually ± equilateral;</text>
-      <biological_entity constraint="proximal" id="o2389" name="pinna" name_original="pinnae" src="d0_s8" type="structure">
-        <character is_modifier="false" modifier="somewhat" name="size" src="d0_s8" value="reduced" />
-        <character is_modifier="false" name="architecture" src="d0_s8" value="sessile" />
-      </biological_entity>
-      <biological_entity id="o2390" name="base" name_original="bases" src="d0_s8" type="structure">
-        <character is_modifier="false" modifier="usually more or less" name="architecture_or_shape" src="d0_s8" value="equilateral" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>costae often shallowly grooved adaxially, grooves ± continuous from rachis to costae;</text>
-      <biological_entity id="o2391" name="costa" name_original="costae" src="d0_s9" type="structure">
-        <character is_modifier="false" modifier="often shallowly; adaxially" name="architecture" src="d0_s9" value="grooved" />
-      </biological_entity>
-      <biological_entity id="o2392" name="groove" name_original="grooves" src="d0_s9" type="structure">
-        <character constraint="from rachis" constraintid="o2393" is_modifier="false" modifier="more or less" name="architecture" src="d0_s9" value="continuous" />
-      </biological_entity>
-      <biological_entity id="o2393" name="rachis" name_original="rachis" src="d0_s9" type="structure" />
-      <biological_entity id="o2394" name="costa" name_original="costae" src="d0_s9" type="structure" />
-      <relation from="o2393" id="r547" name="to" negation="false" src="d0_s9" to="o2394" />
-    </statement>
-    <statement id="d0_s10">
-      <text>indument of glandular (occasionally nonglandular) hairs on both surfaces, rarely absent.</text>
-      <biological_entity id="o2395" name="indument" name_original="indument" src="d0_s10" type="structure" constraint="hair">
-        <character is_modifier="false" modifier="rarely" name="presence" notes="" src="d0_s10" value="absent" />
-      </biological_entity>
-      <biological_entity constraint="glandular" id="o2396" name="hair" name_original="hairs" src="d0_s10" type="structure" />
-      <biological_entity id="o2397" name="surface" name_original="surfaces" src="d0_s10" type="structure" />
-      <relation from="o2395" id="r548" name="part_of" negation="false" src="d0_s10" to="o2396" />
-      <relation from="o2395" id="r549" name="on" negation="false" src="d0_s10" to="o2397" />
-    </statement>
-    <statement id="d0_s11">
-      <text>Veins free, simple or forked.</text>
-      <biological_entity id="o2398" name="vein" name_original="veins" src="d0_s11" type="structure">
-        <character is_modifier="false" name="fusion" src="d0_s11" value="free" />
-        <character is_modifier="false" name="architecture" src="d0_s11" value="simple" />
-        <character is_modifier="false" name="shape" src="d0_s11" value="forked" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s12">
-      <text>Sori in 1 row between midrib and margin on ultimate segments, round;</text>
-      <biological_entity id="o2399" name="sorus" name_original="sori" src="d0_s12" type="structure">
-        <character is_modifier="false" name="shape" notes="" src="d0_s12" value="round" />
-      </biological_entity>
-      <biological_entity constraint="between midrib and margin" constraintid="o2401-o2402" id="o2400" name="row" name_original="row" src="d0_s12" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s12" value="1" />
-      </biological_entity>
-      <biological_entity id="o2401" name="midrib" name_original="midrib" src="d0_s12" type="structure" />
-      <biological_entity id="o2402" name="margin" name_original="margin" src="d0_s12" type="structure" />
-      <biological_entity constraint="ultimate" id="o2403" name="segment" name_original="segments" src="d0_s12" type="structure" />
-      <relation from="o2399" id="r550" name="in" negation="false" src="d0_s12" to="o2400" />
-      <relation from="o2400" id="r551" name="on" negation="false" src="d0_s12" to="o2403" />
-    </statement>
-    <statement id="d0_s13">
-      <text>indusia basal, dissected into several to numerous filamentous or scalelike segments encircling sorus, persistent but often obscure in mature sori.</text>
-      <biological_entity id="o2404" name="indusium" name_original="indusia" src="d0_s13" type="structure">
-        <character is_modifier="false" name="position" src="d0_s13" value="basal" />
-        <character constraint="into segments" constraintid="o2405" is_modifier="false" name="shape" src="d0_s13" value="dissected" />
-        <character is_modifier="false" name="duration" src="d0_s13" value="persistent" />
-        <character constraint="in sori" constraintid="o2407" is_modifier="false" modifier="often" name="prominence" src="d0_s13" value="obscure" />
-      </biological_entity>
-      <biological_entity id="o2405" name="segment" name_original="segments" src="d0_s13" type="structure">
-        <character is_modifier="true" name="quantity" notes="[duplicate value]" src="d0_s13" value="several" />
-        <character is_modifier="true" name="quantity" notes="[duplicate value]" src="d0_s13" value="numerous" />
-        <character char_type="range_value" from="several" is_modifier="true" name="quantity" src="d0_s13" to="numerous" />
-        <character is_modifier="true" name="texture" src="d0_s13" value="filamentous" />
-        <character is_modifier="true" name="shape" src="d0_s13" value="scale-like" value_original="scalelike" />
-      </biological_entity>
-      <biological_entity id="o2406" name="sorus" name_original="sorus" src="d0_s13" type="structure" />
-      <biological_entity id="o2407" name="sorus" name_original="sori" src="d0_s13" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d0_s13" value="mature" />
-      </biological_entity>
-      <relation from="o2405" id="r552" name="encircling" negation="false" src="d0_s13" to="o2406" />
-    </statement>
-    <statement id="d0_s14">
-      <text>Spores brownish, cristate, rarely rugose.</text>
-    </statement>
-    <statement id="d0_s15">
-      <text>x = 38, 39, 41.</text>
-      <biological_entity id="o2408" name="spore" name_original="spores" src="d0_s14" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s14" value="brownish" />
-        <character is_modifier="false" name="shape" src="d0_s14" value="cristate" />
-        <character is_modifier="false" modifier="rarely" name="relief" src="d0_s14" value="rugose" />
-      </biological_entity>
-      <biological_entity constraint="x" id="o2409" name="chromosome" name_original="" src="d0_s15" type="structure">
-        <character name="quantity" src="d0_s15" value="38" />
-        <character name="quantity" src="d0_s15" value="39" />
-        <character name="quantity" src="d0_s15" value="41" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>mostly north temperate regions and higher elevations in the tropics.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="mostly north temperate regions and higher elevations in the tropics" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  usually on rock.  Stems  compact to creeping; ascending or erect (rarely horizontal), stolons absent.  Leaves  monomorphic, dying back over winter or sometimes persistent into the next season.  Petiole  1/5--3/4 length of blade, base not conspicuously swollen; vascular bundles 2, arranged laterally, ± round or oblong in cross section.  Blade  linear to lanceolate or ovate, 1--2-pinnate-pinnatifid, gradually reduced distally to pinnatifid apex, herbaceous.  Pinnae  not articulate to rachis, segment margins entire to dentate, not spiny; proximal pinnae somewhat reduced, sessile, bases usually ± equilateral; costae often shallowly grooved adaxially, grooves ± continuous from rachis to costae; indument of glandular (occasionally nonglandular) hairs on both surfaces, rarely absent.  Veins  free, simple or forked.  Sori  in 1 row between midrib and margin on ultimate segments, round; indusia basal, dissected into several to numerous filamentous or scalelike segments encircling sorus, persistent but often obscure in mature sori.  Spores  brownish, cristate, rarely rugose.  x  = 38, 39, 41.</description>
+  <description type="distribution">mostly north temperate regions and higher elevations in the tropics.</description>
   <number>8</number>
   <other_name type="common_name">Cliff fern</other_name>
   <discussion>Woodsia is a well-marked genus; its morphology and chromosome base number ( x = 41) provide evidence of relationships to the dryopteroid ferns. Most authors consider Cystopteris to be its closest ally, and the two genera are often confused in herbarium collections. The resemblance is superficial in many ways, however, and Woodsia is easily distinguished from Cystopteris by its persistent petiole bases, multilobed indusia, and obscure veins that end in hydathodes before reaching the leaf margin. The North American species of Woodsia fall into two natural groups that might be recognized as subgenera. Woodsia ilvensis , W . glabella , and W . alpina have articulate petioles, indusial segments that are uniseriate throughout and composed of cells that are much longer than wide, entire or crenate pinnules, strictly concolored stem scales, and chromosome base numbers of 39--41. They are circumboreal in distribution and show clear affinities to species found only in Eurasia. The remainder of the North American taxa have petioles that are not articulate, indusial segments that are multiseriate at the base and composed of cells that are isodiametric or slightly longer than wide, dentate pinnules, often bicolored stem scales, and a chromosome base number of 38. All of these species are endemic to the New World and probably represent a distinct lineage within the genus. Hybridization is common within these natural groups, but intergroup hybrids are relatively rare.</discussion>
@@ -218,741 +32,93 @@
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Blades and rachises completely glabrous except for occasional sessile glands;</text>
-          <biological_entity id="o2410" name="blade" name_original="blades" src="d1_s0" type="structure">
-            <character constraint="except-for glands" constraintid="o2412" is_modifier="false" modifier="completely" name="pubescence" src="d1_s0" value="glabrous" />
-          </biological_entity>
-          <biological_entity id="o2411" name="rachis" name_original="rachises" src="d1_s0" type="structure">
-            <character constraint="except-for glands" constraintid="o2412" is_modifier="false" modifier="completely" name="pubescence" src="d1_s0" value="glabrous" />
-          </biological_entity>
-          <biological_entity id="o2412" name="gland" name_original="glands" src="d1_s0" type="structure">
-            <character is_modifier="true" name="quantity" src="d1_s0" value="occasional" />
-            <character is_modifier="true" name="architecture" src="d1_s0" value="sessile" />
-          </biological_entity>
-        </statement>
-        <statement id="d1_s1">
-          <text>proximal pinnae distinctly fan-shaped, usually wider than long;</text>
-          <biological_entity constraint="proximal" id="o2413" name="pinna" name_original="pinnae" src="d1_s1" type="structure">
-            <character is_modifier="false" modifier="distinctly" name="shape" src="d1_s1" value="fan--shaped" value_original="fan-shaped" />
-            <character is_modifier="false" name="width" src="d1_s1" value="usually wider than long" />
-          </biological_entity>
-        </statement>
-        <statement id="d1_s2">
-          <text>leaves 0.5-1.2 cm wide, mature petioles green or straw-colored throughout.</text>
-          <biological_entity id="o2414" name="leaf" name_original="leaves" src="d1_s2" type="structure">
-            <character char_type="range_value" from="0.5" from_unit="cm" name="width" src="d1_s2" to="1.2" to_unit="cm" />
-          </biological_entity>
-          <biological_entity id="o2415" name="petiole" name_original="petioles" src="d1_s2" type="structure">
-            <character is_modifier="true" name="life_cycle" src="d1_s2" value="mature" />
-            <character is_modifier="false" name="coloration" src="d1_s2" value="green" />
-            <character is_modifier="false" modifier="throughout" name="coloration" src="d1_s2" value="straw-colored" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Blades and rachises completely glabrous except for occasional sessile glands; proximal pinnae distinctly fan-shaped, usually wider than long; leaves 0.5-1.2 cm wide, mature petioles green or straw-colored throughout.</description>
       <determination>1 Woodsia glabella</determination>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Blades and/or rachises with scattered hairs, scales, or stalked glands, rarely glabrescent;</text>
-          <biological_entity id="o2416" name="blade" name_original="blades" src="d2_s0" type="structure" />
-          <biological_entity id="o2417" name="rachis" name_original="rachises" src="d2_s0" type="structure">
-            <character is_modifier="false" modifier="rarely" name="pubescence" notes="" src="d2_s0" value="glabrescent" />
-          </biological_entity>
-          <biological_entity id="o2418" name="hair" name_original="hairs" src="d2_s0" type="structure">
-            <character is_modifier="true" name="arrangement" src="d2_s0" value="scattered" />
-          </biological_entity>
-          <biological_entity id="o2419" name="scale" name_original="scales" src="d2_s0" type="structure">
-            <character is_modifier="true" name="arrangement" src="d2_s0" value="scattered" />
-          </biological_entity>
-          <biological_entity id="o2420" name="gland" name_original="glands" src="d2_s0" type="structure">
-            <character is_modifier="true" name="architecture" src="d2_s0" value="stalked" />
-          </biological_entity>
-          <relation from="o2417" id="r553" name="with" negation="false" src="d2_s0" to="o2418" />
-          <relation from="o2417" id="r554" name="with" negation="false" src="d2_s0" to="o2419" />
-          <relation from="o2417" id="r555" name="with" negation="false" src="d2_s0" to="o2420" />
-        </statement>
-        <statement id="d2_s1">
-          <text>proximal pinnae ovatelanceolate to deltate, usually longer than wide;</text>
-          <biological_entity constraint="proximal" id="o2421" name="pinna" name_original="pinnae" src="d2_s1" type="structure">
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s1" value="ovatelanceolate" />
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s1" value="deltate" />
-            <character char_type="range_value" from="ovatelanceolate" name="shape" src="d2_s1" to="deltate" />
-            <character is_modifier="false" name="length_or_size" src="d2_s1" value="usually longer than wide" />
-          </biological_entity>
-        </statement>
-        <statement id="d2_s2">
-          <text>leaves 1.2-12 cm wide or, if less, then proximal portion of mature petioles reddish-brown or dark purple.</text>
-          <biological_entity id="o2422" name="leaf" name_original="leaves" src="d2_s2" type="structure">
-            <character name="width" src="d2_s2" value="," />
-          </biological_entity>
-          <biological_entity constraint="proximal" id="o2423" name="portion" name_original="portion" src="d2_s2" type="structure">
-            <character is_modifier="false" name="coloration" src="d2_s2" value="reddish-brown" />
-            <character is_modifier="false" name="coloration" src="d2_s2" value="dark purple" />
-          </biological_entity>
-          <biological_entity id="o2424" name="petiole" name_original="petioles" src="d2_s2" type="structure">
-            <character is_modifier="true" name="life_cycle" src="d2_s2" value="mature" />
-          </biological_entity>
-          <relation from="o2423" id="r556" modifier="less" name="part_of" negation="false" src="d2_s2" to="o2424" />
-        </statement>
-      </description>
+      <description type="morphology">Blades and/or rachises with scattered hairs, scales, or stalked glands, rarely glabrescent; proximal pinnae ovate-lanceolate to deltate, usually longer than wide; leaves 1.2-12 cm wide or, if less, then proximal portion of mature petioles reddish brown or dark purple.</description>
       <next_statement_id>2</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d3_s0">
-          <text>Petioles articulate well above base, abscission zone visible as swollen node;</text>
-          <biological_entity id="o2425" name="petiole" name_original="petioles" src="d3_s0" type="structure">
-            <character constraint="above base" constraintid="o2426" is_modifier="false" name="architecture" src="d3_s0" value="articulate" />
-          </biological_entity>
-          <biological_entity id="o2426" name="base" name_original="base" src="d3_s0" type="structure" />
-          <biological_entity id="o2427" name="zone" name_original="zone" src="d3_s0" type="structure">
-            <character is_modifier="true" name="life_cycle" src="d3_s0" value="abscission" />
-            <character constraint="as node" constraintid="o2428" is_modifier="false" name="prominence" src="d3_s0" value="visible" />
-          </biological_entity>
-          <biological_entity id="o2428" name="node" name_original="node" src="d3_s0" type="structure">
-            <character is_modifier="true" name="shape" src="d3_s0" value="swollen" />
-          </biological_entity>
-        </statement>
-        <statement id="d3_s1">
-          <text>indusial segments uniseriate throughout, composed of cells that many times longer than wide;</text>
-          <biological_entity constraint="indusial" id="o2429" name="segment" name_original="segments" src="d3_s1" type="structure">
-            <character is_modifier="false" modifier="throughout" name="architecture_or_arrangement" src="d3_s1" value="uniseriate" />
-            <character is_modifier="false" name="quantity" src="d3_s1" value="many" />
-            <character is_modifier="false" name="length_or_size" src="d3_s1" value="longer than wide" />
-          </biological_entity>
-          <biological_entity id="o2430" name="cell" name_original="cells" src="d3_s1" type="structure" />
-          <relation from="o2429" id="r557" name="composed of" negation="false" src="d3_s1" to="o2430" />
-        </statement>
-        <statement id="d3_s2">
-          <text>pinnules entire or crenate, without acute teeth on margins.</text>
-          <biological_entity id="o2431" name="pinnule" name_original="pinnules" src="d3_s2" type="structure">
-            <character is_modifier="false" name="shape" src="d3_s2" value="entire" />
-            <character is_modifier="false" name="shape" src="d3_s2" value="crenate" />
-          </biological_entity>
-          <biological_entity id="o2432" name="tooth" name_original="teeth" src="d3_s2" type="structure">
-            <character is_modifier="true" name="shape" src="d3_s2" value="acute" />
-          </biological_entity>
-          <biological_entity id="o2433" name="margin" name_original="margins" src="d3_s2" type="structure" />
-          <relation from="o2431" id="r558" name="without" negation="false" src="d3_s2" to="o2432" />
-          <relation from="o2432" id="r559" name="on" negation="false" src="d3_s2" to="o2433" />
-        </statement>
-      </description>
+      <description type="morphology">Petioles articulate well above base, abscission zone visible as swollen node; indusial segments uniseriate throughout, composed of cells that are many times longer than wide; pinnules entire or crenate, without acute teeth on margins.</description>
       <next_statement_id>3</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d4_s0">
-          <text>Petioles not articulate above base, swollen abscission zone absent;</text>
-          <biological_entity id="o2434" name="petiole" name_original="petioles" src="d4_s0" type="structure">
-            <character constraint="above base" constraintid="o2435" is_modifier="false" modifier="not" name="architecture" src="d4_s0" value="articulate" />
-          </biological_entity>
-          <biological_entity id="o2435" name="base" name_original="base" src="d4_s0" type="structure" />
-          <biological_entity id="o2436" name="zone" name_original="zone" src="d4_s0" type="structure">
-            <character is_modifier="true" name="shape" src="d4_s0" value="swollen" />
-            <character is_modifier="true" name="life_cycle" src="d4_s0" value="abscission" />
-            <character is_modifier="false" name="presence" src="d4_s0" value="absent" />
-          </biological_entity>
-        </statement>
-        <statement id="d4_s1">
-          <text>indusial segments usually multiseriate at base, composed of cells that isodiametric or slightly longer than wide;</text>
-          <biological_entity constraint="indusial" id="o2437" name="segment" name_original="segments" src="d4_s1" type="structure">
-            <character constraint="at base" constraintid="o2438" is_modifier="false" modifier="usually" name="architecture_or_arrangement" src="d4_s1" value="multiseriate" />
-            <character is_modifier="false" name="architecture_or_shape" src="d4_s1" value="isodiametric" />
-            <character is_modifier="false" name="length_or_size" src="d4_s1" value="slightly longer than wide" />
-          </biological_entity>
-          <biological_entity id="o2438" name="base" name_original="base" src="d4_s1" type="structure" />
-          <biological_entity id="o2439" name="cell" name_original="cells" src="d4_s1" type="structure" />
-          <relation from="o2437" id="r560" name="composed of" negation="false" src="d4_s1" to="o2439" />
-        </statement>
-        <statement id="d4_s2">
-          <text>pinnules dentate, with acute teeth on margins.</text>
-          <biological_entity id="o2440" name="pinnule" name_original="pinnules" src="d4_s2" type="structure">
-            <character is_modifier="false" name="architecture_or_shape" src="d4_s2" value="dentate" />
-          </biological_entity>
-          <biological_entity id="o2441" name="tooth" name_original="teeth" src="d4_s2" type="structure">
-            <character is_modifier="true" name="shape" src="d4_s2" value="acute" />
-          </biological_entity>
-          <biological_entity id="o2442" name="margin" name_original="margins" src="d4_s2" type="structure" />
-          <relation from="o2440" id="r561" name="with" negation="false" src="d4_s2" to="o2441" />
-          <relation from="o2441" id="r562" name="on" negation="false" src="d4_s2" to="o2442" />
-        </statement>
-      </description>
+      <description type="morphology">Petioles not articulate above base, swollen abscission zone absent; indusial segments usually multiseriate at base, composed of cells that are isodiametric or slightly longer than wide; pinnules dentate, with acute teeth on margins.</description>
       <next_statement_id>4</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d5_s0">
-          <text>Linear-lanceolate scales absent or very rare on abaxial pinnae surfaces;</text>
-          <biological_entity id="o2443" name="scale" name_original="scales" src="d5_s0" type="structure">
-            <character is_modifier="true" name="shape" src="d5_s0" value="linear-lanceolate" />
-            <character is_modifier="false" name="presence" src="d5_s0" value="absent" />
-            <character constraint="on abaxial pinnae surfaces" constraintid="o2444" is_modifier="false" modifier="very" name="quantity" src="d5_s0" value="rare" />
-          </biological_entity>
-          <biological_entity constraint="pinnae" id="o2444" name="surface" name_original="surfaces" src="d5_s0" type="structure" constraint_original="abaxial pinnae" />
-        </statement>
-        <statement id="d5_s1">
-          <text>rachises with widely scattered hairs and scales, sometimes nearly glabrous;</text>
-          <biological_entity id="o2445" name="rachis" name_original="rachises" src="d5_s1" type="structure">
-            <character is_modifier="false" modifier="sometimes nearly" name="pubescence" notes="" src="d5_s1" value="glabrous" />
-          </biological_entity>
-          <biological_entity id="o2446" name="hair" name_original="hairs" src="d5_s1" type="structure">
-            <character is_modifier="true" modifier="widely" name="arrangement" src="d5_s1" value="scattered" />
-          </biological_entity>
-          <biological_entity id="o2447" name="scale" name_original="scales" src="d5_s1" type="structure" />
-          <relation from="o2445" id="r563" name="with" negation="false" src="d5_s1" to="o2446" />
-          <relation from="o2445" id="r564" name="with" negation="false" src="d5_s1" to="o2447" />
-        </statement>
-        <statement id="d5_s2">
-          <text>largest pinnae with 1-3 pairs of pinnules.</text>
-          <biological_entity constraint="largest" id="o2448" name="pinna" name_original="pinnae" src="d5_s2" type="structure" />
-          <biological_entity id="o2449" name="pair" name_original="pairs" src="d5_s2" type="structure">
-            <character char_type="range_value" from="1" is_modifier="true" name="quantity" src="d5_s2" to="3" />
-          </biological_entity>
-          <biological_entity id="o2450" name="pinnule" name_original="pinnules" src="d5_s2" type="structure" />
-          <relation from="o2448" id="r565" name="with" negation="false" src="d5_s2" to="o2449" />
-          <relation from="o2449" id="r566" name="part_of" negation="false" src="d5_s2" to="o2450" />
-        </statement>
-      </description>
+      <description type="morphology">Linear-lanceolate scales absent or very rare on abaxial pinnae surfaces; rachises with widely scattered hairs and scales, sometimes nearly glabrous; largest pinnae with 1-3 pairs of pinnules.</description>
       <determination>2 Woodsia alpina</determination>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d6_s0">
-          <text>Linear-lanceolate scales common on abaxial pinnae surfaces;</text>
-          <biological_entity id="o2451" name="scale" name_original="scales" src="d6_s0" type="structure">
-            <character is_modifier="true" name="shape" src="d6_s0" value="linear-lanceolate" />
-            <character constraint="on abaxial pinnae surfaces" constraintid="o2452" is_modifier="false" name="quantity" src="d6_s0" value="common" />
-          </biological_entity>
-          <biological_entity constraint="pinnae" id="o2452" name="surface" name_original="surfaces" src="d6_s0" type="structure" constraint_original="abaxial pinnae" />
-        </statement>
-        <statement id="d6_s1">
-          <text>rachises with abundant hairs and scales;</text>
-          <biological_entity id="o2453" name="rachis" name_original="rachises" src="d6_s1" type="structure" />
-          <biological_entity id="o2454" name="hair" name_original="hairs" src="d6_s1" type="structure">
-            <character is_modifier="true" name="quantity" src="d6_s1" value="abundant" />
-          </biological_entity>
-          <biological_entity id="o2455" name="scale" name_original="scales" src="d6_s1" type="structure" />
-          <relation from="o2453" id="r567" name="with" negation="false" src="d6_s1" to="o2454" />
-          <relation from="o2453" id="r568" name="with" negation="false" src="d6_s1" to="o2455" />
-        </statement>
-        <statement id="d6_s2">
-          <text>largest pinnae with 4-9 pairs of pinnules.</text>
-          <biological_entity constraint="largest" id="o2456" name="pinna" name_original="pinnae" src="d6_s2" type="structure" />
-          <biological_entity id="o2457" name="pair" name_original="pairs" src="d6_s2" type="structure">
-            <character char_type="range_value" from="4" is_modifier="true" name="quantity" src="d6_s2" to="9" />
-          </biological_entity>
-          <biological_entity id="o2458" name="pinnule" name_original="pinnules" src="d6_s2" type="structure" />
-          <relation from="o2456" id="r569" name="with" negation="false" src="d6_s2" to="o2457" />
-          <relation from="o2457" id="r570" name="part_of" negation="false" src="d6_s2" to="o2458" />
-        </statement>
-      </description>
+      <description type="morphology">Linear-lanceolate scales common on abaxial pinnae surfaces; rachises with abundant hairs and scales; largest pinnae with 4-9 pairs of pinnules.</description>
       <determination>3 Woodsia ilvensis</determination>
     </key_statement>
     <key_statement>
       <statement_id>4</statement_id>
-      <description type="morphology">
-        <statement id="d7_s0">
-          <text>Pinnae with flattened, multicellular hairs concentrated along midrib on both surfaces;</text>
-          <biological_entity id="o2459" name="pinna" name_original="pinnae" src="d7_s0" type="structure" />
-          <biological_entity id="o2460" name="hair" name_original="hairs" src="d7_s0" type="structure">
-            <character is_modifier="true" name="shape" src="d7_s0" value="flattened" />
-            <character is_modifier="true" name="architecture" src="d7_s0" value="multicellular" />
-            <character constraint="along midrib" constraintid="o2461" is_modifier="false" name="arrangement_or_density" src="d7_s0" value="concentrated" />
-          </biological_entity>
-          <biological_entity id="o2461" name="midrib" name_original="midrib" src="d7_s0" type="structure" />
-          <biological_entity id="o2462" name="surface" name_original="surfaces" src="d7_s0" type="structure" />
-          <relation from="o2459" id="r571" name="with" negation="false" src="d7_s0" to="o2460" />
-          <relation from="o2461" id="r572" name="on" negation="false" src="d7_s0" to="o2462" />
-        </statement>
-        <statement id="d7_s1">
-          <text>mature petioles usually reddish-brown or dark purple, relatively brittle and easily shattered.</text>
-          <biological_entity id="o2463" name="petiole" name_original="petioles" src="d7_s1" type="structure">
-            <character is_modifier="true" name="life_cycle" src="d7_s1" value="mature" />
-            <character is_modifier="false" modifier="usually" name="coloration" src="d7_s1" value="reddish-brown" />
-            <character is_modifier="false" name="coloration" src="d7_s1" value="dark purple" />
-            <character is_modifier="false" modifier="relatively; easily" name="fragility" src="d7_s1" value="brittle" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Pinnae with flattened, multicellular hairs concentrated along midrib on both surfaces; mature petioles usually reddish brown or dark purple, relatively brittle and easily shattered.</description>
       <determination>4 Woodsia scopulina</determination>
     </key_statement>
     <key_statement>
       <statement_id>4</statement_id>
-      <description type="morphology">
-        <statement id="d8_s0">
-          <text>Pinnae lacking flattened, multicellular hairs along midrib;</text>
-          <biological_entity id="o2464" name="pinna" name_original="pinnae" src="d8_s0" type="structure">
-            <character is_modifier="false" name="quantity" src="d8_s0" value="lacking" />
-            <character is_modifier="false" name="shape" src="d8_s0" value="flattened" />
-          </biological_entity>
-          <biological_entity id="o2465" name="hair" name_original="hairs" src="d8_s0" type="structure">
-            <character is_modifier="true" name="architecture" src="d8_s0" value="multicellular" />
-          </biological_entity>
-          <biological_entity id="o2466" name="midrib" name_original="midrib" src="d8_s0" type="structure" />
-          <relation from="o2465" id="r573" name="along" negation="false" src="d8_s0" to="o2466" />
-        </statement>
-        <statement id="d8_s1">
-          <text>mature petioles light-brown to straw-colored or, if reddish-brown/dark purple (in Woodsia plummerae and W. oregana), somewhat pliable and resistant to shattering.</text>
-          <biological_entity id="o2467" name="petiole" name_original="petioles" src="d8_s1" type="structure">
-            <character is_modifier="true" name="life_cycle" src="d8_s1" value="mature" />
-            <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d8_s1" value="light-brown" />
-            <character is_modifier="false" name="coloration" notes="[duplicate value]" src="d8_s1" value="straw-colored" />
-            <character char_type="range_value" from="light-brown" name="coloration" src="d8_s1" to="straw-colored" />
-            <character name="coloration" src="d8_s1" value="," />
-            <character is_modifier="false" name="coloration" src="d8_s1" value="reddish-brown/dark purple" />
-            <character is_modifier="false" modifier="somewhat" name="fragility_or_texture" src="d8_s1" value="pliable" />
-          </biological_entity>
-          <biological_entity id="o2468" name="shattering" name_original="shattering" src="d8_s1" type="structure" />
-          <relation from="o2467" id="r574" name="to" negation="false" src="d8_s1" to="o2468" />
-        </statement>
-      </description>
+      <description type="morphology">Pinnae lacking flattened, multicellular hairs along midrib; mature petioles light brown to straw-colored or, if reddish brown/dark purple (in Woodsia plummerae and W. oregana), somewhat pliable and resistant to shattering.</description>
       <next_statement_id>5</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>5</statement_id>
-      <description type="morphology">
-        <statement id="d9_s0">
-          <text>Indusia composed of relatively broad segments, these multiseriate for most of length but often branched or divided distally.</text>
-          <biological_entity id="o2469" name="indusium" name_original="indusia" src="d9_s0" type="structure">
-            <character constraint="for" is_modifier="false" name="length" notes="" src="d9_s0" value="multiseriate" />
-            <character is_modifier="false" modifier="often" name="architecture" src="d9_s0" value="branched" />
-            <character is_modifier="false" modifier="distally" name="shape" src="d9_s0" value="divided" />
-          </biological_entity>
-          <biological_entity id="o2470" name="segment" name_original="segments" src="d9_s0" type="structure">
-            <character is_modifier="true" modifier="relatively" name="width" src="d9_s0" value="broad" />
-          </biological_entity>
-          <relation from="o2469" id="r575" name="composed of" negation="false" src="d9_s0" to="o2470" />
-        </statement>
-      </description>
+      <description type="morphology">Indusia composed of relatively broad segments, these multiseriate for most of length but often branched or divided distally.</description>
       <next_statement_id>6</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>5</statement_id>
-      <description type="morphology">
-        <statement id="d10_s0">
-          <text>Indusia composed of narrow, usually filamentous segments, these uniseriate for most of length.</text>
-          <biological_entity id="o2471" name="indusium" name_original="indusia" src="d10_s0" type="structure" />
-          <biological_entity id="o2472" name="segment" name_original="segments" src="d10_s0" type="structure">
-            <character is_modifier="true" name="architecture_or_arrangement" src="d10_s0" value="uniseriate" />
-            <character is_modifier="true" name="length" src="d10_s0" value="narrow" />
-            <character is_modifier="true" modifier="usually" name="texture" src="d10_s0" value="filamentous" />
-          </biological_entity>
-          <relation from="o2471" id="r576" name="composed of" negation="false" src="d10_s0" to="o2472" />
-        </statement>
-      </description>
+      <description type="morphology">Indusia composed of narrow, usually filamentous segments, these uniseriate for most of length.</description>
       <next_statement_id>8</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>6</statement_id>
-      <description type="morphology">
-        <statement id="d11_s0">
-          <text>Proximal portion of mature petioles reddish-brown or dark purple;</text>
-          <biological_entity constraint="proximal" id="o2473" name="portion" name_original="portion" src="d11_s0" type="structure">
-            <character is_modifier="false" name="coloration" src="d11_s0" value="reddish-brown" />
-            <character is_modifier="false" name="coloration" src="d11_s0" value="dark purple" />
-          </biological_entity>
-          <biological_entity id="o2474" name="petiole" name_original="petioles" src="d11_s0" type="structure">
-            <character is_modifier="true" name="life_cycle" src="d11_s0" value="mature" />
-          </biological_entity>
-          <relation from="o2473" id="r577" name="part_of" negation="false" src="d11_s0" to="o2474" />
-        </statement>
-        <statement id="d11_s1">
-          <text>blades densely glandular, often somewhat viscid;</text>
-          <biological_entity id="o2475" name="blade" name_original="blades" src="d11_s1" type="structure">
-            <character is_modifier="false" modifier="densely" name="architecture_or_function_or_pubescence" src="d11_s1" value="glandular" />
-            <character is_modifier="false" modifier="often somewhat" name="coating" src="d11_s1" value="viscid" />
-          </biological_entity>
-        </statement>
-        <statement id="d11_s2">
-          <text>vein tips not enlarged, barely visible on adaxial surface..</text>
-          <biological_entity constraint="vein" id="o2476" name="tip" name_original="tips" src="d11_s2" type="structure">
-            <character is_modifier="false" modifier="not" name="size" src="d11_s2" value="enlarged" />
-            <character constraint="on adaxial surface" constraintid="o2477" is_modifier="false" modifier="barely" name="prominence" src="d11_s2" value="visible" />
-          </biological_entity>
-          <biological_entity constraint="adaxial" id="o2477" name="surface" name_original="surface" src="d11_s2" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Proximal portion of mature petioles reddish brown or dark purple; blades densely glandular, often somewhat viscid; vein tips not enlarged, barely visible on adaxial surface. .</description>
       <determination>5 Woodsia plummerae</determination>
     </key_statement>
     <key_statement>
       <statement_id>6</statement_id>
-      <description type="morphology">
-        <statement id="d12_s0">
-          <text>Proximal portion of mature petioles light-brown or straw-colored (sometimes darker at very base);</text>
-          <biological_entity constraint="proximal" id="o2478" name="portion" name_original="portion" src="d12_s0" type="structure">
-            <character is_modifier="false" name="coloration" src="d12_s0" value="light-brown" />
-            <character is_modifier="false" name="coloration" src="d12_s0" value="straw-colored" />
-          </biological_entity>
-          <biological_entity id="o2479" name="petiole" name_original="petioles" src="d12_s0" type="structure">
-            <character is_modifier="true" name="life_cycle" src="d12_s0" value="mature" />
-          </biological_entity>
-          <relation from="o2478" id="r578" name="part_of" negation="false" src="d12_s0" to="o2479" />
-        </statement>
-        <statement id="d12_s1">
-          <text>blades sparsely to moderately glandular, rarely viscid;</text>
-          <biological_entity id="o2480" name="blade" name_original="blades" src="d12_s1" type="structure">
-            <character is_modifier="false" modifier="sparsely to moderately" name="architecture_or_function_or_pubescence" src="d12_s1" value="glandular" />
-            <character is_modifier="false" modifier="rarely" name="coating" src="d12_s1" value="viscid" />
-          </biological_entity>
-        </statement>
-        <statement id="d12_s2">
-          <text>vein tips usually enlarged to form whitish hydathodes visible on adaxial surface.</text>
-          <biological_entity constraint="vein" id="o2481" name="tip" name_original="tips" src="d12_s2" type="structure">
-            <character is_modifier="false" modifier="usually" name="size" src="d12_s2" value="enlarged" />
-          </biological_entity>
-          <biological_entity id="o2482" name="hydathode" name_original="hydathodes" src="d12_s2" type="structure">
-            <character is_modifier="true" name="coloration" src="d12_s2" value="whitish" />
-            <character constraint="on adaxial surface" constraintid="o2483" is_modifier="false" name="prominence" src="d12_s2" value="visible" />
-          </biological_entity>
-          <biological_entity constraint="adaxial" id="o2483" name="surface" name_original="surface" src="d12_s2" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Proximal portion of mature petioles light brown or straw-colored (sometimes darker at very base); blades sparsely to moderately glandular, rarely viscid; vein tips usually enlarged to form whitish hydathodes visible on adaxial surface.</description>
       <next_statement_id>7</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>7</statement_id>
-      <description type="morphology">
-        <statement id="d13_s0">
-          <text>Indusial segments branched or divided distally to form narrow, filamentous lobes;</text>
-          <biological_entity constraint="indusial" id="o2484" name="segment" name_original="segments" src="d13_s0" type="structure">
-            <character is_modifier="false" name="architecture" src="d13_s0" value="branched" />
-            <character is_modifier="false" modifier="distally" name="shape" src="d13_s0" value="divided" />
-            <character is_modifier="false" name="size_or_width" src="d13_s0" value="narrow" />
-          </biological_entity>
-          <biological_entity id="o2485" name="lobe" name_original="lobes" src="d13_s0" type="structure">
-            <character is_modifier="true" name="texture" src="d13_s0" value="filamentous" />
-          </biological_entity>
-        </statement>
-        <statement id="d13_s1">
-          <text>glandular-hairs of blade with thin stalks and slightly expanded tips;</text>
-          <biological_entity id="o2486" name="glandular-hair" name_original="glandular-hairs" src="d13_s1" type="structure" constraint="blade" />
-          <biological_entity id="o2487" name="blade" name_original="blade" src="d13_s1" type="structure" />
-          <biological_entity id="o2488" name="stalk" name_original="stalks" src="d13_s1" type="structure">
-            <character is_modifier="true" name="width" src="d13_s1" value="thin" />
-          </biological_entity>
-          <biological_entity id="o2489" name="tip" name_original="tips" src="d13_s1" type="structure">
-            <character is_modifier="true" modifier="slightly" name="size" src="d13_s1" value="expanded" />
-          </biological_entity>
-          <relation from="o2486" id="r579" name="part_of" negation="false" src="d13_s1" to="o2487" />
-          <relation from="o2486" id="r580" name="with" negation="false" src="d13_s1" to="o2488" />
-          <relation from="o2486" id="r581" name="with" negation="false" src="d13_s1" to="o2489" />
-        </statement>
-        <statement id="d13_s2">
-          <text>pinnule margins usually thickened, lustrous on adaxial surface.</text>
-          <biological_entity constraint="pinnule" id="o2490" name="margin" name_original="margins" src="d13_s2" type="structure">
-            <character is_modifier="false" modifier="usually" name="size_or_width" src="d13_s2" value="thickened" />
-            <character constraint="on adaxial surface" constraintid="o2491" is_modifier="false" name="reflectance" src="d13_s2" value="lustrous" />
-          </biological_entity>
-          <biological_entity constraint="adaxial" id="o2491" name="surface" name_original="surface" src="d13_s2" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Indusial segments branched or divided distally to form narrow, filamentous lobes; glandular hairs of blade with thin stalks and slightly expanded tips; pinnule margins usually thickened, lustrous on adaxial surface.</description>
       <determination>6 Woodsia cochisensis</determination>
     </key_statement>
     <key_statement>
       <statement_id>7</statement_id>
-      <description type="morphology">
-        <statement id="d14_s0">
-          <text>Indusial segments often glandular along distal edge but otherwise nearly entire, not divided into narrow, filamentous lobes;</text>
-          <biological_entity constraint="indusial" id="o2492" name="segment" name_original="segments" src="d14_s0" type="structure">
-            <character constraint="along distal edge" constraintid="o2493" is_modifier="false" modifier="often" name="architecture_or_function_or_pubescence" src="d14_s0" value="glandular" />
-            <character constraint="into lobes" constraintid="o2494" is_modifier="false" modifier="not" name="shape" notes="" src="d14_s0" value="divided" />
-          </biological_entity>
-          <biological_entity constraint="distal" id="o2493" name="edge" name_original="edge" src="d14_s0" type="structure">
-            <character is_modifier="false" modifier="otherwise nearly" name="architecture_or_shape" src="d14_s0" value="entire" />
-          </biological_entity>
-          <biological_entity id="o2494" name="lobe" name_original="lobes" src="d14_s0" type="structure">
-            <character is_modifier="true" name="size_or_width" src="d14_s0" value="narrow" />
-            <character is_modifier="true" name="texture" src="d14_s0" value="filamentous" />
-          </biological_entity>
-        </statement>
-        <statement id="d14_s1">
-          <text>many glandular-hairs of blade with thick stalks and distinctly bulbous tips;</text>
-          <biological_entity id="o2495" name="glandular-hair" name_original="glandular-hairs" src="d14_s1" type="structure" constraint="blade">
-            <character is_modifier="true" name="quantity" src="d14_s1" value="many" />
-          </biological_entity>
-          <biological_entity id="o2496" name="blade" name_original="blade" src="d14_s1" type="structure" />
-          <biological_entity id="o2497" name="stalk" name_original="stalks" src="d14_s1" type="structure">
-            <character is_modifier="true" name="width" src="d14_s1" value="thick" />
-          </biological_entity>
-          <biological_entity id="o2498" name="tip" name_original="tips" src="d14_s1" type="structure">
-            <character is_modifier="true" modifier="distinctly" name="architecture" src="d14_s1" value="bulbous" />
-          </biological_entity>
-          <relation from="o2495" id="r582" name="part_of" negation="false" src="d14_s1" to="o2496" />
-          <relation from="o2495" id="r583" name="with" negation="false" src="d14_s1" to="o2497" />
-        </statement>
-        <statement id="d14_s2">
-          <text>pinnule margins not noticeably thickened or lustrous.</text>
-          <biological_entity constraint="pinnule" id="o2499" name="margin" name_original="margins" src="d14_s2" type="structure">
-            <character is_modifier="false" modifier="not noticeably" name="size_or_width" src="d14_s2" value="thickened" />
-            <character is_modifier="false" name="reflectance" src="d14_s2" value="lustrous" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Indusial segments often glandular along distal edge but otherwise nearly entire, not divided into narrow, filamentous lobes; many glandular hairs of blade with thick stalks and distinctly bulbous tips; pinnule margins not noticeably thickened or lustrous.</description>
       <determination>7 Woodsia obtusa</determination>
     </key_statement>
     <key_statement>
       <statement_id>8</statement_id>
-      <description type="morphology">
-        <statement id="d15_s0">
-          <text>Pinnule margins (viewed from abaxial surface) smooth to somewhat ragged but usually lacking translucent projections or filaments;</text>
-          <biological_entity constraint="pinnule" id="o2500" name="margin" name_original="margins" src="d15_s0" type="structure">
-            <character is_modifier="false" name="architecture_or_pubescence_or_relief" src="d15_s0" value="smooth" />
-            <character is_modifier="false" modifier="somewhat" name="shape" src="d15_s0" value="ragged" />
-          </biological_entity>
-          <biological_entity id="o2501" name="projection" name_original="projections" src="d15_s0" type="structure">
-            <character is_modifier="true" modifier="usually" name="quantity" src="d15_s0" value="lacking" />
-            <character is_modifier="true" name="coloration_or_reflectance" src="d15_s0" value="translucent" />
-          </biological_entity>
-          <biological_entity id="o2502" name="filament" name_original="filaments" src="d15_s0" type="structure">
-            <character is_modifier="true" modifier="usually" name="quantity" src="d15_s0" value="lacking" />
-            <character is_modifier="true" name="coloration_or_reflectance" src="d15_s0" value="translucent" />
-          </biological_entity>
-        </statement>
-        <statement id="d15_s1">
-          <text>proximal portion of mature petioles reddish-brown or dark purple;</text>
-          <biological_entity constraint="proximal; petiole" id="o2503" name="portion" name_original="portion" src="d15_s1" type="structure">
-            <character is_modifier="false" name="coloration" src="d15_s1" value="reddish-brown" />
-            <character is_modifier="false" name="coloration" src="d15_s1" value="dark purple" />
-          </biological_entity>
-          <biological_entity id="o2504" name="petiole" name_original="petioles" src="d15_s1" type="structure">
-            <character is_modifier="true" name="life_cycle" src="d15_s1" value="mature" />
-          </biological_entity>
-          <relation from="o2503" id="r584" name="part_of" negation="false" src="d15_s1" to="o2504" />
-        </statement>
-        <statement id="d15_s2">
-          <text>indusial filaments generally inconspicuous, concealed by or slightly surpassing mature sporangia.</text>
-          <biological_entity constraint="indusial" id="o2505" name="filament" name_original="filaments" src="d15_s2" type="structure">
-            <character is_modifier="false" modifier="generally" name="prominence" src="d15_s2" value="inconspicuous" />
-            <character is_modifier="false" name="prominence" src="d15_s2" value="concealed" />
-          </biological_entity>
-          <biological_entity id="o2506" name="sporangium" name_original="sporangia" src="d15_s2" type="structure">
-            <character is_modifier="true" name="life_cycle" src="d15_s2" value="mature" />
-          </biological_entity>
-          <relation from="o2505" id="r585" modifier="slightly" name="surpassing" negation="false" src="d15_s2" to="o2506" />
-        </statement>
-      </description>
+      <description type="morphology">Pinnule margins (viewed from abaxial surface) smooth to somewhat ragged but usually lacking translucent projections or filaments; proximal portion of mature petioles reddish brown or dark purple; indusial filaments generally inconspicuous, concealed by or slightly surpassing mature sporangia.</description>
       <determination>8 Woodsia oregana</determination>
     </key_statement>
     <key_statement>
       <statement_id>8</statement_id>
-      <description type="morphology">
-        <statement id="d16_s0">
-          <text>Pinnule margins (viewed from abaxial surface) with translucent projections or filaments on teeth;</text>
-          <biological_entity constraint="pinnule" id="o2507" name="margin" name_original="margins" src="d16_s0" type="structure" />
-          <biological_entity id="o2508" name="projection" name_original="projections" src="d16_s0" type="structure">
-            <character is_modifier="true" name="coloration_or_reflectance" src="d16_s0" value="translucent" />
-          </biological_entity>
-          <biological_entity id="o2509" name="filament" name_original="filaments" src="d16_s0" type="structure" />
-          <biological_entity id="o2510" name="tooth" name_original="teeth" src="d16_s0" type="structure" />
-          <relation from="o2507" id="r586" name="with" negation="false" src="d16_s0" to="o2508" />
-          <relation from="o2507" id="r587" name="with" negation="false" src="d16_s0" to="o2509" />
-          <relation from="o2509" id="r588" name="on" negation="false" src="d16_s0" to="o2510" />
-        </statement>
-        <statement id="d16_s1">
-          <text>proximal portion of mature petioles usually light-brown or straw-colored (sometimes darker at very base);</text>
-          <biological_entity constraint="proximal; petiole" id="o2511" name="portion" name_original="portion" src="d16_s1" type="structure">
-            <character is_modifier="false" modifier="usually" name="coloration" src="d16_s1" value="light-brown" />
-            <character is_modifier="false" name="coloration" src="d16_s1" value="straw-colored" />
-          </biological_entity>
-          <biological_entity id="o2512" name="petiole" name_original="petioles" src="d16_s1" type="structure">
-            <character is_modifier="true" name="life_cycle" src="d16_s1" value="mature" />
-          </biological_entity>
-          <relation from="o2511" id="r589" name="part_of" negation="false" src="d16_s1" to="o2512" />
-        </statement>
-        <statement id="d16_s2">
-          <text>indusial filaments generally apparent, often greatly surpassing mature sporangia.</text>
-          <biological_entity constraint="indusial" id="o2513" name="filament" name_original="filaments" src="d16_s2" type="structure">
-            <character is_modifier="false" modifier="generally" name="prominence" src="d16_s2" value="apparent" />
-          </biological_entity>
-          <biological_entity id="o2514" name="sporangium" name_original="sporangia" src="d16_s2" type="structure">
-            <character is_modifier="true" name="life_cycle" src="d16_s2" value="mature" />
-          </biological_entity>
-          <relation from="o2513" id="r590" modifier="often greatly" name="surpassing" negation="false" src="d16_s2" to="o2514" />
-        </statement>
-      </description>
+      <description type="morphology">Pinnule margins (viewed from abaxial surface) with translucent projections or filaments on teeth; proximal portion of mature petioles usually light brown or straw-colored (sometimes darker at very base); indusial filaments generally apparent, often greatly surpassing mature sporangia.</description>
       <next_statement_id>9</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>9</statement_id>
-      <description type="morphology">
-        <statement id="d17_s0">
-          <text>Translucent projections on pinnule margins mostly 1-2-celled, occasionally filamentous;</text>
-          <biological_entity id="o2515" name="projection" name_original="projections" src="d17_s0" type="structure">
-            <character is_modifier="true" name="coloration_or_reflectance" src="d17_s0" value="translucent" />
-            <character is_modifier="false" modifier="occasionally" name="texture" notes="" src="d17_s0" value="filamentous" />
-          </biological_entity>
-          <biological_entity constraint="pinnule" id="o2516" name="margin" name_original="margins" src="d17_s0" type="structure">
-            <character is_modifier="false" modifier="mostly" name="architecture" src="d17_s0" value="1-2-celled" />
-          </biological_entity>
-          <relation from="o2515" id="r591" name="on" negation="false" src="d17_s0" to="o2516" />
-        </statement>
-        <statement id="d17_s1">
-          <text>spores averaging 44-52 µm;</text>
-          <biological_entity id="o2517" name="spore" name_original="spores" src="d17_s1" type="structure" />
-        </statement>
-        <statement id="d17_s2">
-          <text>largest pinnae divided into 3-7 pairs of closely spaced pinnules, pinna apices usually abruptly tapered to rounded.</text>
-          <biological_entity constraint="largest" id="o2518" name="pinna" name_original="pinnae" src="d17_s2" type="structure">
-            <character constraint="into pairs" constraintid="o2519" is_modifier="false" name="shape" src="d17_s2" value="divided" />
-          </biological_entity>
-          <biological_entity id="o2519" name="pair" name_original="pairs" src="d17_s2" type="structure">
-            <character char_type="range_value" from="3" is_modifier="true" name="quantity" src="d17_s2" to="7" />
-          </biological_entity>
-          <biological_entity id="o2520" name="pinnule" name_original="pinnules" src="d17_s2" type="structure">
-            <character is_modifier="true" modifier="closely" name="arrangement" src="d17_s2" value="spaced" />
-          </biological_entity>
-          <biological_entity constraint="pinna" id="o2521" name="apex" name_original="apices" src="d17_s2" type="structure">
-            <character is_modifier="false" modifier="usually abruptly" name="shape" notes="[duplicate value]" src="d17_s2" value="tapered" />
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d17_s2" value="rounded" />
-            <character char_type="range_value" from="usually abruptly tapered" name="shape" src="d17_s2" to="rounded" />
-          </biological_entity>
-          <relation from="o2519" id="r592" name="part_of" negation="false" src="d17_s2" to="o2520" />
-        </statement>
-      </description>
+      <description type="morphology">Translucent projections on pinnule margins mostly 1-2-celled, occasionally filamentous; spores averaging 44-52 µm; largest pinnae divided into 3-7 pairs of closely spaced pinnules, pinna apices usually abruptly tapered to rounded.</description>
       <determination>9 Woodsia neomexicana</determination>
     </key_statement>
     <key_statement>
       <statement_id>9</statement_id>
-      <description type="morphology">
-        <statement id="d18_s0">
-          <text>Translucent projections on pinnule margins mostly multicellular, often prolonged to form twisted filaments;</text>
-          <biological_entity id="o2522" name="projection" name_original="projections" src="d18_s0" type="structure">
-            <character is_modifier="true" name="coloration_or_reflectance" src="d18_s0" value="translucent" />
-            <character is_modifier="false" modifier="often" name="length" notes="" src="d18_s0" value="prolonged" />
-          </biological_entity>
-          <biological_entity constraint="pinnule" id="o2523" name="margin" name_original="margins" src="d18_s0" type="structure">
-            <character is_modifier="false" modifier="mostly" name="architecture" src="d18_s0" value="multicellular" />
-          </biological_entity>
-          <biological_entity id="o2524" name="filament" name_original="filaments" src="d18_s0" type="structure">
-            <character is_modifier="true" name="architecture" src="d18_s0" value="twisted" />
-          </biological_entity>
-          <relation from="o2522" id="r593" name="on" negation="false" src="d18_s0" to="o2523" />
-        </statement>
-        <statement id="d18_s1">
-          <text>spores averaging 37-44 µm;</text>
-          <biological_entity id="o2525" name="spore" name_original="spores" src="d18_s1" type="structure" />
-        </statement>
-        <statement id="d18_s2">
-          <text>largest pinnae with 7-18 pairs of discrete, widely spaced pinnules, pinna apices often attenuate to narrowly acute.</text>
-          <biological_entity constraint="largest" id="o2526" name="pinna" name_original="pinnae" src="d18_s2" type="structure" />
-          <biological_entity id="o2527" name="pair" name_original="pairs" src="d18_s2" type="structure">
-            <character char_type="range_value" from="7" is_modifier="true" name="quantity" src="d18_s2" to="18" />
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d18_s2" value="attenuate" />
-            <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d18_s2" value="acute" />
-            <character char_type="range_value" from="attenuate" name="shape" src="d18_s2" to="narrowly acute" />
-          </biological_entity>
-          <biological_entity id="o2528" name="pinnule" name_original="pinnules" src="d18_s2" type="structure">
-            <character is_modifier="true" name="fusion" src="d18_s2" value="discrete" />
-            <character is_modifier="true" modifier="widely" name="arrangement" src="d18_s2" value="spaced" />
-          </biological_entity>
-          <biological_entity id="o2529" name="apex" name_original="apices" src="d18_s2" type="structure">
-            <character is_modifier="true" name="fusion" src="d18_s2" value="discrete" />
-            <character is_modifier="true" modifier="widely" name="arrangement" src="d18_s2" value="spaced" />
-          </biological_entity>
-          <biological_entity constraint="pinna" id="o2530" name="pinnule" name_original="pinnules" src="d18_s2" type="structure" />
-          <relation from="o2526" id="r594" name="with" negation="false" src="d18_s2" to="o2527" />
-          <relation from="o2527" id="r595" name="part_of" negation="false" src="d18_s2" to="o2528" />
-          <relation from="o2527" id="r596" name="part_of" negation="false" src="d18_s2" to="o2529" />
-        </statement>
-      </description>
+      <description type="morphology">Translucent projections on pinnule margins mostly multicellular, often prolonged to form twisted filaments; spores averaging 37-44 µm; largest pinnae with 7-18 pairs of discrete, widely spaced pinnules, pinna apices often attenuate to narrowly acute.</description>
       <determination>10 Woodsia phillipsii</determination>
     </key_statement>
   </key>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_70_d11_s0">
-      <text>Indusia completely surrounding receptacle and composed of filaments or scalelike segments arranged in cuplike fashion around sorus;</text>
-      <biological_entity id="from_key_V2_70_o19973" name="indusium" name_original="indusia" src="d11_s0" type="structure" />
-      <biological_entity id="from_key_V2_70_o19974" name="receptacle" name_original="receptacle" src="d11_s0" type="structure">
-        <character is_modifier="true" modifier="completely" name="position_relational" src="d11_s0" value="surrounding" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_70_o19975" name="filament" name_original="filaments" src="d11_s0" type="structure" />
-      <biological_entity id="from_key_V2_70_o19976" name="segment" name_original="segments" src="d11_s0" type="structure">
-        <character is_modifier="true" name="shape" src="d11_s0" value="scalelike" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_70_o19977" name="sorus" name_original="sorus" src="d11_s0" type="structure">
-        <character is_modifier="true" name="shape" src="d11_s0" value="scalelike" />
-        <character is_modifier="true" name="arrangement" src="d11_s0" value="arranged" />
-        <character is_modifier="true" name="shape" src="d11_s0" value="cuplike" />
-      </biological_entity>
-      <relation from="from_key_V2_70_o19974" id="from_key_V2_70_r4660" name="composed of" negation="false" src="d11_s0" to="from_key_V2_70_o19975" />
-      <relation from="from_key_V2_70_o19974" id="from_key_V2_70_r4661" name="composed of" negation="false" src="d11_s0" to="from_key_V2_70_o19976" />
-      <relation from="from_key_V2_70_o19974" id="from_key_V2_70_r4662" name="composed of" negation="false" src="d11_s0" to="from_key_V2_70_o19977" />
-    </statement>
-    <statement id="from_key_V2_70_d11_s1">
-      <text>petiole base with 2 vascular-bundles;</text>
-      <biological_entity constraint="petiole" id="from_key_V2_70_o19978" name="base" name_original="base" src="d11_s1" type="structure" />
-      <biological_entity id="from_key_V2_70_o19979" name="vascular-bundle" name_original="vascular-bundles" src="d11_s1" type="structure">
-        <character is_modifier="true" name="count" src="d11_s1" value="2" />
-      </biological_entity>
-      <relation from="from_key_V2_70_o19978" id="from_key_V2_70_r4663" name="with" negation="false" src="d11_s1" to="from_key_V2_70_o19979" />
-    </statement>
-    <statement id="from_key_V2_70_d11_s2">
-      <text>scales absent on costae abaxially.</text>
-      <biological_entity id="from_key_V2_70_o19980" name="scale" name_original="scales" src="d11_s2" type="structure">
-        <character constraint="on costae" constraintid="o19981" is_modifier="false" name="count" src="d11_s2" value="absent" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_70_o19981" name="costa" name_original="costae" src="d11_s2" type="structure" />
-    </statement>
-    <statement id="from_key_V2_70_d10_s0">
-      <text>Stolons absent;</text>
-      <biological_entity id="from_key_V2_70_o19967" name="stolon" name_original="stolons" src="d10_s0" type="structure">
-        <character is_modifier="false" name="count" src="d10_s0" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_70_d10_s1">
-      <text>blades variously divided;</text>
-      <biological_entity id="from_key_V2_70_o19968" name="blade" name_original="blades" src="d10_s1" type="structure">
-        <character is_modifier="false" modifier="variously" name="shape" src="d10_s1" value="divided" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_70_d10_s2">
-      <text>pinnae not articulate to rachis, or rarely proximal pinnae weakly articulate but not deciduous;</text>
-      <biological_entity id="from_key_V2_70_o19969" name="pinna" name_original="pinnae" src="d10_s2" type="structure">
-        <character constraint="to rachis" constraintid="o19970" is_modifier="false" modifier="not" name="architecture" src="d10_s2" value="articulate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_70_o19970" name="rachis" name_original="rachis" src="d10_s2" type="structure" />
-      <biological_entity id="from_key_V2_70_o19971" name="pinna" name_original="pinnae" src="d10_s2" type="structure">
-        <character is_modifier="true" modifier="rarely" name="position" src="d10_s2" value="proximal" />
-        <character is_modifier="false" modifier="weakly" name="architecture" src="d10_s2" value="articulate" />
-        <character is_modifier="false" modifier="not" name="duration" src="d10_s2" value="deciduous" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_70_d10_s3">
-      <text>indusia various or absent.</text>
-      <biological_entity id="from_key_V2_70_o19972" name="indusium" name_original="indusia" src="d10_s3" type="structure">
-        <character is_modifier="false" name="variability" src="d10_s3" value="various" />
-        <character is_modifier="false" name="count" src="d10_s3" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_70_d2_s0">
-      <text>Leaves monomorphic, fertile and sterile similar in size and dissection, occasionally with somewhat contracted fertile pinnae on same leaf as sterile pinnae (as in Polystichum acrostichoides).</text>
-      <biological_entity id="from_key_V2_70_o19921" name="leaf" name_original="leaves" src="d2_s0" type="structure">
-        <character is_modifier="false" name="architecture" src="d2_s0" value="monomorphic" />
-        <character is_modifier="false" name="reproduction" src="d2_s0" value="fertile" />
-        <character constraint="in dissection" constraintid="o19922" is_modifier="false" name="reproduction" src="d2_s0" value="sterile" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_70_o19922" name="dissection" name_original="dissection" src="d2_s0" type="structure">
-        <character is_modifier="true" name="character" src="d2_s0" value="size" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_70_o19923" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
-        <character is_modifier="true" modifier="somewhat" name="condition_or_size" src="d2_s0" value="contracted" />
-        <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_70_o19924" name="leaf" name_original="leaf" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_70_o19925" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d2_s0" value="sterile" />
-      </biological_entity>
-      <relation from="from_key_V2_70_o19921" id="from_key_V2_70_r4646" modifier="occasionally" name="with" negation="false" src="d2_s0" to="from_key_V2_70_o19923" />
-      <relation from="from_key_V2_70_o19923" id="from_key_V2_70_r4647" name="on" negation="false" src="d2_s0" to="from_key_V2_70_o19924" />
-      <relation from="from_key_V2_70_o19924" id="from_key_V2_70_r4648" name="as" negation="false" src="d2_s0" to="from_key_V2_70_o19925" />
-    </statement>
-  </description>
 </bio:treatment>

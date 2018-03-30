@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Ching ex Pichi Sermolli" date="unknown" rank="family">thelypteridaceae</taxon_name>
-    <taxon_name authority="Schmidel" date="1763" rank="genus">thelypteris</taxon_name>
-    <taxon_name authority="(Kunze) A. R. Smith" date="1973" rank="subgenus">Amauropelta</taxon_name>
+    <taxon_name rank="family" authority="Ching ex Pichi Sermolli" date="unknown">thelypteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Schmidel" date="1763">thelypteris</taxon_name>
+    <taxon_name rank="subgenus" authority="(Kunze) A. R. Smith" date="1973">Amauropelta</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>63: 121. 1973</place_in_publication>
@@ -26,51 +18,14 @@
     <taxon_hierarchy>family thelypteridaceae;genus thelypteris;subgenus Amauropelta</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="Kunze" date="unknown" rank="subgenus">Amauropelta</taxon_name>
+    <taxon_name rank="subgenus" authority="Kunze" date="unknown">Amauropelta</taxon_name>
     <place_of_publication>
       <publication_title>Farrnkräuter</publication_title>
       <place_in_publication>1: 109. 1843</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>subgenus Amauropelta;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Distinguished from other subgenera by the combination of evergreen leaves, suberect to erect stems hidden by old petiole bases, veins meeting margin above the sinuses, and the generally greatly reduced proximal pinnae.</text>
-      <biological_entity id="o20579" name="whole_organism" name_original="" src="d0_s0" type="structure">
-        <character constraint="from subgenera" constraintid="o20580" is_modifier="false" name="prominence" src="d0_s0" value="distinguished" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s0" value="suberect" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s0" value="erect" />
-        <character char_type="range_value" from="suberect" name="orientation" notes="" src="d0_s0" to="erect" />
-      </biological_entity>
-      <biological_entity id="o20580" name="subgenus" name_original="subgenera" src="d0_s0" type="structure" />
-      <biological_entity id="o20581" name="combination" name_original="combination" src="d0_s0" type="structure" />
-      <biological_entity id="o20582" name="leaf" name_original="leaves" src="d0_s0" type="structure">
-        <character is_modifier="true" name="duration" src="d0_s0" value="evergreen" />
-      </biological_entity>
-      <biological_entity id="o20583" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character constraint="by petiole bases" constraintid="o20584" is_modifier="false" name="prominence" src="d0_s0" value="hidden" />
-      </biological_entity>
-      <biological_entity constraint="petiole" id="o20584" name="base" name_original="bases" src="d0_s0" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d0_s0" value="old" />
-      </biological_entity>
-      <biological_entity id="o20586" name="margin" name_original="margin" src="d0_s0" type="structure" />
-      <biological_entity id="o20587" name="sinuse" name_original="sinuses" src="d0_s0" type="structure" />
-      <biological_entity constraint="proximal" id="o20588" name="pinna" name_original="pinnae" src="d0_s0" type="structure">
-        <character is_modifier="true" modifier="generally greatly" name="size" src="d0_s0" value="reduced" />
-      </biological_entity>
-      <relation from="o20580" id="r4807" name="by" negation="false" src="d0_s0" to="o20581" />
-      <relation from="o20581" id="r4808" name="part_of" negation="false" src="d0_s0" to="o20582" />
-      <relation from="o20585" id="r4809" name="meeting" negation="false" src="d0_s0" to="o20586" />
-      <relation from="o20585" id="r4810" name="above" negation="false" src="d0_s0" to="o20587" />
-    </statement>
-    <statement id="d0_s1">
-      <text>x = 29.</text>
-      <biological_entity id="o20585" name="vein" name_original="veins" src="d0_s0" type="structure" />
-      <biological_entity constraint="x" id="o20589" name="chromosome" name_original="" src="d0_s1" type="structure">
-        <character name="quantity" src="d0_s1" value="29" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Distinguished from other subgenera by the combination of evergreen leaves, suberect to erect stems hidden by old petiole bases, veins meeting margin above the sinuses, and the generally greatly reduced proximal pinnae.  x  = 29.</description>
   <number>1b</number>
   <discussion>Thelypteris resinifera is included in the genus Amauropelta by some workers.</discussion>
 </bio:treatment>

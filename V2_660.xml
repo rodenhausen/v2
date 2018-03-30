@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Mirbel" date="unknown" rank="family">lycopodiaceae</taxon_name>
-    <taxon_name authority="Holub" date="1964" rank="genus">Phlegmariurus</taxon_name>
+    <taxon_name rank="family" authority="Mirbel" date="unknown">lycopodiaceae</taxon_name>
+    <taxon_name rank="genus" authority="Holub" date="1964">Phlegmariurus</taxon_name>
     <place_of_publication>
       <publication_title>Preslia</publication_title>
       <place_in_publication>36: 17, 21. 1964</place_in_publication>
@@ -25,216 +17,10 @@
     <taxon_hierarchy>family lycopodiaceae;genus Phlegmariurus</taxon_hierarchy>
     <other_info_on_name type="etymology">[based on epithet of Lycopodium phlegmaria ; Greek phlegma, flame, and oura, tail; in reference to the tasslelike fertile portions of the plant]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants epiphytic or terrestrial, pendent [erect].</text>
-      <biological_entity id="o18212" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="habitat" src="d0_s0" value="epiphytic" />
-        <character is_modifier="false" name="habitat" src="d0_s0" value="terrestrial" />
-        <character is_modifier="false" name="orientation" src="d0_s0" value="pendent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Roots produced in distal parts of shoots, migrating downward in cortex to emerge in substrate.</text>
-      <biological_entity id="o18213" name="root" name_original="roots" src="d0_s1" type="structure" />
-      <biological_entity constraint="distal" id="o18214" name="part" name_original="parts" src="d0_s1" type="structure" />
-      <biological_entity constraint="distal" id="o18215" name="shoot" name_original="shoots" src="d0_s1" type="structure" />
-      <biological_entity id="o18216" name="cortex" name_original="cortex" src="d0_s1" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s1" value="downward" />
-      </biological_entity>
-      <biological_entity id="o18217" name="substrate" name_original="substrate" src="d0_s1" type="structure" />
-      <relation from="o18213" id="r4234" name="produced in" negation="false" src="d0_s1" to="o18214" />
-      <relation from="o18213" id="r4235" name="produced in" negation="false" src="d0_s1" to="o18215" />
-      <relation from="o18213" id="r4236" name="migrating" negation="false" src="d0_s1" to="o18216" />
-      <relation from="o18213" id="r4237" name="emerge in" negation="false" src="d0_s1" to="o18217" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Horizontal stems absent [present].</text>
-      <biological_entity id="o18218" name="stem" name_original="stems" src="d0_s2" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s2" value="horizontal" />
-        <character is_modifier="false" name="presence" src="d0_s2" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Shoots clustered, round in cross-section, dichotomously branching, 1.5-5 mm diam.</text>
-      <biological_entity id="o18219" name="shoot" name_original="shoots" src="d0_s3" type="structure">
-        <character is_modifier="false" name="arrangement_or_growth_form" src="d0_s3" value="clustered" />
-        <character constraint="in cross-section" constraintid="o18220" is_modifier="false" name="shape" src="d0_s3" value="round" />
-        <character is_modifier="false" modifier="dichotomously" name="architecture" notes="" src="d0_s3" value="branching" />
-        <character char_type="range_value" from="1.5" from_unit="mm" name="diameter" src="d0_s3" to="5" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o18220" name="cross-section" name_original="cross-section" src="d0_s3" type="structure" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Leaves not in distinct ranks [ranked], imbricate or not, monomorphic (or sporophylls sometimes differentiated), appressed, ascending to spreading, linear to subulate, margins mostly entire [denticulate].</text>
-      <biological_entity id="o18221" name="leaf" name_original="leaves" src="d0_s4" type="structure">
-        <character is_modifier="false" name="arrangement" notes="" src="d0_s4" value="imbricate" />
-        <character name="arrangement" src="d0_s4" value="not" />
-        <character is_modifier="false" name="architecture" src="d0_s4" value="monomorphic" />
-        <character is_modifier="false" name="orientation" src="d0_s4" value="appressed" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s4" value="ascending" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s4" value="spreading" />
-        <character char_type="range_value" from="ascending" name="orientation" src="d0_s4" to="spreading" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="linear" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s4" value="subulate" />
-        <character char_type="range_value" from="linear" name="shape" src="d0_s4" to="subulate" />
-      </biological_entity>
-      <biological_entity id="o18222" name="rank" name_original="ranks" src="d0_s4" type="structure">
-        <character is_modifier="true" name="fusion" src="d0_s4" value="distinct" />
-      </biological_entity>
-      <biological_entity id="o18223" name="margin" name_original="margins" src="d0_s4" type="structure">
-        <character is_modifier="false" modifier="mostly" name="architecture_or_shape" src="d0_s4" value="entire" />
-      </biological_entity>
-      <relation from="o18221" id="r4238" name="in" negation="false" src="d0_s4" to="o18222" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Gemmiferous branchlets and gemmae absent.</text>
-      <biological_entity id="o18224" name="branchlet" name_original="branchlets" src="d0_s5" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s5" value="gemmiferous" />
-        <character is_modifier="false" name="presence" src="d0_s5" value="absent" />
-      </biological_entity>
-      <biological_entity id="o18225" name="gemma" name_original="gemmae" src="d0_s5" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s5" value="gemmiferous" />
-        <character is_modifier="false" name="presence" src="d0_s5" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Sporangia reniform, borne individually in axils of undifferentiated or slightly differentiated sporophylls [differentiated sporophylls in strobili].</text>
-      <biological_entity id="o18226" name="sporangium" name_original="sporangia" src="d0_s6" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s6" value="reniform" />
-      </biological_entity>
-      <biological_entity id="o18227" name="axil" name_original="axils" src="d0_s6" type="structure" />
-      <biological_entity id="o18228" name="sporophyll" name_original="sporophylls" src="d0_s6" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s6" value="undifferentiated" />
-        <character is_modifier="true" modifier="slightly" name="variability" src="d0_s6" value="differentiated" />
-      </biological_entity>
-      <relation from="o18226" id="r4239" name="borne" negation="false" src="d0_s6" to="o18227" />
-      <relation from="o18226" id="r4240" name="part_of" negation="false" src="d0_s6" to="o18228" />
-    </statement>
-    <statement id="d0_s7">
-      <text>Spores pitted to small-grooved, sides at equator convex and angles acute.</text>
-      <biological_entity id="o18229" name="spore" name_original="spores" src="d0_s7" type="structure">
-        <character is_modifier="false" name="relief" src="d0_s7" value="pitted" />
-        <character is_modifier="false" name="architecture" src="d0_s7" value="small-grooved" />
-      </biological_entity>
-      <biological_entity id="o18230" name="side" name_original="sides" src="d0_s7" type="structure" />
-      <biological_entity id="o18231" name="angle" name_original="angles" src="d0_s7" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s7" value="convex" />
-        <character is_modifier="false" name="shape" src="d0_s7" value="acute" />
-      </biological_entity>
-      <relation from="o18230" id="r4241" name="at" negation="false" src="d0_s7" to="o18231" />
-    </statement>
-    <statement id="d0_s8">
-      <text>Gametophytes nonphotosynthetic, mycorrhizal, mainly growing buried in humus on trees, branched, paraphysate with uniseriate hairs;</text>
-      <biological_entity id="o18232" name="gametophyte" name_original="gametophytes" src="d0_s8" type="structure">
-        <character is_modifier="false" name="structure_in_adjective_form" src="d0_s8" value="mycorrhizal" />
-        <character is_modifier="false" name="architecture" notes="" src="d0_s8" value="branched" />
-      </biological_entity>
-      <biological_entity id="o18233" name="humus" name_original="humus" src="d0_s8" type="structure">
-        <character is_modifier="true" name="location" src="d0_s8" value="buried" />
-      </biological_entity>
-      <biological_entity id="o18234" name="tree" name_original="trees" src="d0_s8" type="structure" />
-      <biological_entity id="o18235" name="hair" name_original="hairs" src="d0_s8" type="structure">
-        <character is_modifier="true" name="architecture_or_arrangement" src="d0_s8" value="uniseriate" />
-      </biological_entity>
-      <relation from="o18232" id="r4242" modifier="mainly" name="growing" negation="false" src="d0_s8" to="o18233" />
-      <relation from="o18232" id="r4243" modifier="mainly" name="on" negation="false" src="d0_s8" to="o18234" />
-      <relation from="o18232" id="r4244" name="with" negation="false" src="d0_s8" to="o18235" />
-    </statement>
-    <statement id="d0_s9">
-      <text>ring meristem absent.</text>
-    </statement>
-    <statement id="d0_s10">
-      <text>x = 68.</text>
-      <biological_entity constraint="ring" id="o18236" name="meristem" name_original="meristem" src="d0_s9" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s9" value="absent" />
-      </biological_entity>
-      <biological_entity constraint="x" id="o18237" name="chromosome" name_original="" src="d0_s10" type="structure">
-        <character name="quantity" src="d0_s10" value="68" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>in tropical areas worldwide.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="in tropical areas worldwide" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  epiphytic or terrestrial, pendent [erect].  Roots  produced in distal parts of shoots, migrating downward in cortex to emerge in substrate.  Horizontal stems  absent [present].  Shoots  clustered, round in cross section, dichotomously branching, 1.5--5 mm diam.  Leaves  not in distinct ranks [ranked], imbricate or not, monomorphic (or sporophylls sometimes differentiated), appressed, ascending to spreading, linear to subulate, margins mostly entire [denticulate].  Gemmiferous branchlets and gemmae  absent.  Sporangia  reniform, borne individually in axils of undifferentiated or slightly differentiated sporophylls [differentiated sporophylls in strobili].  Spores  pitted to small-grooved, sides at equator convex and angles acute.  Gametophytes  nonphotosynthetic, mycorrhizal, mainly growing buried in humus on trees, branched, paraphysate with uniseriate hairs; ring meristem absent.  x  = 68.</description>
+  <description type="distribution">in tropical areas worldwide.</description>
   <number>1</number>
   <other_name type="common_name">Hanging fir-moss</other_name>
   <discussion>As construed here, Phlegmariurus is very large and diverse. Many groups have been tentatively suggested in this genus (B. Øllgaard 1987). Some of these ultimately may be recognized as subgenera or even genera.</discussion>
   <discussion>Species over 300 (1 in the flora):</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_781_d3_s0">
-      <text>Leafy gemmae and gemmiferous branchlets absent;</text>
-      <biological_entity id="from_key_V2_781_o22694" name="gemma" name_original="gemmae" src="d3_s0" type="structure">
-        <character is_modifier="true" name="architecture" src="d3_s0" value="leafy" />
-        <character is_modifier="false" name="count" src="d3_s0" value="absent" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_781_o22695" name="branchlet" name_original="branchlets" src="d3_s0" type="structure">
-        <character is_modifier="true" name="architecture" src="d3_s0" value="leafy" />
-        <character is_modifier="true" name="architecture" src="d3_s0" value="gemmiferous" />
-        <character is_modifier="false" name="count" src="d3_s0" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_781_d3_s1">
-      <text>spore sides at equator convex with acute to blunt angles;</text>
-      <biological_entity id="from_key_V2_781_o22697" name="angle" name_original="angles" src="d3_s1" type="structure">
-        <character is_modifier="true" name="shape" notes="[duplicate value]" src="d3_s1" value="acute" />
-        <character is_modifier="true" name="shape" notes="[duplicate value]" src="d3_s1" value="blunt" />
-        <character char_type="range_value" from="acute" is_modifier="true" name="shape" src="d3_s1" to="blunt" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_781_d3_s2">
-      <text>mainly tropical, epiphytic.</text>
-      <biological_entity constraint="spore" id="from_key_V2_781_o22696" name="side" name_original="sides" src="d3_s1" type="structure">
-        <character constraint="with angles" constraintid="o22697" is_modifier="false" name="shape" src="d3_s1" value="convex" />
-        <character is_modifier="false" modifier="mainly" name="location" src="d3_s2" value="tropical" />
-        <character is_modifier="false" name="habitat" src="d3_s2" value="epiphytic" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_781_d1_s0">
-      <text>Horizontal stems absent;</text>
-      <biological_entity id="from_key_V2_781_o22675" name="stem" name_original="stems" src="d1_s0" type="structure">
-        <character is_modifier="true" name="orientation" src="d1_s0" value="horizontal" />
-        <character is_modifier="false" name="count" src="d1_s0" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_781_d1_s1">
-      <text>upright parts of shoots clustered;</text>
-      <biological_entity id="from_key_V2_781_o22676" name="part" name_original="parts" src="d1_s1" type="structure">
-        <character is_modifier="true" name="orientation" src="d1_s1" value="upright" />
-        <character is_modifier="false" name="arrangement_or_growth_form" src="d1_s1" value="clustered" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_781_o22677" name="shoot" name_original="shoots" src="d1_s1" type="structure" />
-      <relation from="from_key_V2_781_o22676" id="from_key_V2_781_r5309" name="part_of" negation="false" src="d1_s1" to="from_key_V2_781_o22677" />
-    </statement>
-    <statement id="from_key_V2_781_d1_s2">
-      <text>roots traveling in stem cortex some distance before emerging;</text>
-      <biological_entity id="from_key_V2_781_o22678" name="root" name_original="roots" src="d1_s2" type="structure" />
-      <biological_entity constraint="stem" id="from_key_V2_781_o22679" name="cortex" name_original="cortex" src="d1_s2" type="structure" />
-      <biological_entity id="from_key_V2_781_o22680" name="emerging" name_original="emerging" src="d1_s2" type="structure" />
-      <relation from="from_key_V2_781_o22678" id="from_key_V2_781_r5310" name="traveling in" negation="false" src="d1_s2" to="from_key_V2_781_o22679" />
-      <relation from="from_key_V2_781_o22679" id="from_key_V2_781_r5311" name="before" negation="false" src="d1_s2" to="from_key_V2_781_o22680" />
-    </statement>
-    <statement id="from_key_V2_781_d1_s3">
-      <text>sporangia borne in axils of unmodified leaves;</text>
-      <biological_entity id="from_key_V2_781_o22681" name="sporangium" name_original="sporangia" src="d1_s3" type="structure" />
-      <biological_entity id="from_key_V2_781_o22682" name="axil" name_original="axils" src="d1_s3" type="structure" />
-      <biological_entity id="from_key_V2_781_o22683" name="leaf" name_original="leaves" src="d1_s3" type="structure">
-        <character is_modifier="true" name="development" src="d1_s3" value="unmodified" />
-      </biological_entity>
-      <relation from="from_key_V2_781_o22681" id="from_key_V2_781_r5312" name="borne in" negation="false" src="d1_s3" to="from_key_V2_781_o22682" />
-      <relation from="from_key_V2_781_o22681" id="from_key_V2_781_r5313" name="borne in" negation="false" src="d1_s3" to="from_key_V2_781_o22683" />
-    </statement>
-    <statement id="from_key_V2_781_d1_s4">
-      <text>spores pitted to small-grooved.</text>
-      <biological_entity id="from_key_V2_781_o22684" name="spore" name_original="spores" src="d1_s4" type="structure">
-        <character is_modifier="false" name="relief" src="d1_s4" value="pitted" />
-        <character is_modifier="false" name="architecture" src="d1_s4" value="small-grooved" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

@@ -1,254 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Lindley" date="unknown" rank="family">pinaceae</taxon_name>
-    <taxon_name authority="(Endlicher) Carrière" date="unknown" rank="genus">tsuga</taxon_name>
-    <taxon_name authority="(Linnaeus) Carrière" date="1855" rank="species">canadensis</taxon_name>
+    <taxon_name rank="family" authority="Lindley" date="unknown">pinaceae</taxon_name>
+    <taxon_name rank="genus" authority="(Endlicher) Carrière" date="unknown">tsuga</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) Carrière" date="1855">canadensis</taxon_name>
     <place_of_publication>
       <place_in_publication>189. 1855</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family pinaceae;genus tsuga;species canadensis</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Pinus</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="species">canadensis</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Pinus</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="unknown">canadensis</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl. ed.</publication_title>
       <place_in_publication>2, 2: 1471. 1763</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Pinus;species canadensis;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Trees to 30m;</text>
-      <biological_entity id="o20623" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="some_measurement" src="d0_s0" to="30" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>trunk to 1.5m diam.;</text>
-      <biological_entity id="o20624" name="trunk" name_original="trunk" src="d0_s1" type="structure">
-        <character char_type="range_value" from="0" from_unit="m" name="diameter" src="d0_s1" to="1.5" to_unit="m" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>crown broadly conic.</text>
-      <biological_entity id="o20625" name="crown" name_original="crown" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s2" value="conic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Bark brownish, scaly and fissured.</text>
-      <biological_entity id="o20626" name="bark" name_original="bark" src="d0_s3" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s3" value="brownish" />
-        <character is_modifier="false" name="architecture_or_pubescence" src="d0_s3" value="scaly" />
-        <character is_modifier="false" name="relief" src="d0_s3" value="fissured" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Twigs yellowbrown, densely pubescent.</text>
-      <biological_entity id="o20627" name="twig" name_original="twigs" src="d0_s4" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s4" value="yellowbrown" />
-        <character is_modifier="false" modifier="densely" name="pubescence" src="d0_s4" value="pubescent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Buds ovoid, 1.5-2.5mm.</text>
-      <biological_entity id="o20628" name="bud" name_original="buds" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="ovoid" />
-        <character char_type="range_value" from="1.5" from_unit="mm" name="some_measurement" src="d0_s5" to="2.5" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Leaves (5-) 15-20 (-25) mm, mostly appearing 2-ranked, flattened;</text>
-      <biological_entity id="o20629" name="leaf" name_original="leaves" src="d0_s6" type="structure">
-        <character char_type="range_value" from="5" from_unit="mm" name="atypical_some_measurement" src="d0_s6" to="15" to_inclusive="false" to_unit="mm" />
-        <character char_type="range_value" from="20" from_inclusive="false" from_unit="mm" name="atypical_some_measurement" src="d0_s6" to="25" to_unit="mm" />
-        <character char_type="range_value" from="15" from_unit="mm" name="some_measurement" src="d0_s6" to="20" to_unit="mm" />
-        <character is_modifier="false" modifier="mostly" name="arrangement" src="d0_s6" value="2-ranked" />
-        <character is_modifier="false" name="shape" src="d0_s6" value="flattened" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>abaxial surface glaucous, with 2 broad, conspicuous stomatal bands, adaxial surface shiny green (yellow-green);</text>
-      <biological_entity constraint="abaxial" id="o20630" name="surface" name_original="surface" src="d0_s7" type="structure">
-        <character is_modifier="false" name="pubescence" src="d0_s7" value="glaucous" />
-      </biological_entity>
-      <biological_entity id="o20631" name="stomatal" name_original="stomatal" src="d0_s7" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s7" value="2" />
-        <character is_modifier="true" name="width" src="d0_s7" value="broad" />
-        <character is_modifier="true" name="prominence" src="d0_s7" value="conspicuous" />
-      </biological_entity>
-      <biological_entity id="o20632" name="band" name_original="bands" src="d0_s7" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s7" value="2" />
-        <character is_modifier="true" name="width" src="d0_s7" value="broad" />
-        <character is_modifier="true" name="prominence" src="d0_s7" value="conspicuous" />
-      </biological_entity>
-      <biological_entity constraint="adaxial" id="o20633" name="surface" name_original="surface" src="d0_s7" type="structure">
-        <character is_modifier="false" name="reflectance" src="d0_s7" value="shiny" />
-        <character is_modifier="false" name="coloration" src="d0_s7" value="green" />
-      </biological_entity>
-      <relation from="o20630" id="r4817" name="with" negation="false" src="d0_s7" to="o20631" />
-      <relation from="o20630" id="r4818" name="with" negation="false" src="d0_s7" to="o20632" />
-    </statement>
-    <statement id="d0_s8">
-      <text>margins minutely dentate, especially toward apex.</text>
-      <biological_entity id="o20634" name="margin" name_original="margins" src="d0_s8" type="structure">
-        <character is_modifier="false" modifier="minutely" name="architecture_or_shape" src="d0_s8" value="dentate" />
-      </biological_entity>
-      <biological_entity id="o20635" name="apex" name_original="apex" src="d0_s8" type="structure" />
-      <relation from="o20634" id="r4819" modifier="especially" name="toward" negation="false" src="d0_s8" to="o20635" />
-    </statement>
-    <statement id="d0_s9">
-      <text>Seed-cones ovoid, 1.5-2.5 × 1-1.5cm;</text>
-      <biological_entity id="o20636" name="seed-cone" name_original="seed-cones" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s9" value="ovoid" />
-        <character char_type="range_value" from="1.5" from_unit="cm" name="length" src="d0_s9" to="2.5" to_unit="cm" />
-        <character char_type="range_value" from="1" from_unit="cm" name="width" src="d0_s9" to="1.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>scales ovate to cuneate, 8-12 × 7-10mm, apex ± round, often projected outward.</text>
-      <biological_entity id="o20637" name="scale" name_original="scales" src="d0_s10" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s10" value="ovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s10" value="cuneate" />
-        <character char_type="range_value" from="ovate" name="shape" src="d0_s10" to="cuneate" />
-        <character char_type="range_value" from="8" from_unit="mm" name="length" src="d0_s10" to="12" to_unit="mm" />
-        <character char_type="range_value" from="7" from_unit="mm" name="width" src="d0_s10" to="10" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>2 n =24.</text>
-      <biological_entity id="o20638" name="apex" name_original="apex" src="d0_s10" type="structure">
-        <character is_modifier="false" modifier="more or less" name="shape" src="d0_s10" value="round" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o20639" name="chromosome" name_original="" src="d0_s11" type="structure">
-        <character name="quantity" src="d0_s11" value="24" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Moist rocky ridges, ravines, and hillsides;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="moist rocky ridges" />
-        <character name="habitat" value="ravines" />
-        <character name="habitat" value="and hillsides ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>600--1800m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1800" to_unit="m" from="600" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>N.B., N.S., Ont., P.E.I., Que.; Ala., Conn., Del., Ga., Ind., Ky., Maine, Md., Mass., Mich., Minn., N.H., N.J., N.Y., N.C., Ohio, Pa., R.I., S.C., Tenn., Vt., Va., W.Va., Wis.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="P.E.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Trees  to 30m; trunk to 1.5m diam.; crown broadly conic.  Bark  brownish, scaly and fissured.  Twigs  yellow-brown, densely pubescent.  Buds  ovoid, 1.5--2.5mm.  Leaves  (5--)15--20(--25)mm, mostly appearing 2-ranked, flattened; abaxial surface glaucous, with 2 broad, conspicuous stomatal bands, adaxial surface shiny green (yellow-green); margins minutely dentate, especially toward apex.  Seed cones  ovoid, 1.5--2.5 × 1--1.5cm; scales ovate to cuneate, 8--12 × 7--10mm, apex ± round, often projected outward. 2 n =24.</description>
+  <description type="habitat">Moist rocky ridges, ravines, and hillsides;</description>
+  <description type="elevation">600--1800m;</description>
+  <description type="distribution">N.B., N.S., Ont., P.E.I., Que.; Ala., Conn., Del., Ga., Ind., Ky., Maine, Md., Mass., Mich., Minn., N.H., N.J., N.Y., N.C., Ohio, Pa., R.I., S.C., Tenn., Vt., Va., W.Va., Wis.</description>
   <number>3</number>
   <other_name type="common_name">Eastern hemlock</other_name>
   <other_name type="common_name">pruche du Canada</other_name>
   <discussion>Numerous cultivars of Tsuga canadensis have been developed, including compact shrubs, dwarfs, and graceful trees. Wood of the species tends to be brittle and inferior to that of the other North American hemlocks.</discussion>
   <discussion>Eastern hemlock ( Tsuga canadensis ) is the state tree of Pennsylvania.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_647_d6_s0">
-      <text>Buds 1.5-2.5 mm;</text>
-      <biological_entity id="from_key_V2_647_o17890" name="bud" name_original="buds" src="d6_s0" type="structure">
-        <character char_type="range_value" from="1.5" from_unit="mm" name="some_measurement" src="d6_s0" to="2.5" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_647_d6_s1">
-      <text>crown broadly conic;</text>
-    </statement>
-    <statement id="from_key_V2_647_d6_s2">
-      <text>tree of e North America.</text>
-      <biological_entity id="from_key_V2_647_o17891" name="crown" name_original="crown" src="d6_s1" type="structure">
-        <character is_modifier="false" modifier="broadly" name="shape" src="d6_s1" value="conic" />
-        <character constraint="of e north america" is_modifier="false" name="growth_form" src="d6_s2" value="tree" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_647_d2_s0">
-      <text>Leaves mostly appearing 2-ranked, bearing stomates on abaxial surface only;</text>
-      <biological_entity id="from_key_V2_647_o17869" name="leaf" name_original="leaves" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_647_o17870" name="bearing" name_original="bearing" src="d2_s0" type="structure">
-        <character is_modifier="true" name="arrangement" src="d2_s0" value="2-ranked" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_647_o17871" name="stomate" name_original="stomates" src="d2_s0" type="structure">
-        <character is_modifier="true" name="arrangement" src="d2_s0" value="2-ranked" />
-      </biological_entity>
-      <biological_entity constraint="abaxial" id="from_key_V2_647_o17872" name="surface" name_original="surface" src="d2_s0" type="structure" />
-      <relation from="from_key_V2_647_o17869" id="from_key_V2_647_r4149" name="appearing" negation="false" src="d2_s0" to="from_key_V2_647_o17870" />
-      <relation from="from_key_V2_647_o17869" id="from_key_V2_647_r4150" name="appearing" negation="false" src="d2_s0" to="from_key_V2_647_o17871" />
-      <relation from="from_key_V2_647_o17869" id="from_key_V2_647_r4151" name="on" negation="false" src="d2_s0" to="from_key_V2_647_o17872" />
-    </statement>
-    <statement id="from_key_V2_647_d2_s1">
-      <text>seed-cones ovoid, (1-) 1.5-2.5 (-3) cm;</text>
-      <biological_entity id="from_key_V2_647_o17873" name="seed-cone" name_original="seed-cones" src="d2_s1" type="structure">
-        <character is_modifier="false" name="shape" src="d2_s1" value="ovoid" />
-        <character char_type="range_value" from="1" from_unit="cm" name="atypical_distance" src="d2_s1" to="1.5" to_inclusive="false" to_unit="cm" />
-        <character char_type="range_value" from="2.5" from_inclusive="false" from_unit="cm" name="atypical_distance" src="d2_s1" to="3" to_unit="cm" />
-        <character char_type="range_value" from="1.5" from_unit="cm" name="distance" src="d2_s1" to="2.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_647_d2_s2">
-      <text>scales ovate to cuneate, 8-15 mm.</text>
-      <biological_entity id="from_key_V2_647_o17874" name="scale" name_original="scales" src="d2_s2" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s2" value="ovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s2" value="cuneate" />
-        <character char_type="range_value" from="ovate" name="shape" src="d2_s2" to="cuneate" />
-        <character char_type="range_value" from="8" from_unit="mm" name="some_measurement" src="d2_s2" to="15" to_unit="mm" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

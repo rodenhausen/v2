@@ -1,195 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Willkomm in Willkomm &amp; Lange" date="unknown" rank="family">selaginellaceae</taxon_name>
-    <taxon_name authority="Palisot de Beauvois" date="1805" rank="genus">selaginella</taxon_name>
-    <taxon_name authority="Jermy" date="1986" rank="subgenus">tetragonostachys</taxon_name>
-    <taxon_name authority="A. A. Eaton" date="1899" rank="species">cinerascens</taxon_name>
+    <taxon_name rank="family" authority="Willkomm in Willkomm &amp; Lange" date="unknown">selaginellaceae</taxon_name>
+    <taxon_name rank="genus" authority="Palisot de Beauvois" date="1805">selaginella</taxon_name>
+    <taxon_name rank="subgenus" authority="Jermy" date="1986">tetragonostachys</taxon_name>
+    <taxon_name rank="species" authority="A. A. Eaton" date="1899">cinerascens</taxon_name>
     <place_of_publication>
       <publication_title>Fern Bull.</publication_title>
       <place_in_publication>7: 33. 1899</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family selaginellaceae;genus selaginella;subgenus tetragonostachys;species cinerascens</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants terrestrial, forming loose to compact mats.</text>
-      <biological_entity id="o23019" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="terrestrial" />
-      </biological_entity>
-      <biological_entity id="o23020" name="mat" name_original="mats" src="d0_s0" type="structure">
-        <character is_modifier="true" name="architecture" notes="[duplicate value]" src="d0_s0" value="loose" />
-        <character is_modifier="true" name="architecture" notes="[duplicate value]" src="d0_s0" value="compact" />
-        <character char_type="range_value" from="loose" is_modifier="true" name="architecture" src="d0_s0" to="compact" />
-      </biological_entity>
-      <relation from="o23019" id="r5383" name="forming" negation="false" src="d0_s0" to="o23020" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems creeping, not readily fragmenting, upperside and underside structurally slightly different, irregularly forked, without budlike arrested branches, tips straight;</text>
-      <biological_entity id="o23021" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="creeping" />
-      </biological_entity>
-      <biological_entity id="o23022" name="upperside" name_original="upperside" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="not readily; readily; irregularly" name="shape" src="d0_s1" value="forked" />
-      </biological_entity>
-      <biological_entity id="o23023" name="underside" name_original="underside" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="not readily; readily; irregularly" name="shape" src="d0_s1" value="forked" />
-      </biological_entity>
-      <biological_entity id="o23024" name="branch" name_original="branches" src="d0_s1" type="structure">
-        <character is_modifier="true" name="architecture_or_shape" src="d0_s1" value="budlike" />
-      </biological_entity>
-      <biological_entity id="o23025" name="tip" name_original="tips" src="d0_s1" type="structure">
-        <character is_modifier="false" name="course" src="d0_s1" value="straight" />
-      </biological_entity>
-      <relation from="o23022" id="r5384" name="without" negation="false" src="d0_s1" to="o23024" />
-      <relation from="o23023" id="r5385" name="without" negation="false" src="d0_s1" to="o23024" />
-    </statement>
-    <statement id="d0_s2">
-      <text>main-stem indeterminate, lateral branches determinate, ascending, 1-2-forked.</text>
-      <biological_entity id="o23026" name="main-stem" name_original="main-stem" src="d0_s2" type="structure">
-        <character is_modifier="false" name="development" src="d0_s2" value="indeterminate" />
-      </biological_entity>
-      <biological_entity constraint="lateral" id="o23027" name="branch" name_original="branches" src="d0_s2" type="structure">
-        <character is_modifier="false" name="development" src="d0_s2" value="determinate" />
-        <character is_modifier="false" name="orientation" src="d0_s2" value="ascending" />
-        <character is_modifier="false" name="shape" src="d0_s2" value="1-2-forked" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Rhizophores borne on upperside of stems, throughout stem length, (0.17-) 0.2-0.3 mm diam.</text>
-      <biological_entity id="o23028" name="rhizophore" name_original="rhizophores" src="d0_s3" type="structure">
-        <character char_type="range_value" from="0.17" from_unit="mm" name="diameter" notes="" src="d0_s3" to="0.2" to_inclusive="false" to_unit="mm" />
-        <character char_type="range_value" from="0.2" from_unit="mm" name="diameter" notes="" src="d0_s3" to="0.3" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o23029" name="upperside" name_original="upperside" src="d0_s3" type="structure" />
-      <biological_entity id="o23030" name="stem" name_original="stems" src="d0_s3" type="structure" />
-      <biological_entity id="o23031" name="stem" name_original="stem" src="d0_s3" type="structure" />
-      <relation from="o23028" id="r5386" name="borne on" negation="false" src="d0_s3" to="o23029" />
-      <relation from="o23028" id="r5387" name="borne on" negation="false" src="d0_s3" to="o23030" />
-      <relation from="o23028" id="r5388" name="throughout" negation="false" src="d0_s3" to="o23031" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Leaves monomorphic, not in defined pseudowhorls, loosely appressed, ascending, green, linear-lanceolate, (1-) 2.5-3 X (0.25-) 0.4-0.6 mm (leaves in secondary and tertiary branches smaller);</text>
-      <biological_entity id="o23032" name="leaf" name_original="leaves" src="d0_s4" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s4" value="monomorphic" />
-        <character is_modifier="false" modifier="loosely" name="fixation_or_orientation" notes="" src="d0_s4" value="appressed" />
-        <character is_modifier="false" name="orientation" src="d0_s4" value="ascending" />
-        <character is_modifier="false" name="coloration" src="d0_s4" value="green" />
-        <character is_modifier="false" name="shape" src="d0_s4" value="linear-lanceolate" />
-      </biological_entity>
-      <biological_entity id="o23033" name="pseudowhorl" name_original="pseudowhorls" src="d0_s4" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s4" value="defined" />
-      </biological_entity>
-      <relation from="o23032" id="r5389" name="in" negation="true" src="d0_s4" to="o23033" />
-    </statement>
-    <statement id="d0_s5">
-      <text>abaxial ridges inconspicuous;</text>
-      <biological_entity constraint="abaxial" id="o23034" name="ridge" name_original="ridges" src="d0_s5" type="structure">
-        <character is_modifier="false" name="prominence" src="d0_s5" value="inconspicuous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>base rounded and adnate or cuneate and slightly decurrent, glabrous, seldom pubescent;</text>
-      <biological_entity id="o23035" name="base" name_original="base" src="d0_s6" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s6" value="rounded" />
-        <character is_modifier="false" name="fusion" src="d0_s6" value="adnate" />
-        <character is_modifier="false" name="shape" src="d0_s6" value="cuneate" />
-        <character is_modifier="false" modifier="slightly" name="shape" src="d0_s6" value="decurrent" />
-        <character is_modifier="false" name="pubescence" src="d0_s6" value="glabrous" />
-        <character is_modifier="false" modifier="seldom" name="pubescence" src="d0_s6" value="pubescent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>margins short-ciliate, cilia transparent, scattered, ascending, 0.02-0.75 mm;</text>
-      <biological_entity id="o23036" name="margin" name_original="margins" src="d0_s7" type="structure">
-        <character is_modifier="false" name="architecture_or_pubescence_or_shape" src="d0_s7" value="short-ciliate" />
-      </biological_entity>
-      <biological_entity id="o23037" name="cilium" name_original="cilia" src="d0_s7" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s7" value="transparent" />
-        <character is_modifier="false" name="arrangement" src="d0_s7" value="scattered" />
-        <character is_modifier="false" name="orientation" src="d0_s7" value="ascending" />
-        <character char_type="range_value" from="0.02" from_unit="mm" name="some_measurement" src="d0_s7" to="0.75" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>apex plane, blunt, acute to slightly acuminate (not distinctly bristled).</text>
-      <biological_entity id="o23038" name="apex" name_original="apex" src="d0_s8" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s8" value="plane" />
-        <character is_modifier="false" name="shape" src="d0_s8" value="blunt" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="acute" />
-        <character is_modifier="false" modifier="slightly" name="shape" notes="[duplicate value]" src="d0_s8" value="acuminate" />
-        <character char_type="range_value" from="acute" name="shape" src="d0_s8" to="slightly acuminate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>Strobili solitary, 2-4 mm;</text>
-      <biological_entity id="o23039" name="strobilus" name_original="strobili" src="d0_s9" type="structure">
-        <character is_modifier="false" name="architecture_or_arrangement_or_growth_form" src="d0_s9" value="solitary" />
-        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s9" to="4" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>sporophylls deltate-ovate to lanceolate-ovate, abaxial ridges not prominent, base glabrous, margins short-ciliate, apex not keeled, acute.</text>
-      <biological_entity id="o23040" name="sporophyll" name_original="sporophylls" src="d0_s10" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s10" value="deltate-ovate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s10" value="lanceolate-ovate" />
-        <character char_type="range_value" from="deltate-ovate" name="shape" src="d0_s10" to="lanceolate-ovate" />
-      </biological_entity>
-      <biological_entity constraint="abaxial" id="o23041" name="ridge" name_original="ridges" src="d0_s10" type="structure">
-        <character is_modifier="false" modifier="not" name="prominence" src="d0_s10" value="prominent" />
-      </biological_entity>
-      <biological_entity id="o23042" name="base" name_original="base" src="d0_s10" type="structure">
-        <character is_modifier="false" name="pubescence" src="d0_s10" value="glabrous" />
-      </biological_entity>
-      <biological_entity id="o23043" name="margin" name_original="margins" src="d0_s10" type="structure">
-        <character is_modifier="false" name="architecture_or_pubescence_or_shape" src="d0_s10" value="short-ciliate" />
-      </biological_entity>
-      <biological_entity id="o23044" name="apex" name_original="apex" src="d0_s10" type="structure">
-        <character is_modifier="false" modifier="not" name="shape" src="d0_s10" value="keeled" />
-        <character is_modifier="false" name="shape" src="d0_s10" value="acute" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Dry open places of clay soil, clayey-sandy soil, or in shade under shrubs and trees;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="dry open places of clay soil , clayey-sandy soil , or in shade under shrubs and trees" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--200 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="200" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Calif.; Mexico in Baja California.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" value="Mexico in Baja California" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  terrestrial, forming loose to compact mats.  Stems  creeping, not readily fragmenting, upperside and underside structurally slightly different, irregularly forked, without budlike arrested branches, tips straight; main stem indeterminate, lateral branches determinate, ascending, 1--2-forked.  Rhizophores  borne on upperside of stems, throughout stem length, (0.17--)0.2--0.3 mm diam.  Leaves  monomorphic, not in defined pseudowhorls, loosely appressed, ascending, green, linear-lanceolate, (1--)2.5--3 X (0.25--)0.4--0.6 mm (leaves in secondary and tertiary branches smaller); abaxial ridges inconspicuous; base rounded and adnate or cuneate and slightly decurrent, glabrous, seldom pubescent; margins short-ciliate, cilia transparent, scattered, ascending, 0.02--0.75 mm; apex plane, blunt, acute to slightly acuminate (not distinctly bristled).  Strobili  solitary, 2--4 mm; sporophylls deltate-ovate to lanceolate-ovate, abaxial ridges not prominent, base glabrous, margins short-ciliate, apex not keeled, acute.</description>
+  <description type="habitat">Dry open places of clay soil, clayey-sandy soil, or in shade under shrubs and trees;</description>
+  <description type="elevation">0--200 m;</description>
+  <description type="distribution">Calif.; Mexico in Baja California.</description>
   <number>18</number>
   <other_name type="common_name">Gray spike-moss</other_name>
   <discussion>The light brown and grayish mats, short lateral branches, narrow stem, and short strobili distinguish Selaginella cinerascens from all other species in the flora, in which it has no close relatives. R. M. Tryon (1955) related S . cinerascens to S . arsenei Weatherby from Mexico. Selaginella cinerascens also closely resembles S . nivea Alston from Madagascar. In California S . cinerascens is known only from San Diego County.</discussion>

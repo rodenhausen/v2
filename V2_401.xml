@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Reichenbach" date="unknown" rank="family">salviniaceae</taxon_name>
-    <taxon_name authority="Séguier" date="1754" rank="genus">Salvinia</taxon_name>
+    <taxon_name rank="family" authority="Reichenbach" date="unknown">salviniaceae</taxon_name>
+    <taxon_name rank="genus" authority="Séguier" date="1754">Salvinia</taxon_name>
     <place_of_publication>
       <publication_title>Pl. Veron.</publication_title>
       <place_in_publication>3: 52. 1754</place_in_publication>
@@ -25,72 +17,8 @@
     <taxon_hierarchy>family salviniaceae;genus Salvinia</taxon_hierarchy>
     <other_info_on_name type="etymology">[for A. W. Salvini (1633--1729), an Italian botanist]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems with many multicellular hairs.</text>
-      <biological_entity id="o9399" name="stem" name_original="stems" src="d0_s0" type="structure" />
-      <biological_entity id="o9400" name="hair" name_original="hairs" src="d0_s0" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s0" value="many" />
-        <character is_modifier="true" name="architecture" src="d0_s0" value="multicellular" />
-      </biological_entity>
-      <relation from="o9399" id="r2152" name="with" negation="false" src="d0_s0" to="o9400" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves horizontally spreading.</text>
-      <biological_entity id="o9401" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="horizontally" name="orientation" src="d0_s1" value="spreading" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Blades of floating leaves green and pubescent abaxially (on side away from water).</text>
-      <biological_entity id="o9402" name="blade" name_original="blades" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s2" value="green" />
-        <character is_modifier="false" modifier="abaxially" name="pubescence" src="d0_s2" value="pubescent" />
-      </biological_entity>
-      <biological_entity id="o9403" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="true" name="growth_form_or_location" src="d0_s2" value="floating" />
-      </biological_entity>
-      <relation from="o9402" id="r2153" name="part_of" negation="false" src="d0_s2" to="o9403" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Sporocarps borne on chainlike or cymelike organs or submerged leaves;</text>
-      <biological_entity id="o9404" name="sporocarp" name_original="sporocarps" src="d0_s3" type="structure" />
-      <biological_entity id="o9405" name="organ" name_original="organs" src="d0_s3" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s3" value="chainlike" />
-        <character is_modifier="true" name="shape" src="d0_s3" value="cymelike" />
-      </biological_entity>
-      <biological_entity id="o9406" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="true" name="location" src="d0_s3" value="submerged" />
-        <character is_modifier="true" name="shape" src="d0_s3" value="chainlike" />
-        <character is_modifier="true" name="shape" src="d0_s3" value="cymelike" />
-      </biological_entity>
-      <relation from="o9404" id="r2154" name="borne on" negation="false" src="d0_s3" to="o9405" />
-      <relation from="o9404" id="r2155" name="borne on" negation="false" src="d0_s3" to="o9406" />
-    </statement>
-    <statement id="d0_s4">
-      <text>sporangia indehiscent, dispersed as units when sporocarps decay.</text>
-      <biological_entity id="o9407" name="sporangium" name_original="sporangia" src="d0_s4" type="structure">
-        <character is_modifier="false" name="dehiscence" src="d0_s4" value="indehiscent" />
-        <character constraint="as units" constraintid="o9408" is_modifier="false" name="density" src="d0_s4" value="dispersed" />
-      </biological_entity>
-      <biological_entity id="o9408" name="unit" name_original="units" src="d0_s4" type="structure" />
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>mostly tropical, North America, Mexico, West Indies, Central America, South America, Eurasia, Africa including Madagascar.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="mostly tropical" establishment_means="native" />
-        <character name="distribution" value="North America" establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-        <character name="distribution" value="West Indies" establishment_means="native" />
-        <character name="distribution" value="Central America" establishment_means="native" />
-        <character name="distribution" value="South America" establishment_means="native" />
-        <character name="distribution" value="Eurasia" establishment_means="native" />
-        <character name="distribution" value="Africa including Madagascar" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  with many multicellular hairs.  Leaves  horizontally spreading.  Blades  of floating leaves green and pubescent abaxially (on side away from water).  Sporocarps  borne on chainlike or cymelike organs or submerged leaves; sporangia indehiscent, dispersed as units when sporocarps decay.</description>
+  <description type="distribution">mostly tropical, North America, Mexico, West Indies, Central America, South America, Eurasia, Africa including Madagascar.</description>
   <number>1</number>
   <other_name type="common_name">Floating fern</other_name>
   <other_name type="common_name">water spangles</other_name>

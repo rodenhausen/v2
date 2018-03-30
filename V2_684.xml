@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>Clifton E. Nauman</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="C. Presl" date="unknown" rank="family">lygodiaceae</taxon_name>
-    <taxon_name authority="Swartz" date="1801" rank="genus">Lygodium</taxon_name>
+    <taxon_name rank="family" authority="C. Presl" date="unknown">lygodiaceae</taxon_name>
+    <taxon_name rank="genus" authority="Swartz" date="1801">Lygodium</taxon_name>
     <place_of_publication>
       <publication_title>J. Bot. (Schrader)</publication_title>
       <place_in_publication>1800(2): 7, 106. 1801</place_in_publication>
@@ -25,88 +17,8 @@
     <taxon_hierarchy>family lygodiaceae;genus Lygodium</taxon_hierarchy>
     <other_info_on_name type="etymology">[Greek lygodes, flexible, in reference to the twining rachis]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants terrestrial.</text>
-      <biological_entity id="o19086" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="terrestrial" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems branched, slender.</text>
-      <biological_entity id="o19087" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s1" value="branched" />
-        <character is_modifier="false" name="size" src="d0_s1" value="slender" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves often more than several meters, 2-pinnate or more divided, climbing by means of twining rachis;</text>
-      <biological_entity id="o19088" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="false" name="quantity" src="d0_s2" value="more than several meters" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s2" value="2-pinnate" />
-        <character is_modifier="false" name="shape" src="d0_s2" value="divided" />
-        <character constraint="by-means-of rachis" constraintid="o19089" is_modifier="false" name="growth_form" src="d0_s2" value="climbing" />
-      </biological_entity>
-      <biological_entity id="o19089" name="rachis" name_original="rachis" src="d0_s2" type="structure">
-        <character is_modifier="true" name="growth_form" src="d0_s2" value="twining" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>fertile pinnae borne toward apex of fertile leaves.</text>
-      <biological_entity id="o19090" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s3" value="fertile" />
-      </biological_entity>
-      <biological_entity id="o19091" name="apex" name_original="apex" src="d0_s3" type="structure" />
-      <biological_entity id="o19092" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s3" value="fertile" />
-      </biological_entity>
-      <relation from="o19090" id="r4432" name="borne toward" negation="false" src="d0_s3" to="o19091" />
-      <relation from="o19090" id="r4433" name="borne toward" negation="false" src="d0_s3" to="o19092" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Blades of short, alternate primary pinnae.</text>
-      <biological_entity id="o19093" name="blade" name_original="blades" src="d0_s4" type="structure" />
-      <biological_entity constraint="primary" id="o19094" name="pinna" name_original="pinnae" src="d0_s4" type="structure">
-        <character is_modifier="true" name="height_or_length_or_size" src="d0_s4" value="short" />
-        <character is_modifier="true" name="arrangement" src="d0_s4" value="alternate" />
-      </biological_entity>
-      <relation from="o19093" id="r4434" name="part_of" negation="false" src="d0_s4" to="o19094" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Pinnules ± entire to palmately or pinnately lobed;</text>
-    </statement>
-    <statement id="d0_s6">
-      <text>fertile and sterile pinnae similar or fertile pinnae greatly contracted.</text>
-      <biological_entity id="o19095" name="pinnule" name_original="pinnules" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="more or less" name="shape" notes="[duplicate value]" src="d0_s5" value="entire" />
-        <character is_modifier="false" modifier="palmately" name="shape" notes="[duplicate value]" src="d0_s5" value="or" />
-        <character is_modifier="false" modifier="pinnately" name="shape" notes="[duplicate value]" src="d0_s5" value="lobed" />
-        <character char_type="range_value" from="less entire" name="shape" src="d0_s5" to="palmately or pinnately lobed" />
-        <character is_modifier="false" name="reproduction" src="d0_s6" value="fertile" />
-      </biological_entity>
-      <biological_entity id="o19096" name="pinna" name_original="pinnae" src="d0_s6" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s6" value="sterile" />
-      </biological_entity>
-      <biological_entity id="o19097" name="pinna" name_original="pinnae" src="d0_s6" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s6" value="fertile" />
-        <character is_modifier="false" modifier="greatly" name="condition_or_size" src="d0_s6" value="contracted" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>nearly worldwide, mostly tropical regions, a few species in temperate regions, North America, Asia in Japan, s Africa, Pacific Islands in New Zealand.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="nearly worldwide" establishment_means="native" />
-        <character name="distribution" value="mostly tropical regions" establishment_means="native" />
-        <character name="distribution" value="a few species in temperate regions" establishment_means="native" />
-        <character name="distribution" value="North America" establishment_means="native" />
-        <character name="distribution" value="Asia in Japan" establishment_means="native" />
-        <character name="distribution" value="s Africa" establishment_means="native" />
-        <character name="distribution" value="Pacific Islands in New Zealand" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  terrestrial.  Stems  branched, slender.  Leaves  often more than several meters, 2-pinnate or more divided, climbing by means of twining rachis; fertile pinnae borne toward apex of fertile leaves.  Blades  of short, alternate primary pinnae.  Pinnules  ± entire to palmately or pinnately lobed; fertile and sterile pinnae similar or fertile pinnae greatly contracted.</description>
+  <description type="distribution">nearly worldwide, mostly tropical regions, a few species in temperate regions, North America, Asia in Japan, s Africa, Pacific Islands in New Zealand.</description>
   <number>1</number>
   <other_name type="common_name">Climbing ferns</other_name>
   <discussion>Species ca. 40 (3 in the flora):</discussion>
@@ -118,142 +30,22 @@
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Pinnules palmately lobed, sterile tissue nearly absent on fertile lobes;</text>
-          <biological_entity id="o19098" name="pinnule" name_original="pinnules" src="d1_s0" type="structure">
-            <character is_modifier="false" modifier="palmately" name="shape" src="d1_s0" value="lobed" />
-          </biological_entity>
-          <biological_entity id="o19099" name="tissue" name_original="tissue" src="d1_s0" type="structure">
-            <character is_modifier="true" name="reproduction" src="d1_s0" value="sterile" />
-            <character constraint="on lobes" constraintid="o19100" is_modifier="false" modifier="nearly" name="presence" src="d1_s0" value="absent" />
-          </biological_entity>
-          <biological_entity id="o19100" name="lobe" name_original="lobes" src="d1_s0" type="structure">
-            <character is_modifier="true" name="reproduction" src="d1_s0" value="fertile" />
-          </biological_entity>
-        </statement>
-        <statement id="d1_s1">
-          <text>petioles borne 1-4 cm apart.</text>
-          <biological_entity id="o19101" name="petiole" name_original="petioles" src="d1_s1" type="structure">
-            <character is_modifier="false" name="arrangement" src="d1_s1" value="apart" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Pinnules palmately lobed, sterile tissue nearly absent on fertile lobes; petioles borne 1--4 cm apart.</description>
       <determination>1 Lygodium palmatum</determination>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Pinnules 1-pinnate to palmately lobed, sterile tissue present on fertile lobes;</text>
-          <biological_entity id="o19102" name="pinnule" name_original="pinnules" src="d2_s0" type="structure">
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s0" value="1-pinnate" />
-            <character is_modifier="false" modifier="palmately" name="shape" notes="[duplicate value]" src="d2_s0" value="lobed" />
-            <character char_type="range_value" from="1-pinnate" name="shape" src="d2_s0" to="palmately lobed" />
-          </biological_entity>
-          <biological_entity id="o19103" name="tissue" name_original="tissue" src="d2_s0" type="structure">
-            <character is_modifier="true" name="reproduction" src="d2_s0" value="sterile" />
-            <character constraint="on lobes" constraintid="o19104" is_modifier="false" name="presence" src="d2_s0" value="absent" />
-          </biological_entity>
-          <biological_entity id="o19104" name="lobe" name_original="lobes" src="d2_s0" type="structure">
-            <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
-          </biological_entity>
-        </statement>
-        <statement id="d2_s1">
-          <text>petioles borne less than 1 cm apart.</text>
-          <biological_entity id="o19105" name="petiole" name_original="petioles" src="d2_s1" type="structure">
-            <character is_modifier="false" name="arrangement" src="d2_s1" value="apart" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Pinnules 1-pinnate to palmately lobed, sterile tissue present on fertile lobes; petioles borne less than 1 cm apart.</description>
       <next_statement_id>2</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d3_s0">
-          <text>Pinnules usually 1-pinnate, primary divisions mostly undivided, usually without basal lobes;</text>
-          <biological_entity id="o19106" name="pinnule" name_original="pinnules" src="d3_s0" type="structure">
-            <character is_modifier="false" modifier="usually" name="architecture_or_shape" src="d3_s0" value="1-pinnate" />
-          </biological_entity>
-          <biological_entity constraint="primary" id="o19107" name="division" name_original="divisions" src="d3_s0" type="structure">
-            <character is_modifier="false" modifier="mostly" name="architecture_or_shape" src="d3_s0" value="undivided" />
-          </biological_entity>
-          <biological_entity constraint="basal" id="o19108" name="lobe" name_original="lobes" src="d3_s0" type="structure" />
-          <relation from="o19107" id="r4435" modifier="usually" name="without" negation="false" src="d3_s0" to="o19108" />
-        </statement>
-        <statement id="d3_s1">
-          <text>lobes absent or rounded, auriculate, not directed toward leaf apex;</text>
-          <biological_entity id="o19109" name="lobe" name_original="lobes" src="d3_s1" type="structure">
-            <character is_modifier="false" name="presence" src="d3_s1" value="absent" />
-            <character is_modifier="false" name="shape" src="d3_s1" value="rounded" />
-            <character is_modifier="false" name="shape" src="d3_s1" value="auriculate" />
-            <character constraint="toward leaf apex" constraintid="o19110" is_modifier="false" modifier="not" name="orientation" src="d3_s1" value="directed" />
-          </biological_entity>
-          <biological_entity constraint="leaf" id="o19110" name="apex" name_original="apex" src="d3_s1" type="structure" />
-        </statement>
-        <statement id="d3_s2">
-          <text>ultimate segments articulate to petiolules, leaving wiry stalks when detached;</text>
-          <biological_entity constraint="ultimate" id="o19111" name="segment" name_original="segments" src="d3_s2" type="structure">
-            <character constraint="to petiolules" constraintid="o19112" is_modifier="false" name="architecture" src="d3_s2" value="articulate" />
-          </biological_entity>
-          <biological_entity id="o19112" name="petiolule" name_original="petiolules" src="d3_s2" type="structure" />
-          <biological_entity id="o19113" name="stalk" name_original="stalks" src="d3_s2" type="structure">
-            <character is_modifier="true" name="architecture" src="d3_s2" value="wiry" />
-          </biological_entity>
-          <relation from="o19111" id="r4436" name="leaving" negation="false" src="d3_s2" to="o19113" />
-        </statement>
-        <statement id="d3_s3">
-          <text>blade tissue glabrous abaxially.</text>
-          <biological_entity constraint="blade" id="o19114" name="tissue" name_original="tissue" src="d3_s3" type="structure">
-            <character is_modifier="false" modifier="abaxially" name="pubescence" src="d3_s3" value="glabrous" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Pinnules usually 1-pinnate, primary divisions mostly undivided, usually without basal lobes; lobes absent or rounded, auriculate, not directed toward leaf apex; ultimate segments articulate to petiolules, leaving wiry stalks when detached; blade tissue glabrous abaxially.</description>
       <determination>2 Lygodium microphyllum</determination>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d4_s0">
-          <text>Pinnules usually more than 1-pinnate, primary divisions pinnately to palmately lobed or divided, or if undivided with distinct basal lobes;</text>
-          <biological_entity id="o19115" name="pinnule" name_original="pinnules" src="d4_s0" type="structure">
-            <character is_modifier="false" modifier="usually" name="architecture_or_shape" src="d4_s0" value="1+-pinnate" />
-          </biological_entity>
-          <biological_entity constraint="primary" id="o19116" name="division" name_original="divisions" src="d4_s0" type="structure">
-            <character is_modifier="false" modifier="palmately" name="shape" src="d4_s0" value="lobed" />
-            <character is_modifier="false" name="shape" src="d4_s0" value="divided" />
-            <character constraint="with basal lobes" constraintid="o19117" is_modifier="false" name="architecture_or_shape" src="d4_s0" value="undivided" />
-          </biological_entity>
-          <biological_entity constraint="basal" id="o19117" name="lobe" name_original="lobes" src="d4_s0" type="structure">
-            <character is_modifier="true" name="fusion" src="d4_s0" value="distinct" />
-          </biological_entity>
-        </statement>
-        <statement id="d4_s1">
-          <text>lobes directed toward leaf apex;</text>
-          <biological_entity id="o19118" name="lobe" name_original="lobes" src="d4_s1" type="structure">
-            <character constraint="toward leaf apex" constraintid="o19119" is_modifier="false" name="orientation" src="d4_s1" value="directed" />
-          </biological_entity>
-          <biological_entity constraint="leaf" id="o19119" name="apex" name_original="apex" src="d4_s1" type="structure" />
-        </statement>
-        <statement id="d4_s2">
-          <text>ultimate segments not articulate to petiolules, not leaving wiry stalks when detached;</text>
-          <biological_entity constraint="ultimate" id="o19120" name="segment" name_original="segments" src="d4_s2" type="structure">
-            <character constraint="to petiolules" constraintid="o19121" is_modifier="false" modifier="not" name="architecture" src="d4_s2" value="articulate" />
-          </biological_entity>
-          <biological_entity id="o19121" name="petiolule" name_original="petiolules" src="d4_s2" type="structure" />
-          <biological_entity id="o19122" name="stalk" name_original="stalks" src="d4_s2" type="structure">
-            <character is_modifier="true" name="architecture" src="d4_s2" value="wiry" />
-          </biological_entity>
-          <relation from="o19120" id="r4437" name="leaving" negation="true" src="d4_s2" to="o19122" />
-        </statement>
-        <statement id="d4_s3">
-          <text>blade tissue sparsely to moderately pubescent abaxially.</text>
-          <biological_entity constraint="blade" id="o19123" name="tissue" name_original="tissue" src="d4_s3" type="structure">
-            <character is_modifier="false" modifier="sparsely to moderately; abaxially" name="pubescence" src="d4_s3" value="pubescent" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Pinnules usually more than 1-pinnate, primary divisions pinnately to palmately lobed or divided, or if undivided with distinct basal lobes; lobes directed toward leaf apex; ultimate segments not articulate to petiolules, not leaving wiry stalks when detached; blade tissue sparsely to moderately pubescent abaxially.</description>
       <determination>3 Lygodium japonicum</determination>
     </key_statement>
   </key>

@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="Newman" date="1851" rank="genus">gymnocarpium</taxon_name>
-    <taxon_name authority="(Koidzumi) Koidzumi" date="1936" rank="species">jessoense</taxon_name>
-    <taxon_name authority="Sarvela" date="1978" rank="subspecies">parvulum</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Newman" date="1851">gymnocarpium</taxon_name>
+    <taxon_name rank="species" authority="(Koidzumi) Koidzumi" date="1936">jessoense</taxon_name>
+    <taxon_name rank="subspecies" authority="Sarvela" date="1978">parvulum</taxon_name>
     <place_of_publication>
       <publication_title>Ann. Bot. Fenn.</publication_title>
       <place_in_publication>15: 103. 1978</place_in_publication>
@@ -27,278 +19,14 @@
     <taxon_hierarchy>family dryopteridaceae;genus gymnocarpium;species jessoense;subspecies parvulum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Gymnocarpium</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">continentale</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Gymnocarpium</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">continentale</taxon_name>
     <taxon_hierarchy>genus Gymnocarpium;species continentale;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems 0.5-1.5 mm diam.;</text>
-      <biological_entity id="o5683" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character char_type="range_value" from="0.5" from_unit="mm" name="diameter" src="d0_s0" to="1.5" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>scales 1-4 mm.</text>
-      <biological_entity id="o5684" name="scale" name_original="scales" src="d0_s1" type="structure">
-        <character char_type="range_value" from="1" from_unit="mm" name="some_measurement" src="d0_s1" to="4" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Fertile leaves usually 8-39 cm.</text>
-      <biological_entity id="o5685" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s2" value="fertile" />
-        <character char_type="range_value" from="8" from_unit="cm" name="some_measurement" src="d0_s2" to="39" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Petiole 5-25 cm, with moderately abundant glandular-hairs distally;</text>
-      <biological_entity id="o5686" name="petiole" name_original="petiole" src="d0_s3" type="structure">
-        <character char_type="range_value" from="5" from_unit="cm" name="some_measurement" src="d0_s3" to="25" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o5687" name="glandular-hair" name_original="glandular-hairs" src="d0_s3" type="structure">
-        <character is_modifier="true" modifier="moderately" name="quantity" src="d0_s3" value="abundant" />
-      </biological_entity>
-      <relation from="o5686" id="r1294" name="with" negation="false" src="d0_s3" to="o5687" />
-    </statement>
-    <statement id="d0_s4">
-      <text>scales 2-6 mm.</text>
-      <biological_entity id="o5688" name="scale" name_original="scales" src="d0_s4" type="structure">
-        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s4" to="6" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Blade narrowly deltate to narrowly ovate, 2-pinnate-pinnatifid, 3-14 cm, firm and robust or lax and delicate, abaxial surface moderately glandular, rachis moderately to densely glandular, adaxial surface glabrous.</text>
-      <biological_entity id="o5689" name="blade" name_original="blade" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s5" value="deltate" />
-        <character is_modifier="false" modifier="narrowly" name="shape" notes="[duplicate value]" src="d0_s5" value="ovate" />
-        <character char_type="range_value" from="narrowly deltate" name="shape" src="d0_s5" to="narrowly ovate" />
-        <character is_modifier="false" name="shape" src="d0_s5" value="2-pinnate-pinnatifid" />
-        <character char_type="range_value" from="3" from_unit="cm" name="some_measurement" src="d0_s5" to="14" to_unit="cm" />
-        <character is_modifier="false" name="texture" src="d0_s5" value="firm" />
-        <character is_modifier="false" name="fragility" src="d0_s5" value="robust" />
-        <character is_modifier="false" name="architecture_or_arrangement" src="d0_s5" value="lax" />
-        <character is_modifier="false" name="fragility" src="d0_s5" value="delicate" />
-      </biological_entity>
-      <biological_entity constraint="abaxial" id="o5690" name="surface" name_original="surface" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="moderately" name="architecture_or_function_or_pubescence" src="d0_s5" value="glandular" />
-      </biological_entity>
-      <biological_entity id="o5691" name="rachis" name_original="rachis" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="moderately to densely" name="architecture_or_function_or_pubescence" src="d0_s5" value="glandular" />
-      </biological_entity>
-      <biological_entity constraint="adaxial" id="o5692" name="surface" name_original="surface" src="d0_s5" type="structure">
-        <character is_modifier="false" name="pubescence" src="d0_s5" value="glabrous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Pinna apex acute.</text>
-      <biological_entity constraint="pinna" id="o5693" name="apex" name_original="apex" src="d0_s6" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s6" value="acute" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Proximal pinnae 2-9 cm, strongly curved toward apex of leaf, basiscopic pinnules strongly curved toward apex of pinna;</text>
-      <biological_entity constraint="proximal" id="o5694" name="pinna" name_original="pinnae" src="d0_s7" type="structure">
-        <character char_type="range_value" from="2" from_unit="cm" name="some_measurement" src="d0_s7" to="9" to_unit="cm" />
-        <character constraint="toward apex" constraintid="o5695" is_modifier="false" modifier="strongly" name="course" src="d0_s7" value="curved" />
-      </biological_entity>
-      <biological_entity id="o5695" name="apex" name_original="apex" src="d0_s7" type="structure" />
-      <biological_entity id="o5696" name="leaf" name_original="leaf" src="d0_s7" type="structure" />
-      <biological_entity id="o5697" name="pinnule" name_original="pinnules" src="d0_s7" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s7" value="basiscopic" />
-        <character constraint="toward apex" constraintid="o5698" is_modifier="false" modifier="strongly" name="course" src="d0_s7" value="curved" />
-      </biological_entity>
-      <biological_entity id="o5698" name="apex" name_original="apex" src="d0_s7" type="structure" />
-      <biological_entity id="o5699" name="pinna" name_original="pinna" src="d0_s7" type="structure" />
-      <relation from="o5695" id="r1295" name="part_of" negation="false" src="d0_s7" to="o5696" />
-      <relation from="o5698" id="r1296" name="part_of" negation="false" src="d0_s7" to="o5699" />
-    </statement>
-    <statement id="d0_s8">
-      <text>basal basiscopic pinnule usually sessile, pinnatifid or rarely pinnate-pinnatifid, if sessile then with basal basiscopic pinnulet often equaling adjacent pinnulet;</text>
-      <biological_entity constraint="basal" id="o5700" name="pinna" name_original="pinnae" src="d0_s8" type="structure" />
-      <biological_entity id="o5701" name="pinnule" name_original="pinnule" src="d0_s8" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s8" value="basiscopic" />
-        <character is_modifier="false" modifier="usually" name="architecture" src="d0_s8" value="sessile" />
-        <character is_modifier="false" name="shape" src="d0_s8" value="pinnatifid" />
-        <character is_modifier="false" modifier="rarely" name="shape" src="d0_s8" value="pinnate-pinnatifid" />
-        <character constraint="with basal pinnae" constraintid="o5702" is_modifier="false" name="architecture" src="d0_s8" value="sessile" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="o5702" name="pinna" name_original="pinnae" src="d0_s8" type="structure" />
-      <biological_entity id="o5703" name="pinnulet" name_original="pinnulet" src="d0_s8" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s8" value="basiscopic" />
-      </biological_entity>
-      <biological_entity id="o5704" name="pinnulet" name_original="pinnulet" src="d0_s8" type="structure">
-        <character is_modifier="true" modifier="often" name="variability" src="d0_s8" value="equaling" />
-        <character is_modifier="true" name="arrangement" src="d0_s8" value="adjacent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>2d basal basiscopic pinnule sessile, with basal basiscopic pinnulet equaling adjacent pinnulet;</text>
-      <biological_entity constraint="basal" id="o5705" name="pinna" name_original="pinnae" src="d0_s9" type="structure" />
-      <biological_entity id="o5706" name="pinnule" name_original="pinnule" src="d0_s9" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s9" value="basiscopic" />
-        <character is_modifier="false" name="architecture" src="d0_s9" value="sessile" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="o5707" name="pinna" name_original="pinnae" src="d0_s9" type="structure" />
-      <biological_entity id="o5708" name="pinnulet" name_original="pinnulet" src="d0_s9" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s9" value="basiscopic" />
-      </biological_entity>
-      <biological_entity id="o5709" name="pinnulet" name_original="pinnulet" src="d0_s9" type="structure">
-        <character is_modifier="true" name="variability" src="d0_s9" value="equaling" />
-        <character is_modifier="true" name="arrangement" src="d0_s9" value="adjacent" />
-      </biological_entity>
-      <relation from="o5706" id="r1297" name="with" negation="false" src="d0_s9" to="o5707" />
-    </statement>
-    <statement id="d0_s10">
-      <text>basal acroscopic pinnule sessile with basal basiscopic pinnulet longer than or equaling adjacent pinnulet.</text>
-      <biological_entity constraint="basal" id="o5710" name="pinna" name_original="pinnae" src="d0_s10" type="structure" />
-      <biological_entity id="o5711" name="pinnule" name_original="pinnule" src="d0_s10" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s10" value="acroscopic" />
-        <character constraint="with basal pinnae" constraintid="o5712" is_modifier="false" name="architecture" src="d0_s10" value="sessile" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="o5712" name="pinna" name_original="pinnae" src="d0_s10" type="structure" />
-      <biological_entity id="o5713" name="pinnulet" name_original="pinnulet" src="d0_s10" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s10" value="basiscopic" />
-        <character constraint="than or equaling adjacent pinnulet" constraintid="o5714" is_modifier="false" name="length_or_size" src="d0_s10" value="longer" />
-      </biological_entity>
-      <biological_entity id="o5714" name="pinnulet" name_original="pinnulet" src="d0_s10" type="structure">
-        <character is_modifier="true" name="variability" src="d0_s10" value="equaling" />
-        <character is_modifier="true" name="arrangement" src="d0_s10" value="adjacent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>Pinnae of 2d pair almost always sessile with basal basiscopic pinnule usually equaling or slightly shorter than adjacent pinnule and equaling basal acroscopic pinnule;</text>
-      <biological_entity id="o5715" name="pinna" name_original="pinnae" src="d0_s11" type="structure">
-        <character constraint="with basal pinnae" constraintid="o5716" is_modifier="false" modifier="almost always" name="architecture" src="d0_s11" value="sessile" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="o5716" name="pinna" name_original="pinnae" src="d0_s11" type="structure" />
-      <biological_entity id="o5717" name="pinnule" name_original="pinnule" src="d0_s11" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s11" value="basiscopic" />
-        <character is_modifier="false" modifier="usually" name="variability" src="d0_s11" value="equaling" />
-        <character constraint="than adjacent pinnule and equaling basal acroscopic pinnule" constraintid="o5719" is_modifier="false" name="height_or_length_or_size" src="d0_s11" value="slightly shorter" />
-      </biological_entity>
-      <biological_entity id="o5719" name="pinnule" name_original="pinnule" src="d0_s11" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s11" value="adjacent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s12">
-      <text>basal acroscopic pinnule equaling or slightly shorter than adjacent pinnule, apex often entire, rounded.</text>
-      <biological_entity constraint="basal" id="o5720" name="pinna" name_original="pinnae" src="d0_s12" type="structure" />
-      <biological_entity id="o5721" name="pinnule" name_original="pinnule" src="d0_s12" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s12" value="acroscopic" />
-        <character is_modifier="false" name="variability" src="d0_s12" value="equaling" />
-        <character constraint="than adjacent pinnule" constraintid="o5722" is_modifier="false" name="height_or_length_or_size" src="d0_s12" value="slightly shorter" />
-      </biological_entity>
-      <biological_entity id="o5722" name="pinnule" name_original="pinnule" src="d0_s12" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s12" value="adjacent" />
-      </biological_entity>
-      <biological_entity id="o5723" name="apex" name_original="apex" src="d0_s12" type="structure">
-        <character is_modifier="false" modifier="often" name="architecture_or_shape" src="d0_s12" value="entire" />
-        <character is_modifier="false" name="shape" src="d0_s12" value="rounded" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s13">
-      <text>Pinnae of 3d pair sessile with basal basiscopic pinnule equaling adjacent pinnule and equaling basal acroscopic pinnule;</text>
-      <biological_entity id="o5724" name="pinna" name_original="pinnae" src="d0_s13" type="structure">
-        <character constraint="with basal pinnae" constraintid="o5726" is_modifier="false" name="architecture" src="d0_s13" value="sessile" />
-      </biological_entity>
-      <biological_entity id="o5725" name="pair" name_original="pair" src="d0_s13" type="structure" />
-      <biological_entity constraint="basal" id="o5726" name="pinna" name_original="pinnae" src="d0_s13" type="structure" />
-      <biological_entity id="o5727" name="pinnule" name_original="pinnule" src="d0_s13" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s13" value="basiscopic" />
-      </biological_entity>
-      <biological_entity constraint="basal" id="o5729" name="pinnule" name_original="pinnule" src="d0_s13" type="structure">
-        <character is_modifier="true" name="variability" src="d0_s13" value="equaling" />
-        <character is_modifier="true" name="arrangement" src="d0_s13" value="adjacent" />
-        <character is_modifier="true" name="variability" src="d0_s13" value="equaling" />
-        <character is_modifier="true" name="orientation" src="d0_s13" value="acroscopic" />
-      </biological_entity>
-      <relation from="o5724" id="r1298" name="part_of" negation="false" src="d0_s13" to="o5725" />
-    </statement>
-    <statement id="d0_s14">
-      <text>basal acroscopic pinnule equaling or slightly shorter than adjacent pinnule.</text>
-      <biological_entity constraint="basal" id="o5730" name="pinna" name_original="pinnae" src="d0_s14" type="structure" />
-      <biological_entity id="o5731" name="pinnule" name_original="pinnule" src="d0_s14" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s14" value="acroscopic" />
-        <character is_modifier="false" name="variability" src="d0_s14" value="equaling" />
-        <character constraint="than adjacent pinnule" constraintid="o5732" is_modifier="false" name="height_or_length_or_size" src="d0_s14" value="slightly shorter" />
-      </biological_entity>
-      <biological_entity id="o5732" name="pinnule" name_original="pinnule" src="d0_s14" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s14" value="adjacent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s15">
-      <text>Ultimate segments of proximal pinnae oblong, entire to slightly crenate, apex entire, rounded.</text>
-      <biological_entity constraint="ultimate" id="o5733" name="segment" name_original="segments" src="d0_s15" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s15" value="oblong" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s15" value="entire" />
-        <character is_modifier="false" modifier="slightly" name="shape" notes="[duplicate value]" src="d0_s15" value="crenate" />
-        <character char_type="range_value" from="entire" name="shape" src="d0_s15" to="slightly crenate" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="o5734" name="pinna" name_original="pinnae" src="d0_s15" type="structure" />
-      <biological_entity id="o5735" name="apex" name_original="apex" src="d0_s15" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s15" value="entire" />
-        <character is_modifier="false" name="shape" src="d0_s15" value="rounded" />
-      </biological_entity>
-      <relation from="o5733" id="r1299" name="part_of" negation="false" src="d0_s15" to="o5734" />
-    </statement>
-    <statement id="d0_s16">
-      <text>Spores 32-37 µm.</text>
-    </statement>
-    <statement id="d0_s17">
-      <text>2 n = 160.</text>
-      <biological_entity id="o5736" name="spore" name_original="spores" src="d0_s16" type="structure">
-        <character char_type="range_value" from="32" from_unit="um" name="some_measurement" src="d0_s16" to="37" to_unit="um" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o5737" name="chromosome" name_original="" src="d0_s17" type="structure">
-        <character name="quantity" src="d0_s17" value="160" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Acid or neutral substrates at summit of cool, shale talus slopes, and on granitic cliffs and outcrops;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="acid or neutral substrates at summit of cool , shale talus" />
-        <character name="habitat" value="slopes , and on granitic cliffs and outcrops" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--2000 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2000" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Alta., B.C., Man., N.B., N.W.T., Ont., Que., Sask., Yukon; Alaska, Conn., Iowa, Maine, Mich., Minn., Vt., Wis.; Europe in Finland; Asia in Siberia, Kazakhstan.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="Alta." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Man." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.W.T." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Sask." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Yukon" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
-        <character name="distribution" value="Europe in Finland" establishment_means="native" />
-        <character name="distribution" value="Asia in Siberia" establishment_means="native" />
-        <character name="distribution" value="Kazakhstan" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems 0.5--1.5 mm diam.; scales 1--4 mm.  Fertile leaves  usually 8--39 cm.  Petiole  5--25 cm, with moderately abundant glandular hairs distally; scales 2--6 mm.  Blade  narrowly deltate to narrowly ovate, 2-pinnate-pinnatifid, 3--14 cm, firm and robust or lax and delicate, abaxial surface moderately glandular, rachis moderately to densely glandular, adaxial surface glabrous.  Pinna  apex acute.  Proximal pinnae  2--9 cm, strongly curved toward apex of leaf, basiscopic pinnules strongly curved toward apex of pinna; basal basiscopic pinnule usually sessile, pinnatifid or rarely pinnate-pinnatifid, if sessile then with basal basiscopic pinnulet often equaling adjacent pinnulet; 2d basal basiscopic pinnule sessile, with basal basiscopic pinnulet equaling adjacent pinnulet; basal acroscopic pinnule sessile with basal basiscopic pinnulet longer than or equaling adjacent pinnulet.  Pinnae  of 2d pair almost always sessile with basal basiscopic pinnule usually equaling or slightly shorter than adjacent pinnule and equaling basal acroscopic pinnule; basal acroscopic pinnule equaling or slightly shorter than adjacent pinnule, apex often entire, rounded.  Pinnae  of 3d pair sessile with basal basiscopic pinnule equaling adjacent pinnule and equaling basal acroscopic pinnule; basal acroscopic pinnule equaling or slightly shorter than adjacent pinnule.  Ultimate segments  of proximal pinnae oblong, entire to slightly crenate, apex entire, rounded.  Spores  32--37 µm. 2 n  = 160.</description>
+  <description type="habitat">Acid or neutral substrates at summit of cool, shale talus slopes, and on granitic cliffs and outcrops;</description>
+  <description type="elevation">0--2000 m;</description>
+  <description type="distribution">Alta., B.C., Man., N.B., N.W.T., Ont., Que., Sask., Yukon; Alaska, Conn., Iowa, Maine, Mich., Minn., Vt., Wis.; Europe in Finland; Asia in Siberia, Kazakhstan.</description>
   <number>4a</number>
   <other_name type="common_name">Nahanni oak fern</other_name>
   <other_name type="common_name">gymnocarpe du japon sous-espèce fréle</other_name>

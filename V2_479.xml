@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Reichenbach" date="unknown" rank="family">isoëtaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">isoëtes</taxon_name>
-    <taxon_name authority="L. F. Henderson" date="unknown" rank="species">occidentalis</taxon_name>
+    <taxon_name rank="family" authority="Reichenbach" date="unknown">isoëtaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">isoëtes</taxon_name>
+    <taxon_name rank="species" authority="L. F. Henderson" date="unknown">occidentalis</taxon_name>
     <place_of_publication>
       <publication_title>Bull. Torrey Bot. Club</publication_title>
       <place_in_publication>27: 358. 1900</place_in_publication>
@@ -26,168 +18,32 @@
     <taxon_hierarchy>family isoëtaceae;genus isoëtes;species occidentalis</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Isoëtes</taxon_name>
-    <taxon_name authority="(A. A. Eaton) N. E. Pfeiffer" date="unknown" rank="species">flettii</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Isoëtes</taxon_name>
+    <taxon_name rank="species" authority="(A. A. Eaton) N. E. Pfeiffer" date="unknown">flettii</taxon_name>
     <taxon_hierarchy>genus Isoëtes;species flettii;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Isoëtes</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="species">lacustris</taxon_name>
-    <taxon_name authority="Engelmann" date="unknown" rank="variety">paupercula</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Isoëtes</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="unknown">lacustris</taxon_name>
+    <taxon_name rank="variety" authority="Engelmann" date="unknown">paupercula</taxon_name>
     <taxon_hierarchy>genus Isoëtes;species lacustris;variety paupercula;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Isoëtes</taxon_name>
-    <taxon_name authority="(Engelmann) A. A. Eaton" date="unknown" rank="species">paupercula</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Isoëtes</taxon_name>
+    <taxon_name rank="species" authority="(Engelmann) A. A. Eaton" date="unknown">paupercula</taxon_name>
     <taxon_hierarchy>genus Isoëtes;species paupercula;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Isoëtes</taxon_name>
-    <taxon_name authority="A. A. Eaton" date="unknown" rank="species">piperi</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Isoëtes</taxon_name>
+    <taxon_name rank="species" authority="A. A. Eaton" date="unknown">piperi</taxon_name>
     <taxon_hierarchy>genus Isoëtes;species piperi;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants aquatic.</text>
-      <biological_entity id="o12278" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="aquatic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Rootstock nearly globose, 2-lobed.</text>
-      <biological_entity id="o12279" name="rootstock" name_original="rootstock" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="nearly" name="shape" src="d0_s1" value="globose" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="2-lobed" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves evergreen, dark green, pale toward base, spirally arranged, to 20 cm, rigid, gradually tapering to tip.</text>
-      <biological_entity id="o12280" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="false" name="duration" src="d0_s2" value="evergreen" />
-        <character is_modifier="false" name="coloration" src="d0_s2" value="dark green" />
-        <character constraint="toward base" constraintid="o12281" is_modifier="false" name="coloration" src="d0_s2" value="pale" />
-        <character is_modifier="false" modifier="spirally" name="arrangement" notes="" src="d0_s2" value="arranged" />
-        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s2" to="20" to_unit="cm" />
-        <character is_modifier="false" name="texture" src="d0_s2" value="rigid" />
-        <character constraint="to tip" constraintid="o12282" is_modifier="false" modifier="gradually" name="shape" src="d0_s2" value="tapering" />
-      </biological_entity>
-      <biological_entity id="o12281" name="base" name_original="base" src="d0_s2" type="structure" />
-      <biological_entity id="o12282" name="tip" name_original="tip" src="d0_s2" type="structure" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Velum covering less than 1/2 sporangium.</text>
-      <biological_entity id="o12283" name="velum" name_original="velum" src="d0_s3" type="structure" />
-      <biological_entity id="o12284" name="sporangium" name_original="sporangium" src="d0_s3" type="structure">
-        <character char_type="range_value" from="0" is_modifier="true" name="quantity" src="d0_s3" to="1/2" />
-      </biological_entity>
-      <relation from="o12283" id="r2847" name="covering" negation="false" src="d0_s3" to="o12284" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Sporangium wall unpigmented.</text>
-      <biological_entity constraint="sporangium" id="o12285" name="wall" name_original="wall" src="d0_s4" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s4" value="unpigmented" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Megaspores 500-700 μm diam., cristate, tuberculate, rugulate, or echinate with ridges, tubercles, or spines;</text>
-      <biological_entity id="o12286" name="megaspore" name_original="megaspores" src="d0_s5" type="structure">
-        <character char_type="range_value" from="500" from_unit="um" name="diameter" src="d0_s5" to="700" to_unit="um" />
-        <character is_modifier="false" name="shape" src="d0_s5" value="cristate" />
-        <character is_modifier="false" name="relief" src="d0_s5" value="tuberculate" />
-        <character is_modifier="false" name="relief" src="d0_s5" value="rugulate" />
-        <character constraint="with spines" constraintid="o12289" is_modifier="false" name="architecture" src="d0_s5" value="echinate" />
-      </biological_entity>
-      <biological_entity id="o12287" name="ridge" name_original="ridges" src="d0_s5" type="structure" />
-      <biological_entity id="o12288" name="tubercle" name_original="tubercles" src="d0_s5" type="structure" />
-      <biological_entity id="o12289" name="spine" name_original="spines" src="d0_s5" type="structure" />
-    </statement>
-    <statement id="d0_s6">
-      <text>girdle smooth.</text>
-      <biological_entity id="o12290" name="girdle" name_original="girdle" src="d0_s6" type="structure">
-        <character is_modifier="false" name="architecture_or_pubescence_or_relief" src="d0_s6" value="smooth" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Microspores brown in mass, 35-45 μm, papillose to spinulose.</text>
-      <biological_entity id="o12292" name="mass" name_original="mass" src="d0_s7" type="structure" />
-    </statement>
-    <statement id="d0_s8">
-      <text>2n = 66.</text>
-      <biological_entity id="o12291" name="microspore" name_original="microspores" src="d0_s7" type="structure">
-        <character constraint="in mass" constraintid="o12292" is_modifier="false" name="coloration" src="d0_s7" value="brown" />
-        <character char_type="range_value" from="35" from_unit="um" name="some_measurement" notes="" src="d0_s7" to="45" to_unit="um" />
-        <character is_modifier="false" name="relief" src="d0_s7" value="papillose" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s7" value="spinulose" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o12293" name="chromosome" name_original="" src="d0_s8" type="structure">
-        <character name="quantity" src="d0_s8" value="66" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Spores mature in late summer.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="spores maturing time" value="late summer" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Lakes;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="lakes ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>B.C.; Alaska, Calif., Colo., Idaho, Mont., Oreg., Utah, Wash., Wyo.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Colo." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Idaho" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Utah" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wyo." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants aquatic. Rootstock nearly globose, 2-lobed. Leaves evergreen, dark green, pale toward base, spirally arranged, to 20 cm, rigid, gradually tapering to tip. Velum covering less than 1/2 sporangium. Sporangium wall unpigmented. Megaspores 500--700 μm diam., cristate, tuberculate, rugulate, or echinate with ridges, tubercles, or spines; girdle smooth. Microspores brown in mass, 35--45 μm, papillose to spinulose. 2n = 66.</description>
+  <description type="phenology">Spores mature in late summer.</description>
+  <description type="habitat">Lakes;</description>
+  <description type="distribution">B.C.; Alaska, Calif., Colo., Idaho, Mont., Oreg., Utah, Wash., Wyo.</description>
   <other_name type="common_name">Western quillwort</other_name>
   <discussion>Megaspores of Isoëtes occidentalis are variable in wall pattern. Populations exist with rugulate or tuberculate megaspores and other population with cristate to echinate megaspores. Plants with thin-walled megaspores that crack easily have been called I. paupercula. Populations in which megaspores have short ridges and tubercles in a band along the equator have been called I. flettii. Populations with broad-based tubercles on the megaspores have been called I. piperi. The variation in megaspore pattern may indicate multiple allopolyploid origins for I. occidentalis.</discussion>
   <discussion>The general aspect of Isoëtes occidentalis and its tough, dark green leaves suggested to early workers an affinity with I. lacustris.</discussion>
   <discussion>Isoëtes occidentalis hybridizes with I. bolanderi, I. echinospora, and I. maritima [ = I. x truncata (A. A. Eaton) Clute].</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_113_d42_s0">
-      <text>Megaspores averaging more than 500 µm diam.;</text>
-      <biological_entity id="from_key_V2_113_o559" name="megaspore" name_original="megaspores" src="d42_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_113_d42_s1">
-      <text>leaves gradually tapering to tip.</text>
-      <biological_entity id="from_key_V2_113_o560" name="leaf" name_original="leaves" src="d42_s1" type="structure">
-        <character constraint="to tip" constraintid="o561" is_modifier="false" modifier="gradually" name="shape" src="d42_s1" value="tapering" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_113_o561" name="tip" name_original="tip" src="d42_s1" type="structure" />
-    </statement>
-    <statement id="from_key_V2_113_d39_s0">
-      <text>Plants submerged or emergent aquatics, of persistent lakes and pools.</text>
-      <biological_entity id="from_key_V2_113_o553" name="plant" name_original="plants" src="d39_s0" type="structure">
-        <character is_modifier="false" name="location" src="d39_s0" value="submerged" />
-        <character is_modifier="false" name="location" src="d39_s0" value="emergent" />
-        <character is_modifier="false" name="growth_form_or_habitat" src="d39_s0" value="aquatics" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_113_d6_s0">
-      <text>Plants of Rocky Mountains and further west.</text>
-      <biological_entity id="from_key_V2_113_o454" name="plant" name_original="plants" src="d6_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_113_d2_s0">
-      <text>Megaspores with cristate, reticulate, rugulate, tuberculate, or smooth textures.</text>
-      <biological_entity id="from_key_V2_113_o442" name="megaspore" name_original="megaspores" src="d2_s0" type="structure" />
-    </statement>
-  </description>
 </bio:treatment>

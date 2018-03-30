@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Ching ex Pichi Sermolli" date="unknown" rank="family">thelypteridaceae</taxon_name>
-    <taxon_name authority="Schmidel" date="1763" rank="genus">thelypteris</taxon_name>
-    <taxon_name authority="(Link) C. V. Morton" date="1963" rank="subgenus">Cyclosorus</taxon_name>
+    <taxon_name rank="family" authority="Ching ex Pichi Sermolli" date="unknown">thelypteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Schmidel" date="1763">thelypteris</taxon_name>
+    <taxon_name rank="subgenus" authority="(Link) C. V. Morton" date="1963">Cyclosorus</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>53: 153. 1963</place_in_publication>
@@ -26,51 +18,14 @@
     <taxon_hierarchy>family thelypteridaceae;genus thelypteris;subgenus Cyclosorus</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="Link" date="unknown" rank="subgenus">Cyclosorus</taxon_name>
+    <taxon_name rank="subgenus" authority="Link" date="unknown">Cyclosorus</taxon_name>
     <place_of_publication>
       <publication_title>Hort. Berol.</publication_title>
       <place_in_publication>2: 128. 1833</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>subgenus Cyclosorus;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Distinguished from other subgenera by the combination of evergreen leaves, usually long to short-creeping stems more than 5 mm diam., pinnate-pinnatifid blades with proximal pinnae usually not shortened (except Thelypteris hispidula and T. dentata), and some veins meeting margin at or below the sinuses.</text>
-      <biological_entity id="o14942" name="whole_organism" name_original="" src="d0_s0" type="structure">
-        <character constraint="from subgenera" constraintid="o14943" is_modifier="false" name="prominence" src="d0_s0" value="distinguished" />
-        <character is_modifier="false" modifier="usually" name="length_or_size" notes="" src="d0_s0" value="long" />
-      </biological_entity>
-      <biological_entity id="o14943" name="subgenus" name_original="subgenera" src="d0_s0" type="structure" />
-      <biological_entity id="o14944" name="combination" name_original="combination" src="d0_s0" type="structure" />
-      <biological_entity id="o14945" name="leaf" name_original="leaves" src="d0_s0" type="structure">
-        <character is_modifier="true" name="duration" src="d0_s0" value="evergreen" />
-      </biological_entity>
-      <biological_entity id="o14946" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="true" name="growth_form_or_orientation" src="d0_s0" value="short-creeping" />
-        <character char_type="range_value" from="5" from_unit="mm" name="diameter" src="d0_s0" upper_restricted="false" />
-      </biological_entity>
-      <biological_entity id="o14947" name="blade" name_original="blades" src="d0_s0" type="structure">
-        <character is_modifier="true" name="shape" src="d0_s0" value="pinnate-pinnatifid" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="o14948" name="pinna" name_original="pinnae" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="usually not" name="length" src="d0_s0" value="shortened" />
-      </biological_entity>
-      <biological_entity id="o14950" name="margin" name_original="margin" src="d0_s0" type="structure" />
-      <biological_entity id="o14951" name="sinuse" name_original="sinuses" src="d0_s0" type="structure" />
-      <relation from="o14943" id="r3524" name="by" negation="false" src="d0_s0" to="o14944" />
-      <relation from="o14944" id="r3525" name="part_of" negation="false" src="d0_s0" to="o14945" />
-      <relation from="o14947" id="r3526" name="with" negation="false" src="d0_s0" to="o14948" />
-      <relation from="o14949" id="r3527" name="meeting" negation="false" src="d0_s0" to="o14950" />
-      <relation from="o14949" id="r3528" name="at or below" negation="false" src="d0_s0" to="o14951" />
-    </statement>
-    <statement id="d0_s1">
-      <text>x = 36.</text>
-      <biological_entity id="o14949" name="vein" name_original="veins" src="d0_s0" type="structure" />
-      <biological_entity constraint="x" id="o14952" name="chromosome" name_original="" src="d0_s1" type="structure">
-        <character name="quantity" src="d0_s1" value="36" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Distinguished from other subgenera by the combination of evergreen leaves, usually long- to short-creeping stems more than 5 mm diam., pinnate-pinnatifid blades with proximal pinnae usually not shortened (except  Thelypteris hispidula  and  T. dentata ), and some veins meeting margin at or below the sinuses.  x  = 36.</description>
   <number>1e</number>
   <discussion>Species 7--12 were monographed by A. R. Smith (1971), who treated them in  Thelypteris  sect.  Cyclosorus . These same species were placed in  Christella  sect.  Pelazoneuron  by R. E. Holttum (1982, p. 553), who restricted use of  Cyclosorus  to  Thelypteris interrupta  (species 15 here) and two other species.:</discussion>
 </bio:treatment>

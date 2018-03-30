@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="Roth" date="1799" rank="genus">polystichum</taxon_name>
-    <taxon_name authority="(C. Presl) C. Presl" date="1836" rank="species">setigerum</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Roth" date="1799">polystichum</taxon_name>
+    <taxon_name rank="species" authority="(C. Presl) C. Presl" date="1836">setigerum</taxon_name>
     <place_of_publication>
       <publication_title>Tent. Pterid.</publication_title>
       <place_in_publication>83. 1836</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family dryopteridaceae;genus polystichum;species setigerum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Nephrodium</taxon_name>
-    <taxon_name authority="C. Presl" date="unknown" rank="species">setigerum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Nephrodium</taxon_name>
+    <taxon_name rank="species" authority="C. Presl" date="unknown">setigerum</taxon_name>
     <place_of_publication>
       <publication_title>Reliq. Haenk.</publication_title>
       <place_in_publication>1: 37. 1825</place_in_publication>
@@ -35,223 +27,22 @@
     <taxon_hierarchy>genus Nephrodium;species setigerum;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">P.</taxon_name>
-    <taxon_name authority="(Spenner) Fée" date="unknown" rank="species">braunii</taxon_name>
-    <taxon_name authority="(Maxon) Calder &amp; R. L. Taylor" date="unknown" rank="subspecies">alaskense</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">P.</taxon_name>
+    <taxon_name rank="species" authority="(Spenner) Fée" date="unknown">braunii</taxon_name>
+    <taxon_name rank="subspecies" authority="(Maxon) Calder &amp; R. L. Taylor" date="unknown">alaskense</taxon_name>
     <taxon_hierarchy>genus P.;species braunii;subspecies alaskense;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">P.</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">braunii</taxon_name>
-    <taxon_name authority="(Maxon) Hultén" date="unknown" rank="variety">alaskense</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">P.</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">braunii</taxon_name>
+    <taxon_name rank="variety" authority="(Maxon) Hultén" date="unknown">alaskense</taxon_name>
     <taxon_hierarchy>genus P.;species braunii;variety alaskense;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems erect.</text>
-      <biological_entity id="o15855" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s0" value="erect" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves arching, 4-10 dm;</text>
-      <biological_entity id="o15856" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s1" value="arching" />
-        <character char_type="range_value" from="4" from_unit="dm" name="some_measurement" src="d0_s1" to="10" to_unit="dm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>bulblets absent.</text>
-      <biological_entity id="o15857" name="bulblet" name_original="bulblets" src="d0_s2" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s2" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Petiole 1/8-1/5 length of leaf, densely scaly;</text>
-      <biological_entity id="o15858" name="petiole" name_original="petiole" src="d0_s3" type="structure">
-        <character char_type="range_value" from="1/8 length of leaf" name="length" src="d0_s3" to="1/5 length of leaf" />
-        <character is_modifier="false" modifier="densely" name="architecture_or_pubescence" src="d0_s3" value="scaly" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>scales light-brown, gradually diminishing in size distally.</text>
-      <biological_entity id="o15859" name="scale" name_original="scales" src="d0_s4" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s4" value="light-brown" />
-        <character is_modifier="false" modifier="gradually; distally" name="size" src="d0_s4" value="diminishing" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Blade lanceolate, deeply 1-pinnate-pinnatifid to 2-pinnate, base narrowed.</text>
-      <biological_entity id="o15860" name="blade" name_original="blade" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="lanceolate" />
-        <character is_modifier="false" modifier="deeply" name="shape" notes="[duplicate value]" src="d0_s5" value="1-pinnate-pinnatifid" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s5" value="2-pinnate" />
-        <character char_type="range_value" from="deeply 1-pinnate-pinnatifid" name="shape" src="d0_s5" to="2-pinnate" />
-      </biological_entity>
-      <biological_entity id="o15861" name="base" name_original="base" src="d0_s5" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s5" value="narrowed" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Pinnae lanceolate, not overlapping, in 1 plane, 4-8 cm, base oblique, margins incised to costa on middle pinnae, serrulate-spiny with teeth spreading-ascending, apex acute-apiculate with subapical and apical teeth same size;</text>
-      <biological_entity id="o15862" name="pinna" name_original="pinnae" src="d0_s6" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s6" value="lanceolate" />
-        <character is_modifier="false" modifier="not" name="arrangement" src="d0_s6" value="overlapping" />
-        <character char_type="range_value" from="4" from_unit="cm" modifier="in 1 plane" name="some_measurement" src="d0_s6" to="8" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o15863" name="base" name_original="base" src="d0_s6" type="structure">
-        <character is_modifier="false" name="orientation_or_shape" src="d0_s6" value="oblique" />
-      </biological_entity>
-      <biological_entity id="o15864" name="margin" name_original="margins" src="d0_s6" type="structure">
-        <character constraint="to costa" constraintid="o15865" is_modifier="false" name="shape" src="d0_s6" value="incised" />
-        <character constraint="with teeth" constraintid="o15867" is_modifier="false" name="architecture_or_shape" notes="" src="d0_s6" value="serrulate-spiny" />
-      </biological_entity>
-      <biological_entity id="o15865" name="costa" name_original="costa" src="d0_s6" type="structure" />
-      <biological_entity constraint="middle" id="o15866" name="pinna" name_original="pinnae" src="d0_s6" type="structure" />
-      <biological_entity id="o15867" name="tooth" name_original="teeth" src="d0_s6" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s6" value="spreading-ascending" />
-      </biological_entity>
-      <biological_entity id="o15868" name="apex" name_original="apex" src="d0_s6" type="structure">
-        <character constraint="with subapical apical teeth" constraintid="o15869" is_modifier="false" name="architecture_or_shape" src="d0_s6" value="acute-apiculate" />
-      </biological_entity>
-      <biological_entity constraint="subapical and apical" id="o15869" name="tooth" name_original="teeth" src="d0_s6" type="structure" />
-      <relation from="o15865" id="r3719" name="on" negation="false" src="d0_s6" to="o15866" />
-    </statement>
-    <statement id="d0_s7">
-      <text>microscales filiform, sparse abaxially, confined to costa adaxially.</text>
-      <biological_entity id="o15870" name="microscale" name_original="microscales" src="d0_s7" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s7" value="filiform" />
-        <character is_modifier="false" modifier="abaxially" name="count_or_density" src="d0_s7" value="sparse" />
-      </biological_entity>
-      <biological_entity id="o15871" name="costa" name_original="costa" src="d0_s7" type="structure" />
-      <relation from="o15870" id="r3720" modifier="adaxially" name="confined to" negation="false" src="d0_s7" to="o15871" />
-    </statement>
-    <statement id="d0_s8">
-      <text>Indusia erose-ciliate.</text>
-      <biological_entity id="o15872" name="indusium" name_original="indusia" src="d0_s8" type="structure">
-        <character is_modifier="false" name="architecture_or_pubescence_or_shape" src="d0_s8" value="erose-ciliate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>Spores brown.</text>
-    </statement>
-    <statement id="d0_s10">
-      <text>2 n = 246.</text>
-      <biological_entity id="o15873" name="spore" name_original="spores" src="d0_s9" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s9" value="brown" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o15874" name="chromosome" name_original="" src="d0_s10" type="structure">
-        <character name="quantity" src="d0_s10" value="246" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Forest floor in lowland coastal forests;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="forest floor in lowland coastal forests" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--250 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="250" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>B.C.; Alaska.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Alaska." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  erect.  Leaves  arching, 4--10 dm; bulblets absent.  Petiole  1/8--1/5 length of leaf, densely scaly; scales light brown, gradually diminishing in size distally.  Blade  lanceolate, deeply 1-pinnate-pinnatifid to 2-pinnate, base narrowed.  Pinnae  lanceolate, not overlapping, in 1 plane, 4--8 cm, base oblique, margins incised to costa on middle pinnae, serrulate-spiny with teeth spreading-ascending, apex acute-apiculate with subapical and apical teeth same size; microscales filiform, sparse abaxially, confined to costa adaxially.  Indusia  erose-ciliate.  Spores  brown. 2 n  = 246.</description>
+  <description type="habitat">Forest floor in lowland coastal forests;</description>
+  <description type="elevation">0--250 m;</description>
+  <description type="distribution">B.C.; Alaska.</description>
   <number>15</number>
   <other_name type="common_name">Alaska sword fern</other_name>
   <discussion>Polystichum setigerum is disjunct on Attu Island at the western tip of the Aleutian Archipelago. It is presumed to be of hybrid origin, the result of a cross between P . munitum and P . braunii (D. H. Wagner 1979). This hybrid has been produced experimentally (A. Sleep and T. Reichstein 1967) and is reported from British Columbia (see discussion under P . braunii ).</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_234_d27_s0">
-      <text>Pinnule margins spinulose-dentate but not incised;</text>
-    </statement>
-    <statement id="from_key_V2_234_d27_s1">
-      <text>Alaska to British Columbia.</text>
-      <biological_entity constraint="pinnule" id="from_key_V2_234_o4304" name="margin" name_original="margins" src="d27_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d27_s0" value="spinulose-dentate" />
-        <character is_modifier="false" modifier="not" name="shape" src="d27_s0" value="incised" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d26_s0">
-      <text>Pinnae incised to costa;</text>
-      <biological_entity id="from_key_V2_234_o4303" name="costa" name_original="costa" src="d26_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_234_d26_s1">
-      <text>s British Columbia northward.</text>
-      <biological_entity id="from_key_V2_234_o4302" name="pinna" name_original="pinnae" src="d26_s0" type="structure">
-        <character constraint="to costa" constraintid="o4303" is_modifier="false" name="shape" src="d26_s0" value="incised" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d24_s0">
-      <text>Rachis without bulblets.</text>
-      <biological_entity id="from_key_V2_234_o4298" name="rachis" name_original="rachis" src="d24_s0" type="structure" />
-      <biological_entity id="from_key_V2_234_o4299" name="bulblet" name_original="bulblets" src="d24_s0" type="structure" />
-      <relation from="from_key_V2_234_o4298" id="from_key_V2_234_r1010" name="without" negation="false" src="d24_s0" to="from_key_V2_234_o4299" />
-    </statement>
-    <statement id="from_key_V2_234_d20_s0">
-      <text>Microscales filiform on both leaf surfaces;</text>
-      <biological_entity id="from_key_V2_234_o4280" name="microscale" name_original="microscales" src="d20_s0" type="structure">
-        <character constraint="on leaf surfaces" constraintid="o4281" is_modifier="false" name="shape" src="d20_s0" value="filiform" />
-      </biological_entity>
-      <biological_entity constraint="leaf" id="from_key_V2_234_o4281" name="surface" name_original="surfaces" src="d20_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_234_d20_s1">
-      <text>leaves often larger than 3 dm;</text>
-    </statement>
-    <statement id="from_key_V2_234_d20_s2">
-      <text>to 1700 m.</text>
-      <biological_entity id="from_key_V2_234_o4282" name="leaf" name_original="leaves" src="d20_s1" type="structure">
-        <character modifier="often larger than" name="some_measurement" src="d20_s1" unit="dm" value="3" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d12_s0">
-      <text>Leaves 1-pinnate-pinnatifid but in some species with deeply incised pinna margins appearing 2-pinnate, segments (pinnules) sessile, adnate to costa for at least 2 mm.</text>
-      <biological_entity id="from_key_V2_234_o4252" name="leaf" name_original="leaves" src="d12_s0" type="structure">
-        <character constraint="in species" constraintid="o4253" is_modifier="false" name="shape" src="d12_s0" value="1-pinnate-pinnatifid" />
-        <character is_modifier="false" name="architecture" src="d12_s0" value="sessile" />
-        <character constraint="to costa" constraintid="o4256" is_modifier="false" name="fusion" src="d12_s0" value="adnate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_234_o4253" name="species" name_original="species" src="d12_s0" type="taxon_name" />
-      <biological_entity constraint="pinna" id="from_key_V2_234_o4254" name="margin" name_original="margins" src="d12_s0" type="structure">
-        <character is_modifier="true" modifier="deeply" name="shape" src="d12_s0" value="incised" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_234_o4255" name="segment" name_original="segments" src="d12_s0" type="structure">
-        <character is_modifier="true" name="architecture_or_shape" src="d12_s0" value="2-pinnate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_234_o4256" name="costa" name_original="costa" src="d12_s0" type="structure">
-        <character modifier="at least" name="some_measurement" src="d12_s0" unit="mm" value="2" />
-      </biological_entity>
-      <relation from="from_key_V2_234_o4253" id="from_key_V2_234_r995" name="with" negation="false" src="d12_s0" to="from_key_V2_234_o4254" />
-      <relation from="from_key_V2_234_o4254" id="from_key_V2_234_r996" name="appearing" negation="false" src="d12_s0" to="from_key_V2_234_o4255" />
-    </statement>
-    <statement id="from_key_V2_234_d4_s0">
-      <text>Leaves 1-pinnate-pinnatifid or 2-pinnate.</text>
-      <biological_entity id="from_key_V2_234_o4224" name="leaf" name_original="leaves" src="d4_s0" type="structure">
-        <character is_modifier="false" name="shape" src="d4_s0" value="1-pinnate-pinnatifid" />
-        <character is_modifier="false" name="shape" src="d4_s0" value="2-pinnate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_234_d2_s0">
-      <text>Fertile pinnae not contracted, sori often distinct.</text>
-      <biological_entity id="from_key_V2_234_o4221" name="pinna" name_original="pinnae" src="d2_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
-        <character is_modifier="false" modifier="not" name="condition_or_size" src="d2_s0" value="contracted" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_234_o4222" name="sorus" name_original="sori" src="d2_s0" type="structure">
-        <character is_modifier="false" modifier="often" name="fusion" src="d2_s0" value="distinct" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

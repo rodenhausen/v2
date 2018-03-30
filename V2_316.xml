@@ -1,80 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="1754" rank="genus">pteris</taxon_name>
-    <taxon_name authority="Linnaeus" date="1767" rank="species">cretica</taxon_name>
-    <taxon_name authority="Hooker" date="1860" rank="variety">albolineata</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="1754">pteris</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="1767">cretica</taxon_name>
+    <taxon_name rank="variety" authority="Hooker" date="1860">albolineata</taxon_name>
     <place_of_publication>
       <publication_title>Bot. Mag.</publication_title>
       <place_in_publication>plate 5194. 1860</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family pteridaceae;genus pteris;species cretica;variety albolineata</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Pinnae with white or pale green, longitudinal streak along middle;</text>
-      <biological_entity id="o7177" name="pinna" name_original="pinnae" src="d0_s0" type="structure" />
-      <biological_entity id="o7178" name="streak" name_original="streak" src="d0_s0" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s0" value="white" />
-        <character is_modifier="true" name="coloration" src="d0_s0" value="pale green" />
-        <character is_modifier="true" name="dehiscence_or_orientation" src="d0_s0" value="longitudinal" />
-      </biological_entity>
-      <biological_entity constraint="middle" id="o7179" name="pinna" name_original="pinnae" src="d0_s0" type="structure" />
-      <relation from="o7177" id="r1690" name="with" negation="false" src="d0_s0" to="o7178" />
-      <relation from="o7178" id="r1691" name="along" negation="false" src="d0_s0" to="o7179" />
-    </statement>
-    <statement id="d0_s1">
-      <text>sterile pinnae to ca. 25 mm wide, fertile pinnae to ca. 15 mm wide;</text>
-      <biological_entity id="o7180" name="pinna" name_original="pinnae" src="d0_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s1" value="sterile" />
-        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d0_s1" to="25" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o7181" name="pinna" name_original="pinnae" src="d0_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s1" value="fertile" />
-        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d0_s1" to="15" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>terminal pinna usually not decurrent on rachis.</text>
-      <biological_entity constraint="terminal" id="o7182" name="pinna" name_original="pinna" src="d0_s2" type="structure">
-        <character constraint="on rachis" constraintid="o7183" is_modifier="false" modifier="usually not" name="shape" src="d0_s2" value="decurrent" />
-      </biological_entity>
-      <biological_entity id="o7183" name="rachis" name_original="rachis" src="d0_s2" type="structure" />
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Terrestrial or on rock on wooded slopes or shaded limestone ledges and sink margins in circumneutral soil;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="terrestrial or on rock on wooded slopes or shaded limestone ledges and sink margins in circumneutral soil" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>introduced; Fla.; natural range uncertain (see discussion of species).</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="introduced" />
-        <character name="distribution" value="natural range uncertain (see discussion of species)" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Pinnae  with white or pale green, longitudinal streak along middle; sterile pinnae to ca. 25 mm wide, fertile pinnae to ca. 15 mm wide; terminal pinna usually not decurrent on rachis.</description>
+  <description type="habitat">Terrestrial or on rock on wooded slopes or shaded limestone ledges and sink margins in circumneutral soil;</description>
+  <description type="distribution">introduced; Fla.; natural range uncertain (see discussion of species).</description>
   <number>5b</number>
   <other_name type="common_name">White-lined cretan brake</other_name>
   <discussion>Two taxa are considered doubtful species and are therefore excluded. Pteris ensiformis Burman f. cv. victoriae Baker was reported for peninsular Florida by E. T. Wherry (1964), and as far as I can determine, this is the only report of the species for the flora. The source for the record is uncertain. Pteris grandifolia Linnaeus was reported from Dade County, Florida, by T. Darling Jr. (1961), the original find probably occurring in 1952 (E. T. Wherry 1964) and representing either an escape from cultivation or plants merely persistent from cultivation. Recent searches throughout the original location have failed to turn up extant populations; probably the plants have disappeared.</discussion>

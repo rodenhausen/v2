@@ -1,108 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="Link" date="1841" rank="genus">pellaea</taxon_name>
-    <taxon_name authority="(Cavanilles) Link" date="1841" rank="species">ternifolia</taxon_name>
-    <taxon_name authority="Windham" date="1993" rank="subspecies">villosa</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Link" date="1841">pellaea</taxon_name>
+    <taxon_name rank="species" authority="(Cavanilles) Link" date="1841">ternifolia</taxon_name>
+    <taxon_name rank="subspecies" authority="Windham" date="1993">villosa</taxon_name>
     <place_of_publication>
       <publication_title>Contr. Univ. Michigan Herb.</publication_title>
       <place_in_publication>19: 43. 1993</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family pteridaceae;genus pellaea;species ternifolia;subspecies villosa</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Petiole rounded or slightly flattened adaxially in distal portion;</text>
-      <biological_entity id="o5173" name="petiole" name_original="petiole" src="d0_s0" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s0" value="rounded" />
-        <character constraint="in distal portion" constraintid="o5174" is_modifier="false" modifier="slightly" name="shape" src="d0_s0" value="flattened" />
-      </biological_entity>
-      <biological_entity constraint="distal" id="o5174" name="portion" name_original="portion" src="d0_s0" type="structure" />
-    </statement>
-    <statement id="d0_s1">
-      <text>rachis villous, especially in axils of pinnae;</text>
-      <biological_entity id="o5175" name="rachis" name_original="rachis" src="d0_s1" type="structure">
-        <character is_modifier="false" name="pubescence" src="d0_s1" value="villous" />
-      </biological_entity>
-      <biological_entity id="o5176" name="axil" name_original="axils" src="d0_s1" type="structure" />
-      <biological_entity id="o5177" name="pinna" name_original="pinnae" src="d0_s1" type="structure" />
-      <relation from="o5175" id="r1193" modifier="especially" name="in" negation="false" src="d0_s1" to="o5176" />
-      <relation from="o5176" id="r1194" name="part_of" negation="false" src="d0_s1" to="o5177" />
-    </statement>
-    <statement id="d0_s2">
-      <text>pinnae with hairs scattered along main veins abaxially;</text>
-      <biological_entity id="o5178" name="pinna" name_original="pinnae" src="d0_s2" type="structure" />
-      <biological_entity id="o5179" name="hair" name_original="hairs" src="d0_s2" type="structure">
-        <character constraint="along main veins" constraintid="o5180" is_modifier="false" name="arrangement" src="d0_s2" value="scattered" />
-      </biological_entity>
-      <biological_entity constraint="main" id="o5180" name="vein" name_original="veins" src="d0_s2" type="structure" />
-      <relation from="o5178" id="r1195" name="with" negation="false" src="d0_s2" to="o5179" />
-    </statement>
-    <statement id="d0_s3">
-      <text>largest ultimate segments (excluding terminal pinnae) usually more than 18 mm;</text>
-      <biological_entity constraint="largest ultimate" id="o5181" name="segment" name_original="segments" src="d0_s3" type="structure">
-        <character char_type="range_value" from="18" from_unit="mm" name="some_measurement" src="d0_s3" upper_restricted="false" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>spores averaging 46-53 µm diam. 2 n = 116.</text>
-      <biological_entity id="o5182" name="spore" name_original="spores" src="d0_s4" type="structure">
-        <character char_type="range_value" from="46" from_unit="um" name="diameter" src="d0_s4" to="53" to_unit="um" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o5183" name="chromosome" name_original="" src="d0_s4" type="structure">
-        <character name="quantity" src="d0_s4" value="116" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporulating summer--fall.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="summer-fall" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Rocky slopes and ledges, on igneous substrates;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="rocky slopes and ledges , on igneous substrates" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>2300--2700 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2700" to_unit="m" from="2300" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Tex.; Mexico.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Petiole  rounded or slightly flattened adaxially in distal portion; rachis villous, especially in axils of pinnae; pinnae with hairs scattered along main veins abaxially; largest ultimate segments (excluding terminal pinnae) usually more than 18 mm; spores averaging 46--53 µm diam. 2 n  = 116.</description>
+  <description type="phenology">Sporulating summer--fall.</description>
+  <description type="habitat">Rocky slopes and ledges, on igneous substrates;</description>
+  <description type="elevation">2300--2700 m;</description>
+  <description type="distribution">Tex.; Mexico.</description>
   <number>6a</number>
   <discussion>The only record of Pellaea ternifolia subsp. villosa from the flora is provided by a single plant collected in the Davis Mountains of western Texas.</discussion>
 </bio:treatment>

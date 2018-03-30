@@ -1,192 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Michaux ex DeCandolle" date="unknown" rank="family">equisetaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">equisetum</taxon_name>
-    <taxon_name authority="Ehrhart" date="1784" rank="species">pratense</taxon_name>
+    <taxon_name rank="family" authority="Michaux ex DeCandolle" date="unknown">equisetaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">equisetum</taxon_name>
+    <taxon_name rank="species" authority="Ehrhart" date="1784">pratense</taxon_name>
     <place_of_publication>
       <publication_title>Hannover. Mag.</publication_title>
       <place_in_publication>22: 138. 1784</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family equisetaceae;genus equisetum;species pratense</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Aerial stems dimorphic;</text>
-      <biological_entity id="o2802" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="true" name="location" src="d0_s0" value="aerial" />
-        <character is_modifier="false" name="growth_form" src="d0_s0" value="dimorphic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>vegetative stems green, branched, 16-50 cm;</text>
-      <biological_entity id="o2803" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s1" value="vegetative" />
-        <character is_modifier="false" name="coloration" src="d0_s1" value="green" />
-        <character is_modifier="false" name="architecture" src="d0_s1" value="branched" />
-        <character char_type="range_value" from="16" from_unit="cm" name="some_measurement" src="d0_s1" to="50" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>hollow center 1/6-1/3 stem diam.</text>
-      <biological_entity id="o2804" name="center" name_original="center" src="d0_s2" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s2" value="hollow" />
-        <character char_type="range_value" from="1/6" name="quantity" src="d0_s2" to="1/3" />
-      </biological_entity>
-      <biological_entity id="o2805" name="stem" name_original="stem" src="d0_s2" type="structure" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Sheaths somewhat elongate, 3-5 × 2-4 mm;</text>
-      <biological_entity id="o2806" name="sheath" name_original="sheaths" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="somewhat" name="shape" src="d0_s3" value="elongate" />
-        <character char_type="range_value" from="3" from_unit="mm" name="length" src="d0_s3" to="5" to_unit="mm" />
-        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s3" to="4" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>teeth 8-18, narrow, 1.5-4 mm, centers dark and margins white.</text>
-      <biological_entity id="o2807" name="tooth" name_original="teeth" src="d0_s4" type="structure">
-        <character char_type="range_value" from="8" name="quantity" src="d0_s4" to="18" />
-        <character is_modifier="false" name="size_or_width" src="d0_s4" value="narrow" />
-        <character char_type="range_value" from="1.5" from_unit="mm" name="some_measurement" src="d0_s4" to="4" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o2808" name="center" name_original="centers" src="d0_s4" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s4" value="dark" />
-      </biological_entity>
-      <biological_entity id="o2809" name="margin" name_original="margins" src="d0_s4" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s4" value="white" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Branches in regular whorls, horizontal to drooping, solid;</text>
-      <biological_entity id="o2810" name="branch" name_original="branches" src="d0_s5" type="structure">
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s5" value="horizontal" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s5" value="drooping" />
-        <character char_type="range_value" from="horizontal" name="orientation" notes="" src="d0_s5" to="drooping" />
-        <character is_modifier="false" name="architecture" src="d0_s5" value="solid" />
-      </biological_entity>
-      <biological_entity id="o2811" name="whorl" name_original="whorls" src="d0_s5" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s5" value="regular" />
-      </biological_entity>
-      <relation from="o2810" id="r671" name="in" negation="false" src="d0_s5" to="o2811" />
-    </statement>
-    <statement id="d0_s6">
-      <text>ridges 3;</text>
-      <biological_entity id="o2812" name="ridge" name_original="ridges" src="d0_s6" type="structure">
-        <character name="quantity" src="d0_s6" value="3" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>valleys channeled;</text>
-    </statement>
-    <statement id="d0_s8">
-      <text>1st internode of each branch equal to or longer than subtending stem sheath;</text>
-      <biological_entity id="o2813" name="valley" name_original="valleys" src="d0_s7" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s7" value="channeled" />
-      </biological_entity>
-      <biological_entity id="o2814" name="internode" name_original="internode" src="d0_s8" type="structure">
-        <character is_modifier="false" name="variability" src="d0_s8" value="equal" />
-        <character constraint="than subtending stem sheath" constraintid="o2816" is_modifier="false" name="length_or_size" src="d0_s8" value="longer" />
-      </biological_entity>
-      <biological_entity id="o2815" name="branch" name_original="branch" src="d0_s8" type="structure" />
-      <biological_entity constraint="stem" id="o2816" name="sheath" name_original="sheath" src="d0_s8" type="structure" constraint_original="subtending stem" />
-      <relation from="o2814" id="r672" name="part_of" negation="false" src="d0_s8" to="o2815" />
-    </statement>
-    <statement id="d0_s9">
-      <text>sheath teeth deltate.</text>
-      <biological_entity constraint="sheath" id="o2817" name="tooth" name_original="teeth" src="d0_s9" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s9" value="deltate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>Fertile stems brown, with stomates, initially unbranched, persisting and becoming branched and green after spore discharge.</text>
-      <biological_entity id="o2818" name="stem" name_original="stems" src="d0_s10" type="structure">
-        <character is_modifier="true" name="reproduction" src="d0_s10" value="fertile" />
-        <character is_modifier="false" name="coloration" src="d0_s10" value="brown" />
-        <character is_modifier="false" modifier="initially" name="architecture" notes="" src="d0_s10" value="unbranched" />
-        <character is_modifier="false" name="duration" src="d0_s10" value="persisting" />
-        <character is_modifier="false" modifier="becoming" name="architecture" src="d0_s10" value="branched" />
-        <character constraint="after spore" constraintid="o2820" is_modifier="false" name="coloration" src="d0_s10" value="green" />
-      </biological_entity>
-      <biological_entity id="o2819" name="stomate" name_original="stomates" src="d0_s10" type="structure" />
-      <biological_entity id="o2820" name="spore" name_original="spore" src="d0_s10" type="structure" />
-      <relation from="o2818" id="r673" name="with" negation="false" src="d0_s10" to="o2819" />
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Cones maturing in late spring.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="cones maturing time" value="late spring" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Meadows, wet woodlands;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="meadows" />
-        <character name="habitat" value="wet woodlands ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--2000 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="2000" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Alta., B.C., Man., N.B., Nfld., N.W.T., N.S., Ont., P.E.I., Que., Sask., Yukon; Alaska, Conn., Ill., Iowa, Maine, Mass., Mich., Minn., N.H., N.Y., N.Dak., Vt., Wis.; n Eurasia to ne China, Japan in Hokkaido.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="Canada" value="Alta." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Man." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Nfld." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.W.T." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="P.E.I." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Sask." establishment_means="native" />
-        <character name="distribution" geographical_constraint="Canada" value="Yukon" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="N.Dak." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
-        <character name="distribution" value="n Eurasia to ne China" establishment_means="native" />
-        <character name="distribution" value="Japan in Hokkaido" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Aerial stems  dimorphic; vegetative stems green, branched, 16--50 cm; hollow center 1/6--1/3 stem diam.  Sheaths  somewhat elongate, 3--5 × 2--4 mm; teeth 8--18, narrow, 1.5--4 mm, centers dark and margins white.  Branches  in regular whorls, horizontal to drooping, solid; ridges 3; valleys channeled; 1st internode of each branch equal to or longer than subtending stem sheath; sheath teeth deltate.  Fertile stems  brown, with stomates, initially unbranched, persisting and becoming branched and green after spore discharge.</description>
+  <description type="phenology">Cones maturing in late spring.</description>
+  <description type="habitat">Meadows, wet woodlands;</description>
+  <description type="elevation">0--2000 m;</description>
+  <description type="distribution">Alta., B.C., Man., N.B., Nfld., N.W.T., N.S., Ont., P.E.I., Que., Sask., Yukon; Alaska, Conn., Ill., Iowa, Maine, Mass., Mich., Minn., N.H., N.Y., N.Dak., Vt., Wis.; n Eurasia to ne China, Japan in Hokkaido.</description>
   <number>7</number>
   <other_name type="common_name">Meadow horsetail</other_name>
   <other_name type="common_name">prêle des prés</other_name>

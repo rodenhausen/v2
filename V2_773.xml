@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="E. D. M. Kirchner" date="unknown" rank="family">pteridaceae</taxon_name>
-    <taxon_name authority="(Nuttall ex Hooker &amp; Baker) Copeland" date="1947" rank="genus">aspidotis</taxon_name>
-    <taxon_name authority="(Hooker) Nuttall ex Copeland" date="1947" rank="species">californica</taxon_name>
+    <taxon_name rank="family" authority="E. D. M. Kirchner" date="unknown">pteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="(Nuttall ex Hooker &amp; Baker) Copeland" date="1947">aspidotis</taxon_name>
+    <taxon_name rank="species" authority="(Hooker) Nuttall ex Copeland" date="1947">californica</taxon_name>
     <place_of_publication>
       <publication_title>Gen. Fil.</publication_title>
       <place_in_publication>68. 1947</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family pteridaceae;genus aspidotis;species californica</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Hypolepis</taxon_name>
-    <taxon_name authority="Hooker" date="unknown" rank="species">californica</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Hypolepis</taxon_name>
+    <taxon_name rank="species" authority="Hooker" date="unknown">californica</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Fil.</publication_title>
       <place_in_publication>2: 71, plate 88a. 1852</place_in_publication>
@@ -35,161 +27,14 @@
     <taxon_hierarchy>genus Hypolepis;species californica;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Cheilanthes</taxon_name>
-    <taxon_name authority="(Hooker) Mettenius" date="unknown" rank="species">californica</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Cheilanthes</taxon_name>
+    <taxon_name rank="species" authority="(Hooker) Mettenius" date="unknown">californica</taxon_name>
     <taxon_hierarchy>genus Cheilanthes;species californica;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Leaves monomorphic, 10-35 cm.</text>
-      <biological_entity id="o22446" name="leaf" name_original="leaves" src="d0_s0" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s0" value="monomorphic" />
-        <character char_type="range_value" from="10" from_unit="cm" name="some_measurement" src="d0_s0" to="35" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Blade 4 (-5) -pinnate, 3-12 cm, nearly as wide as long, papery.</text>
-      <biological_entity id="o22447" name="blade" name_original="blade" src="d0_s1" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s1" value="4(-5)-pinnate" />
-        <character char_type="range_value" from="3" from_unit="cm" name="some_measurement" src="d0_s1" to="12" to_unit="cm" />
-        <character is_modifier="false" modifier="nearly" name="length_or_size" src="d0_s1" value="long" />
-        <character is_modifier="false" name="texture" src="d0_s1" value="papery" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Ultimate segments lanceolate or deltate, 1.5-4 mm;</text>
-      <biological_entity constraint="ultimate" id="o22448" name="segment" name_original="segments" src="d0_s2" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s2" value="lanceolate" />
-        <character is_modifier="false" name="shape" src="d0_s2" value="deltate" />
-        <character char_type="range_value" from="1.5" from_unit="mm" name="some_measurement" src="d0_s2" to="4" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>midrib usually obscure abaxially.</text>
-      <biological_entity id="o22449" name="midrib" name_original="midrib" src="d0_s3" type="structure">
-        <character is_modifier="false" modifier="usually; abaxially" name="prominence" src="d0_s3" value="obscure" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Sori of mature blades short, discrete, 1-3 (-5) per segment;</text>
-      <biological_entity id="o22450" name="sorus" name_original="sori" src="d0_s4" type="structure">
-        <character is_modifier="false" name="height_or_length_or_size" src="d0_s4" value="short" />
-        <character is_modifier="false" name="fusion" src="d0_s4" value="discrete" />
-        <character char_type="range_value" from="3" from_inclusive="false" name="atypical_quantity" src="d0_s4" to="5" />
-        <character char_type="range_value" constraint="per segment" constraintid="o22452" from="1" name="quantity" src="d0_s4" to="3" />
-      </biological_entity>
-      <biological_entity id="o22451" name="blade" name_original="blades" src="d0_s4" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d0_s4" value="mature" />
-      </biological_entity>
-      <biological_entity id="o22452" name="segment" name_original="segment" src="d0_s4" type="structure" />
-      <relation from="o22450" id="r5246" name="part_of" negation="false" src="d0_s4" to="o22451" />
-    </statement>
-    <statement id="d0_s5">
-      <text>indusia semicircular, margins with 2-6 coarse, irregular teeth or ± entire.</text>
-      <biological_entity id="o22453" name="indusium" name_original="indusia" src="d0_s5" type="structure">
-        <character is_modifier="false" name="arrangement_or_shape" src="d0_s5" value="semicircular" />
-      </biological_entity>
-      <biological_entity id="o22455" name="tooth" name_original="teeth" src="d0_s5" type="structure">
-        <character char_type="range_value" from="2" is_modifier="true" name="quantity" src="d0_s5" to="6" />
-        <character is_modifier="true" name="relief" src="d0_s5" value="coarse" />
-        <character is_modifier="true" name="architecture_or_course" src="d0_s5" value="irregular" />
-      </biological_entity>
-      <relation from="o22454" id="r5247" name="with" negation="false" src="d0_s5" to="o22455" />
-    </statement>
-    <statement id="d0_s6">
-      <text>2 n = 60, 120.</text>
-      <biological_entity id="o22454" name="margin" name_original="margins" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="more or less" name="architecture_or_shape" src="d0_s5" value="entire" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o22456" name="chromosome" name_original="" src="d0_s6" type="structure">
-        <character name="quantity" src="d0_s6" value="60" />
-        <character name="quantity" src="d0_s6" value="120" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Rocky outcrops and crevices (not serpentine), moist to dry, shaded slopes and cliffs;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="rocky outcrops" />
-        <character name="habitat" value="crevices ( serpentine )" />
-        <character name="habitat" value="moist to dry , shaded slopes and cliffs" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>20--1300 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1300" to_unit="m" from="20" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Calif.; Mexico in n Baja California.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-        <character name="distribution" value="Mexico in n Baja California" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Leaves  monomorphic, 10--35 cm.  Blade  4(--5)-pinnate, 3--12 cm, nearly as wide as long, papery.  Ultimate segments  lanceolate or deltate, 1.5--4 mm; midrib usually obscure abaxially.  Sori  of mature blades short, discrete, 1--3(--5) per segment; indusia semicircular, margins with 2--6 coarse, irregular teeth or ± entire. 2 n  = 60, 120.</description>
+  <description type="habitat">Rocky outcrops and crevices (not serpentine), moist to dry, shaded slopes and cliffs;</description>
+  <description type="elevation">20--1300 m;</description>
+  <description type="distribution">Calif.; Mexico in n Baja California.</description>
   <number>1</number>
   <other_name type="common_name">California lace fern</other_name>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_566_d3_s0">
-      <text>Sori discrete, 1–3 (–5) per blade segment;</text>
-      <biological_entity id="from_key_V2_566_o15267" name="sorus" name_original="sori" src="d3_s0" type="structure">
-        <character is_modifier="false" name="fusion" src="d3_s0" value="discrete" />
-        <character char_type="range_value" from="3" from_inclusive="false" name="atypical_count" src="d3_s0" to="5" />
-        <character char_type="range_value" constraint="per blade segment" constraintid="o15268" from="1" name="count" src="d3_s0" to="3" />
-      </biological_entity>
-      <biological_entity constraint="blade" id="from_key_V2_566_o15268" name="segment" name_original="segment" src="d3_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_566_d3_s1">
-      <text>indusia margins with 2–6 coarse, irregular teeth or ± entire.</text>
-      <biological_entity constraint="indusia" id="from_key_V2_566_o15269" name="margin" name_original="margins" src="d3_s1" type="structure">
-        <character is_modifier="false" modifier="more or less" name="architecture_or_shape" src="d3_s1" value="entire" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_566_o15270" name="tooth" name_original="teeth" src="d3_s1" type="structure">
-        <character char_type="range_value" from="2" is_modifier="true" name="count" src="d3_s1" to="6" />
-        <character is_modifier="true" name="relief" src="d3_s1" value="coarse" />
-        <character is_modifier="true" name="architecture_or_course" src="d3_s1" value="irregular" />
-      </biological_entity>
-      <relation from="from_key_V2_566_o15269" id="from_key_V2_566_r3601" name="with" negation="false" src="d3_s1" to="from_key_V2_566_o15270" />
-    </statement>
-    <statement id="from_key_V2_566_d2_s0">
-      <text>Mature, fertile blades with sori discrete or partially discontinuous;</text>
-      <biological_entity id="from_key_V2_566_o15261" name="whole_organism" name_original="" src="d2_s0" type="structure">
-        <character is_modifier="false" name="life_cycle" src="d2_s0" value="mature" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_566_o15262" name="blade" name_original="blades" src="d2_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
-        <character is_modifier="false" modifier="partially" name="architecture_or_arrangement" src="d2_s0" value="discontinuous" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_566_o15263" name="sorus" name_original="sori" src="d2_s0" type="structure">
-        <character is_modifier="false" name="fusion" src="d2_s0" value="discrete" />
-      </biological_entity>
-      <relation from="from_key_V2_566_o15262" id="from_key_V2_566_r3599" name="with" negation="false" src="d2_s0" to="from_key_V2_566_o15263" />
-    </statement>
-    <statement id="from_key_V2_566_d2_s1">
-      <text>indusia with coarse, irregular teeth or entire;</text>
-      <biological_entity id="from_key_V2_566_o15264" name="indusium" name_original="indusia" src="d2_s1" type="structure" />
-      <biological_entity id="from_key_V2_566_o15265" name="tooth" name_original="teeth" src="d2_s1" type="structure">
-        <character is_modifier="true" name="relief" src="d2_s1" value="coarse" />
-        <character is_modifier="true" name="architecture_or_course" src="d2_s1" value="irregular" />
-      </biological_entity>
-      <relation from="from_key_V2_566_o15264" id="from_key_V2_566_r3600" modifier="with coarse , irregular teeth or entire" name="with" negation="false" src="d2_s1" to="from_key_V2_566_o15265" />
-    </statement>
-    <statement id="from_key_V2_566_d2_s2">
-      <text>fertile segments lanceolate to deltate, distantly dentate.</text>
-      <biological_entity id="from_key_V2_566_o15266" name="segment" name_original="segments" src="d2_s2" type="structure">
-        <character is_modifier="true" name="reproduction" src="d2_s2" value="fertile" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s2" value="lanceolate" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s2" value="deltate" />
-        <character char_type="range_value" from="lanceolate" name="shape" src="d2_s2" to="deltate" />
-        <character is_modifier="false" modifier="distantly" name="architecture_or_shape" src="d2_s2" value="dentate" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

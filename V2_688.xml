@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Kaulfuss" date="unknown" rank="family">schizaeaceae</taxon_name>
-    <taxon_name authority="Wallich" date="1829" rank="genus">actinostachys</taxon_name>
-    <taxon_name authority="(Swartz) Hooker" date="1842" rank="species">pennula</taxon_name>
+    <taxon_name rank="family" authority="Kaulfuss" date="unknown">schizaeaceae</taxon_name>
+    <taxon_name rank="genus" authority="Wallich" date="1829">actinostachys</taxon_name>
+    <taxon_name rank="species" authority="(Swartz) Hooker" date="1842">pennula</taxon_name>
     <place_of_publication>
       <publication_title>Gen. Fil.</publication_title>
       <place_in_publication>plate 111A. 1842</place_in_publication>
@@ -26,8 +18,8 @@
     <taxon_hierarchy>family schizaeaceae;genus actinostachys;species pennula</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Schizaea</taxon_name>
-    <taxon_name authority="Swartz" date="unknown" rank="species">pennula</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Schizaea</taxon_name>
+    <taxon_name rank="species" authority="Swartz" date="unknown">pennula</taxon_name>
     <place_of_publication>
       <publication_title>Syn. Fil.,</publication_title>
       <place_in_publication>150, 379. 1806</place_in_publication>
@@ -35,56 +27,16 @@
     <taxon_hierarchy>genus Schizaea;species pennula;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Actinostachys</taxon_name>
-    <taxon_name authority="Fée" date="unknown" rank="species">germanii</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Actinostachys</taxon_name>
+    <taxon_name rank="species" authority="Fée" date="unknown">germanii</taxon_name>
     <taxon_hierarchy>genus Actinostachys;species germanii;</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="SYNONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Schizaea</taxon_name>
-    <taxon_name authority="(Fée) Prantl" date="unknown" rank="species">germanii</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Schizaea</taxon_name>
+    <taxon_name rank="species" authority="(Fée) Prantl" date="unknown">germanii</taxon_name>
     <taxon_hierarchy>genus Schizaea;species germanii;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants extremely variable in size, 5-50 cm, those in leaf mold (only form known in flora) usually small, those in open sunny areas much larger.</text>
-      <biological_entity id="o19175" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="extremely" name="size" src="d0_s0" value="variable" />
-        <character char_type="range_value" from="5" from_unit="cm" name="some_measurement" src="d0_s0" to="50" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o19176" name="leaf" name_original="leaf" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="usually" name="size" src="d0_s0" value="small" />
-      </biological_entity>
-      <biological_entity id="o19177" name="area" name_original="areas" src="d0_s0" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s0" value="open" />
-        <character is_modifier="true" name="habitat" src="d0_s0" value="sunny" />
-        <character is_modifier="false" modifier="much" name="size" src="d0_s0" value="larger" />
-      </biological_entity>
-      <relation from="o19175" id="r4443" name="in" negation="false" src="d0_s0" to="o19176" />
-      <relation from="o19175" id="r4444" name="in" negation="false" src="d0_s0" to="o19177" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves 1-60;</text>
-      <biological_entity id="o19178" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character char_type="range_value" from="1" name="quantity" src="d0_s1" to="60" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>rays 1-12, 4-40 mm;</text>
-      <biological_entity id="o19179" name="ray" name_original="rays" src="d0_s2" type="structure">
-        <character char_type="range_value" from="1" name="quantity" src="d0_s2" to="12" />
-        <character char_type="range_value" from="4" from_unit="mm" name="some_measurement" src="d0_s2" to="40" to_unit="mm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>petioles 0.5-2 cm. 2 n = 168 (Trinidad).</text>
-      <biological_entity id="o19180" name="petiole" name_original="petioles" src="d0_s3" type="structure">
-        <character char_type="range_value" from="0.5" from_unit="cm" name="some_measurement" src="d0_s3" to="2" to_unit="cm" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o19181" name="chromosome" name_original="" src="d0_s3" type="structure">
-        <character name="quantity" src="d0_s3" value="168" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  extremely variable in size, 5--50 cm, those in leaf mold (only form known in flora) usually small, those in open sunny areas much larger.  Leaves  1--60; rays 1--12, 4--40 mm; petioles 0.5--2 cm. 2 n  = 168 (Trinidad).</description>
   <number>1</number>
   <other_name type="common_name">Ray spiked fern</other_name>
   <discussion>Small individuals of Actinostachys pennula have sometimes been called A . germanii , but plants conforming to A . germanii are merely at the end of a morphological series; they are probably juvenile. Each juvenile has a large bulbous gametophyte remaining attached (a so-called "tuber") that is sometimes mistaken for the stem. Not only is the persistent gametophyte mistaken for a stem, but in the large forms of typical A . pennula the stem is not a solitary structure. Instead it resembles a compact, intergrown bush, made up of numerous tiny, narrow stems, usually less than 1 mm diam., that proliferate from old leaf bases---a type of cauline organization apparently unknown in any other living fern but possibly found in the fossil genus Tempskya . Measurements for plants in the North American flora are all in the lower parts of the range for the species. Actinostachys pennula is among North America's most unusual ferns, a highly treasured species, sought by field botanists who must, however, respect its rarity.</discussion>

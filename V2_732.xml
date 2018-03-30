@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>Warren H. Wagner Jr.</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Kaulfuss" date="unknown" rank="family">schizaeaceae</taxon_name>
-    <taxon_name authority="Wallich" date="1829" rank="genus">Actinostachys</taxon_name>
+    <taxon_name rank="family" authority="Kaulfuss" date="unknown">schizaeaceae</taxon_name>
+    <taxon_name rank="genus" authority="Wallich" date="1829">Actinostachys</taxon_name>
     <place_of_publication>
       <publication_title>Numer. List.</publication_title>
       <place_in_publication>1. 1829</place_in_publication>
@@ -25,124 +17,12 @@
     <taxon_hierarchy>family schizaeaceae;genus Actinostachys</taxon_hierarchy>
     <other_info_on_name type="etymology">[Greek aktis, ray, and stachys, spike, referring to the rays of the fertile leaves]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants terrestrial.</text>
-      <biological_entity id="o21143" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_habitat" src="d0_s0" value="terrestrial" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Roots dark, fibrous, covered with dark, stiff hairs, 2-3 mm.</text>
-      <biological_entity id="o21144" name="root" name_original="roots" src="d0_s1" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s1" value="dark" />
-        <character is_modifier="false" name="texture" src="d0_s1" value="fibrous" />
-        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s1" to="3" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o21145" name="hair" name_original="hairs" src="d0_s1" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s1" value="dark" />
-        <character is_modifier="true" name="fragility" src="d0_s1" value="stiff" />
-      </biological_entity>
-      <relation from="o21144" id="r4969" name="covered with" negation="false" src="d0_s1" to="o21145" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Stems upright;</text>
-      <biological_entity id="o21146" name="stem" name_original="stems" src="d0_s2" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s2" value="upright" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>hairs uniseriate.</text>
-      <biological_entity id="o21147" name="hair" name_original="hairs" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture_or_arrangement" src="d0_s3" value="uniseriate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Leaves all fertile (even youngest), unbranched, long-petioled.</text>
-      <biological_entity id="o21148" name="leaf" name_original="leaves" src="d0_s4" type="structure">
-        <character is_modifier="false" name="reproduction" src="d0_s4" value="fertile" />
-        <character is_modifier="false" name="architecture" src="d0_s4" value="unbranched" />
-        <character is_modifier="false" name="architecture" src="d0_s4" value="long-petioled" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Blades falsely digitate, reduced to 2-many erect to spreading terminal rays;</text>
-      <biological_entity id="o21149" name="blade" name_original="blades" src="d0_s5" type="structure">
-        <character is_modifier="false" modifier="falsely" name="architecture" src="d0_s5" value="digitate" />
-        <character is_modifier="false" name="size" src="d0_s5" value="reduced" />
-        <character is_modifier="false" name="orientation" src="d0_s5" value="2-many" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s5" value="erect" />
-        <character is_modifier="false" name="orientation" notes="[duplicate value]" src="d0_s5" value="spreading" />
-        <character char_type="range_value" from="erect" name="orientation" src="d0_s5" to="spreading" />
-      </biological_entity>
-      <biological_entity constraint="terminal" id="o21150" name="ray" name_original="rays" src="d0_s5" type="structure" />
-    </statement>
-    <statement id="d0_s6">
-      <text>rays appearing to whorled but actually borne on very short rachis.</text>
-      <biological_entity id="o21151" name="ray" name_original="rays" src="d0_s6" type="structure" />
-      <biological_entity constraint="short" id="o21152" name="rachis" name_original="rachis" src="d0_s6" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s6" value="whorled" />
-      </biological_entity>
-      <relation from="o21151" id="r4970" name="appearing to" negation="false" src="d0_s6" to="o21152" />
-    </statement>
-    <statement id="d0_s7">
-      <text>Sporangia in 2-4 rows.</text>
-      <biological_entity id="o21153" name="sporangium" name_original="sporangia" src="d0_s7" type="structure" />
-      <biological_entity id="o21154" name="row" name_original="rows" src="d0_s7" type="structure">
-        <character char_type="range_value" from="2" is_modifier="true" name="quantity" src="d0_s7" to="4" />
-      </biological_entity>
-      <relation from="o21153" id="r4971" name="in" negation="false" src="d0_s7" to="o21154" />
-    </statement>
-    <statement id="d0_s8">
-      <text>Gametophytes subterranean, not green, tuberlike, brown-hairy.</text>
-    </statement>
-    <statement id="d0_s9">
-      <text>x = 134, 140.</text>
-      <biological_entity id="o21155" name="gametophyte" name_original="gametophytes" src="d0_s8" type="structure">
-        <character is_modifier="false" name="location" src="d0_s8" value="subterranean" />
-        <character is_modifier="false" modifier="not" name="coloration" src="d0_s8" value="green" />
-        <character is_modifier="false" name="shape" src="d0_s8" value="tuberlike" />
-        <character is_modifier="false" name="pubescence" src="d0_s8" value="brown-hairy" />
-      </biological_entity>
-      <biological_entity constraint="x" id="o21156" name="chromosome" name_original="" src="d0_s9" type="structure">
-        <character name="quantity" src="d0_s9" value="134" />
-        <character name="quantity" src="d0_s9" value="140" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>nearly worldwide in tropical regions.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="nearly worldwide in tropical regions" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  terrestrial.  Roots  dark, fibrous, covered with dark, stiff hairs, 2--3 mm.  Stems  upright; hairs uniseriate.  Leaves  all fertile (even youngest), unbranched, long-petioled.  Blades  falsely digitate, reduced to 2--many erect to spreading terminal rays; rays appearing to be whorled but actually borne on very short rachis.  Sporangia  in 2--4 rows.  Gametophytes  subterranean, not green, tuberlike, brown-hairy.  x  = 134, 140.</description>
+  <description type="distribution">nearly worldwide in tropical regions.</description>
   <number>2</number>
   <other_name type="common_name">Ray spiked fern</other_name>
   <discussion>Species 20 (1 in the flora):</discussion>
   <references>
     <reference>Wagner, W. H. Jr. and V. Quevedo. 1985. Polymorphism in  Actinostachys pennula  (Swartz) Hooker and the taxonomic status of  A .  germanii  (Fée) Prantl. [Abstract.] Amer. J. Bot. 72: 927--928.</reference>
   </references>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_679_d2_s0">
-      <text>Fertile blades falsely digitate, segments appearing to arise at single point;</text>
-      <biological_entity id="from_key_V2_679_o18924" name="blade" name_original="blades" src="d2_s0" type="structure">
-        <character is_modifier="true" name="reproduction" src="d2_s0" value="fertile" />
-        <character is_modifier="false" modifier="falsely" name="architecture" src="d2_s0" value="digitate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_679_o18925" name="segment" name_original="segments" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_679_o18926" name="point" name_original="point" src="d2_s0" type="structure">
-        <character is_modifier="true" name="count" src="d2_s0" value="single" />
-      </biological_entity>
-      <relation from="from_key_V2_679_o18925" id="from_key_V2_679_r4394" name="appearing to" negation="false" src="d2_s0" to="from_key_V2_679_o18926" />
-    </statement>
-    <statement id="from_key_V2_679_d2_s1">
-      <text>sterile leaves absent.</text>
-      <biological_entity id="from_key_V2_679_o18927" name="leaf" name_original="leaves" src="d2_s1" type="structure">
-        <character is_modifier="true" name="reproduction" src="d2_s1" value="sterile" />
-        <character is_modifier="false" name="count" src="d2_s1" value="absent" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

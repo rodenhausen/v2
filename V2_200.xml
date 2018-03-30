@@ -1,131 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Martius" date="unknown" rank="family">hymenophyllaceae</taxon_name>
-    <taxon_name authority="Smith" date="1793" rank="genus">hymenophyllum</taxon_name>
-    <taxon_name authority="(Linnaeus) Smith in J. E. Smith et al." date="unknown" rank="species">tunbrigense</taxon_name>
+    <taxon_name rank="family" authority="Martius" date="unknown">hymenophyllaceae</taxon_name>
+    <taxon_name rank="genus" authority="Smith" date="1793">hymenophyllum</taxon_name>
+    <taxon_name rank="species" authority="(Linnaeus) Smith in J. E. Smith et al." date="unknown">tunbrigense</taxon_name>
     <place_of_publication>
       <place_in_publication>5: 418. 1793</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family hymenophyllaceae;genus hymenophyllum;species tunbrigense</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Trichomanes</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="species">tunbrigense</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Trichomanes</taxon_name>
+    <taxon_name rank="species" authority="Linnaeus" date="unknown">tunbrigense</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl.</publication_title>
       <place_in_publication>2: 1098. 1753</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Trichomanes;species tunbrigense;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants on rock.</text>
-      <biological_entity id="o3376" name="plant" name_original="plants" src="d0_s0" type="structure" />
-      <biological_entity id="o3377" name="rock" name_original="rock" src="d0_s0" type="structure" />
-      <relation from="o3376" id="r809" name="on" negation="false" src="d0_s0" to="o3377" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves oblong, 2-3-pinnatifid, 2-6 × 0.5-1.5 cm, with minute, 2-celled, glandular-hairs scattered on veins;</text>
-      <biological_entity id="o3378" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s1" value="oblong" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="2-3-pinnatifid" />
-        <character char_type="range_value" from="2" from_unit="cm" name="length" src="d0_s1" to="6" to_unit="cm" />
-        <character char_type="range_value" constraint="with minute" from="0.5" from_unit="cm" name="width" src="d0_s1" to="1.5" to_unit="cm" />
-        <character is_modifier="false" name="architecture" src="d0_s1" value="2-celled" />
-      </biological_entity>
-      <biological_entity id="o3379" name="glandular-hair" name_original="glandular-hairs" src="d0_s1" type="structure">
-        <character constraint="on veins" constraintid="o3380" is_modifier="false" name="arrangement" src="d0_s1" value="scattered" />
-      </biological_entity>
-      <biological_entity id="o3380" name="vein" name_original="veins" src="d0_s1" type="structure" />
-    </statement>
-    <statement id="d0_s2">
-      <text>margins distantly dentate.</text>
-      <biological_entity id="o3381" name="margin" name_original="margins" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="distantly" name="architecture_or_shape" src="d0_s2" value="dentate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Gametophyte gemmae absent.</text>
-    </statement>
-    <statement id="d0_s4">
-      <text>2 n = 26.</text>
-      <biological_entity constraint="gametophyte" id="o3382" name="gemma" name_original="gemmae" src="d0_s3" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s3" value="absent" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o3383" name="chromosome" name_original="" src="d0_s4" type="structure">
-        <character name="quantity" src="d0_s4" value="26" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>On rock, forming imbricate mats on vertical cliffs in narrow gorges usually near waterfalls and cascades;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="on rock" />
-        <character name="habitat" value="forming imbricate mats on vertical cliffs in narrow gorges near waterfalls and cascades" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>350--500 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="500" to_unit="m" from="350" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>S.C.; Mexico; West Indies; Central America; South America; Europe; Asia; in tropical and temperate regions.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-        <character name="distribution" value="West Indies" establishment_means="native" />
-        <character name="distribution" value="Central America" establishment_means="native" />
-        <character name="distribution" value="South America" establishment_means="native" />
-        <character name="distribution" value="Europe" establishment_means="native" />
-        <character name="distribution" value="Asia" establishment_means="native" />
-        <character name="distribution" value="in tropical and temperate regions" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  on rock.  Leaves  oblong, 2--3-pinnatifid, 2--6 × 0.5--1.5 cm, with minute, 2-celled, glandular hairs scattered on veins; margins distantly dentate.  Gametophyte gemmae  absent. 2 n  = 26.</description>
+  <description type="habitat">On rock, forming imbricate mats on vertical cliffs in narrow gorges usually near waterfalls and cascades;</description>
+  <description type="elevation">350--500 m;</description>
+  <description type="distribution">S.C.; Mexico; West Indies; Central America; South America; Europe; Asia; in tropical and temperate regions.</description>
   <number>1</number>
   <other_name type="common_name">Tunbridge filmy fern</other_name>
   <discussion>About two dozen small populations of Hymenophyllum tunbrigense exist in a single river gorge in Pickens County, South Carolina. It is slow to recover from disturbance, and its numbers have been substantially reduced by collecting since its initial discovery in 1936. Gametophytes characteristic of the genus but lacking gemmae have been described from Great Britain, where populations are more vigorous and where spore production and sexual reproduction via gametophytes are more common (F. J. Rumsey et al. 1990; C. A. Raine et al. 1991). In plants in the flora, spore production is relatively rare, and gametophytes have not been observed.</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_29_d3_s0">
-      <text>Blade segments and involucres dentate.</text>
-      <biological_entity id="from_key_V2_29_o5937" name="blade" name_original="blade" src="d3_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d3_s0" value="dentate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_29_o5938" name="segment" name_original="segments" src="d3_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d3_s0" value="dentate" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_29_o5939" name="involucre" name_original="involucres" src="d3_s0" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d3_s0" value="dentate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_29_d1_s0">
-      <text>Leaf-blades glabrous.</text>
-      <biological_entity id="from_key_V2_29_o5935" name="leaf-blade" name_original="leaf-blades" src="d1_s0" type="structure">
-        <character is_modifier="false" name="pubescence" src="d1_s0" value="glabrous" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

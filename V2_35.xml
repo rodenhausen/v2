@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>Donald R. Farrar</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Martius" date="unknown" rank="family">hymenophyllaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">Trichomanes</taxon_name>
+    <taxon_name rank="family" authority="Martius" date="unknown">hymenophyllaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">Trichomanes</taxon_name>
     <place_of_publication>
       <publication_title>Sp. Pl.</publication_title>
       <place_in_publication>2: 1097. 1753; Gen. Pl. ed. 5, 485, 1754</place_in_publication>
@@ -25,159 +17,8 @@
     <taxon_hierarchy>family hymenophyllaceae;genus Trichomanes</taxon_hierarchy>
     <other_info_on_name type="etymology">[Greek thrix, hair, and manes, cup, alluding to the hairlike receptacle extending from the cuplike involucre]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants epiphytic or on rock.</text>
-      <biological_entity id="o8018" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="habitat" src="d0_s0" value="epiphytic" />
-        <character is_modifier="false" name="habitat" src="d0_s0" value="on rock" />
-      </biological_entity>
-      <biological_entity id="o8019" name="rock" name_original="rock" src="d0_s0" type="structure" />
-      <relation from="o8018" id="r1873" name="on" negation="false" src="d0_s0" to="o8019" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems long-creeping or short and erect, clothed in masses of dark-brown hairs of 2 or more types, including multicellular gland-tipped hairs and elongate, sometimes branched and often multicellular, rhizoidlike hairs.</text>
-      <biological_entity id="o8020" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="long-creeping" />
-        <character is_modifier="false" name="height_or_length_or_size" src="d0_s1" value="short" />
-        <character is_modifier="false" name="orientation" src="d0_s1" value="erect" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="elongate" />
-        <character is_modifier="false" modifier="sometimes" name="architecture" src="d0_s1" value="branched" />
-        <character is_modifier="false" modifier="often" name="architecture" src="d0_s1" value="multicellular" />
-      </biological_entity>
-      <biological_entity id="o8021" name="mass" name_original="masses" src="d0_s1" type="structure" />
-      <biological_entity id="o8022" name="hair" name_original="hairs" src="d0_s1" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s1" value="dark-brown" />
-      </biological_entity>
-      <biological_entity id="o8023" name="hair" name_original="hairs" src="d0_s1" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s1" value="2" />
-        <character is_modifier="true" name="architecture" src="d0_s1" value="multicellular" />
-        <character is_modifier="true" name="architecture" src="d0_s1" value="gland-tipped" />
-      </biological_entity>
-      <biological_entity id="o8024" name="hair" name_original="hairs" src="d0_s1" type="structure">
-        <character is_modifier="true" name="architecture_or_shape" src="d0_s1" value="rhizoidlike" />
-      </biological_entity>
-      <relation from="o8020" id="r1874" name="clothed in" negation="false" src="d0_s1" to="o8021" />
-      <relation from="o8020" id="r1875" name="part_of" negation="false" src="d0_s1" to="o8022" />
-      <relation from="o8020" id="r1876" name="part_of" negation="false" src="d0_s1" to="o8023" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Roots sparse or absent on creeping stems, numerous and wiry on erect stems.</text>
-      <biological_entity id="o8025" name="root" name_original="roots" src="d0_s2" type="structure">
-        <character is_modifier="false" name="quantity" src="d0_s2" value="sparse" />
-        <character constraint="on stems" constraintid="o8026" is_modifier="false" name="presence" src="d0_s2" value="absent" />
-        <character constraint="on stems" constraintid="o8027" is_modifier="false" name="architecture" src="d0_s2" value="wiry" />
-      </biological_entity>
-      <biological_entity id="o8026" name="stem" name_original="stems" src="d0_s2" type="structure">
-        <character is_modifier="true" name="growth_form_or_orientation" src="d0_s2" value="creeping" />
-        <character is_modifier="false" name="quantity" notes="" src="d0_s2" value="numerous" />
-      </biological_entity>
-      <biological_entity id="o8027" name="stem" name_original="stems" src="d0_s2" type="structure">
-        <character is_modifier="true" name="orientation" src="d0_s2" value="erect" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Leaves entire, lobed, or compound, 0.5-20 × 0.2-5 cm.</text>
-      <biological_entity id="o8028" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s3" value="entire" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="lobed" />
-        <character is_modifier="false" name="architecture" src="d0_s3" value="compound" />
-        <character char_type="range_value" from="0.5" from_unit="cm" name="length" src="d0_s3" to="20" to_unit="cm" />
-        <character char_type="range_value" from="0.2" from_unit="cm" name="width" src="d0_s3" to="5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Petiole short, wiry, often partially or wholly winged.</text>
-      <biological_entity id="o8029" name="petiole" name_original="petiole" src="d0_s4" type="structure">
-        <character is_modifier="false" name="height_or_length_or_size" src="d0_s4" value="short" />
-        <character is_modifier="false" name="architecture" src="d0_s4" value="wiry" />
-        <character is_modifier="false" modifier="often partially; partially; wholly" name="architecture" src="d0_s4" value="winged" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Blade glabrous or with scattered, multicellular, gland-tipped hairs on veins;</text>
-      <biological_entity id="o8030" name="blade" name_original="blade" src="d0_s5" type="structure">
-        <character is_modifier="false" name="pubescence" src="d0_s5" value="glabrous" />
-        <character is_modifier="false" name="pubescence" src="d0_s5" value="with scattered , multicellular , gland-tipped hairs" />
-      </biological_entity>
-      <biological_entity id="o8031" name="hair" name_original="hairs" src="d0_s5" type="structure">
-        <character is_modifier="true" name="arrangement" src="d0_s5" value="scattered" />
-        <character is_modifier="true" name="architecture" src="d0_s5" value="multicellular" />
-        <character is_modifier="true" name="architecture" src="d0_s5" value="gland-tipped" />
-      </biological_entity>
-      <biological_entity id="o8032" name="vein" name_original="veins" src="d0_s5" type="structure" />
-      <relation from="o8030" id="r1877" name="with" negation="false" src="d0_s5" to="o8031" />
-      <relation from="o8031" id="r1878" name="on" negation="false" src="d0_s5" to="o8032" />
-    </statement>
-    <statement id="d0_s6">
-      <text>margins entire or minutely lobed, sometimes bearing dark stellate hairs (or orbicular scales, Trichomanes membranaceum).</text>
-      <biological_entity id="o8033" name="margin" name_original="margins" src="d0_s6" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s6" value="entire" />
-        <character is_modifier="false" modifier="minutely" name="shape" src="d0_s6" value="lobed" />
-      </biological_entity>
-      <biological_entity id="o8034" name="hair" name_original="hairs" src="d0_s6" type="structure">
-        <character is_modifier="true" name="coloration" src="d0_s6" value="dark" />
-        <character is_modifier="true" name="arrangement_or_shape" src="d0_s6" value="stellate" />
-      </biological_entity>
-      <relation from="o8033" id="r1879" modifier="sometimes" name="bearing" negation="false" src="d0_s6" to="o8034" />
-    </statement>
-    <statement id="d0_s7">
-      <text>Soral involucres conic.</text>
-      <biological_entity constraint="soral" id="o8035" name="involucre" name_original="involucres" src="d0_s7" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s7" value="conic" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>Sporangia sessile, formed at base of exserted bristle and carried outward by intercalary growth of bristle base.</text>
-      <biological_entity id="o8036" name="sporangium" name_original="sporangia" src="d0_s8" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s8" value="sessile" />
-      </biological_entity>
-      <biological_entity id="o8037" name="base" name_original="base" src="d0_s8" type="structure" />
-      <biological_entity constraint="exserted" id="o8038" name="bristle" name_original="bristle" src="d0_s8" type="structure" />
-      <biological_entity constraint="intercalary" id="o8039" name="growth" name_original="growth" src="d0_s8" type="structure" />
-      <biological_entity constraint="bristle" id="o8040" name="base" name_original="base" src="d0_s8" type="structure" />
-      <relation from="o8036" id="r1880" name="formed at" negation="false" src="d0_s8" to="o8037" />
-      <relation from="o8036" id="r1881" name="formed at" negation="false" src="d0_s8" to="o8038" />
-      <relation from="o8036" id="r1882" name="by" negation="false" src="d0_s8" to="o8039" />
-      <relation from="o8039" id="r1883" name="part_of" negation="false" src="d0_s8" to="o8040" />
-    </statement>
-    <statement id="d0_s9">
-      <text>Gametophytes persistent, entirely filamentous or with proximal filamentous net producing aerial blades with gemmiferous apices.</text>
-      <biological_entity id="o8041" name="gametophyte" name_original="gametophytes" src="d0_s9" type="structure">
-        <character is_modifier="false" name="duration" src="d0_s9" value="persistent" />
-        <character is_modifier="false" modifier="entirely" name="texture" src="d0_s9" value="filamentous" />
-        <character is_modifier="false" name="texture" src="d0_s9" value="with proximal filamentous net" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="o8042" name="net" name_original="net" src="d0_s9" type="structure">
-        <character is_modifier="true" name="texture" src="d0_s9" value="filamentous" />
-      </biological_entity>
-      <biological_entity id="o8043" name="blade" name_original="blades" src="d0_s9" type="structure">
-        <character is_modifier="true" name="location" src="d0_s9" value="aerial" />
-      </biological_entity>
-      <biological_entity id="o8044" name="apex" name_original="apices" src="d0_s9" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s9" value="gemmiferous" />
-      </biological_entity>
-      <relation from="o8041" id="r1884" name="with" negation="false" src="d0_s9" to="o8042" />
-      <relation from="o8042" id="r1885" name="producing" negation="false" src="d0_s9" to="o8043" />
-      <relation from="o8041" id="r1886" name="with" negation="false" src="d0_s9" to="o8044" />
-    </statement>
-    <statement id="d0_s10">
-      <text>Gametophyte gemmae uniseriate.</text>
-      <biological_entity constraint="gametophyte" id="o8045" name="gemma" name_original="gemmae" src="d0_s10" type="structure">
-        <character is_modifier="false" name="architecture_or_arrangement" src="d0_s10" value="uniseriate" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>nearly worldwide, mostly tropical, a few temperate.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="nearly worldwide" establishment_means="native" />
-        <character name="distribution" value="mostly tropical" establishment_means="native" />
-        <character name="distribution" value="a few temperate" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  epiphytic or on rock.  Stems  long-creeping or short and erect, clothed in masses of dark brown hairs of 2 or more types, including multicellular gland-tipped hairs and elongate, sometimes branched and often multicellular, rhizoidlike hairs.  Roots  sparse or absent on creeping stems, numerous and wiry on erect stems.  Leaves  entire, lobed, or compound, 0.5--20 × 0.2--5 cm.  Petiole  short, wiry, often partially or wholly winged.  Blade  glabrous or with scattered, multicellular, gland-tipped hairs on veins; margins entire or minutely lobed, sometimes bearing dark stellate hairs (or orbicular scales,  Trichomanes membranaceum ).  Soral involucres  conic.  Sporangia  sessile, formed at base of exserted bristle and carried outward by intercalary growth of bristle base.  Gametophytes  persistent, entirely filamentous or with proximal filamentous net producing aerial blades with gemmiferous apices.  Gametophyte gemmae  uniseriate.</description>
+  <description type="distribution">nearly worldwide, mostly tropical, a few temperate.</description>
   <number>2</number>
   <other_name type="common_name">Bristle fern</other_name>
   <discussion>Trichomanes occurs primarily in tropical lowland and montane rainforests, a few species occurring in continuously moist, deeply sheltered habitats in temperate latitudes. Species outside the flora display a wide range of morphologies and habits. Some are terrestrial, some attain considerably larger size, and some have dimorphic fertile and sterile leaves.</discussion>
@@ -190,235 +31,62 @@
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Plants entirely filamentous;</text>
-        </statement>
-        <statement id="d1_s1">
-          <text>on rock in temperate uplands of e U.</text>
-          <biological_entity id="o8047" name="upland" name_original="uplands" src="d1_s1" type="structure">
-            <character is_modifier="true" name="location" src="d1_s1" value="temperate" />
-          </biological_entity>
-          <relation from="o8046" id="r1887" modifier="of e u" name="in" negation="false" src="d1_s1" to="o8047" />
-        </statement>
-        <statement id="d1_s2">
-          <text>S.</text>
-          <biological_entity id="o8046" name="plant" name_original="plants" src="d1_s0" type="structure">
-            <character is_modifier="false" modifier="entirely" name="texture" src="d1_s0" value="filamentous" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Plants entirely filamentous; on rock in temperate uplands of e U.S.</description>
       <determination>8 Trichomanes intricatum</determination>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Leaves entire to irregularly palmately lobed with veins repeatedly forking from base to weakly pinnate.</text>
-          <biological_entity id="o8048" name="leaf" name_original="leaves" src="d2_s0" type="structure">
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s0" value="entire" />
-            <character is_modifier="false" modifier="irregularly palmately" name="shape" notes="[duplicate value]" src="d2_s0" value="lobed" />
-            <character char_type="range_value" constraint="with veins" constraintid="o8049" from="entire" name="shape" src="d2_s0" to="irregularly palmately lobed" />
-          </biological_entity>
-          <biological_entity id="o8049" name="vein" name_original="veins" src="d2_s0" type="structure">
-            <character constraint="from base" constraintid="o8050" is_modifier="false" modifier="repeatedly" name="architecture_or_shape" src="d2_s0" value="forking" />
-          </biological_entity>
-          <biological_entity id="o8050" name="base" name_original="base" src="d2_s0" type="structure">
-            <character is_modifier="false" modifier="weakly" name="architecture_or_shape" src="d2_s0" value="pinnate" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Leaves entire to irregularly palmately lobed with veins repeatedly forking from base to weakly pinnate.</description>
       <next_statement_id>4</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d3_s0">
-          <text>Leaves 2-4 cm, bearing dark, large, branched hairs on margins between lobes.</text>
-          <biological_entity id="o8051" name="leaf" name_original="leaves" src="d3_s0" type="structure">
-            <character char_type="range_value" from="2" from_unit="cm" name="some_measurement" src="d3_s0" to="4" to_unit="cm" />
-          </biological_entity>
-          <biological_entity id="o8052" name="hair" name_original="hairs" src="d3_s0" type="structure">
-            <character is_modifier="true" name="coloration" src="d3_s0" value="dark" />
-            <character is_modifier="true" name="size" src="d3_s0" value="large" />
-            <character is_modifier="true" name="architecture" src="d3_s0" value="branched" />
-          </biological_entity>
-          <biological_entity constraint="between lobes" constraintid="o8054" id="o8053" name="margin" name_original="margins" src="d3_s0" type="structure" />
-          <biological_entity id="o8054" name="lobe" name_original="lobes" src="d3_s0" type="structure" />
-          <relation from="o8051" id="r1888" name="bearing" negation="false" src="d3_s0" to="o8052" />
-          <relation from="o8051" id="r1889" name="on" negation="false" src="d3_s0" to="o8053" />
-        </statement>
-      </description>
+      <description type="morphology">Leaves 2-4 cm, bearing dark, large, branched hairs on margins between lobes.</description>
       <determination>3 Trichomanes krausii</determination>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d4_s0">
-          <text>Leaves 4-20 cm, without hairs on margins.</text>
-          <biological_entity id="o8055" name="leaf" name_original="leaves" src="d4_s0" type="structure">
-            <character char_type="range_value" from="4" from_unit="cm" name="some_measurement" src="d4_s0" to="20" to_unit="cm" />
-          </biological_entity>
-          <biological_entity id="o8056" name="hair" name_original="hairs" src="d4_s0" type="structure" />
-          <biological_entity id="o8057" name="margin" name_original="margins" src="d4_s0" type="structure" />
-          <relation from="o8055" id="r1890" name="without" negation="false" src="d4_s0" to="o8056" />
-          <relation from="o8056" id="r1891" name="on" negation="false" src="d4_s0" to="o8057" />
-        </statement>
-      </description>
+      <description type="morphology">Leaves 4-20 cm, without hairs on margins.</description>
       <next_statement_id>3</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d5_s0">
-          <text>Leaves 1-2-pinnate-pinnatifid, widely spaced on long-creeping stems.</text>
-          <biological_entity id="o8058" name="leaf" name_original="leaves" src="d5_s0" type="structure">
-            <character is_modifier="false" name="shape" src="d5_s0" value="1-2-pinnate-pinnatifid" />
-            <character constraint="on stems" constraintid="o8059" is_modifier="false" modifier="widely" name="arrangement" src="d5_s0" value="spaced" />
-          </biological_entity>
-          <biological_entity id="o8059" name="stem" name_original="stems" src="d5_s0" type="structure">
-            <character is_modifier="true" name="growth_form_or_orientation" src="d5_s0" value="long-creeping" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Leaves 1-2-pinnate-pinnatifid, widely spaced on long-creeping stems.</description>
       <determination>1 Trichomanes boschianum</determination>
     </key_statement>
     <key_statement>
       <statement_id>3</statement_id>
-      <description type="morphology">
-        <statement id="d6_s0">
-          <text>Leaves pinnatifid, clustered on short erect stems.</text>
-          <biological_entity id="o8060" name="leaf" name_original="leaves" src="d6_s0" type="structure">
-            <character is_modifier="false" name="shape" src="d6_s0" value="pinnatifid" />
-            <character constraint="on stems" constraintid="o8061" is_modifier="false" name="arrangement_or_growth_form" src="d6_s0" value="clustered" />
-          </biological_entity>
-          <biological_entity id="o8061" name="stem" name_original="stems" src="d6_s0" type="structure">
-            <character is_modifier="true" name="height_or_length_or_size" src="d6_s0" value="short" />
-            <character is_modifier="true" name="orientation" src="d6_s0" value="erect" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Leaves pinnatifid, clustered on short erect stems.</description>
       <determination>2 Trichomanes holopterum</determination>
     </key_statement>
     <key_statement>
       <statement_id>4</statement_id>
-      <description type="morphology">
-        <statement id="d7_s0">
-          <text>Leaf margins fringed with paired disclike scales.</text>
-          <biological_entity constraint="leaf" id="o8062" name="margin" name_original="margins" src="d7_s0" type="structure">
-            <character constraint="with scales" constraintid="o8063" is_modifier="false" name="shape" src="d7_s0" value="fringed" />
-          </biological_entity>
-          <biological_entity id="o8063" name="scale" name_original="scales" src="d7_s0" type="structure">
-            <character is_modifier="true" name="arrangement" src="d7_s0" value="paired" />
-            <character is_modifier="true" name="shape" src="d7_s0" value="disclike" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Leaf margins fringed with paired disclike scales.</description>
       <determination>7 Trichomanes membranaceum</determination>
     </key_statement>
     <key_statement>
       <statement_id>4</statement_id>
-      <description type="morphology">
-        <statement id="d8_s0">
-          <text>Leaf margins fringed with dark stellate hairs.</text>
-          <biological_entity constraint="leaf" id="o8064" name="margin" name_original="margins" src="d8_s0" type="structure">
-            <character constraint="with hairs" constraintid="o8065" is_modifier="false" name="shape" src="d8_s0" value="fringed" />
-          </biological_entity>
-          <biological_entity id="o8065" name="hair" name_original="hairs" src="d8_s0" type="structure">
-            <character is_modifier="true" name="coloration" src="d8_s0" value="dark" />
-            <character is_modifier="true" name="arrangement_or_shape" src="d8_s0" value="stellate" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Leaf margins fringed with dark stellate hairs.</description>
       <next_statement_id>5</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>5</statement_id>
-      <description type="morphology">
-        <statement id="d9_s0">
-          <text>Soral involucres 1 per leaf;</text>
-          <biological_entity constraint="soral" id="o8066" name="involucre" name_original="involucres" src="d9_s0" type="structure">
-            <character constraint="per leaf" constraintid="o8067" name="quantity" src="d9_s0" value="1" />
-          </biological_entity>
-          <biological_entity id="o8067" name="leaf" name_original="leaf" src="d9_s0" type="structure" />
-        </statement>
-        <statement id="d9_s1">
-          <text>involucral lips not dark-edged;</text>
-        </statement>
-        <statement id="d9_s2">
-          <text>venation weakly pinnate.</text>
-          <biological_entity id="o8068" name="lip" name_original="lips" src="d9_s1" type="structure">
-            <character is_modifier="true" name="derivation" src="d9_s1" value="involucral" />
-            <character is_modifier="false" modifier="not" name="architecture" src="d9_s1" value="dark-edged" />
-            <character is_modifier="false" modifier="weakly" name="architecture_or_shape" src="d9_s2" value="pinnate" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Soral involucres 1 per leaf; involucral lips not dark-edged; venation weakly pinnate.</description>
       <determination>4 Trichomanes petersii</determination>
     </key_statement>
     <key_statement>
       <statement_id>5</statement_id>
-      <description type="morphology">
-        <statement id="d10_s0">
-          <text>Soral involucres 1-6 per leaf;</text>
-          <biological_entity constraint="soral" id="o8069" name="involucre" name_original="involucres" src="d10_s0" type="structure">
-            <character char_type="range_value" constraint="per leaf" constraintid="o8070" from="1" name="quantity" src="d10_s0" to="6" />
-          </biological_entity>
-          <biological_entity id="o8070" name="leaf" name_original="leaf" src="d10_s0" type="structure" />
-        </statement>
-        <statement id="d10_s1">
-          <text>involucral lips dark-edged;</text>
-          <biological_entity id="o8071" name="lip" name_original="lips" src="d10_s1" type="structure">
-            <character is_modifier="true" name="derivation" src="d10_s1" value="involucral" />
-            <character is_modifier="false" name="architecture" src="d10_s1" value="dark-edged" />
-          </biological_entity>
-        </statement>
-        <statement id="d10_s2">
-          <text>veins repeatedly forking from base.</text>
-          <biological_entity id="o8072" name="vein" name_original="veins" src="d10_s2" type="structure">
-            <character constraint="from base" constraintid="o8073" is_modifier="false" modifier="repeatedly" name="architecture_or_shape" src="d10_s2" value="forking" />
-          </biological_entity>
-          <biological_entity id="o8073" name="base" name_original="base" src="d10_s2" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Soral involucres 1-6 per leaf; involucral lips dark-edged; veins repeatedly forking from base.</description>
       <next_statement_id>6</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>6</statement_id>
-      <description type="morphology">
-        <statement id="d11_s0">
-          <text>Leaves 5-10 cm;</text>
-          <biological_entity id="o8074" name="leaf" name_original="leaves" src="d11_s0" type="structure">
-            <character char_type="range_value" from="5" from_unit="cm" name="some_measurement" src="d11_s0" to="10" to_unit="cm" />
-          </biological_entity>
-        </statement>
-        <statement id="d11_s1">
-          <text>soral involucres flaring at mouth.</text>
-          <biological_entity constraint="soral" id="o8075" name="involucre" name_original="involucres" src="d11_s1" type="structure">
-            <character constraint="at mouth" constraintid="o8076" is_modifier="false" name="shape" src="d11_s1" value="flaring" />
-          </biological_entity>
-          <biological_entity id="o8076" name="mouth" name_original="mouth" src="d11_s1" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Leaves 5-10 cm; soral involucres flaring at mouth.</description>
       <determination>5a subsp. floridanum</determination>
     </key_statement>
     <key_statement>
       <statement_id>6</statement_id>
-      <description type="morphology">
-        <statement id="d12_s0">
-          <text>Leaves 1-3 cm;</text>
-          <biological_entity id="o8077" name="leaf" name_original="leaves" src="d12_s0" type="structure">
-            <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d12_s0" to="3" to_unit="cm" />
-          </biological_entity>
-        </statement>
-        <statement id="d12_s1">
-          <text>soral involucres not flaring at mouth.</text>
-          <biological_entity constraint="soral" id="o8078" name="involucre" name_original="involucres" src="d12_s1" type="structure">
-            <character constraint="at mouth" constraintid="o8079" is_modifier="false" modifier="not" name="shape" src="d12_s1" value="flaring" />
-          </biological_entity>
-          <biological_entity id="o8079" name="mouth" name_original="mouth" src="d12_s1" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Leaves 1-3 cm; soral involucres not flaring at mouth.</description>
       <determination>6 Trichomanes lineolatum</determination>
     </key_statement>
   </key>

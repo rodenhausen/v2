@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>Richard P. Wunderlin</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Bartlett" date="unknown" rank="family">cupressaceae</taxon_name>
-    <taxon_name authority="Ventenat" date="1808" rank="genus">Callitris</taxon_name>
+    <taxon_name rank="family" authority="Bartlett" date="unknown">cupressaceae</taxon_name>
+    <taxon_name rank="genus" authority="Ventenat" date="1808">Callitris</taxon_name>
     <place_of_publication>
       <publication_title>Dec. Gen. Nov.</publication_title>
       <place_in_publication>10. 1808</place_in_publication>
@@ -25,125 +17,8 @@
     <taxon_hierarchy>family cupressaceae;genus Callitris</taxon_hierarchy>
     <other_info_on_name type="etymology">[Greek callos, beautiful, and treis, three, referring to the beauty of the plants and the three-whorled leaves and cone scales]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Shrubs or trees evergreen.</text>
-      <biological_entity id="o24256" name="shrub" name_original="shrubs" src="d0_s0" type="structure">
-        <character is_modifier="false" name="duration" src="d0_s0" value="evergreen" />
-      </biological_entity>
-      <biological_entity id="o24257" name="tree" name_original="trees" src="d0_s0" type="structure">
-        <character is_modifier="false" name="duration" src="d0_s0" value="evergreen" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Branchlets angled or furrowed-cylindrical, variously oriented.</text>
-      <biological_entity id="o24258" name="branchlet" name_original="branchlets" src="d0_s1" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s1" value="angled" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="furrowed-cylindrical" />
-        <character is_modifier="false" modifier="variously" name="orientation" src="d0_s1" value="oriented" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves in whorls of 3-5.</text>
-      <biological_entity id="o24259" name="leaf" name_original="leaves" src="d0_s2" type="structure" />
-      <biological_entity id="o24260" name="whorl" name_original="whorls" src="d0_s2" type="structure" />
-      <relation from="o24259" id="r5669" modifier="of 3-5" name="in" negation="false" src="d0_s2" to="o24260" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Adult leaves scalelike, appressed, abaxial surface keeled or rounded, free portion to 1 mm, abaxial glands absent.</text>
-      <biological_entity id="o24261" name="leaf" name_original="leaves" src="d0_s3" type="structure">
-        <character is_modifier="true" name="life_cycle" src="d0_s3" value="adult" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="scale-like" value_original="scalelike" />
-        <character is_modifier="false" name="fixation_or_orientation" src="d0_s3" value="appressed" />
-      </biological_entity>
-      <biological_entity constraint="abaxial" id="o24262" name="surface" name_original="surface" src="d0_s3" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s3" value="keeled" />
-        <character is_modifier="false" name="shape" src="d0_s3" value="rounded" />
-      </biological_entity>
-      <biological_entity id="o24263" name="portion" name_original="portion" src="d0_s3" type="structure">
-        <character is_modifier="true" name="fusion" src="d0_s3" value="free" />
-        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s3" to="1" to_unit="mm" />
-      </biological_entity>
-      <biological_entity constraint="abaxial" id="o24264" name="gland" name_original="glands" src="d0_s3" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s3" value="absent" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Pollen cones solitary or in small clusters, with 4-15 whorls of sporophylls, each with 2-4 pollen-sacs.</text>
-      <biological_entity constraint="pollen" id="o24265" name="cone" name_original="cones" src="d0_s4" type="structure">
-        <character constraint="in small clusters" is_modifier="false" name="architecture_or_arrangement_or_growth_form" src="d0_s4" value="solitary" />
-        <character is_modifier="false" name="architecture_or_arrangement_or_growth_form" src="d0_s4" value="in small clusters" />
-      </biological_entity>
-      <biological_entity id="o24266" name="whorl" name_original="whorls" src="d0_s4" type="structure">
-        <character char_type="range_value" from="4" is_modifier="true" name="quantity" src="d0_s4" to="15" />
-      </biological_entity>
-      <biological_entity id="o24267" name="sporophyll" name_original="sporophylls" src="d0_s4" type="structure" />
-      <biological_entity id="o24268" name="pollen-sac" name_original="pollen-sacs" src="d0_s4" type="structure">
-        <character char_type="range_value" from="2" is_modifier="true" name="quantity" src="d0_s4" to="4" />
-      </biological_entity>
-      <relation from="o24265" id="r5670" name="with" negation="false" src="d0_s4" to="o24266" />
-      <relation from="o24266" id="r5671" name="part_of" negation="false" src="d0_s4" to="o24267" />
-      <relation from="o24265" id="r5672" name="with" negation="false" src="d0_s4" to="o24268" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Seed-cones maturing in 1-2 years, of 1-2 sizes, often remaining unopened for many years, ovoid or globose, 1-3.5 cm;</text>
-      <biological_entity id="o24269" name="cone-seed" name_original="seed-cones" src="d0_s5" type="structure">
-        <character constraint="in years" constraintid="o24270" is_modifier="false" name="life_cycle" src="d0_s5" value="maturing" />
-        <character constraint="for years" constraintid="o24271" is_modifier="false" modifier="of 1-2 sizes; often" name="architecture" notes="" src="d0_s5" value="unopened" />
-        <character is_modifier="false" name="shape" src="d0_s5" value="ovoid" />
-        <character is_modifier="false" name="shape" src="d0_s5" value="globose" />
-        <character char_type="range_value" from="1" from_unit="cm" name="distance" src="d0_s5" to="3.5" to_unit="cm" />
-      </biological_entity>
-      <biological_entity id="o24270" name="year" name_original="years" src="d0_s5" type="structure">
-        <character char_type="range_value" from="1" is_modifier="true" name="quantity" src="d0_s5" to="2" />
-      </biological_entity>
-      <biological_entity id="o24271" name="year" name_original="years" src="d0_s5" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s5" value="many" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>scales persistent, in 2 equally inserted whorls of 3 (-4), valvate, rhombic-deltate, basifixed, thick and woody.</text>
-      <biological_entity id="o24272" name="scale" name_original="scales" src="d0_s6" type="structure">
-        <character is_modifier="false" name="duration" src="d0_s6" value="persistent" />
-        <character is_modifier="false" modifier="of 3(-4)" name="arrangement_or_dehiscence" notes="" src="d0_s6" value="valvate" />
-        <character is_modifier="false" name="shape" src="d0_s6" value="rhombic-deltate" />
-        <character is_modifier="false" name="fixation" src="d0_s6" value="basifixed" />
-        <character is_modifier="false" name="width" src="d0_s6" value="thick" />
-        <character is_modifier="false" name="texture" src="d0_s6" value="woody" />
-      </biological_entity>
-      <biological_entity id="o24273" name="whorl" name_original="whorls" src="d0_s6" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s6" value="2" />
-        <character is_modifier="true" modifier="equally" name="position" src="d0_s6" value="inserted" />
-      </biological_entity>
-      <relation from="o24272" id="r5673" name="in" negation="false" src="d0_s6" to="o24273" />
-    </statement>
-    <statement id="d0_s7">
-      <text>Seeds 2-9 per scale, round or 3-angled, broadly 1-3-winged;</text>
-      <biological_entity id="o24274" name="seed" name_original="seeds" src="d0_s7" type="structure">
-        <character char_type="range_value" constraint="per scale" constraintid="o24275" from="2" name="quantity" src="d0_s7" to="9" />
-        <character is_modifier="false" name="shape" src="d0_s7" value="round" />
-        <character is_modifier="false" name="shape" src="d0_s7" value="3-angled" />
-        <character is_modifier="false" modifier="broadly" name="architecture" src="d0_s7" value="1-3-winged" />
-      </biological_entity>
-      <biological_entity id="o24275" name="scale" name_original="scale" src="d0_s7" type="structure" />
-    </statement>
-    <statement id="d0_s8">
-      <text>cotyledons 2.</text>
-      <biological_entity id="o24276" name="cotyledon" name_original="cotyledons" src="d0_s8" type="structure">
-        <character name="quantity" src="d0_s8" value="2" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>North America, Australia, and New Caledonia.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="North America" establishment_means="native" />
-        <character name="distribution" value="Australia" establishment_means="native" />
-        <character name="distribution" value="and New Caledonia" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Shrubs or trees  evergreen.  Branchlets  angled or furrowed-cylindrical, variously oriented.  Leaves  in whorls of 3--5.  Adult leaves  scalelike, appressed, abaxial surface keeled or rounded, free portion to 1 mm, abaxial glands absent.  Pollen cones  solitary or in small clusters, with 4--15 whorls of sporophylls, each with 2--4 pollen sacs.  Seed cones  maturing in 1--2 years, of 1--2 sizes, often remaining unopened for many years, ovoid or globose, 1--3.5 cm; scales persistent, in 2 equally inserted whorls of 3(--4), valvate, rhombic-deltate, basifixed, thick and woody.  Seeds  2--9 per scale, round or 3-angled, broadly 1--3-winged; cotyledons 2.</description>
+  <description type="distribution">North America, Australia, and New Caledonia.</description>
   <number>9</number>
   <other_name type="common_name">Cypress-pine</other_name>
   <discussion>Species 16 (1 naturalized in the flora):</discussion>
@@ -153,47 +28,4 @@
     <reference>Thompson, J. 1961. Cupressaceae. Contr. New South Wales Natl. Herb., Fl. Ser. 1/18: 46--55.</reference>
     <reference>Thompson, J. and L. A. S. Johnson. 1986.  Callitris glaucophylla , Australia's 'white cypress pine'---A new name for an old species. Telopea 2: 731--736.</reference>
   </references>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_593_d9_s0">
-      <text>Leaves in whorls of 3..</text>
-      <biological_entity id="from_key_V2_593_o16166" name="leaf" name_original="leaves" src="d9_s0" type="structure" />
-      <biological_entity id="from_key_V2_593_o16167" name="whorl" name_original="whorls" src="d9_s0" type="structure">
-        <character name="count" src="d9_s0" value="3" />
-      </biological_entity>
-      <relation from="from_key_V2_593_o16166" id="from_key_V2_593_r3803" name="in" negation="false" src="d9_s0" to="from_key_V2_593_o16167" />
-    </statement>
-    <statement id="from_key_V2_593_d8_s0">
-      <text>Seed-cones opening, seeds shed;</text>
-      <biological_entity id="from_key_V2_593_o16163" name="seed-cone" name_original="seed-cones" src="d8_s0" type="structure" />
-      <biological_entity id="from_key_V2_593_o16164" name="seed" name_original="seeds" src="d8_s0" type="structure" />
-    </statement>
-    <statement id="from_key_V2_593_d8_s1">
-      <text>scales woody;</text>
-    </statement>
-    <statement id="from_key_V2_593_d8_s2">
-      <text>monoecious.</text>
-      <biological_entity id="from_key_V2_593_o16165" name="scale" name_original="scales" src="d8_s1" type="structure">
-        <character is_modifier="false" name="texture" src="d8_s1" value="woody" />
-        <character is_modifier="false" name="reproduction" src="d8_s2" value="monoecious" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_593_d2_s0">
-      <text>Leaves opposite in 4 ranks or whorled;</text>
-      <biological_entity id="from_key_V2_593_o16130" name="leaf" name_original="leaves" src="d2_s0" type="structure">
-        <character constraint="in ranks" constraintid="o16131" is_modifier="false" name="arrangement" src="d2_s0" value="opposite" />
-        <character is_modifier="false" name="arrangement" src="d2_s0" value="whorled" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_593_o16131" name="rank" name_original="ranks" src="d2_s0" type="structure">
-        <character is_modifier="true" name="count" src="d2_s0" value="4" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_593_d2_s1">
-      <text>leaves of adults usually ± scalelike to subulate.</text>
-      <biological_entity id="from_key_V2_593_o16132" name="leaf" name_original="leaves" src="d2_s1" type="structure">
-        <character is_modifier="false" modifier="of adults; usually more or less" name="shape" notes="[duplicate value]" src="d2_s1" value="scalelike" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d2_s1" value="subulate" />
-        <character char_type="range_value" from="less scalelike" modifier="of adults" name="shape" src="d2_s1" to="subulate" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

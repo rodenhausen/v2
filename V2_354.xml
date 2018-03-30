@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Herter" date="unknown" rank="family">dryopteridaceae</taxon_name>
-    <taxon_name authority="Roth" date="1799" rank="genus">polystichum</taxon_name>
-    <taxon_name authority="(D. C. Eaton) D. H. Wagner" date="1979" rank="species">imbricans</taxon_name>
-    <taxon_name authority="(Ewan) D. H. Wagner" date="1979" rank="subspecies">curtum</taxon_name>
+    <taxon_name rank="family" authority="Herter" date="unknown">dryopteridaceae</taxon_name>
+    <taxon_name rank="genus" authority="Roth" date="1799">polystichum</taxon_name>
+    <taxon_name rank="species" authority="(D. C. Eaton) D. H. Wagner" date="1979">imbricans</taxon_name>
+    <taxon_name rank="subspecies" authority="(Ewan) D. H. Wagner" date="1979">curtum</taxon_name>
     <place_of_publication>
       <publication_title>Pteridologia</publication_title>
       <place_in_publication>1: 51. 1979</place_in_publication>
@@ -27,79 +19,19 @@
     <taxon_hierarchy>family dryopteridaceae;genus polystichum;species imbricans;subspecies curtum</taxon_hierarchy>
   </taxon_identification>
   <taxon_identification status="BASIONYM">
-    <taxon_name authority="unknown" date="unknown" rank="genus">Polystichum</taxon_name>
-    <taxon_name authority="unknown" date="unknown" rank="species">munitum</taxon_name>
-    <taxon_name authority="Ewan" date="unknown" rank="subspecies">curtum</taxon_name>
+    <taxon_name rank="genus" authority="unknown" date="unknown">Polystichum</taxon_name>
+    <taxon_name rank="species" authority="unknown" date="unknown">munitum</taxon_name>
+    <taxon_name rank="subspecies" authority="Ewan" date="unknown">curtum</taxon_name>
     <place_of_publication>
       <publication_title>Amer. Fern J.</publication_title>
       <place_in_publication>32: 99. 1942</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>genus Polystichum;species munitum;subspecies curtum;</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems erect.</text>
-      <biological_entity id="o8200" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s0" value="erect" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves arching at tip, planar, 4-8 dm.</text>
-      <biological_entity id="o8201" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character constraint="at tip" constraintid="o8202" is_modifier="false" name="orientation" src="d0_s1" value="arching" />
-        <character is_modifier="false" name="shape" notes="" src="d0_s1" value="planar" />
-        <character char_type="range_value" from="4" from_unit="dm" name="some_measurement" src="d0_s1" to="8" to_unit="dm" />
-      </biological_entity>
-      <biological_entity id="o8202" name="tip" name_original="tip" src="d0_s1" type="structure" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Pinnae narrowly lanceolate, straight to falcate, in same plane as blade, more than 5 times longer than wide, apex acuminate-apiculate.</text>
-      <biological_entity id="o8203" name="pinna" name_original="pinnae" src="d0_s2" type="structure">
-        <character is_modifier="false" modifier="narrowly" name="shape" src="d0_s2" value="lanceolate" />
-        <character is_modifier="false" name="course" src="d0_s2" value="straight" />
-        <character is_modifier="false" name="shape" src="d0_s2" value="falcate" />
-        <character is_modifier="false" name="l_w_ratio" notes="" src="d0_s2" value="5+" />
-      </biological_entity>
-      <biological_entity id="o8204" name="blade" name_original="blade" src="d0_s2" type="structure" />
-      <biological_entity id="o8205" name="apex" name_original="apex" src="d0_s2" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s2" value="acuminate-apiculate" />
-      </biological_entity>
-      <relation from="o8203" id="r1916" modifier="in same plane" name="as" negation="false" src="d0_s2" to="o8204" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Indusia entire or margin short-dentate.</text>
-      <biological_entity id="o8206" name="indusium" name_original="indusia" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s3" value="entire" />
-      </biological_entity>
-      <biological_entity id="o8207" name="margin" name_original="margin" src="d0_s3" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s3" value="short-dentate" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>On floor of mixed evergreen forests in light shade;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="on floor of mixed evergreen forests in light shade ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>400--1400 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="1400" to_unit="m" from="400" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Calif.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  erect.  Leaves  arching at tip, planar, 4--8 dm.  Pinnae  narrowly lanceolate, straight to falcate, in same plane as blade, more than 5 times longer than wide, apex acuminate-apiculate.  Indusia  entire or margin short-dentate.</description>
+  <description type="habitat">On floor of mixed evergreen forests in light shade;</description>
+  <description type="elevation">400--1400 m;</description>
+  <description type="distribution">Calif.</description>
   <number>7b</number>
   <discussion>Polystichum imbricans var. curtum occurs mostly inland in California, and occasionally in the central Sierra Nevada.</discussion>
 </bio:treatment>

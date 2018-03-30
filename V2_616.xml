@@ -1,226 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Mirbel" date="unknown" rank="family">marsileaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">marsilea</taxon_name>
-    <taxon_name authority="Engelmann ex A. Braun in Kunze" date="1848" rank="species">macropoda</taxon_name>
+    <taxon_name rank="family" authority="Mirbel" date="unknown">marsileaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">marsilea</taxon_name>
+    <taxon_name rank="species" authority="Engelmann ex A. Braun in Kunze" date="1848">macropoda</taxon_name>
     <place_of_publication>
       <publication_title>in Kunze,Amer. J. Sci. Arts</publication_title>
       <place_in_publication>ser. 2, 6: 88. 1848</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family marsileaceae;genus marsilea;species macropoda</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants forming dense clones.</text>
-      <biological_entity id="o17087" name="plant" name_original="plants" src="d0_s0" type="structure" />
-      <biological_entity id="o17088" name="clone" name_original="clones" src="d0_s0" type="structure">
-        <character is_modifier="true" name="density" src="d0_s0" value="dense" />
-      </biological_entity>
-      <relation from="o17087" id="r3991" name="forming" negation="false" src="d0_s0" to="o17088" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Roots arising at nodes.</text>
-      <biological_entity id="o17089" name="root" name_original="roots" src="d0_s1" type="structure">
-        <character constraint="at nodes" constraintid="o17090" is_modifier="false" name="orientation" src="d0_s1" value="arising" />
-      </biological_entity>
-      <biological_entity id="o17090" name="node" name_original="nodes" src="d0_s1" type="structure" />
-    </statement>
-    <statement id="d0_s2">
-      <text>Petioles 5-39 cm, hairy.</text>
-      <biological_entity id="o17091" name="petiole" name_original="petioles" src="d0_s2" type="structure">
-        <character char_type="range_value" from="5" from_unit="cm" name="some_measurement" src="d0_s2" to="39" to_unit="cm" />
-        <character is_modifier="false" name="pubescence" src="d0_s2" value="hairy" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Pinnae 9-35 × 8-39 mm, conspicuously white hairy abaxially, hairy adaxially;</text>
-      <biological_entity id="o17092" name="pinna" name_original="pinnae" src="d0_s3" type="structure">
-        <character char_type="range_value" from="9" from_unit="mm" name="length" src="d0_s3" to="35" to_unit="mm" />
-        <character char_type="range_value" from="8" from_unit="mm" name="width" src="d0_s3" to="39" to_unit="mm" />
-        <character is_modifier="false" modifier="conspicuously" name="coloration" src="d0_s3" value="white" />
-        <character is_modifier="false" modifier="abaxially" name="pubescence" src="d0_s3" value="hairy" />
-        <character is_modifier="false" modifier="adaxially" name="pubescence" src="d0_s3" value="hairy" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>hairs often exceeding margin to make pinnae appear white-margined from above.</text>
-      <biological_entity id="o17093" name="hair" name_original="hairs" src="d0_s4" type="structure">
-        <character constraint="from above" is_modifier="false" name="architecture" src="d0_s4" value="white-margined" />
-      </biological_entity>
-      <biological_entity id="o17094" name="margin" name_original="margin" src="d0_s4" type="structure" />
-      <biological_entity id="o17095" name="pinna" name_original="pinnae" src="d0_s4" type="structure" />
-      <relation from="o17093" id="r3992" modifier="often" name="exceeding" negation="false" src="d0_s4" to="o17094" />
-      <relation from="o17093" id="r3993" name="make" negation="false" src="d0_s4" to="o17095" />
-    </statement>
-    <statement id="d0_s5">
-      <text>Sporocarp stalks erect, frequently branched, attached 2-4.5 mm above base of petiole;</text>
-      <biological_entity constraint="sporocarp" id="o17096" name="stalk" name_original="stalks" src="d0_s5" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s5" value="erect" />
-        <character is_modifier="false" modifier="frequently" name="architecture" src="d0_s5" value="branched" />
-        <character is_modifier="false" name="fixation" src="d0_s5" value="attached" />
-        <character char_type="range_value" constraint="above base" constraintid="o17097" from="2" from_unit="mm" name="some_measurement" src="d0_s5" to="4.5" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o17097" name="base" name_original="base" src="d0_s5" type="structure" />
-      <biological_entity id="o17098" name="petiole" name_original="petiole" src="d0_s5" type="structure" />
-      <relation from="o17097" id="r3994" name="part_of" negation="false" src="d0_s5" to="o17098" />
-    </statement>
-    <statement id="d0_s6">
-      <text>unbranched stalks or ultimate branches of stalks 8-17 mm;</text>
-      <biological_entity id="o17099" name="stalk" name_original="stalks" src="d0_s6" type="structure" constraint="stalk">
-        <character is_modifier="true" name="architecture" src="d0_s6" value="unbranched" />
-        <character char_type="range_value" from="8" from_unit="mm" name="some_measurement" src="d0_s6" to="17" to_unit="mm" />
-      </biological_entity>
-      <biological_entity constraint="ultimate" id="o17100" name="branch" name_original="branches" src="d0_s6" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s6" value="unbranched" />
-        <character char_type="range_value" from="8" from_unit="mm" name="some_measurement" src="d0_s6" to="17" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o17101" name="stalk" name_original="stalks" src="d0_s6" type="structure" />
-      <relation from="o17099" id="r3995" name="part_of" negation="false" src="d0_s6" to="o17101" />
-      <relation from="o17100" id="r3996" name="part_of" negation="false" src="d0_s6" to="o17101" />
-    </statement>
-    <statement id="d0_s7">
-      <text>common trunk of branched stalks 1-5 mm (rarely 2-3 unbranched stalks attached separately to same petiole).</text>
-      <biological_entity id="o17102" name="trunk" name_original="trunk" src="d0_s7" type="structure" constraint="stalk">
-        <character is_modifier="true" name="quantity" src="d0_s7" value="common" />
-        <character char_type="range_value" from="1" from_unit="mm" name="some_measurement" src="d0_s7" to="5" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o17103" name="stalk" name_original="stalks" src="d0_s7" type="structure">
-        <character is_modifier="true" name="architecture" src="d0_s7" value="branched" />
-      </biological_entity>
-      <relation from="o17102" id="r3997" name="part_of" negation="false" src="d0_s7" to="o17103" />
-    </statement>
-    <statement id="d0_s8">
-      <text>Sporocarps strongly ascending, 6-9 × 4.5-5.5 mm, 2 mm thick, elliptic or quadrate in lateral view, covered with matted or twisted hairs;</text>
-      <biological_entity id="o17104" name="sporocarp" name_original="sporocarps" src="d0_s8" type="structure">
-        <character is_modifier="false" modifier="strongly" name="orientation" src="d0_s8" value="ascending" />
-        <character name="thickness" src="d0_s8" unit="mm" value="6-9×4.5-5.5" />
-        <character name="thickness" src="d0_s8" unit="mm" value="2" />
-        <character is_modifier="false" name="shape" src="d0_s8" value="elliptic" />
-        <character is_modifier="false" modifier="in lateral view" name="shape" src="d0_s8" value="quadrate" />
-      </biological_entity>
-      <biological_entity id="o17105" name="hair" name_original="hairs" src="d0_s8" type="structure">
-        <character is_modifier="true" name="growth_form" src="d0_s8" value="matted" />
-        <character is_modifier="true" name="architecture" src="d0_s8" value="twisted" />
-      </biological_entity>
-      <relation from="o17104" id="r3998" name="covered with" negation="false" src="d0_s8" to="o17105" />
-    </statement>
-    <statement id="d0_s9">
-      <text>raphe 1.6-2.4 mm, proximal tooth 0.4-0.5 mm, blunt, distal tooth absent or present as slightly raised area.</text>
-      <biological_entity id="o17106" name="raphe" name_original="raphe" src="d0_s9" type="structure">
-        <character char_type="range_value" from="1.6" from_unit="mm" name="some_measurement" src="d0_s9" to="2.4" to_unit="mm" />
-      </biological_entity>
-      <biological_entity constraint="proximal" id="o17107" name="tooth" name_original="tooth" src="d0_s9" type="structure">
-        <character char_type="range_value" from="0.4" from_unit="mm" name="some_measurement" src="d0_s9" to="0.5" to_unit="mm" />
-        <character is_modifier="false" name="shape" src="d0_s9" value="blunt" />
-      </biological_entity>
-      <biological_entity constraint="distal" id="o17108" name="tooth" name_original="tooth" src="d0_s9" type="structure">
-        <character is_modifier="false" name="presence" src="d0_s9" value="absent" />
-        <character constraint="as area" constraintid="o17109" is_modifier="false" name="presence" src="d0_s9" value="absent" />
-      </biological_entity>
-      <biological_entity id="o17109" name="area" name_original="area" src="d0_s9" type="structure">
-        <character is_modifier="true" modifier="slightly" name="prominence" src="d0_s9" value="raised" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s10">
-      <text>Sori 19-23.</text>
-      <biological_entity id="o17110" name="sorus" name_original="sori" src="d0_s10" type="structure">
-        <character char_type="range_value" from="19" name="quantity" src="d0_s10" to="23" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Sporocarps produced nearly year-round (Feb--Nov).</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="sporulating time" value="year round (Feb-Nov)" modifier="nearly" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>On mud and in shallow water, locally abundant in clay soils of ditches, ponds, marshes;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="on mud and in shallow water , abundant in clay soils of ditches , ponds , marshes ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="elevation">
-    <statement id="elevation_0">
-      <text>0--400 m;</text>
-      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
-        <character name="elevation" char_type="range_value" to="400" to_unit="m" from="0" from_unit="m" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ala., La., Tex.; Mexico.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
-        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
-        <character name="distribution" value="Mexico" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  forming dense clones.  Roots  arising at nodes.  Petioles  5--39 cm, hairy.  Pinnae  9--35 × 8--39 mm, conspicuously white hairy abaxially, hairy adaxially; hairs often exceeding margin to make pinnae appear white margined from above.  Sporocarp stalks  erect, frequently branched, attached 2--4.5 mm above base of petiole; unbranched stalks or ultimate branches of stalks 8--17 mm; common trunk of branched stalks 1--5 mm (rarely 2--3 unbranched stalks attached separately to same petiole).  Sporocarps  strongly ascending, 6--9 × 4.5--5.5 mm, 2 mm thick, elliptic or quadrate in lateral view, covered with matted or twisted hairs; raphe 1.6--2.4 mm, proximal tooth 0.4--0.5 mm, blunt, distal tooth absent or present as slightly raised area.  Sori  19--23.</description>
+  <description type="phenology">Sporocarps produced nearly year-round (Feb--Nov).</description>
+  <description type="habitat">On mud and in shallow water, locally abundant in clay soils of ditches, ponds, marshes;</description>
+  <description type="elevation">0--400 m;</description>
+  <description type="distribution">Ala., La., Tex.; Mexico.</description>
   <number>5</number>
   <discussion>Marsilea macropoda is introduced in Alabama and Louisiana.</discussion>
   <discussion>Marsilea macropoda , with its tall, hairy leaves and branched sporocarp stalks, is a striking and distinctive species, worthy of cultivation. It is sympatric with M . vestita over much of its range, and individuals that appear to be hybrids have been collected in Blanco, Brazos, and Kleberg counties in Texas. These plants combine the large hairy leaves of M . macropoda with the shorter-stalked sporocarps bearing a superior tooth found in M . vestita .</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_14_d5_s0">
-      <text>Sporocarps 6–9 mm, strongly ascending;</text>
-      <biological_entity id="from_key_V2_14_o1441" name="sporocarp" name_original="sporocarps" src="d5_s0" type="structure">
-        <character char_type="range_value" from="6" from_unit="mm" name="some_measurement" src="d5_s0" to="9" to_unit="mm" />
-        <character is_modifier="false" modifier="strongly" name="orientation" src="d5_s0" value="ascending" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_14_d5_s1">
-      <text>stalks usually branched.</text>
-      <biological_entity id="from_key_V2_14_o1442" name="stalk" name_original="stalks" src="d5_s1" type="structure">
-        <character is_modifier="false" modifier="usually" name="architecture" src="d5_s1" value="branched" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_14_d4_s0">
-      <text>Distal tooth of sporocarps absent or to 0.4 mm and blunt.</text>
-      <biological_entity constraint="distal" id="from_key_V2_14_o1439" name="tooth" name_original="tooth" src="d4_s0" type="structure">
-        <character is_modifier="false" name="shape" notes="alterIDs:o1440" src="d4_s0" value="blunt" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_14_o1440" name="sporocarp" name_original="sporocarps" src="d4_s0" type="structure">
-        <character is_modifier="false" name="count" src="d4_s0" value="absent" />
-        <character name="count" src="d4_s0" value="0-0.4 mm" />
-      </biological_entity>
-      <relation from="from_key_V2_14_o1439" id="from_key_V2_14_r319" name="consist_of" negation="false" src="d4_s0" to="from_key_V2_14_o1440" />
-    </statement>
-    <statement id="from_key_V2_14_d2_s0">
-      <text>Roots only at nodes;</text>
-      <biological_entity id="from_key_V2_14_o1433" name="root" name_original="roots" src="d2_s0" type="structure" />
-      <biological_entity id="from_key_V2_14_o1434" name="node" name_original="nodes" src="d2_s0" type="structure" />
-      <relation from="from_key_V2_14_o1433" id="from_key_V2_14_r316" name="at" negation="false" src="d2_s0" to="from_key_V2_14_o1434" />
-    </statement>
-    <statement id="from_key_V2_14_d2_s1">
-      <text>stalks of sporocarps branched or unbranched.</text>
-      <biological_entity id="from_key_V2_14_o1435" name="stalk" name_original="stalks" src="d2_s1" type="structure">
-        <character is_modifier="false" name="architecture" src="d2_s1" value="branched" />
-        <character is_modifier="false" name="architecture" src="d2_s1" value="unbranched" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_14_o1436" name="sporocarp" name_original="sporocarps" src="d2_s1" type="structure" />
-      <relation from="from_key_V2_14_o1435" id="from_key_V2_14_r317" name="part_of" negation="false" src="d2_s1" to="from_key_V2_14_o1436" />
-    </statement>
-  </description>
 </bio:treatment>

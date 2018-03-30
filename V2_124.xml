@@ -1,208 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>unknown</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Reichenbach" date="unknown" rank="family">isoëtaceae</taxon_name>
-    <taxon_name authority="Linnaeus" date="unknown" rank="genus">isoëtes</taxon_name>
-    <taxon_name authority="Rury" date="unknown" rank="species">tegetiformans</taxon_name>
+    <taxon_name rank="family" authority="Reichenbach" date="unknown">isoëtaceae</taxon_name>
+    <taxon_name rank="genus" authority="Linnaeus" date="unknown">isoëtes</taxon_name>
+    <taxon_name rank="species" authority="Rury" date="unknown">tegetiformans</taxon_name>
     <place_of_publication>
       <publication_title>Ann. Missouri Bot. Gard.</publication_title>
       <place_in_publication>68: 100. 1978</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family isoëtaceae;genus isoëtes;species tegetiformans</taxon_hierarchy>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants becoming terrestrial.</text>
-      <biological_entity id="o801" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="becoming" name="growth_form_or_habitat" src="d0_s0" value="terrestrial" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Rootstock horizontally elongate, mat-forming, often proliferous.</text>
-      <biological_entity id="o802" name="rootstock" name_original="rootstock" src="d0_s1" type="structure">
-        <character is_modifier="false" modifier="horizontally" name="shape" src="d0_s1" value="elongate" />
-        <character is_modifier="false" name="growth_form" src="d0_s1" value="mat-forming" />
-        <character is_modifier="false" modifier="often" name="reproduction" src="d0_s1" value="proliferous" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Leaves deciduous to nearly evergreen, bright green, pale toward base, distichously arranged, to 4 cm, pliant, gradually tapering to tip.</text>
-      <biological_entity id="o803" name="leaf" name_original="leaves" src="d0_s2" type="structure">
-        <character is_modifier="false" name="duration" notes="[duplicate value]" src="d0_s2" value="deciduous" />
-        <character is_modifier="false" modifier="nearly" name="duration" notes="[duplicate value]" src="d0_s2" value="evergreen" />
-        <character char_type="range_value" from="deciduous" name="duration" src="d0_s2" to="nearly evergreen" />
-        <character is_modifier="false" name="coloration" src="d0_s2" value="bright green" />
-        <character constraint="toward base" constraintid="o804" is_modifier="false" name="coloration" src="d0_s2" value="pale" />
-        <character is_modifier="false" modifier="distichously" name="arrangement" notes="" src="d0_s2" value="arranged" />
-        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s2" to="4" to_unit="cm" />
-        <character is_modifier="false" name="texture" src="d0_s2" value="pliant" />
-        <character constraint="to tip" constraintid="o805" is_modifier="false" modifier="gradually" name="shape" src="d0_s2" value="tapering" />
-      </biological_entity>
-      <biological_entity id="o804" name="base" name_original="base" src="d0_s2" type="structure" />
-      <biological_entity id="o805" name="tip" name_original="tip" src="d0_s2" type="structure" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Velum covering entire sporangium.</text>
-      <biological_entity id="o806" name="velum" name_original="velum" src="d0_s3" type="structure" />
-      <biological_entity id="o807" name="sporangium" name_original="sporangium" src="d0_s3" type="structure">
-        <character is_modifier="true" name="architecture_or_shape" src="d0_s3" value="entire" />
-      </biological_entity>
-      <relation from="o806" id="r177" name="covering" negation="false" src="d0_s3" to="o807" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Sporangium wall unpigmented.</text>
-      <biological_entity constraint="sporangium" id="o808" name="wall" name_original="wall" src="d0_s4" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s4" value="unpigmented" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Megaspores dark gray, 275-370 μm diam., tuberculate with low and distinct tubercules;</text>
-      <biological_entity id="o809" name="megaspore" name_original="megaspores" src="d0_s5" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s5" value="dark gray" />
-        <character char_type="range_value" from="275" from_unit="um" name="diameter" src="d0_s5" to="370" to_unit="um" />
-        <character constraint="with low" constraintid="o810" is_modifier="false" name="relief" src="d0_s5" value="tuberculate" />
-      </biological_entity>
-      <biological_entity id="o810" name="low" name_original="low" src="d0_s5" type="structure" />
-      <biological_entity id="o811" name="tubercule" name_original="tubercules" src="d0_s5" type="structure">
-        <character is_modifier="true" name="fusion" src="d0_s5" value="distinct" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>girdle obscure.</text>
-      <biological_entity id="o812" name="girdle" name_original="girdle" src="d0_s6" type="structure">
-        <character is_modifier="false" name="prominence" src="d0_s6" value="obscure" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>Microspores brown in mass, 26-33 μm, spinulose.</text>
-      <biological_entity id="o814" name="mass" name_original="mass" src="d0_s7" type="structure" />
-    </statement>
-    <statement id="d0_s8">
-      <text>2n = 22.</text>
-      <biological_entity id="o813" name="microspore" name_original="microspores" src="d0_s7" type="structure">
-        <character constraint="in mass" constraintid="o814" is_modifier="false" name="coloration" src="d0_s7" value="brown" />
-        <character char_type="range_value" from="26" from_unit="um" name="some_measurement" notes="" src="d0_s7" to="33" to_unit="um" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s7" value="spinulose" />
-      </biological_entity>
-      <biological_entity constraint="2n" id="o815" name="chromosome" name_original="" src="d0_s8" type="structure">
-        <character name="quantity" src="d0_s8" value="22" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="phenology">
-    <statement id="phenology_0">
-      <text>Spores mature late winter and spring.</text>
-      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
-        <character name="spores maturing time" value="late winter-spring" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="habitat">
-    <statement id="habitat_0">
-      <text>Shallow pools on granite outcrops;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="shallow pools on granite outcrops ;" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>Ga.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants becoming terrestrial. Rootstock horizontally elongate, mat-forming, often proliferous. Leaves deciduous to nearly evergreen, bright green, pale toward base, distichously arranged, to 4 cm, pliant, gradually tapering to tip. Velum covering entire sporangium. Sporangium wall unpigmented. Megaspores dark gray, 275--370 μm diam., tuberculate with low and distinct tubercules; girdle obscure. Microspores brown in mass, 26--33 μm, spinulose. 2n = 22.</description>
+  <description type="phenology">Spores mature late winter and spring.</description>
+  <description type="habitat">Shallow pools on granite outcrops;</description>
+  <description type="distribution">Ga.</description>
   <other_name type="common_name">Mat-forming Melin's grass</other_name>
   <discussion>Isoëtes tegetiformans is a unique mat-forming quillwort distinguished by its distichous leaf arrangement, horizontally elongate rootstock, and nondichotomous roots. (See discussion under I. melanospora.)</discussion>
   <discussion type="conservation">of conservation concern</discussion>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_113_d33_s0">
-      <text>Leaves distichously arranged;</text>
-      <biological_entity id="from_key_V2_113_o534" name="leaf" name_original="leaves" src="d33_s0" type="structure">
-        <character is_modifier="false" modifier="distichously" name="arrangement" src="d33_s0" value="arranged" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_113_d33_s1">
-      <text>rootstock horizontally elongated, mat-forming.</text>
-      <biological_entity id="from_key_V2_113_o535" name="rootstock" name_original="rootstock" src="d33_s1" type="structure">
-        <character is_modifier="false" modifier="horizontally" name="length" src="d33_s1" value="elongated" />
-        <character is_modifier="false" name="growth_form" src="d33_s1" value="mat-forming" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_113_d32_s0">
-      <text>Megaspores tuberculate;</text>
-      <biological_entity id="from_key_V2_113_o531" name="megaspore" name_original="megaspores" src="d32_s0" type="structure">
-        <character is_modifier="false" name="relief" src="d32_s0" value="tuberculate" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_113_d32_s1">
-      <text>plants of Georgia.</text>
-      <biological_entity id="from_key_V2_113_o532" name="plant" name_original="plants" src="d32_s1" type="structure" />
-      <biological_entity id="from_key_V2_113_o533" name="georgia" name_original="georgia" src="d32_s1" type="structure" />
-      <relation from="from_key_V2_113_o532" id="from_key_V2_113_r115" name="part_of" negation="false" src="d32_s1" to="from_key_V2_113_o533" />
-    </statement>
-    <statement id="from_key_V2_113_d29_s0">
-      <text>Velum covering entire sporangium;</text>
-      <biological_entity id="from_key_V2_113_o517" name="velum" name_original="velum" src="d29_s0" type="structure" />
-      <biological_entity id="from_key_V2_113_o518" name="sporangium" name_original="sporangium" src="d29_s0" type="structure">
-        <character is_modifier="true" name="architecture_or_shape" src="d29_s0" value="entire" />
-      </biological_entity>
-      <relation from="from_key_V2_113_o517" id="from_key_V2_113_r110" name="covering" negation="false" src="d29_s0" to="from_key_V2_113_o518" />
-    </statement>
-    <statement id="from_key_V2_113_d29_s1">
-      <text>megaspores gray, brown, or black;</text>
-      <biological_entity id="from_key_V2_113_o519" name="megaspore" name_original="megaspores" src="d29_s1" type="structure">
-        <character is_modifier="false" name="coloration" src="d29_s1" value="gray" />
-        <character is_modifier="false" name="coloration" src="d29_s1" value="brown" />
-        <character is_modifier="false" name="coloration" src="d29_s1" value="black" />
-        <character is_modifier="false" name="coloration" src="d29_s1" value="brown" />
-        <character is_modifier="false" name="coloration" src="d29_s1" value="black" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_113_d29_s2">
-      <text>plants of temporary pools on granite outcrops.</text>
-      <biological_entity id="from_key_V2_113_o520" name="plant" name_original="plants" src="d29_s2" type="structure" />
-      <biological_entity id="from_key_V2_113_o521" name="pool" name_original="pools" src="d29_s2" type="structure" />
-      <biological_entity id="from_key_V2_113_o522" name="granite" name_original="granite" src="d29_s2" type="structure" />
-      <relation from="from_key_V2_113_o520" id="from_key_V2_113_r111" name="part_of" negation="false" src="d29_s2" to="from_key_V2_113_o521" />
-      <relation from="from_key_V2_113_o520" id="from_key_V2_113_r112" name="on" negation="false" src="d29_s2" to="from_key_V2_113_o522" />
-    </statement>
-    <statement id="from_key_V2_113_d8_s0">
-      <text>Plants terrestrial or becoming so, of seasonally saturated soil, temporary pools, and streams.</text>
-      <biological_entity id="from_key_V2_113_o456" name="plant" name_original="plants" src="d8_s0" type="structure">
-        <character is_modifier="false" name="growth_form_or_habitat" src="d8_s0" value="terrestrial" />
-        <character is_modifier="false" name="habitat" src="d8_s0" value="streams" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_113_o457" name="soil" name_original="soil" src="d8_s0" type="structure" />
-      <relation from="from_key_V2_113_o456" id="from_key_V2_113_r93" name="part_of" negation="false" src="d8_s0" to="from_key_V2_113_o457" />
-    </statement>
-    <statement id="from_key_V2_113_d5_s0">
-      <text>Plants e of Rocky Mountains.</text>
-      <biological_entity id="from_key_V2_113_o452" name="plant" name_original="plants" src="d5_s0" type="structure" />
-      <biological_entity id="from_key_V2_113_o453" name="mountain" name_original="mountains" src="d5_s0" type="structure">
-        <character is_modifier="true" name="habitat" src="d5_s0" value="rocky" />
-      </biological_entity>
-      <relation from="from_key_V2_113_o452" id="from_key_V2_113_r92" name="part_of" negation="false" src="d5_s0" to="from_key_V2_113_o453" />
-    </statement>
-    <statement id="from_key_V2_113_d2_s0">
-      <text>Megaspores with cristate, reticulate, rugulate, tuberculate, or smooth textures.</text>
-      <biological_entity id="from_key_V2_113_o442" name="megaspore" name_original="megaspores" src="d2_s0" type="structure" />
-    </statement>
-  </description>
 </bio:treatment>

@@ -1,143 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>Donald R. Farrar</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Martius" date="unknown" rank="family">hymenophyllaceae</taxon_name>
-    <taxon_name authority="Smith" date="1793" rank="genus">Hymenophyllum</taxon_name>
+    <taxon_name rank="family" authority="Martius" date="unknown">hymenophyllaceae</taxon_name>
+    <taxon_name rank="genus" authority="Smith" date="1793">Hymenophyllum</taxon_name>
     <place_of_publication>
       <place_in_publication>5: 418. 1793</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family hymenophyllaceae;genus Hymenophyllum</taxon_hierarchy>
     <other_info_on_name type="etymology">[Greek hymen, membrane, and phyllon, leaf]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Plants epiphytic or on rock.</text>
-      <biological_entity id="o5916" name="plant" name_original="plants" src="d0_s0" type="structure">
-        <character is_modifier="false" name="habitat" src="d0_s0" value="epiphytic" />
-        <character is_modifier="false" name="habitat" src="d0_s0" value="on rock" />
-      </biological_entity>
-      <biological_entity id="o5917" name="rock" name_original="rock" src="d0_s0" type="structure" />
-      <relation from="o5916" id="r1350" name="on" negation="false" src="d0_s0" to="o5917" />
-    </statement>
-    <statement id="d0_s1">
-      <text>Stems long-creeping, intertwining, threadlike;</text>
-      <biological_entity id="o5918" name="stem" name_original="stems" src="d0_s1" type="structure">
-        <character is_modifier="false" name="growth_form_or_orientation" src="d0_s1" value="long-creeping" />
-        <character is_modifier="false" name="shape" src="d0_s1" value="thread-like" value_original="threadlike" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>hairs brown, sparse.</text>
-      <biological_entity id="o5919" name="hair" name_original="hairs" src="d0_s2" type="structure">
-        <character is_modifier="false" name="coloration" src="d0_s2" value="brown" />
-        <character is_modifier="false" name="count_or_density" src="d0_s2" value="sparse" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s3">
-      <text>Roots few, delicate.</text>
-      <biological_entity id="o5920" name="root" name_original="roots" src="d0_s3" type="structure">
-        <character is_modifier="false" name="quantity" src="d0_s3" value="few" />
-        <character is_modifier="false" name="fragility" src="d0_s3" value="delicate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s4">
-      <text>Leaves 1-3-pinnatifid, 2-6 × 0.5-1.5 cm.</text>
-      <biological_entity id="o5921" name="leaf" name_original="leaves" src="d0_s4" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s4" value="1-3-pinnatifid" />
-        <character char_type="range_value" from="2" from_unit="cm" name="length" src="d0_s4" to="6" to_unit="cm" />
-        <character char_type="range_value" from="0.5" from_unit="cm" name="width" src="d0_s4" to="1.5" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>Petiole short, threadlike, not winged.</text>
-      <biological_entity id="o5922" name="petiole" name_original="petiole" src="d0_s5" type="structure">
-        <character is_modifier="false" name="height_or_length_or_size" src="d0_s5" value="short" />
-        <character is_modifier="false" name="shape" src="d0_s5" value="thread-like" value_original="threadlike" />
-        <character is_modifier="false" modifier="not" name="architecture" src="d0_s5" value="winged" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s6">
-      <text>Blade with inconspicuous glandular-hairs or prominent stellate hairs;</text>
-      <biological_entity id="o5923" name="blade" name_original="blade" src="d0_s6" type="structure" />
-      <biological_entity id="o5924" name="glandular-hair" name_original="glandular-hairs" src="d0_s6" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s6" value="inconspicuous" />
-      </biological_entity>
-      <biological_entity id="o5925" name="hair" name_original="hairs" src="d0_s6" type="structure">
-        <character is_modifier="true" name="prominence" src="d0_s6" value="prominent" />
-        <character is_modifier="true" name="arrangement_or_shape" src="d0_s6" value="stellate" />
-      </biological_entity>
-      <relation from="o5923" id="r1351" name="with" negation="false" src="d0_s6" to="o5924" />
-      <relation from="o5923" id="r1352" name="with" negation="false" src="d0_s6" to="o5925" />
-    </statement>
-    <statement id="d0_s7">
-      <text>margins entire to distantly dentate.</text>
-      <biological_entity id="o5926" name="margin" name_original="margins" src="d0_s7" type="structure">
-        <character is_modifier="false" name="architecture_or_shape" notes="[duplicate value]" src="d0_s7" value="entire" />
-        <character is_modifier="false" modifier="distantly" name="architecture_or_shape" notes="[duplicate value]" src="d0_s7" value="dentate" />
-        <character char_type="range_value" from="entire" name="architecture_or_shape" src="d0_s7" to="distantly dentate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s8">
-      <text>Soral involucres 2-valved, the halves roundish to ovate.</text>
-      <biological_entity constraint="soral" id="o5927" name="involucre" name_original="involucres" src="d0_s8" type="structure">
-        <character is_modifier="false" name="architecture" src="d0_s8" value="2-valved" />
-      </biological_entity>
-      <biological_entity id="o5928" name="half" name_original="halves" src="d0_s8" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="roundish" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d0_s8" value="ovate" />
-        <character char_type="range_value" from="roundish" name="shape" src="d0_s8" to="ovate" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s9">
-      <text>Sporangial receptacle a low mound of tissue included within involucre.</text>
-      <biological_entity constraint="sporangial" id="o5929" name="receptacle" name_original="receptacle" src="d0_s9" type="structure" />
-      <biological_entity id="o5930" name="mound" name_original="mound" src="d0_s9" type="structure">
-        <character is_modifier="true" name="position" src="d0_s9" value="low" />
-      </biological_entity>
-      <biological_entity id="o5931" name="tissue" name_original="tissue" src="d0_s9" type="structure" />
-      <biological_entity id="o5932" name="involucre" name_original="involucre" src="d0_s9" type="structure" />
-      <relation from="o5930" id="r1353" name="part_of" negation="false" src="d0_s9" to="o5931" />
-      <relation from="o5930" id="r1354" name="included within" negation="false" src="d0_s9" to="o5932" />
-    </statement>
-    <statement id="d0_s10">
-      <text>Gametophytes persistent, ribbonlike, much branched.</text>
-      <biological_entity id="o5933" name="gametophyte" name_original="gametophytes" src="d0_s10" type="structure">
-        <character is_modifier="false" name="duration" src="d0_s10" value="persistent" />
-        <character is_modifier="false" name="architecture_or_shape" src="d0_s10" value="ribbonlike" />
-        <character is_modifier="false" modifier="much" name="architecture" src="d0_s10" value="branched" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s11">
-      <text>Gametophyte gemmae platelike or absent.</text>
-      <biological_entity constraint="gametophyte" id="o5934" name="gemma" name_original="gemmae" src="d0_s11" type="structure">
-        <character is_modifier="false" name="shape" src="d0_s11" value="plate-like" value_original="platelike" />
-        <character is_modifier="false" name="presence" src="d0_s11" value="absent" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>worldwide in tropical regions.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="worldwide in tropical regions" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Plants  epiphytic or on rock.  Stems  long-creeping, intertwining, threadlike; hairs brown, sparse.  Roots  few, delicate.  Leaves  1--3-pinnatifid, 2--6 × 0.5--1.5 cm.  Petiole  short, threadlike, not winged.  Blade  with inconspicuous glandular hairs or prominent stellate hairs; margins entire to distantly dentate.  Soral involucres  2-valved, the halves roundish to ovate.  Sporangial receptacle  a low mound of tissue included within involucre.  Gametophytes  persistent, ribbonlike, much branched.  Gametophyte gemmae  platelike or absent.</description>
+  <description type="distribution">worldwide in tropical regions.</description>
   <number>1</number>
   <other_name type="common_name">Filmy fern</other_name>
   <discussion>Most species of Hymenophllyum occur in middle elevation rainforests; a few occur in continuously moist temperate habitats. Although all members of this genus are relatively small and delicate, leaves of many species outside the flora become considerably longer by indeterminate growth of the leaf apices.</discussion>
@@ -149,96 +29,23 @@
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Leaf-blades glabrous.</text>
-          <biological_entity id="o5935" name="leaf-blade" name_original="leaf-blades" src="d1_s0" type="structure">
-            <character is_modifier="false" name="pubescence" src="d1_s0" value="glabrous" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Leaf blades glabrous.</description>
       <next_statement_id>2</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>On wet rock or epiphytic on bark and decaying wood of large conifers;</text>
-        </statement>
-        <statement id="d2_s1">
-          <text>coastal British Columbia, Alaska.</text>
-          <biological_entity id="o5936" name="whole_organism" name_original="" src="d2_s1" type="structure">
-            <character is_modifier="false" name="habitat" src="d2_s1" value="coastal" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">On wet rock or epiphytic on bark and decaying wood of large conifers; coastal British Columbia, Alaska.</description>
       <determination>2 Hymenophyllum wrightii</determination>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d3_s0">
-          <text>Blade segments and involucres dentate.</text>
-          <biological_entity id="o5937" name="blade" name_original="blade" src="d3_s0" type="structure">
-            <character is_modifier="false" name="architecture_or_shape" src="d3_s0" value="dentate" />
-          </biological_entity>
-          <biological_entity id="o5938" name="segment" name_original="segments" src="d3_s0" type="structure">
-            <character is_modifier="false" name="architecture_or_shape" src="d3_s0" value="dentate" />
-          </biological_entity>
-          <biological_entity id="o5939" name="involucre" name_original="involucres" src="d3_s0" type="structure">
-            <character is_modifier="false" name="architecture_or_shape" src="d3_s0" value="dentate" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Blade segments and involucres dentate.</description>
       <determination>1 Hymenophyllum tunbrigense</determination>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d4_s0">
-          <text>Blade segments and involucres entire.</text>
-          <biological_entity id="o5940" name="blade" name_original="blade" src="d4_s0" type="structure">
-            <character is_modifier="false" name="architecture_or_shape" src="d4_s0" value="entire" />
-          </biological_entity>
-          <biological_entity id="o5941" name="segment" name_original="segments" src="d4_s0" type="structure">
-            <character is_modifier="false" name="architecture_or_shape" src="d4_s0" value="entire" />
-          </biological_entity>
-          <biological_entity id="o5942" name="involucre" name_original="involucres" src="d4_s0" type="structure">
-            <character is_modifier="false" name="architecture_or_shape" src="d4_s0" value="entire" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Blade segments and involucres entire.</description>
       <determination>2 Hymenophyllum wrightii</determination>
     </key_statement>
   </key>
-  <description type="morphology_from_key">
-    <statement id="from_key_V2_606_d1_s0">
-      <text>Soral involucres 2-valved, the halves roundish to ovate, sporangial receptacle enclosed within involucre;</text>
-      <biological_entity constraint="soral" id="from_key_V2_606_o16577" name="involucre" name_original="involucres" src="d1_s0" type="structure">
-        <character is_modifier="false" name="architecture" src="d1_s0" value="2-valved" />
-      </biological_entity>
-      <biological_entity id="from_key_V2_606_o16578" name="half" name_original="halves" src="d1_s0" type="structure">
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s0" value="roundish" />
-        <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s0" value="ovate" />
-        <character char_type="range_value" from="roundish" name="shape" src="d1_s0" to="ovate" />
-      </biological_entity>
-      <biological_entity constraint="sporangial" id="from_key_V2_606_o16579" name="receptacle" name_original="receptacle" src="d1_s0" type="structure" />
-      <biological_entity id="from_key_V2_606_o16580" name="involucre" name_original="involucre" src="d1_s0" type="structure" />
-      <relation from="from_key_V2_606_o16579" id="from_key_V2_606_r3893" name="enclosed within" negation="false" src="d1_s0" to="from_key_V2_606_o16580" />
-    </statement>
-    <statement id="from_key_V2_606_d1_s1">
-      <text>gametophytes entirely ribbonlike, branched;</text>
-      <biological_entity id="from_key_V2_606_o16581" name="gametophyte" name_original="gametophytes" src="d1_s1" type="structure">
-        <character is_modifier="false" modifier="entirely" name="architecture_or_shape" src="d1_s1" value="ribbonlike" />
-        <character is_modifier="false" name="architecture" src="d1_s1" value="branched" />
-      </biological_entity>
-    </statement>
-    <statement id="from_key_V2_606_d1_s2">
-      <text>gemmae platelike or absent.</text>
-      <biological_entity id="from_key_V2_606_o16582" name="gemma" name_original="gemmae" src="d1_s2" type="structure">
-        <character is_modifier="false" name="shape" src="d1_s2" value="platelike" />
-        <character is_modifier="false" name="count" src="d1_s2" value="absent" />
-      </biological_entity>
-    </statement>
-  </description>
 </bio:treatment>

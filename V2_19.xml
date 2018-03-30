@@ -1,233 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics http://www.w3.org/2001/XMLSchema-instance">
   <meta>
     <source>
       <author>Donald R. Farrar</author>
       <date>unknown</date>
     </source>
-    <processed_by>
-      <processor>
-        <date>2018/03/28 21:34:27</date>
-        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
-        <operator />
-        <resource type="OTO Glossary" version="0.19">Plant</resource>
-      </processor>
-    </processed_by>
     <other_info_on_meta type="volume">2</other_info_on_meta>
   </meta>
   <taxon_identification status="ACCEPTED">
-    <taxon_name authority="Ching" date="unknown" rank="family">vittariaceae</taxon_name>
-    <taxon_name authority="Smith" date="1793" rank="genus">Vittaria</taxon_name>
+    <taxon_name rank="family" authority="Ching" date="unknown">vittariaceae</taxon_name>
+    <taxon_name rank="genus" authority="Smith" date="1793">Vittaria</taxon_name>
     <place_of_publication>
       <place_in_publication>5: 413. 1793</place_in_publication>
     </place_of_publication>
     <taxon_hierarchy>family vittariaceae;genus Vittaria</taxon_hierarchy>
     <other_info_on_name type="etymology">[Latin vitt(a), fillet, ribbon, stripe]</other_info_on_name>
   </taxon_identification>
-  <description type="morphology">
-    <statement id="d0_s0">
-      <text>Stems densely scaly.</text>
-      <biological_entity id="o3107" name="stem" name_original="stems" src="d0_s0" type="structure">
-        <character is_modifier="false" modifier="densely" name="architecture_or_pubescence" src="d0_s0" value="scaly" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s1">
-      <text>Leaves pendent, linear.</text>
-      <biological_entity id="o3108" name="leaf" name_original="leaves" src="d0_s1" type="structure">
-        <character is_modifier="false" name="orientation" src="d0_s1" value="pendent" />
-        <character is_modifier="false" name="arrangement_or_course_or_shape" src="d0_s1" value="linear" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s2">
-      <text>Veins anastamosing in single row of areolae on each side of midrib.</text>
-      <biological_entity id="o3109" name="vein" name_original="veins" src="d0_s2" type="structure" />
-      <biological_entity id="o3110" name="row" name_original="row" src="d0_s2" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s2" value="single" />
-      </biological_entity>
-      <biological_entity id="o3111" name="areola" name_original="areolae" src="d0_s2" type="structure" />
-      <biological_entity id="o3112" name="side" name_original="side" src="d0_s2" type="structure" />
-      <biological_entity id="o3113" name="midrib" name_original="midrib" src="d0_s2" type="structure" />
-      <relation from="o3109" id="r749" name="in" negation="false" src="d0_s2" to="o3110" />
-      <relation from="o3110" id="r750" name="part_of" negation="false" src="d0_s2" to="o3111" />
-      <relation from="o3110" id="r751" name="on" negation="false" src="d0_s2" to="o3112" />
-      <relation from="o3112" id="r752" name="part_of" negation="false" src="d0_s2" to="o3113" />
-    </statement>
-    <statement id="d0_s3">
-      <text>Sori in single submarginal groove on each side of midrib.</text>
-      <biological_entity id="o3114" name="sorus" name_original="sori" src="d0_s3" type="structure" />
-      <biological_entity constraint="submarginal" id="o3115" name="groove" name_original="groove" src="d0_s3" type="structure">
-        <character is_modifier="true" name="quantity" src="d0_s3" value="single" />
-      </biological_entity>
-      <biological_entity id="o3116" name="side" name_original="side" src="d0_s3" type="structure" />
-      <biological_entity id="o3117" name="midrib" name_original="midrib" src="d0_s3" type="structure" />
-      <relation from="o3114" id="r753" name="in" negation="false" src="d0_s3" to="o3115" />
-      <relation from="o3115" id="r754" name="on" negation="false" src="d0_s3" to="o3116" />
-      <relation from="o3116" id="r755" name="part_of" negation="false" src="d0_s3" to="o3117" />
-    </statement>
-    <statement id="d0_s4">
-      <text>Gametophytes 0.5-2 × 0.5-1 cm;</text>
-      <biological_entity id="o3118" name="gametophyte" name_original="gametophytes" src="d0_s4" type="structure">
-        <character char_type="range_value" from="0.5" from_unit="cm" name="length" src="d0_s4" to="2" to_unit="cm" />
-        <character char_type="range_value" from="0.5" from_unit="cm" name="width" src="d0_s4" to="1" to_unit="cm" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s5">
-      <text>gemmae uniseriate, 2-5 mm, borne at apices of aerial branches;</text>
-      <biological_entity id="o3119" name="gemma" name_original="gemmae" src="d0_s5" type="structure">
-        <character is_modifier="false" name="architecture_or_arrangement" src="d0_s5" value="uniseriate" />
-        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s5" to="5" to_unit="mm" />
-      </biological_entity>
-      <biological_entity id="o3120" name="apex" name_original="apices" src="d0_s5" type="structure" />
-      <biological_entity id="o3121" name="branch" name_original="branches" src="d0_s5" type="structure">
-        <character is_modifier="true" name="location" src="d0_s5" value="aerial" />
-      </biological_entity>
-      <relation from="o3119" id="r756" name="borne at" negation="false" src="d0_s5" to="o3120" />
-      <relation from="o3119" id="r757" name="borne at" negation="false" src="d0_s5" to="o3121" />
-    </statement>
-    <statement id="d0_s6">
-      <text>body cells 2-16;</text>
-      <biological_entity constraint="body" id="o3122" name="cell" name_original="cells" src="d0_s6" type="structure">
-        <character char_type="range_value" from="2" name="quantity" src="d0_s6" to="16" />
-      </biological_entity>
-    </statement>
-    <statement id="d0_s7">
-      <text>rhizoid primordia cells 0-4.</text>
-      <biological_entity constraint="primordia" id="o3123" name="cell" name_original="cells" src="d0_s7" type="structure" constraint_original="rhizoid primordia">
-        <character char_type="range_value" from="0" name="quantity" src="d0_s7" to="4" />
-      </biological_entity>
-    </statement>
-  </description>
-  <description type="distribution">
-    <statement id="distribution_0">
-      <text>worldwide in tropics and subtropics.</text>
-      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
-        <character name="distribution" value="worldwide in tropics and subtropics" establishment_means="native" />
-      </biological_entity>
-    </statement>
-  </description>
+  <description type="morphology">Stems  densely scaly.  Leaves  pendent, linear.  Veins  anastamosing in single row of areolae on each side of midrib.  Sori  in single submarginal groove on each side of midrib.  Gametophytes  0.5--2 × 0.5--1 cm; gemmae uniseriate, 2--5 mm, borne at apices of aerial branches; body cells 2--16; rhizoid primordia cells 0--4.</description>
+  <description type="distribution">worldwide in tropics and subtropics.</description>
   <number>1</number>
   <other_name type="common_name">Shoestring fern</other_name>
   <discussion>Species ca. 50 (3 in the flora):</discussion>
   <key>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d1_s0">
-          <text>Stem scales tapering to long filiform tips;</text>
-          <biological_entity constraint="stem" id="o3124" name="scale" name_original="scales" src="d1_s0" type="structure">
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s0" value="tapering" />
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s0" value="long" />
-            <character is_modifier="false" name="shape" notes="[duplicate value]" src="d1_s0" value="filiform" />
-            <character char_type="range_value" from="tapering" name="shape" src="d1_s0" to="long filiform" />
-          </biological_entity>
-          <biological_entity id="o3125" name="tip" name_original="tips" src="d1_s0" type="structure" />
-        </statement>
-        <statement id="d1_s1">
-          <text>soral paraphyses without dilated terminal cells;</text>
-          <biological_entity constraint="soral" id="o3126" name="paraphyse" name_original="paraphyses" src="d1_s1" type="structure" />
-          <biological_entity constraint="terminal" id="o3127" name="cell" name_original="cells" src="d1_s1" type="structure">
-            <character is_modifier="true" name="shape" src="d1_s1" value="dilated" />
-          </biological_entity>
-          <relation from="o3126" id="r758" name="without" negation="false" src="d1_s1" to="o3127" />
-        </statement>
-        <statement id="d1_s2">
-          <text>spores monolete.</text>
-          <biological_entity id="o3128" name="spore" name_original="spores" src="d1_s2" type="structure">
-            <character is_modifier="false" name="architecture" src="d1_s2" value="monolete" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Stem scales tapering to long filiform tips; soral paraphyses without dilated terminal cells; spores monolete.</description>
       <determination>1 Vittaria lineata</determination>
     </key_statement>
     <key_statement>
       <statement_id>1</statement_id>
-      <description type="morphology">
-        <statement id="d2_s0">
-          <text>Gemmae variable in length;</text>
-          <biological_entity id="o3129" name="gemma" name_original="gemmae" src="d2_s0" type="structure">
-            <character is_modifier="false" name="length" src="d2_s0" value="variable" />
-          </biological_entity>
-        </statement>
-        <statement id="d2_s1">
-          <text>body cells 2-16, rhizoid primordia present or absent.</text>
-          <biological_entity constraint="body" id="o3130" name="cell" name_original="cells" src="d2_s1" type="structure">
-            <character char_type="range_value" from="2" name="quantity" src="d2_s1" to="16" />
-          </biological_entity>
-          <biological_entity constraint="rhizoid" id="o3131" name="primordium" name_original="primordia" src="d2_s1" type="structure">
-            <character is_modifier="false" name="presence" src="d2_s1" value="absent" />
-            <character is_modifier="false" name="presence" src="d2_s1" value="absent" />
-          </biological_entity>
-        </statement>
-      </description>
+      <description type="morphology">Gemmae variable in length; body cells 2-16, rhizoid primordia present or absent.</description>
       <next_statement_id>2</next_statement_id>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d3_s0">
-          <text>Gemmae with 4-16 body cells, end cells equal to or smaller than medial cells;</text>
-          <biological_entity id="o3132" name="gemma" name_original="gemmae" src="d3_s0" type="structure" />
-          <biological_entity constraint="body" id="o3133" name="cell" name_original="cells" src="d3_s0" type="structure">
-            <character char_type="range_value" from="4" is_modifier="true" name="quantity" src="d3_s0" to="16" />
-          </biological_entity>
-          <biological_entity constraint="end" id="o3134" name="cell" name_original="cells" src="d3_s0" type="structure">
-            <character is_modifier="false" name="variability" src="d3_s0" value="equal" />
-            <character constraint="than medial cells" constraintid="o3135" is_modifier="false" name="size" src="d3_s0" value="smaller" />
-          </biological_entity>
-          <biological_entity constraint="medial" id="o3135" name="cell" name_original="cells" src="d3_s0" type="structure" />
-          <relation from="o3132" id="r759" name="with" negation="false" src="d3_s0" to="o3133" />
-        </statement>
-        <statement id="d3_s1">
-          <text>rhizoid primordia on some medial cells and regularly on end cells;</text>
-          <biological_entity constraint="rhizoid" id="o3136" name="primordium" name_original="primordia" src="d3_s1" type="structure" />
-          <biological_entity constraint="medial" id="o3137" name="cell" name_original="cells" src="d3_s1" type="structure" />
-          <biological_entity constraint="end" id="o3138" name="cell" name_original="cells" src="d3_s1" type="structure" />
-          <relation from="o3136" id="r760" name="on" negation="false" src="d3_s1" to="o3137" />
-          <relation from="o3136" id="r761" modifier="regularly" name="on" negation="false" src="d3_s1" to="o3138" />
-        </statement>
-        <statement id="d3_s2">
-          <text>sporophytes frequently produced.</text>
-          <biological_entity id="o3139" name="sporophyte" name_original="sporophytes" src="d3_s2" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Gemmae with 4-16 body cells, end cells equal to or smaller than medial cells; rhizoid primordia on some medial cells and regularly on end cells; sporophytes frequently produced.</description>
       <determination>1 Vittaria lineata</determination>
     </key_statement>
     <key_statement>
       <statement_id>2</statement_id>
-      <description type="morphology">
-        <statement id="d4_s0">
-          <text>Gemmae with 2-12 body cells but at least some 2-3-celled gemmae present, end cells often swollen and larger than medial cells;</text>
-          <biological_entity id="o3140" name="gemma" name_original="gemmae" src="d4_s0" type="structure" />
-          <biological_entity constraint="body" id="o3141" name="cell" name_original="cells" src="d4_s0" type="structure">
-            <character char_type="range_value" from="2" is_modifier="true" name="quantity" src="d4_s0" to="12" />
-          </biological_entity>
-          <biological_entity id="o3142" name="gemma" name_original="gemmae" src="d4_s0" type="structure">
-            <character is_modifier="true" name="architecture" src="d4_s0" value="2-3-celled" />
-            <character is_modifier="false" modifier="at-least" name="presence" src="d4_s0" value="absent" />
-          </biological_entity>
-          <biological_entity constraint="end" id="o3143" name="cell" name_original="cells" src="d4_s0" type="structure">
-            <character is_modifier="false" modifier="often" name="shape" src="d4_s0" value="swollen" />
-            <character constraint="than medial cells" constraintid="o3144" is_modifier="false" name="size" src="d4_s0" value="larger" />
-          </biological_entity>
-          <biological_entity constraint="medial" id="o3144" name="cell" name_original="cells" src="d4_s0" type="structure" />
-          <relation from="o3140" id="r762" name="with" negation="false" src="d4_s0" to="o3141" />
-        </statement>
-        <statement id="d4_s1">
-          <text>rhizoid primordia often absent on 1 or both end cells, seldom present on medial cells;</text>
-          <biological_entity constraint="rhizoid" id="o3145" name="primordium" name_original="primordia" src="d4_s1" type="structure">
-            <character constraint="on end cells" constraintid="o3146" is_modifier="false" modifier="often" name="presence" src="d4_s1" value="absent" />
-          </biological_entity>
-          <biological_entity constraint="end" id="o3146" name="cell" name_original="cells" src="d4_s1" type="structure">
-            <character is_modifier="true" name="quantity" src="d4_s1" value="1" />
-            <character constraint="on medial cells" constraintid="o3147" is_modifier="false" modifier="seldom" name="presence" notes="alterIDs:o3146" src="d4_s1" value="absent" />
-          </biological_entity>
-          <biological_entity constraint="medial" id="o3147" name="cell" name_original="cells" src="d4_s1" type="structure" />
-        </statement>
-        <statement id="d4_s2">
-          <text>sporophytes not produced.</text>
-          <biological_entity id="o3148" name="sporophyte" name_original="sporophytes" src="d4_s2" type="structure" />
-        </statement>
-      </description>
+      <description type="morphology">Gemmae with 2-12 body cells but at least some 2-3-celled gemmae present, end cells often swollen and larger than medial cells; rhizoid primordia often absent on 1 or both end cells, seldom present on medial cells; sporophytes not produced.</description>
       <determination>3 Vittaria appalachiana</determination>
     </key_statement>
   </key>
