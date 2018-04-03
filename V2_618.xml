@@ -30,7 +30,19 @@
   <description type="habitat">
     <statement id="habitat_0">
       <text>Dense woods and talus slopes on limestone (ne North America), open woods among boulders and talus of granite or igneous rock (Rocky Mountains);</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure" />
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="dense woods" />
+        <character name="habitat" value="talus" />
+        <character name="habitat" value="slopes" constraint="on limestone" />
+        <character name="habitat" value="limestone" />
+        <character name="habitat" value="ne north america" />
+        <character name="habitat" value="open woods" constraint="among boulders and talus of granite or igneous rock -LRB- rocky mountains -RRB-" />
+        <character name="habitat" value="boulders" constraint="of granite or igneous rock" />
+        <character name="habitat" value="talus" constraint="of granite or igneous rock" />
+        <character name="habitat" value="granite" />
+        <character name="habitat" value="igneous rock" />
+        <character name="habitat" value="rocky mountains" />
+      </biological_entity>
     </statement>
   </description>
   <description type="elevation">200--2500 m;</description>

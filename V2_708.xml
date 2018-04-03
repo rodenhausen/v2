@@ -21,7 +21,19 @@
   <description type="habitat">
     <statement id="habitat_0">
       <text>Maple-birch-hemlock ( Acer - Betula - Tsuga ) woods on mountain slopes and summits, on moist sandstone or talus slopes with cold air seepage (algific);</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure" />
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="acer" modifier="maple-birch-hemlock" />
+        <character name="habitat" value="betula" />
+        <character name="habitat" value="tsuga" />
+        <character name="habitat" value="-lrb- acer" constraint="on mountain slopes and summits" />
+        <character name="habitat" value="betula" constraint="on mountain slopes and summits" />
+        <character name="habitat" value="tsuga -rrb- woods" constraint="on mountain slopes and summits" />
+        <character name="habitat" value="mountain slopes" modifier="on" />
+        <character name="habitat" value="summits" />
+        <character name="habitat" value="moist sandstone" modifier="on" constraint="with cold air seepage" />
+        <character name="habitat" value="talus slopes" constraint="with cold air seepage" />
+        <character name="habitat" value="cold air seepage" />
+      </biological_entity>
     </statement>
   </description>
   <description type="elevation">200--1400 m;</description>

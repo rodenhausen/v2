@@ -27,8 +27,12 @@
     <statement id="habitat_0">
       <text>Shady hammocks, on walls of limesinks, moist limestone rocks, rocky banks of streams;</text>
       <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="shady" />
-        <character name="habitat" value="hammocks , on walls of limesinks , moist limestone rocks , rocky banks of streams" />
+        <character name="habitat" value="shady hammocks" constraint="on walls of limesinks" />
+        <character name="habitat" value="walls" constraint="of limesinks" />
+        <character name="habitat" value="limesinks" />
+        <character name="habitat" value="limestone rocks" modifier="moist" />
+        <character name="habitat" value="rocky banks" constraint="of streams" />
+        <character name="habitat" value="streams" />
       </biological_entity>
     </statement>
   </description>

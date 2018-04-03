@@ -33,7 +33,20 @@
   <description type="habitat">
     <statement id="habitat_0">
       <text>Epiphytic on various species of trees, especially oaks, magnolias, and elms, or on rocks (usually limestone or sandstone), fence posts, buildings, or mossy banks, usually in moist, shady areas;</text>
-      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure" />
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="epiphytic" constraint="on various species of trees" />
+        <character name="habitat" value="various species" constraint="of trees" />
+        <character name="habitat" value="trees" />
+        <character name="habitat" value="oaks" modifier="especially" />
+        <character name="habitat" value="magnolias" />
+        <character name="habitat" value="elms" modifier="and" />
+        <character name="habitat" value="rocks" modifier="or on" />
+        <character name="habitat" value="fence posts" />
+        <character name="habitat" value="buildings" />
+        <character name="habitat" value="mossy banks" modifier="or" />
+        <character name="habitat" value="moist" modifier="usually in" />
+        <character name="habitat" value="shady areas" />
+      </biological_entity>
     </statement>
   </description>
   <description type="elevation">0--700 m;</description>

@@ -23,8 +23,12 @@
     <statement id="habitat_0">
       <text>On rock in limestone sinks, rarely epiphytic on trunks and roots of trees in limestone sinks;</text>
       <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
-        <character name="habitat" value="on rock in limestone sinks" />
-        <character name="habitat" value="epiphytic on trunks and roots of trees in limestone sinks" modifier="rarely" />
+        <character name="habitat" value="rock" modifier="on" constraint="in limestone sinks" />
+        <character name="habitat" value="limestone sinks" />
+        <character name="habitat" value="trunks" modifier="rarely epiphytic on" constraint="of trees in limestone sinks" />
+        <character name="habitat" value="roots" constraint="of trees in limestone sinks" />
+        <character name="habitat" value="trees" constraint="in limestone sinks" />
+        <character name="habitat" value="epiphytic" />
       </biological_entity>
     </statement>
   </description>

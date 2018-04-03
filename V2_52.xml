@@ -23,7 +23,14 @@
       <text>Moist, shaded, limestone cliffs along streams and rivers, on boulders in creeks, and among rocks on steep slopes;</text>
       <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
         <character name="habitat" value="moist" />
-        <character name="habitat" value="shaded limestone cliffs along streams and rivers , on boulders in creeks , and among rocks on steep slopes" />
+        <character name="habitat" value="cliffs" modifier="shaded limestone" constraint="along streams and rivers" />
+        <character name="habitat" value="streams" modifier="along" />
+        <character name="habitat" value="rivers" />
+        <character name="habitat" value="boulders" modifier="on" constraint="in creeks" />
+        <character name="habitat" value="creeks" />
+        <character name="habitat" value="rocks" modifier="and among" constraint="on steep slopes" />
+        <character name="habitat" value="steep slopes" />
+        <character name="habitat" value="shaded" />
       </biological_entity>
     </statement>
   </description>
